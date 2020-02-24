@@ -13,11 +13,11 @@ Imports System.Data.Entity.Infrastructure
 
 Namespace DatabaseTestApplication2
 
-    Partial Public Class mydbEntities
+    Partial Public Class mydbEntities1
         Inherits DbContext
     
         Public Sub New()
-            MyBase.New("name=mydbEntities")
+            MyBase.New("name=mydbEntities1")
         End Sub
     
         Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)

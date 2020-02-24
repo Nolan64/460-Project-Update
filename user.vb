@@ -14,7 +14,6 @@ Namespace DatabaseTestApplication2
 
     Partial Public Class user
         Public Property username As String
-        Public Property email As String
         Public Property password As String
         Public Property create_time As Nullable(Of Date)
     

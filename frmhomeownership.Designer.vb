@@ -37,6 +37,7 @@ Namespace DatabaseTestApplication2
             Me.components = New System.ComponentModel.Container()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmhomeownership))
             Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
+            Me.homeownershipBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
             Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
             Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
@@ -49,7 +50,6 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
             Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
             Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-            Me.homeownershipBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
             Me.Panel1 = New System.Windows.Forms.Panel()
             Me.applicantInfoMeetingLabel = New System.Windows.Forms.Label()
@@ -116,14 +116,14 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigator1.Name = "BindingNavigator1"
             Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(13, 0, 13, 0)
             Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-            Me.BindingNavigator1.Size = New System.Drawing.Size(1280, 27)
+            Me.BindingNavigator1.Size = New System.Drawing.Size(1280, 31)
             Me.BindingNavigator1.TabIndex = 0
             Me.BindingNavigator1.Text = "BindingNavigator1"
             '
             'BindingNavigatorCountItem
             '
             Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
+            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 28)
             Me.BindingNavigatorCountItem.Text = "of {0}"
             Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
             '
@@ -133,7 +133,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
             Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorDeleteItem.Text = "Delete"
             '
             'BindingNavigatorMoveFirstItem
@@ -142,7 +142,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
             Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorMoveFirstItem.Text = "Move first"
             '
             'BindingNavigatorMovePreviousItem
@@ -151,13 +151,13 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
             Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
             '
             'BindingNavigatorSeparator
             '
             Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-            Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
+            Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 31)
             '
             'BindingNavigatorPositionItem
             '
@@ -172,7 +172,7 @@ Namespace DatabaseTestApplication2
             'BindingNavigatorSeparator1
             '
             Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-            Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
+            Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 31)
             '
             'BindingNavigatorMoveNextItem
             '
@@ -180,7 +180,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
             Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorMoveNextItem.Text = "Move next"
             '
             'BindingNavigatorMoveLastItem
@@ -189,13 +189,13 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
             Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorMoveLastItem.Text = "Move last"
             '
             'BindingNavigatorSeparator2
             '
             Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-            Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
+            Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 31)
             '
             'BindingNavigatorAddNewItem
             '
@@ -203,7 +203,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
             Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorAddNewItem.Text = "Add new"
             '
             'ToolStripButton1
@@ -212,7 +212,7 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
             Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
             Me.ToolStripButton1.Name = "ToolStripButton1"
-            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 24)
+            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 28)
             Me.ToolStripButton1.Text = "Save"
             '
             'ErrorProvider1
@@ -263,7 +263,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Location = New System.Drawing.Point(13, 0)
             Me.Panel1.Margin = New System.Windows.Forms.Padding(13, 4, 13, 4)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(1254, 538)
+            Me.Panel1.Size = New System.Drawing.Size(1254, 534)
             Me.Panel1.TabIndex = 1
             '
             'applicantInfoMeetingLabel
@@ -281,7 +281,7 @@ Namespace DatabaseTestApplication2
             Me.applicantInfoMeeting_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.applicantInfoMeeting_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.applicantInfoMeeting_dateTimePicker.Location = New System.Drawing.Point(325, 62)
-            Me.applicantInfoMeeting_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.applicantInfoMeeting_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.applicantInfoMeeting_dateTimePicker.Name = "applicantInfoMeeting_dateTimePicker"
             Me.applicantInfoMeeting_dateTimePicker.Size = New System.Drawing.Size(265, 22)
             Me.applicantInfoMeeting_dateTimePicker.TabIndex = 2
@@ -302,7 +302,7 @@ Namespace DatabaseTestApplication2
             Me.applicationChecklist1_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.applicationChecklist1_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.applicationChecklist1_dateTimePicker.Location = New System.Drawing.Point(325, 103)
-            Me.applicationChecklist1_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.applicationChecklist1_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.applicationChecklist1_dateTimePicker.Name = "applicationChecklist1_dateTimePicker"
             Me.applicationChecklist1_dateTimePicker.Size = New System.Drawing.Size(265, 22)
             Me.applicationChecklist1_dateTimePicker.TabIndex = 4
@@ -323,7 +323,7 @@ Namespace DatabaseTestApplication2
             Me.applicationChecklist2_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.applicationChecklist2_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.applicationChecklist2_dateTimePicker.Location = New System.Drawing.Point(325, 145)
-            Me.applicationChecklist2_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.applicationChecklist2_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.applicationChecklist2_dateTimePicker.Name = "applicationChecklist2_dateTimePicker"
             Me.applicationChecklist2_dateTimePicker.Size = New System.Drawing.Size(265, 22)
             Me.applicationChecklist2_dateTimePicker.TabIndex = 6
@@ -342,7 +342,7 @@ Namespace DatabaseTestApplication2
             'employmentVerifiedTextBox
             '
             Me.employmentVerifiedTextBox.Location = New System.Drawing.Point(325, 187)
-            Me.employmentVerifiedTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.employmentVerifiedTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.employmentVerifiedTextBox.Name = "employmentVerifiedTextBox"
             Me.employmentVerifiedTextBox.Size = New System.Drawing.Size(132, 22)
             Me.employmentVerifiedTextBox.TabIndex = 8
@@ -360,7 +360,7 @@ Namespace DatabaseTestApplication2
             'landlordReferenceTextBox
             '
             Me.landlordReferenceTextBox.Location = New System.Drawing.Point(325, 229)
-            Me.landlordReferenceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.landlordReferenceTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.landlordReferenceTextBox.Name = "landlordReferenceTextBox"
             Me.landlordReferenceTextBox.Size = New System.Drawing.Size(132, 22)
             Me.landlordReferenceTextBox.TabIndex = 10
@@ -378,7 +378,7 @@ Namespace DatabaseTestApplication2
             'previousLandlordReferenceTextBox
             '
             Me.previousLandlordReferenceTextBox.Location = New System.Drawing.Point(325, 271)
-            Me.previousLandlordReferenceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.previousLandlordReferenceTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.previousLandlordReferenceTextBox.Name = "previousLandlordReferenceTextBox"
             Me.previousLandlordReferenceTextBox.Size = New System.Drawing.Size(132, 22)
             Me.previousLandlordReferenceTextBox.TabIndex = 12
@@ -396,7 +396,7 @@ Namespace DatabaseTestApplication2
             'backgroundCheckTextBox
             '
             Me.backgroundCheckTextBox.Location = New System.Drawing.Point(325, 313)
-            Me.backgroundCheckTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.backgroundCheckTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.backgroundCheckTextBox.Name = "backgroundCheckTextBox"
             Me.backgroundCheckTextBox.Size = New System.Drawing.Size(132, 22)
             Me.backgroundCheckTextBox.TabIndex = 14
@@ -414,7 +414,7 @@ Namespace DatabaseTestApplication2
             'CCCBudgetTextBox
             '
             Me.CCCBudgetTextBox.Location = New System.Drawing.Point(325, 354)
-            Me.CCCBudgetTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.CCCBudgetTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.CCCBudgetTextBox.Name = "CCCBudgetTextBox"
             Me.CCCBudgetTextBox.Size = New System.Drawing.Size(132, 22)
             Me.CCCBudgetTextBox.TabIndex = 16
@@ -432,7 +432,7 @@ Namespace DatabaseTestApplication2
             'creditReportRunTextBox
             '
             Me.creditReportRunTextBox.Location = New System.Drawing.Point(325, 396)
-            Me.creditReportRunTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.creditReportRunTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.creditReportRunTextBox.Name = "creditReportRunTextBox"
             Me.creditReportRunTextBox.Size = New System.Drawing.Size(132, 22)
             Me.creditReportRunTextBox.TabIndex = 18
@@ -452,7 +452,7 @@ Namespace DatabaseTestApplication2
             Me.homeVisit_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.homeVisit_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.homeVisit_dateTimePicker.Location = New System.Drawing.Point(864, 62)
-            Me.homeVisit_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.homeVisit_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.homeVisit_dateTimePicker.Name = "homeVisit_dateTimePicker"
             Me.homeVisit_dateTimePicker.Size = New System.Drawing.Size(265, 22)
             Me.homeVisit_dateTimePicker.TabIndex = 20
@@ -473,7 +473,7 @@ Namespace DatabaseTestApplication2
             Me.committeeDecision_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.committeeDecision_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.committeeDecision_dateTimePicker.Location = New System.Drawing.Point(864, 103)
-            Me.committeeDecision_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.committeeDecision_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.committeeDecision_dateTimePicker.Name = "committeeDecision_dateTimePicker"
             Me.committeeDecision_dateTimePicker.Size = New System.Drawing.Size(265, 22)
             Me.committeeDecision_dateTimePicker.TabIndex = 22
@@ -492,7 +492,7 @@ Namespace DatabaseTestApplication2
             'committeeAcceptedTextBox
             '
             Me.committeeAcceptedTextBox.Location = New System.Drawing.Point(864, 145)
-            Me.committeeAcceptedTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.committeeAcceptedTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.committeeAcceptedTextBox.Name = "committeeAcceptedTextBox"
             Me.committeeAcceptedTextBox.Size = New System.Drawing.Size(132, 22)
             Me.committeeAcceptedTextBox.TabIndex = 24
@@ -510,7 +510,7 @@ Namespace DatabaseTestApplication2
             'committeeReasonTextBox
             '
             Me.committeeReasonTextBox.Location = New System.Drawing.Point(864, 187)
-            Me.committeeReasonTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.committeeReasonTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.committeeReasonTextBox.Name = "committeeReasonTextBox"
             Me.committeeReasonTextBox.Size = New System.Drawing.Size(132, 22)
             Me.committeeReasonTextBox.TabIndex = 26
@@ -530,7 +530,7 @@ Namespace DatabaseTestApplication2
             Me.boardVote_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.boardVote_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.boardVote_dateTimePicker.Location = New System.Drawing.Point(864, 229)
-            Me.boardVote_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.boardVote_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.boardVote_dateTimePicker.Name = "boardVote_dateTimePicker"
             Me.boardVote_dateTimePicker.Size = New System.Drawing.Size(265, 22)
             Me.boardVote_dateTimePicker.TabIndex = 28
@@ -549,7 +549,7 @@ Namespace DatabaseTestApplication2
             'boardAcceptedTextBox
             '
             Me.boardAcceptedTextBox.Location = New System.Drawing.Point(864, 271)
-            Me.boardAcceptedTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.boardAcceptedTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.boardAcceptedTextBox.Name = "boardAcceptedTextBox"
             Me.boardAcceptedTextBox.Size = New System.Drawing.Size(132, 22)
             Me.boardAcceptedTextBox.TabIndex = 30
@@ -567,7 +567,7 @@ Namespace DatabaseTestApplication2
             'boardReasonTextBox
             '
             Me.boardReasonTextBox.Location = New System.Drawing.Point(864, 313)
-            Me.boardReasonTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.boardReasonTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.boardReasonTextBox.Name = "boardReasonTextBox"
             Me.boardReasonTextBox.Size = New System.Drawing.Size(132, 22)
             Me.boardReasonTextBox.TabIndex = 32
@@ -587,7 +587,7 @@ Namespace DatabaseTestApplication2
             Me.handbookReview_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.handbookReview_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.handbookReview_dateTimePicker.Location = New System.Drawing.Point(864, 354)
-            Me.handbookReview_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.handbookReview_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.handbookReview_dateTimePicker.Name = "handbookReview_dateTimePicker"
             Me.handbookReview_dateTimePicker.Size = New System.Drawing.Size(265, 22)
             Me.handbookReview_dateTimePicker.TabIndex = 34
@@ -609,7 +609,7 @@ Namespace DatabaseTestApplication2
             Me.general_UID_comboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
             Me.general_UID_comboBox.FormattingEnabled = True
             Me.general_UID_comboBox.Location = New System.Drawing.Point(864, 396)
-            Me.general_UID_comboBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.general_UID_comboBox.Margin = New System.Windows.Forms.Padding(4)
             Me.general_UID_comboBox.Name = "general_UID_comboBox"
             Me.general_UID_comboBox.Size = New System.Drawing.Size(273, 24)
             Me.general_UID_comboBox.TabIndex = 36
@@ -621,35 +621,35 @@ Namespace DatabaseTestApplication2
             Me.panel3.Controls.Add(Me.panel5)
             Me.panel3.Controls.Add(Me.panel6)
             Me.panel3.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.panel3.Location = New System.Drawing.Point(0, 27)
-            Me.panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel3.Location = New System.Drawing.Point(0, 31)
+            Me.panel3.Margin = New System.Windows.Forms.Padding(4)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(1280, 550)
+            Me.panel3.Size = New System.Drawing.Size(1280, 546)
             Me.panel3.TabIndex = 19
             '
             'panel4
             '
             Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
             Me.panel4.Location = New System.Drawing.Point(1267, 0)
-            Me.panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel4.Margin = New System.Windows.Forms.Padding(4)
             Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(13, 538)
+            Me.panel4.Size = New System.Drawing.Size(13, 534)
             Me.panel4.TabIndex = 3
             '
             'panel5
             '
             Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
             Me.panel5.Location = New System.Drawing.Point(0, 0)
-            Me.panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel5.Margin = New System.Windows.Forms.Padding(4)
             Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(13, 538)
+            Me.panel5.Size = New System.Drawing.Size(13, 534)
             Me.panel5.TabIndex = 5
             '
             'panel6
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 538)
-            Me.panel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel6.Location = New System.Drawing.Point(0, 534)
+            Me.panel6.Margin = New System.Windows.Forms.Padding(4)
             Me.panel6.Name = "panel6"
             Me.panel6.Size = New System.Drawing.Size(1280, 12)
             Me.panel6.TabIndex = 6
@@ -661,7 +661,7 @@ Namespace DatabaseTestApplication2
             Me.ClientSize = New System.Drawing.Size(1280, 577)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
-            Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Margin = New System.Windows.Forms.Padding(4)
             Me.Name = "frmhomeownership"
             Me.Text = "Homeownership"
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()

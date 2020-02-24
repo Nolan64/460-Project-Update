@@ -15,11 +15,11 @@ Imports System.Data.Entity
 Namespace DatabaseTestApplication2
 	
 	Public Class frmrepairs
-		
-		Private ctx As mydbEntities
-		
+
+		Private ctx As mydbEntities1
+
 		Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-			ctx = new mydbEntities()
+			ctx = New mydbEntities1()
 			ctx.repairs.Load()
 			Dim _entities As BindingList(Of repair) = ctx.repairs.Local.ToBindingList()
 			repairsBindingSource.DataSource = _entities

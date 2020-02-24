@@ -15,11 +15,11 @@ Imports System.Data.Entity
 Namespace DatabaseTestApplication2
 	
 	Public Class frmtracking
-		
-		Private ctx As mydbEntities
-		
+
+		Private ctx As mydbEntities1
+
 		Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-			ctx = new mydbEntities()
+			ctx = New mydbEntities1()
 			ctx.trackings.Load()
 			Dim _entities As BindingList(Of tracking) = ctx.trackings.Local.ToBindingList()
 			trackingBindingSource.DataSource = _entities

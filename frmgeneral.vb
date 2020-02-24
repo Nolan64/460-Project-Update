@@ -15,33 +15,34 @@ Imports System.Data.Entity
 Namespace DatabaseTestApplication2
 	
 	Public Class frmgeneral
-		
-		Private ctx As mydbEntities
-		
+
+		Private ctx As mydbEntities1
+
 		Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-			ctx = new mydbEntities()
+			ctx = New mydbEntities1()
 			ctx.generals.Load()
 			Dim _entities As BindingList(Of general) = ctx.generals.Local.ToBindingList()
 			generalBindingSource.DataSource = _entities
-			Me.UIDTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "UID", True ))
-			Me.firstNameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "firstName", True ))
-			Me.lastNameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "lastName", True ))
-			Me.inquiryDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "inquiryDate", True ))
-			Me.streetAddressTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "streetAddress", True ))
-			Me.cityAddressTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "cityAddress", True ))
-			Me.zipAddressTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "zipAddress", True ))
-			Me.stateAddressTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "stateAddress", True ))
-			Me.countryAddressTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "countryAddress", True ))
-			Me.phoneNumberTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "phoneNumber", True ))
-			Me.emailTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "email", True ))
-			Me.genderTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "gender", True ))
-			Me.birthdate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "birthdate", True ))
-			Me.householdSizeTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "householdSize", True ))
-			Me.householdAMITextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "householdAMI", True ))
-			Me.raceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "race", True ))
-			Me.maritalStatusTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "maritalStatus", True ))
+			Me.UIDTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "UID", True))
+			Me.firstNameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "firstName", True))
+			Me.lastNameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "lastName", True))
+			Me.inquiryDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "inquiryDate", True))
+			Me.streetAddressTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "streetAddress", True))
+			Me.cityAddressTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "cityAddress", True))
+			Me.zipAddressTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "zipAddress", True))
+			Me.stateAddressTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "stateAddress", True))
+			Me.countryAddressTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "countryAddress", True))
+			Me.phoneNumberTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "phoneNumber", True))
+			Me.emailTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "email", True))
+			Me.genderTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "gender", True))
+			Me.birthdate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "birthdate", True))
+			Me.householdSizeTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "householdSize", True))
+			Me.householdAMITextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "householdAMI", True))
+			Me.raceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "race", True))
+			Me.maritalStatusTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "maritalStatus", True))
+			Me.notesTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "notes", True))
 		End Sub
-		
+
 		Private Sub ToolStripButton1_Click(sender As System.Object, e As System.EventArgs) Handles ToolStripButton1.Click
 			If Not Me.Validate() Then
 				Return
@@ -49,7 +50,7 @@ Namespace DatabaseTestApplication2
 			generalBindingSource.EndEdit()
 			ctx.SaveChanges()
 		End Sub
-		
+
 		Private Sub Form1_FormClosing(sender As System.Object, e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
 			e.Cancel = False
 		End Sub
@@ -126,12 +127,6 @@ Namespace DatabaseTestApplication2
 			If String.IsNullOrEmpty(zipAddressTextBox.Text) Then
 				e.Cancel = True
 				ErrorProvider1.SetError(zipAddressTextBox, "The field zipAddress is required")
-			End If
-			Dim v As Integer
-			Dim s As String = zipAddressTextBox.Text
-			If Not Integer.TryParse(s, v) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(zipAddressTextBox, "The field zipAddress must be Integer.")
 			End If
 			If Not e.Cancel Then
 				ErrorProvider1.SetError(zipAddressTextBox, "")
@@ -253,8 +248,26 @@ Namespace DatabaseTestApplication2
 				e.Cancel = True
 				ErrorProvider1.SetError(maritalStatusTextBox, "The field maritalStatus is required")
 			End If
+			Dim v As Integer
+			Dim s As String = maritalStatusTextBox.Text
+			If Not Integer.TryParse(s, v) Then
+				e.Cancel = True
+				ErrorProvider1.SetError(maritalStatusTextBox, "The field maritalStatus must be Integer.")
+			End If
 			If Not e.Cancel Then
 				ErrorProvider1.SetError(maritalStatusTextBox, "")
+			End If
+		End Sub
+
+		Private Sub notesTextBox_Validating(sender As Object, e As CancelEventArgs) Handles notesTextBox.Validating
+
+			e.Cancel = False
+			If String.IsNullOrEmpty(notesTextBox.Text) Then
+				e.Cancel = True
+				ErrorProvider1.SetError(notesTextBox, "The field notes is required")
+			End If
+			If Not e.Cancel Then
+				ErrorProvider1.SetError(notesTextBox, "")
 			End If
 		End Sub
 

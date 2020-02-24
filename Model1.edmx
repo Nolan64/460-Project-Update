@@ -12,20 +12,21 @@
           <Property Name="UID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="firstName" Type="varchar" MaxLength="45" />
           <Property Name="lastName" Type="varchar" MaxLength="45" />
-          <Property Name="inquiryDate" Type="datetime" Precision="0" />
+          <Property Name="inquiryDate" Type="date" />
           <Property Name="streetAddress" Type="varchar" MaxLength="45" />
           <Property Name="cityAddress" Type="varchar" MaxLength="45" />
-          <Property Name="zipAddress" Type="int" />
+          <Property Name="zipAddress" Type="varchar" MaxLength="45" />
           <Property Name="stateAddress" Type="varchar" MaxLength="2" />
           <Property Name="countryAddress" Type="varchar" MaxLength="45" />
           <Property Name="phoneNumber" Type="varchar" MaxLength="10" />
-          <Property Name="email" Type="varchar" MaxLength="45" />
-          <Property Name="gender" Type="varchar" MaxLength="45" />
+          <Property Name="email" Type="varchar" MaxLength="255" />
+          <Property Name="gender" Type="varchar" MaxLength="8" />
           <Property Name="birthdate" Type="date" />
           <Property Name="householdSize" Type="int" />
           <Property Name="householdAMI" Type="double" />
           <Property Name="race" Type="varchar" MaxLength="45" />
-          <Property Name="maritalStatus" Type="varchar" MaxLength="45" />
+          <Property Name="maritalStatus" Type="tinyint" />
+          <Property Name="notes" Type="mediumtext" />
         </EntityType>
         <EntityType Name="homeownership">
           <Key>
@@ -93,15 +94,11 @@
           <Property Name="mortgage1NumberOfYears" Type="int" />
           <Property Name="general_UID" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'def.mydb.user' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="user">
           <Key>
             <PropertyRef Name="username" />
-            <PropertyRef Name="password" />
           </Key>
           <Property Name="username" Type="varchar" MaxLength="16" Nullable="false" />
-          <Property Name="email" Type="varchar" MaxLength="255" />
           <Property Name="password" Type="varchar" MaxLength="32" Nullable="false" />
           <Property Name="create_time" Type="timestamp" Precision="0" StoreGeneratedPattern="Identity" />
         </EntityType>
@@ -146,14 +143,7 @@ warning 6002: The table/view 'def.mydb.user' does not have a primary key defined
           <EntitySet Name="homeownership" EntityType="Self.homeownership" Schema="mydb" store:Type="Tables" />
           <EntitySet Name="repairs" EntityType="Self.repairs" Schema="mydb" store:Type="Tables" />
           <EntitySet Name="tracking" EntityType="Self.tracking" Schema="mydb" store:Type="Tables" />
-          <EntitySet Name="user" EntityType="Self.user" store:Type="Tables" store:Schema="mydb">
-            <DefiningQuery>SELECT
-`user`.`username`, 
-`user`.`email`, 
-`user`.`password`, 
-`user`.`create_time`
-FROM `user` AS `user`</DefiningQuery>
-          </EntitySet>
+          <EntitySet Name="user" EntityType="Self.user" Schema="mydb" store:Type="Tables" />
           <AssociationSet Name="fk_homeownership_general1" Association="Self.fk_homeownership_general1">
             <End Role="general" EntitySet="general" />
             <End Role="homeownership" EntitySet="homeownership" />
@@ -182,17 +172,18 @@ FROM `user` AS `user`</DefiningQuery>
           <Property Name="inquiryDate" Type="DateTime" />
           <Property Name="streetAddress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
           <Property Name="cityAddress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
-          <Property Name="zipAddress" Type="Int32" />
+          <Property Name="zipAddress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
           <Property Name="stateAddress" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
           <Property Name="countryAddress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
           <Property Name="phoneNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="email" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
-          <Property Name="gender" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="gender" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
           <Property Name="birthdate" Type="DateTime" />
           <Property Name="householdSize" Type="Int32" />
           <Property Name="householdAMI" Type="Double" />
           <Property Name="race" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
-          <Property Name="maritalStatus" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="maritalStatus" Type="SByte" />
+          <Property Name="notes" Type="String" MaxLength="16777215" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="homeownership" Relationship="Self.fk_homeownership_general1" FromRole="general" ToRole="homeownership" />
           <NavigationProperty Name="repair" Relationship="Self.fk_Repairs_General_Info" FromRole="general" ToRole="repairs" />
           <NavigationProperty Name="tracking" Relationship="Self.fk_tracking_general1" FromRole="general" ToRole="tracking" />
@@ -269,10 +260,8 @@ FROM `user` AS `user`</DefiningQuery>
         <EntityType Name="user">
           <Key>
             <PropertyRef Name="username" />
-            <PropertyRef Name="password" />
           </Key>
           <Property Name="username" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="password" Type="String" MaxLength="32" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="create_time" Type="DateTime" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
@@ -312,7 +301,7 @@ FROM `user` AS `user`</DefiningQuery>
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="mydbEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="mydbEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="generals" EntityType="Self.general" />
           <EntitySet Name="homeownerships" EntityType="Self.homeownership" />
           <EntitySet Name="repairs" EntityType="Self.repair" />
@@ -336,7 +325,7 @@ FROM `user` AS `user`</DefiningQuery>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="mydbModelStoreContainer" CdmEntityContainer="mydbEntities">
+        <EntityContainerMapping StorageEntityContainer="mydbModelStoreContainer" CdmEntityContainer="mydbEntities1">
           <EntitySetMapping Name="generals">
             <EntityTypeMapping TypeName="mydbModel.general">
               <MappingFragment StoreEntitySet="general">
@@ -357,6 +346,7 @@ FROM `user` AS `user`</DefiningQuery>
                 <ScalarProperty Name="householdAMI" ColumnName="householdAMI" />
                 <ScalarProperty Name="race" ColumnName="race" />
                 <ScalarProperty Name="maritalStatus" ColumnName="maritalStatus" />
+                <ScalarProperty Name="notes" ColumnName="notes" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -433,7 +423,6 @@ FROM `user` AS `user`</DefiningQuery>
             <EntityTypeMapping TypeName="mydbModel.user">
               <MappingFragment StoreEntitySet="user">
                 <ScalarProperty Name="username" ColumnName="username" />
-                <ScalarProperty Name="email" ColumnName="email" />
                 <ScalarProperty Name="password" ColumnName="password" />
                 <ScalarProperty Name="create_time" ColumnName="create_time" />
               </MappingFragment>

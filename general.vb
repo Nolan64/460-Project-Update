@@ -19,7 +19,7 @@ Namespace DatabaseTestApplication2
         Public Property inquiryDate As Nullable(Of Date)
         Public Property streetAddress As String
         Public Property cityAddress As String
-        Public Property zipAddress As Nullable(Of Integer)
+        Public Property zipAddress As String
         Public Property stateAddress As String
         Public Property countryAddress As String
         Public Property phoneNumber As String
@@ -29,7 +29,8 @@ Namespace DatabaseTestApplication2
         Public Property householdSize As Nullable(Of Integer)
         Public Property householdAMI As Nullable(Of Double)
         Public Property race As String
-        Public Property maritalStatus As String
+        Public Property maritalStatus As Nullable(Of SByte)
+        Public Property notes As String
     
         Public Overridable Property homeownership As homeownership
         Public Overridable Property repair As repair
