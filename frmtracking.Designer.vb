@@ -9,31 +9,31 @@
 ' 
 
 Namespace DatabaseTestApplication2
-
-    <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-    Partial Class frmtracking
-        Inherits System.Windows.Forms.Form
-
-        'Form overrides dispose to clean up the component list.
-        <System.Diagnostics.DebuggerNonUserCode()>
-        Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            Try
-                If disposing AndAlso components IsNot Nothing Then
-                    components.Dispose()
-                End If
-            Finally
-                MyBase.Dispose(disposing)
-            End Try
-        End Sub
-
-        'Required by the Windows Form Designer
-        Private components As System.ComponentModel.IContainer
-
-        'NOTE: The following procedure is required by the Windows Form Designer
-        'It can be modified using the Windows Form Designer.  
-        'Do not modify it using the code editor.
-        <System.Diagnostics.DebuggerStepThrough()>
-        Private Sub InitializeComponent()
+	
+	<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+	Partial Class frmtracking
+		Inherits System.Windows.Forms.Form
+		
+		'Form overrides dispose to clean up the component list.
+		<System.Diagnostics.DebuggerNonUserCode()> _
+		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+			Try
+			If disposing AndAlso components IsNot Nothing Then
+				components.Dispose()
+			End If
+			Finally
+			MyBase.Dispose(disposing)
+			End Try
+		End Sub
+		
+		'Required by the Windows Form Designer
+		Private components As System.ComponentModel.IContainer
+		
+		'NOTE: The following procedure is required by the Windows Form Designer
+		'It can be modified using the Windows Form Designer.  
+		'Do not modify it using the code editor.
+		<System.Diagnostics.DebuggerStepThrough()> _
+		Private Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmtracking))
             Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
@@ -52,11 +52,13 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
             Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
             Me.Panel1 = New System.Windows.Forms.Panel()
-            Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-            Me.sweatEquityDateLabel = New System.Windows.Forms.Label()
+            Me.Panel2 = New System.Windows.Forms.Panel()
             Me.sweatEquityDate_dateTimePicker = New System.Windows.Forms.DateTimePicker()
-            Me.sweatEquityAmountLabel = New System.Windows.Forms.Label()
+            Me.sweatEquityDateLabel = New System.Windows.Forms.Label()
             Me.sweatEquityAmountTextBox = New System.Windows.Forms.TextBox()
+            Me.sweatEquityAmountLabel = New System.Windows.Forms.Label()
+            Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+            Me.PictureBox1 = New System.Windows.Forms.PictureBox()
             Me.monthlyDepositDateLabel = New System.Windows.Forms.Label()
             Me.monthlyDepositDate_dateTimePicker = New System.Windows.Forms.DateTimePicker()
             Me.monthlyDepositAmountLabel = New System.Windows.Forms.Label()
@@ -76,7 +78,7 @@ Namespace DatabaseTestApplication2
             Me.mortgage1PriceLabel = New System.Windows.Forms.Label()
             Me.mortgage1PriceTextBox = New System.Windows.Forms.TextBox()
             Me.mortgage1BankLabel = New System.Windows.Forms.Label()
-            Me.mortgage1ForgivableLabel = New System.Windows.Forms.Label()
+            Me.mortgage1BankTextBox = New System.Windows.Forms.TextBox()
             Me.mortgage1ForgivableTextBox = New System.Windows.Forms.TextBox()
             Me.mortgage1OriginalBalanceLabel = New System.Windows.Forms.Label()
             Me.mortgage1OriginalBalanceTextBox = New System.Windows.Forms.TextBox()
@@ -84,6 +86,9 @@ Namespace DatabaseTestApplication2
             Me.mortgage1NumberOfYearsTextBox = New System.Windows.Forms.TextBox()
             Me.general_UIDLabel = New System.Windows.Forms.Label()
             Me.general_UID_comboBox = New System.Windows.Forms.ComboBox()
+            Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+            Me.MainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.GeneralInfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.panel3 = New System.Windows.Forms.Panel()
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
@@ -93,6 +98,9 @@ Namespace DatabaseTestApplication2
             CType(Me.trackingBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.Panel1.SuspendLayout()
+            Me.Panel2.SuspendLayout()
+            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.MenuStrip1.SuspendLayout()
             Me.panel3.SuspendLayout()
             Me.SuspendLayout()
             '
@@ -112,7 +120,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigator1.Name = "BindingNavigator1"
             Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(13, 0, 13, 0)
             Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-            Me.BindingNavigator1.Size = New System.Drawing.Size(1224, 27)
+            Me.BindingNavigator1.Size = New System.Drawing.Size(1243, 27)
             Me.BindingNavigator1.TabIndex = 0
             Me.BindingNavigator1.Text = "BindingNavigator1"
             '
@@ -219,11 +227,12 @@ Namespace DatabaseTestApplication2
             '
             Me.Panel1.AutoScroll = True
             Me.Panel1.AutoSize = True
-            Me.Panel1.Controls.Add(Me.ComboBox1)
-            Me.Panel1.Controls.Add(Me.sweatEquityDateLabel)
-            Me.Panel1.Controls.Add(Me.sweatEquityDate_dateTimePicker)
-            Me.Panel1.Controls.Add(Me.sweatEquityAmountLabel)
-            Me.Panel1.Controls.Add(Me.sweatEquityAmountTextBox)
+            Me.Panel1.BackColor = System.Drawing.Color.Transparent
+            Me.Panel1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.angryimg__12_
+            Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+            Me.Panel1.Controls.Add(Me.Panel2)
+            Me.Panel1.Controls.Add(Me.CheckBox1)
+            Me.Panel1.Controls.Add(Me.PictureBox1)
             Me.Panel1.Controls.Add(Me.monthlyDepositDateLabel)
             Me.Panel1.Controls.Add(Me.monthlyDepositDate_dateTimePicker)
             Me.Panel1.Controls.Add(Me.monthlyDepositAmountLabel)
@@ -243,7 +252,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.mortgage1PriceLabel)
             Me.Panel1.Controls.Add(Me.mortgage1PriceTextBox)
             Me.Panel1.Controls.Add(Me.mortgage1BankLabel)
-            Me.Panel1.Controls.Add(Me.mortgage1ForgivableLabel)
+            Me.Panel1.Controls.Add(Me.mortgage1BankTextBox)
             Me.Panel1.Controls.Add(Me.mortgage1ForgivableTextBox)
             Me.Panel1.Controls.Add(Me.mortgage1OriginalBalanceLabel)
             Me.Panel1.Controls.Add(Me.mortgage1OriginalBalanceTextBox)
@@ -251,67 +260,94 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.mortgage1NumberOfYearsTextBox)
             Me.Panel1.Controls.Add(Me.general_UIDLabel)
             Me.Panel1.Controls.Add(Me.general_UID_comboBox)
+            Me.Panel1.Controls.Add(Me.MenuStrip1)
             Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.Panel1.Location = New System.Drawing.Point(13, 0)
             Me.Panel1.Margin = New System.Windows.Forms.Padding(13, 4, 13, 4)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(1198, 588)
+            Me.Panel1.Size = New System.Drawing.Size(1217, 696)
             Me.Panel1.TabIndex = 1
             '
-            'ComboBox1
+            'Panel2
             '
-            Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-            Me.ComboBox1.FormattingEnabled = True
-            Me.ComboBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-            Me.ComboBox1.Items.AddRange(New Object() {"Chase Bank", "Wells Fargo"})
-            Me.ComboBox1.Location = New System.Drawing.Point(880, 187)
-            Me.ComboBox1.Name = "ComboBox1"
-            Me.ComboBox1.Size = New System.Drawing.Size(121, 24)
-            Me.ComboBox1.TabIndex = 33
-            '
-            'sweatEquityDateLabel
-            '
-            Me.sweatEquityDateLabel.AutoSize = True
-            Me.sweatEquityDateLabel.Location = New System.Drawing.Point(169, 62)
-            Me.sweatEquityDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.sweatEquityDateLabel.Name = "sweatEquityDateLabel"
-            Me.sweatEquityDateLabel.Size = New System.Drawing.Size(113, 17)
-            Me.sweatEquityDateLabel.TabIndex = 1
-            Me.sweatEquityDateLabel.Text = "sweatEquityDate"
+            Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+            Me.Panel2.Controls.Add(Me.sweatEquityDate_dateTimePicker)
+            Me.Panel2.Controls.Add(Me.sweatEquityDateLabel)
+            Me.Panel2.Controls.Add(Me.sweatEquityAmountTextBox)
+            Me.Panel2.Controls.Add(Me.sweatEquityAmountLabel)
+            Me.Panel2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+            Me.Panel2.Location = New System.Drawing.Point(78, 484)
+            Me.Panel2.Name = "Panel2"
+            Me.Panel2.Size = New System.Drawing.Size(406, 82)
+            Me.Panel2.TabIndex = 36
             '
             'sweatEquityDate_dateTimePicker
             '
             Me.sweatEquityDate_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.sweatEquityDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.sweatEquityDate_dateTimePicker.Location = New System.Drawing.Point(333, 62)
+            Me.sweatEquityDate_dateTimePicker.Location = New System.Drawing.Point(125, 4)
             Me.sweatEquityDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.sweatEquityDate_dateTimePicker.Name = "sweatEquityDate_dateTimePicker"
             Me.sweatEquityDate_dateTimePicker.Size = New System.Drawing.Size(265, 22)
             Me.sweatEquityDate_dateTimePicker.TabIndex = 2
             Me.sweatEquityDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
             '
+            'sweatEquityDateLabel
+            '
+            Me.sweatEquityDateLabel.AutoSize = True
+            Me.sweatEquityDateLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
+            Me.sweatEquityDateLabel.Location = New System.Drawing.Point(4, 5)
+            Me.sweatEquityDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.sweatEquityDateLabel.Name = "sweatEquityDateLabel"
+            Me.sweatEquityDateLabel.Size = New System.Drawing.Size(113, 17)
+            Me.sweatEquityDateLabel.TabIndex = 1
+            Me.sweatEquityDateLabel.Text = "sweatEquityDate"
+            '
+            'sweatEquityAmountTextBox
+            '
+            Me.sweatEquityAmountTextBox.Location = New System.Drawing.Point(143, 43)
+            Me.sweatEquityAmountTextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.sweatEquityAmountTextBox.Name = "sweatEquityAmountTextBox"
+            Me.sweatEquityAmountTextBox.Size = New System.Drawing.Size(247, 22)
+            Me.sweatEquityAmountTextBox.TabIndex = 4
+            '
             'sweatEquityAmountLabel
             '
             Me.sweatEquityAmountLabel.AutoSize = True
-            Me.sweatEquityAmountLabel.Location = New System.Drawing.Point(145, 103)
+            Me.sweatEquityAmountLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
+            Me.sweatEquityAmountLabel.Location = New System.Drawing.Point(4, 43)
             Me.sweatEquityAmountLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.sweatEquityAmountLabel.Name = "sweatEquityAmountLabel"
             Me.sweatEquityAmountLabel.Size = New System.Drawing.Size(131, 17)
             Me.sweatEquityAmountLabel.TabIndex = 3
             Me.sweatEquityAmountLabel.Text = "sweatEquityAmount"
             '
-            'sweatEquityAmountTextBox
+            'CheckBox1
             '
-            Me.sweatEquityAmountTextBox.Location = New System.Drawing.Point(333, 103)
-            Me.sweatEquityAmountTextBox.Margin = New System.Windows.Forms.Padding(4)
-            Me.sweatEquityAmountTextBox.Name = "sweatEquityAmountTextBox"
-            Me.sweatEquityAmountTextBox.Size = New System.Drawing.Size(132, 22)
-            Me.sweatEquityAmountTextBox.TabIndex = 4
+            Me.CheckBox1.AutoSize = True
+            Me.CheckBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+            Me.CheckBox1.Location = New System.Drawing.Point(709, 335)
+            Me.CheckBox1.Name = "CheckBox1"
+            Me.CheckBox1.Size = New System.Drawing.Size(104, 21)
+            Me.CheckBox1.TabIndex = 34
+            Me.CheckBox1.Text = "Forgivable?"
+            Me.CheckBox1.UseVisualStyleBackColor = True
+            '
+            'PictureBox1
+            '
+            Me.PictureBox1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.new_catawba_logo
+            Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+            Me.PictureBox1.Location = New System.Drawing.Point(944, 544)
+            Me.PictureBox1.Name = "PictureBox1"
+            Me.PictureBox1.Size = New System.Drawing.Size(252, 117)
+            Me.PictureBox1.TabIndex = 33
+            Me.PictureBox1.TabStop = False
             '
             'monthlyDepositDateLabel
             '
             Me.monthlyDepositDateLabel.AutoSize = True
-            Me.monthlyDepositDateLabel.Location = New System.Drawing.Point(140, 145)
+            Me.monthlyDepositDateLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
+            Me.monthlyDepositDateLabel.Location = New System.Drawing.Point(150, 150)
             Me.monthlyDepositDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.monthlyDepositDateLabel.Name = "monthlyDepositDateLabel"
             Me.monthlyDepositDateLabel.Size = New System.Drawing.Size(135, 17)
@@ -320,7 +356,7 @@ Namespace DatabaseTestApplication2
             '
             'monthlyDepositDate_dateTimePicker
             '
-            Me.monthlyDepositDate_dateTimePicker.CustomFormat = "dd/MM/yyyy"
+            Me.monthlyDepositDate_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.monthlyDepositDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.monthlyDepositDate_dateTimePicker.Location = New System.Drawing.Point(333, 145)
             Me.monthlyDepositDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
@@ -332,6 +368,7 @@ Namespace DatabaseTestApplication2
             'monthlyDepositAmountLabel
             '
             Me.monthlyDepositAmountLabel.AutoSize = True
+            Me.monthlyDepositAmountLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.monthlyDepositAmountLabel.Location = New System.Drawing.Point(116, 187)
             Me.monthlyDepositAmountLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.monthlyDepositAmountLabel.Name = "monthlyDepositAmountLabel"
@@ -350,6 +387,7 @@ Namespace DatabaseTestApplication2
             'HUDHoursDateLabel
             '
             Me.HUDHoursDateLabel.AutoSize = True
+            Me.HUDHoursDateLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.HUDHoursDateLabel.Location = New System.Drawing.Point(179, 229)
             Me.HUDHoursDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.HUDHoursDateLabel.Name = "HUDHoursDateLabel"
@@ -359,7 +397,7 @@ Namespace DatabaseTestApplication2
             '
             'HUDHoursDate_dateTimePicker
             '
-            Me.HUDHoursDate_dateTimePicker.CustomFormat = "dd/MM/yyyy"
+            Me.HUDHoursDate_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.HUDHoursDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.HUDHoursDate_dateTimePicker.Location = New System.Drawing.Point(333, 229)
             Me.HUDHoursDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
@@ -371,6 +409,7 @@ Namespace DatabaseTestApplication2
             'HUDHoursCompleteLabel
             '
             Me.HUDHoursCompleteLabel.AutoSize = True
+            Me.HUDHoursCompleteLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.HUDHoursCompleteLabel.Location = New System.Drawing.Point(140, 271)
             Me.HUDHoursCompleteLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.HUDHoursCompleteLabel.Name = "HUDHoursCompleteLabel"
@@ -389,6 +428,7 @@ Namespace DatabaseTestApplication2
             'financeClassesDateLabel
             '
             Me.financeClassesDateLabel.AutoSize = True
+            Me.financeClassesDateLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.financeClassesDateLabel.Location = New System.Drawing.Point(143, 313)
             Me.financeClassesDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.financeClassesDateLabel.Name = "financeClassesDateLabel"
@@ -410,6 +450,7 @@ Namespace DatabaseTestApplication2
             'financeClassesCompleteLabel
             '
             Me.financeClassesCompleteLabel.AutoSize = True
+            Me.financeClassesCompleteLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.financeClassesCompleteLabel.Location = New System.Drawing.Point(104, 354)
             Me.financeClassesCompleteLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.financeClassesCompleteLabel.Name = "financeClassesCompleteLabel"
@@ -428,7 +469,8 @@ Namespace DatabaseTestApplication2
             'homebuyerEducationDateLabel
             '
             Me.homebuyerEducationDateLabel.AutoSize = True
-            Me.homebuyerEducationDateLabel.Location = New System.Drawing.Point(637, 62)
+            Me.homebuyerEducationDateLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
+            Me.homebuyerEducationDateLabel.Location = New System.Drawing.Point(637, 135)
             Me.homebuyerEducationDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.homebuyerEducationDateLabel.Name = "homebuyerEducationDateLabel"
             Me.homebuyerEducationDateLabel.Size = New System.Drawing.Size(172, 17)
@@ -439,7 +481,7 @@ Namespace DatabaseTestApplication2
             '
             Me.homebuyerEducationDate_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.homebuyerEducationDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.homebuyerEducationDate_dateTimePicker.Location = New System.Drawing.Point(880, 62)
+            Me.homebuyerEducationDate_dateTimePicker.Location = New System.Drawing.Point(817, 133)
             Me.homebuyerEducationDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.homebuyerEducationDate_dateTimePicker.Name = "homebuyerEducationDate_dateTimePicker"
             Me.homebuyerEducationDate_dateTimePicker.Size = New System.Drawing.Size(265, 22)
@@ -449,7 +491,8 @@ Namespace DatabaseTestApplication2
             'homebuyerEducationAmountLabel
             '
             Me.homebuyerEducationAmountLabel.AutoSize = True
-            Me.homebuyerEducationAmountLabel.Location = New System.Drawing.Point(613, 103)
+            Me.homebuyerEducationAmountLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
+            Me.homebuyerEducationAmountLabel.Location = New System.Drawing.Point(637, 192)
             Me.homebuyerEducationAmountLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.homebuyerEducationAmountLabel.Name = "homebuyerEducationAmountLabel"
             Me.homebuyerEducationAmountLabel.Size = New System.Drawing.Size(190, 17)
@@ -458,7 +501,7 @@ Namespace DatabaseTestApplication2
             '
             'homebuyerEducationAmountTextBox
             '
-            Me.homebuyerEducationAmountTextBox.Location = New System.Drawing.Point(880, 103)
+            Me.homebuyerEducationAmountTextBox.Location = New System.Drawing.Point(835, 187)
             Me.homebuyerEducationAmountTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.homebuyerEducationAmountTextBox.Name = "homebuyerEducationAmountTextBox"
             Me.homebuyerEducationAmountTextBox.Size = New System.Drawing.Size(132, 22)
@@ -467,7 +510,8 @@ Namespace DatabaseTestApplication2
             'mortgage1PriceLabel
             '
             Me.mortgage1PriceLabel.AutoSize = True
-            Me.mortgage1PriceLabel.Location = New System.Drawing.Point(723, 145)
+            Me.mortgage1PriceLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
+            Me.mortgage1PriceLabel.Location = New System.Drawing.Point(671, 234)
             Me.mortgage1PriceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage1PriceLabel.Name = "mortgage1PriceLabel"
             Me.mortgage1PriceLabel.Size = New System.Drawing.Size(108, 17)
@@ -476,7 +520,7 @@ Namespace DatabaseTestApplication2
             '
             'mortgage1PriceTextBox
             '
-            Me.mortgage1PriceTextBox.Location = New System.Drawing.Point(880, 145)
+            Me.mortgage1PriceTextBox.Location = New System.Drawing.Point(787, 229)
             Me.mortgage1PriceTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.mortgage1PriceTextBox.Name = "mortgage1PriceTextBox"
             Me.mortgage1PriceTextBox.Size = New System.Drawing.Size(132, 22)
@@ -485,35 +529,36 @@ Namespace DatabaseTestApplication2
             'mortgage1BankLabel
             '
             Me.mortgage1BankLabel.AutoSize = True
-            Me.mortgage1BankLabel.Location = New System.Drawing.Point(723, 187)
+            Me.mortgage1BankLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
+            Me.mortgage1BankLabel.Location = New System.Drawing.Point(654, 289)
             Me.mortgage1BankLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage1BankLabel.Name = "mortgage1BankLabel"
             Me.mortgage1BankLabel.Size = New System.Drawing.Size(108, 17)
             Me.mortgage1BankLabel.TabIndex = 23
             Me.mortgage1BankLabel.Text = "mortgage1Bank"
             '
-            'mortgage1ForgivableLabel
+            'mortgage1BankTextBox
             '
-            Me.mortgage1ForgivableLabel.AutoSize = True
-            Me.mortgage1ForgivableLabel.Location = New System.Drawing.Point(677, 229)
-            Me.mortgage1ForgivableLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.mortgage1ForgivableLabel.Name = "mortgage1ForgivableLabel"
-            Me.mortgage1ForgivableLabel.Size = New System.Drawing.Size(142, 17)
-            Me.mortgage1ForgivableLabel.TabIndex = 25
-            Me.mortgage1ForgivableLabel.Text = "mortgage1Forgivable"
+            Me.mortgage1BankTextBox.Location = New System.Drawing.Point(770, 284)
+            Me.mortgage1BankTextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.mortgage1BankTextBox.Name = "mortgage1BankTextBox"
+            Me.mortgage1BankTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage1BankTextBox.TabIndex = 24
             '
             'mortgage1ForgivableTextBox
             '
-            Me.mortgage1ForgivableTextBox.Location = New System.Drawing.Point(880, 229)
+            Me.mortgage1ForgivableTextBox.Location = New System.Drawing.Point(0, 674)
             Me.mortgage1ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.mortgage1ForgivableTextBox.Name = "mortgage1ForgivableTextBox"
             Me.mortgage1ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage1ForgivableTextBox.TabIndex = 26
+            Me.mortgage1ForgivableTextBox.Visible = False
             '
             'mortgage1OriginalBalanceLabel
             '
             Me.mortgage1OriginalBalanceLabel.AutoSize = True
-            Me.mortgage1OriginalBalanceLabel.Location = New System.Drawing.Point(632, 271)
+            Me.mortgage1OriginalBalanceLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
+            Me.mortgage1OriginalBalanceLabel.Location = New System.Drawing.Point(613, 388)
             Me.mortgage1OriginalBalanceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage1OriginalBalanceLabel.Name = "mortgage1OriginalBalanceLabel"
             Me.mortgage1OriginalBalanceLabel.Size = New System.Drawing.Size(176, 17)
@@ -522,7 +567,7 @@ Namespace DatabaseTestApplication2
             '
             'mortgage1OriginalBalanceTextBox
             '
-            Me.mortgage1OriginalBalanceTextBox.Location = New System.Drawing.Point(880, 271)
+            Me.mortgage1OriginalBalanceTextBox.Location = New System.Drawing.Point(806, 385)
             Me.mortgage1OriginalBalanceTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.mortgage1OriginalBalanceTextBox.Name = "mortgage1OriginalBalanceTextBox"
             Me.mortgage1OriginalBalanceTextBox.Size = New System.Drawing.Size(132, 22)
@@ -531,7 +576,8 @@ Namespace DatabaseTestApplication2
             'mortgage1NumberOfYearsLabel
             '
             Me.mortgage1NumberOfYearsLabel.AutoSize = True
-            Me.mortgage1NumberOfYearsLabel.Location = New System.Drawing.Point(629, 313)
+            Me.mortgage1NumberOfYearsLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
+            Me.mortgage1NumberOfYearsLabel.Location = New System.Drawing.Point(613, 461)
             Me.mortgage1NumberOfYearsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage1NumberOfYearsLabel.Name = "mortgage1NumberOfYearsLabel"
             Me.mortgage1NumberOfYearsLabel.Size = New System.Drawing.Size(178, 17)
@@ -540,7 +586,7 @@ Namespace DatabaseTestApplication2
             '
             'mortgage1NumberOfYearsTextBox
             '
-            Me.mortgage1NumberOfYearsTextBox.Location = New System.Drawing.Point(880, 313)
+            Me.mortgage1NumberOfYearsTextBox.Location = New System.Drawing.Point(821, 472)
             Me.mortgage1NumberOfYearsTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.mortgage1NumberOfYearsTextBox.Name = "mortgage1NumberOfYearsTextBox"
             Me.mortgage1NumberOfYearsTextBox.Size = New System.Drawing.Size(132, 22)
@@ -549,7 +595,8 @@ Namespace DatabaseTestApplication2
             'general_UIDLabel
             '
             Me.general_UIDLabel.AutoSize = True
-            Me.general_UIDLabel.Location = New System.Drawing.Point(751, 354)
+            Me.general_UIDLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
+            Me.general_UIDLabel.Location = New System.Drawing.Point(30, 38)
             Me.general_UIDLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.general_UIDLabel.Name = "general_UIDLabel"
             Me.general_UIDLabel.Size = New System.Drawing.Size(87, 17)
@@ -561,11 +608,33 @@ Namespace DatabaseTestApplication2
             Me.general_UID_comboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
             Me.general_UID_comboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
             Me.general_UID_comboBox.FormattingEnabled = True
-            Me.general_UID_comboBox.Location = New System.Drawing.Point(880, 354)
+            Me.general_UID_comboBox.Location = New System.Drawing.Point(146, 35)
             Me.general_UID_comboBox.Margin = New System.Windows.Forms.Padding(4)
             Me.general_UID_comboBox.Name = "general_UID_comboBox"
             Me.general_UID_comboBox.Size = New System.Drawing.Size(273, 24)
             Me.general_UID_comboBox.TabIndex = 32
+            '
+            'MenuStrip1
+            '
+            Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+            Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.GeneralInfoToolStripMenuItem})
+            Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+            Me.MenuStrip1.Name = "MenuStrip1"
+            Me.MenuStrip1.Size = New System.Drawing.Size(1217, 28)
+            Me.MenuStrip1.TabIndex = 35
+            Me.MenuStrip1.Text = "MenuStrip1"
+            '
+            'MainMenuToolStripMenuItem
+            '
+            Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
+            Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(97, 24)
+            Me.MainMenuToolStripMenuItem.Text = "Main Menu"
+            '
+            'GeneralInfoToolStripMenuItem
+            '
+            Me.GeneralInfoToolStripMenuItem.Name = "GeneralInfoToolStripMenuItem"
+            Me.GeneralInfoToolStripMenuItem.Size = New System.Drawing.Size(104, 24)
+            Me.GeneralInfoToolStripMenuItem.Text = "General Info"
             '
             'panel3
             '
@@ -577,16 +646,16 @@ Namespace DatabaseTestApplication2
             Me.panel3.Location = New System.Drawing.Point(0, 27)
             Me.panel3.Margin = New System.Windows.Forms.Padding(4)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(1224, 600)
+            Me.panel3.Size = New System.Drawing.Size(1243, 708)
             Me.panel3.TabIndex = 19
             '
             'panel4
             '
             Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
-            Me.panel4.Location = New System.Drawing.Point(1211, 0)
+            Me.panel4.Location = New System.Drawing.Point(1230, 0)
             Me.panel4.Margin = New System.Windows.Forms.Padding(4)
             Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(13, 588)
+            Me.panel4.Size = New System.Drawing.Size(13, 696)
             Me.panel4.TabIndex = 3
             '
             'panel5
@@ -595,25 +664,26 @@ Namespace DatabaseTestApplication2
             Me.panel5.Location = New System.Drawing.Point(0, 0)
             Me.panel5.Margin = New System.Windows.Forms.Padding(4)
             Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(13, 588)
+            Me.panel5.Size = New System.Drawing.Size(13, 696)
             Me.panel5.TabIndex = 5
             '
             'panel6
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 588)
+            Me.panel6.Location = New System.Drawing.Point(0, 696)
             Me.panel6.Margin = New System.Windows.Forms.Padding(4)
             Me.panel6.Name = "panel6"
-            Me.panel6.Size = New System.Drawing.Size(1224, 12)
+            Me.panel6.Size = New System.Drawing.Size(1243, 12)
             Me.panel6.TabIndex = 6
             '
             'frmtracking
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(1224, 627)
+            Me.ClientSize = New System.Drawing.Size(1243, 735)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
+            Me.MainMenuStrip = Me.MenuStrip1
             Me.Margin = New System.Windows.Forms.Padding(4)
             Me.Name = "frmtracking"
             Me.Text = "Tracking"
@@ -624,6 +694,11 @@ Namespace DatabaseTestApplication2
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.Panel1.ResumeLayout(False)
             Me.Panel1.PerformLayout()
+            Me.Panel2.ResumeLayout(False)
+            Me.Panel2.PerformLayout()
+            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+            Me.MenuStrip1.ResumeLayout(False)
+            Me.MenuStrip1.PerformLayout()
             Me.panel3.ResumeLayout(False)
             Me.panel3.PerformLayout()
             Me.ResumeLayout(False)
@@ -631,57 +706,62 @@ Namespace DatabaseTestApplication2
 
         End Sub
         Friend WithEvents BindingNavigator1 As System.Windows.Forms.BindingNavigator
-        Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
-        Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
-        Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
-        Friend WithEvents BindingNavigatorMoveFirstItem As System.Windows.Forms.ToolStripButton
-        Friend WithEvents BindingNavigatorMovePreviousItem As System.Windows.Forms.ToolStripButton
-        Friend WithEvents BindingNavigatorSeparator As System.Windows.Forms.ToolStripSeparator
-        Friend WithEvents BindingNavigatorPositionItem As System.Windows.Forms.ToolStripTextBox
-        Friend WithEvents BindingNavigatorSeparator1 As System.Windows.Forms.ToolStripSeparator
-        Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
-        Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
-        Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
-        Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
-        Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
-        Friend WithEvents Panel1 As System.Windows.Forms.Panel
-        Friend WithEvents trackingBindingSource As System.Windows.Forms.BindingSource
-        Friend WithEvents sweatEquityDate_dateTimePicker As System.Windows.Forms.DateTimePicker
-        Friend WithEvents sweatEquityDateLabel As System.Windows.Forms.Label
-        Friend WithEvents sweatEquityAmountTextBox As System.Windows.Forms.TextBox
-        Friend WithEvents sweatEquityAmountLabel As System.Windows.Forms.Label
-        Friend WithEvents monthlyDepositDate_dateTimePicker As System.Windows.Forms.DateTimePicker
-        Friend WithEvents monthlyDepositDateLabel As System.Windows.Forms.Label
-        Friend WithEvents monthlyDepositAmountTextBox As System.Windows.Forms.TextBox
-        Friend WithEvents monthlyDepositAmountLabel As System.Windows.Forms.Label
-        Friend WithEvents HUDHoursDate_dateTimePicker As System.Windows.Forms.DateTimePicker
-        Friend WithEvents HUDHoursDateLabel As System.Windows.Forms.Label
-        Friend WithEvents HUDHoursCompleteTextBox As System.Windows.Forms.TextBox
-        Friend WithEvents HUDHoursCompleteLabel As System.Windows.Forms.Label
-        Friend WithEvents financeClassesDate_dateTimePicker As System.Windows.Forms.DateTimePicker
-        Friend WithEvents financeClassesDateLabel As System.Windows.Forms.Label
-        Friend WithEvents financeClassesCompleteTextBox As System.Windows.Forms.TextBox
-        Friend WithEvents financeClassesCompleteLabel As System.Windows.Forms.Label
-        Friend WithEvents homebuyerEducationDate_dateTimePicker As System.Windows.Forms.DateTimePicker
-        Friend WithEvents homebuyerEducationDateLabel As System.Windows.Forms.Label
-        Friend WithEvents homebuyerEducationAmountTextBox As System.Windows.Forms.TextBox
-        Friend WithEvents homebuyerEducationAmountLabel As System.Windows.Forms.Label
-        Friend WithEvents mortgage1PriceTextBox As System.Windows.Forms.TextBox
-        Friend WithEvents mortgage1PriceLabel As System.Windows.Forms.Label
-        Friend WithEvents mortgage1BankLabel As System.Windows.Forms.Label
-        Friend WithEvents mortgage1ForgivableTextBox As System.Windows.Forms.TextBox
-        Friend WithEvents mortgage1ForgivableLabel As System.Windows.Forms.Label
+		Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
+		Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
+		Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
+		Friend WithEvents BindingNavigatorMoveFirstItem As System.Windows.Forms.ToolStripButton
+		Friend WithEvents BindingNavigatorMovePreviousItem As System.Windows.Forms.ToolStripButton
+		Friend WithEvents BindingNavigatorSeparator As System.Windows.Forms.ToolStripSeparator
+		Friend WithEvents BindingNavigatorPositionItem As System.Windows.Forms.ToolStripTextBox
+		Friend WithEvents BindingNavigatorSeparator1 As System.Windows.Forms.ToolStripSeparator
+		Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
+		Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
+		Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
+		Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
+		Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
+		Friend WithEvents Panel1 As System.Windows.Forms.Panel
+		Friend WithEvents trackingBindingSource As System.Windows.Forms.BindingSource
+		Friend WithEvents sweatEquityDate_dateTimePicker As System.Windows.Forms.DateTimePicker
+		Friend WithEvents sweatEquityDateLabel As System.Windows.Forms.Label
+		Friend WithEvents sweatEquityAmountTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents sweatEquityAmountLabel As System.Windows.Forms.Label
+		Friend WithEvents monthlyDepositDate_dateTimePicker As System.Windows.Forms.DateTimePicker
+		Friend WithEvents monthlyDepositDateLabel As System.Windows.Forms.Label
+		Friend WithEvents monthlyDepositAmountTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents monthlyDepositAmountLabel As System.Windows.Forms.Label
+		Friend WithEvents HUDHoursDate_dateTimePicker As System.Windows.Forms.DateTimePicker
+		Friend WithEvents HUDHoursDateLabel As System.Windows.Forms.Label
+		Friend WithEvents HUDHoursCompleteTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents HUDHoursCompleteLabel As System.Windows.Forms.Label
+		Friend WithEvents financeClassesDate_dateTimePicker As System.Windows.Forms.DateTimePicker
+		Friend WithEvents financeClassesDateLabel As System.Windows.Forms.Label
+		Friend WithEvents financeClassesCompleteTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents financeClassesCompleteLabel As System.Windows.Forms.Label
+		Friend WithEvents homebuyerEducationDate_dateTimePicker As System.Windows.Forms.DateTimePicker
+		Friend WithEvents homebuyerEducationDateLabel As System.Windows.Forms.Label
+		Friend WithEvents homebuyerEducationAmountTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents homebuyerEducationAmountLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage1PriceTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage1PriceLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage1BankTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage1BankLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage1ForgivableTextBox As System.Windows.Forms.TextBox
         Friend WithEvents mortgage1OriginalBalanceTextBox As System.Windows.Forms.TextBox
         Friend WithEvents mortgage1OriginalBalanceLabel As System.Windows.Forms.Label
-        Friend WithEvents mortgage1NumberOfYearsTextBox As System.Windows.Forms.TextBox
-        Friend WithEvents mortgage1NumberOfYearsLabel As System.Windows.Forms.Label
-        Friend WithEvents general_UID_comboBox As System.Windows.Forms.ComboBox
-        Friend WithEvents general_UIDLabel As System.Windows.Forms.Label
-        Friend WithEvents panel3 As System.Windows.Forms.Panel
-        Friend WithEvents panel4 As System.Windows.Forms.Panel
-        Friend WithEvents panel5 As System.Windows.Forms.Panel
-        Friend WithEvents panel6 As System.Windows.Forms.Panel
-        Friend WithEvents ComboBox1 As ComboBox
+		Friend WithEvents mortgage1NumberOfYearsTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage1NumberOfYearsLabel As System.Windows.Forms.Label
+		Friend WithEvents general_UID_comboBox As System.Windows.Forms.ComboBox
+		Friend WithEvents general_UIDLabel As System.Windows.Forms.Label
+		Friend WithEvents panel3 As System.Windows.Forms.Panel
+		Friend WithEvents panel4 As System.Windows.Forms.Panel
+		Friend WithEvents panel5 As System.Windows.Forms.Panel
+		Friend WithEvents panel6 As System.Windows.Forms.Panel
+        Friend WithEvents CheckBox1 As CheckBox
+        Friend WithEvents PictureBox1 As PictureBox
+        Friend WithEvents MenuStrip1 As MenuStrip
+        Friend WithEvents MainMenuToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents GeneralInfoToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents Panel2 As Panel
     End Class
 
 End Namespace

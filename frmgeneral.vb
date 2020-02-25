@@ -48,7 +48,13 @@ Namespace DatabaseTestApplication2
 				Return
 			End If
 			generalBindingSource.EndEdit()
-			ctx.SaveChanges()
+			Try
+				ctx.SaveChanges()
+
+			Catch
+				MessageBox.Show("Please enter valid data")
+
+			End Try
 		End Sub
 
 		Private Sub Form1_FormClosing(sender As System.Object, e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing

@@ -23,35 +23,48 @@ Namespace DatabaseTestApplication2
 			ctx.trackings.Load()
 			Dim _entities As BindingList(Of tracking) = ctx.trackings.Local.ToBindingList()
 			trackingBindingSource.DataSource = _entities
-			Me.sweatEquityDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "sweatEquityDate", True ))
-			Me.sweatEquityAmountTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "sweatEquityAmount", True ))
-			Me.monthlyDepositDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "monthlyDepositDate", True ))
-			Me.monthlyDepositAmountTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "monthlyDepositAmount", True ))
-			Me.HUDHoursDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "HUDHoursDate", True ))
-			Me.HUDHoursCompleteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "HUDHoursComplete", True ))
-			Me.financeClassesDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "financeClassesDate", True ))
-			Me.financeClassesCompleteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "financeClassesComplete", True ))
-			Me.homebuyerEducationDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "homebuyerEducationDate", True ))
-			Me.homebuyerEducationAmountTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "homebuyerEducationAmount", True ))
-			Me.mortgage1PriceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1Price", True ))
-			Me.ComboBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1Bank", True))
-			Me.mortgage1ForgivableTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1Forgivable", True ))
-			Me.mortgage1OriginalBalanceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1OriginalBalance", True ))
-			Me.mortgage1NumberOfYearsTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1NumberOfYears", True ))
+			Me.sweatEquityDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "sweatEquityDate", True))
+			Me.sweatEquityAmountTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "sweatEquityAmount", True))
+			Me.monthlyDepositDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "monthlyDepositDate", True))
+			Me.monthlyDepositAmountTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "monthlyDepositAmount", True))
+			Me.HUDHoursDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "HUDHoursDate", True))
+			Me.HUDHoursCompleteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "HUDHoursComplete", True))
+			Me.financeClassesDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "financeClassesDate", True))
+			Me.financeClassesCompleteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "financeClassesComplete", True))
+			Me.homebuyerEducationDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "homebuyerEducationDate", True))
+			Me.homebuyerEducationAmountTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "homebuyerEducationAmount", True))
+			Me.mortgage1PriceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1Price", True))
+			Me.mortgage1BankTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1Bank", True))
+			Me.mortgage1ForgivableTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1Forgivable", True))
+			Me.mortgage1OriginalBalanceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1OriginalBalance", True))
+			Me.mortgage1NumberOfYearsTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1NumberOfYears", True))
 			Me.general_UID_comboBox.DataSource = ctx.generals.ToList()
 			Me.general_UID_comboBox.DisplayMember = "UID"
 			Me.general_UID_comboBox.ValueMember = "UID"
 			Me.general_UID_comboBox.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.trackingBindingSource, "general_UID", True))
 		End Sub
-		
+
 		Private Sub ToolStripButton1_Click(sender As System.Object, e As System.EventArgs) Handles ToolStripButton1.Click
+			If CheckBox1.Checked Then
+				mortgage1ForgivableTextBox.Text = "1"
+			Else
+				mortgage1ForgivableTextBox.Text = "0"
+			End If
 			If Not Me.Validate() Then
 				Return
 			End If
-			trackingBindingSource.EndEdit()
-			ctx.SaveChanges()
+			Try
+				trackingBindingSource.EndEdit()
+			Catch
+
+			End Try
+			Try
+				ctx.SaveChanges()
+			Catch
+				MessageBox.Show("aint make no cents")
+			End Try
 		End Sub
-		
+
 		Private Sub Form1_FormClosing(sender As System.Object, e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
 			e.Cancel = False
 		End Sub
@@ -164,15 +177,15 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub mortgage1BankTextBox_Validating(sender As Object, e As CancelEventArgs) Handles ComboBox1.Validating
+		Private Sub mortgage1BankTextBox_Validating(sender As Object, e As CancelEventArgs) Handles mortgage1BankTextBox.Validating
 
 			e.Cancel = False
-			If String.IsNullOrEmpty(ComboBox1.Text) Then
-				e.Cancel = False
-				ErrorProvider1.SetError(ComboBox1, "The field mortgage1Bank is required")
+			If String.IsNullOrEmpty(mortgage1BankTextBox.Text) Then
+				e.Cancel = True
+				ErrorProvider1.SetError(mortgage1BankTextBox, "The field mortgage1Bank is required")
 			End If
 			If Not e.Cancel Then
-				ErrorProvider1.SetError(ComboBox1, "")
+				ErrorProvider1.SetError(mortgage1BankTextBox, "")
 			End If
 		End Sub
 
@@ -246,9 +259,15 @@ Namespace DatabaseTestApplication2
 			trackingBindingSource.AddNew()
 		End Sub
 
-		Private Sub mortgage1BankTextBox_TextChanged(sender As Object, e As EventArgs)
+		Private Sub MainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MainMenuToolStripMenuItem.Click
+			Form1.Show()
+			Me.Close()
+		End Sub
 
+		Private Sub GeneralInfoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GeneralInfoToolStripMenuItem.Click
+			frmgeneral.Show()
+			Me.Close()
 		End Sub
 	End Class
-	
+
 End Namespace

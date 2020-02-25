@@ -43,7 +43,7 @@ Namespace DatabaseTestApplication2
     Public Class MyDateTimePickerCell
         Inherits DataGridViewTextBoxCell
 
-        Public Shared DATE_FORMAT As String = "dd/MM/yyyy, hh:mm"
+        Public Shared DATE_FORMAT As String = "MM/dd/yyyy"
 
         Public Sub New()
             MyBase.New()
