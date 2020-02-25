@@ -29,6 +29,31 @@ Namespace DatabaseTestApplication2
         Public Property mortgage1OriginalBalance As Nullable(Of Double)
         Public Property mortgage1NumberOfYears As Nullable(Of Integer)
         Public Property general_UID As Integer
+        Public Property mortgage2Price As Nullable(Of Double)
+        Public Property mortgage2Bank As String
+        Public Property mortgage2Forgivable As Nullable(Of SByte)
+        Public Property mortgage2OriginalBalance As Nullable(Of Double)
+        Public Property morgage2NumberOfYears As Nullable(Of Integer)
+        Public Property mortgage3Price As Nullable(Of Double)
+        Public Property mortgage3Bank As String
+        Public Property mortgage3Forgivable As Nullable(Of SByte)
+        Public Property mortgage3OriginalBalance As Nullable(Of Double)
+        Public Property mortgage3NumberOfYears As Nullable(Of Integer)
+        Public Property mortgage4Price As Nullable(Of Double)
+        Public Property mortgage4Bank As String
+        Public Property mortgage4Forgivable As Nullable(Of SByte)
+        Public Property mortgage4OriginalBalance As Nullable(Of Double)
+        Public Property mortgage4NumberOfYears As Nullable(Of Integer)
+        Public Property mortgage5Price As Nullable(Of Double)
+        Public Property mortgage5Bank As String
+        Public Property mortgage5Forgivable As Nullable(Of SByte)
+        Public Property mortgage5OriginalBalance As Nullable(Of Double)
+        Public Property mortgage5NumberOfYears As Nullable(Of Integer)
+        Public Property mortgage6Price As Nullable(Of Double)
+        Public Property mortgage6Bank As String
+        Public Property mortgage6Forgivable As Nullable(Of SByte)
+        Public Property mortgage6OriginalBalance As Nullable(Of Double)
+        Public Property mortgage6NumberOfYears As Nullable(Of Integer)
     
         Public Overridable Property general As general
     

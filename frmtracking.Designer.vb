@@ -37,7 +37,6 @@ Namespace DatabaseTestApplication2
             Me.components = New System.ComponentModel.Container()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmtracking))
             Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
-            Me.trackingBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
             Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
             Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
@@ -50,15 +49,15 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
             Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
             Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+            Me.trackingBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
             Me.Panel1 = New System.Windows.Forms.Panel()
-            Me.Panel2 = New System.Windows.Forms.Panel()
-            Me.sweatEquityDate_dateTimePicker = New System.Windows.Forms.DateTimePicker()
+            Me.general_UIDLabel = New System.Windows.Forms.Label()
+            Me.general_UID_comboBox = New System.Windows.Forms.ComboBox()
             Me.sweatEquityDateLabel = New System.Windows.Forms.Label()
-            Me.sweatEquityAmountTextBox = New System.Windows.Forms.TextBox()
+            Me.sweatEquityDate_dateTimePicker = New System.Windows.Forms.DateTimePicker()
             Me.sweatEquityAmountLabel = New System.Windows.Forms.Label()
-            Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-            Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+            Me.sweatEquityAmountTextBox = New System.Windows.Forms.TextBox()
             Me.monthlyDepositDateLabel = New System.Windows.Forms.Label()
             Me.monthlyDepositDate_dateTimePicker = New System.Windows.Forms.DateTimePicker()
             Me.monthlyDepositAmountLabel = New System.Windows.Forms.Label()
@@ -79,16 +78,62 @@ Namespace DatabaseTestApplication2
             Me.mortgage1PriceTextBox = New System.Windows.Forms.TextBox()
             Me.mortgage1BankLabel = New System.Windows.Forms.Label()
             Me.mortgage1BankTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage1ForgivableLabel = New System.Windows.Forms.Label()
             Me.mortgage1ForgivableTextBox = New System.Windows.Forms.TextBox()
             Me.mortgage1OriginalBalanceLabel = New System.Windows.Forms.Label()
             Me.mortgage1OriginalBalanceTextBox = New System.Windows.Forms.TextBox()
             Me.mortgage1NumberOfYearsLabel = New System.Windows.Forms.Label()
             Me.mortgage1NumberOfYearsTextBox = New System.Windows.Forms.TextBox()
-            Me.general_UIDLabel = New System.Windows.Forms.Label()
-            Me.general_UID_comboBox = New System.Windows.Forms.ComboBox()
-            Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-            Me.MainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.GeneralInfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.mortgage2PriceLabel = New System.Windows.Forms.Label()
+            Me.mortgage2PriceTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage2BankLabel = New System.Windows.Forms.Label()
+            Me.mortgage2BankTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage2ForgivableLabel = New System.Windows.Forms.Label()
+            Me.mortgage2ForgivableTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage2OriginalBalanceLabel = New System.Windows.Forms.Label()
+            Me.mortgage2OriginalBalanceTextBox = New System.Windows.Forms.TextBox()
+            Me.morgage2NumberOfYearsLabel = New System.Windows.Forms.Label()
+            Me.morgage2NumberOfYearsTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage3PriceLabel = New System.Windows.Forms.Label()
+            Me.mortgage3PriceTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage3BankLabel = New System.Windows.Forms.Label()
+            Me.mortgage3BankTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage3ForgivableLabel = New System.Windows.Forms.Label()
+            Me.mortgage3ForgivableTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage3OriginalBalanceLabel = New System.Windows.Forms.Label()
+            Me.mortgage3OriginalBalanceTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage3NumberOfYearsLabel = New System.Windows.Forms.Label()
+            Me.mortgage3NumberOfYearsTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage4PriceLabel = New System.Windows.Forms.Label()
+            Me.mortgage4PriceTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage4BankLabel = New System.Windows.Forms.Label()
+            Me.mortgage4BankTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage4ForgivableLabel = New System.Windows.Forms.Label()
+            Me.mortgage4ForgivableTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage4OriginalBalanceLabel = New System.Windows.Forms.Label()
+            Me.mortgage4OriginalBalanceTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage4NumberOfYearsLabel = New System.Windows.Forms.Label()
+            Me.mortgage4NumberOfYearsTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage5PriceLabel = New System.Windows.Forms.Label()
+            Me.mortgage5PriceTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage5BankLabel = New System.Windows.Forms.Label()
+            Me.mortgage5BankTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage5ForgivableLabel = New System.Windows.Forms.Label()
+            Me.mortgage5ForgivableTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage5OriginalBalanceLabel = New System.Windows.Forms.Label()
+            Me.mortgage5OriginalBalanceTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage5NumberOfYearsLabel = New System.Windows.Forms.Label()
+            Me.mortgage5NumberOfYearsTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage6PriceLabel = New System.Windows.Forms.Label()
+            Me.mortgage6PriceTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage6BankLabel = New System.Windows.Forms.Label()
+            Me.mortgage6BankTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage6ForgivableLabel = New System.Windows.Forms.Label()
+            Me.mortgage6ForgivableTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage6OriginalBalanceLabel = New System.Windows.Forms.Label()
+            Me.mortgage6OriginalBalanceTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage6NumberOfYearsLabel = New System.Windows.Forms.Label()
+            Me.mortgage6NumberOfYearsTextBox = New System.Windows.Forms.TextBox()
             Me.panel3 = New System.Windows.Forms.Panel()
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
@@ -98,9 +143,6 @@ Namespace DatabaseTestApplication2
             CType(Me.trackingBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.Panel1.SuspendLayout()
-            Me.Panel2.SuspendLayout()
-            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-            Me.MenuStrip1.SuspendLayout()
             Me.panel3.SuspendLayout()
             Me.SuspendLayout()
             '
@@ -120,7 +162,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigator1.Name = "BindingNavigator1"
             Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(13, 0, 13, 0)
             Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-            Me.BindingNavigator1.Size = New System.Drawing.Size(1243, 27)
+            Me.BindingNavigator1.Size = New System.Drawing.Size(1345, 27)
             Me.BindingNavigator1.TabIndex = 0
             Me.BindingNavigator1.Text = "BindingNavigator1"
             '
@@ -227,12 +269,12 @@ Namespace DatabaseTestApplication2
             '
             Me.Panel1.AutoScroll = True
             Me.Panel1.AutoSize = True
-            Me.Panel1.BackColor = System.Drawing.Color.Transparent
-            Me.Panel1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.angryimg__12_
-            Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-            Me.Panel1.Controls.Add(Me.Panel2)
-            Me.Panel1.Controls.Add(Me.CheckBox1)
-            Me.Panel1.Controls.Add(Me.PictureBox1)
+            Me.Panel1.Controls.Add(Me.general_UIDLabel)
+            Me.Panel1.Controls.Add(Me.general_UID_comboBox)
+            Me.Panel1.Controls.Add(Me.sweatEquityDateLabel)
+            Me.Panel1.Controls.Add(Me.sweatEquityDate_dateTimePicker)
+            Me.Panel1.Controls.Add(Me.sweatEquityAmountLabel)
+            Me.Panel1.Controls.Add(Me.sweatEquityAmountTextBox)
             Me.Panel1.Controls.Add(Me.monthlyDepositDateLabel)
             Me.Panel1.Controls.Add(Me.monthlyDepositDate_dateTimePicker)
             Me.Panel1.Controls.Add(Me.monthlyDepositAmountLabel)
@@ -253,354 +295,77 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.mortgage1PriceTextBox)
             Me.Panel1.Controls.Add(Me.mortgage1BankLabel)
             Me.Panel1.Controls.Add(Me.mortgage1BankTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage1ForgivableLabel)
             Me.Panel1.Controls.Add(Me.mortgage1ForgivableTextBox)
             Me.Panel1.Controls.Add(Me.mortgage1OriginalBalanceLabel)
             Me.Panel1.Controls.Add(Me.mortgage1OriginalBalanceTextBox)
             Me.Panel1.Controls.Add(Me.mortgage1NumberOfYearsLabel)
             Me.Panel1.Controls.Add(Me.mortgage1NumberOfYearsTextBox)
-            Me.Panel1.Controls.Add(Me.general_UIDLabel)
-            Me.Panel1.Controls.Add(Me.general_UID_comboBox)
-            Me.Panel1.Controls.Add(Me.MenuStrip1)
+            Me.Panel1.Controls.Add(Me.mortgage2PriceLabel)
+            Me.Panel1.Controls.Add(Me.mortgage2PriceTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage2BankLabel)
+            Me.Panel1.Controls.Add(Me.mortgage2BankTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage2ForgivableLabel)
+            Me.Panel1.Controls.Add(Me.mortgage2ForgivableTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage2OriginalBalanceLabel)
+            Me.Panel1.Controls.Add(Me.mortgage2OriginalBalanceTextBox)
+            Me.Panel1.Controls.Add(Me.morgage2NumberOfYearsLabel)
+            Me.Panel1.Controls.Add(Me.morgage2NumberOfYearsTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage3PriceLabel)
+            Me.Panel1.Controls.Add(Me.mortgage3PriceTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage3BankLabel)
+            Me.Panel1.Controls.Add(Me.mortgage3BankTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage3ForgivableLabel)
+            Me.Panel1.Controls.Add(Me.mortgage3ForgivableTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage3OriginalBalanceLabel)
+            Me.Panel1.Controls.Add(Me.mortgage3OriginalBalanceTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage3NumberOfYearsLabel)
+            Me.Panel1.Controls.Add(Me.mortgage3NumberOfYearsTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage4PriceLabel)
+            Me.Panel1.Controls.Add(Me.mortgage4PriceTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage4BankLabel)
+            Me.Panel1.Controls.Add(Me.mortgage4BankTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage4ForgivableLabel)
+            Me.Panel1.Controls.Add(Me.mortgage4ForgivableTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage4OriginalBalanceLabel)
+            Me.Panel1.Controls.Add(Me.mortgage4OriginalBalanceTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage4NumberOfYearsLabel)
+            Me.Panel1.Controls.Add(Me.mortgage4NumberOfYearsTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage5PriceLabel)
+            Me.Panel1.Controls.Add(Me.mortgage5PriceTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage5BankLabel)
+            Me.Panel1.Controls.Add(Me.mortgage5BankTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage5ForgivableLabel)
+            Me.Panel1.Controls.Add(Me.mortgage5ForgivableTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage5OriginalBalanceLabel)
+            Me.Panel1.Controls.Add(Me.mortgage5OriginalBalanceTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage5NumberOfYearsLabel)
+            Me.Panel1.Controls.Add(Me.mortgage5NumberOfYearsTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage6PriceLabel)
+            Me.Panel1.Controls.Add(Me.mortgage6PriceTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage6BankLabel)
+            Me.Panel1.Controls.Add(Me.mortgage6BankTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage6ForgivableLabel)
+            Me.Panel1.Controls.Add(Me.mortgage6ForgivableTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage6OriginalBalanceLabel)
+            Me.Panel1.Controls.Add(Me.mortgage6OriginalBalanceTextBox)
+            Me.Panel1.Controls.Add(Me.mortgage6NumberOfYearsLabel)
+            Me.Panel1.Controls.Add(Me.mortgage6NumberOfYearsTextBox)
             Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.Panel1.Location = New System.Drawing.Point(13, 0)
             Me.Panel1.Margin = New System.Windows.Forms.Padding(13, 4, 13, 4)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(1217, 696)
+            Me.Panel1.Size = New System.Drawing.Size(1319, 592)
             Me.Panel1.TabIndex = 1
-            '
-            'Panel2
-            '
-            Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-            Me.Panel2.Controls.Add(Me.sweatEquityDate_dateTimePicker)
-            Me.Panel2.Controls.Add(Me.sweatEquityDateLabel)
-            Me.Panel2.Controls.Add(Me.sweatEquityAmountTextBox)
-            Me.Panel2.Controls.Add(Me.sweatEquityAmountLabel)
-            Me.Panel2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.Panel2.Location = New System.Drawing.Point(78, 484)
-            Me.Panel2.Name = "Panel2"
-            Me.Panel2.Size = New System.Drawing.Size(406, 82)
-            Me.Panel2.TabIndex = 36
-            '
-            'sweatEquityDate_dateTimePicker
-            '
-            Me.sweatEquityDate_dateTimePicker.CustomFormat = "dd/MM/yyyy"
-            Me.sweatEquityDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.sweatEquityDate_dateTimePicker.Location = New System.Drawing.Point(125, 4)
-            Me.sweatEquityDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
-            Me.sweatEquityDate_dateTimePicker.Name = "sweatEquityDate_dateTimePicker"
-            Me.sweatEquityDate_dateTimePicker.Size = New System.Drawing.Size(265, 22)
-            Me.sweatEquityDate_dateTimePicker.TabIndex = 2
-            Me.sweatEquityDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
-            '
-            'sweatEquityDateLabel
-            '
-            Me.sweatEquityDateLabel.AutoSize = True
-            Me.sweatEquityDateLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.sweatEquityDateLabel.Location = New System.Drawing.Point(4, 5)
-            Me.sweatEquityDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.sweatEquityDateLabel.Name = "sweatEquityDateLabel"
-            Me.sweatEquityDateLabel.Size = New System.Drawing.Size(113, 17)
-            Me.sweatEquityDateLabel.TabIndex = 1
-            Me.sweatEquityDateLabel.Text = "sweatEquityDate"
-            '
-            'sweatEquityAmountTextBox
-            '
-            Me.sweatEquityAmountTextBox.Location = New System.Drawing.Point(143, 43)
-            Me.sweatEquityAmountTextBox.Margin = New System.Windows.Forms.Padding(4)
-            Me.sweatEquityAmountTextBox.Name = "sweatEquityAmountTextBox"
-            Me.sweatEquityAmountTextBox.Size = New System.Drawing.Size(247, 22)
-            Me.sweatEquityAmountTextBox.TabIndex = 4
-            '
-            'sweatEquityAmountLabel
-            '
-            Me.sweatEquityAmountLabel.AutoSize = True
-            Me.sweatEquityAmountLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.sweatEquityAmountLabel.Location = New System.Drawing.Point(4, 43)
-            Me.sweatEquityAmountLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.sweatEquityAmountLabel.Name = "sweatEquityAmountLabel"
-            Me.sweatEquityAmountLabel.Size = New System.Drawing.Size(131, 17)
-            Me.sweatEquityAmountLabel.TabIndex = 3
-            Me.sweatEquityAmountLabel.Text = "sweatEquityAmount"
-            '
-            'CheckBox1
-            '
-            Me.CheckBox1.AutoSize = True
-            Me.CheckBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.CheckBox1.Location = New System.Drawing.Point(709, 335)
-            Me.CheckBox1.Name = "CheckBox1"
-            Me.CheckBox1.Size = New System.Drawing.Size(104, 21)
-            Me.CheckBox1.TabIndex = 34
-            Me.CheckBox1.Text = "Forgivable?"
-            Me.CheckBox1.UseVisualStyleBackColor = True
-            '
-            'PictureBox1
-            '
-            Me.PictureBox1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.new_catawba_logo
-            Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-            Me.PictureBox1.Location = New System.Drawing.Point(944, 544)
-            Me.PictureBox1.Name = "PictureBox1"
-            Me.PictureBox1.Size = New System.Drawing.Size(252, 117)
-            Me.PictureBox1.TabIndex = 33
-            Me.PictureBox1.TabStop = False
-            '
-            'monthlyDepositDateLabel
-            '
-            Me.monthlyDepositDateLabel.AutoSize = True
-            Me.monthlyDepositDateLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.monthlyDepositDateLabel.Location = New System.Drawing.Point(150, 150)
-            Me.monthlyDepositDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.monthlyDepositDateLabel.Name = "monthlyDepositDateLabel"
-            Me.monthlyDepositDateLabel.Size = New System.Drawing.Size(135, 17)
-            Me.monthlyDepositDateLabel.TabIndex = 5
-            Me.monthlyDepositDateLabel.Text = "monthlyDepositDate"
-            '
-            'monthlyDepositDate_dateTimePicker
-            '
-            Me.monthlyDepositDate_dateTimePicker.CustomFormat = "MM/dd/yyyy"
-            Me.monthlyDepositDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.monthlyDepositDate_dateTimePicker.Location = New System.Drawing.Point(333, 145)
-            Me.monthlyDepositDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
-            Me.monthlyDepositDate_dateTimePicker.Name = "monthlyDepositDate_dateTimePicker"
-            Me.monthlyDepositDate_dateTimePicker.Size = New System.Drawing.Size(265, 22)
-            Me.monthlyDepositDate_dateTimePicker.TabIndex = 6
-            Me.monthlyDepositDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
-            '
-            'monthlyDepositAmountLabel
-            '
-            Me.monthlyDepositAmountLabel.AutoSize = True
-            Me.monthlyDepositAmountLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.monthlyDepositAmountLabel.Location = New System.Drawing.Point(116, 187)
-            Me.monthlyDepositAmountLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.monthlyDepositAmountLabel.Name = "monthlyDepositAmountLabel"
-            Me.monthlyDepositAmountLabel.Size = New System.Drawing.Size(153, 17)
-            Me.monthlyDepositAmountLabel.TabIndex = 7
-            Me.monthlyDepositAmountLabel.Text = "monthlyDepositAmount"
-            '
-            'monthlyDepositAmountTextBox
-            '
-            Me.monthlyDepositAmountTextBox.Location = New System.Drawing.Point(333, 187)
-            Me.monthlyDepositAmountTextBox.Margin = New System.Windows.Forms.Padding(4)
-            Me.monthlyDepositAmountTextBox.Name = "monthlyDepositAmountTextBox"
-            Me.monthlyDepositAmountTextBox.Size = New System.Drawing.Size(132, 22)
-            Me.monthlyDepositAmountTextBox.TabIndex = 8
-            '
-            'HUDHoursDateLabel
-            '
-            Me.HUDHoursDateLabel.AutoSize = True
-            Me.HUDHoursDateLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.HUDHoursDateLabel.Location = New System.Drawing.Point(179, 229)
-            Me.HUDHoursDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.HUDHoursDateLabel.Name = "HUDHoursDateLabel"
-            Me.HUDHoursDateLabel.Size = New System.Drawing.Size(106, 17)
-            Me.HUDHoursDateLabel.TabIndex = 9
-            Me.HUDHoursDateLabel.Text = "HUDHoursDate"
-            '
-            'HUDHoursDate_dateTimePicker
-            '
-            Me.HUDHoursDate_dateTimePicker.CustomFormat = "MM/dd/yyyy"
-            Me.HUDHoursDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.HUDHoursDate_dateTimePicker.Location = New System.Drawing.Point(333, 229)
-            Me.HUDHoursDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
-            Me.HUDHoursDate_dateTimePicker.Name = "HUDHoursDate_dateTimePicker"
-            Me.HUDHoursDate_dateTimePicker.Size = New System.Drawing.Size(265, 22)
-            Me.HUDHoursDate_dateTimePicker.TabIndex = 10
-            Me.HUDHoursDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
-            '
-            'HUDHoursCompleteLabel
-            '
-            Me.HUDHoursCompleteLabel.AutoSize = True
-            Me.HUDHoursCompleteLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.HUDHoursCompleteLabel.Location = New System.Drawing.Point(140, 271)
-            Me.HUDHoursCompleteLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.HUDHoursCompleteLabel.Name = "HUDHoursCompleteLabel"
-            Me.HUDHoursCompleteLabel.Size = New System.Drawing.Size(135, 17)
-            Me.HUDHoursCompleteLabel.TabIndex = 11
-            Me.HUDHoursCompleteLabel.Text = "HUDHoursComplete"
-            '
-            'HUDHoursCompleteTextBox
-            '
-            Me.HUDHoursCompleteTextBox.Location = New System.Drawing.Point(333, 271)
-            Me.HUDHoursCompleteTextBox.Margin = New System.Windows.Forms.Padding(4)
-            Me.HUDHoursCompleteTextBox.Name = "HUDHoursCompleteTextBox"
-            Me.HUDHoursCompleteTextBox.Size = New System.Drawing.Size(132, 22)
-            Me.HUDHoursCompleteTextBox.TabIndex = 12
-            '
-            'financeClassesDateLabel
-            '
-            Me.financeClassesDateLabel.AutoSize = True
-            Me.financeClassesDateLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.financeClassesDateLabel.Location = New System.Drawing.Point(143, 313)
-            Me.financeClassesDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.financeClassesDateLabel.Name = "financeClassesDateLabel"
-            Me.financeClassesDateLabel.Size = New System.Drawing.Size(133, 17)
-            Me.financeClassesDateLabel.TabIndex = 13
-            Me.financeClassesDateLabel.Text = "financeClassesDate"
-            '
-            'financeClassesDate_dateTimePicker
-            '
-            Me.financeClassesDate_dateTimePicker.CustomFormat = "dd/MM/yyyy"
-            Me.financeClassesDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.financeClassesDate_dateTimePicker.Location = New System.Drawing.Point(333, 313)
-            Me.financeClassesDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
-            Me.financeClassesDate_dateTimePicker.Name = "financeClassesDate_dateTimePicker"
-            Me.financeClassesDate_dateTimePicker.Size = New System.Drawing.Size(265, 22)
-            Me.financeClassesDate_dateTimePicker.TabIndex = 14
-            Me.financeClassesDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
-            '
-            'financeClassesCompleteLabel
-            '
-            Me.financeClassesCompleteLabel.AutoSize = True
-            Me.financeClassesCompleteLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.financeClassesCompleteLabel.Location = New System.Drawing.Point(104, 354)
-            Me.financeClassesCompleteLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.financeClassesCompleteLabel.Name = "financeClassesCompleteLabel"
-            Me.financeClassesCompleteLabel.Size = New System.Drawing.Size(162, 17)
-            Me.financeClassesCompleteLabel.TabIndex = 15
-            Me.financeClassesCompleteLabel.Text = "financeClassesComplete"
-            '
-            'financeClassesCompleteTextBox
-            '
-            Me.financeClassesCompleteTextBox.Location = New System.Drawing.Point(333, 354)
-            Me.financeClassesCompleteTextBox.Margin = New System.Windows.Forms.Padding(4)
-            Me.financeClassesCompleteTextBox.Name = "financeClassesCompleteTextBox"
-            Me.financeClassesCompleteTextBox.Size = New System.Drawing.Size(132, 22)
-            Me.financeClassesCompleteTextBox.TabIndex = 16
-            '
-            'homebuyerEducationDateLabel
-            '
-            Me.homebuyerEducationDateLabel.AutoSize = True
-            Me.homebuyerEducationDateLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.homebuyerEducationDateLabel.Location = New System.Drawing.Point(637, 135)
-            Me.homebuyerEducationDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.homebuyerEducationDateLabel.Name = "homebuyerEducationDateLabel"
-            Me.homebuyerEducationDateLabel.Size = New System.Drawing.Size(172, 17)
-            Me.homebuyerEducationDateLabel.TabIndex = 17
-            Me.homebuyerEducationDateLabel.Text = "homebuyerEducationDate"
-            '
-            'homebuyerEducationDate_dateTimePicker
-            '
-            Me.homebuyerEducationDate_dateTimePicker.CustomFormat = "dd/MM/yyyy"
-            Me.homebuyerEducationDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.homebuyerEducationDate_dateTimePicker.Location = New System.Drawing.Point(817, 133)
-            Me.homebuyerEducationDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
-            Me.homebuyerEducationDate_dateTimePicker.Name = "homebuyerEducationDate_dateTimePicker"
-            Me.homebuyerEducationDate_dateTimePicker.Size = New System.Drawing.Size(265, 22)
-            Me.homebuyerEducationDate_dateTimePicker.TabIndex = 18
-            Me.homebuyerEducationDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
-            '
-            'homebuyerEducationAmountLabel
-            '
-            Me.homebuyerEducationAmountLabel.AutoSize = True
-            Me.homebuyerEducationAmountLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.homebuyerEducationAmountLabel.Location = New System.Drawing.Point(637, 192)
-            Me.homebuyerEducationAmountLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.homebuyerEducationAmountLabel.Name = "homebuyerEducationAmountLabel"
-            Me.homebuyerEducationAmountLabel.Size = New System.Drawing.Size(190, 17)
-            Me.homebuyerEducationAmountLabel.TabIndex = 19
-            Me.homebuyerEducationAmountLabel.Text = "homebuyerEducationAmount"
-            '
-            'homebuyerEducationAmountTextBox
-            '
-            Me.homebuyerEducationAmountTextBox.Location = New System.Drawing.Point(835, 187)
-            Me.homebuyerEducationAmountTextBox.Margin = New System.Windows.Forms.Padding(4)
-            Me.homebuyerEducationAmountTextBox.Name = "homebuyerEducationAmountTextBox"
-            Me.homebuyerEducationAmountTextBox.Size = New System.Drawing.Size(132, 22)
-            Me.homebuyerEducationAmountTextBox.TabIndex = 20
-            '
-            'mortgage1PriceLabel
-            '
-            Me.mortgage1PriceLabel.AutoSize = True
-            Me.mortgage1PriceLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.mortgage1PriceLabel.Location = New System.Drawing.Point(671, 234)
-            Me.mortgage1PriceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.mortgage1PriceLabel.Name = "mortgage1PriceLabel"
-            Me.mortgage1PriceLabel.Size = New System.Drawing.Size(108, 17)
-            Me.mortgage1PriceLabel.TabIndex = 21
-            Me.mortgage1PriceLabel.Text = "mortgage1Price"
-            '
-            'mortgage1PriceTextBox
-            '
-            Me.mortgage1PriceTextBox.Location = New System.Drawing.Point(787, 229)
-            Me.mortgage1PriceTextBox.Margin = New System.Windows.Forms.Padding(4)
-            Me.mortgage1PriceTextBox.Name = "mortgage1PriceTextBox"
-            Me.mortgage1PriceTextBox.Size = New System.Drawing.Size(132, 22)
-            Me.mortgage1PriceTextBox.TabIndex = 22
-            '
-            'mortgage1BankLabel
-            '
-            Me.mortgage1BankLabel.AutoSize = True
-            Me.mortgage1BankLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.mortgage1BankLabel.Location = New System.Drawing.Point(654, 289)
-            Me.mortgage1BankLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.mortgage1BankLabel.Name = "mortgage1BankLabel"
-            Me.mortgage1BankLabel.Size = New System.Drawing.Size(108, 17)
-            Me.mortgage1BankLabel.TabIndex = 23
-            Me.mortgage1BankLabel.Text = "mortgage1Bank"
-            '
-            'mortgage1BankTextBox
-            '
-            Me.mortgage1BankTextBox.Location = New System.Drawing.Point(770, 284)
-            Me.mortgage1BankTextBox.Margin = New System.Windows.Forms.Padding(4)
-            Me.mortgage1BankTextBox.Name = "mortgage1BankTextBox"
-            Me.mortgage1BankTextBox.Size = New System.Drawing.Size(132, 22)
-            Me.mortgage1BankTextBox.TabIndex = 24
-            '
-            'mortgage1ForgivableTextBox
-            '
-            Me.mortgage1ForgivableTextBox.Location = New System.Drawing.Point(0, 674)
-            Me.mortgage1ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4)
-            Me.mortgage1ForgivableTextBox.Name = "mortgage1ForgivableTextBox"
-            Me.mortgage1ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
-            Me.mortgage1ForgivableTextBox.TabIndex = 26
-            Me.mortgage1ForgivableTextBox.Visible = False
-            '
-            'mortgage1OriginalBalanceLabel
-            '
-            Me.mortgage1OriginalBalanceLabel.AutoSize = True
-            Me.mortgage1OriginalBalanceLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.mortgage1OriginalBalanceLabel.Location = New System.Drawing.Point(613, 388)
-            Me.mortgage1OriginalBalanceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.mortgage1OriginalBalanceLabel.Name = "mortgage1OriginalBalanceLabel"
-            Me.mortgage1OriginalBalanceLabel.Size = New System.Drawing.Size(176, 17)
-            Me.mortgage1OriginalBalanceLabel.TabIndex = 27
-            Me.mortgage1OriginalBalanceLabel.Text = "mortgage1OriginalBalance"
-            '
-            'mortgage1OriginalBalanceTextBox
-            '
-            Me.mortgage1OriginalBalanceTextBox.Location = New System.Drawing.Point(806, 385)
-            Me.mortgage1OriginalBalanceTextBox.Margin = New System.Windows.Forms.Padding(4)
-            Me.mortgage1OriginalBalanceTextBox.Name = "mortgage1OriginalBalanceTextBox"
-            Me.mortgage1OriginalBalanceTextBox.Size = New System.Drawing.Size(132, 22)
-            Me.mortgage1OriginalBalanceTextBox.TabIndex = 28
-            '
-            'mortgage1NumberOfYearsLabel
-            '
-            Me.mortgage1NumberOfYearsLabel.AutoSize = True
-            Me.mortgage1NumberOfYearsLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.mortgage1NumberOfYearsLabel.Location = New System.Drawing.Point(613, 461)
-            Me.mortgage1NumberOfYearsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.mortgage1NumberOfYearsLabel.Name = "mortgage1NumberOfYearsLabel"
-            Me.mortgage1NumberOfYearsLabel.Size = New System.Drawing.Size(178, 17)
-            Me.mortgage1NumberOfYearsLabel.TabIndex = 29
-            Me.mortgage1NumberOfYearsLabel.Text = "mortgage1NumberOfYears"
-            '
-            'mortgage1NumberOfYearsTextBox
-            '
-            Me.mortgage1NumberOfYearsTextBox.Location = New System.Drawing.Point(821, 472)
-            Me.mortgage1NumberOfYearsTextBox.Margin = New System.Windows.Forms.Padding(4)
-            Me.mortgage1NumberOfYearsTextBox.Name = "mortgage1NumberOfYearsTextBox"
-            Me.mortgage1NumberOfYearsTextBox.Size = New System.Drawing.Size(132, 22)
-            Me.mortgage1NumberOfYearsTextBox.TabIndex = 30
             '
             'general_UIDLabel
             '
             Me.general_UIDLabel.AutoSize = True
-            Me.general_UIDLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.general_UIDLabel.Location = New System.Drawing.Point(30, 38)
+            Me.general_UIDLabel.Location = New System.Drawing.Point(204, 62)
             Me.general_UIDLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.general_UIDLabel.Name = "general_UIDLabel"
             Me.general_UIDLabel.Size = New System.Drawing.Size(87, 17)
-            Me.general_UIDLabel.TabIndex = 31
+            Me.general_UIDLabel.TabIndex = 1
             Me.general_UIDLabel.Text = "general_UID"
             '
             'general_UID_comboBox
@@ -608,33 +373,746 @@ Namespace DatabaseTestApplication2
             Me.general_UID_comboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
             Me.general_UID_comboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
             Me.general_UID_comboBox.FormattingEnabled = True
-            Me.general_UID_comboBox.Location = New System.Drawing.Point(146, 35)
-            Me.general_UID_comboBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.general_UID_comboBox.Location = New System.Drawing.Point(333, 62)
+            Me.general_UID_comboBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.general_UID_comboBox.Name = "general_UID_comboBox"
             Me.general_UID_comboBox.Size = New System.Drawing.Size(273, 24)
-            Me.general_UID_comboBox.TabIndex = 32
+            Me.general_UID_comboBox.TabIndex = 2
             '
-            'MenuStrip1
+            'sweatEquityDateLabel
             '
-            Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-            Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.GeneralInfoToolStripMenuItem})
-            Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-            Me.MenuStrip1.Name = "MenuStrip1"
-            Me.MenuStrip1.Size = New System.Drawing.Size(1217, 28)
-            Me.MenuStrip1.TabIndex = 35
-            Me.MenuStrip1.Text = "MenuStrip1"
+            Me.sweatEquityDateLabel.AutoSize = True
+            Me.sweatEquityDateLabel.Location = New System.Drawing.Point(169, 103)
+            Me.sweatEquityDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.sweatEquityDateLabel.Name = "sweatEquityDateLabel"
+            Me.sweatEquityDateLabel.Size = New System.Drawing.Size(113, 17)
+            Me.sweatEquityDateLabel.TabIndex = 3
+            Me.sweatEquityDateLabel.Text = "sweatEquityDate"
             '
-            'MainMenuToolStripMenuItem
+            'sweatEquityDate_dateTimePicker
             '
-            Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
-            Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(97, 24)
-            Me.MainMenuToolStripMenuItem.Text = "Main Menu"
+            Me.sweatEquityDate_dateTimePicker.CustomFormat = "dd/MM/yyyy"
+            Me.sweatEquityDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+            Me.sweatEquityDate_dateTimePicker.Location = New System.Drawing.Point(333, 103)
+            Me.sweatEquityDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.sweatEquityDate_dateTimePicker.Name = "sweatEquityDate_dateTimePicker"
+            Me.sweatEquityDate_dateTimePicker.Size = New System.Drawing.Size(265, 22)
+            Me.sweatEquityDate_dateTimePicker.TabIndex = 4
+            Me.sweatEquityDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
             '
-            'GeneralInfoToolStripMenuItem
+            'sweatEquityAmountLabel
             '
-            Me.GeneralInfoToolStripMenuItem.Name = "GeneralInfoToolStripMenuItem"
-            Me.GeneralInfoToolStripMenuItem.Size = New System.Drawing.Size(104, 24)
-            Me.GeneralInfoToolStripMenuItem.Text = "General Info"
+            Me.sweatEquityAmountLabel.AutoSize = True
+            Me.sweatEquityAmountLabel.Location = New System.Drawing.Point(145, 145)
+            Me.sweatEquityAmountLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.sweatEquityAmountLabel.Name = "sweatEquityAmountLabel"
+            Me.sweatEquityAmountLabel.Size = New System.Drawing.Size(131, 17)
+            Me.sweatEquityAmountLabel.TabIndex = 5
+            Me.sweatEquityAmountLabel.Text = "sweatEquityAmount"
+            '
+            'sweatEquityAmountTextBox
+            '
+            Me.sweatEquityAmountTextBox.Location = New System.Drawing.Point(333, 145)
+            Me.sweatEquityAmountTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.sweatEquityAmountTextBox.Name = "sweatEquityAmountTextBox"
+            Me.sweatEquityAmountTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.sweatEquityAmountTextBox.TabIndex = 6
+            '
+            'monthlyDepositDateLabel
+            '
+            Me.monthlyDepositDateLabel.AutoSize = True
+            Me.monthlyDepositDateLabel.Location = New System.Drawing.Point(140, 187)
+            Me.monthlyDepositDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.monthlyDepositDateLabel.Name = "monthlyDepositDateLabel"
+            Me.monthlyDepositDateLabel.Size = New System.Drawing.Size(135, 17)
+            Me.monthlyDepositDateLabel.TabIndex = 7
+            Me.monthlyDepositDateLabel.Text = "monthlyDepositDate"
+            '
+            'monthlyDepositDate_dateTimePicker
+            '
+            Me.monthlyDepositDate_dateTimePicker.CustomFormat = "dd/MM/yyyy"
+            Me.monthlyDepositDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+            Me.monthlyDepositDate_dateTimePicker.Location = New System.Drawing.Point(333, 187)
+            Me.monthlyDepositDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.monthlyDepositDate_dateTimePicker.Name = "monthlyDepositDate_dateTimePicker"
+            Me.monthlyDepositDate_dateTimePicker.Size = New System.Drawing.Size(265, 22)
+            Me.monthlyDepositDate_dateTimePicker.TabIndex = 8
+            Me.monthlyDepositDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
+            '
+            'monthlyDepositAmountLabel
+            '
+            Me.monthlyDepositAmountLabel.AutoSize = True
+            Me.monthlyDepositAmountLabel.Location = New System.Drawing.Point(116, 229)
+            Me.monthlyDepositAmountLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.monthlyDepositAmountLabel.Name = "monthlyDepositAmountLabel"
+            Me.monthlyDepositAmountLabel.Size = New System.Drawing.Size(153, 17)
+            Me.monthlyDepositAmountLabel.TabIndex = 9
+            Me.monthlyDepositAmountLabel.Text = "monthlyDepositAmount"
+            '
+            'monthlyDepositAmountTextBox
+            '
+            Me.monthlyDepositAmountTextBox.Location = New System.Drawing.Point(333, 229)
+            Me.monthlyDepositAmountTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.monthlyDepositAmountTextBox.Name = "monthlyDepositAmountTextBox"
+            Me.monthlyDepositAmountTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.monthlyDepositAmountTextBox.TabIndex = 10
+            '
+            'HUDHoursDateLabel
+            '
+            Me.HUDHoursDateLabel.AutoSize = True
+            Me.HUDHoursDateLabel.Location = New System.Drawing.Point(179, 271)
+            Me.HUDHoursDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.HUDHoursDateLabel.Name = "HUDHoursDateLabel"
+            Me.HUDHoursDateLabel.Size = New System.Drawing.Size(106, 17)
+            Me.HUDHoursDateLabel.TabIndex = 11
+            Me.HUDHoursDateLabel.Text = "HUDHoursDate"
+            '
+            'HUDHoursDate_dateTimePicker
+            '
+            Me.HUDHoursDate_dateTimePicker.CustomFormat = "dd/MM/yyyy"
+            Me.HUDHoursDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+            Me.HUDHoursDate_dateTimePicker.Location = New System.Drawing.Point(333, 271)
+            Me.HUDHoursDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.HUDHoursDate_dateTimePicker.Name = "HUDHoursDate_dateTimePicker"
+            Me.HUDHoursDate_dateTimePicker.Size = New System.Drawing.Size(265, 22)
+            Me.HUDHoursDate_dateTimePicker.TabIndex = 12
+            Me.HUDHoursDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
+            '
+            'HUDHoursCompleteLabel
+            '
+            Me.HUDHoursCompleteLabel.AutoSize = True
+            Me.HUDHoursCompleteLabel.Location = New System.Drawing.Point(140, 313)
+            Me.HUDHoursCompleteLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.HUDHoursCompleteLabel.Name = "HUDHoursCompleteLabel"
+            Me.HUDHoursCompleteLabel.Size = New System.Drawing.Size(135, 17)
+            Me.HUDHoursCompleteLabel.TabIndex = 13
+            Me.HUDHoursCompleteLabel.Text = "HUDHoursComplete"
+            '
+            'HUDHoursCompleteTextBox
+            '
+            Me.HUDHoursCompleteTextBox.Location = New System.Drawing.Point(333, 313)
+            Me.HUDHoursCompleteTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.HUDHoursCompleteTextBox.Name = "HUDHoursCompleteTextBox"
+            Me.HUDHoursCompleteTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.HUDHoursCompleteTextBox.TabIndex = 14
+            '
+            'financeClassesDateLabel
+            '
+            Me.financeClassesDateLabel.AutoSize = True
+            Me.financeClassesDateLabel.Location = New System.Drawing.Point(143, 354)
+            Me.financeClassesDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.financeClassesDateLabel.Name = "financeClassesDateLabel"
+            Me.financeClassesDateLabel.Size = New System.Drawing.Size(133, 17)
+            Me.financeClassesDateLabel.TabIndex = 15
+            Me.financeClassesDateLabel.Text = "financeClassesDate"
+            '
+            'financeClassesDate_dateTimePicker
+            '
+            Me.financeClassesDate_dateTimePicker.CustomFormat = "dd/MM/yyyy"
+            Me.financeClassesDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+            Me.financeClassesDate_dateTimePicker.Location = New System.Drawing.Point(333, 354)
+            Me.financeClassesDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.financeClassesDate_dateTimePicker.Name = "financeClassesDate_dateTimePicker"
+            Me.financeClassesDate_dateTimePicker.Size = New System.Drawing.Size(265, 22)
+            Me.financeClassesDate_dateTimePicker.TabIndex = 16
+            Me.financeClassesDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
+            '
+            'financeClassesCompleteLabel
+            '
+            Me.financeClassesCompleteLabel.AutoSize = True
+            Me.financeClassesCompleteLabel.Location = New System.Drawing.Point(104, 396)
+            Me.financeClassesCompleteLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.financeClassesCompleteLabel.Name = "financeClassesCompleteLabel"
+            Me.financeClassesCompleteLabel.Size = New System.Drawing.Size(162, 17)
+            Me.financeClassesCompleteLabel.TabIndex = 17
+            Me.financeClassesCompleteLabel.Text = "financeClassesComplete"
+            '
+            'financeClassesCompleteTextBox
+            '
+            Me.financeClassesCompleteTextBox.Location = New System.Drawing.Point(333, 396)
+            Me.financeClassesCompleteTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.financeClassesCompleteTextBox.Name = "financeClassesCompleteTextBox"
+            Me.financeClassesCompleteTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.financeClassesCompleteTextBox.TabIndex = 18
+            '
+            'homebuyerEducationDateLabel
+            '
+            Me.homebuyerEducationDateLabel.AutoSize = True
+            Me.homebuyerEducationDateLabel.Location = New System.Drawing.Point(91, 438)
+            Me.homebuyerEducationDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.homebuyerEducationDateLabel.Name = "homebuyerEducationDateLabel"
+            Me.homebuyerEducationDateLabel.Size = New System.Drawing.Size(172, 17)
+            Me.homebuyerEducationDateLabel.TabIndex = 19
+            Me.homebuyerEducationDateLabel.Text = "homebuyerEducationDate"
+            '
+            'homebuyerEducationDate_dateTimePicker
+            '
+            Me.homebuyerEducationDate_dateTimePicker.CustomFormat = "dd/MM/yyyy"
+            Me.homebuyerEducationDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+            Me.homebuyerEducationDate_dateTimePicker.Location = New System.Drawing.Point(333, 438)
+            Me.homebuyerEducationDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.homebuyerEducationDate_dateTimePicker.Name = "homebuyerEducationDate_dateTimePicker"
+            Me.homebuyerEducationDate_dateTimePicker.Size = New System.Drawing.Size(265, 22)
+            Me.homebuyerEducationDate_dateTimePicker.TabIndex = 20
+            Me.homebuyerEducationDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
+            '
+            'homebuyerEducationAmountLabel
+            '
+            Me.homebuyerEducationAmountLabel.AutoSize = True
+            Me.homebuyerEducationAmountLabel.Location = New System.Drawing.Point(67, 480)
+            Me.homebuyerEducationAmountLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.homebuyerEducationAmountLabel.Name = "homebuyerEducationAmountLabel"
+            Me.homebuyerEducationAmountLabel.Size = New System.Drawing.Size(190, 17)
+            Me.homebuyerEducationAmountLabel.TabIndex = 21
+            Me.homebuyerEducationAmountLabel.Text = "homebuyerEducationAmount"
+            '
+            'homebuyerEducationAmountTextBox
+            '
+            Me.homebuyerEducationAmountTextBox.Location = New System.Drawing.Point(333, 480)
+            Me.homebuyerEducationAmountTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.homebuyerEducationAmountTextBox.Name = "homebuyerEducationAmountTextBox"
+            Me.homebuyerEducationAmountTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.homebuyerEducationAmountTextBox.TabIndex = 22
+            '
+            'mortgage1PriceLabel
+            '
+            Me.mortgage1PriceLabel.AutoSize = True
+            Me.mortgage1PriceLabel.Location = New System.Drawing.Point(176, 522)
+            Me.mortgage1PriceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage1PriceLabel.Name = "mortgage1PriceLabel"
+            Me.mortgage1PriceLabel.Size = New System.Drawing.Size(108, 17)
+            Me.mortgage1PriceLabel.TabIndex = 23
+            Me.mortgage1PriceLabel.Text = "mortgage1Price"
+            '
+            'mortgage1PriceTextBox
+            '
+            Me.mortgage1PriceTextBox.Location = New System.Drawing.Point(333, 522)
+            Me.mortgage1PriceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage1PriceTextBox.Name = "mortgage1PriceTextBox"
+            Me.mortgage1PriceTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage1PriceTextBox.TabIndex = 24
+            '
+            'mortgage1BankLabel
+            '
+            Me.mortgage1BankLabel.AutoSize = True
+            Me.mortgage1BankLabel.Location = New System.Drawing.Point(176, 564)
+            Me.mortgage1BankLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage1BankLabel.Name = "mortgage1BankLabel"
+            Me.mortgage1BankLabel.Size = New System.Drawing.Size(108, 17)
+            Me.mortgage1BankLabel.TabIndex = 25
+            Me.mortgage1BankLabel.Text = "mortgage1Bank"
+            '
+            'mortgage1BankTextBox
+            '
+            Me.mortgage1BankTextBox.Location = New System.Drawing.Point(333, 564)
+            Me.mortgage1BankTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage1BankTextBox.Name = "mortgage1BankTextBox"
+            Me.mortgage1BankTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage1BankTextBox.TabIndex = 26
+            '
+            'mortgage1ForgivableLabel
+            '
+            Me.mortgage1ForgivableLabel.AutoSize = True
+            Me.mortgage1ForgivableLabel.Location = New System.Drawing.Point(131, 606)
+            Me.mortgage1ForgivableLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage1ForgivableLabel.Name = "mortgage1ForgivableLabel"
+            Me.mortgage1ForgivableLabel.Size = New System.Drawing.Size(142, 17)
+            Me.mortgage1ForgivableLabel.TabIndex = 27
+            Me.mortgage1ForgivableLabel.Text = "mortgage1Forgivable"
+            '
+            'mortgage1ForgivableTextBox
+            '
+            Me.mortgage1ForgivableTextBox.Location = New System.Drawing.Point(333, 606)
+            Me.mortgage1ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage1ForgivableTextBox.Name = "mortgage1ForgivableTextBox"
+            Me.mortgage1ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage1ForgivableTextBox.TabIndex = 28
+            '
+            'mortgage1OriginalBalanceLabel
+            '
+            Me.mortgage1OriginalBalanceLabel.AutoSize = True
+            Me.mortgage1OriginalBalanceLabel.Location = New System.Drawing.Point(85, 647)
+            Me.mortgage1OriginalBalanceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage1OriginalBalanceLabel.Name = "mortgage1OriginalBalanceLabel"
+            Me.mortgage1OriginalBalanceLabel.Size = New System.Drawing.Size(176, 17)
+            Me.mortgage1OriginalBalanceLabel.TabIndex = 29
+            Me.mortgage1OriginalBalanceLabel.Text = "mortgage1OriginalBalance"
+            '
+            'mortgage1OriginalBalanceTextBox
+            '
+            Me.mortgage1OriginalBalanceTextBox.Location = New System.Drawing.Point(333, 647)
+            Me.mortgage1OriginalBalanceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage1OriginalBalanceTextBox.Name = "mortgage1OriginalBalanceTextBox"
+            Me.mortgage1OriginalBalanceTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage1OriginalBalanceTextBox.TabIndex = 30
+            '
+            'mortgage1NumberOfYearsLabel
+            '
+            Me.mortgage1NumberOfYearsLabel.AutoSize = True
+            Me.mortgage1NumberOfYearsLabel.Location = New System.Drawing.Point(83, 689)
+            Me.mortgage1NumberOfYearsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage1NumberOfYearsLabel.Name = "mortgage1NumberOfYearsLabel"
+            Me.mortgage1NumberOfYearsLabel.Size = New System.Drawing.Size(178, 17)
+            Me.mortgage1NumberOfYearsLabel.TabIndex = 31
+            Me.mortgage1NumberOfYearsLabel.Text = "mortgage1NumberOfYears"
+            '
+            'mortgage1NumberOfYearsTextBox
+            '
+            Me.mortgage1NumberOfYearsTextBox.Location = New System.Drawing.Point(333, 689)
+            Me.mortgage1NumberOfYearsTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage1NumberOfYearsTextBox.Name = "mortgage1NumberOfYearsTextBox"
+            Me.mortgage1NumberOfYearsTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage1NumberOfYearsTextBox.TabIndex = 32
+            '
+            'mortgage2PriceLabel
+            '
+            Me.mortgage2PriceLabel.AutoSize = True
+            Me.mortgage2PriceLabel.Location = New System.Drawing.Point(176, 731)
+            Me.mortgage2PriceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage2PriceLabel.Name = "mortgage2PriceLabel"
+            Me.mortgage2PriceLabel.Size = New System.Drawing.Size(108, 17)
+            Me.mortgage2PriceLabel.TabIndex = 33
+            Me.mortgage2PriceLabel.Text = "mortgage2Price"
+            '
+            'mortgage2PriceTextBox
+            '
+            Me.mortgage2PriceTextBox.Location = New System.Drawing.Point(333, 731)
+            Me.mortgage2PriceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage2PriceTextBox.Name = "mortgage2PriceTextBox"
+            Me.mortgage2PriceTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage2PriceTextBox.TabIndex = 34
+            '
+            'mortgage2BankLabel
+            '
+            Me.mortgage2BankLabel.AutoSize = True
+            Me.mortgage2BankLabel.Location = New System.Drawing.Point(176, 773)
+            Me.mortgage2BankLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage2BankLabel.Name = "mortgage2BankLabel"
+            Me.mortgage2BankLabel.Size = New System.Drawing.Size(108, 17)
+            Me.mortgage2BankLabel.TabIndex = 35
+            Me.mortgage2BankLabel.Text = "mortgage2Bank"
+            '
+            'mortgage2BankTextBox
+            '
+            Me.mortgage2BankTextBox.Location = New System.Drawing.Point(333, 773)
+            Me.mortgage2BankTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage2BankTextBox.Name = "mortgage2BankTextBox"
+            Me.mortgage2BankTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage2BankTextBox.TabIndex = 36
+            '
+            'mortgage2ForgivableLabel
+            '
+            Me.mortgage2ForgivableLabel.AutoSize = True
+            Me.mortgage2ForgivableLabel.Location = New System.Drawing.Point(131, 815)
+            Me.mortgage2ForgivableLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage2ForgivableLabel.Name = "mortgage2ForgivableLabel"
+            Me.mortgage2ForgivableLabel.Size = New System.Drawing.Size(142, 17)
+            Me.mortgage2ForgivableLabel.TabIndex = 37
+            Me.mortgage2ForgivableLabel.Text = "mortgage2Forgivable"
+            '
+            'mortgage2ForgivableTextBox
+            '
+            Me.mortgage2ForgivableTextBox.Location = New System.Drawing.Point(333, 815)
+            Me.mortgage2ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage2ForgivableTextBox.Name = "mortgage2ForgivableTextBox"
+            Me.mortgage2ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage2ForgivableTextBox.TabIndex = 38
+            '
+            'mortgage2OriginalBalanceLabel
+            '
+            Me.mortgage2OriginalBalanceLabel.AutoSize = True
+            Me.mortgage2OriginalBalanceLabel.Location = New System.Drawing.Point(85, 857)
+            Me.mortgage2OriginalBalanceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage2OriginalBalanceLabel.Name = "mortgage2OriginalBalanceLabel"
+            Me.mortgage2OriginalBalanceLabel.Size = New System.Drawing.Size(176, 17)
+            Me.mortgage2OriginalBalanceLabel.TabIndex = 39
+            Me.mortgage2OriginalBalanceLabel.Text = "mortgage2OriginalBalance"
+            '
+            'mortgage2OriginalBalanceTextBox
+            '
+            Me.mortgage2OriginalBalanceTextBox.Location = New System.Drawing.Point(333, 857)
+            Me.mortgage2OriginalBalanceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage2OriginalBalanceTextBox.Name = "mortgage2OriginalBalanceTextBox"
+            Me.mortgage2OriginalBalanceTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage2OriginalBalanceTextBox.TabIndex = 40
+            '
+            'morgage2NumberOfYearsLabel
+            '
+            Me.morgage2NumberOfYearsLabel.AutoSize = True
+            Me.morgage2NumberOfYearsLabel.Location = New System.Drawing.Point(635, 62)
+            Me.morgage2NumberOfYearsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.morgage2NumberOfYearsLabel.Name = "morgage2NumberOfYearsLabel"
+            Me.morgage2NumberOfYearsLabel.Size = New System.Drawing.Size(174, 17)
+            Me.morgage2NumberOfYearsLabel.TabIndex = 41
+            Me.morgage2NumberOfYearsLabel.Text = "morgage2NumberOfYears"
+            '
+            'morgage2NumberOfYearsTextBox
+            '
+            Me.morgage2NumberOfYearsTextBox.Location = New System.Drawing.Point(880, 62)
+            Me.morgage2NumberOfYearsTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.morgage2NumberOfYearsTextBox.Name = "morgage2NumberOfYearsTextBox"
+            Me.morgage2NumberOfYearsTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.morgage2NumberOfYearsTextBox.TabIndex = 42
+            '
+            'mortgage3PriceLabel
+            '
+            Me.mortgage3PriceLabel.AutoSize = True
+            Me.mortgage3PriceLabel.Location = New System.Drawing.Point(723, 103)
+            Me.mortgage3PriceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage3PriceLabel.Name = "mortgage3PriceLabel"
+            Me.mortgage3PriceLabel.Size = New System.Drawing.Size(108, 17)
+            Me.mortgage3PriceLabel.TabIndex = 43
+            Me.mortgage3PriceLabel.Text = "mortgage3Price"
+            '
+            'mortgage3PriceTextBox
+            '
+            Me.mortgage3PriceTextBox.Location = New System.Drawing.Point(880, 103)
+            Me.mortgage3PriceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage3PriceTextBox.Name = "mortgage3PriceTextBox"
+            Me.mortgage3PriceTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage3PriceTextBox.TabIndex = 44
+            '
+            'mortgage3BankLabel
+            '
+            Me.mortgage3BankLabel.AutoSize = True
+            Me.mortgage3BankLabel.Location = New System.Drawing.Point(723, 145)
+            Me.mortgage3BankLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage3BankLabel.Name = "mortgage3BankLabel"
+            Me.mortgage3BankLabel.Size = New System.Drawing.Size(108, 17)
+            Me.mortgage3BankLabel.TabIndex = 45
+            Me.mortgage3BankLabel.Text = "mortgage3Bank"
+            '
+            'mortgage3BankTextBox
+            '
+            Me.mortgage3BankTextBox.Location = New System.Drawing.Point(880, 145)
+            Me.mortgage3BankTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage3BankTextBox.Name = "mortgage3BankTextBox"
+            Me.mortgage3BankTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage3BankTextBox.TabIndex = 46
+            '
+            'mortgage3ForgivableLabel
+            '
+            Me.mortgage3ForgivableLabel.AutoSize = True
+            Me.mortgage3ForgivableLabel.Location = New System.Drawing.Point(677, 187)
+            Me.mortgage3ForgivableLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage3ForgivableLabel.Name = "mortgage3ForgivableLabel"
+            Me.mortgage3ForgivableLabel.Size = New System.Drawing.Size(142, 17)
+            Me.mortgage3ForgivableLabel.TabIndex = 47
+            Me.mortgage3ForgivableLabel.Text = "mortgage3Forgivable"
+            '
+            'mortgage3ForgivableTextBox
+            '
+            Me.mortgage3ForgivableTextBox.Location = New System.Drawing.Point(880, 187)
+            Me.mortgage3ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage3ForgivableTextBox.Name = "mortgage3ForgivableTextBox"
+            Me.mortgage3ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage3ForgivableTextBox.TabIndex = 48
+            '
+            'mortgage3OriginalBalanceLabel
+            '
+            Me.mortgage3OriginalBalanceLabel.AutoSize = True
+            Me.mortgage3OriginalBalanceLabel.Location = New System.Drawing.Point(632, 229)
+            Me.mortgage3OriginalBalanceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage3OriginalBalanceLabel.Name = "mortgage3OriginalBalanceLabel"
+            Me.mortgage3OriginalBalanceLabel.Size = New System.Drawing.Size(176, 17)
+            Me.mortgage3OriginalBalanceLabel.TabIndex = 49
+            Me.mortgage3OriginalBalanceLabel.Text = "mortgage3OriginalBalance"
+            '
+            'mortgage3OriginalBalanceTextBox
+            '
+            Me.mortgage3OriginalBalanceTextBox.Location = New System.Drawing.Point(880, 229)
+            Me.mortgage3OriginalBalanceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage3OriginalBalanceTextBox.Name = "mortgage3OriginalBalanceTextBox"
+            Me.mortgage3OriginalBalanceTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage3OriginalBalanceTextBox.TabIndex = 50
+            '
+            'mortgage3NumberOfYearsLabel
+            '
+            Me.mortgage3NumberOfYearsLabel.AutoSize = True
+            Me.mortgage3NumberOfYearsLabel.Location = New System.Drawing.Point(629, 271)
+            Me.mortgage3NumberOfYearsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage3NumberOfYearsLabel.Name = "mortgage3NumberOfYearsLabel"
+            Me.mortgage3NumberOfYearsLabel.Size = New System.Drawing.Size(178, 17)
+            Me.mortgage3NumberOfYearsLabel.TabIndex = 51
+            Me.mortgage3NumberOfYearsLabel.Text = "mortgage3NumberOfYears"
+            '
+            'mortgage3NumberOfYearsTextBox
+            '
+            Me.mortgage3NumberOfYearsTextBox.Location = New System.Drawing.Point(880, 271)
+            Me.mortgage3NumberOfYearsTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage3NumberOfYearsTextBox.Name = "mortgage3NumberOfYearsTextBox"
+            Me.mortgage3NumberOfYearsTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage3NumberOfYearsTextBox.TabIndex = 52
+            '
+            'mortgage4PriceLabel
+            '
+            Me.mortgage4PriceLabel.AutoSize = True
+            Me.mortgage4PriceLabel.Location = New System.Drawing.Point(723, 313)
+            Me.mortgage4PriceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage4PriceLabel.Name = "mortgage4PriceLabel"
+            Me.mortgage4PriceLabel.Size = New System.Drawing.Size(108, 17)
+            Me.mortgage4PriceLabel.TabIndex = 53
+            Me.mortgage4PriceLabel.Text = "mortgage4Price"
+            '
+            'mortgage4PriceTextBox
+            '
+            Me.mortgage4PriceTextBox.Location = New System.Drawing.Point(880, 313)
+            Me.mortgage4PriceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage4PriceTextBox.Name = "mortgage4PriceTextBox"
+            Me.mortgage4PriceTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage4PriceTextBox.TabIndex = 54
+            '
+            'mortgage4BankLabel
+            '
+            Me.mortgage4BankLabel.AutoSize = True
+            Me.mortgage4BankLabel.Location = New System.Drawing.Point(723, 354)
+            Me.mortgage4BankLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage4BankLabel.Name = "mortgage4BankLabel"
+            Me.mortgage4BankLabel.Size = New System.Drawing.Size(108, 17)
+            Me.mortgage4BankLabel.TabIndex = 55
+            Me.mortgage4BankLabel.Text = "mortgage4Bank"
+            '
+            'mortgage4BankTextBox
+            '
+            Me.mortgage4BankTextBox.Location = New System.Drawing.Point(880, 354)
+            Me.mortgage4BankTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage4BankTextBox.Name = "mortgage4BankTextBox"
+            Me.mortgage4BankTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage4BankTextBox.TabIndex = 56
+            '
+            'mortgage4ForgivableLabel
+            '
+            Me.mortgage4ForgivableLabel.AutoSize = True
+            Me.mortgage4ForgivableLabel.Location = New System.Drawing.Point(677, 396)
+            Me.mortgage4ForgivableLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage4ForgivableLabel.Name = "mortgage4ForgivableLabel"
+            Me.mortgage4ForgivableLabel.Size = New System.Drawing.Size(142, 17)
+            Me.mortgage4ForgivableLabel.TabIndex = 57
+            Me.mortgage4ForgivableLabel.Text = "mortgage4Forgivable"
+            '
+            'mortgage4ForgivableTextBox
+            '
+            Me.mortgage4ForgivableTextBox.Location = New System.Drawing.Point(880, 396)
+            Me.mortgage4ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage4ForgivableTextBox.Name = "mortgage4ForgivableTextBox"
+            Me.mortgage4ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage4ForgivableTextBox.TabIndex = 58
+            '
+            'mortgage4OriginalBalanceLabel
+            '
+            Me.mortgage4OriginalBalanceLabel.AutoSize = True
+            Me.mortgage4OriginalBalanceLabel.Location = New System.Drawing.Point(632, 438)
+            Me.mortgage4OriginalBalanceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage4OriginalBalanceLabel.Name = "mortgage4OriginalBalanceLabel"
+            Me.mortgage4OriginalBalanceLabel.Size = New System.Drawing.Size(176, 17)
+            Me.mortgage4OriginalBalanceLabel.TabIndex = 59
+            Me.mortgage4OriginalBalanceLabel.Text = "mortgage4OriginalBalance"
+            '
+            'mortgage4OriginalBalanceTextBox
+            '
+            Me.mortgage4OriginalBalanceTextBox.Location = New System.Drawing.Point(880, 438)
+            Me.mortgage4OriginalBalanceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage4OriginalBalanceTextBox.Name = "mortgage4OriginalBalanceTextBox"
+            Me.mortgage4OriginalBalanceTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage4OriginalBalanceTextBox.TabIndex = 60
+            '
+            'mortgage4NumberOfYearsLabel
+            '
+            Me.mortgage4NumberOfYearsLabel.AutoSize = True
+            Me.mortgage4NumberOfYearsLabel.Location = New System.Drawing.Point(629, 480)
+            Me.mortgage4NumberOfYearsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage4NumberOfYearsLabel.Name = "mortgage4NumberOfYearsLabel"
+            Me.mortgage4NumberOfYearsLabel.Size = New System.Drawing.Size(178, 17)
+            Me.mortgage4NumberOfYearsLabel.TabIndex = 61
+            Me.mortgage4NumberOfYearsLabel.Text = "mortgage4NumberOfYears"
+            '
+            'mortgage4NumberOfYearsTextBox
+            '
+            Me.mortgage4NumberOfYearsTextBox.Location = New System.Drawing.Point(880, 480)
+            Me.mortgage4NumberOfYearsTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage4NumberOfYearsTextBox.Name = "mortgage4NumberOfYearsTextBox"
+            Me.mortgage4NumberOfYearsTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage4NumberOfYearsTextBox.TabIndex = 62
+            '
+            'mortgage5PriceLabel
+            '
+            Me.mortgage5PriceLabel.AutoSize = True
+            Me.mortgage5PriceLabel.Location = New System.Drawing.Point(723, 522)
+            Me.mortgage5PriceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage5PriceLabel.Name = "mortgage5PriceLabel"
+            Me.mortgage5PriceLabel.Size = New System.Drawing.Size(108, 17)
+            Me.mortgage5PriceLabel.TabIndex = 63
+            Me.mortgage5PriceLabel.Text = "mortgage5Price"
+            '
+            'mortgage5PriceTextBox
+            '
+            Me.mortgage5PriceTextBox.Location = New System.Drawing.Point(880, 522)
+            Me.mortgage5PriceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage5PriceTextBox.Name = "mortgage5PriceTextBox"
+            Me.mortgage5PriceTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage5PriceTextBox.TabIndex = 64
+            '
+            'mortgage5BankLabel
+            '
+            Me.mortgage5BankLabel.AutoSize = True
+            Me.mortgage5BankLabel.Location = New System.Drawing.Point(723, 564)
+            Me.mortgage5BankLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage5BankLabel.Name = "mortgage5BankLabel"
+            Me.mortgage5BankLabel.Size = New System.Drawing.Size(108, 17)
+            Me.mortgage5BankLabel.TabIndex = 65
+            Me.mortgage5BankLabel.Text = "mortgage5Bank"
+            '
+            'mortgage5BankTextBox
+            '
+            Me.mortgage5BankTextBox.Location = New System.Drawing.Point(880, 564)
+            Me.mortgage5BankTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage5BankTextBox.Name = "mortgage5BankTextBox"
+            Me.mortgage5BankTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage5BankTextBox.TabIndex = 66
+            '
+            'mortgage5ForgivableLabel
+            '
+            Me.mortgage5ForgivableLabel.AutoSize = True
+            Me.mortgage5ForgivableLabel.Location = New System.Drawing.Point(677, 606)
+            Me.mortgage5ForgivableLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage5ForgivableLabel.Name = "mortgage5ForgivableLabel"
+            Me.mortgage5ForgivableLabel.Size = New System.Drawing.Size(142, 17)
+            Me.mortgage5ForgivableLabel.TabIndex = 67
+            Me.mortgage5ForgivableLabel.Text = "mortgage5Forgivable"
+            '
+            'mortgage5ForgivableTextBox
+            '
+            Me.mortgage5ForgivableTextBox.Location = New System.Drawing.Point(880, 606)
+            Me.mortgage5ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage5ForgivableTextBox.Name = "mortgage5ForgivableTextBox"
+            Me.mortgage5ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage5ForgivableTextBox.TabIndex = 68
+            '
+            'mortgage5OriginalBalanceLabel
+            '
+            Me.mortgage5OriginalBalanceLabel.AutoSize = True
+            Me.mortgage5OriginalBalanceLabel.Location = New System.Drawing.Point(632, 647)
+            Me.mortgage5OriginalBalanceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage5OriginalBalanceLabel.Name = "mortgage5OriginalBalanceLabel"
+            Me.mortgage5OriginalBalanceLabel.Size = New System.Drawing.Size(176, 17)
+            Me.mortgage5OriginalBalanceLabel.TabIndex = 69
+            Me.mortgage5OriginalBalanceLabel.Text = "mortgage5OriginalBalance"
+            '
+            'mortgage5OriginalBalanceTextBox
+            '
+            Me.mortgage5OriginalBalanceTextBox.Location = New System.Drawing.Point(880, 647)
+            Me.mortgage5OriginalBalanceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage5OriginalBalanceTextBox.Name = "mortgage5OriginalBalanceTextBox"
+            Me.mortgage5OriginalBalanceTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage5OriginalBalanceTextBox.TabIndex = 70
+            '
+            'mortgage5NumberOfYearsLabel
+            '
+            Me.mortgage5NumberOfYearsLabel.AutoSize = True
+            Me.mortgage5NumberOfYearsLabel.Location = New System.Drawing.Point(629, 689)
+            Me.mortgage5NumberOfYearsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage5NumberOfYearsLabel.Name = "mortgage5NumberOfYearsLabel"
+            Me.mortgage5NumberOfYearsLabel.Size = New System.Drawing.Size(178, 17)
+            Me.mortgage5NumberOfYearsLabel.TabIndex = 71
+            Me.mortgage5NumberOfYearsLabel.Text = "mortgage5NumberOfYears"
+            '
+            'mortgage5NumberOfYearsTextBox
+            '
+            Me.mortgage5NumberOfYearsTextBox.Location = New System.Drawing.Point(880, 689)
+            Me.mortgage5NumberOfYearsTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage5NumberOfYearsTextBox.Name = "mortgage5NumberOfYearsTextBox"
+            Me.mortgage5NumberOfYearsTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage5NumberOfYearsTextBox.TabIndex = 72
+            '
+            'mortgage6PriceLabel
+            '
+            Me.mortgage6PriceLabel.AutoSize = True
+            Me.mortgage6PriceLabel.Location = New System.Drawing.Point(723, 731)
+            Me.mortgage6PriceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage6PriceLabel.Name = "mortgage6PriceLabel"
+            Me.mortgage6PriceLabel.Size = New System.Drawing.Size(108, 17)
+            Me.mortgage6PriceLabel.TabIndex = 73
+            Me.mortgage6PriceLabel.Text = "mortgage6Price"
+            '
+            'mortgage6PriceTextBox
+            '
+            Me.mortgage6PriceTextBox.Location = New System.Drawing.Point(880, 731)
+            Me.mortgage6PriceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage6PriceTextBox.Name = "mortgage6PriceTextBox"
+            Me.mortgage6PriceTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage6PriceTextBox.TabIndex = 74
+            '
+            'mortgage6BankLabel
+            '
+            Me.mortgage6BankLabel.AutoSize = True
+            Me.mortgage6BankLabel.Location = New System.Drawing.Point(723, 773)
+            Me.mortgage6BankLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage6BankLabel.Name = "mortgage6BankLabel"
+            Me.mortgage6BankLabel.Size = New System.Drawing.Size(108, 17)
+            Me.mortgage6BankLabel.TabIndex = 75
+            Me.mortgage6BankLabel.Text = "mortgage6Bank"
+            '
+            'mortgage6BankTextBox
+            '
+            Me.mortgage6BankTextBox.Location = New System.Drawing.Point(880, 773)
+            Me.mortgage6BankTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage6BankTextBox.Name = "mortgage6BankTextBox"
+            Me.mortgage6BankTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage6BankTextBox.TabIndex = 76
+            '
+            'mortgage6ForgivableLabel
+            '
+            Me.mortgage6ForgivableLabel.AutoSize = True
+            Me.mortgage6ForgivableLabel.Location = New System.Drawing.Point(677, 815)
+            Me.mortgage6ForgivableLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage6ForgivableLabel.Name = "mortgage6ForgivableLabel"
+            Me.mortgage6ForgivableLabel.Size = New System.Drawing.Size(142, 17)
+            Me.mortgage6ForgivableLabel.TabIndex = 77
+            Me.mortgage6ForgivableLabel.Text = "mortgage6Forgivable"
+            '
+            'mortgage6ForgivableTextBox
+            '
+            Me.mortgage6ForgivableTextBox.Location = New System.Drawing.Point(880, 815)
+            Me.mortgage6ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage6ForgivableTextBox.Name = "mortgage6ForgivableTextBox"
+            Me.mortgage6ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage6ForgivableTextBox.TabIndex = 78
+            '
+            'mortgage6OriginalBalanceLabel
+            '
+            Me.mortgage6OriginalBalanceLabel.AutoSize = True
+            Me.mortgage6OriginalBalanceLabel.Location = New System.Drawing.Point(632, 857)
+            Me.mortgage6OriginalBalanceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage6OriginalBalanceLabel.Name = "mortgage6OriginalBalanceLabel"
+            Me.mortgage6OriginalBalanceLabel.Size = New System.Drawing.Size(176, 17)
+            Me.mortgage6OriginalBalanceLabel.TabIndex = 79
+            Me.mortgage6OriginalBalanceLabel.Text = "mortgage6OriginalBalance"
+            '
+            'mortgage6OriginalBalanceTextBox
+            '
+            Me.mortgage6OriginalBalanceTextBox.Location = New System.Drawing.Point(880, 857)
+            Me.mortgage6OriginalBalanceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage6OriginalBalanceTextBox.Name = "mortgage6OriginalBalanceTextBox"
+            Me.mortgage6OriginalBalanceTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage6OriginalBalanceTextBox.TabIndex = 80
+            '
+            'mortgage6NumberOfYearsLabel
+            '
+            Me.mortgage6NumberOfYearsLabel.AutoSize = True
+            Me.mortgage6NumberOfYearsLabel.Location = New System.Drawing.Point(629, 898)
+            Me.mortgage6NumberOfYearsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.mortgage6NumberOfYearsLabel.Name = "mortgage6NumberOfYearsLabel"
+            Me.mortgage6NumberOfYearsLabel.Size = New System.Drawing.Size(178, 17)
+            Me.mortgage6NumberOfYearsLabel.TabIndex = 81
+            Me.mortgage6NumberOfYearsLabel.Text = "mortgage6NumberOfYears"
+            '
+            'mortgage6NumberOfYearsTextBox
+            '
+            Me.mortgage6NumberOfYearsTextBox.Location = New System.Drawing.Point(880, 898)
+            Me.mortgage6NumberOfYearsTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.mortgage6NumberOfYearsTextBox.Name = "mortgage6NumberOfYearsTextBox"
+            Me.mortgage6NumberOfYearsTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage6NumberOfYearsTextBox.TabIndex = 82
             '
             'panel3
             '
@@ -644,47 +1122,46 @@ Namespace DatabaseTestApplication2
             Me.panel3.Controls.Add(Me.panel6)
             Me.panel3.Dock = System.Windows.Forms.DockStyle.Fill
             Me.panel3.Location = New System.Drawing.Point(0, 27)
-            Me.panel3.Margin = New System.Windows.Forms.Padding(4)
+            Me.panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(1243, 708)
+            Me.panel3.Size = New System.Drawing.Size(1345, 604)
             Me.panel3.TabIndex = 19
             '
             'panel4
             '
             Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
-            Me.panel4.Location = New System.Drawing.Point(1230, 0)
-            Me.panel4.Margin = New System.Windows.Forms.Padding(4)
+            Me.panel4.Location = New System.Drawing.Point(1332, 0)
+            Me.panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(13, 696)
+            Me.panel4.Size = New System.Drawing.Size(13, 592)
             Me.panel4.TabIndex = 3
             '
             'panel5
             '
             Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
             Me.panel5.Location = New System.Drawing.Point(0, 0)
-            Me.panel5.Margin = New System.Windows.Forms.Padding(4)
+            Me.panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(13, 696)
+            Me.panel5.Size = New System.Drawing.Size(13, 592)
             Me.panel5.TabIndex = 5
             '
             'panel6
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 696)
-            Me.panel6.Margin = New System.Windows.Forms.Padding(4)
+            Me.panel6.Location = New System.Drawing.Point(0, 592)
+            Me.panel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.panel6.Name = "panel6"
-            Me.panel6.Size = New System.Drawing.Size(1243, 12)
+            Me.panel6.Size = New System.Drawing.Size(1345, 12)
             Me.panel6.TabIndex = 6
             '
             'frmtracking
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(1243, 735)
+            Me.ClientSize = New System.Drawing.Size(1345, 631)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
-            Me.MainMenuStrip = Me.MenuStrip1
-            Me.Margin = New System.Windows.Forms.Padding(4)
+            Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.Name = "frmtracking"
             Me.Text = "Tracking"
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -694,11 +1171,6 @@ Namespace DatabaseTestApplication2
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.Panel1.ResumeLayout(False)
             Me.Panel1.PerformLayout()
-            Me.Panel2.ResumeLayout(False)
-            Me.Panel2.PerformLayout()
-            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-            Me.MenuStrip1.ResumeLayout(False)
-            Me.MenuStrip1.PerformLayout()
             Me.panel3.ResumeLayout(False)
             Me.panel3.PerformLayout()
             Me.ResumeLayout(False)
@@ -721,6 +1193,8 @@ Namespace DatabaseTestApplication2
 		Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
 		Friend WithEvents Panel1 As System.Windows.Forms.Panel
 		Friend WithEvents trackingBindingSource As System.Windows.Forms.BindingSource
+		Friend WithEvents general_UID_comboBox As System.Windows.Forms.ComboBox
+		Friend WithEvents general_UIDLabel As System.Windows.Forms.Label
 		Friend WithEvents sweatEquityDate_dateTimePicker As System.Windows.Forms.DateTimePicker
 		Friend WithEvents sweatEquityDateLabel As System.Windows.Forms.Label
 		Friend WithEvents sweatEquityAmountTextBox As System.Windows.Forms.TextBox
@@ -746,22 +1220,66 @@ Namespace DatabaseTestApplication2
 		Friend WithEvents mortgage1BankTextBox As System.Windows.Forms.TextBox
 		Friend WithEvents mortgage1BankLabel As System.Windows.Forms.Label
 		Friend WithEvents mortgage1ForgivableTextBox As System.Windows.Forms.TextBox
-        Friend WithEvents mortgage1OriginalBalanceTextBox As System.Windows.Forms.TextBox
-        Friend WithEvents mortgage1OriginalBalanceLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage1ForgivableLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage1OriginalBalanceTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage1OriginalBalanceLabel As System.Windows.Forms.Label
 		Friend WithEvents mortgage1NumberOfYearsTextBox As System.Windows.Forms.TextBox
 		Friend WithEvents mortgage1NumberOfYearsLabel As System.Windows.Forms.Label
-		Friend WithEvents general_UID_comboBox As System.Windows.Forms.ComboBox
-		Friend WithEvents general_UIDLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage2PriceTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage2PriceLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage2BankTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage2BankLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage2ForgivableTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage2ForgivableLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage2OriginalBalanceTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage2OriginalBalanceLabel As System.Windows.Forms.Label
+		Friend WithEvents morgage2NumberOfYearsTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents morgage2NumberOfYearsLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage3PriceTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage3PriceLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage3BankTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage3BankLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage3ForgivableTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage3ForgivableLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage3OriginalBalanceTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage3OriginalBalanceLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage3NumberOfYearsTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage3NumberOfYearsLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage4PriceTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage4PriceLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage4BankTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage4BankLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage4ForgivableTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage4ForgivableLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage4OriginalBalanceTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage4OriginalBalanceLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage4NumberOfYearsTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage4NumberOfYearsLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage5PriceTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage5PriceLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage5BankTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage5BankLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage5ForgivableTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage5ForgivableLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage5OriginalBalanceTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage5OriginalBalanceLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage5NumberOfYearsTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage5NumberOfYearsLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage6PriceTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage6PriceLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage6BankTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage6BankLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage6ForgivableTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage6ForgivableLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage6OriginalBalanceTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage6OriginalBalanceLabel As System.Windows.Forms.Label
+		Friend WithEvents mortgage6NumberOfYearsTextBox As System.Windows.Forms.TextBox
+		Friend WithEvents mortgage6NumberOfYearsLabel As System.Windows.Forms.Label
 		Friend WithEvents panel3 As System.Windows.Forms.Panel
 		Friend WithEvents panel4 As System.Windows.Forms.Panel
 		Friend WithEvents panel5 As System.Windows.Forms.Panel
 		Friend WithEvents panel6 As System.Windows.Forms.Panel
-        Friend WithEvents CheckBox1 As CheckBox
-        Friend WithEvents PictureBox1 As PictureBox
-        Friend WithEvents MenuStrip1 As MenuStrip
-        Friend WithEvents MainMenuToolStripMenuItem As ToolStripMenuItem
-        Friend WithEvents GeneralInfoToolStripMenuItem As ToolStripMenuItem
-        Friend WithEvents Panel2 As Panel
-    End Class
-
+		
+	End Class
+	
 End Namespace

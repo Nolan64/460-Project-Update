@@ -8,7 +8,7 @@
         <EntityTypeShape EntityType="mydbModel.general" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
         <EntityTypeShape EntityType="mydbModel.homeownership" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
         <EntityTypeShape EntityType="mydbModel.repair" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
-        <EntityTypeShape EntityType="mydbModel.tracking" Width="1.5" PointX="3" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel.tracking" Width="1.5" PointX="5.5" PointY="6.625" IsExpanded="true" />
         <EntityTypeShape EntityType="mydbModel.user" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="mydbModel.fk_homeownership_general1" ManuallyRouted="false" />
         <AssociationConnector Association="mydbModel.fk_Repairs_General_Info" ManuallyRouted="false" />

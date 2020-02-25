@@ -77,6 +77,7 @@
           <Key>
             <PropertyRef Name="general_UID" />
           </Key>
+          <Property Name="general_UID" Type="int" Nullable="false" />
           <Property Name="sweatEquityDate" Type="date" />
           <Property Name="sweatEquityAmount" Type="int" />
           <Property Name="monthlyDepositDate" Type="date" />
@@ -92,7 +93,31 @@
           <Property Name="mortgage1Forgivable" Type="tinyint" />
           <Property Name="mortgage1OriginalBalance" Type="double" />
           <Property Name="mortgage1NumberOfYears" Type="int" />
-          <Property Name="general_UID" Type="int" Nullable="false" />
+          <Property Name="mortgage2Price" Type="double" />
+          <Property Name="mortgage2Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage2Forgivable" Type="tinyint" />
+          <Property Name="mortgage2OriginalBalance" Type="double" />
+          <Property Name="morgage2NumberOfYears" Type="int" />
+          <Property Name="mortgage3Price" Type="double" />
+          <Property Name="mortgage3Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage3Forgivable" Type="tinyint" />
+          <Property Name="mortgage3OriginalBalance" Type="double" />
+          <Property Name="mortgage3NumberOfYears" Type="int" />
+          <Property Name="mortgage4Price" Type="double" />
+          <Property Name="mortgage4Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage4Forgivable" Type="tinyint" />
+          <Property Name="mortgage4OriginalBalance" Type="double" />
+          <Property Name="mortgage4NumberOfYears" Type="int" />
+          <Property Name="mortgage5Price" Type="double" />
+          <Property Name="mortgage5Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage5Forgivable" Type="tinyint" />
+          <Property Name="mortgage5OriginalBalance" Type="double" />
+          <Property Name="mortgage5NumberOfYears" Type="int" />
+          <Property Name="mortgage6Price" Type="double" />
+          <Property Name="mortgage6Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage6Forgivable" Type="tinyint" />
+          <Property Name="mortgage6OriginalBalance" Type="double" />
+          <Property Name="mortgage6NumberOfYears" Type="int" />
         </EntityType>
         <EntityType Name="user">
           <Key>
@@ -255,6 +280,31 @@
           <Property Name="mortgage1NumberOfYears" Type="Int32" />
           <Property Name="general_UID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="general" Relationship="Self.fk_tracking_general1" FromRole="tracking" ToRole="general" />
+          <Property Name="mortgage2Price" Type="Double" />
+          <Property Name="mortgage2Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage2Forgivable" Type="SByte" />
+          <Property Name="mortgage2OriginalBalance" Type="Double" />
+          <Property Name="morgage2NumberOfYears" Type="Int32" />
+          <Property Name="mortgage3Price" Type="Double" />
+          <Property Name="mortgage3Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage3Forgivable" Type="SByte" />
+          <Property Name="mortgage3OriginalBalance" Type="Double" />
+          <Property Name="mortgage3NumberOfYears" Type="Int32" />
+          <Property Name="mortgage4Price" Type="Double" />
+          <Property Name="mortgage4Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage4Forgivable" Type="SByte" />
+          <Property Name="mortgage4OriginalBalance" Type="Double" />
+          <Property Name="mortgage4NumberOfYears" Type="Int32" />
+          <Property Name="mortgage5Price" Type="Double" />
+          <Property Name="mortgage5Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage5Forgivable" Type="SByte" />
+          <Property Name="mortgage5OriginalBalance" Type="Double" />
+          <Property Name="mortgage5NumberOfYears" Type="Int32" />
+          <Property Name="mortgage6Price" Type="Double" />
+          <Property Name="mortgage6Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage6Forgivable" Type="SByte" />
+          <Property Name="mortgage6OriginalBalance" Type="Double" />
+          <Property Name="mortgage6NumberOfYears" Type="Int32" />
         </EntityType>
         <EntityType Name="user">
           <Key>
@@ -399,6 +449,31 @@
           <EntitySetMapping Name="trackings">
             <EntityTypeMapping TypeName="mydbModel.tracking">
               <MappingFragment StoreEntitySet="tracking">
+                <ScalarProperty Name="mortgage6NumberOfYears" ColumnName="mortgage6NumberOfYears" />
+                <ScalarProperty Name="mortgage6OriginalBalance" ColumnName="mortgage6OriginalBalance" />
+                <ScalarProperty Name="mortgage6Forgivable" ColumnName="mortgage6Forgivable" />
+                <ScalarProperty Name="mortgage6Bank" ColumnName="mortgage6Bank" />
+                <ScalarProperty Name="mortgage6Price" ColumnName="mortgage6Price" />
+                <ScalarProperty Name="mortgage5NumberOfYears" ColumnName="mortgage5NumberOfYears" />
+                <ScalarProperty Name="mortgage5OriginalBalance" ColumnName="mortgage5OriginalBalance" />
+                <ScalarProperty Name="mortgage5Forgivable" ColumnName="mortgage5Forgivable" />
+                <ScalarProperty Name="mortgage5Bank" ColumnName="mortgage5Bank" />
+                <ScalarProperty Name="mortgage5Price" ColumnName="mortgage5Price" />
+                <ScalarProperty Name="mortgage4NumberOfYears" ColumnName="mortgage4NumberOfYears" />
+                <ScalarProperty Name="mortgage4OriginalBalance" ColumnName="mortgage4OriginalBalance" />
+                <ScalarProperty Name="mortgage4Forgivable" ColumnName="mortgage4Forgivable" />
+                <ScalarProperty Name="mortgage4Bank" ColumnName="mortgage4Bank" />
+                <ScalarProperty Name="mortgage4Price" ColumnName="mortgage4Price" />
+                <ScalarProperty Name="mortgage3NumberOfYears" ColumnName="mortgage3NumberOfYears" />
+                <ScalarProperty Name="mortgage3OriginalBalance" ColumnName="mortgage3OriginalBalance" />
+                <ScalarProperty Name="mortgage3Forgivable" ColumnName="mortgage3Forgivable" />
+                <ScalarProperty Name="mortgage3Bank" ColumnName="mortgage3Bank" />
+                <ScalarProperty Name="mortgage3Price" ColumnName="mortgage3Price" />
+                <ScalarProperty Name="morgage2NumberOfYears" ColumnName="morgage2NumberOfYears" />
+                <ScalarProperty Name="mortgage2OriginalBalance" ColumnName="mortgage2OriginalBalance" />
+                <ScalarProperty Name="mortgage2Forgivable" ColumnName="mortgage2Forgivable" />
+                <ScalarProperty Name="mortgage2Bank" ColumnName="mortgage2Bank" />
+                <ScalarProperty Name="mortgage2Price" ColumnName="mortgage2Price" />
                 <ScalarProperty Name="sweatEquityDate" ColumnName="sweatEquityDate" />
                 <ScalarProperty Name="sweatEquityAmount" ColumnName="sweatEquityAmount" />
                 <ScalarProperty Name="monthlyDepositDate" ColumnName="monthlyDepositDate" />
