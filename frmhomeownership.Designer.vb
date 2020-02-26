@@ -116,14 +116,14 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigator1.Name = "BindingNavigator1"
             Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(13, 0, 13, 0)
             Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-            Me.BindingNavigator1.Size = New System.Drawing.Size(1280, 31)
+            Me.BindingNavigator1.Size = New System.Drawing.Size(1280, 27)
             Me.BindingNavigator1.TabIndex = 0
             Me.BindingNavigator1.Text = "BindingNavigator1"
             '
             'BindingNavigatorCountItem
             '
             Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 28)
+            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
             Me.BindingNavigatorCountItem.Text = "of {0}"
             Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
             '
@@ -133,7 +133,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
             Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorDeleteItem.Text = "Delete"
             '
             'BindingNavigatorMoveFirstItem
@@ -142,7 +142,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
             Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorMoveFirstItem.Text = "Move first"
             '
             'BindingNavigatorMovePreviousItem
@@ -151,13 +151,13 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
             Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
             '
             'BindingNavigatorSeparator
             '
             Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-            Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 31)
+            Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
             '
             'BindingNavigatorPositionItem
             '
@@ -172,7 +172,7 @@ Namespace DatabaseTestApplication2
             'BindingNavigatorSeparator1
             '
             Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-            Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 31)
+            Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
             '
             'BindingNavigatorMoveNextItem
             '
@@ -180,7 +180,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
             Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorMoveNextItem.Text = "Move next"
             '
             'BindingNavigatorMoveLastItem
@@ -189,13 +189,13 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
             Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorMoveLastItem.Text = "Move last"
             '
             'BindingNavigatorSeparator2
             '
             Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-            Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 31)
+            Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
             '
             'BindingNavigatorAddNewItem
             '
@@ -203,7 +203,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
             Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorAddNewItem.Text = "Add new"
             '
             'ToolStripButton1
@@ -212,7 +212,7 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
             Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
             Me.ToolStripButton1.Name = "ToolStripButton1"
-            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 28)
+            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 24)
             Me.ToolStripButton1.Text = "Save"
             '
             'ErrorProvider1
@@ -223,6 +223,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Panel1.AutoScroll = True
             Me.Panel1.AutoSize = True
+            Me.Panel1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.angryimg__12_
             Me.Panel1.Controls.Add(Me.applicantInfoMeetingLabel)
             Me.Panel1.Controls.Add(Me.applicantInfoMeeting_dateTimePicker)
             Me.Panel1.Controls.Add(Me.applicationChecklist1Label)
@@ -263,7 +264,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Location = New System.Drawing.Point(13, 0)
             Me.Panel1.Margin = New System.Windows.Forms.Padding(13, 4, 13, 4)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(1254, 534)
+            Me.Panel1.Size = New System.Drawing.Size(1254, 538)
             Me.Panel1.TabIndex = 1
             '
             'applicantInfoMeetingLabel
@@ -621,10 +622,10 @@ Namespace DatabaseTestApplication2
             Me.panel3.Controls.Add(Me.panel5)
             Me.panel3.Controls.Add(Me.panel6)
             Me.panel3.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.panel3.Location = New System.Drawing.Point(0, 31)
+            Me.panel3.Location = New System.Drawing.Point(0, 27)
             Me.panel3.Margin = New System.Windows.Forms.Padding(4)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(1280, 546)
+            Me.panel3.Size = New System.Drawing.Size(1280, 550)
             Me.panel3.TabIndex = 19
             '
             'panel4
@@ -633,7 +634,7 @@ Namespace DatabaseTestApplication2
             Me.panel4.Location = New System.Drawing.Point(1267, 0)
             Me.panel4.Margin = New System.Windows.Forms.Padding(4)
             Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(13, 534)
+            Me.panel4.Size = New System.Drawing.Size(13, 538)
             Me.panel4.TabIndex = 3
             '
             'panel5
@@ -642,13 +643,13 @@ Namespace DatabaseTestApplication2
             Me.panel5.Location = New System.Drawing.Point(0, 0)
             Me.panel5.Margin = New System.Windows.Forms.Padding(4)
             Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(13, 534)
+            Me.panel5.Size = New System.Drawing.Size(13, 538)
             Me.panel5.TabIndex = 5
             '
             'panel6
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 534)
+            Me.panel6.Location = New System.Drawing.Point(0, 538)
             Me.panel6.Margin = New System.Windows.Forms.Padding(4)
             Me.panel6.Name = "panel6"
             Me.panel6.Size = New System.Drawing.Size(1280, 12)
@@ -658,6 +659,7 @@ Namespace DatabaseTestApplication2
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+            Me.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.angryimg__12_
             Me.ClientSize = New System.Drawing.Size(1280, 577)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
