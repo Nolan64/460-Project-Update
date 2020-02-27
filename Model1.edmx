@@ -28,6 +28,14 @@
           <Property Name="maritalStatus" Type="tinyint" />
           <Property Name="notes" Type="mediumtext" />
         </EntityType>
+        <EntityType Name="general_has_survey">
+          <Key>
+            <PropertyRef Name="general_UID" />
+            <PropertyRef Name="survey_SurveyID" />
+          </Key>
+          <Property Name="general_UID" Type="int" Nullable="false" />
+          <Property Name="survey_SurveyID" Type="int" Nullable="false" />
+        </EntityType>
         <EntityType Name="homeownership">
           <Key>
             <PropertyRef Name="general_UID" />
@@ -72,6 +80,131 @@
           <Property Name="GISAssessment" Type="tinyint" />
           <Property Name="FundingSource" Type="varchar" MaxLength="45" />
           <Property Name="General Info_UID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="survey">
+          <Key>
+            <PropertyRef Name="SurveyID" />
+          </Key>
+          <Property Name="SurveyID" Type="int" Nullable="false" />
+          <Property Name="SurveyName" Type="varchar" MaxLength="200" />
+          <Property Name="Question1" Type="varchar" MaxLength="200" />
+          <Property Name="Question2" Type="varchar" MaxLength="200" />
+          <Property Name="Question3" Type="varchar" MaxLength="200" />
+          <Property Name="Question4" Type="varchar" MaxLength="200" />
+          <Property Name="Question5" Type="varchar" MaxLength="200" />
+          <Property Name="Question6" Type="varchar" MaxLength="200" />
+          <Property Name="Question7" Type="varchar" MaxLength="200" />
+          <Property Name="Question8" Type="varchar" MaxLength="200" />
+          <Property Name="Question9" Type="varchar" MaxLength="200" />
+          <Property Name="Question10" Type="varchar" MaxLength="200" />
+          <Property Name="Question11" Type="varchar" MaxLength="200" />
+          <Property Name="Question12" Type="varchar" MaxLength="200" />
+          <Property Name="Question13" Type="varchar" MaxLength="200" />
+          <Property Name="Question14" Type="varchar" MaxLength="200" />
+          <Property Name="Question15" Type="varchar" MaxLength="200" />
+          <Property Name="Question16" Type="varchar" MaxLength="200" />
+          <Property Name="Question17" Type="varchar" MaxLength="200" />
+          <Property Name="Question18" Type="varchar" MaxLength="200" />
+          <Property Name="Question19" Type="varchar" MaxLength="200" />
+          <Property Name="Question20" Type="varchar" MaxLength="200" />
+          <Property Name="Question21" Type="varchar" MaxLength="200" />
+          <Property Name="Question22" Type="varchar" MaxLength="200" />
+          <Property Name="Question23" Type="varchar" MaxLength="200" />
+          <Property Name="Question24" Type="varchar" MaxLength="200" />
+          <Property Name="Question25" Type="varchar" MaxLength="200" />
+          <Property Name="Question26" Type="varchar" MaxLength="200" />
+          <Property Name="Question27" Type="varchar" MaxLength="200" />
+          <Property Name="Question28" Type="varchar" MaxLength="200" />
+          <Property Name="Question29" Type="varchar" MaxLength="200" />
+          <Property Name="Question30" Type="varchar" MaxLength="200" />
+          <Property Name="Question31" Type="varchar" MaxLength="200" />
+          <Property Name="Question36" Type="varchar" MaxLength="200" />
+          <Property Name="Question32" Type="varchar" MaxLength="200" />
+          <Property Name="Question33" Type="varchar" MaxLength="200" />
+          <Property Name="Question34" Type="varchar" MaxLength="200" />
+          <Property Name="Question35" Type="varchar" MaxLength="200" />
+          <Property Name="Question37" Type="varchar" MaxLength="200" />
+          <Property Name="Question38" Type="varchar" MaxLength="200" />
+          <Property Name="Question39" Type="varchar" MaxLength="200" />
+          <Property Name="Question40" Type="varchar" MaxLength="200" />
+          <Property Name="Question41" Type="varchar" MaxLength="200" />
+          <Property Name="Question42" Type="varchar" MaxLength="200" />
+          <Property Name="Question43" Type="varchar" MaxLength="200" />
+          <Property Name="Question44" Type="varchar" MaxLength="200" />
+          <Property Name="Question45" Type="varchar" MaxLength="200" />
+          <Property Name="Question46" Type="varchar" MaxLength="200" />
+          <Property Name="Question47" Type="varchar" MaxLength="200" />
+          <Property Name="Question48" Type="varchar" MaxLength="200" />
+          <Property Name="Question49" Type="varchar" MaxLength="200" />
+          <Property Name="Question50" Type="varchar" MaxLength="200" />
+          <Property Name="QuestionFile" Type="blob" />
+          <Property Name="Notes" Type="varchar" MaxLength="800" />
+          <Property Name="QuestionNum1" Type="varchar" MaxLength="200" />
+          <Property Name="QuestionNum2" Type="varchar" MaxLength="200" />
+          <Property Name="QuestionNum3" Type="varchar" MaxLength="200" />
+          <Property Name="QuestionNum4" Type="varchar" MaxLength="200" />
+          <Property Name="QuestionNum5" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="survey_results">
+          <Key>
+            <PropertyRef Name="survey_SurveyID" />
+          </Key>
+          <Property Name="Question1" Type="bool" />
+          <Property Name="Question2" Type="bool" />
+          <Property Name="Question3" Type="bool" />
+          <Property Name="Question4" Type="bool" />
+          <Property Name="Question5" Type="bool" />
+          <Property Name="Question6" Type="bool" />
+          <Property Name="Question7" Type="bool" />
+          <Property Name="Question8" Type="bool" />
+          <Property Name="Question9" Type="bool" />
+          <Property Name="Question10" Type="bool" />
+          <Property Name="Question11" Type="bool" />
+          <Property Name="Question12" Type="bool" />
+          <Property Name="Question13" Type="bool" />
+          <Property Name="Question14" Type="bool" />
+          <Property Name="Question15" Type="bool" />
+          <Property Name="Question16" Type="bool" />
+          <Property Name="Question17" Type="bool" />
+          <Property Name="Question18" Type="bool" />
+          <Property Name="Question19" Type="bool" />
+          <Property Name="Question20" Type="bool" />
+          <Property Name="Question21" Type="bool" />
+          <Property Name="Question22" Type="bool" />
+          <Property Name="Question23" Type="bool" />
+          <Property Name="Question24" Type="bool" />
+          <Property Name="Question25" Type="bool" />
+          <Property Name="Question26" Type="bool" />
+          <Property Name="Question27" Type="bool" />
+          <Property Name="Question28" Type="bool" />
+          <Property Name="Question29" Type="bool" />
+          <Property Name="Question30" Type="bool" />
+          <Property Name="Question31" Type="bool" />
+          <Property Name="Question32" Type="bool" />
+          <Property Name="Question33" Type="bool" />
+          <Property Name="Question34" Type="bool" />
+          <Property Name="Question35" Type="bool" />
+          <Property Name="Question36" Type="bool" />
+          <Property Name="Question37" Type="bool" />
+          <Property Name="Question38" Type="bool" />
+          <Property Name="Question39" Type="bool" />
+          <Property Name="Question40" Type="bool" />
+          <Property Name="Question41" Type="bool" />
+          <Property Name="Question42" Type="bool" />
+          <Property Name="Question43" Type="bool" />
+          <Property Name="Question44" Type="bool" />
+          <Property Name="Question45" Type="bool" />
+          <Property Name="Question46" Type="bool" />
+          <Property Name="Question47" Type="bool" />
+          <Property Name="Question48" Type="bool" />
+          <Property Name="Question49" Type="bool" />
+          <Property Name="Question50" Type="bool" />
+          <Property Name="QuestionNum1" Type="decimal" Precision="2" Scale="0" />
+          <Property Name="QuestionNum2" Type="decimal" Precision="2" Scale="0" />
+          <Property Name="QuestionNum3" Type="decimal" Precision="2" Scale="0" />
+          <Property Name="QuestionNum4" Type="decimal" Precision="2" Scale="0" />
+          <Property Name="QuestionNum5" Type="decimal" Precision="2" Scale="0" />
+          <Property Name="survey_SurveyID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="tracking">
           <Key>
@@ -127,6 +260,30 @@
           <Property Name="password" Type="varchar" MaxLength="32" Nullable="false" />
           <Property Name="create_time" Type="timestamp" Precision="0" StoreGeneratedPattern="Identity" />
         </EntityType>
+        <Association Name="fk_general_has_survey_general1">
+          <End Role="general" Type="Self.general" Multiplicity="1" />
+          <End Role="general_has_survey" Type="Self.general_has_survey" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="general">
+              <PropertyRef Name="UID" />
+            </Principal>
+            <Dependent Role="general_has_survey">
+              <PropertyRef Name="general_UID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_general_has_survey_survey1">
+          <End Role="survey" Type="Self.survey" Multiplicity="1" />
+          <End Role="general_has_survey" Type="Self.general_has_survey" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="survey">
+              <PropertyRef Name="SurveyID" />
+            </Principal>
+            <Dependent Role="general_has_survey">
+              <PropertyRef Name="survey_SurveyID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="fk_homeownership_general1">
           <End Role="general" Type="Self.general" Multiplicity="1" />
           <End Role="homeownership" Type="Self.homeownership" Multiplicity="0..1" />
@@ -151,6 +308,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="fk_survey_results_survey1">
+          <End Role="survey" Type="Self.survey" Multiplicity="1" />
+          <End Role="survey_results" Type="Self.survey_results" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="survey">
+              <PropertyRef Name="SurveyID" />
+            </Principal>
+            <Dependent Role="survey_results">
+              <PropertyRef Name="survey_SurveyID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="fk_tracking_general1">
           <End Role="general" Type="Self.general" Multiplicity="1" />
           <End Role="tracking" Type="Self.tracking" Multiplicity="0..1" />
@@ -165,10 +334,21 @@
         </Association>
         <EntityContainer Name="mydbModelStoreContainer">
           <EntitySet Name="general" EntityType="Self.general" Schema="mydb" store:Type="Tables" />
+          <EntitySet Name="general_has_survey" EntityType="Self.general_has_survey" Schema="mydb" store:Type="Tables" />
           <EntitySet Name="homeownership" EntityType="Self.homeownership" Schema="mydb" store:Type="Tables" />
           <EntitySet Name="repairs" EntityType="Self.repairs" Schema="mydb" store:Type="Tables" />
+          <EntitySet Name="survey" EntityType="Self.survey" Schema="mydb" store:Type="Tables" />
+          <EntitySet Name="survey_results" EntityType="Self.survey_results" Schema="mydb" store:Type="Tables" />
           <EntitySet Name="tracking" EntityType="Self.tracking" Schema="mydb" store:Type="Tables" />
           <EntitySet Name="user" EntityType="Self.user" Schema="mydb" store:Type="Tables" />
+          <AssociationSet Name="fk_general_has_survey_general1" Association="Self.fk_general_has_survey_general1">
+            <End Role="general" EntitySet="general" />
+            <End Role="general_has_survey" EntitySet="general_has_survey" />
+          </AssociationSet>
+          <AssociationSet Name="fk_general_has_survey_survey1" Association="Self.fk_general_has_survey_survey1">
+            <End Role="survey" EntitySet="survey" />
+            <End Role="general_has_survey" EntitySet="general_has_survey" />
+          </AssociationSet>
           <AssociationSet Name="fk_homeownership_general1" Association="Self.fk_homeownership_general1">
             <End Role="general" EntitySet="general" />
             <End Role="homeownership" EntitySet="homeownership" />
@@ -176,6 +356,10 @@
           <AssociationSet Name="fk_Repairs_General Info" Association="Self.fk_Repairs_General Info">
             <End Role="general" EntitySet="general" />
             <End Role="repairs" EntitySet="repairs" />
+          </AssociationSet>
+          <AssociationSet Name="fk_survey_results_survey1" Association="Self.fk_survey_results_survey1">
+            <End Role="survey" EntitySet="survey" />
+            <End Role="survey_results" EntitySet="survey_results" />
           </AssociationSet>
           <AssociationSet Name="fk_tracking_general1" Association="Self.fk_tracking_general1">
             <End Role="general" EntitySet="general" />
@@ -211,6 +395,7 @@
           <NavigationProperty Name="homeownership" Relationship="Self.fk_homeownership_general1" FromRole="general" ToRole="homeownership" />
           <NavigationProperty Name="repair" Relationship="Self.fk_Repairs_General_Info" FromRole="general" ToRole="repairs" />
           <NavigationProperty Name="tracking" Relationship="Self.fk_tracking_general1" FromRole="general" ToRole="tracking" />
+          <NavigationProperty Name="surveys" Relationship="mydbModel.general_has_survey" FromRole="general" ToRole="survey" />
         </EntityType>
         <EntityType Name="homeownership">
           <Key>
@@ -368,7 +553,161 @@
             <End Role="general" EntitySet="generals" />
             <End Role="tracking" EntitySet="trackings" />
           </AssociationSet>
+          <EntitySet Name="surveys" EntityType="mydbModel.survey" />
+          <EntitySet Name="survey_results" EntityType="mydbModel.survey_results" />
+          <AssociationSet Name="fk_survey_results_survey1" Association="mydbModel.fk_survey_results_survey1">
+            <End Role="survey" EntitySet="surveys" />
+            <End Role="survey_results" EntitySet="survey_results" />
+          </AssociationSet>
+          <AssociationSet Name="general_has_survey" Association="mydbModel.general_has_survey">
+            <End Role="general" EntitySet="generals" />
+            <End Role="survey" EntitySet="surveys" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="survey">
+          <Key>
+            <PropertyRef Name="SurveyID" />
+          </Key>
+          <Property Name="SurveyID" Type="Int32" Nullable="false" />
+          <Property Name="SurveyName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question3" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question4" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question5" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question6" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question7" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question8" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question9" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question10" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question11" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question12" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question13" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question14" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question15" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question16" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question17" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question18" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question19" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question20" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question21" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question22" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question23" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question24" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question25" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question26" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question27" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question28" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question29" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question30" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question31" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question36" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question32" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question33" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question34" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question35" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question37" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question38" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question39" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question40" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question41" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question42" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question43" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question44" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question45" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question46" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question47" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question48" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question49" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question50" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="QuestionFile" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Notes" Type="String" MaxLength="800" FixedLength="false" Unicode="false" />
+          <Property Name="QuestionNum1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="QuestionNum2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="QuestionNum3" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="QuestionNum4" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="QuestionNum5" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="survey_results" Relationship="mydbModel.fk_survey_results_survey1" FromRole="survey" ToRole="survey_results" />
+          <NavigationProperty Name="generals" Relationship="mydbModel.general_has_survey" FromRole="survey" ToRole="general" />
+        </EntityType>
+        <EntityType Name="survey_results">
+          <Key>
+            <PropertyRef Name="survey_SurveyID" />
+          </Key>
+          <Property Name="Question1" Type="Boolean" />
+          <Property Name="Question2" Type="Boolean" />
+          <Property Name="Question3" Type="Boolean" />
+          <Property Name="Question4" Type="Boolean" />
+          <Property Name="Question5" Type="Boolean" />
+          <Property Name="Question6" Type="Boolean" />
+          <Property Name="Question7" Type="Boolean" />
+          <Property Name="Question8" Type="Boolean" />
+          <Property Name="Question9" Type="Boolean" />
+          <Property Name="Question10" Type="Boolean" />
+          <Property Name="Question11" Type="Boolean" />
+          <Property Name="Question12" Type="Boolean" />
+          <Property Name="Question13" Type="Boolean" />
+          <Property Name="Question14" Type="Boolean" />
+          <Property Name="Question15" Type="Boolean" />
+          <Property Name="Question16" Type="Boolean" />
+          <Property Name="Question17" Type="Boolean" />
+          <Property Name="Question18" Type="Boolean" />
+          <Property Name="Question19" Type="Boolean" />
+          <Property Name="Question20" Type="Boolean" />
+          <Property Name="Question21" Type="Boolean" />
+          <Property Name="Question22" Type="Boolean" />
+          <Property Name="Question23" Type="Boolean" />
+          <Property Name="Question24" Type="Boolean" />
+          <Property Name="Question25" Type="Boolean" />
+          <Property Name="Question26" Type="Boolean" />
+          <Property Name="Question27" Type="Boolean" />
+          <Property Name="Question28" Type="Boolean" />
+          <Property Name="Question29" Type="Boolean" />
+          <Property Name="Question30" Type="Boolean" />
+          <Property Name="Question31" Type="Boolean" />
+          <Property Name="Question32" Type="Boolean" />
+          <Property Name="Question33" Type="Boolean" />
+          <Property Name="Question34" Type="Boolean" />
+          <Property Name="Question35" Type="Boolean" />
+          <Property Name="Question36" Type="Boolean" />
+          <Property Name="Question37" Type="Boolean" />
+          <Property Name="Question38" Type="Boolean" />
+          <Property Name="Question39" Type="Boolean" />
+          <Property Name="Question40" Type="Boolean" />
+          <Property Name="Question41" Type="Boolean" />
+          <Property Name="Question42" Type="Boolean" />
+          <Property Name="Question43" Type="Boolean" />
+          <Property Name="Question44" Type="Boolean" />
+          <Property Name="Question45" Type="Boolean" />
+          <Property Name="Question46" Type="Boolean" />
+          <Property Name="Question47" Type="Boolean" />
+          <Property Name="Question48" Type="Boolean" />
+          <Property Name="Question49" Type="Boolean" />
+          <Property Name="Question50" Type="Boolean" />
+          <Property Name="QuestionNum1" Type="Decimal" />
+          <Property Name="QuestionNum2" Type="Decimal" />
+          <Property Name="QuestionNum3" Type="Decimal" />
+          <Property Name="QuestionNum4" Type="Decimal" />
+          <Property Name="QuestionNum5" Type="Decimal" />
+          <Property Name="survey_SurveyID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="survey" Relationship="mydbModel.fk_survey_results_survey1" FromRole="survey_results" ToRole="survey" />
+        </EntityType>
+        <Association Name="fk_survey_results_survey1">
+          <End Type="mydbModel.survey" Role="survey" Multiplicity="1" />
+          <End Type="mydbModel.survey_results" Role="survey_results" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="survey">
+              <PropertyRef Name="SurveyID" />
+            </Principal>
+            <Dependent Role="survey_results">
+              <PropertyRef Name="survey_SurveyID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="general_has_survey">
+          <End Type="mydbModel.general" Role="general" Multiplicity="*" />
+          <End Type="mydbModel.survey" Role="survey" Multiplicity="*" />
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -502,6 +841,141 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="surveys">
+            <EntityTypeMapping TypeName="mydbModel.survey">
+              <MappingFragment StoreEntitySet="survey">
+                <ScalarProperty Name="QuestionNum5" ColumnName="QuestionNum5" />
+                <ScalarProperty Name="QuestionNum4" ColumnName="QuestionNum4" />
+                <ScalarProperty Name="QuestionNum3" ColumnName="QuestionNum3" />
+                <ScalarProperty Name="QuestionNum2" ColumnName="QuestionNum2" />
+                <ScalarProperty Name="QuestionNum1" ColumnName="QuestionNum1" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="QuestionFile" ColumnName="QuestionFile" />
+                <ScalarProperty Name="Question50" ColumnName="Question50" />
+                <ScalarProperty Name="Question49" ColumnName="Question49" />
+                <ScalarProperty Name="Question48" ColumnName="Question48" />
+                <ScalarProperty Name="Question47" ColumnName="Question47" />
+                <ScalarProperty Name="Question46" ColumnName="Question46" />
+                <ScalarProperty Name="Question45" ColumnName="Question45" />
+                <ScalarProperty Name="Question44" ColumnName="Question44" />
+                <ScalarProperty Name="Question43" ColumnName="Question43" />
+                <ScalarProperty Name="Question42" ColumnName="Question42" />
+                <ScalarProperty Name="Question41" ColumnName="Question41" />
+                <ScalarProperty Name="Question40" ColumnName="Question40" />
+                <ScalarProperty Name="Question39" ColumnName="Question39" />
+                <ScalarProperty Name="Question38" ColumnName="Question38" />
+                <ScalarProperty Name="Question37" ColumnName="Question37" />
+                <ScalarProperty Name="Question35" ColumnName="Question35" />
+                <ScalarProperty Name="Question34" ColumnName="Question34" />
+                <ScalarProperty Name="Question33" ColumnName="Question33" />
+                <ScalarProperty Name="Question32" ColumnName="Question32" />
+                <ScalarProperty Name="Question36" ColumnName="Question36" />
+                <ScalarProperty Name="Question31" ColumnName="Question31" />
+                <ScalarProperty Name="Question30" ColumnName="Question30" />
+                <ScalarProperty Name="Question29" ColumnName="Question29" />
+                <ScalarProperty Name="Question28" ColumnName="Question28" />
+                <ScalarProperty Name="Question27" ColumnName="Question27" />
+                <ScalarProperty Name="Question26" ColumnName="Question26" />
+                <ScalarProperty Name="Question25" ColumnName="Question25" />
+                <ScalarProperty Name="Question24" ColumnName="Question24" />
+                <ScalarProperty Name="Question23" ColumnName="Question23" />
+                <ScalarProperty Name="Question22" ColumnName="Question22" />
+                <ScalarProperty Name="Question21" ColumnName="Question21" />
+                <ScalarProperty Name="Question20" ColumnName="Question20" />
+                <ScalarProperty Name="Question19" ColumnName="Question19" />
+                <ScalarProperty Name="Question18" ColumnName="Question18" />
+                <ScalarProperty Name="Question17" ColumnName="Question17" />
+                <ScalarProperty Name="Question16" ColumnName="Question16" />
+                <ScalarProperty Name="Question15" ColumnName="Question15" />
+                <ScalarProperty Name="Question14" ColumnName="Question14" />
+                <ScalarProperty Name="Question13" ColumnName="Question13" />
+                <ScalarProperty Name="Question12" ColumnName="Question12" />
+                <ScalarProperty Name="Question11" ColumnName="Question11" />
+                <ScalarProperty Name="Question10" ColumnName="Question10" />
+                <ScalarProperty Name="Question9" ColumnName="Question9" />
+                <ScalarProperty Name="Question8" ColumnName="Question8" />
+                <ScalarProperty Name="Question7" ColumnName="Question7" />
+                <ScalarProperty Name="Question6" ColumnName="Question6" />
+                <ScalarProperty Name="Question5" ColumnName="Question5" />
+                <ScalarProperty Name="Question4" ColumnName="Question4" />
+                <ScalarProperty Name="Question3" ColumnName="Question3" />
+                <ScalarProperty Name="Question2" ColumnName="Question2" />
+                <ScalarProperty Name="Question1" ColumnName="Question1" />
+                <ScalarProperty Name="SurveyName" ColumnName="SurveyName" />
+                <ScalarProperty Name="SurveyID" ColumnName="SurveyID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="survey_results">
+            <EntityTypeMapping TypeName="mydbModel.survey_results">
+              <MappingFragment StoreEntitySet="survey_results">
+                <ScalarProperty Name="survey_SurveyID" ColumnName="survey_SurveyID" />
+                <ScalarProperty Name="QuestionNum5" ColumnName="QuestionNum5" />
+                <ScalarProperty Name="QuestionNum4" ColumnName="QuestionNum4" />
+                <ScalarProperty Name="QuestionNum3" ColumnName="QuestionNum3" />
+                <ScalarProperty Name="QuestionNum2" ColumnName="QuestionNum2" />
+                <ScalarProperty Name="QuestionNum1" ColumnName="QuestionNum1" />
+                <ScalarProperty Name="Question50" ColumnName="Question50" />
+                <ScalarProperty Name="Question49" ColumnName="Question49" />
+                <ScalarProperty Name="Question48" ColumnName="Question48" />
+                <ScalarProperty Name="Question47" ColumnName="Question47" />
+                <ScalarProperty Name="Question46" ColumnName="Question46" />
+                <ScalarProperty Name="Question45" ColumnName="Question45" />
+                <ScalarProperty Name="Question44" ColumnName="Question44" />
+                <ScalarProperty Name="Question43" ColumnName="Question43" />
+                <ScalarProperty Name="Question42" ColumnName="Question42" />
+                <ScalarProperty Name="Question41" ColumnName="Question41" />
+                <ScalarProperty Name="Question40" ColumnName="Question40" />
+                <ScalarProperty Name="Question39" ColumnName="Question39" />
+                <ScalarProperty Name="Question38" ColumnName="Question38" />
+                <ScalarProperty Name="Question37" ColumnName="Question37" />
+                <ScalarProperty Name="Question36" ColumnName="Question36" />
+                <ScalarProperty Name="Question35" ColumnName="Question35" />
+                <ScalarProperty Name="Question34" ColumnName="Question34" />
+                <ScalarProperty Name="Question33" ColumnName="Question33" />
+                <ScalarProperty Name="Question32" ColumnName="Question32" />
+                <ScalarProperty Name="Question31" ColumnName="Question31" />
+                <ScalarProperty Name="Question30" ColumnName="Question30" />
+                <ScalarProperty Name="Question29" ColumnName="Question29" />
+                <ScalarProperty Name="Question28" ColumnName="Question28" />
+                <ScalarProperty Name="Question27" ColumnName="Question27" />
+                <ScalarProperty Name="Question26" ColumnName="Question26" />
+                <ScalarProperty Name="Question25" ColumnName="Question25" />
+                <ScalarProperty Name="Question24" ColumnName="Question24" />
+                <ScalarProperty Name="Question23" ColumnName="Question23" />
+                <ScalarProperty Name="Question22" ColumnName="Question22" />
+                <ScalarProperty Name="Question21" ColumnName="Question21" />
+                <ScalarProperty Name="Question20" ColumnName="Question20" />
+                <ScalarProperty Name="Question19" ColumnName="Question19" />
+                <ScalarProperty Name="Question18" ColumnName="Question18" />
+                <ScalarProperty Name="Question17" ColumnName="Question17" />
+                <ScalarProperty Name="Question16" ColumnName="Question16" />
+                <ScalarProperty Name="Question15" ColumnName="Question15" />
+                <ScalarProperty Name="Question14" ColumnName="Question14" />
+                <ScalarProperty Name="Question13" ColumnName="Question13" />
+                <ScalarProperty Name="Question12" ColumnName="Question12" />
+                <ScalarProperty Name="Question11" ColumnName="Question11" />
+                <ScalarProperty Name="Question10" ColumnName="Question10" />
+                <ScalarProperty Name="Question9" ColumnName="Question9" />
+                <ScalarProperty Name="Question8" ColumnName="Question8" />
+                <ScalarProperty Name="Question7" ColumnName="Question7" />
+                <ScalarProperty Name="Question6" ColumnName="Question6" />
+                <ScalarProperty Name="Question5" ColumnName="Question5" />
+                <ScalarProperty Name="Question4" ColumnName="Question4" />
+                <ScalarProperty Name="Question3" ColumnName="Question3" />
+                <ScalarProperty Name="Question2" ColumnName="Question2" />
+                <ScalarProperty Name="Question1" ColumnName="Question1" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="general_has_survey" TypeName="mydbModel.general_has_survey" StoreEntitySet="general_has_survey">
+            <EndProperty Name="survey">
+              <ScalarProperty Name="SurveyID" ColumnName="survey_SurveyID" />
+            </EndProperty>
+            <EndProperty Name="general">
+              <ScalarProperty Name="UID" ColumnName="general_UID" />
+            </EndProperty>
+          </AssociationSetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
