@@ -13,6 +13,10 @@
         <AssociationConnector Association="mydbModel.fk_homeownership_general1" ManuallyRouted="false" />
         <AssociationConnector Association="mydbModel.fk_Repairs_General_Info" ManuallyRouted="false" />
         <AssociationConnector Association="mydbModel.fk_tracking_general1" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="mydbModel.survey" Width="1.5" PointX="3" PointY="16.75" />
+        <EntityTypeShape EntityType="mydbModel.survey_results" Width="1.5" PointX="5.25" PointY="17.125" />
+        <AssociationConnector Association="mydbModel.fk_survey_results_survey1" />
+        <AssociationConnector Association="mydbModel.general_has_survey" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

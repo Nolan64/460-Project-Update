@@ -28,15 +28,15 @@ Namespace DatabaseTestApplication2
 			Me.general_UID_comboBox.ValueMember = "UID"
 			Me.general_UID_comboBox.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.trackingBindingSource, "general_UID", True))
 			Me.sweatEquityDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "sweatEquityDate", True))
-			Me.sweatEquityAmountTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "sweatEquityAmount", True))
+			Me.SweatEquityNumeric.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "sweatEquityAmount", True))
 			Me.monthlyDepositDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "monthlyDepositDate", True))
-			Me.monthlyDepositAmountTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "monthlyDepositAmount", True))
+			Me.MonthlyDepositNumber.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "monthlyDepositAmount", True))
 			Me.HUDHoursDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "HUDHoursDate", True))
 			Me.HUDHoursCompleteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "HUDHoursComplete", True))
 			Me.financeClassesDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "financeClassesDate", True))
 			Me.financeClassesCompleteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "financeClassesComplete", True))
 			Me.homebuyerEducationDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "homebuyerEducationDate", True))
-			Me.homebuyerEducationAmountTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "homebuyerEducationAmount", True))
+			Me.HomebuyerEducationNumeric.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "homebuyerEducationAmount", True))
 			Me.mortgage1PriceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1Price", True))
 			Me.mortgage1BankTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1Bank", True))
 			Me.mortgage1ForgivableTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1Forgivable", True))
@@ -70,6 +70,16 @@ Namespace DatabaseTestApplication2
 		End Sub
 
 		Private Sub ToolStripButton1_Click(sender As System.Object, e As System.EventArgs) Handles ToolStripButton1.Click
+			If HUDHoursCheckbox.Checked Then
+				HUDHoursCompleteTextBox.Text = "1"
+			Else
+				HUDHoursCompleteTextBox.Text = "0"
+			End If
+			If FinanceClassesCheckbox.Checked Then
+				financeClassesCompleteTextBox.Text = "1"
+			Else
+				financeClassesCompleteTextBox.Text = "0"
+			End If
 			If Not Me.Validate() Then
 				Return
 			End If
@@ -691,6 +701,11 @@ Namespace DatabaseTestApplication2
 			trackingBindingSource.AddNew()
 		End Sub
 
+		Private Sub GeneralInfoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GeneralInfoToolStripMenuItem.Click
+			frmgeneral.Show()
+			Me.Close()
+
+		End Sub
 	End Class
-	
+
 End Namespace

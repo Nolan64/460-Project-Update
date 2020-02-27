@@ -29,6 +29,8 @@ Namespace DatabaseTestApplication2
         Public Overridable Property repairs() As DbSet(Of repair)
         Public Overridable Property trackings() As DbSet(Of tracking)
         Public Overridable Property users() As DbSet(Of user)
+        Public Overridable Property surveys() As DbSet(Of survey)
+        Public Overridable Property survey_results() As DbSet(Of survey_results)
     
     End Class
 
