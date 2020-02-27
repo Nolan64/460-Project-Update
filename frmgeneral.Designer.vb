@@ -37,6 +37,7 @@ Namespace DatabaseTestApplication2
             Me.components = New System.ComponentModel.Container()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmgeneral))
             Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
+            Me.generalBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
             Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
             Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
@@ -49,7 +50,6 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
             Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
             Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-            Me.generalBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
             Me.Panel1 = New System.Windows.Forms.Panel()
             Me.UIDLabel = New System.Windows.Forms.Label()
@@ -223,6 +223,8 @@ Namespace DatabaseTestApplication2
             '
             Me.Panel1.AutoScroll = True
             Me.Panel1.AutoSize = True
+            Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
+            Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
             Me.Panel1.Controls.Add(Me.UIDLabel)
             Me.Panel1.Controls.Add(Me.UIDTextBox)
             Me.Panel1.Controls.Add(Me.firstNameLabel)
@@ -269,6 +271,7 @@ Namespace DatabaseTestApplication2
             'UIDLabel
             '
             Me.UIDLabel.AutoSize = True
+            Me.UIDLabel.BackColor = System.Drawing.Color.Transparent
             Me.UIDLabel.Location = New System.Drawing.Point(168, 62)
             Me.UIDLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.UIDLabel.Name = "UIDLabel"
@@ -279,7 +282,7 @@ Namespace DatabaseTestApplication2
             'UIDTextBox
             '
             Me.UIDTextBox.Location = New System.Drawing.Point(223, 62)
-            Me.UIDTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.UIDTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.UIDTextBox.Name = "UIDTextBox"
             Me.UIDTextBox.Size = New System.Drawing.Size(132, 22)
             Me.UIDTextBox.TabIndex = 2
@@ -287,6 +290,7 @@ Namespace DatabaseTestApplication2
             'firstNameLabel
             '
             Me.firstNameLabel.AutoSize = True
+            Me.firstNameLabel.BackColor = System.Drawing.Color.Transparent
             Me.firstNameLabel.Location = New System.Drawing.Point(119, 103)
             Me.firstNameLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.firstNameLabel.Name = "firstNameLabel"
@@ -297,7 +301,7 @@ Namespace DatabaseTestApplication2
             'firstNameTextBox
             '
             Me.firstNameTextBox.Location = New System.Drawing.Point(223, 103)
-            Me.firstNameTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.firstNameTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.firstNameTextBox.Name = "firstNameTextBox"
             Me.firstNameTextBox.Size = New System.Drawing.Size(132, 22)
             Me.firstNameTextBox.TabIndex = 4
@@ -305,6 +309,7 @@ Namespace DatabaseTestApplication2
             'lastNameLabel
             '
             Me.lastNameLabel.AutoSize = True
+            Me.lastNameLabel.BackColor = System.Drawing.Color.Transparent
             Me.lastNameLabel.Location = New System.Drawing.Point(120, 145)
             Me.lastNameLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.lastNameLabel.Name = "lastNameLabel"
@@ -315,7 +320,7 @@ Namespace DatabaseTestApplication2
             'lastNameTextBox
             '
             Me.lastNameTextBox.Location = New System.Drawing.Point(223, 145)
-            Me.lastNameTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.lastNameTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.lastNameTextBox.Name = "lastNameTextBox"
             Me.lastNameTextBox.Size = New System.Drawing.Size(132, 22)
             Me.lastNameTextBox.TabIndex = 6
@@ -323,6 +328,7 @@ Namespace DatabaseTestApplication2
             'inquiryDateLabel
             '
             Me.inquiryDateLabel.AutoSize = True
+            Me.inquiryDateLabel.BackColor = System.Drawing.Color.Transparent
             Me.inquiryDateLabel.Location = New System.Drawing.Point(103, 187)
             Me.inquiryDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.inquiryDateLabel.Name = "inquiryDateLabel"
@@ -335,7 +341,7 @@ Namespace DatabaseTestApplication2
             Me.inquiryDate_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.inquiryDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.inquiryDate_dateTimePicker.Location = New System.Drawing.Point(223, 187)
-            Me.inquiryDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.inquiryDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.inquiryDate_dateTimePicker.Name = "inquiryDate_dateTimePicker"
             Me.inquiryDate_dateTimePicker.Size = New System.Drawing.Size(265, 22)
             Me.inquiryDate_dateTimePicker.TabIndex = 8
@@ -344,6 +350,7 @@ Namespace DatabaseTestApplication2
             'streetAddressLabel
             '
             Me.streetAddressLabel.AutoSize = True
+            Me.streetAddressLabel.BackColor = System.Drawing.Color.Transparent
             Me.streetAddressLabel.Location = New System.Drawing.Point(81, 229)
             Me.streetAddressLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.streetAddressLabel.Name = "streetAddressLabel"
@@ -354,7 +361,7 @@ Namespace DatabaseTestApplication2
             'streetAddressTextBox
             '
             Me.streetAddressTextBox.Location = New System.Drawing.Point(223, 229)
-            Me.streetAddressTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.streetAddressTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.streetAddressTextBox.Name = "streetAddressTextBox"
             Me.streetAddressTextBox.Size = New System.Drawing.Size(132, 22)
             Me.streetAddressTextBox.TabIndex = 10
@@ -362,6 +369,7 @@ Namespace DatabaseTestApplication2
             'cityAddressLabel
             '
             Me.cityAddressLabel.AutoSize = True
+            Me.cityAddressLabel.BackColor = System.Drawing.Color.Transparent
             Me.cityAddressLabel.Location = New System.Drawing.Point(101, 271)
             Me.cityAddressLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.cityAddressLabel.Name = "cityAddressLabel"
@@ -372,7 +380,7 @@ Namespace DatabaseTestApplication2
             'cityAddressTextBox
             '
             Me.cityAddressTextBox.Location = New System.Drawing.Point(223, 271)
-            Me.cityAddressTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.cityAddressTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.cityAddressTextBox.Name = "cityAddressTextBox"
             Me.cityAddressTextBox.Size = New System.Drawing.Size(132, 22)
             Me.cityAddressTextBox.TabIndex = 12
@@ -380,6 +388,7 @@ Namespace DatabaseTestApplication2
             'zipAddressLabel
             '
             Me.zipAddressLabel.AutoSize = True
+            Me.zipAddressLabel.BackColor = System.Drawing.Color.Transparent
             Me.zipAddressLabel.Location = New System.Drawing.Point(105, 313)
             Me.zipAddressLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.zipAddressLabel.Name = "zipAddressLabel"
@@ -390,7 +399,7 @@ Namespace DatabaseTestApplication2
             'zipAddressTextBox
             '
             Me.zipAddressTextBox.Location = New System.Drawing.Point(223, 313)
-            Me.zipAddressTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.zipAddressTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.zipAddressTextBox.Name = "zipAddressTextBox"
             Me.zipAddressTextBox.Size = New System.Drawing.Size(132, 22)
             Me.zipAddressTextBox.TabIndex = 14
@@ -398,6 +407,7 @@ Namespace DatabaseTestApplication2
             'stateAddressLabel
             '
             Me.stateAddressLabel.AutoSize = True
+            Me.stateAddressLabel.BackColor = System.Drawing.Color.Transparent
             Me.stateAddressLabel.Location = New System.Drawing.Point(88, 354)
             Me.stateAddressLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.stateAddressLabel.Name = "stateAddressLabel"
@@ -408,7 +418,7 @@ Namespace DatabaseTestApplication2
             'stateAddressTextBox
             '
             Me.stateAddressTextBox.Location = New System.Drawing.Point(223, 354)
-            Me.stateAddressTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.stateAddressTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.stateAddressTextBox.Name = "stateAddressTextBox"
             Me.stateAddressTextBox.Size = New System.Drawing.Size(132, 22)
             Me.stateAddressTextBox.TabIndex = 16
@@ -416,6 +426,7 @@ Namespace DatabaseTestApplication2
             'countryAddressLabel
             '
             Me.countryAddressLabel.AutoSize = True
+            Me.countryAddressLabel.BackColor = System.Drawing.Color.Transparent
             Me.countryAddressLabel.Location = New System.Drawing.Point(67, 396)
             Me.countryAddressLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.countryAddressLabel.Name = "countryAddressLabel"
@@ -426,7 +437,7 @@ Namespace DatabaseTestApplication2
             'countryAddressTextBox
             '
             Me.countryAddressTextBox.Location = New System.Drawing.Point(223, 396)
-            Me.countryAddressTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.countryAddressTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.countryAddressTextBox.Name = "countryAddressTextBox"
             Me.countryAddressTextBox.Size = New System.Drawing.Size(132, 22)
             Me.countryAddressTextBox.TabIndex = 18
@@ -434,6 +445,7 @@ Namespace DatabaseTestApplication2
             'phoneNumberLabel
             '
             Me.phoneNumberLabel.AutoSize = True
+            Me.phoneNumberLabel.BackColor = System.Drawing.Color.Transparent
             Me.phoneNumberLabel.Location = New System.Drawing.Point(515, 62)
             Me.phoneNumberLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.phoneNumberLabel.Name = "phoneNumberLabel"
@@ -444,7 +456,7 @@ Namespace DatabaseTestApplication2
             'phoneNumberTextBox
             '
             Me.phoneNumberTextBox.Location = New System.Drawing.Point(659, 62)
-            Me.phoneNumberTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.phoneNumberTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.phoneNumberTextBox.Name = "phoneNumberTextBox"
             Me.phoneNumberTextBox.Size = New System.Drawing.Size(132, 22)
             Me.phoneNumberTextBox.TabIndex = 20
@@ -452,6 +464,7 @@ Namespace DatabaseTestApplication2
             'emailLabel
             '
             Me.emailLabel.AutoSize = True
+            Me.emailLabel.BackColor = System.Drawing.Color.Transparent
             Me.emailLabel.Location = New System.Drawing.Point(591, 103)
             Me.emailLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.emailLabel.Name = "emailLabel"
@@ -462,7 +475,7 @@ Namespace DatabaseTestApplication2
             'emailTextBox
             '
             Me.emailTextBox.Location = New System.Drawing.Point(659, 103)
-            Me.emailTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.emailTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.emailTextBox.Name = "emailTextBox"
             Me.emailTextBox.Size = New System.Drawing.Size(132, 22)
             Me.emailTextBox.TabIndex = 22
@@ -470,6 +483,7 @@ Namespace DatabaseTestApplication2
             'genderLabel
             '
             Me.genderLabel.AutoSize = True
+            Me.genderLabel.BackColor = System.Drawing.Color.Transparent
             Me.genderLabel.Location = New System.Drawing.Point(575, 145)
             Me.genderLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.genderLabel.Name = "genderLabel"
@@ -480,7 +494,7 @@ Namespace DatabaseTestApplication2
             'genderTextBox
             '
             Me.genderTextBox.Location = New System.Drawing.Point(659, 145)
-            Me.genderTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.genderTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.genderTextBox.Name = "genderTextBox"
             Me.genderTextBox.Size = New System.Drawing.Size(132, 22)
             Me.genderTextBox.TabIndex = 24
@@ -488,6 +502,7 @@ Namespace DatabaseTestApplication2
             'birthdateLabel
             '
             Me.birthdateLabel.AutoSize = True
+            Me.birthdateLabel.BackColor = System.Drawing.Color.Transparent
             Me.birthdateLabel.Location = New System.Drawing.Point(560, 187)
             Me.birthdateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.birthdateLabel.Name = "birthdateLabel"
@@ -500,7 +515,7 @@ Namespace DatabaseTestApplication2
             Me.birthdate_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.birthdate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.birthdate_dateTimePicker.Location = New System.Drawing.Point(659, 187)
-            Me.birthdate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.birthdate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.birthdate_dateTimePicker.Name = "birthdate_dateTimePicker"
             Me.birthdate_dateTimePicker.Size = New System.Drawing.Size(265, 22)
             Me.birthdate_dateTimePicker.TabIndex = 26
@@ -509,6 +524,7 @@ Namespace DatabaseTestApplication2
             'householdSizeLabel
             '
             Me.householdSizeLabel.AutoSize = True
+            Me.householdSizeLabel.BackColor = System.Drawing.Color.Transparent
             Me.householdSizeLabel.Location = New System.Drawing.Point(511, 229)
             Me.householdSizeLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.householdSizeLabel.Name = "householdSizeLabel"
@@ -519,7 +535,7 @@ Namespace DatabaseTestApplication2
             'householdSizeTextBox
             '
             Me.householdSizeTextBox.Location = New System.Drawing.Point(659, 229)
-            Me.householdSizeTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.householdSizeTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.householdSizeTextBox.Name = "householdSizeTextBox"
             Me.householdSizeTextBox.Size = New System.Drawing.Size(132, 22)
             Me.householdSizeTextBox.TabIndex = 28
@@ -527,6 +543,7 @@ Namespace DatabaseTestApplication2
             'householdAMILabel
             '
             Me.householdAMILabel.AutoSize = True
+            Me.householdAMILabel.BackColor = System.Drawing.Color.Transparent
             Me.householdAMILabel.Location = New System.Drawing.Point(516, 271)
             Me.householdAMILabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.householdAMILabel.Name = "householdAMILabel"
@@ -537,7 +554,7 @@ Namespace DatabaseTestApplication2
             'householdAMITextBox
             '
             Me.householdAMITextBox.Location = New System.Drawing.Point(659, 271)
-            Me.householdAMITextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.householdAMITextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.householdAMITextBox.Name = "householdAMITextBox"
             Me.householdAMITextBox.Size = New System.Drawing.Size(132, 22)
             Me.householdAMITextBox.TabIndex = 30
@@ -545,6 +562,7 @@ Namespace DatabaseTestApplication2
             'raceLabel
             '
             Me.raceLabel.AutoSize = True
+            Me.raceLabel.BackColor = System.Drawing.Color.Transparent
             Me.raceLabel.Location = New System.Drawing.Point(597, 313)
             Me.raceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.raceLabel.Name = "raceLabel"
@@ -555,7 +573,7 @@ Namespace DatabaseTestApplication2
             'raceTextBox
             '
             Me.raceTextBox.Location = New System.Drawing.Point(659, 313)
-            Me.raceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.raceTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.raceTextBox.Name = "raceTextBox"
             Me.raceTextBox.Size = New System.Drawing.Size(132, 22)
             Me.raceTextBox.TabIndex = 32
@@ -563,6 +581,7 @@ Namespace DatabaseTestApplication2
             'maritalStatusLabel
             '
             Me.maritalStatusLabel.AutoSize = True
+            Me.maritalStatusLabel.BackColor = System.Drawing.Color.Transparent
             Me.maritalStatusLabel.Location = New System.Drawing.Point(525, 354)
             Me.maritalStatusLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.maritalStatusLabel.Name = "maritalStatusLabel"
@@ -573,7 +592,7 @@ Namespace DatabaseTestApplication2
             'maritalStatusTextBox
             '
             Me.maritalStatusTextBox.Location = New System.Drawing.Point(659, 354)
-            Me.maritalStatusTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.maritalStatusTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.maritalStatusTextBox.Name = "maritalStatusTextBox"
             Me.maritalStatusTextBox.Size = New System.Drawing.Size(132, 22)
             Me.maritalStatusTextBox.TabIndex = 34
@@ -581,6 +600,7 @@ Namespace DatabaseTestApplication2
             'notesLabel
             '
             Me.notesLabel.AutoSize = True
+            Me.notesLabel.BackColor = System.Drawing.Color.Transparent
             Me.notesLabel.Location = New System.Drawing.Point(588, 396)
             Me.notesLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.notesLabel.Name = "notesLabel"
@@ -591,7 +611,7 @@ Namespace DatabaseTestApplication2
             'notesTextBox
             '
             Me.notesTextBox.Location = New System.Drawing.Point(659, 396)
-            Me.notesTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.notesTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.notesTextBox.Name = "notesTextBox"
             Me.notesTextBox.Size = New System.Drawing.Size(132, 22)
             Me.notesTextBox.TabIndex = 36
@@ -604,7 +624,7 @@ Namespace DatabaseTestApplication2
             Me.panel3.Controls.Add(Me.panel6)
             Me.panel3.Dock = System.Windows.Forms.DockStyle.Fill
             Me.panel3.Location = New System.Drawing.Point(0, 27)
-            Me.panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel3.Margin = New System.Windows.Forms.Padding(4)
             Me.panel3.Name = "panel3"
             Me.panel3.Size = New System.Drawing.Size(1073, 532)
             Me.panel3.TabIndex = 19
@@ -613,7 +633,7 @@ Namespace DatabaseTestApplication2
             '
             Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
             Me.panel4.Location = New System.Drawing.Point(1060, 0)
-            Me.panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel4.Margin = New System.Windows.Forms.Padding(4)
             Me.panel4.Name = "panel4"
             Me.panel4.Size = New System.Drawing.Size(13, 520)
             Me.panel4.TabIndex = 3
@@ -622,7 +642,7 @@ Namespace DatabaseTestApplication2
             '
             Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
             Me.panel5.Location = New System.Drawing.Point(0, 0)
-            Me.panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel5.Margin = New System.Windows.Forms.Padding(4)
             Me.panel5.Name = "panel5"
             Me.panel5.Size = New System.Drawing.Size(13, 520)
             Me.panel5.TabIndex = 5
@@ -631,7 +651,7 @@ Namespace DatabaseTestApplication2
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
             Me.panel6.Location = New System.Drawing.Point(0, 520)
-            Me.panel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel6.Margin = New System.Windows.Forms.Padding(4)
             Me.panel6.Name = "panel6"
             Me.panel6.Size = New System.Drawing.Size(1073, 12)
             Me.panel6.TabIndex = 6
@@ -643,7 +663,7 @@ Namespace DatabaseTestApplication2
             Me.ClientSize = New System.Drawing.Size(1073, 559)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
-            Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Margin = New System.Windows.Forms.Padding(4)
             Me.Name = "frmgeneral"
             Me.Text = "General"
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
