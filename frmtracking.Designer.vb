@@ -37,16 +37,21 @@ Namespace DatabaseTestApplication2
             Me.components = New System.ComponentModel.Container()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmtracking))
             Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
+            Me.trackingBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+            Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
+            Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
+            Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
             Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
             Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
             Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+            Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
+            Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
             Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+            Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+            Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
             Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
             Me.panel3 = New System.Windows.Forms.Panel()
-            Me.panel4 = New System.Windows.Forms.Panel()
-            Me.panel5 = New System.Windows.Forms.Panel()
-            Me.panel6 = New System.Windows.Forms.Panel()
             Me.Panel1 = New System.Windows.Forms.Panel()
             Me.PictureBox1 = New System.Windows.Forms.PictureBox()
             Me.GroupBox6 = New System.Windows.Forms.GroupBox()
@@ -149,16 +154,12 @@ Namespace DatabaseTestApplication2
             Me.GeneralInfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.HomeownershipToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.RepairsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.trackingBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-            Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
-            Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
-            Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
-            Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
-            Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
-            Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-            Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+            Me.panel4 = New System.Windows.Forms.Panel()
+            Me.panel5 = New System.Windows.Forms.Panel()
+            Me.panel6 = New System.Windows.Forms.Panel()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
+            CType(Me.trackingBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.panel3.SuspendLayout()
             Me.Panel1.SuspendLayout()
@@ -179,7 +180,6 @@ Namespace DatabaseTestApplication2
             Me.SweatEquityGroupbox.SuspendLayout()
             CType(Me.SweatEquityNumeric, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.MenuStrip1.SuspendLayout()
-            CType(Me.trackingBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'BindingNavigator1
@@ -198,21 +198,48 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigator1.Name = "BindingNavigator1"
             Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(13, 0, 13, 0)
             Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-            Me.BindingNavigator1.Size = New System.Drawing.Size(1305, 27)
+            Me.BindingNavigator1.Size = New System.Drawing.Size(1315, 27)
             Me.BindingNavigator1.TabIndex = 0
             Me.BindingNavigator1.Text = "BindingNavigator1"
             '
             'BindingNavigatorCountItem
             '
             Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 36)
+            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
             Me.BindingNavigatorCountItem.Text = "of {0}"
             Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
+            '
+            'BindingNavigatorDeleteItem
+            '
+            Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+            Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+            Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+            Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorDeleteItem.Text = "Delete"
+            '
+            'BindingNavigatorMoveFirstItem
+            '
+            Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+            Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
+            Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
+            Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
+            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveFirstItem.Text = "Move first"
+            '
+            'BindingNavigatorMovePreviousItem
+            '
+            Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+            Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
+            Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
+            Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
+            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
             '
             'BindingNavigatorSeparator
             '
             Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-            Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 39)
+            Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
             '
             'BindingNavigatorPositionItem
             '
@@ -227,12 +254,48 @@ Namespace DatabaseTestApplication2
             'BindingNavigatorSeparator1
             '
             Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-            Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 39)
+            Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
+            '
+            'BindingNavigatorMoveNextItem
+            '
+            Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+            Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
+            Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
+            Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
+            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveNextItem.Text = "Move next"
+            '
+            'BindingNavigatorMoveLastItem
+            '
+            Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+            Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
+            Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
+            Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
+            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveLastItem.Text = "Move last"
             '
             'BindingNavigatorSeparator2
             '
             Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-            Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 39)
+            Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
+            '
+            'BindingNavigatorAddNewItem
+            '
+            Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+            Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+            Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+            Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorAddNewItem.Text = "Add new"
+            '
+            'ToolStripButton1
+            '
+            Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+            Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
+            Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+            Me.ToolStripButton1.Name = "ToolStripButton1"
+            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 24)
+            Me.ToolStripButton1.Text = "Save"
             '
             'ErrorProvider1
             '
@@ -248,35 +311,8 @@ Namespace DatabaseTestApplication2
             Me.panel3.Location = New System.Drawing.Point(0, 27)
             Me.panel3.Margin = New System.Windows.Forms.Padding(4)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(1305, 517)
+            Me.panel3.Size = New System.Drawing.Size(1315, 527)
             Me.panel3.TabIndex = 19
-            '
-            'panel4
-            '
-            Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
-            Me.panel4.Location = New System.Drawing.Point(1295, 0)
-            Me.panel4.Margin = New System.Windows.Forms.Padding(4)
-            Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(10, 507)
-            Me.panel4.TabIndex = 3
-            '
-            'panel5
-            '
-            Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
-            Me.panel5.Location = New System.Drawing.Point(0, 0)
-            Me.panel5.Margin = New System.Windows.Forms.Padding(4)
-            Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(10, 507)
-            Me.panel5.TabIndex = 5
-            '
-            'panel6
-            '
-            Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 507)
-            Me.panel6.Margin = New System.Windows.Forms.Padding(4)
-            Me.panel6.Name = "panel6"
-            Me.panel6.Size = New System.Drawing.Size(1305, 10)
-            Me.panel6.TabIndex = 6
             '
             'Panel1
             '
@@ -285,6 +321,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.BackColor = System.Drawing.SystemColors.Control
             Me.Panel1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.angryimg__12_
             Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+            Me.Panel1.Controls.Add(Me.Label1)
             Me.Panel1.Controls.Add(Me.PictureBox1)
             Me.Panel1.Controls.Add(Me.GroupBox6)
             Me.Panel1.Controls.Add(Me.Mortgage2Groupbox)
@@ -292,8 +329,8 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.Mortgage4Groupbox)
             Me.Panel1.Controls.Add(Me.mortgage2BankTextBox)
             Me.Panel1.Controls.Add(Me.mortgage6BankTextBox)
-            Me.Panel1.Controls.Add(Me.mortgage6ForgivableTextBox)
             Me.Panel1.Controls.Add(Me.mortgage5BankTextBox)
+            Me.Panel1.Controls.Add(Me.HUDHoursCompleteTextBox)
             Me.Panel1.Controls.Add(Me.mortgage4BankTextBox)
             Me.Panel1.Controls.Add(Me.mortgage4ForgivableTextBox)
             Me.Panel1.Controls.Add(Me.mortgage5ForgivableTextBox)
@@ -303,7 +340,6 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.mortgage3BankTextBox)
             Me.Panel1.Controls.Add(Me.Mortgage1Groupbox)
             Me.Panel1.Controls.Add(Me.mortgage1ForgivableTextBox)
-            Me.Panel1.Controls.Add(Me.Label1)
             Me.Panel1.Controls.Add(Me.Morgage3Box)
             Me.Panel1.Controls.Add(Me.ApplicantGroupbox)
             Me.Panel1.Controls.Add(Me.HomebuyerEducationGroupbox)
@@ -314,14 +350,13 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.sweatEquityAmountTextBox)
             Me.Panel1.Controls.Add(Me.HUDHoursGroupbox)
             Me.Panel1.Controls.Add(Me.monthlyDepositAmountTextBox)
-            Me.Panel1.Controls.Add(Me.HUDHoursCompleteTextBox)
             Me.Panel1.Controls.Add(Me.SweatEquityGroupbox)
             Me.Panel1.Controls.Add(Me.MenuStrip1)
             Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.Panel1.Location = New System.Drawing.Point(10, 0)
             Me.Panel1.Margin = New System.Windows.Forms.Padding(13, 4, 13, 4)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(1285, 507)
+            Me.Panel1.Size = New System.Drawing.Size(1295, 517)
             Me.Panel1.TabIndex = 1
             '
             'PictureBox1
@@ -347,15 +382,16 @@ Namespace DatabaseTestApplication2
             Me.GroupBox6.Controls.Add(Me.mortgage6NumberOfYearsLabel)
             Me.GroupBox6.Controls.Add(Me.mortgage6OriginalBalanceTextBox)
             Me.GroupBox6.Controls.Add(Me.mortgage6NumberOfYearsTextBox)
+            Me.GroupBox6.Controls.Add(Me.mortgage6ForgivableTextBox)
             Me.GroupBox6.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.GroupBox6.Location = New System.Drawing.Point(923, 297)
             Me.GroupBox6.Margin = New System.Windows.Forms.Padding(4)
             Me.GroupBox6.Name = "GroupBox6"
             Me.GroupBox6.Padding = New System.Windows.Forms.Padding(4)
-            Me.GroupBox6.Size = New System.Drawing.Size(312, 171)
+            Me.GroupBox6.Size = New System.Drawing.Size(313, 171)
             Me.GroupBox6.TabIndex = 96
             Me.GroupBox6.TabStop = False
-            Me.GroupBox6.Text = "GroupBox6"
+            Me.GroupBox6.Text = "Mortgage 6"
             '
             'Mortgage6Forgivable
             '
@@ -438,7 +474,7 @@ Namespace DatabaseTestApplication2
             '
             'mortgage6NumberOfYearsTextBox
             '
-            Me.mortgage6NumberOfYearsTextBox.Location = New System.Drawing.Point(131, 107)
+            Me.mortgage6NumberOfYearsTextBox.Location = New System.Drawing.Point(131, 108)
             Me.mortgage6NumberOfYearsTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.mortgage6NumberOfYearsTextBox.Name = "mortgage6NumberOfYearsTextBox"
             Me.mortgage6NumberOfYearsTextBox.Size = New System.Drawing.Size(174, 22)
@@ -773,7 +809,7 @@ Namespace DatabaseTestApplication2
             '
             'mortgage2BankTextBox
             '
-            Me.mortgage2BankTextBox.Location = New System.Drawing.Point(148, 476)
+            Me.mortgage2BankTextBox.Location = New System.Drawing.Point(8, 476)
             Me.mortgage2BankTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.mortgage2BankTextBox.Name = "mortgage2BankTextBox"
             Me.mortgage2BankTextBox.Size = New System.Drawing.Size(132, 22)
@@ -782,7 +818,7 @@ Namespace DatabaseTestApplication2
             '
             'mortgage6BankTextBox
             '
-            Me.mortgage6BankTextBox.Location = New System.Drawing.Point(148, 476)
+            Me.mortgage6BankTextBox.Location = New System.Drawing.Point(8, 477)
             Me.mortgage6BankTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.mortgage6BankTextBox.Name = "mortgage6BankTextBox"
             Me.mortgage6BankTextBox.Size = New System.Drawing.Size(132, 22)
@@ -791,16 +827,16 @@ Namespace DatabaseTestApplication2
             '
             'mortgage6ForgivableTextBox
             '
-            Me.mortgage6ForgivableTextBox.Location = New System.Drawing.Point(8, 474)
+            Me.mortgage6ForgivableTextBox.Location = New System.Drawing.Point(131, 108)
             Me.mortgage6ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.mortgage6ForgivableTextBox.Name = "mortgage6ForgivableTextBox"
             Me.mortgage6ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage6ForgivableTextBox.TabIndex = 78
-            Me.mortgage6ForgivableTextBox.Visible = False
+            Me.mortgage6ForgivableTextBox.TabStop = False
             '
             'mortgage5BankTextBox
             '
-            Me.mortgage5BankTextBox.Location = New System.Drawing.Point(148, 476)
+            Me.mortgage5BankTextBox.Location = New System.Drawing.Point(8, 476)
             Me.mortgage5BankTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.mortgage5BankTextBox.Name = "mortgage5BankTextBox"
             Me.mortgage5BankTextBox.Size = New System.Drawing.Size(132, 22)
@@ -809,7 +845,7 @@ Namespace DatabaseTestApplication2
             '
             'mortgage4BankTextBox
             '
-            Me.mortgage4BankTextBox.Location = New System.Drawing.Point(148, 476)
+            Me.mortgage4BankTextBox.Location = New System.Drawing.Point(8, 477)
             Me.mortgage4BankTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.mortgage4BankTextBox.Name = "mortgage4BankTextBox"
             Me.mortgage4BankTextBox.Size = New System.Drawing.Size(132, 22)
@@ -818,12 +854,11 @@ Namespace DatabaseTestApplication2
             '
             'mortgage4ForgivableTextBox
             '
-            Me.mortgage4ForgivableTextBox.Location = New System.Drawing.Point(8, 476)
+            Me.mortgage4ForgivableTextBox.Location = New System.Drawing.Point(99, 65)
             Me.mortgage4ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.mortgage4ForgivableTextBox.Name = "mortgage4ForgivableTextBox"
             Me.mortgage4ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage4ForgivableTextBox.TabIndex = 58
-            Me.mortgage4ForgivableTextBox.Visible = False
             '
             'mortgage5ForgivableTextBox
             '
@@ -843,16 +878,15 @@ Namespace DatabaseTestApplication2
             '
             'mortgage2ForgivableTextBox
             '
-            Me.mortgage2ForgivableTextBox.Location = New System.Drawing.Point(8, 476)
+            Me.mortgage2ForgivableTextBox.Location = New System.Drawing.Point(115, 65)
             Me.mortgage2ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.mortgage2ForgivableTextBox.Name = "mortgage2ForgivableTextBox"
             Me.mortgage2ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage2ForgivableTextBox.TabIndex = 38
-            Me.mortgage2ForgivableTextBox.Visible = False
             '
             'mortgage1BankTextBox
             '
-            Me.mortgage1BankTextBox.Location = New System.Drawing.Point(148, 476)
+            Me.mortgage1BankTextBox.Location = New System.Drawing.Point(8, 476)
             Me.mortgage1BankTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.mortgage1BankTextBox.Name = "mortgage1BankTextBox"
             Me.mortgage1BankTextBox.Size = New System.Drawing.Size(132, 22)
@@ -861,7 +895,7 @@ Namespace DatabaseTestApplication2
             '
             'mortgage3BankTextBox
             '
-            Me.mortgage3BankTextBox.Location = New System.Drawing.Point(148, 476)
+            Me.mortgage3BankTextBox.Location = New System.Drawing.Point(8, 476)
             Me.mortgage3BankTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.mortgage3BankTextBox.Name = "mortgage3BankTextBox"
             Me.mortgage3BankTextBox.Size = New System.Drawing.Size(132, 22)
@@ -979,12 +1013,11 @@ Namespace DatabaseTestApplication2
             '
             'mortgage1ForgivableTextBox
             '
-            Me.mortgage1ForgivableTextBox.Location = New System.Drawing.Point(8, 476)
+            Me.mortgage1ForgivableTextBox.Location = New System.Drawing.Point(87, 65)
             Me.mortgage1ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.mortgage1ForgivableTextBox.Name = "mortgage1ForgivableTextBox"
             Me.mortgage1ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage1ForgivableTextBox.TabIndex = 28
-            Me.mortgage1ForgivableTextBox.Visible = False
             '
             'Label1
             '
@@ -992,7 +1025,7 @@ Namespace DatabaseTestApplication2
             Me.Label1.BackColor = System.Drawing.Color.Transparent
             Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.Label1.Location = New System.Drawing.Point(5, 38)
+            Me.Label1.Location = New System.Drawing.Point(2, 36)
             Me.Label1.Name = "Label1"
             Me.Label1.Size = New System.Drawing.Size(296, 80)
             Me.Label1.TabIndex = 90
@@ -1011,7 +1044,7 @@ Namespace DatabaseTestApplication2
             Me.Morgage3Box.Controls.Add(Me.mortgage3NumberOfYearsLabel)
             Me.Morgage3Box.Controls.Add(Me.mortgage3NumberOfYearsTextBox)
             Me.Morgage3Box.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.Morgage3Box.Location = New System.Drawing.Point(922, 121)
+            Me.Morgage3Box.Location = New System.Drawing.Point(923, 121)
             Me.Morgage3Box.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.Morgage3Box.Name = "Morgage3Box"
             Me.Morgage3Box.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -1205,7 +1238,7 @@ Namespace DatabaseTestApplication2
             '
             'homebuyerEducationAmountTextBox
             '
-            Me.homebuyerEducationAmountTextBox.Location = New System.Drawing.Point(148, 476)
+            Me.homebuyerEducationAmountTextBox.Location = New System.Drawing.Point(8, 477)
             Me.homebuyerEducationAmountTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.homebuyerEducationAmountTextBox.Name = "homebuyerEducationAmountTextBox"
             Me.homebuyerEducationAmountTextBox.Size = New System.Drawing.Size(132, 22)
@@ -1248,16 +1281,15 @@ Namespace DatabaseTestApplication2
             '
             'financeClassesCompleteTextBox
             '
-            Me.financeClassesCompleteTextBox.Location = New System.Drawing.Point(8, 476)
+            Me.financeClassesCompleteTextBox.Location = New System.Drawing.Point(99, 65)
             Me.financeClassesCompleteTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.financeClassesCompleteTextBox.Name = "financeClassesCompleteTextBox"
             Me.financeClassesCompleteTextBox.Size = New System.Drawing.Size(132, 22)
             Me.financeClassesCompleteTextBox.TabIndex = 18
-            Me.financeClassesCompleteTextBox.Visible = False
             '
             'sweatEquityAmountTextBox
             '
-            Me.sweatEquityAmountTextBox.Location = New System.Drawing.Point(148, 476)
+            Me.sweatEquityAmountTextBox.Location = New System.Drawing.Point(18, 477)
             Me.sweatEquityAmountTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.sweatEquityAmountTextBox.Name = "sweatEquityAmountTextBox"
             Me.sweatEquityAmountTextBox.Size = New System.Drawing.Size(132, 22)
@@ -1303,7 +1335,7 @@ Namespace DatabaseTestApplication2
             '
             'monthlyDepositAmountTextBox
             '
-            Me.monthlyDepositAmountTextBox.Location = New System.Drawing.Point(148, 476)
+            Me.monthlyDepositAmountTextBox.Location = New System.Drawing.Point(8, 476)
             Me.monthlyDepositAmountTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.monthlyDepositAmountTextBox.Name = "monthlyDepositAmountTextBox"
             Me.monthlyDepositAmountTextBox.Size = New System.Drawing.Size(132, 22)
@@ -1312,12 +1344,11 @@ Namespace DatabaseTestApplication2
             '
             'HUDHoursCompleteTextBox
             '
-            Me.HUDHoursCompleteTextBox.Location = New System.Drawing.Point(8, 476)
+            Me.HUDHoursCompleteTextBox.Location = New System.Drawing.Point(99, 65)
             Me.HUDHoursCompleteTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.HUDHoursCompleteTextBox.Name = "HUDHoursCompleteTextBox"
             Me.HUDHoursCompleteTextBox.Size = New System.Drawing.Size(132, 22)
             Me.HUDHoursCompleteTextBox.TabIndex = 14
-            Me.HUDHoursCompleteTextBox.Visible = False
             '
             'SweatEquityGroupbox
             '
@@ -1360,7 +1391,7 @@ Namespace DatabaseTestApplication2
             Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
             Me.MenuStrip1.Name = "MenuStrip1"
             Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-            Me.MenuStrip1.Size = New System.Drawing.Size(1285, 28)
+            Me.MenuStrip1.Size = New System.Drawing.Size(1295, 28)
             Me.MenuStrip1.TabIndex = 83
             Me.MenuStrip1.Text = "MenuStrip1"
             '
@@ -1388,74 +1419,38 @@ Namespace DatabaseTestApplication2
             Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(72, 24)
             Me.RepairsToolStripMenuItem.Text = "Repairs"
             '
-            'BindingNavigatorDeleteItem
+            'panel4
             '
-            Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-            Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-            Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-            Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
-            Me.BindingNavigatorDeleteItem.Text = "Delete"
+            Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
+            Me.panel4.Location = New System.Drawing.Point(1305, 0)
+            Me.panel4.Margin = New System.Windows.Forms.Padding(4)
+            Me.panel4.Name = "panel4"
+            Me.panel4.Size = New System.Drawing.Size(10, 517)
+            Me.panel4.TabIndex = 3
             '
-            'BindingNavigatorMoveFirstItem
+            'panel5
             '
-            Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-            Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
-            Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
-            Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 36)
-            Me.BindingNavigatorMoveFirstItem.Text = "Move first"
+            Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
+            Me.panel5.Location = New System.Drawing.Point(0, 0)
+            Me.panel5.Margin = New System.Windows.Forms.Padding(4)
+            Me.panel5.Name = "panel5"
+            Me.panel5.Size = New System.Drawing.Size(10, 517)
+            Me.panel5.TabIndex = 5
             '
-            'BindingNavigatorMovePreviousItem
+            'panel6
             '
-            Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-            Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
-            Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
-            Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 36)
-            Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
-            '
-            'BindingNavigatorMoveNextItem
-            '
-            Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-            Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
-            Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
-            Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 36)
-            Me.BindingNavigatorMoveNextItem.Text = "Move next"
-            '
-            'BindingNavigatorMoveLastItem
-            '
-            Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-            Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
-            Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
-            Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 36)
-            Me.BindingNavigatorMoveLastItem.Text = "Move last"
-            '
-            'BindingNavigatorAddNewItem
-            '
-            Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-            Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-            Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-            Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 36)
-            Me.BindingNavigatorAddNewItem.Text = "Add new"
-            '
-            'ToolStripButton1
-            '
-            Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-            Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
-            Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-            Me.ToolStripButton1.Name = "ToolStripButton1"
-            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 36)
-            Me.ToolStripButton1.Text = "Save"
+            Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
+            Me.panel6.Location = New System.Drawing.Point(0, 517)
+            Me.panel6.Margin = New System.Windows.Forms.Padding(4)
+            Me.panel6.Name = "panel6"
+            Me.panel6.Size = New System.Drawing.Size(1315, 10)
+            Me.panel6.TabIndex = 6
             '
             'frmtracking
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(1305, 544)
+            Me.ClientSize = New System.Drawing.Size(1315, 554)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
             Me.MainMenuStrip = Me.MenuStrip1
@@ -1465,6 +1460,7 @@ Namespace DatabaseTestApplication2
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.BindingNavigator1.ResumeLayout(False)
             Me.BindingNavigator1.PerformLayout()
+            CType(Me.trackingBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.panel3.ResumeLayout(False)
             Me.panel3.PerformLayout()
@@ -1496,7 +1492,6 @@ Namespace DatabaseTestApplication2
             CType(Me.SweatEquityNumeric, System.ComponentModel.ISupportInitialize).EndInit()
             Me.MenuStrip1.ResumeLayout(False)
             Me.MenuStrip1.PerformLayout()
-            CType(Me.trackingBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
