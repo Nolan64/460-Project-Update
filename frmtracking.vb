@@ -38,47 +38,102 @@ Namespace DatabaseTestApplication2
 			Me.homebuyerEducationDate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "homebuyerEducationDate", True))
 			Me.HomebuyerEducationNumeric.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "homebuyerEducationAmount", True))
 			Me.mortgage1PriceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1Price", True))
-			Me.mortgage1BankTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1Bank", True))
+			Me.Mortgage1Bank.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1Bank", True))
 			Me.mortgage1ForgivableTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1Forgivable", True))
 			Me.mortgage1OriginalBalanceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1OriginalBalance", True))
 			Me.mortgage1NumberOfYearsTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage1NumberOfYears", True))
 			Me.mortgage2PriceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage2Price", True))
-			Me.mortgage2BankTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage2Bank", True))
+			Me.Mortgage2Dropdown.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage2Bank", True))
 			Me.mortgage2ForgivableTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage2Forgivable", True))
 			Me.mortgage2OriginalBalanceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage2OriginalBalance", True))
 			Me.morgage2NumberOfYearsTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "morgage2NumberOfYears", True))
 			Me.mortgage3PriceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage3Price", True))
-			Me.mortgage3BankTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage3Bank", True))
+			Me.Mortgage3Dropdown.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage3Bank", True))
 			Me.mortgage3ForgivableTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage3Forgivable", True))
 			Me.mortgage3OriginalBalanceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage3OriginalBalance", True))
 			Me.mortgage3NumberOfYearsTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage3NumberOfYears", True))
 			Me.mortgage4PriceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage4Price", True))
-			Me.mortgage4BankTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage4Bank", True))
+			Me.Mortgage4Dropdown.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage4Bank", True))
 			Me.mortgage4ForgivableTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage4Forgivable", True))
 			Me.mortgage4OriginalBalanceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage4OriginalBalance", True))
 			Me.mortgage4NumberOfYearsTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage4NumberOfYears", True))
 			Me.mortgage5PriceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage5Price", True))
-			Me.mortgage5BankTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage5Bank", True))
+			Me.Mortgage5Dropdown.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage5Bank", True))
 			Me.mortgage5ForgivableTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage5Forgivable", True))
 			Me.mortgage5OriginalBalanceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage5OriginalBalance", True))
 			Me.mortgage5NumberOfYearsTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage5NumberOfYears", True))
 			Me.mortgage6PriceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage6Price", True))
-			Me.mortgage6BankTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage6Bank", True))
+			Me.Mortgage6Dropdown.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage6Bank", True))
 			Me.mortgage6ForgivableTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage6Forgivable", True))
 			Me.mortgage6OriginalBalanceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage6OriginalBalance", True))
 			Me.mortgage6NumberOfYearsTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.trackingBindingSource, "mortgage6NumberOfYears", True))
+
+			If mortgage1ForgivableTextBox.Text = "1" Then
+				Mortgage1Forgivable.Checked = True
+			End If
+			If mortgage2ForgivableTextBox.Text = "1" Then
+				Mortgage2Forgivable.Checked = True
+			End If
+			If mortgage3ForgivableTextBox.Text = "1" Then
+				Mortgage3Forgivable.Checked = True
+			End If
+			If mortgage4ForgivableTextBox.Text = "1" Then
+				Mortgage4Forgivable.Checked = True
+			End If
+			If mortgage5ForgivableTextBox.Text = "1" Then
+				Mortgage5Forgivable.Checked = True
+			End If
+			If mortgage6ForgivableTextBox.Text = "1" Then
+				Mortgage6Forgivable.Checked = True
+			End If
+			If HUDHoursCompleteTextBox.Text = "1" Then
+				HUDHoursCheckbox.Checked = True
+			End If
+			If financeClassesCompleteTextBox.Text = "1" Then
+				FinanceClassesCheckbox.Checked = True
+			End If
 		End Sub
 
 		Private Sub ToolStripButton1_Click(sender As System.Object, e As System.EventArgs) Handles ToolStripButton1.Click
-			If HUDHoursCheckbox.Checked Then
+			If HUDHoursCheckbox.Checked = True Then
 				HUDHoursCompleteTextBox.Text = "1"
 			Else
 				HUDHoursCompleteTextBox.Text = "0"
 			End If
-			If FinanceClassesCheckbox.Checked Then
+			If FinanceClassesCheckbox.Checked = True Then
 				financeClassesCompleteTextBox.Text = "1"
 			Else
 				financeClassesCompleteTextBox.Text = "0"
+			End If
+			If Mortgage1Forgivable.Checked = True Then
+				mortgage1ForgivableTextBox.Text = "1"
+			Else
+				mortgage1ForgivableTextBox.Text = "0"
+			End If
+			If Mortgage2Forgivable.Checked = True Then
+				mortgage2ForgivableTextBox.Text = "1"
+			Else
+				mortgage2ForgivableTextBox.Text = "0"
+			End If
+			If Mortgage3Forgivable.Checked = True Then
+				mortgage3ForgivableTextBox.Text = "1"
+			Else
+				mortgage3ForgivableTextBox.Text = "0"
+			End If
+			If Mortgage4Forgivable.Checked = True Then
+				mortgage4ForgivableTextBox.Text = "1"
+			Else
+				mortgage4ForgivableTextBox.Text = "0"
+			End If
+			If Mortgage5Forgivable.Checked = True Then
+				mortgage5ForgivableTextBox.Text = "1"
+			Else
+				mortgage5ForgivableTextBox.Text = "0"
+			End If
+			If Mortgage6Forgivable.Checked = True Then
+				mortgage6ForgivableTextBox.Text = "1"
+			Else
+				mortgage6ForgivableTextBox.Text = "0"
 			End If
 			If Not Me.Validate() Then
 				Return
