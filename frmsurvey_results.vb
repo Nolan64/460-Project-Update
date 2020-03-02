@@ -201,12 +201,6 @@ Namespace DatabaseTestApplication2
 		Private Sub bindingNavigatorAddNewItem_Click(sender As System.Object, e As System.EventArgs) Handles BindingNavigatorAddNewItem.Click
 			survey_resultsBindingSource.AddNew()
 		End Sub
-
-		Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
-
-		End Sub
-
-
 	End Class
-
+	
 End Namespace

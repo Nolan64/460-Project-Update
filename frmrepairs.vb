@@ -30,16 +30,29 @@ Namespace DatabaseTestApplication2
 			Me.ScopeOfWork_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "ScopeOfWork", True ))
 			Me.ContractComplete_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "ContractComplete", True ))
 			Me.WorkComplete_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "WorkComplete", True ))
-			Me.IDDocumentsTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "IDDocuments", True ))
-			Me.IncomeVerifiedTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "IncomeVerified", True ))
-			Me.DeedOfTrustTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "DeedOfTrust", True ))
-			Me.TaxBillTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "TaxBill", True ))
-			Me.SatisfactionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "Satisfaction", True ))
-			Me.CompletedApplicationTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "CompletedApplication", True ))
-			Me.ParcelReportTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "ParcelReport", True ))
-			Me.GISAssessmentTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "GISAssessment", True ))
-			Me.FundingSourceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "FundingSource", True ))
-			Me.General_Info_UID_comboBox.DataSource = ctx.generals.ToList()
+
+            'Me.IDDocumentsTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "IDDocuments", True ))
+            'Me.IncomeVerifiedTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "IncomeVerified", True ))
+            'Me.DeedOfTrustTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "DeedOfTrust", True ))
+            'Me.TaxBillTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "TaxBill", True ))
+            'Me.SatisfactionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "Satisfaction", True ))
+            'Me.CompletedApplicationTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "CompletedApplication", True ))
+            'Me.ParcelReportTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "ParcelReport", True ))
+            'Me.GISAssessmentTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "GISAssessment", True ))
+            'Me.FundingSourceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "FundingSource", True))
+
+            ''
+            Me.chkCompletedApp.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "CompletedApplication", True))
+            Me.chkIncomeVerified.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "IncomeVerified", True))
+            Me.chkDeed.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "DeedOfTrust", True))
+            Me.chkIDDocs.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "IDDocuments", True))
+            Me.chkSatisfaction.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "Satisfaction", True))
+            Me.chkParcelReport.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "ParcelReport", True))
+            Me.chkGISAssessment.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "GISAssessment", True))
+            Me.chkTaxBill.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "TaxBill", True))
+            Me.chkFundSource.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.repairsBindingSource, "FundingSource", True))
+            ''
+            Me.General_Info_UID_comboBox.DataSource = ctx.generals.ToList()
 			Me.General_Info_UID_comboBox.DisplayMember = "UID"
 			Me.General_Info_UID_comboBox.ValueMember = "UID"
 			Me.General_Info_UID_comboBox.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.repairsBindingSource, "General_Info_UID", True))
@@ -229,6 +242,20 @@ Namespace DatabaseTestApplication2
 			repairsBindingSource.AddNew()
 		End Sub
 
-	End Class
-	
+        Private Sub tstripMainMenu_Click(sender As Object, e As EventArgs) Handles tstripMainMenu.Click
+            frmmain_menu.Show()
+            Me.Close()
+        End Sub
+
+        Private Sub tstripGeneral_Click(sender As Object, e As EventArgs) Handles tstripGeneral.Click
+            frmgeneral.Show()
+            Me.Close()
+        End Sub
+
+        Private Sub tstripHomeownership_Click(sender As Object, e As EventArgs) Handles tstripHomeownership.Click
+            frmhomeownership.Show()
+            Me.Close()
+        End Sub
+    End Class
+
 End Namespace
