@@ -303,6 +303,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.vb</LastGenOutput>
     </Content>
+    <None Include="Resources\h4hlogo3.ico" />
     <None Include="Resources\CV-HB-Logo-White-400px.png" />
     <None Include="Resources\new-catawba-logo.png" />
     <None Include="Resources\angryimg %2812%29.png" />
