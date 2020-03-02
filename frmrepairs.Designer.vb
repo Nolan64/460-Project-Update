@@ -130,16 +130,16 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigator1.MoveNextItem = Me.BindingNavigatorMoveNextItem
             Me.BindingNavigator1.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
             Me.BindingNavigator1.Name = "BindingNavigator1"
-            Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+            Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(13, 0, 13, 0)
             Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-            Me.BindingNavigator1.Size = New System.Drawing.Size(855, 27)
+            Me.BindingNavigator1.Size = New System.Drawing.Size(1140, 27)
             Me.BindingNavigator1.TabIndex = 0
             Me.BindingNavigator1.Text = "BindingNavigator1"
             '
             'BindingNavigatorCountItem
             '
             Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 24)
+            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
             Me.BindingNavigatorCountItem.Text = "of {0}"
             Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
             '
@@ -149,7 +149,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
             Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 24)
+            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorDeleteItem.Text = "Delete"
             '
             'BindingNavigatorMoveFirstItem
@@ -158,7 +158,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
             Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 24)
+            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorMoveFirstItem.Text = "Move first"
             '
             'BindingNavigatorMovePreviousItem
@@ -167,7 +167,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
             Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 24)
+            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
             '
             'BindingNavigatorSeparator
@@ -179,8 +179,9 @@ Namespace DatabaseTestApplication2
             '
             Me.BindingNavigatorPositionItem.AccessibleName = "Position"
             Me.BindingNavigatorPositionItem.AutoSize = False
+            Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
             Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-            Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
+            Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(65, 27)
             Me.BindingNavigatorPositionItem.Text = "0"
             Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
             '
@@ -195,7 +196,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
             Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 24)
+            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorMoveNextItem.Text = "Move next"
             '
             'BindingNavigatorMoveLastItem
@@ -204,7 +205,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
             Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 24)
+            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorMoveLastItem.Text = "Move last"
             '
             'BindingNavigatorSeparator2
@@ -218,7 +219,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
             Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 24)
+            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorAddNewItem.Text = "Add new"
             '
             'ToolStripButton1
@@ -227,7 +228,7 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
             Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
             Me.ToolStripButton1.Name = "ToolStripButton1"
-            Me.ToolStripButton1.Size = New System.Drawing.Size(24, 24)
+            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 24)
             Me.ToolStripButton1.Text = "Save"
             '
             'ErrorProvider1
@@ -289,19 +290,20 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.mStripMENUBAR)
             Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.Panel1.ForeColor = System.Drawing.Color.White
-            Me.Panel1.Location = New System.Drawing.Point(10, 0)
-            Me.Panel1.Margin = New System.Windows.Forms.Padding(10, 3, 10, 3)
+            Me.Panel1.Location = New System.Drawing.Point(13, 0)
+            Me.Panel1.Margin = New System.Windows.Forms.Padding(13, 4, 13, 4)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(835, 503)
+            Me.Panel1.Size = New System.Drawing.Size(1114, 626)
             Me.Panel1.TabIndex = 1
             '
             'chkIDDocs
             '
             Me.chkIDDocs.AutoSize = True
             Me.chkIDDocs.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.chkIDDocs.Location = New System.Drawing.Point(649, 361)
+            Me.chkIDDocs.Location = New System.Drawing.Point(865, 444)
+            Me.chkIDDocs.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.chkIDDocs.Name = "chkIDDocs"
-            Me.chkIDDocs.Size = New System.Drawing.Size(31, 21)
+            Me.chkIDDocs.Size = New System.Drawing.Size(35, 24)
             Me.chkIDDocs.TabIndex = 107
             Me.chkIDDocs.Text = " "
             Me.chkIDDocs.UseVisualStyleBackColor = True
@@ -310,9 +312,10 @@ Namespace DatabaseTestApplication2
             '
             Me.chkFundSource.AutoSize = True
             Me.chkFundSource.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.chkFundSource.Location = New System.Drawing.Point(439, 475)
+            Me.chkFundSource.Location = New System.Drawing.Point(585, 585)
+            Me.chkFundSource.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.chkFundSource.Name = "chkFundSource"
-            Me.chkFundSource.Size = New System.Drawing.Size(31, 21)
+            Me.chkFundSource.Size = New System.Drawing.Size(35, 24)
             Me.chkFundSource.TabIndex = 106
             Me.chkFundSource.Text = " "
             Me.chkFundSource.UseVisualStyleBackColor = True
@@ -321,9 +324,10 @@ Namespace DatabaseTestApplication2
             '
             Me.chkGISAssessment.AutoSize = True
             Me.chkGISAssessment.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.chkGISAssessment.Location = New System.Drawing.Point(439, 437)
+            Me.chkGISAssessment.Location = New System.Drawing.Point(585, 538)
+            Me.chkGISAssessment.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.chkGISAssessment.Name = "chkGISAssessment"
-            Me.chkGISAssessment.Size = New System.Drawing.Size(31, 21)
+            Me.chkGISAssessment.Size = New System.Drawing.Size(35, 24)
             Me.chkGISAssessment.TabIndex = 105
             Me.chkGISAssessment.Text = " "
             Me.chkGISAssessment.UseVisualStyleBackColor = True
@@ -332,9 +336,10 @@ Namespace DatabaseTestApplication2
             '
             Me.chkParcelReport.AutoSize = True
             Me.chkParcelReport.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.chkParcelReport.Location = New System.Drawing.Point(439, 399)
+            Me.chkParcelReport.Location = New System.Drawing.Point(585, 491)
+            Me.chkParcelReport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.chkParcelReport.Name = "chkParcelReport"
-            Me.chkParcelReport.Size = New System.Drawing.Size(31, 21)
+            Me.chkParcelReport.Size = New System.Drawing.Size(35, 24)
             Me.chkParcelReport.TabIndex = 104
             Me.chkParcelReport.Text = " "
             Me.chkParcelReport.UseVisualStyleBackColor = True
@@ -343,9 +348,10 @@ Namespace DatabaseTestApplication2
             '
             Me.chkCompletedApp.AutoSize = True
             Me.chkCompletedApp.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.chkCompletedApp.Location = New System.Drawing.Point(439, 358)
+            Me.chkCompletedApp.Location = New System.Drawing.Point(585, 441)
+            Me.chkCompletedApp.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.chkCompletedApp.Name = "chkCompletedApp"
-            Me.chkCompletedApp.Size = New System.Drawing.Size(31, 21)
+            Me.chkCompletedApp.Size = New System.Drawing.Size(35, 24)
             Me.chkCompletedApp.TabIndex = 103
             Me.chkCompletedApp.Text = " "
             Me.chkCompletedApp.UseVisualStyleBackColor = True
@@ -354,9 +360,10 @@ Namespace DatabaseTestApplication2
             '
             Me.chkSatisfaction.AutoSize = True
             Me.chkSatisfaction.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.chkSatisfaction.Location = New System.Drawing.Point(167, 473)
+            Me.chkSatisfaction.Location = New System.Drawing.Point(223, 582)
+            Me.chkSatisfaction.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.chkSatisfaction.Name = "chkSatisfaction"
-            Me.chkSatisfaction.Size = New System.Drawing.Size(31, 21)
+            Me.chkSatisfaction.Size = New System.Drawing.Size(35, 24)
             Me.chkSatisfaction.TabIndex = 102
             Me.chkSatisfaction.Text = " "
             Me.chkSatisfaction.UseVisualStyleBackColor = True
@@ -365,9 +372,10 @@ Namespace DatabaseTestApplication2
             '
             Me.chkTaxBill.AutoSize = True
             Me.chkTaxBill.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.chkTaxBill.Location = New System.Drawing.Point(167, 437)
+            Me.chkTaxBill.Location = New System.Drawing.Point(223, 538)
+            Me.chkTaxBill.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.chkTaxBill.Name = "chkTaxBill"
-            Me.chkTaxBill.Size = New System.Drawing.Size(31, 21)
+            Me.chkTaxBill.Size = New System.Drawing.Size(35, 24)
             Me.chkTaxBill.TabIndex = 101
             Me.chkTaxBill.Text = " "
             Me.chkTaxBill.UseVisualStyleBackColor = True
@@ -376,9 +384,10 @@ Namespace DatabaseTestApplication2
             '
             Me.chkDeed.AutoSize = True
             Me.chkDeed.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.chkDeed.Location = New System.Drawing.Point(167, 359)
+            Me.chkDeed.Location = New System.Drawing.Point(223, 442)
+            Me.chkDeed.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.chkDeed.Name = "chkDeed"
-            Me.chkDeed.Size = New System.Drawing.Size(31, 21)
+            Me.chkDeed.Size = New System.Drawing.Size(35, 24)
             Me.chkDeed.TabIndex = 100
             Me.chkDeed.Text = " "
             Me.chkDeed.UseVisualStyleBackColor = True
@@ -387,9 +396,10 @@ Namespace DatabaseTestApplication2
             '
             Me.chkIncomeVerified.AutoSize = True
             Me.chkIncomeVerified.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.chkIncomeVerified.Location = New System.Drawing.Point(167, 399)
+            Me.chkIncomeVerified.Location = New System.Drawing.Point(223, 491)
+            Me.chkIncomeVerified.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.chkIncomeVerified.Name = "chkIncomeVerified"
-            Me.chkIncomeVerified.Size = New System.Drawing.Size(31, 21)
+            Me.chkIncomeVerified.Size = New System.Drawing.Size(35, 24)
             Me.chkIncomeVerified.TabIndex = 99
             Me.chkIncomeVerified.Text = " "
             Me.chkIncomeVerified.UseVisualStyleBackColor = True
@@ -399,10 +409,10 @@ Namespace DatabaseTestApplication2
             Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
             Me.PictureBox1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
             Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-            Me.PictureBox1.Location = New System.Drawing.Point(691, 24)
-            Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+            Me.PictureBox1.Location = New System.Drawing.Point(921, 30)
+            Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.PictureBox1.Name = "PictureBox1"
-            Me.PictureBox1.Size = New System.Drawing.Size(143, 54)
+            Me.PictureBox1.Size = New System.Drawing.Size(191, 66)
             Me.PictureBox1.TabIndex = 98
             Me.PictureBox1.TabStop = False
             '
@@ -411,10 +421,10 @@ Namespace DatabaseTestApplication2
             Me.Label1.BackColor = System.Drawing.Color.Transparent
             Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.Label1.ForeColor = System.Drawing.Color.White
-            Me.Label1.Location = New System.Drawing.Point(7, 24)
-            Me.Label1.Margin = New System.Windows.Forms.Padding(7, 0, 7, 0)
+            Me.Label1.Location = New System.Drawing.Point(9, 30)
+            Me.Label1.Margin = New System.Windows.Forms.Padding(9, 0, 9, 0)
             Me.Label1.Name = "Label1"
-            Me.Label1.Size = New System.Drawing.Size(252, 78)
+            Me.Label1.Size = New System.Drawing.Size(336, 96)
             Me.Label1.TabIndex = 35
             Me.Label1.Text = "Repairs"
             Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -424,11 +434,12 @@ Namespace DatabaseTestApplication2
             Me.ApplicationSubmissionLabel.BackColor = System.Drawing.Color.Transparent
             Me.ApplicationSubmissionLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.ApplicationSubmissionLabel.ForeColor = System.Drawing.Color.White
-            Me.ApplicationSubmissionLabel.Location = New System.Drawing.Point(13, 173)
+            Me.ApplicationSubmissionLabel.Location = New System.Drawing.Point(17, 213)
+            Me.ApplicationSubmissionLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.ApplicationSubmissionLabel.Name = "ApplicationSubmissionLabel"
-            Me.ApplicationSubmissionLabel.Size = New System.Drawing.Size(148, 20)
+            Me.ApplicationSubmissionLabel.Size = New System.Drawing.Size(197, 25)
             Me.ApplicationSubmissionLabel.TabIndex = 1
-            Me.ApplicationSubmissionLabel.Text = "ApplicationSubmission"
+            Me.ApplicationSubmissionLabel.Text = "Application Submission"
             Me.ApplicationSubmissionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
             '
             'ApplicationSubmission_dateTimePicker
@@ -436,9 +447,10 @@ Namespace DatabaseTestApplication2
             Me.ApplicationSubmission_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.ApplicationSubmission_dateTimePicker.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.ApplicationSubmission_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.ApplicationSubmission_dateTimePicker.Location = New System.Drawing.Point(167, 173)
+            Me.ApplicationSubmission_dateTimePicker.Location = New System.Drawing.Point(223, 213)
+            Me.ApplicationSubmission_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.ApplicationSubmission_dateTimePicker.Name = "ApplicationSubmission_dateTimePicker"
-            Me.ApplicationSubmission_dateTimePicker.Size = New System.Drawing.Size(200, 23)
+            Me.ApplicationSubmission_dateTimePicker.Size = New System.Drawing.Size(265, 27)
             Me.ApplicationSubmission_dateTimePicker.TabIndex = 2
             Me.ApplicationSubmission_dateTimePicker.Value = New Date(2020, 2, 29, 0, 0, 0, 0)
             '
@@ -447,9 +459,10 @@ Namespace DatabaseTestApplication2
             Me.AdditionalDocumentsLabel.BackColor = System.Drawing.Color.Transparent
             Me.AdditionalDocumentsLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.AdditionalDocumentsLabel.ForeColor = System.Drawing.Color.White
-            Me.AdditionalDocumentsLabel.Location = New System.Drawing.Point(373, 173)
+            Me.AdditionalDocumentsLabel.Location = New System.Drawing.Point(497, 213)
+            Me.AdditionalDocumentsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.AdditionalDocumentsLabel.Name = "AdditionalDocumentsLabel"
-            Me.AdditionalDocumentsLabel.Size = New System.Drawing.Size(148, 20)
+            Me.AdditionalDocumentsLabel.Size = New System.Drawing.Size(197, 25)
             Me.AdditionalDocumentsLabel.TabIndex = 3
             Me.AdditionalDocumentsLabel.Text = "AdditionalDocuments"
             Me.AdditionalDocumentsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -459,9 +472,10 @@ Namespace DatabaseTestApplication2
             Me.AdditionalDocuments_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.AdditionalDocuments_dateTimePicker.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.AdditionalDocuments_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.AdditionalDocuments_dateTimePicker.Location = New System.Drawing.Point(527, 173)
+            Me.AdditionalDocuments_dateTimePicker.Location = New System.Drawing.Point(703, 213)
+            Me.AdditionalDocuments_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.AdditionalDocuments_dateTimePicker.Name = "AdditionalDocuments_dateTimePicker"
-            Me.AdditionalDocuments_dateTimePicker.Size = New System.Drawing.Size(200, 23)
+            Me.AdditionalDocuments_dateTimePicker.Size = New System.Drawing.Size(265, 27)
             Me.AdditionalDocuments_dateTimePicker.TabIndex = 4
             Me.AdditionalDocuments_dateTimePicker.Value = New Date(2020, 2, 29, 0, 0, 0, 0)
             '
@@ -470,11 +484,12 @@ Namespace DatabaseTestApplication2
             Me.ApprovalSiteVisitLabel.BackColor = System.Drawing.Color.Transparent
             Me.ApprovalSiteVisitLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.ApprovalSiteVisitLabel.ForeColor = System.Drawing.Color.White
-            Me.ApprovalSiteVisitLabel.Location = New System.Drawing.Point(13, 211)
+            Me.ApprovalSiteVisitLabel.Location = New System.Drawing.Point(17, 260)
+            Me.ApprovalSiteVisitLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.ApprovalSiteVisitLabel.Name = "ApprovalSiteVisitLabel"
-            Me.ApprovalSiteVisitLabel.Size = New System.Drawing.Size(148, 20)
+            Me.ApprovalSiteVisitLabel.Size = New System.Drawing.Size(197, 25)
             Me.ApprovalSiteVisitLabel.TabIndex = 5
-            Me.ApprovalSiteVisitLabel.Text = "ApprovalSiteVisit"
+            Me.ApprovalSiteVisitLabel.Text = "Approval Site Visit"
             Me.ApprovalSiteVisitLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
             '
             'ApprovalSiteVisit_dateTimePicker
@@ -482,9 +497,10 @@ Namespace DatabaseTestApplication2
             Me.ApprovalSiteVisit_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.ApprovalSiteVisit_dateTimePicker.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.ApprovalSiteVisit_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.ApprovalSiteVisit_dateTimePicker.Location = New System.Drawing.Point(167, 211)
+            Me.ApprovalSiteVisit_dateTimePicker.Location = New System.Drawing.Point(223, 260)
+            Me.ApprovalSiteVisit_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.ApprovalSiteVisit_dateTimePicker.Name = "ApprovalSiteVisit_dateTimePicker"
-            Me.ApprovalSiteVisit_dateTimePicker.Size = New System.Drawing.Size(200, 23)
+            Me.ApprovalSiteVisit_dateTimePicker.Size = New System.Drawing.Size(265, 27)
             Me.ApprovalSiteVisit_dateTimePicker.TabIndex = 6
             Me.ApprovalSiteVisit_dateTimePicker.Value = New Date(2020, 2, 29, 0, 0, 0, 0)
             '
@@ -493,9 +509,10 @@ Namespace DatabaseTestApplication2
             Me.SiteVisitCompleteLabel.BackColor = System.Drawing.Color.Transparent
             Me.SiteVisitCompleteLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.SiteVisitCompleteLabel.ForeColor = System.Drawing.Color.White
-            Me.SiteVisitCompleteLabel.Location = New System.Drawing.Point(373, 211)
+            Me.SiteVisitCompleteLabel.Location = New System.Drawing.Point(497, 260)
+            Me.SiteVisitCompleteLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.SiteVisitCompleteLabel.Name = "SiteVisitCompleteLabel"
-            Me.SiteVisitCompleteLabel.Size = New System.Drawing.Size(148, 20)
+            Me.SiteVisitCompleteLabel.Size = New System.Drawing.Size(197, 25)
             Me.SiteVisitCompleteLabel.TabIndex = 7
             Me.SiteVisitCompleteLabel.Text = "SiteVisitComplete"
             Me.SiteVisitCompleteLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -505,9 +522,10 @@ Namespace DatabaseTestApplication2
             Me.SiteVisitComplete_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.SiteVisitComplete_dateTimePicker.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.SiteVisitComplete_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.SiteVisitComplete_dateTimePicker.Location = New System.Drawing.Point(527, 208)
+            Me.SiteVisitComplete_dateTimePicker.Location = New System.Drawing.Point(703, 256)
+            Me.SiteVisitComplete_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.SiteVisitComplete_dateTimePicker.Name = "SiteVisitComplete_dateTimePicker"
-            Me.SiteVisitComplete_dateTimePicker.Size = New System.Drawing.Size(200, 23)
+            Me.SiteVisitComplete_dateTimePicker.Size = New System.Drawing.Size(265, 27)
             Me.SiteVisitComplete_dateTimePicker.TabIndex = 8
             Me.SiteVisitComplete_dateTimePicker.Value = New Date(2020, 2, 29, 0, 0, 0, 0)
             '
@@ -516,11 +534,12 @@ Namespace DatabaseTestApplication2
             Me.ScopeOfWorkLabel.BackColor = System.Drawing.Color.Transparent
             Me.ScopeOfWorkLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.ScopeOfWorkLabel.ForeColor = System.Drawing.Color.White
-            Me.ScopeOfWorkLabel.Location = New System.Drawing.Point(13, 250)
+            Me.ScopeOfWorkLabel.Location = New System.Drawing.Point(17, 308)
+            Me.ScopeOfWorkLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.ScopeOfWorkLabel.Name = "ScopeOfWorkLabel"
-            Me.ScopeOfWorkLabel.Size = New System.Drawing.Size(148, 20)
+            Me.ScopeOfWorkLabel.Size = New System.Drawing.Size(197, 25)
             Me.ScopeOfWorkLabel.TabIndex = 9
-            Me.ScopeOfWorkLabel.Text = "ScopeOfWork"
+            Me.ScopeOfWorkLabel.Text = "Scope Of Work"
             Me.ScopeOfWorkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
             '
             'ScopeOfWork_dateTimePicker
@@ -528,9 +547,10 @@ Namespace DatabaseTestApplication2
             Me.ScopeOfWork_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.ScopeOfWork_dateTimePicker.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.ScopeOfWork_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.ScopeOfWork_dateTimePicker.Location = New System.Drawing.Point(167, 250)
+            Me.ScopeOfWork_dateTimePicker.Location = New System.Drawing.Point(223, 308)
+            Me.ScopeOfWork_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.ScopeOfWork_dateTimePicker.Name = "ScopeOfWork_dateTimePicker"
-            Me.ScopeOfWork_dateTimePicker.Size = New System.Drawing.Size(200, 23)
+            Me.ScopeOfWork_dateTimePicker.Size = New System.Drawing.Size(265, 27)
             Me.ScopeOfWork_dateTimePicker.TabIndex = 10
             Me.ScopeOfWork_dateTimePicker.Value = New Date(2020, 2, 29, 0, 0, 0, 0)
             '
@@ -539,9 +559,10 @@ Namespace DatabaseTestApplication2
             Me.ContractCompleteLabel.BackColor = System.Drawing.Color.Transparent
             Me.ContractCompleteLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.ContractCompleteLabel.ForeColor = System.Drawing.Color.White
-            Me.ContractCompleteLabel.Location = New System.Drawing.Point(373, 250)
+            Me.ContractCompleteLabel.Location = New System.Drawing.Point(497, 308)
+            Me.ContractCompleteLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.ContractCompleteLabel.Name = "ContractCompleteLabel"
-            Me.ContractCompleteLabel.Size = New System.Drawing.Size(148, 20)
+            Me.ContractCompleteLabel.Size = New System.Drawing.Size(197, 25)
             Me.ContractCompleteLabel.TabIndex = 11
             Me.ContractCompleteLabel.Text = "ContractComplete"
             Me.ContractCompleteLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -551,9 +572,10 @@ Namespace DatabaseTestApplication2
             Me.ContractComplete_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.ContractComplete_dateTimePicker.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.ContractComplete_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.ContractComplete_dateTimePicker.Location = New System.Drawing.Point(527, 250)
+            Me.ContractComplete_dateTimePicker.Location = New System.Drawing.Point(703, 308)
+            Me.ContractComplete_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.ContractComplete_dateTimePicker.Name = "ContractComplete_dateTimePicker"
-            Me.ContractComplete_dateTimePicker.Size = New System.Drawing.Size(200, 23)
+            Me.ContractComplete_dateTimePicker.Size = New System.Drawing.Size(265, 27)
             Me.ContractComplete_dateTimePicker.TabIndex = 12
             Me.ContractComplete_dateTimePicker.Value = New Date(2020, 2, 29, 0, 0, 0, 0)
             '
@@ -562,11 +584,12 @@ Namespace DatabaseTestApplication2
             Me.WorkCompleteLabel.BackColor = System.Drawing.Color.Transparent
             Me.WorkCompleteLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.WorkCompleteLabel.ForeColor = System.Drawing.Color.White
-            Me.WorkCompleteLabel.Location = New System.Drawing.Point(13, 290)
+            Me.WorkCompleteLabel.Location = New System.Drawing.Point(17, 357)
+            Me.WorkCompleteLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.WorkCompleteLabel.Name = "WorkCompleteLabel"
-            Me.WorkCompleteLabel.Size = New System.Drawing.Size(148, 20)
+            Me.WorkCompleteLabel.Size = New System.Drawing.Size(197, 25)
             Me.WorkCompleteLabel.TabIndex = 13
-            Me.WorkCompleteLabel.Text = "WorkComplete"
+            Me.WorkCompleteLabel.Text = "Work Complete"
             Me.WorkCompleteLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
             '
             'WorkComplete_dateTimePicker
@@ -574,9 +597,10 @@ Namespace DatabaseTestApplication2
             Me.WorkComplete_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.WorkComplete_dateTimePicker.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.WorkComplete_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.WorkComplete_dateTimePicker.Location = New System.Drawing.Point(167, 290)
+            Me.WorkComplete_dateTimePicker.Location = New System.Drawing.Point(223, 357)
+            Me.WorkComplete_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.WorkComplete_dateTimePicker.Name = "WorkComplete_dateTimePicker"
-            Me.WorkComplete_dateTimePicker.Size = New System.Drawing.Size(200, 23)
+            Me.WorkComplete_dateTimePicker.Size = New System.Drawing.Size(265, 27)
             Me.WorkComplete_dateTimePicker.TabIndex = 14
             Me.WorkComplete_dateTimePicker.Value = New Date(2020, 2, 29, 0, 0, 0, 0)
             '
@@ -585,19 +609,21 @@ Namespace DatabaseTestApplication2
             Me.IDDocumentsLabel.BackColor = System.Drawing.Color.Transparent
             Me.IDDocumentsLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.IDDocumentsLabel.ForeColor = System.Drawing.Color.White
-            Me.IDDocumentsLabel.Location = New System.Drawing.Point(495, 360)
+            Me.IDDocumentsLabel.Location = New System.Drawing.Point(660, 443)
+            Me.IDDocumentsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.IDDocumentsLabel.Name = "IDDocumentsLabel"
-            Me.IDDocumentsLabel.Size = New System.Drawing.Size(148, 20)
+            Me.IDDocumentsLabel.Size = New System.Drawing.Size(197, 25)
             Me.IDDocumentsLabel.TabIndex = 15
-            Me.IDDocumentsLabel.Text = "IDDocuments"
+            Me.IDDocumentsLabel.Text = "ID Documents"
             Me.IDDocumentsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
             '
             'IDDocumentsTextBox
             '
             Me.IDDocumentsTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.IDDocumentsTextBox.Location = New System.Drawing.Point(363, 55)
+            Me.IDDocumentsTextBox.Location = New System.Drawing.Point(484, 68)
+            Me.IDDocumentsTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.IDDocumentsTextBox.Name = "IDDocumentsTextBox"
-            Me.IDDocumentsTextBox.Size = New System.Drawing.Size(100, 23)
+            Me.IDDocumentsTextBox.Size = New System.Drawing.Size(132, 27)
             Me.IDDocumentsTextBox.TabIndex = 16
             Me.IDDocumentsTextBox.Visible = False
             '
@@ -606,19 +632,21 @@ Namespace DatabaseTestApplication2
             Me.IncomeVerifiedLabel.BackColor = System.Drawing.Color.Transparent
             Me.IncomeVerifiedLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.IncomeVerifiedLabel.ForeColor = System.Drawing.Color.White
-            Me.IncomeVerifiedLabel.Location = New System.Drawing.Point(15, 400)
+            Me.IncomeVerifiedLabel.Location = New System.Drawing.Point(20, 492)
+            Me.IncomeVerifiedLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.IncomeVerifiedLabel.Name = "IncomeVerifiedLabel"
-            Me.IncomeVerifiedLabel.Size = New System.Drawing.Size(148, 20)
+            Me.IncomeVerifiedLabel.Size = New System.Drawing.Size(197, 25)
             Me.IncomeVerifiedLabel.TabIndex = 17
-            Me.IncomeVerifiedLabel.Text = "IncomeVerified"
+            Me.IncomeVerifiedLabel.Text = "Income Verified"
             Me.IncomeVerifiedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
             '
             'IncomeVerifiedTextBox
             '
             Me.IncomeVerifiedTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.IncomeVerifiedTextBox.Location = New System.Drawing.Point(469, 84)
+            Me.IncomeVerifiedTextBox.Location = New System.Drawing.Point(625, 103)
+            Me.IncomeVerifiedTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.IncomeVerifiedTextBox.Name = "IncomeVerifiedTextBox"
-            Me.IncomeVerifiedTextBox.Size = New System.Drawing.Size(100, 23)
+            Me.IncomeVerifiedTextBox.Size = New System.Drawing.Size(132, 27)
             Me.IncomeVerifiedTextBox.TabIndex = 18
             Me.IncomeVerifiedTextBox.Visible = False
             '
@@ -627,19 +655,21 @@ Namespace DatabaseTestApplication2
             Me.DeedOfTrustLabel.BackColor = System.Drawing.Color.Transparent
             Me.DeedOfTrustLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.DeedOfTrustLabel.ForeColor = System.Drawing.Color.White
-            Me.DeedOfTrustLabel.Location = New System.Drawing.Point(13, 358)
+            Me.DeedOfTrustLabel.Location = New System.Drawing.Point(17, 441)
+            Me.DeedOfTrustLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.DeedOfTrustLabel.Name = "DeedOfTrustLabel"
-            Me.DeedOfTrustLabel.Size = New System.Drawing.Size(148, 20)
+            Me.DeedOfTrustLabel.Size = New System.Drawing.Size(197, 25)
             Me.DeedOfTrustLabel.TabIndex = 19
-            Me.DeedOfTrustLabel.Text = "DeedOfTrust"
+            Me.DeedOfTrustLabel.Text = "Deed Of Trust"
             Me.DeedOfTrustLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
             '
             'DeedOfTrustTextBox
             '
             Me.DeedOfTrustTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.DeedOfTrustTextBox.Location = New System.Drawing.Point(469, 55)
+            Me.DeedOfTrustTextBox.Location = New System.Drawing.Point(625, 68)
+            Me.DeedOfTrustTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.DeedOfTrustTextBox.Name = "DeedOfTrustTextBox"
-            Me.DeedOfTrustTextBox.Size = New System.Drawing.Size(100, 23)
+            Me.DeedOfTrustTextBox.Size = New System.Drawing.Size(132, 27)
             Me.DeedOfTrustTextBox.TabIndex = 20
             Me.DeedOfTrustTextBox.Visible = False
             '
@@ -648,19 +678,21 @@ Namespace DatabaseTestApplication2
             Me.TaxBillLabel.BackColor = System.Drawing.Color.Transparent
             Me.TaxBillLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.TaxBillLabel.ForeColor = System.Drawing.Color.White
-            Me.TaxBillLabel.Location = New System.Drawing.Point(15, 438)
+            Me.TaxBillLabel.Location = New System.Drawing.Point(20, 539)
+            Me.TaxBillLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.TaxBillLabel.Name = "TaxBillLabel"
-            Me.TaxBillLabel.Size = New System.Drawing.Size(148, 20)
+            Me.TaxBillLabel.Size = New System.Drawing.Size(197, 25)
             Me.TaxBillLabel.TabIndex = 21
-            Me.TaxBillLabel.Text = "TaxBill"
+            Me.TaxBillLabel.Text = "Tax Bill"
             Me.TaxBillLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
             '
             'TaxBillTextBox
             '
             Me.TaxBillTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.TaxBillTextBox.Location = New System.Drawing.Point(469, 113)
+            Me.TaxBillTextBox.Location = New System.Drawing.Point(625, 139)
+            Me.TaxBillTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.TaxBillTextBox.Name = "TaxBillTextBox"
-            Me.TaxBillTextBox.Size = New System.Drawing.Size(100, 23)
+            Me.TaxBillTextBox.Size = New System.Drawing.Size(132, 27)
             Me.TaxBillTextBox.TabIndex = 22
             Me.TaxBillTextBox.Visible = False
             '
@@ -669,9 +701,10 @@ Namespace DatabaseTestApplication2
             Me.SatisfactionLabel.BackColor = System.Drawing.Color.Transparent
             Me.SatisfactionLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.SatisfactionLabel.ForeColor = System.Drawing.Color.White
-            Me.SatisfactionLabel.Location = New System.Drawing.Point(15, 473)
+            Me.SatisfactionLabel.Location = New System.Drawing.Point(20, 582)
+            Me.SatisfactionLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.SatisfactionLabel.Name = "SatisfactionLabel"
-            Me.SatisfactionLabel.Size = New System.Drawing.Size(148, 20)
+            Me.SatisfactionLabel.Size = New System.Drawing.Size(197, 25)
             Me.SatisfactionLabel.TabIndex = 23
             Me.SatisfactionLabel.Text = "Satisfaction"
             Me.SatisfactionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -679,9 +712,10 @@ Namespace DatabaseTestApplication2
             'SatisfactionTextBox
             '
             Me.SatisfactionTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.SatisfactionTextBox.Location = New System.Drawing.Point(575, 55)
+            Me.SatisfactionTextBox.Location = New System.Drawing.Point(767, 68)
+            Me.SatisfactionTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.SatisfactionTextBox.Name = "SatisfactionTextBox"
-            Me.SatisfactionTextBox.Size = New System.Drawing.Size(100, 23)
+            Me.SatisfactionTextBox.Size = New System.Drawing.Size(132, 27)
             Me.SatisfactionTextBox.TabIndex = 24
             Me.SatisfactionTextBox.Visible = False
             '
@@ -690,19 +724,21 @@ Namespace DatabaseTestApplication2
             Me.CompletedApplicationLabel.BackColor = System.Drawing.Color.Transparent
             Me.CompletedApplicationLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.CompletedApplicationLabel.ForeColor = System.Drawing.Color.White
-            Me.CompletedApplicationLabel.Location = New System.Drawing.Point(285, 356)
+            Me.CompletedApplicationLabel.Location = New System.Drawing.Point(380, 438)
+            Me.CompletedApplicationLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.CompletedApplicationLabel.Name = "CompletedApplicationLabel"
-            Me.CompletedApplicationLabel.Size = New System.Drawing.Size(148, 20)
+            Me.CompletedApplicationLabel.Size = New System.Drawing.Size(197, 25)
             Me.CompletedApplicationLabel.TabIndex = 25
-            Me.CompletedApplicationLabel.Text = "CompletedApplication"
+            Me.CompletedApplicationLabel.Text = "Completed Application"
             Me.CompletedApplicationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
             '
             'CompletedApplicationTextBox
             '
             Me.CompletedApplicationTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.CompletedApplicationTextBox.Location = New System.Drawing.Point(575, 84)
+            Me.CompletedApplicationTextBox.Location = New System.Drawing.Point(767, 103)
+            Me.CompletedApplicationTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.CompletedApplicationTextBox.Name = "CompletedApplicationTextBox"
-            Me.CompletedApplicationTextBox.Size = New System.Drawing.Size(100, 23)
+            Me.CompletedApplicationTextBox.Size = New System.Drawing.Size(132, 27)
             Me.CompletedApplicationTextBox.TabIndex = 26
             Me.CompletedApplicationTextBox.Visible = False
             '
@@ -711,19 +747,21 @@ Namespace DatabaseTestApplication2
             Me.ParcelReportLabel.BackColor = System.Drawing.Color.Transparent
             Me.ParcelReportLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.ParcelReportLabel.ForeColor = System.Drawing.Color.White
-            Me.ParcelReportLabel.Location = New System.Drawing.Point(285, 398)
+            Me.ParcelReportLabel.Location = New System.Drawing.Point(380, 490)
+            Me.ParcelReportLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.ParcelReportLabel.Name = "ParcelReportLabel"
-            Me.ParcelReportLabel.Size = New System.Drawing.Size(148, 20)
+            Me.ParcelReportLabel.Size = New System.Drawing.Size(197, 25)
             Me.ParcelReportLabel.TabIndex = 27
-            Me.ParcelReportLabel.Text = "ParcelReport"
+            Me.ParcelReportLabel.Text = "Parcel Report"
             Me.ParcelReportLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
             '
             'ParcelReportTextBox
             '
             Me.ParcelReportTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.ParcelReportTextBox.Location = New System.Drawing.Point(575, 113)
+            Me.ParcelReportTextBox.Location = New System.Drawing.Point(767, 139)
+            Me.ParcelReportTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.ParcelReportTextBox.Name = "ParcelReportTextBox"
-            Me.ParcelReportTextBox.Size = New System.Drawing.Size(100, 23)
+            Me.ParcelReportTextBox.Size = New System.Drawing.Size(132, 27)
             Me.ParcelReportTextBox.TabIndex = 28
             Me.ParcelReportTextBox.Visible = False
             '
@@ -732,19 +770,21 @@ Namespace DatabaseTestApplication2
             Me.GISAssessmentLabel.BackColor = System.Drawing.Color.Transparent
             Me.GISAssessmentLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.GISAssessmentLabel.ForeColor = System.Drawing.Color.White
-            Me.GISAssessmentLabel.Location = New System.Drawing.Point(285, 437)
+            Me.GISAssessmentLabel.Location = New System.Drawing.Point(380, 538)
+            Me.GISAssessmentLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.GISAssessmentLabel.Name = "GISAssessmentLabel"
-            Me.GISAssessmentLabel.Size = New System.Drawing.Size(148, 20)
+            Me.GISAssessmentLabel.Size = New System.Drawing.Size(197, 25)
             Me.GISAssessmentLabel.TabIndex = 29
-            Me.GISAssessmentLabel.Text = "GISAssessment"
+            Me.GISAssessmentLabel.Text = "GIS Assessment"
             Me.GISAssessmentLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
             '
             'GISAssessmentTextBox
             '
             Me.GISAssessmentTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.GISAssessmentTextBox.Location = New System.Drawing.Point(681, 84)
+            Me.GISAssessmentTextBox.Location = New System.Drawing.Point(908, 103)
+            Me.GISAssessmentTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.GISAssessmentTextBox.Name = "GISAssessmentTextBox"
-            Me.GISAssessmentTextBox.Size = New System.Drawing.Size(100, 23)
+            Me.GISAssessmentTextBox.Size = New System.Drawing.Size(132, 27)
             Me.GISAssessmentTextBox.TabIndex = 30
             Me.GISAssessmentTextBox.Visible = False
             '
@@ -753,19 +793,21 @@ Namespace DatabaseTestApplication2
             Me.FundingSourceLabel.BackColor = System.Drawing.Color.Transparent
             Me.FundingSourceLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.FundingSourceLabel.ForeColor = System.Drawing.Color.White
-            Me.FundingSourceLabel.Location = New System.Drawing.Point(285, 474)
+            Me.FundingSourceLabel.Location = New System.Drawing.Point(380, 583)
+            Me.FundingSourceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.FundingSourceLabel.Name = "FundingSourceLabel"
-            Me.FundingSourceLabel.Size = New System.Drawing.Size(148, 20)
+            Me.FundingSourceLabel.Size = New System.Drawing.Size(197, 25)
             Me.FundingSourceLabel.TabIndex = 31
-            Me.FundingSourceLabel.Text = "FundingSource"
+            Me.FundingSourceLabel.Text = "Funding Source"
             Me.FundingSourceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
             '
             'FundingSourceTextBox
             '
             Me.FundingSourceTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.FundingSourceTextBox.Location = New System.Drawing.Point(681, 116)
+            Me.FundingSourceTextBox.Location = New System.Drawing.Point(908, 143)
+            Me.FundingSourceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.FundingSourceTextBox.Name = "FundingSourceTextBox"
-            Me.FundingSourceTextBox.Size = New System.Drawing.Size(100, 23)
+            Me.FundingSourceTextBox.Size = New System.Drawing.Size(132, 27)
             Me.FundingSourceTextBox.TabIndex = 32
             Me.FundingSourceTextBox.Visible = False
             '
@@ -773,9 +815,10 @@ Namespace DatabaseTestApplication2
             '
             Me.General_Info_UIDLabel.Enabled = False
             Me.General_Info_UIDLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.General_Info_UIDLabel.Location = New System.Drawing.Point(13, 121)
+            Me.General_Info_UIDLabel.Location = New System.Drawing.Point(17, 149)
+            Me.General_Info_UIDLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.General_Info_UIDLabel.Name = "General_Info_UIDLabel"
-            Me.General_Info_UIDLabel.Size = New System.Drawing.Size(148, 20)
+            Me.General_Info_UIDLabel.Size = New System.Drawing.Size(197, 25)
             Me.General_Info_UIDLabel.TabIndex = 33
             Me.General_Info_UIDLabel.Text = "Applicant ID"
             Me.General_Info_UIDLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -787,44 +830,46 @@ Namespace DatabaseTestApplication2
             Me.General_Info_UID_comboBox.Enabled = False
             Me.General_Info_UID_comboBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.General_Info_UID_comboBox.FormattingEnabled = True
-            Me.General_Info_UID_comboBox.Location = New System.Drawing.Point(167, 116)
+            Me.General_Info_UID_comboBox.Location = New System.Drawing.Point(223, 143)
+            Me.General_Info_UID_comboBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.General_Info_UID_comboBox.Name = "General_Info_UID_comboBox"
-            Me.General_Info_UID_comboBox.Size = New System.Drawing.Size(200, 25)
+            Me.General_Info_UID_comboBox.Size = New System.Drawing.Size(265, 28)
             Me.General_Info_UID_comboBox.TabIndex = 34
             Me.General_Info_UID_comboBox.Visible = False
             '
             'mStripMENUBAR
             '
+            Me.mStripMENUBAR.ImageScalingSize = New System.Drawing.Size(20, 20)
             Me.mStripMENUBAR.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tstripMainMenu, Me.tstripGeneral, Me.tstripHomeownership, Me.RepairsToolStripMenuItem})
             Me.mStripMENUBAR.Location = New System.Drawing.Point(0, 0)
             Me.mStripMENUBAR.Name = "mStripMENUBAR"
-            Me.mStripMENUBAR.Size = New System.Drawing.Size(835, 24)
+            Me.mStripMENUBAR.Size = New System.Drawing.Size(1114, 28)
             Me.mStripMENUBAR.TabIndex = 108
             Me.mStripMENUBAR.Text = "MenuStrip1"
             '
             'tstripMainMenu
             '
             Me.tstripMainMenu.Name = "tstripMainMenu"
-            Me.tstripMainMenu.Size = New System.Drawing.Size(80, 20)
+            Me.tstripMainMenu.Size = New System.Drawing.Size(97, 24)
             Me.tstripMainMenu.Text = "Main Menu"
             '
             'tstripGeneral
             '
             Me.tstripGeneral.Name = "tstripGeneral"
-            Me.tstripGeneral.Size = New System.Drawing.Size(59, 20)
+            Me.tstripGeneral.Size = New System.Drawing.Size(74, 24)
             Me.tstripGeneral.Text = "General"
             '
             'tstripHomeownership
             '
             Me.tstripHomeownership.Name = "tstripHomeownership"
-            Me.tstripHomeownership.Size = New System.Drawing.Size(107, 20)
+            Me.tstripHomeownership.Size = New System.Drawing.Size(132, 24)
             Me.tstripHomeownership.Text = "Homeownership"
             '
             'RepairsToolStripMenuItem
             '
             Me.RepairsToolStripMenuItem.Enabled = False
             Me.RepairsToolStripMenuItem.Name = "RepairsToolStripMenuItem"
-            Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+            Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(72, 24)
             Me.RepairsToolStripMenuItem.Text = "Repairs"
             '
             'panel3
@@ -835,42 +880,47 @@ Namespace DatabaseTestApplication2
             Me.panel3.Controls.Add(Me.panel6)
             Me.panel3.Dock = System.Windows.Forms.DockStyle.Fill
             Me.panel3.Location = New System.Drawing.Point(0, 27)
+            Me.panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(855, 513)
+            Me.panel3.Size = New System.Drawing.Size(1140, 638)
             Me.panel3.TabIndex = 19
             '
             'panel4
             '
             Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
-            Me.panel4.Location = New System.Drawing.Point(845, 0)
+            Me.panel4.Location = New System.Drawing.Point(1127, 0)
+            Me.panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(10, 503)
+            Me.panel4.Size = New System.Drawing.Size(13, 626)
             Me.panel4.TabIndex = 3
             '
             'panel5
             '
             Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
             Me.panel5.Location = New System.Drawing.Point(0, 0)
+            Me.panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(10, 503)
+            Me.panel5.Size = New System.Drawing.Size(13, 626)
             Me.panel5.TabIndex = 5
             '
             'panel6
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 503)
+            Me.panel6.Location = New System.Drawing.Point(0, 626)
+            Me.panel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.panel6.Name = "panel6"
-            Me.panel6.Size = New System.Drawing.Size(855, 10)
+            Me.panel6.Size = New System.Drawing.Size(1140, 12)
             Me.panel6.TabIndex = 6
             '
             'frmrepairs
             '
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(855, 540)
+            Me.ClientSize = New System.Drawing.Size(1140, 665)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
             Me.MainMenuStrip = Me.mStripMENUBAR
+            Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.Name = "frmrepairs"
             Me.Text = "Repairs"
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()

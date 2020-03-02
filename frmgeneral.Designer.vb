@@ -311,7 +311,7 @@ Namespace DatabaseTestApplication2
             'PictureBox1
             '
             Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-            Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+            Me.PictureBox1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
             Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
             Me.PictureBox1.Location = New System.Drawing.Point(720, 31)
             Me.PictureBox1.Name = "PictureBox1"
@@ -324,7 +324,7 @@ Namespace DatabaseTestApplication2
             Me.generalInfo.AutoSize = True
             Me.generalInfo.BackColor = System.Drawing.Color.Transparent
             Me.generalInfo.Font = New System.Drawing.Font("Microsoft YaHei UI", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.generalInfo.Location = New System.Drawing.Point(353, 77)
+            Me.generalInfo.Location = New System.Drawing.Point(7, 42)
             Me.generalInfo.Name = "generalInfo"
             Me.generalInfo.Size = New System.Drawing.Size(271, 52)
             Me.generalInfo.TabIndex = 38
@@ -335,12 +335,12 @@ Namespace DatabaseTestApplication2
             Me.UIDLabel.AutoSize = True
             Me.UIDLabel.BackColor = System.Drawing.Color.Transparent
             Me.UIDLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.UIDLabel.Location = New System.Drawing.Point(143, 175)
+            Me.UIDLabel.Location = New System.Drawing.Point(91, 175)
             Me.UIDLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.UIDLabel.Name = "UIDLabel"
-            Me.UIDLabel.Size = New System.Drawing.Size(31, 17)
+            Me.UIDLabel.Size = New System.Drawing.Size(83, 17)
             Me.UIDLabel.TabIndex = 1
-            Me.UIDLabel.Text = "UID"
+            Me.UIDLabel.Text = "Applicant ID"
             '
             'UIDTextBox
             '

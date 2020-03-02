@@ -3,12 +3,12 @@
 
 Public Class Form1
     Dim connection As New MySqlConnection("datasource=localhost;port=3306;username=root;password=root;database=mydb")
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         DatabaseTestApplication2.frmgeneral.Show()
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         DatabaseTestApplication2.frmtracking.Show()
     End Sub
 
@@ -17,11 +17,6 @@ Public Class Form1
 
         command.Parameters.Add("@username", MySqlDbType.VarChar).Value = txtUN.Text
         command.Parameters.Add("@password", MySqlDbType.VarChar).Value = txtPW.Text
-
-        'This should pass the value to the main screen
-        Dim OBJ As New frmmain_menu
-        OBJ.usersName = txtUN.Text
-        OBJ.Show()
 
         Dim adapter As New MySqlDataAdapter(command)
         Dim table As New DataTable()
@@ -35,7 +30,10 @@ Public Class Form1
         Else
 
             MessageBox.Show("Logged In")
-            DatabaseTestApplication2.frmgeneral.Show()
+            'This should pass the value to the main screen
+            Dim OBJ As New frmmain_menu
+            OBJ.usersName = txtUN.Text
+            OBJ.Show()
 
 
 
