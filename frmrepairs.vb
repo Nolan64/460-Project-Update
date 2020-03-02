@@ -63,7 +63,12 @@ Namespace DatabaseTestApplication2
 				Return
 			End If
 			repairsBindingSource.EndEdit()
-			ctx.SaveChanges()
+
+			Try
+				ctx.SaveChanges()
+			Catch
+				MessageBox.Show("break")
+			End Try
 		End Sub
 		
 		Private Sub Form1_FormClosing(sender As System.Object, e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing

@@ -195,14 +195,14 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigator1.Name = "BindingNavigator1"
             Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(13, 0, 13, 0)
             Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-            Me.BindingNavigator1.Size = New System.Drawing.Size(1312, 27)
+            Me.BindingNavigator1.Size = New System.Drawing.Size(1312, 31)
             Me.BindingNavigator1.TabIndex = 0
             Me.BindingNavigator1.Text = "BindingNavigator1"
             '
             'BindingNavigatorCountItem
             '
             Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
+            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 28)
             Me.BindingNavigatorCountItem.Text = "of {0}"
             Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
             '
@@ -212,7 +212,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
             Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorDeleteItem.Text = "Delete"
             '
             'BindingNavigatorMoveFirstItem
@@ -221,7 +221,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
             Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorMoveFirstItem.Text = "Move first"
             '
             'BindingNavigatorMovePreviousItem
@@ -230,13 +230,13 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
             Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
             '
             'BindingNavigatorSeparator
             '
             Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-            Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
+            Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 31)
             '
             'BindingNavigatorPositionItem
             '
@@ -251,7 +251,7 @@ Namespace DatabaseTestApplication2
             'BindingNavigatorSeparator1
             '
             Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-            Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
+            Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 31)
             '
             'BindingNavigatorMoveNextItem
             '
@@ -259,7 +259,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
             Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorMoveNextItem.Text = "Move next"
             '
             'BindingNavigatorMoveLastItem
@@ -268,13 +268,13 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
             Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorMoveLastItem.Text = "Move last"
             '
             'BindingNavigatorSeparator2
             '
             Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-            Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
+            Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 31)
             '
             'BindingNavigatorAddNewItem
             '
@@ -282,7 +282,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
             Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorAddNewItem.Text = "Add new"
             '
             'ToolStripButton1
@@ -291,7 +291,7 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
             Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
             Me.ToolStripButton1.Name = "ToolStripButton1"
-            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 24)
+            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 28)
             Me.ToolStripButton1.Text = "Save"
             '
             'ErrorProvider1
@@ -423,7 +423,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Location = New System.Drawing.Point(13, 0)
             Me.Panel1.Margin = New System.Windows.Forms.Padding(13, 4, 13, 4)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(1286, 707)
+            Me.Panel1.Size = New System.Drawing.Size(1286, 703)
             Me.Panel1.TabIndex = 1
             '
             'Label1
@@ -442,7 +442,7 @@ Namespace DatabaseTestApplication2
             Me.PictureBox1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
             Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
             Me.PictureBox1.Location = New System.Drawing.Point(720, 4)
-            Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
             Me.PictureBox1.Name = "PictureBox1"
             Me.PictureBox1.Size = New System.Drawing.Size(539, 170)
             Me.PictureBox1.TabIndex = 113
@@ -462,7 +462,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question1CheckBox.AutoSize = True
             Me.Question1CheckBox.Location = New System.Drawing.Point(231, 123)
-            Me.Question1CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question1CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question1CheckBox.Name = "Question1CheckBox"
             Me.Question1CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question1CheckBox.TabIndex = 2
@@ -482,7 +482,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question10CheckBox.AutoSize = True
             Me.Question10CheckBox.Location = New System.Drawing.Point(231, 480)
-            Me.Question10CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question10CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question10CheckBox.Name = "Question10CheckBox"
             Me.Question10CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question10CheckBox.TabIndex = 4
@@ -502,7 +502,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question11CheckBox.AutoSize = True
             Me.Question11CheckBox.Location = New System.Drawing.Point(231, 522)
-            Me.Question11CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question11CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question11CheckBox.Name = "Question11CheckBox"
             Me.Question11CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question11CheckBox.TabIndex = 6
@@ -522,7 +522,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question12CheckBox.AutoSize = True
             Me.Question12CheckBox.Location = New System.Drawing.Point(231, 564)
-            Me.Question12CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question12CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question12CheckBox.Name = "Question12CheckBox"
             Me.Question12CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question12CheckBox.TabIndex = 8
@@ -542,7 +542,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question13CheckBox.AutoSize = True
             Me.Question13CheckBox.Location = New System.Drawing.Point(231, 606)
-            Me.Question13CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question13CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question13CheckBox.Name = "Question13CheckBox"
             Me.Question13CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question13CheckBox.TabIndex = 10
@@ -562,7 +562,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question14CheckBox.AutoSize = True
             Me.Question14CheckBox.Location = New System.Drawing.Point(231, 647)
-            Me.Question14CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question14CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question14CheckBox.Name = "Question14CheckBox"
             Me.Question14CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question14CheckBox.TabIndex = 12
@@ -582,7 +582,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question15CheckBox.AutoSize = True
             Me.Question15CheckBox.Location = New System.Drawing.Point(231, 689)
-            Me.Question15CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question15CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question15CheckBox.Name = "Question15CheckBox"
             Me.Question15CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question15CheckBox.TabIndex = 14
@@ -602,7 +602,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question16CheckBox.AutoSize = True
             Me.Question16CheckBox.Location = New System.Drawing.Point(231, 731)
-            Me.Question16CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question16CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question16CheckBox.Name = "Question16CheckBox"
             Me.Question16CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question16CheckBox.TabIndex = 16
@@ -622,7 +622,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question17CheckBox.AutoSize = True
             Me.Question17CheckBox.Location = New System.Drawing.Point(231, 773)
-            Me.Question17CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question17CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question17CheckBox.Name = "Question17CheckBox"
             Me.Question17CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question17CheckBox.TabIndex = 18
@@ -642,7 +642,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question18CheckBox.AutoSize = True
             Me.Question18CheckBox.Location = New System.Drawing.Point(231, 818)
-            Me.Question18CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question18CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question18CheckBox.Name = "Question18CheckBox"
             Me.Question18CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question18CheckBox.TabIndex = 20
@@ -662,7 +662,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question19CheckBox.AutoSize = True
             Me.Question19CheckBox.Location = New System.Drawing.Point(231, 860)
-            Me.Question19CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question19CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question19CheckBox.Name = "Question19CheckBox"
             Me.Question19CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question19CheckBox.TabIndex = 22
@@ -682,7 +682,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question2CheckBox.AutoSize = True
             Me.Question2CheckBox.Location = New System.Drawing.Point(231, 169)
-            Me.Question2CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question2CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question2CheckBox.Name = "Question2CheckBox"
             Me.Question2CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question2CheckBox.TabIndex = 24
@@ -702,7 +702,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question20CheckBox.AutoSize = True
             Me.Question20CheckBox.Location = New System.Drawing.Point(231, 897)
-            Me.Question20CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question20CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question20CheckBox.Name = "Question20CheckBox"
             Me.Question20CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question20CheckBox.TabIndex = 26
@@ -722,7 +722,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question21CheckBox.AutoSize = True
             Me.Question21CheckBox.Location = New System.Drawing.Point(231, 939)
-            Me.Question21CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question21CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question21CheckBox.Name = "Question21CheckBox"
             Me.Question21CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question21CheckBox.TabIndex = 28
@@ -742,7 +742,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question22CheckBox.AutoSize = True
             Me.Question22CheckBox.Location = New System.Drawing.Point(231, 981)
-            Me.Question22CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question22CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question22CheckBox.Name = "Question22CheckBox"
             Me.Question22CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question22CheckBox.TabIndex = 30
@@ -762,7 +762,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question23CheckBox.AutoSize = True
             Me.Question23CheckBox.Location = New System.Drawing.Point(231, 1023)
-            Me.Question23CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question23CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question23CheckBox.Name = "Question23CheckBox"
             Me.Question23CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question23CheckBox.TabIndex = 32
@@ -782,7 +782,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question24CheckBox.AutoSize = True
             Me.Question24CheckBox.Location = New System.Drawing.Point(231, 1065)
-            Me.Question24CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question24CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question24CheckBox.Name = "Question24CheckBox"
             Me.Question24CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question24CheckBox.TabIndex = 34
@@ -802,7 +802,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question25CheckBox.AutoSize = True
             Me.Question25CheckBox.Location = New System.Drawing.Point(231, 1106)
-            Me.Question25CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question25CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question25CheckBox.Name = "Question25CheckBox"
             Me.Question25CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question25CheckBox.TabIndex = 36
@@ -822,7 +822,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question26CheckBox.AutoSize = True
             Me.Question26CheckBox.Location = New System.Drawing.Point(231, 1148)
-            Me.Question26CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question26CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question26CheckBox.Name = "Question26CheckBox"
             Me.Question26CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question26CheckBox.TabIndex = 38
@@ -842,7 +842,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question27CheckBox.AutoSize = True
             Me.Question27CheckBox.Location = New System.Drawing.Point(231, 1175)
-            Me.Question27CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question27CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question27CheckBox.Name = "Question27CheckBox"
             Me.Question27CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question27CheckBox.TabIndex = 40
@@ -862,7 +862,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question28CheckBox.AutoSize = True
             Me.Question28CheckBox.Location = New System.Drawing.Point(680, 33)
-            Me.Question28CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question28CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question28CheckBox.Name = "Question28CheckBox"
             Me.Question28CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question28CheckBox.TabIndex = 42
@@ -882,7 +882,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question29CheckBox.AutoSize = True
             Me.Question29CheckBox.Location = New System.Drawing.Point(680, 75)
-            Me.Question29CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question29CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question29CheckBox.Name = "Question29CheckBox"
             Me.Question29CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question29CheckBox.TabIndex = 44
@@ -902,7 +902,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question3CheckBox.AutoSize = True
             Me.Question3CheckBox.Location = New System.Drawing.Point(231, 213)
-            Me.Question3CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question3CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question3CheckBox.Name = "Question3CheckBox"
             Me.Question3CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question3CheckBox.TabIndex = 46
@@ -922,7 +922,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question30CheckBox.AutoSize = True
             Me.Question30CheckBox.Location = New System.Drawing.Point(680, 107)
-            Me.Question30CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question30CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question30CheckBox.Name = "Question30CheckBox"
             Me.Question30CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question30CheckBox.TabIndex = 48
@@ -942,7 +942,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question31CheckBox.AutoSize = True
             Me.Question31CheckBox.Location = New System.Drawing.Point(680, 149)
-            Me.Question31CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question31CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question31CheckBox.Name = "Question31CheckBox"
             Me.Question31CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question31CheckBox.TabIndex = 50
@@ -962,7 +962,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question32CheckBox.AutoSize = True
             Me.Question32CheckBox.Location = New System.Drawing.Point(680, 191)
-            Me.Question32CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question32CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question32CheckBox.Name = "Question32CheckBox"
             Me.Question32CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question32CheckBox.TabIndex = 52
@@ -982,7 +982,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question33CheckBox.AutoSize = True
             Me.Question33CheckBox.Location = New System.Drawing.Point(680, 233)
-            Me.Question33CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question33CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question33CheckBox.Name = "Question33CheckBox"
             Me.Question33CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question33CheckBox.TabIndex = 54
@@ -1002,7 +1002,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question34CheckBox.AutoSize = True
             Me.Question34CheckBox.Location = New System.Drawing.Point(680, 274)
-            Me.Question34CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question34CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question34CheckBox.Name = "Question34CheckBox"
             Me.Question34CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question34CheckBox.TabIndex = 56
@@ -1022,7 +1022,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question35CheckBox.AutoSize = True
             Me.Question35CheckBox.Location = New System.Drawing.Point(680, 316)
-            Me.Question35CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question35CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question35CheckBox.Name = "Question35CheckBox"
             Me.Question35CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question35CheckBox.TabIndex = 58
@@ -1042,7 +1042,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question36CheckBox.AutoSize = True
             Me.Question36CheckBox.Location = New System.Drawing.Point(680, 358)
-            Me.Question36CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question36CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question36CheckBox.Name = "Question36CheckBox"
             Me.Question36CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question36CheckBox.TabIndex = 60
@@ -1062,7 +1062,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question37CheckBox.AutoSize = True
             Me.Question37CheckBox.Location = New System.Drawing.Point(680, 400)
-            Me.Question37CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question37CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question37CheckBox.Name = "Question37CheckBox"
             Me.Question37CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question37CheckBox.TabIndex = 62
@@ -1082,7 +1082,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question38CheckBox.AutoSize = True
             Me.Question38CheckBox.Location = New System.Drawing.Point(680, 442)
-            Me.Question38CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question38CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question38CheckBox.Name = "Question38CheckBox"
             Me.Question38CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question38CheckBox.TabIndex = 64
@@ -1102,7 +1102,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question39CheckBox.AutoSize = True
             Me.Question39CheckBox.Location = New System.Drawing.Point(680, 484)
-            Me.Question39CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question39CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question39CheckBox.Name = "Question39CheckBox"
             Me.Question39CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question39CheckBox.TabIndex = 66
@@ -1122,7 +1122,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question4CheckBox.AutoSize = True
             Me.Question4CheckBox.Location = New System.Drawing.Point(231, 255)
-            Me.Question4CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question4CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question4CheckBox.Name = "Question4CheckBox"
             Me.Question4CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question4CheckBox.TabIndex = 68
@@ -1142,7 +1142,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question40CheckBox.AutoSize = True
             Me.Question40CheckBox.Location = New System.Drawing.Point(680, 522)
-            Me.Question40CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question40CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question40CheckBox.Name = "Question40CheckBox"
             Me.Question40CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question40CheckBox.TabIndex = 70
@@ -1162,7 +1162,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question41CheckBox.AutoSize = True
             Me.Question41CheckBox.Location = New System.Drawing.Point(680, 564)
-            Me.Question41CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question41CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question41CheckBox.Name = "Question41CheckBox"
             Me.Question41CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question41CheckBox.TabIndex = 72
@@ -1182,7 +1182,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question42CheckBox.AutoSize = True
             Me.Question42CheckBox.Location = New System.Drawing.Point(680, 606)
-            Me.Question42CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question42CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question42CheckBox.Name = "Question42CheckBox"
             Me.Question42CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question42CheckBox.TabIndex = 74
@@ -1202,7 +1202,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question43CheckBox.AutoSize = True
             Me.Question43CheckBox.Location = New System.Drawing.Point(680, 647)
-            Me.Question43CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question43CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question43CheckBox.Name = "Question43CheckBox"
             Me.Question43CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question43CheckBox.TabIndex = 76
@@ -1222,7 +1222,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question44CheckBox.AutoSize = True
             Me.Question44CheckBox.Location = New System.Drawing.Point(680, 689)
-            Me.Question44CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question44CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question44CheckBox.Name = "Question44CheckBox"
             Me.Question44CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question44CheckBox.TabIndex = 78
@@ -1242,7 +1242,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question45CheckBox.AutoSize = True
             Me.Question45CheckBox.Location = New System.Drawing.Point(680, 731)
-            Me.Question45CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question45CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question45CheckBox.Name = "Question45CheckBox"
             Me.Question45CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question45CheckBox.TabIndex = 80
@@ -1262,7 +1262,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question46CheckBox.AutoSize = True
             Me.Question46CheckBox.Location = New System.Drawing.Point(680, 773)
-            Me.Question46CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question46CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question46CheckBox.Name = "Question46CheckBox"
             Me.Question46CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question46CheckBox.TabIndex = 82
@@ -1282,7 +1282,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question47CheckBox.AutoSize = True
             Me.Question47CheckBox.Location = New System.Drawing.Point(680, 815)
-            Me.Question47CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question47CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question47CheckBox.Name = "Question47CheckBox"
             Me.Question47CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question47CheckBox.TabIndex = 84
@@ -1302,7 +1302,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question48CheckBox.AutoSize = True
             Me.Question48CheckBox.Location = New System.Drawing.Point(680, 857)
-            Me.Question48CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question48CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question48CheckBox.Name = "Question48CheckBox"
             Me.Question48CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question48CheckBox.TabIndex = 86
@@ -1322,7 +1322,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question49CheckBox.AutoSize = True
             Me.Question49CheckBox.Location = New System.Drawing.Point(680, 898)
-            Me.Question49CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question49CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question49CheckBox.Name = "Question49CheckBox"
             Me.Question49CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question49CheckBox.TabIndex = 88
@@ -1342,7 +1342,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question5CheckBox.AutoSize = True
             Me.Question5CheckBox.Location = New System.Drawing.Point(231, 292)
-            Me.Question5CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question5CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question5CheckBox.Name = "Question5CheckBox"
             Me.Question5CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question5CheckBox.TabIndex = 90
@@ -1362,7 +1362,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question50CheckBox.AutoSize = True
             Me.Question50CheckBox.Location = New System.Drawing.Point(680, 940)
-            Me.Question50CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question50CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question50CheckBox.Name = "Question50CheckBox"
             Me.Question50CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question50CheckBox.TabIndex = 92
@@ -1382,7 +1382,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question6CheckBox.AutoSize = True
             Me.Question6CheckBox.Location = New System.Drawing.Point(231, 332)
-            Me.Question6CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question6CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question6CheckBox.Name = "Question6CheckBox"
             Me.Question6CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question6CheckBox.TabIndex = 94
@@ -1402,7 +1402,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question7CheckBox.AutoSize = True
             Me.Question7CheckBox.Location = New System.Drawing.Point(231, 375)
-            Me.Question7CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question7CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question7CheckBox.Name = "Question7CheckBox"
             Me.Question7CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question7CheckBox.TabIndex = 96
@@ -1422,7 +1422,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question8CheckBox.AutoSize = True
             Me.Question8CheckBox.Location = New System.Drawing.Point(231, 409)
-            Me.Question8CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question8CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question8CheckBox.Name = "Question8CheckBox"
             Me.Question8CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question8CheckBox.TabIndex = 98
@@ -1442,7 +1442,7 @@ Namespace DatabaseTestApplication2
             '
             Me.Question9CheckBox.AutoSize = True
             Me.Question9CheckBox.Location = New System.Drawing.Point(231, 442)
-            Me.Question9CheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question9CheckBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question9CheckBox.Name = "Question9CheckBox"
             Me.Question9CheckBox.Size = New System.Drawing.Size(18, 17)
             Me.Question9CheckBox.TabIndex = 100
@@ -1461,7 +1461,7 @@ Namespace DatabaseTestApplication2
             'QuestionNum1TextBox
             '
             Me.QuestionNum1TextBox.Location = New System.Drawing.Point(680, 981)
-            Me.QuestionNum1TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.QuestionNum1TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.QuestionNum1TextBox.Name = "QuestionNum1TextBox"
             Me.QuestionNum1TextBox.Size = New System.Drawing.Size(132, 22)
             Me.QuestionNum1TextBox.TabIndex = 102
@@ -1479,7 +1479,7 @@ Namespace DatabaseTestApplication2
             'QuestionNum2TextBox
             '
             Me.QuestionNum2TextBox.Location = New System.Drawing.Point(680, 1023)
-            Me.QuestionNum2TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.QuestionNum2TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.QuestionNum2TextBox.Name = "QuestionNum2TextBox"
             Me.QuestionNum2TextBox.Size = New System.Drawing.Size(132, 22)
             Me.QuestionNum2TextBox.TabIndex = 104
@@ -1497,7 +1497,7 @@ Namespace DatabaseTestApplication2
             'QuestionNum3TextBox
             '
             Me.QuestionNum3TextBox.Location = New System.Drawing.Point(680, 1065)
-            Me.QuestionNum3TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.QuestionNum3TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.QuestionNum3TextBox.Name = "QuestionNum3TextBox"
             Me.QuestionNum3TextBox.Size = New System.Drawing.Size(132, 22)
             Me.QuestionNum3TextBox.TabIndex = 106
@@ -1515,7 +1515,7 @@ Namespace DatabaseTestApplication2
             'QuestionNum4TextBox
             '
             Me.QuestionNum4TextBox.Location = New System.Drawing.Point(680, 1106)
-            Me.QuestionNum4TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.QuestionNum4TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.QuestionNum4TextBox.Name = "QuestionNum4TextBox"
             Me.QuestionNum4TextBox.Size = New System.Drawing.Size(132, 22)
             Me.QuestionNum4TextBox.TabIndex = 108
@@ -1533,7 +1533,7 @@ Namespace DatabaseTestApplication2
             'QuestionNum5TextBox
             '
             Me.QuestionNum5TextBox.Location = New System.Drawing.Point(680, 1148)
-            Me.QuestionNum5TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.QuestionNum5TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.QuestionNum5TextBox.Name = "QuestionNum5TextBox"
             Me.QuestionNum5TextBox.Size = New System.Drawing.Size(132, 22)
             Me.QuestionNum5TextBox.TabIndex = 110
@@ -1554,7 +1554,7 @@ Namespace DatabaseTestApplication2
             Me.survey_SurveyID_comboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
             Me.survey_SurveyID_comboBox.FormattingEnabled = True
             Me.survey_SurveyID_comboBox.Location = New System.Drawing.Point(855, 225)
-            Me.survey_SurveyID_comboBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.survey_SurveyID_comboBox.Margin = New System.Windows.Forms.Padding(4)
             Me.survey_SurveyID_comboBox.Name = "survey_SurveyID_comboBox"
             Me.survey_SurveyID_comboBox.Size = New System.Drawing.Size(273, 24)
             Me.survey_SurveyID_comboBox.TabIndex = 112
@@ -1566,35 +1566,35 @@ Namespace DatabaseTestApplication2
             Me.panel3.Controls.Add(Me.panel5)
             Me.panel3.Controls.Add(Me.panel6)
             Me.panel3.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.panel3.Location = New System.Drawing.Point(0, 27)
-            Me.panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel3.Location = New System.Drawing.Point(0, 31)
+            Me.panel3.Margin = New System.Windows.Forms.Padding(4)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(1312, 719)
+            Me.panel3.Size = New System.Drawing.Size(1312, 715)
             Me.panel3.TabIndex = 19
             '
             'panel4
             '
             Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
             Me.panel4.Location = New System.Drawing.Point(1299, 0)
-            Me.panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel4.Margin = New System.Windows.Forms.Padding(4)
             Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(13, 707)
+            Me.panel4.Size = New System.Drawing.Size(13, 703)
             Me.panel4.TabIndex = 3
             '
             'panel5
             '
             Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
             Me.panel5.Location = New System.Drawing.Point(0, 0)
-            Me.panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel5.Margin = New System.Windows.Forms.Padding(4)
             Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(13, 707)
+            Me.panel5.Size = New System.Drawing.Size(13, 703)
             Me.panel5.TabIndex = 5
             '
             'panel6
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 707)
-            Me.panel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel6.Location = New System.Drawing.Point(0, 703)
+            Me.panel6.Margin = New System.Windows.Forms.Padding(4)
             Me.panel6.Name = "panel6"
             Me.panel6.Size = New System.Drawing.Size(1312, 12)
             Me.panel6.TabIndex = 6
@@ -1606,7 +1606,7 @@ Namespace DatabaseTestApplication2
             Me.ClientSize = New System.Drawing.Size(1312, 746)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
-            Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Margin = New System.Windows.Forms.Padding(4)
             Me.Name = "frmsurvey_results"
             Me.Text = "Survey_Results"
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()

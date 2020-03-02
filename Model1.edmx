@@ -57,7 +57,7 @@
           <Property Name="boardAccepted" Type="tinyint" />
           <Property Name="boardReason" Type="varchar" MaxLength="45" />
           <Property Name="handbookReview" Type="date" />
-          <Property Name="general_UID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="general_UID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="repairs">
           <Key>
@@ -79,7 +79,7 @@
           <Property Name="ParcelReport" Type="tinyint" />
           <Property Name="GISAssessment" Type="tinyint" />
           <Property Name="FundingSource" Type="varchar" MaxLength="45" />
-          <Property Name="General Info_UID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="General Info_UID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="survey">
           <Key>

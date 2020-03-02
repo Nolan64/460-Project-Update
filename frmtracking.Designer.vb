@@ -196,16 +196,16 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigator1.MoveNextItem = Me.BindingNavigatorMoveNextItem
             Me.BindingNavigator1.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
             Me.BindingNavigator1.Name = "BindingNavigator1"
-            Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
+            Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(13, 0, 13, 0)
             Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-            Me.BindingNavigator1.Size = New System.Drawing.Size(986, 27)
+            Me.BindingNavigator1.Size = New System.Drawing.Size(1644, 39)
             Me.BindingNavigator1.TabIndex = 0
             Me.BindingNavigator1.Text = "BindingNavigator1"
             '
             'BindingNavigatorCountItem
             '
             Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 24)
+            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 36)
             Me.BindingNavigatorCountItem.Text = "of {0}"
             Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
             '
@@ -215,7 +215,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
             Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 24)
+            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 36)
             Me.BindingNavigatorDeleteItem.Text = "Delete"
             '
             'BindingNavigatorMoveFirstItem
@@ -224,7 +224,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
             Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 24)
+            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 36)
             Me.BindingNavigatorMoveFirstItem.Text = "Move first"
             '
             'BindingNavigatorMovePreviousItem
@@ -233,13 +233,13 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
             Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 24)
+            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 36)
             Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
             '
             'BindingNavigatorSeparator
             '
             Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-            Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
+            Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 39)
             '
             'BindingNavigatorPositionItem
             '
@@ -247,14 +247,14 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorPositionItem.AutoSize = False
             Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
             Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-            Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
+            Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(65, 27)
             Me.BindingNavigatorPositionItem.Text = "0"
             Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
             '
             'BindingNavigatorSeparator1
             '
             Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-            Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
+            Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 39)
             '
             'BindingNavigatorMoveNextItem
             '
@@ -262,7 +262,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
             Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 24)
+            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 36)
             Me.BindingNavigatorMoveNextItem.Text = "Move next"
             '
             'BindingNavigatorMoveLastItem
@@ -271,13 +271,13 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
             Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 24)
+            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 36)
             Me.BindingNavigatorMoveLastItem.Text = "Move last"
             '
             'BindingNavigatorSeparator2
             '
             Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-            Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
+            Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 39)
             '
             'BindingNavigatorAddNewItem
             '
@@ -285,7 +285,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
             Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 24)
+            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 36)
             Me.BindingNavigatorAddNewItem.Text = "Add new"
             '
             'ToolStripButton1
@@ -294,7 +294,7 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
             Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
             Me.ToolStripButton1.Name = "ToolStripButton1"
-            Me.ToolStripButton1.Size = New System.Drawing.Size(24, 24)
+            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 36)
             Me.ToolStripButton1.Text = "Save"
             '
             'ErrorProvider1
@@ -308,9 +308,10 @@ Namespace DatabaseTestApplication2
             Me.panel3.Controls.Add(Me.panel5)
             Me.panel3.Controls.Add(Me.panel6)
             Me.panel3.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.panel3.Location = New System.Drawing.Point(0, 27)
+            Me.panel3.Location = New System.Drawing.Point(0, 49)
+            Me.panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(986, 423)
+            Me.panel3.Size = New System.Drawing.Size(1644, 644)
             Me.panel3.TabIndex = 19
             '
             'Panel1
@@ -352,10 +353,10 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.SweatEquityGroupbox)
             Me.Panel1.Controls.Add(Me.MenuStrip1)
             Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.Panel1.Location = New System.Drawing.Point(8, 0)
-            Me.Panel1.Margin = New System.Windows.Forms.Padding(10, 3, 10, 3)
+            Me.Panel1.Location = New System.Drawing.Point(11, 0)
+            Me.Panel1.Margin = New System.Windows.Forms.Padding(13, 4, 13, 4)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(970, 415)
+            Me.Panel1.Size = New System.Drawing.Size(1622, 634)
             Me.Panel1.TabIndex = 1
             '
             'Label1
@@ -364,10 +365,9 @@ Namespace DatabaseTestApplication2
             Me.Label1.BackColor = System.Drawing.Color.Transparent
             Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.Label1.Location = New System.Drawing.Point(2, 29)
-            Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+            Me.Label1.Location = New System.Drawing.Point(3, 36)
             Me.Label1.Name = "Label1"
-            Me.Label1.Size = New System.Drawing.Size(237, 64)
+            Me.Label1.Size = New System.Drawing.Size(296, 80)
             Me.Label1.TabIndex = 90
             Me.Label1.Text = "Tracking"
             '
@@ -376,10 +376,10 @@ Namespace DatabaseTestApplication2
             Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
             Me.PictureBox1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
             Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-            Me.PictureBox1.Location = New System.Drawing.Point(783, 40)
-            Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.PictureBox1.Location = New System.Drawing.Point(1044, 49)
+            Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.PictureBox1.Name = "PictureBox1"
-            Me.PictureBox1.Size = New System.Drawing.Size(143, 54)
+            Me.PictureBox1.Size = New System.Drawing.Size(191, 66)
             Me.PictureBox1.TabIndex = 97
             Me.PictureBox1.TabStop = False
             '
@@ -397,9 +397,11 @@ Namespace DatabaseTestApplication2
             Me.GroupBox6.Controls.Add(Me.mortgage6NumberOfYearsTextBox)
             Me.GroupBox6.Controls.Add(Me.mortgage6ForgivableTextBox)
             Me.GroupBox6.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.GroupBox6.Location = New System.Drawing.Point(692, 241)
+            Me.GroupBox6.Location = New System.Drawing.Point(923, 297)
+            Me.GroupBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.GroupBox6.Name = "GroupBox6"
-            Me.GroupBox6.Size = New System.Drawing.Size(235, 139)
+            Me.GroupBox6.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.GroupBox6.Size = New System.Drawing.Size(313, 171)
             Me.GroupBox6.TabIndex = 96
             Me.GroupBox6.TabStop = False
             Me.GroupBox6.Text = "Mortgage 6"
@@ -408,10 +410,10 @@ Namespace DatabaseTestApplication2
             '
             Me.Mortgage6Forgivable.AutoSize = True
             Me.Mortgage6Forgivable.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.Mortgage6Forgivable.Location = New System.Drawing.Point(123, 110)
-            Me.Mortgage6Forgivable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage6Forgivable.Location = New System.Drawing.Point(164, 135)
+            Me.Mortgage6Forgivable.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.Mortgage6Forgivable.Name = "Mortgage6Forgivable"
-            Me.Mortgage6Forgivable.Size = New System.Drawing.Size(81, 17)
+            Me.Mortgage6Forgivable.Size = New System.Drawing.Size(104, 21)
             Me.Mortgage6Forgivable.TabIndex = 97
             Me.Mortgage6Forgivable.Text = "Forgivable?"
             Me.Mortgage6Forgivable.UseVisualStyleBackColor = True
@@ -421,74 +423,82 @@ Namespace DatabaseTestApplication2
             Me.Mortgage6Dropdown.FlatStyle = System.Windows.Forms.FlatStyle.System
             Me.Mortgage6Dropdown.FormattingEnabled = True
             Me.Mortgage6Dropdown.Items.AddRange(New Object() {"BB&T", "First Citizens", "USDA Rural Development", "First Bank", "Habitat"})
-            Me.Mortgage6Dropdown.Location = New System.Drawing.Point(98, 39)
-            Me.Mortgage6Dropdown.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage6Dropdown.Location = New System.Drawing.Point(131, 48)
+            Me.Mortgage6Dropdown.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.Mortgage6Dropdown.Name = "Mortgage6Dropdown"
-            Me.Mortgage6Dropdown.Size = New System.Drawing.Size(132, 21)
+            Me.Mortgage6Dropdown.Size = New System.Drawing.Size(175, 24)
             Me.Mortgage6Dropdown.TabIndex = 97
             '
             'mortgage6PriceLabel
             '
             Me.mortgage6PriceLabel.AutoSize = True
-            Me.mortgage6PriceLabel.Location = New System.Drawing.Point(63, 19)
+            Me.mortgage6PriceLabel.Location = New System.Drawing.Point(84, 23)
+            Me.mortgage6PriceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage6PriceLabel.Name = "mortgage6PriceLabel"
-            Me.mortgage6PriceLabel.Size = New System.Drawing.Size(31, 13)
+            Me.mortgage6PriceLabel.Size = New System.Drawing.Size(40, 17)
             Me.mortgage6PriceLabel.TabIndex = 73
             Me.mortgage6PriceLabel.Text = "Price"
             '
             'mortgage6BankLabel
             '
             Me.mortgage6BankLabel.AutoSize = True
-            Me.mortgage6BankLabel.Location = New System.Drawing.Point(63, 41)
+            Me.mortgage6BankLabel.Location = New System.Drawing.Point(84, 50)
+            Me.mortgage6BankLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage6BankLabel.Name = "mortgage6BankLabel"
-            Me.mortgage6BankLabel.Size = New System.Drawing.Size(32, 13)
+            Me.mortgage6BankLabel.Size = New System.Drawing.Size(40, 17)
             Me.mortgage6BankLabel.TabIndex = 75
             Me.mortgage6BankLabel.Text = "Bank"
             '
             'mortgage6PriceTextBox
             '
-            Me.mortgage6PriceTextBox.Location = New System.Drawing.Point(98, 16)
+            Me.mortgage6PriceTextBox.Location = New System.Drawing.Point(131, 20)
+            Me.mortgage6PriceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage6PriceTextBox.Name = "mortgage6PriceTextBox"
-            Me.mortgage6PriceTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage6PriceTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage6PriceTextBox.TabIndex = 74
             '
             'mortgage6OriginalBalanceLabel
             '
             Me.mortgage6OriginalBalanceLabel.AutoSize = True
-            Me.mortgage6OriginalBalanceLabel.Location = New System.Drawing.Point(14, 65)
+            Me.mortgage6OriginalBalanceLabel.Location = New System.Drawing.Point(19, 80)
+            Me.mortgage6OriginalBalanceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage6OriginalBalanceLabel.Name = "mortgage6OriginalBalanceLabel"
-            Me.mortgage6OriginalBalanceLabel.Size = New System.Drawing.Size(84, 13)
+            Me.mortgage6OriginalBalanceLabel.Size = New System.Drawing.Size(112, 17)
             Me.mortgage6OriginalBalanceLabel.TabIndex = 79
             Me.mortgage6OriginalBalanceLabel.Text = "Original Balance"
             '
             'mortgage6NumberOfYearsLabel
             '
             Me.mortgage6NumberOfYearsLabel.AutoSize = True
-            Me.mortgage6NumberOfYearsLabel.Location = New System.Drawing.Point(11, 89)
+            Me.mortgage6NumberOfYearsLabel.Location = New System.Drawing.Point(15, 110)
+            Me.mortgage6NumberOfYearsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage6NumberOfYearsLabel.Name = "mortgage6NumberOfYearsLabel"
-            Me.mortgage6NumberOfYearsLabel.Size = New System.Drawing.Size(86, 13)
+            Me.mortgage6NumberOfYearsLabel.Size = New System.Drawing.Size(115, 17)
             Me.mortgage6NumberOfYearsLabel.TabIndex = 81
             Me.mortgage6NumberOfYearsLabel.Text = "Number of Years"
             '
             'mortgage6OriginalBalanceTextBox
             '
-            Me.mortgage6OriginalBalanceTextBox.Location = New System.Drawing.Point(98, 63)
+            Me.mortgage6OriginalBalanceTextBox.Location = New System.Drawing.Point(131, 78)
+            Me.mortgage6OriginalBalanceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage6OriginalBalanceTextBox.Name = "mortgage6OriginalBalanceTextBox"
-            Me.mortgage6OriginalBalanceTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage6OriginalBalanceTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage6OriginalBalanceTextBox.TabIndex = 80
             '
             'mortgage6NumberOfYearsTextBox
             '
-            Me.mortgage6NumberOfYearsTextBox.Location = New System.Drawing.Point(98, 88)
+            Me.mortgage6NumberOfYearsTextBox.Location = New System.Drawing.Point(131, 108)
+            Me.mortgage6NumberOfYearsTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage6NumberOfYearsTextBox.Name = "mortgage6NumberOfYearsTextBox"
-            Me.mortgage6NumberOfYearsTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage6NumberOfYearsTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage6NumberOfYearsTextBox.TabIndex = 82
             '
             'mortgage6ForgivableTextBox
             '
-            Me.mortgage6ForgivableTextBox.Location = New System.Drawing.Point(98, 88)
+            Me.mortgage6ForgivableTextBox.Location = New System.Drawing.Point(131, 108)
+            Me.mortgage6ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage6ForgivableTextBox.Name = "mortgage6ForgivableTextBox"
-            Me.mortgage6ForgivableTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.mortgage6ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage6ForgivableTextBox.TabIndex = 78
             Me.mortgage6ForgivableTextBox.TabStop = False
             '
@@ -505,9 +515,11 @@ Namespace DatabaseTestApplication2
             Me.Mortgage2Groupbox.Controls.Add(Me.morgage2NumberOfYearsLabel)
             Me.Mortgage2Groupbox.Controls.Add(Me.morgage2NumberOfYearsTextBox)
             Me.Mortgage2Groupbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.Mortgage2Groupbox.Location = New System.Drawing.Point(452, 98)
+            Me.Mortgage2Groupbox.Location = New System.Drawing.Point(603, 121)
+            Me.Mortgage2Groupbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.Mortgage2Groupbox.Name = "Mortgage2Groupbox"
-            Me.Mortgage2Groupbox.Size = New System.Drawing.Size(235, 138)
+            Me.Mortgage2Groupbox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Mortgage2Groupbox.Size = New System.Drawing.Size(313, 170)
             Me.Mortgage2Groupbox.TabIndex = 95
             Me.Mortgage2Groupbox.TabStop = False
             Me.Mortgage2Groupbox.Text = "Mortgage 2"
@@ -516,10 +528,10 @@ Namespace DatabaseTestApplication2
             '
             Me.Mortgage2Forgivable.AutoSize = True
             Me.Mortgage2Forgivable.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.Mortgage2Forgivable.Location = New System.Drawing.Point(124, 110)
-            Me.Mortgage2Forgivable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage2Forgivable.Location = New System.Drawing.Point(165, 135)
+            Me.Mortgage2Forgivable.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.Mortgage2Forgivable.Name = "Mortgage2Forgivable"
-            Me.Mortgage2Forgivable.Size = New System.Drawing.Size(81, 17)
+            Me.Mortgage2Forgivable.Size = New System.Drawing.Size(104, 21)
             Me.Mortgage2Forgivable.TabIndex = 98
             Me.Mortgage2Forgivable.Text = "Forgivable?"
             Me.Mortgage2Forgivable.UseVisualStyleBackColor = True
@@ -529,67 +541,74 @@ Namespace DatabaseTestApplication2
             Me.Mortgage2Dropdown.FlatStyle = System.Windows.Forms.FlatStyle.System
             Me.Mortgage2Dropdown.FormattingEnabled = True
             Me.Mortgage2Dropdown.Items.AddRange(New Object() {"BB&T", "First Citizens", "USDA Rural Development", "First Bank", "Habitat"})
-            Me.Mortgage2Dropdown.Location = New System.Drawing.Point(98, 39)
-            Me.Mortgage2Dropdown.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage2Dropdown.Location = New System.Drawing.Point(131, 48)
+            Me.Mortgage2Dropdown.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.Mortgage2Dropdown.Name = "Mortgage2Dropdown"
-            Me.Mortgage2Dropdown.Size = New System.Drawing.Size(132, 21)
+            Me.Mortgage2Dropdown.Size = New System.Drawing.Size(175, 24)
             Me.Mortgage2Dropdown.TabIndex = 96
             '
             'mortgage2PriceLabel
             '
             Me.mortgage2PriceLabel.AutoSize = True
-            Me.mortgage2PriceLabel.Location = New System.Drawing.Point(63, 19)
+            Me.mortgage2PriceLabel.Location = New System.Drawing.Point(84, 23)
+            Me.mortgage2PriceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage2PriceLabel.Name = "mortgage2PriceLabel"
-            Me.mortgage2PriceLabel.Size = New System.Drawing.Size(31, 13)
+            Me.mortgage2PriceLabel.Size = New System.Drawing.Size(40, 17)
             Me.mortgage2PriceLabel.TabIndex = 33
             Me.mortgage2PriceLabel.Text = "Price"
             '
             'mortgage2PriceTextBox
             '
-            Me.mortgage2PriceTextBox.Location = New System.Drawing.Point(98, 16)
+            Me.mortgage2PriceTextBox.Location = New System.Drawing.Point(131, 20)
+            Me.mortgage2PriceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage2PriceTextBox.Name = "mortgage2PriceTextBox"
-            Me.mortgage2PriceTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage2PriceTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage2PriceTextBox.TabIndex = 34
             '
             'mortgage2BankLabel
             '
             Me.mortgage2BankLabel.AutoSize = True
-            Me.mortgage2BankLabel.Location = New System.Drawing.Point(63, 41)
+            Me.mortgage2BankLabel.Location = New System.Drawing.Point(84, 50)
+            Me.mortgage2BankLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage2BankLabel.Name = "mortgage2BankLabel"
-            Me.mortgage2BankLabel.Size = New System.Drawing.Size(32, 13)
+            Me.mortgage2BankLabel.Size = New System.Drawing.Size(40, 17)
             Me.mortgage2BankLabel.TabIndex = 35
             Me.mortgage2BankLabel.Text = "Bank"
             '
             'mortgage2OriginalBalanceLabel
             '
             Me.mortgage2OriginalBalanceLabel.AutoSize = True
-            Me.mortgage2OriginalBalanceLabel.Location = New System.Drawing.Point(9, 66)
+            Me.mortgage2OriginalBalanceLabel.Location = New System.Drawing.Point(12, 81)
+            Me.mortgage2OriginalBalanceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage2OriginalBalanceLabel.Name = "mortgage2OriginalBalanceLabel"
-            Me.mortgage2OriginalBalanceLabel.Size = New System.Drawing.Size(84, 13)
+            Me.mortgage2OriginalBalanceLabel.Size = New System.Drawing.Size(112, 17)
             Me.mortgage2OriginalBalanceLabel.TabIndex = 39
             Me.mortgage2OriginalBalanceLabel.Text = "Original Balance"
             '
             'mortgage2OriginalBalanceTextBox
             '
-            Me.mortgage2OriginalBalanceTextBox.Location = New System.Drawing.Point(98, 63)
+            Me.mortgage2OriginalBalanceTextBox.Location = New System.Drawing.Point(131, 78)
+            Me.mortgage2OriginalBalanceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage2OriginalBalanceTextBox.Name = "mortgage2OriginalBalanceTextBox"
-            Me.mortgage2OriginalBalanceTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage2OriginalBalanceTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage2OriginalBalanceTextBox.TabIndex = 40
             '
             'morgage2NumberOfYearsLabel
             '
             Me.morgage2NumberOfYearsLabel.AutoSize = True
-            Me.morgage2NumberOfYearsLabel.Location = New System.Drawing.Point(6, 89)
+            Me.morgage2NumberOfYearsLabel.Location = New System.Drawing.Point(8, 110)
+            Me.morgage2NumberOfYearsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.morgage2NumberOfYearsLabel.Name = "morgage2NumberOfYearsLabel"
-            Me.morgage2NumberOfYearsLabel.Size = New System.Drawing.Size(86, 13)
+            Me.morgage2NumberOfYearsLabel.Size = New System.Drawing.Size(115, 17)
             Me.morgage2NumberOfYearsLabel.TabIndex = 41
             Me.morgage2NumberOfYearsLabel.Text = "Number of Years"
             '
             'morgage2NumberOfYearsTextBox
             '
-            Me.morgage2NumberOfYearsTextBox.Location = New System.Drawing.Point(98, 88)
+            Me.morgage2NumberOfYearsTextBox.Location = New System.Drawing.Point(131, 108)
+            Me.morgage2NumberOfYearsTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.morgage2NumberOfYearsTextBox.Name = "morgage2NumberOfYearsTextBox"
-            Me.morgage2NumberOfYearsTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.morgage2NumberOfYearsTextBox.Size = New System.Drawing.Size(175, 22)
             Me.morgage2NumberOfYearsTextBox.TabIndex = 42
             '
             'GroupBox4
@@ -605,9 +624,11 @@ Namespace DatabaseTestApplication2
             Me.GroupBox4.Controls.Add(Me.mortgage5OriginalBalanceTextBox)
             Me.GroupBox4.Controls.Add(Me.mortgage5NumberOfYearsTextBox)
             Me.GroupBox4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.GroupBox4.Location = New System.Drawing.Point(452, 241)
+            Me.GroupBox4.Location = New System.Drawing.Point(603, 297)
+            Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.GroupBox4.Name = "GroupBox4"
-            Me.GroupBox4.Size = New System.Drawing.Size(235, 139)
+            Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.GroupBox4.Size = New System.Drawing.Size(313, 171)
             Me.GroupBox4.TabIndex = 94
             Me.GroupBox4.TabStop = False
             Me.GroupBox4.Text = "Mortgage 5"
@@ -616,10 +637,10 @@ Namespace DatabaseTestApplication2
             '
             Me.Mortgage5Forgivable.AutoSize = True
             Me.Mortgage5Forgivable.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.Mortgage5Forgivable.Location = New System.Drawing.Point(124, 110)
-            Me.Mortgage5Forgivable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage5Forgivable.Location = New System.Drawing.Point(165, 135)
+            Me.Mortgage5Forgivable.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.Mortgage5Forgivable.Name = "Mortgage5Forgivable"
-            Me.Mortgage5Forgivable.Size = New System.Drawing.Size(81, 17)
+            Me.Mortgage5Forgivable.Size = New System.Drawing.Size(104, 21)
             Me.Mortgage5Forgivable.TabIndex = 98
             Me.Mortgage5Forgivable.Text = "Forgivable?"
             Me.Mortgage5Forgivable.UseVisualStyleBackColor = True
@@ -629,67 +650,74 @@ Namespace DatabaseTestApplication2
             Me.Mortgage5Dropdown.FlatStyle = System.Windows.Forms.FlatStyle.System
             Me.Mortgage5Dropdown.FormattingEnabled = True
             Me.Mortgage5Dropdown.Items.AddRange(New Object() {"BB&T", "First Citizens", "USDA Rural Development", "First Bank", "Habitat"})
-            Me.Mortgage5Dropdown.Location = New System.Drawing.Point(98, 39)
-            Me.Mortgage5Dropdown.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage5Dropdown.Location = New System.Drawing.Point(131, 48)
+            Me.Mortgage5Dropdown.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.Mortgage5Dropdown.Name = "Mortgage5Dropdown"
-            Me.Mortgage5Dropdown.Size = New System.Drawing.Size(132, 21)
+            Me.Mortgage5Dropdown.Size = New System.Drawing.Size(175, 24)
             Me.Mortgage5Dropdown.TabIndex = 96
             '
             'mortgage5PriceLabel
             '
             Me.mortgage5PriceLabel.AutoSize = True
-            Me.mortgage5PriceLabel.Location = New System.Drawing.Point(65, 19)
+            Me.mortgage5PriceLabel.Location = New System.Drawing.Point(87, 23)
+            Me.mortgage5PriceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage5PriceLabel.Name = "mortgage5PriceLabel"
-            Me.mortgage5PriceLabel.Size = New System.Drawing.Size(31, 13)
+            Me.mortgage5PriceLabel.Size = New System.Drawing.Size(40, 17)
             Me.mortgage5PriceLabel.TabIndex = 63
             Me.mortgage5PriceLabel.Text = "Price"
             '
             'mortgage5BankLabel
             '
             Me.mortgage5BankLabel.AutoSize = True
-            Me.mortgage5BankLabel.Location = New System.Drawing.Point(65, 41)
+            Me.mortgage5BankLabel.Location = New System.Drawing.Point(87, 50)
+            Me.mortgage5BankLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage5BankLabel.Name = "mortgage5BankLabel"
-            Me.mortgage5BankLabel.Size = New System.Drawing.Size(32, 13)
+            Me.mortgage5BankLabel.Size = New System.Drawing.Size(40, 17)
             Me.mortgage5BankLabel.TabIndex = 65
             Me.mortgage5BankLabel.Text = "Bank"
             '
             'mortgage5PriceTextBox
             '
-            Me.mortgage5PriceTextBox.Location = New System.Drawing.Point(98, 16)
+            Me.mortgage5PriceTextBox.Location = New System.Drawing.Point(131, 20)
+            Me.mortgage5PriceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage5PriceTextBox.Name = "mortgage5PriceTextBox"
-            Me.mortgage5PriceTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage5PriceTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage5PriceTextBox.TabIndex = 64
             '
             'mortgage5OriginalBalanceLabel
             '
             Me.mortgage5OriginalBalanceLabel.AutoSize = True
-            Me.mortgage5OriginalBalanceLabel.Location = New System.Drawing.Point(11, 66)
+            Me.mortgage5OriginalBalanceLabel.Location = New System.Drawing.Point(15, 81)
+            Me.mortgage5OriginalBalanceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage5OriginalBalanceLabel.Name = "mortgage5OriginalBalanceLabel"
-            Me.mortgage5OriginalBalanceLabel.Size = New System.Drawing.Size(84, 13)
+            Me.mortgage5OriginalBalanceLabel.Size = New System.Drawing.Size(112, 17)
             Me.mortgage5OriginalBalanceLabel.TabIndex = 69
             Me.mortgage5OriginalBalanceLabel.Text = "Original Balance"
             '
             'mortgage5NumberOfYearsLabel
             '
             Me.mortgage5NumberOfYearsLabel.AutoSize = True
-            Me.mortgage5NumberOfYearsLabel.Location = New System.Drawing.Point(9, 90)
+            Me.mortgage5NumberOfYearsLabel.Location = New System.Drawing.Point(12, 111)
+            Me.mortgage5NumberOfYearsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage5NumberOfYearsLabel.Name = "mortgage5NumberOfYearsLabel"
-            Me.mortgage5NumberOfYearsLabel.Size = New System.Drawing.Size(86, 13)
+            Me.mortgage5NumberOfYearsLabel.Size = New System.Drawing.Size(115, 17)
             Me.mortgage5NumberOfYearsLabel.TabIndex = 71
             Me.mortgage5NumberOfYearsLabel.Text = "Number of Years"
             '
             'mortgage5OriginalBalanceTextBox
             '
-            Me.mortgage5OriginalBalanceTextBox.Location = New System.Drawing.Point(98, 63)
+            Me.mortgage5OriginalBalanceTextBox.Location = New System.Drawing.Point(131, 78)
+            Me.mortgage5OriginalBalanceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage5OriginalBalanceTextBox.Name = "mortgage5OriginalBalanceTextBox"
-            Me.mortgage5OriginalBalanceTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage5OriginalBalanceTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage5OriginalBalanceTextBox.TabIndex = 70
             '
             'mortgage5NumberOfYearsTextBox
             '
-            Me.mortgage5NumberOfYearsTextBox.Location = New System.Drawing.Point(98, 88)
+            Me.mortgage5NumberOfYearsTextBox.Location = New System.Drawing.Point(131, 108)
+            Me.mortgage5NumberOfYearsTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage5NumberOfYearsTextBox.Name = "mortgage5NumberOfYearsTextBox"
-            Me.mortgage5NumberOfYearsTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage5NumberOfYearsTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage5NumberOfYearsTextBox.TabIndex = 72
             '
             'Mortgage4Groupbox
@@ -705,9 +733,11 @@ Namespace DatabaseTestApplication2
             Me.Mortgage4Groupbox.Controls.Add(Me.mortgage4OriginalBalanceTextBox)
             Me.Mortgage4Groupbox.Controls.Add(Me.mortgage4NumberOfYearsTextBox)
             Me.Mortgage4Groupbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.Mortgage4Groupbox.Location = New System.Drawing.Point(211, 241)
+            Me.Mortgage4Groupbox.Location = New System.Drawing.Point(281, 297)
+            Me.Mortgage4Groupbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.Mortgage4Groupbox.Name = "Mortgage4Groupbox"
-            Me.Mortgage4Groupbox.Size = New System.Drawing.Size(235, 139)
+            Me.Mortgage4Groupbox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Mortgage4Groupbox.Size = New System.Drawing.Size(313, 171)
             Me.Mortgage4Groupbox.TabIndex = 92
             Me.Mortgage4Groupbox.TabStop = False
             Me.Mortgage4Groupbox.Text = "Mortgage 4"
@@ -716,10 +746,10 @@ Namespace DatabaseTestApplication2
             '
             Me.Mortgage4Forgivable.AutoSize = True
             Me.Mortgage4Forgivable.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.Mortgage4Forgivable.Location = New System.Drawing.Point(124, 108)
-            Me.Mortgage4Forgivable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage4Forgivable.Location = New System.Drawing.Point(165, 133)
+            Me.Mortgage4Forgivable.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.Mortgage4Forgivable.Name = "Mortgage4Forgivable"
-            Me.Mortgage4Forgivable.Size = New System.Drawing.Size(81, 17)
+            Me.Mortgage4Forgivable.Size = New System.Drawing.Size(104, 21)
             Me.Mortgage4Forgivable.TabIndex = 92
             Me.Mortgage4Forgivable.Text = "Forgivable?"
             Me.Mortgage4Forgivable.UseVisualStyleBackColor = True
@@ -727,17 +757,19 @@ Namespace DatabaseTestApplication2
             'mortgage4PriceLabel
             '
             Me.mortgage4PriceLabel.AutoSize = True
-            Me.mortgage4PriceLabel.Location = New System.Drawing.Point(63, 17)
+            Me.mortgage4PriceLabel.Location = New System.Drawing.Point(84, 21)
+            Me.mortgage4PriceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage4PriceLabel.Name = "mortgage4PriceLabel"
-            Me.mortgage4PriceLabel.Size = New System.Drawing.Size(31, 13)
+            Me.mortgage4PriceLabel.Size = New System.Drawing.Size(40, 17)
             Me.mortgage4PriceLabel.TabIndex = 53
             Me.mortgage4PriceLabel.Text = "Price"
             '
             'mortgage4PriceTextBox
             '
-            Me.mortgage4PriceTextBox.Location = New System.Drawing.Point(98, 15)
+            Me.mortgage4PriceTextBox.Location = New System.Drawing.Point(131, 18)
+            Me.mortgage4PriceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage4PriceTextBox.Name = "mortgage4PriceTextBox"
-            Me.mortgage4PriceTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage4PriceTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage4PriceTextBox.TabIndex = 54
             '
             'Mortgage4Dropdown
@@ -745,133 +777,149 @@ Namespace DatabaseTestApplication2
             Me.Mortgage4Dropdown.FlatStyle = System.Windows.Forms.FlatStyle.System
             Me.Mortgage4Dropdown.FormattingEnabled = True
             Me.Mortgage4Dropdown.Items.AddRange(New Object() {"BB&T", "First Citizens", "USDA Rural Development", "First Bank", "Habitat"})
-            Me.Mortgage4Dropdown.Location = New System.Drawing.Point(98, 37)
-            Me.Mortgage4Dropdown.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage4Dropdown.Location = New System.Drawing.Point(131, 46)
+            Me.Mortgage4Dropdown.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.Mortgage4Dropdown.Name = "Mortgage4Dropdown"
-            Me.Mortgage4Dropdown.Size = New System.Drawing.Size(132, 21)
+            Me.Mortgage4Dropdown.Size = New System.Drawing.Size(175, 24)
             Me.Mortgage4Dropdown.TabIndex = 93
             '
             'mortgage4BankLabel
             '
             Me.mortgage4BankLabel.AutoSize = True
-            Me.mortgage4BankLabel.Location = New System.Drawing.Point(63, 40)
+            Me.mortgage4BankLabel.Location = New System.Drawing.Point(84, 49)
+            Me.mortgage4BankLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage4BankLabel.Name = "mortgage4BankLabel"
-            Me.mortgage4BankLabel.Size = New System.Drawing.Size(32, 13)
+            Me.mortgage4BankLabel.Size = New System.Drawing.Size(40, 17)
             Me.mortgage4BankLabel.TabIndex = 55
             Me.mortgage4BankLabel.Text = "Bank"
             '
             'mortgage4OriginalBalanceLabel
             '
             Me.mortgage4OriginalBalanceLabel.AutoSize = True
-            Me.mortgage4OriginalBalanceLabel.Location = New System.Drawing.Point(11, 64)
+            Me.mortgage4OriginalBalanceLabel.Location = New System.Drawing.Point(15, 79)
+            Me.mortgage4OriginalBalanceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage4OriginalBalanceLabel.Name = "mortgage4OriginalBalanceLabel"
-            Me.mortgage4OriginalBalanceLabel.Size = New System.Drawing.Size(84, 13)
+            Me.mortgage4OriginalBalanceLabel.Size = New System.Drawing.Size(112, 17)
             Me.mortgage4OriginalBalanceLabel.TabIndex = 59
             Me.mortgage4OriginalBalanceLabel.Text = "Original Balance"
             '
             'mortgage4NumberOfYearsLabel
             '
             Me.mortgage4NumberOfYearsLabel.AutoSize = True
-            Me.mortgage4NumberOfYearsLabel.Location = New System.Drawing.Point(7, 88)
+            Me.mortgage4NumberOfYearsLabel.Location = New System.Drawing.Point(9, 108)
+            Me.mortgage4NumberOfYearsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage4NumberOfYearsLabel.Name = "mortgage4NumberOfYearsLabel"
-            Me.mortgage4NumberOfYearsLabel.Size = New System.Drawing.Size(88, 13)
+            Me.mortgage4NumberOfYearsLabel.Size = New System.Drawing.Size(118, 17)
             Me.mortgage4NumberOfYearsLabel.TabIndex = 61
             Me.mortgage4NumberOfYearsLabel.Text = "Number Of Years"
             '
             'mortgage4OriginalBalanceTextBox
             '
-            Me.mortgage4OriginalBalanceTextBox.Location = New System.Drawing.Point(98, 62)
+            Me.mortgage4OriginalBalanceTextBox.Location = New System.Drawing.Point(131, 76)
+            Me.mortgage4OriginalBalanceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage4OriginalBalanceTextBox.Name = "mortgage4OriginalBalanceTextBox"
-            Me.mortgage4OriginalBalanceTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage4OriginalBalanceTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage4OriginalBalanceTextBox.TabIndex = 60
             '
             'mortgage4NumberOfYearsTextBox
             '
-            Me.mortgage4NumberOfYearsTextBox.Location = New System.Drawing.Point(98, 85)
+            Me.mortgage4NumberOfYearsTextBox.Location = New System.Drawing.Point(131, 105)
+            Me.mortgage4NumberOfYearsTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage4NumberOfYearsTextBox.Name = "mortgage4NumberOfYearsTextBox"
-            Me.mortgage4NumberOfYearsTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage4NumberOfYearsTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage4NumberOfYearsTextBox.TabIndex = 62
             '
             'mortgage2BankTextBox
             '
-            Me.mortgage2BankTextBox.Location = New System.Drawing.Point(6, 387)
+            Me.mortgage2BankTextBox.Location = New System.Drawing.Point(8, 476)
+            Me.mortgage2BankTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage2BankTextBox.Name = "mortgage2BankTextBox"
-            Me.mortgage2BankTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.mortgage2BankTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage2BankTextBox.TabIndex = 36
             Me.mortgage2BankTextBox.Visible = False
             '
             'mortgage6BankTextBox
             '
-            Me.mortgage6BankTextBox.Location = New System.Drawing.Point(6, 388)
+            Me.mortgage6BankTextBox.Location = New System.Drawing.Point(8, 478)
+            Me.mortgage6BankTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage6BankTextBox.Name = "mortgage6BankTextBox"
-            Me.mortgage6BankTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.mortgage6BankTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage6BankTextBox.TabIndex = 76
             Me.mortgage6BankTextBox.Visible = False
             '
             'mortgage5BankTextBox
             '
-            Me.mortgage5BankTextBox.Location = New System.Drawing.Point(6, 387)
+            Me.mortgage5BankTextBox.Location = New System.Drawing.Point(8, 476)
+            Me.mortgage5BankTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage5BankTextBox.Name = "mortgage5BankTextBox"
-            Me.mortgage5BankTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.mortgage5BankTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage5BankTextBox.TabIndex = 66
             Me.mortgage5BankTextBox.Visible = False
             '
             'HUDHoursCompleteTextBox
             '
-            Me.HUDHoursCompleteTextBox.Location = New System.Drawing.Point(74, 53)
+            Me.HUDHoursCompleteTextBox.Location = New System.Drawing.Point(99, 65)
+            Me.HUDHoursCompleteTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.HUDHoursCompleteTextBox.Name = "HUDHoursCompleteTextBox"
-            Me.HUDHoursCompleteTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.HUDHoursCompleteTextBox.Size = New System.Drawing.Size(132, 22)
             Me.HUDHoursCompleteTextBox.TabIndex = 14
             '
             'mortgage4BankTextBox
             '
-            Me.mortgage4BankTextBox.Location = New System.Drawing.Point(6, 388)
+            Me.mortgage4BankTextBox.Location = New System.Drawing.Point(8, 478)
+            Me.mortgage4BankTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage4BankTextBox.Name = "mortgage4BankTextBox"
-            Me.mortgage4BankTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.mortgage4BankTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage4BankTextBox.TabIndex = 56
             Me.mortgage4BankTextBox.Visible = False
             '
             'mortgage4ForgivableTextBox
             '
-            Me.mortgage4ForgivableTextBox.Location = New System.Drawing.Point(74, 53)
+            Me.mortgage4ForgivableTextBox.Location = New System.Drawing.Point(99, 65)
+            Me.mortgage4ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage4ForgivableTextBox.Name = "mortgage4ForgivableTextBox"
-            Me.mortgage4ForgivableTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.mortgage4ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage4ForgivableTextBox.TabIndex = 58
             '
             'mortgage5ForgivableTextBox
             '
-            Me.mortgage5ForgivableTextBox.Location = New System.Drawing.Point(861, -62)
+            Me.mortgage5ForgivableTextBox.Location = New System.Drawing.Point(1148, -76)
+            Me.mortgage5ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage5ForgivableTextBox.Name = "mortgage5ForgivableTextBox"
-            Me.mortgage5ForgivableTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.mortgage5ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage5ForgivableTextBox.TabIndex = 68
             '
             'mortgage3ForgivableTextBox
             '
-            Me.mortgage3ForgivableTextBox.Location = New System.Drawing.Point(864, -37)
+            Me.mortgage3ForgivableTextBox.Location = New System.Drawing.Point(1152, -46)
+            Me.mortgage3ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage3ForgivableTextBox.Name = "mortgage3ForgivableTextBox"
-            Me.mortgage3ForgivableTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.mortgage3ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage3ForgivableTextBox.TabIndex = 48
             '
             'mortgage2ForgivableTextBox
             '
-            Me.mortgage2ForgivableTextBox.Location = New System.Drawing.Point(86, 53)
+            Me.mortgage2ForgivableTextBox.Location = New System.Drawing.Point(115, 65)
+            Me.mortgage2ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage2ForgivableTextBox.Name = "mortgage2ForgivableTextBox"
-            Me.mortgage2ForgivableTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.mortgage2ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage2ForgivableTextBox.TabIndex = 38
             '
             'mortgage1BankTextBox
             '
-            Me.mortgage1BankTextBox.Location = New System.Drawing.Point(6, 387)
+            Me.mortgage1BankTextBox.Location = New System.Drawing.Point(8, 476)
+            Me.mortgage1BankTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage1BankTextBox.Name = "mortgage1BankTextBox"
-            Me.mortgage1BankTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.mortgage1BankTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage1BankTextBox.TabIndex = 26
             Me.mortgage1BankTextBox.Visible = False
             '
             'mortgage3BankTextBox
             '
-            Me.mortgage3BankTextBox.Location = New System.Drawing.Point(6, 387)
+            Me.mortgage3BankTextBox.Location = New System.Drawing.Point(8, 476)
+            Me.mortgage3BankTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage3BankTextBox.Name = "mortgage3BankTextBox"
-            Me.mortgage3BankTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.mortgage3BankTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage3BankTextBox.TabIndex = 46
             Me.mortgage3BankTextBox.Visible = False
             '
@@ -888,9 +936,11 @@ Namespace DatabaseTestApplication2
             Me.Mortgage1Groupbox.Controls.Add(Me.mortgage1OriginalBalanceTextBox)
             Me.Mortgage1Groupbox.Controls.Add(Me.mortgage1NumberOfYearsTextBox)
             Me.Mortgage1Groupbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.Mortgage1Groupbox.Location = New System.Drawing.Point(211, 98)
+            Me.Mortgage1Groupbox.Location = New System.Drawing.Point(281, 121)
+            Me.Mortgage1Groupbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.Mortgage1Groupbox.Name = "Mortgage1Groupbox"
-            Me.Mortgage1Groupbox.Size = New System.Drawing.Size(235, 138)
+            Me.Mortgage1Groupbox.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Mortgage1Groupbox.Size = New System.Drawing.Size(313, 170)
             Me.Mortgage1Groupbox.TabIndex = 91
             Me.Mortgage1Groupbox.TabStop = False
             Me.Mortgage1Groupbox.Text = "Mortgage 1"
@@ -899,10 +949,10 @@ Namespace DatabaseTestApplication2
             '
             Me.Mortgage1Forgivable.AutoSize = True
             Me.Mortgage1Forgivable.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.Mortgage1Forgivable.Location = New System.Drawing.Point(124, 109)
-            Me.Mortgage1Forgivable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage1Forgivable.Location = New System.Drawing.Point(165, 134)
+            Me.Mortgage1Forgivable.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.Mortgage1Forgivable.Name = "Mortgage1Forgivable"
-            Me.Mortgage1Forgivable.Size = New System.Drawing.Size(81, 17)
+            Me.Mortgage1Forgivable.Size = New System.Drawing.Size(104, 21)
             Me.Mortgage1Forgivable.TabIndex = 97
             Me.Mortgage1Forgivable.Text = "Forgivable?"
             Me.Mortgage1Forgivable.UseVisualStyleBackColor = True
@@ -912,74 +962,82 @@ Namespace DatabaseTestApplication2
             Me.Mortgage1Bank.FlatStyle = System.Windows.Forms.FlatStyle.System
             Me.Mortgage1Bank.FormattingEnabled = True
             Me.Mortgage1Bank.Items.AddRange(New Object() {"BB&T", "First Citizens", "USDA Rural Development", "First Bank", "Habitat"})
-            Me.Mortgage1Bank.Location = New System.Drawing.Point(98, 37)
-            Me.Mortgage1Bank.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage1Bank.Location = New System.Drawing.Point(131, 46)
+            Me.Mortgage1Bank.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.Mortgage1Bank.Name = "Mortgage1Bank"
-            Me.Mortgage1Bank.Size = New System.Drawing.Size(132, 21)
+            Me.Mortgage1Bank.Size = New System.Drawing.Size(175, 24)
             Me.Mortgage1Bank.TabIndex = 92
             '
             'mortgage1PriceLabel
             '
             Me.mortgage1PriceLabel.AutoSize = True
-            Me.mortgage1PriceLabel.Location = New System.Drawing.Point(65, 18)
+            Me.mortgage1PriceLabel.Location = New System.Drawing.Point(87, 22)
+            Me.mortgage1PriceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage1PriceLabel.Name = "mortgage1PriceLabel"
-            Me.mortgage1PriceLabel.Size = New System.Drawing.Size(31, 13)
+            Me.mortgage1PriceLabel.Size = New System.Drawing.Size(40, 17)
             Me.mortgage1PriceLabel.TabIndex = 23
             Me.mortgage1PriceLabel.Text = "Price"
             '
             'mortgage1BankLabel
             '
             Me.mortgage1BankLabel.AutoSize = True
-            Me.mortgage1BankLabel.Location = New System.Drawing.Point(65, 40)
+            Me.mortgage1BankLabel.Location = New System.Drawing.Point(87, 49)
+            Me.mortgage1BankLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage1BankLabel.Name = "mortgage1BankLabel"
-            Me.mortgage1BankLabel.Size = New System.Drawing.Size(32, 13)
+            Me.mortgage1BankLabel.Size = New System.Drawing.Size(40, 17)
             Me.mortgage1BankLabel.TabIndex = 25
             Me.mortgage1BankLabel.Text = "Bank"
             '
             'mortgage1PriceTextBox
             '
-            Me.mortgage1PriceTextBox.Location = New System.Drawing.Point(99, 15)
+            Me.mortgage1PriceTextBox.Location = New System.Drawing.Point(132, 18)
+            Me.mortgage1PriceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage1PriceTextBox.Name = "mortgage1PriceTextBox"
-            Me.mortgage1PriceTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage1PriceTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage1PriceTextBox.TabIndex = 24
             '
             'mortgage1OriginalBalanceLabel
             '
             Me.mortgage1OriginalBalanceLabel.AutoSize = True
-            Me.mortgage1OriginalBalanceLabel.Location = New System.Drawing.Point(11, 64)
+            Me.mortgage1OriginalBalanceLabel.Location = New System.Drawing.Point(15, 79)
+            Me.mortgage1OriginalBalanceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage1OriginalBalanceLabel.Name = "mortgage1OriginalBalanceLabel"
-            Me.mortgage1OriginalBalanceLabel.Size = New System.Drawing.Size(84, 13)
+            Me.mortgage1OriginalBalanceLabel.Size = New System.Drawing.Size(112, 17)
             Me.mortgage1OriginalBalanceLabel.TabIndex = 29
             Me.mortgage1OriginalBalanceLabel.Text = "Original Balance"
             '
             'mortgage1NumberOfYearsLabel
             '
             Me.mortgage1NumberOfYearsLabel.AutoSize = True
-            Me.mortgage1NumberOfYearsLabel.Location = New System.Drawing.Point(9, 88)
+            Me.mortgage1NumberOfYearsLabel.Location = New System.Drawing.Point(12, 108)
+            Me.mortgage1NumberOfYearsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage1NumberOfYearsLabel.Name = "mortgage1NumberOfYearsLabel"
-            Me.mortgage1NumberOfYearsLabel.Size = New System.Drawing.Size(86, 13)
+            Me.mortgage1NumberOfYearsLabel.Size = New System.Drawing.Size(115, 17)
             Me.mortgage1NumberOfYearsLabel.TabIndex = 31
             Me.mortgage1NumberOfYearsLabel.Text = "Number of Years"
             '
             'mortgage1OriginalBalanceTextBox
             '
-            Me.mortgage1OriginalBalanceTextBox.Location = New System.Drawing.Point(99, 62)
+            Me.mortgage1OriginalBalanceTextBox.Location = New System.Drawing.Point(132, 76)
+            Me.mortgage1OriginalBalanceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage1OriginalBalanceTextBox.Name = "mortgage1OriginalBalanceTextBox"
-            Me.mortgage1OriginalBalanceTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage1OriginalBalanceTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage1OriginalBalanceTextBox.TabIndex = 30
             '
             'mortgage1NumberOfYearsTextBox
             '
-            Me.mortgage1NumberOfYearsTextBox.Location = New System.Drawing.Point(98, 86)
+            Me.mortgage1NumberOfYearsTextBox.Location = New System.Drawing.Point(131, 106)
+            Me.mortgage1NumberOfYearsTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage1NumberOfYearsTextBox.Name = "mortgage1NumberOfYearsTextBox"
-            Me.mortgage1NumberOfYearsTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage1NumberOfYearsTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage1NumberOfYearsTextBox.TabIndex = 32
             '
             'mortgage1ForgivableTextBox
             '
-            Me.mortgage1ForgivableTextBox.Location = New System.Drawing.Point(65, 53)
+            Me.mortgage1ForgivableTextBox.Location = New System.Drawing.Point(87, 65)
+            Me.mortgage1ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage1ForgivableTextBox.Name = "mortgage1ForgivableTextBox"
-            Me.mortgage1ForgivableTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.mortgage1ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage1ForgivableTextBox.TabIndex = 28
             '
             'Morgage3Box
@@ -995,11 +1053,11 @@ Namespace DatabaseTestApplication2
             Me.Morgage3Box.Controls.Add(Me.mortgage3NumberOfYearsLabel)
             Me.Morgage3Box.Controls.Add(Me.mortgage3NumberOfYearsTextBox)
             Me.Morgage3Box.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.Morgage3Box.Location = New System.Drawing.Point(692, 98)
-            Me.Morgage3Box.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Morgage3Box.Location = New System.Drawing.Point(923, 121)
+            Me.Morgage3Box.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.Morgage3Box.Name = "Morgage3Box"
-            Me.Morgage3Box.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-            Me.Morgage3Box.Size = New System.Drawing.Size(235, 138)
+            Me.Morgage3Box.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+            Me.Morgage3Box.Size = New System.Drawing.Size(313, 170)
             Me.Morgage3Box.TabIndex = 89
             Me.Morgage3Box.TabStop = False
             Me.Morgage3Box.Text = "Mortgage 3"
@@ -1009,20 +1067,20 @@ Namespace DatabaseTestApplication2
             Me.Mortgage3Dropdown.FlatStyle = System.Windows.Forms.FlatStyle.System
             Me.Mortgage3Dropdown.FormattingEnabled = True
             Me.Mortgage3Dropdown.Items.AddRange(New Object() {"BB&T", "First Citizens", "USDA Rural Development", "First Bank", "Habitat"})
-            Me.Mortgage3Dropdown.Location = New System.Drawing.Point(98, 42)
-            Me.Mortgage3Dropdown.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage3Dropdown.Location = New System.Drawing.Point(131, 52)
+            Me.Mortgage3Dropdown.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.Mortgage3Dropdown.Name = "Mortgage3Dropdown"
-            Me.Mortgage3Dropdown.Size = New System.Drawing.Size(132, 21)
+            Me.Mortgage3Dropdown.Size = New System.Drawing.Size(175, 24)
             Me.Mortgage3Dropdown.TabIndex = 91
             '
             'Mortgage3Forgivable
             '
             Me.Mortgage3Forgivable.AutoSize = True
             Me.Mortgage3Forgivable.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.Mortgage3Forgivable.Location = New System.Drawing.Point(124, 110)
-            Me.Mortgage3Forgivable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage3Forgivable.Location = New System.Drawing.Point(165, 135)
+            Me.Mortgage3Forgivable.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.Mortgage3Forgivable.Name = "Mortgage3Forgivable"
-            Me.Mortgage3Forgivable.Size = New System.Drawing.Size(81, 17)
+            Me.Mortgage3Forgivable.Size = New System.Drawing.Size(104, 21)
             Me.Mortgage3Forgivable.TabIndex = 91
             Me.Mortgage3Forgivable.Text = "Forgivable?"
             Me.Mortgage3Forgivable.UseVisualStyleBackColor = True
@@ -1030,58 +1088,65 @@ Namespace DatabaseTestApplication2
             'mortgage3PriceLabel
             '
             Me.mortgage3PriceLabel.AutoSize = True
-            Me.mortgage3PriceLabel.Location = New System.Drawing.Point(65, 22)
+            Me.mortgage3PriceLabel.Location = New System.Drawing.Point(87, 27)
+            Me.mortgage3PriceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage3PriceLabel.Name = "mortgage3PriceLabel"
-            Me.mortgage3PriceLabel.Size = New System.Drawing.Size(31, 13)
+            Me.mortgage3PriceLabel.Size = New System.Drawing.Size(40, 17)
             Me.mortgage3PriceLabel.TabIndex = 43
             Me.mortgage3PriceLabel.Text = "Price"
             '
             'mortgage3PriceTextBox
             '
-            Me.mortgage3PriceTextBox.Location = New System.Drawing.Point(98, 20)
+            Me.mortgage3PriceTextBox.Location = New System.Drawing.Point(131, 25)
+            Me.mortgage3PriceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage3PriceTextBox.Name = "mortgage3PriceTextBox"
-            Me.mortgage3PriceTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage3PriceTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage3PriceTextBox.TabIndex = 44
             '
             'mortgage3BankLabel
             '
             Me.mortgage3BankLabel.AutoSize = True
-            Me.mortgage3BankLabel.Location = New System.Drawing.Point(63, 45)
+            Me.mortgage3BankLabel.Location = New System.Drawing.Point(84, 55)
+            Me.mortgage3BankLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage3BankLabel.Name = "mortgage3BankLabel"
-            Me.mortgage3BankLabel.Size = New System.Drawing.Size(32, 13)
+            Me.mortgage3BankLabel.Size = New System.Drawing.Size(40, 17)
             Me.mortgage3BankLabel.TabIndex = 45
             Me.mortgage3BankLabel.Text = "Bank"
             '
             'mortgage3OriginalBalanceLabel
             '
             Me.mortgage3OriginalBalanceLabel.AutoSize = True
-            Me.mortgage3OriginalBalanceLabel.Location = New System.Drawing.Point(11, 68)
+            Me.mortgage3OriginalBalanceLabel.Location = New System.Drawing.Point(15, 84)
+            Me.mortgage3OriginalBalanceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage3OriginalBalanceLabel.Name = "mortgage3OriginalBalanceLabel"
-            Me.mortgage3OriginalBalanceLabel.Size = New System.Drawing.Size(84, 13)
+            Me.mortgage3OriginalBalanceLabel.Size = New System.Drawing.Size(112, 17)
             Me.mortgage3OriginalBalanceLabel.TabIndex = 49
             Me.mortgage3OriginalBalanceLabel.Text = "Original Balance"
             '
             'mortgage3OriginalBalanceTextBox
             '
-            Me.mortgage3OriginalBalanceTextBox.Location = New System.Drawing.Point(98, 66)
+            Me.mortgage3OriginalBalanceTextBox.Location = New System.Drawing.Point(131, 81)
+            Me.mortgage3OriginalBalanceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage3OriginalBalanceTextBox.Name = "mortgage3OriginalBalanceTextBox"
-            Me.mortgage3OriginalBalanceTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage3OriginalBalanceTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage3OriginalBalanceTextBox.TabIndex = 50
             '
             'mortgage3NumberOfYearsLabel
             '
             Me.mortgage3NumberOfYearsLabel.AutoSize = True
-            Me.mortgage3NumberOfYearsLabel.Location = New System.Drawing.Point(9, 90)
+            Me.mortgage3NumberOfYearsLabel.Location = New System.Drawing.Point(12, 111)
+            Me.mortgage3NumberOfYearsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.mortgage3NumberOfYearsLabel.Name = "mortgage3NumberOfYearsLabel"
-            Me.mortgage3NumberOfYearsLabel.Size = New System.Drawing.Size(86, 13)
+            Me.mortgage3NumberOfYearsLabel.Size = New System.Drawing.Size(115, 17)
             Me.mortgage3NumberOfYearsLabel.TabIndex = 51
             Me.mortgage3NumberOfYearsLabel.Text = "Number of Years"
             '
             'mortgage3NumberOfYearsTextBox
             '
-            Me.mortgage3NumberOfYearsTextBox.Location = New System.Drawing.Point(98, 87)
+            Me.mortgage3NumberOfYearsTextBox.Location = New System.Drawing.Point(131, 107)
+            Me.mortgage3NumberOfYearsTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.mortgage3NumberOfYearsTextBox.Name = "mortgage3NumberOfYearsTextBox"
-            Me.mortgage3NumberOfYearsTextBox.Size = New System.Drawing.Size(132, 20)
+            Me.mortgage3NumberOfYearsTextBox.Size = New System.Drawing.Size(175, 22)
             Me.mortgage3NumberOfYearsTextBox.TabIndex = 52
             '
             'ApplicantGroupbox
@@ -1089,11 +1154,11 @@ Namespace DatabaseTestApplication2
             Me.ApplicantGroupbox.BackColor = System.Drawing.Color.Transparent
             Me.ApplicantGroupbox.Controls.Add(Me.general_UID_comboBox)
             Me.ApplicantGroupbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.ApplicantGroupbox.Location = New System.Drawing.Point(14, 98)
-            Me.ApplicantGroupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.ApplicantGroupbox.Location = New System.Drawing.Point(19, 121)
+            Me.ApplicantGroupbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.ApplicantGroupbox.Name = "ApplicantGroupbox"
-            Me.ApplicantGroupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-            Me.ApplicantGroupbox.Size = New System.Drawing.Size(192, 43)
+            Me.ApplicantGroupbox.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+            Me.ApplicantGroupbox.Size = New System.Drawing.Size(256, 53)
             Me.ApplicantGroupbox.TabIndex = 88
             Me.ApplicantGroupbox.TabStop = False
             Me.ApplicantGroupbox.Text = "Applicant ID"
@@ -1103,9 +1168,10 @@ Namespace DatabaseTestApplication2
             Me.general_UID_comboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
             Me.general_UID_comboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
             Me.general_UID_comboBox.FormattingEnabled = True
-            Me.general_UID_comboBox.Location = New System.Drawing.Point(5, 18)
+            Me.general_UID_comboBox.Location = New System.Drawing.Point(7, 22)
+            Me.general_UID_comboBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.general_UID_comboBox.Name = "general_UID_comboBox"
-            Me.general_UID_comboBox.Size = New System.Drawing.Size(183, 21)
+            Me.general_UID_comboBox.Size = New System.Drawing.Size(243, 24)
             Me.general_UID_comboBox.TabIndex = 2
             '
             'HomebuyerEducationGroupbox
@@ -1114,30 +1180,31 @@ Namespace DatabaseTestApplication2
             Me.HomebuyerEducationGroupbox.Controls.Add(Me.HomebuyerEducationNumeric)
             Me.HomebuyerEducationGroupbox.Controls.Add(Me.homebuyerEducationDate_dateTimePicker)
             Me.HomebuyerEducationGroupbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.HomebuyerEducationGroupbox.Location = New System.Drawing.Point(14, 337)
-            Me.HomebuyerEducationGroupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.HomebuyerEducationGroupbox.Location = New System.Drawing.Point(19, 415)
+            Me.HomebuyerEducationGroupbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.HomebuyerEducationGroupbox.Name = "HomebuyerEducationGroupbox"
-            Me.HomebuyerEducationGroupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-            Me.HomebuyerEducationGroupbox.Size = New System.Drawing.Size(192, 43)
+            Me.HomebuyerEducationGroupbox.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+            Me.HomebuyerEducationGroupbox.Size = New System.Drawing.Size(256, 53)
             Me.HomebuyerEducationGroupbox.TabIndex = 87
             Me.HomebuyerEducationGroupbox.TabStop = False
             Me.HomebuyerEducationGroupbox.Text = "Homebuyer Education"
             '
             'HomebuyerEducationNumeric
             '
-            Me.HomebuyerEducationNumeric.Location = New System.Drawing.Point(115, 18)
-            Me.HomebuyerEducationNumeric.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.HomebuyerEducationNumeric.Location = New System.Drawing.Point(153, 22)
+            Me.HomebuyerEducationNumeric.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.HomebuyerEducationNumeric.Name = "HomebuyerEducationNumeric"
-            Me.HomebuyerEducationNumeric.Size = New System.Drawing.Size(73, 20)
+            Me.HomebuyerEducationNumeric.Size = New System.Drawing.Size(97, 22)
             Me.HomebuyerEducationNumeric.TabIndex = 88
             '
             'homebuyerEducationDate_dateTimePicker
             '
             Me.homebuyerEducationDate_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.homebuyerEducationDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.homebuyerEducationDate_dateTimePicker.Location = New System.Drawing.Point(5, 18)
+            Me.homebuyerEducationDate_dateTimePicker.Location = New System.Drawing.Point(7, 22)
+            Me.homebuyerEducationDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.homebuyerEducationDate_dateTimePicker.Name = "homebuyerEducationDate_dateTimePicker"
-            Me.homebuyerEducationDate_dateTimePicker.Size = New System.Drawing.Size(105, 20)
+            Me.homebuyerEducationDate_dateTimePicker.Size = New System.Drawing.Size(139, 22)
             Me.homebuyerEducationDate_dateTimePicker.TabIndex = 20
             Me.homebuyerEducationDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
             '
@@ -1147,11 +1214,11 @@ Namespace DatabaseTestApplication2
             Me.FinanceClassGroupbox.Controls.Add(Me.FinanceClassesCheckbox)
             Me.FinanceClassGroupbox.Controls.Add(Me.financeClassesDate_dateTimePicker)
             Me.FinanceClassGroupbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.FinanceClassGroupbox.Location = New System.Drawing.Point(14, 289)
-            Me.FinanceClassGroupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.FinanceClassGroupbox.Location = New System.Drawing.Point(19, 356)
+            Me.FinanceClassGroupbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.FinanceClassGroupbox.Name = "FinanceClassGroupbox"
-            Me.FinanceClassGroupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-            Me.FinanceClassGroupbox.Size = New System.Drawing.Size(192, 43)
+            Me.FinanceClassGroupbox.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+            Me.FinanceClassGroupbox.Size = New System.Drawing.Size(256, 53)
             Me.FinanceClassGroupbox.TabIndex = 86
             Me.FinanceClassGroupbox.TabStop = False
             Me.FinanceClassGroupbox.Text = "Finance Classes"
@@ -1159,10 +1226,10 @@ Namespace DatabaseTestApplication2
             'FinanceClassesCheckbox
             '
             Me.FinanceClassesCheckbox.AutoSize = True
-            Me.FinanceClassesCheckbox.Location = New System.Drawing.Point(115, 20)
-            Me.FinanceClassesCheckbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.FinanceClassesCheckbox.Location = New System.Drawing.Point(153, 25)
+            Me.FinanceClassesCheckbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.FinanceClassesCheckbox.Name = "FinanceClassesCheckbox"
-            Me.FinanceClassesCheckbox.Size = New System.Drawing.Size(76, 17)
+            Me.FinanceClassesCheckbox.Size = New System.Drawing.Size(97, 21)
             Me.FinanceClassesCheckbox.TabIndex = 87
             Me.FinanceClassesCheckbox.Text = "Completed"
             Me.FinanceClassesCheckbox.UseVisualStyleBackColor = True
@@ -1171,17 +1238,19 @@ Namespace DatabaseTestApplication2
             '
             Me.financeClassesDate_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.financeClassesDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.financeClassesDate_dateTimePicker.Location = New System.Drawing.Point(5, 19)
+            Me.financeClassesDate_dateTimePicker.Location = New System.Drawing.Point(7, 23)
+            Me.financeClassesDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.financeClassesDate_dateTimePicker.Name = "financeClassesDate_dateTimePicker"
-            Me.financeClassesDate_dateTimePicker.Size = New System.Drawing.Size(105, 20)
+            Me.financeClassesDate_dateTimePicker.Size = New System.Drawing.Size(139, 22)
             Me.financeClassesDate_dateTimePicker.TabIndex = 16
             Me.financeClassesDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
             '
             'homebuyerEducationAmountTextBox
             '
-            Me.homebuyerEducationAmountTextBox.Location = New System.Drawing.Point(6, 388)
+            Me.homebuyerEducationAmountTextBox.Location = New System.Drawing.Point(8, 478)
+            Me.homebuyerEducationAmountTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.homebuyerEducationAmountTextBox.Name = "homebuyerEducationAmountTextBox"
-            Me.homebuyerEducationAmountTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.homebuyerEducationAmountTextBox.Size = New System.Drawing.Size(132, 22)
             Me.homebuyerEducationAmountTextBox.TabIndex = 22
             Me.homebuyerEducationAmountTextBox.Visible = False
             '
@@ -1191,45 +1260,48 @@ Namespace DatabaseTestApplication2
             Me.MonthlyDepositGroupbox.Controls.Add(Me.MonthlyDepositNumber)
             Me.MonthlyDepositGroupbox.Controls.Add(Me.monthlyDepositDate_dateTimePicker)
             Me.MonthlyDepositGroupbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.MonthlyDepositGroupbox.Location = New System.Drawing.Point(14, 193)
-            Me.MonthlyDepositGroupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.MonthlyDepositGroupbox.Location = New System.Drawing.Point(19, 238)
+            Me.MonthlyDepositGroupbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.MonthlyDepositGroupbox.Name = "MonthlyDepositGroupbox"
-            Me.MonthlyDepositGroupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-            Me.MonthlyDepositGroupbox.Size = New System.Drawing.Size(192, 43)
+            Me.MonthlyDepositGroupbox.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+            Me.MonthlyDepositGroupbox.Size = New System.Drawing.Size(256, 53)
             Me.MonthlyDepositGroupbox.TabIndex = 85
             Me.MonthlyDepositGroupbox.TabStop = False
             Me.MonthlyDepositGroupbox.Text = "Monthly Deposit"
             '
             'MonthlyDepositNumber
             '
-            Me.MonthlyDepositNumber.Location = New System.Drawing.Point(115, 15)
-            Me.MonthlyDepositNumber.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.MonthlyDepositNumber.Location = New System.Drawing.Point(153, 18)
+            Me.MonthlyDepositNumber.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.MonthlyDepositNumber.Name = "MonthlyDepositNumber"
-            Me.MonthlyDepositNumber.Size = New System.Drawing.Size(73, 20)
+            Me.MonthlyDepositNumber.Size = New System.Drawing.Size(97, 22)
             Me.MonthlyDepositNumber.TabIndex = 86
             '
             'monthlyDepositDate_dateTimePicker
             '
             Me.monthlyDepositDate_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.monthlyDepositDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.monthlyDepositDate_dateTimePicker.Location = New System.Drawing.Point(5, 15)
+            Me.monthlyDepositDate_dateTimePicker.Location = New System.Drawing.Point(7, 18)
+            Me.monthlyDepositDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.monthlyDepositDate_dateTimePicker.Name = "monthlyDepositDate_dateTimePicker"
-            Me.monthlyDepositDate_dateTimePicker.Size = New System.Drawing.Size(105, 20)
+            Me.monthlyDepositDate_dateTimePicker.Size = New System.Drawing.Size(139, 22)
             Me.monthlyDepositDate_dateTimePicker.TabIndex = 8
             Me.monthlyDepositDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
             '
             'financeClassesCompleteTextBox
             '
-            Me.financeClassesCompleteTextBox.Location = New System.Drawing.Point(74, 53)
+            Me.financeClassesCompleteTextBox.Location = New System.Drawing.Point(99, 65)
+            Me.financeClassesCompleteTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.financeClassesCompleteTextBox.Name = "financeClassesCompleteTextBox"
-            Me.financeClassesCompleteTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.financeClassesCompleteTextBox.Size = New System.Drawing.Size(132, 22)
             Me.financeClassesCompleteTextBox.TabIndex = 18
             '
             'sweatEquityAmountTextBox
             '
-            Me.sweatEquityAmountTextBox.Location = New System.Drawing.Point(14, 388)
+            Me.sweatEquityAmountTextBox.Location = New System.Drawing.Point(19, 478)
+            Me.sweatEquityAmountTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.sweatEquityAmountTextBox.Name = "sweatEquityAmountTextBox"
-            Me.sweatEquityAmountTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.sweatEquityAmountTextBox.Size = New System.Drawing.Size(132, 22)
             Me.sweatEquityAmountTextBox.TabIndex = 6
             Me.sweatEquityAmountTextBox.Visible = False
             '
@@ -1239,11 +1311,11 @@ Namespace DatabaseTestApplication2
             Me.HUDHoursGroupbox.Controls.Add(Me.HUDHoursCheckbox)
             Me.HUDHoursGroupbox.Controls.Add(Me.HUDHoursDate_dateTimePicker)
             Me.HUDHoursGroupbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.HUDHoursGroupbox.Location = New System.Drawing.Point(14, 241)
-            Me.HUDHoursGroupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.HUDHoursGroupbox.Location = New System.Drawing.Point(19, 297)
+            Me.HUDHoursGroupbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.HUDHoursGroupbox.Name = "HUDHoursGroupbox"
-            Me.HUDHoursGroupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-            Me.HUDHoursGroupbox.Size = New System.Drawing.Size(192, 43)
+            Me.HUDHoursGroupbox.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+            Me.HUDHoursGroupbox.Size = New System.Drawing.Size(256, 53)
             Me.HUDHoursGroupbox.TabIndex = 85
             Me.HUDHoursGroupbox.TabStop = False
             Me.HUDHoursGroupbox.Text = "HUD Hours"
@@ -1251,10 +1323,10 @@ Namespace DatabaseTestApplication2
             'HUDHoursCheckbox
             '
             Me.HUDHoursCheckbox.AutoSize = True
-            Me.HUDHoursCheckbox.Location = New System.Drawing.Point(115, 19)
-            Me.HUDHoursCheckbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.HUDHoursCheckbox.Location = New System.Drawing.Point(153, 23)
+            Me.HUDHoursCheckbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.HUDHoursCheckbox.Name = "HUDHoursCheckbox"
-            Me.HUDHoursCheckbox.Size = New System.Drawing.Size(76, 17)
+            Me.HUDHoursCheckbox.Size = New System.Drawing.Size(97, 21)
             Me.HUDHoursCheckbox.TabIndex = 86
             Me.HUDHoursCheckbox.Text = "Completed"
             Me.HUDHoursCheckbox.UseVisualStyleBackColor = True
@@ -1263,17 +1335,19 @@ Namespace DatabaseTestApplication2
             '
             Me.HUDHoursDate_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.HUDHoursDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.HUDHoursDate_dateTimePicker.Location = New System.Drawing.Point(5, 18)
+            Me.HUDHoursDate_dateTimePicker.Location = New System.Drawing.Point(7, 22)
+            Me.HUDHoursDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.HUDHoursDate_dateTimePicker.Name = "HUDHoursDate_dateTimePicker"
-            Me.HUDHoursDate_dateTimePicker.Size = New System.Drawing.Size(105, 20)
+            Me.HUDHoursDate_dateTimePicker.Size = New System.Drawing.Size(139, 22)
             Me.HUDHoursDate_dateTimePicker.TabIndex = 12
             Me.HUDHoursDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
             '
             'monthlyDepositAmountTextBox
             '
-            Me.monthlyDepositAmountTextBox.Location = New System.Drawing.Point(6, 387)
+            Me.monthlyDepositAmountTextBox.Location = New System.Drawing.Point(8, 476)
+            Me.monthlyDepositAmountTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.monthlyDepositAmountTextBox.Name = "monthlyDepositAmountTextBox"
-            Me.monthlyDepositAmountTextBox.Size = New System.Drawing.Size(100, 20)
+            Me.monthlyDepositAmountTextBox.Size = New System.Drawing.Size(132, 22)
             Me.monthlyDepositAmountTextBox.TabIndex = 10
             Me.monthlyDepositAmountTextBox.Visible = False
             '
@@ -1283,30 +1357,31 @@ Namespace DatabaseTestApplication2
             Me.SweatEquityGroupbox.Controls.Add(Me.SweatEquityNumeric)
             Me.SweatEquityGroupbox.Controls.Add(Me.sweatEquityDate_dateTimePicker)
             Me.SweatEquityGroupbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.SweatEquityGroupbox.Location = New System.Drawing.Point(14, 146)
-            Me.SweatEquityGroupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.SweatEquityGroupbox.Location = New System.Drawing.Point(19, 180)
+            Me.SweatEquityGroupbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.SweatEquityGroupbox.Name = "SweatEquityGroupbox"
-            Me.SweatEquityGroupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-            Me.SweatEquityGroupbox.Size = New System.Drawing.Size(192, 43)
+            Me.SweatEquityGroupbox.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+            Me.SweatEquityGroupbox.Size = New System.Drawing.Size(256, 53)
             Me.SweatEquityGroupbox.TabIndex = 84
             Me.SweatEquityGroupbox.TabStop = False
             Me.SweatEquityGroupbox.Text = "Sweat Equity"
             '
             'SweatEquityNumeric
             '
-            Me.SweatEquityNumeric.Location = New System.Drawing.Point(115, 15)
-            Me.SweatEquityNumeric.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.SweatEquityNumeric.Location = New System.Drawing.Point(153, 18)
+            Me.SweatEquityNumeric.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.SweatEquityNumeric.Name = "SweatEquityNumeric"
-            Me.SweatEquityNumeric.Size = New System.Drawing.Size(73, 20)
+            Me.SweatEquityNumeric.Size = New System.Drawing.Size(97, 22)
             Me.SweatEquityNumeric.TabIndex = 86
             '
             'sweatEquityDate_dateTimePicker
             '
             Me.sweatEquityDate_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.sweatEquityDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.sweatEquityDate_dateTimePicker.Location = New System.Drawing.Point(5, 15)
+            Me.sweatEquityDate_dateTimePicker.Location = New System.Drawing.Point(7, 18)
+            Me.sweatEquityDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.sweatEquityDate_dateTimePicker.Name = "sweatEquityDate_dateTimePicker"
-            Me.sweatEquityDate_dateTimePicker.Size = New System.Drawing.Size(105, 20)
+            Me.sweatEquityDate_dateTimePicker.Size = New System.Drawing.Size(139, 22)
             Me.sweatEquityDate_dateTimePicker.TabIndex = 4
             Me.sweatEquityDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
             '
@@ -1316,67 +1391,71 @@ Namespace DatabaseTestApplication2
             Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.GeneralInfoToolStripMenuItem, Me.HomeownershipToolStripMenuItem, Me.RepairsToolStripMenuItem})
             Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
             Me.MenuStrip1.Name = "MenuStrip1"
-            Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-            Me.MenuStrip1.Size = New System.Drawing.Size(970, 24)
+            Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
+            Me.MenuStrip1.Size = New System.Drawing.Size(1622, 28)
             Me.MenuStrip1.TabIndex = 83
             Me.MenuStrip1.Text = "MenuStrip1"
             '
             'MainMenuToolStripMenuItem
             '
             Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
-            Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(80, 20)
+            Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(97, 24)
             Me.MainMenuToolStripMenuItem.Text = "Main Menu"
             '
             'GeneralInfoToolStripMenuItem
             '
             Me.GeneralInfoToolStripMenuItem.Name = "GeneralInfoToolStripMenuItem"
-            Me.GeneralInfoToolStripMenuItem.Size = New System.Drawing.Size(83, 20)
+            Me.GeneralInfoToolStripMenuItem.Size = New System.Drawing.Size(104, 24)
             Me.GeneralInfoToolStripMenuItem.Text = "General Info"
             '
             'HomeownershipToolStripMenuItem
             '
             Me.HomeownershipToolStripMenuItem.Name = "HomeownershipToolStripMenuItem"
-            Me.HomeownershipToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
+            Me.HomeownershipToolStripMenuItem.Size = New System.Drawing.Size(132, 24)
             Me.HomeownershipToolStripMenuItem.Text = "Homeownership"
             '
             'RepairsToolStripMenuItem
             '
             Me.RepairsToolStripMenuItem.Name = "RepairsToolStripMenuItem"
-            Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+            Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(72, 24)
             Me.RepairsToolStripMenuItem.Text = "Repairs"
             '
             'panel4
             '
             Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
-            Me.panel4.Location = New System.Drawing.Point(978, 0)
+            Me.panel4.Location = New System.Drawing.Point(1633, 0)
+            Me.panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(8, 415)
+            Me.panel4.Size = New System.Drawing.Size(11, 634)
             Me.panel4.TabIndex = 3
             '
             'panel5
             '
             Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
             Me.panel5.Location = New System.Drawing.Point(0, 0)
+            Me.panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(8, 415)
+            Me.panel5.Size = New System.Drawing.Size(11, 634)
             Me.panel5.TabIndex = 5
             '
             'panel6
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 415)
+            Me.panel6.Location = New System.Drawing.Point(0, 634)
+            Me.panel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.panel6.Name = "panel6"
-            Me.panel6.Size = New System.Drawing.Size(986, 8)
+            Me.panel6.Size = New System.Drawing.Size(1644, 10)
             Me.panel6.TabIndex = 6
             '
             'frmtracking
             '
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(986, 450)
+            Me.ClientSize = New System.Drawing.Size(1315, 554)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
             Me.MainMenuStrip = Me.MenuStrip1
+            Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.Name = "frmtracking"
             Me.Text = "Tracking"
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()

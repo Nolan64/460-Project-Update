@@ -132,14 +132,14 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigator1.Name = "BindingNavigator1"
             Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(13, 0, 13, 0)
             Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-            Me.BindingNavigator1.Size = New System.Drawing.Size(1140, 27)
+            Me.BindingNavigator1.Size = New System.Drawing.Size(1140, 31)
             Me.BindingNavigator1.TabIndex = 0
             Me.BindingNavigator1.Text = "BindingNavigator1"
             '
             'BindingNavigatorCountItem
             '
             Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
+            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 28)
             Me.BindingNavigatorCountItem.Text = "of {0}"
             Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
             '
@@ -149,7 +149,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
             Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorDeleteItem.Text = "Delete"
             '
             'BindingNavigatorMoveFirstItem
@@ -158,7 +158,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
             Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorMoveFirstItem.Text = "Move first"
             '
             'BindingNavigatorMovePreviousItem
@@ -167,13 +167,13 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
             Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
             '
             'BindingNavigatorSeparator
             '
             Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-            Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
+            Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 31)
             '
             'BindingNavigatorPositionItem
             '
@@ -188,7 +188,7 @@ Namespace DatabaseTestApplication2
             'BindingNavigatorSeparator1
             '
             Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-            Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
+            Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 31)
             '
             'BindingNavigatorMoveNextItem
             '
@@ -196,7 +196,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
             Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorMoveNextItem.Text = "Move next"
             '
             'BindingNavigatorMoveLastItem
@@ -205,13 +205,13 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
             Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorMoveLastItem.Text = "Move last"
             '
             'BindingNavigatorSeparator2
             '
             Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-            Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
+            Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 31)
             '
             'BindingNavigatorAddNewItem
             '
@@ -219,7 +219,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
             Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 28)
             Me.BindingNavigatorAddNewItem.Text = "Add new"
             '
             'ToolStripButton1
@@ -228,7 +228,7 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
             Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
             Me.ToolStripButton1.Name = "ToolStripButton1"
-            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 24)
+            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 28)
             Me.ToolStripButton1.Text = "Save"
             '
             'ErrorProvider1
@@ -293,7 +293,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Location = New System.Drawing.Point(13, 0)
             Me.Panel1.Margin = New System.Windows.Forms.Padding(13, 4, 13, 4)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(1114, 626)
+            Me.Panel1.Size = New System.Drawing.Size(1114, 622)
             Me.Panel1.TabIndex = 1
             '
             'chkIDDocs
@@ -301,7 +301,7 @@ Namespace DatabaseTestApplication2
             Me.chkIDDocs.AutoSize = True
             Me.chkIDDocs.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.chkIDDocs.Location = New System.Drawing.Point(865, 444)
-            Me.chkIDDocs.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.chkIDDocs.Margin = New System.Windows.Forms.Padding(4)
             Me.chkIDDocs.Name = "chkIDDocs"
             Me.chkIDDocs.Size = New System.Drawing.Size(35, 24)
             Me.chkIDDocs.TabIndex = 107
@@ -313,7 +313,7 @@ Namespace DatabaseTestApplication2
             Me.chkFundSource.AutoSize = True
             Me.chkFundSource.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.chkFundSource.Location = New System.Drawing.Point(585, 585)
-            Me.chkFundSource.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.chkFundSource.Margin = New System.Windows.Forms.Padding(4)
             Me.chkFundSource.Name = "chkFundSource"
             Me.chkFundSource.Size = New System.Drawing.Size(35, 24)
             Me.chkFundSource.TabIndex = 106
@@ -325,7 +325,7 @@ Namespace DatabaseTestApplication2
             Me.chkGISAssessment.AutoSize = True
             Me.chkGISAssessment.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.chkGISAssessment.Location = New System.Drawing.Point(585, 538)
-            Me.chkGISAssessment.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.chkGISAssessment.Margin = New System.Windows.Forms.Padding(4)
             Me.chkGISAssessment.Name = "chkGISAssessment"
             Me.chkGISAssessment.Size = New System.Drawing.Size(35, 24)
             Me.chkGISAssessment.TabIndex = 105
@@ -337,7 +337,7 @@ Namespace DatabaseTestApplication2
             Me.chkParcelReport.AutoSize = True
             Me.chkParcelReport.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.chkParcelReport.Location = New System.Drawing.Point(585, 491)
-            Me.chkParcelReport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.chkParcelReport.Margin = New System.Windows.Forms.Padding(4)
             Me.chkParcelReport.Name = "chkParcelReport"
             Me.chkParcelReport.Size = New System.Drawing.Size(35, 24)
             Me.chkParcelReport.TabIndex = 104
@@ -349,7 +349,7 @@ Namespace DatabaseTestApplication2
             Me.chkCompletedApp.AutoSize = True
             Me.chkCompletedApp.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.chkCompletedApp.Location = New System.Drawing.Point(585, 441)
-            Me.chkCompletedApp.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.chkCompletedApp.Margin = New System.Windows.Forms.Padding(4)
             Me.chkCompletedApp.Name = "chkCompletedApp"
             Me.chkCompletedApp.Size = New System.Drawing.Size(35, 24)
             Me.chkCompletedApp.TabIndex = 103
@@ -361,7 +361,7 @@ Namespace DatabaseTestApplication2
             Me.chkSatisfaction.AutoSize = True
             Me.chkSatisfaction.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.chkSatisfaction.Location = New System.Drawing.Point(223, 582)
-            Me.chkSatisfaction.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.chkSatisfaction.Margin = New System.Windows.Forms.Padding(4)
             Me.chkSatisfaction.Name = "chkSatisfaction"
             Me.chkSatisfaction.Size = New System.Drawing.Size(35, 24)
             Me.chkSatisfaction.TabIndex = 102
@@ -373,7 +373,7 @@ Namespace DatabaseTestApplication2
             Me.chkTaxBill.AutoSize = True
             Me.chkTaxBill.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.chkTaxBill.Location = New System.Drawing.Point(223, 538)
-            Me.chkTaxBill.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.chkTaxBill.Margin = New System.Windows.Forms.Padding(4)
             Me.chkTaxBill.Name = "chkTaxBill"
             Me.chkTaxBill.Size = New System.Drawing.Size(35, 24)
             Me.chkTaxBill.TabIndex = 101
@@ -385,7 +385,7 @@ Namespace DatabaseTestApplication2
             Me.chkDeed.AutoSize = True
             Me.chkDeed.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.chkDeed.Location = New System.Drawing.Point(223, 442)
-            Me.chkDeed.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.chkDeed.Margin = New System.Windows.Forms.Padding(4)
             Me.chkDeed.Name = "chkDeed"
             Me.chkDeed.Size = New System.Drawing.Size(35, 24)
             Me.chkDeed.TabIndex = 100
@@ -397,7 +397,7 @@ Namespace DatabaseTestApplication2
             Me.chkIncomeVerified.AutoSize = True
             Me.chkIncomeVerified.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.chkIncomeVerified.Location = New System.Drawing.Point(223, 491)
-            Me.chkIncomeVerified.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.chkIncomeVerified.Margin = New System.Windows.Forms.Padding(4)
             Me.chkIncomeVerified.Name = "chkIncomeVerified"
             Me.chkIncomeVerified.Size = New System.Drawing.Size(35, 24)
             Me.chkIncomeVerified.TabIndex = 99
@@ -448,7 +448,7 @@ Namespace DatabaseTestApplication2
             Me.ApplicationSubmission_dateTimePicker.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.ApplicationSubmission_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.ApplicationSubmission_dateTimePicker.Location = New System.Drawing.Point(223, 213)
-            Me.ApplicationSubmission_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.ApplicationSubmission_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.ApplicationSubmission_dateTimePicker.Name = "ApplicationSubmission_dateTimePicker"
             Me.ApplicationSubmission_dateTimePicker.Size = New System.Drawing.Size(265, 27)
             Me.ApplicationSubmission_dateTimePicker.TabIndex = 2
@@ -473,7 +473,7 @@ Namespace DatabaseTestApplication2
             Me.AdditionalDocuments_dateTimePicker.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.AdditionalDocuments_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.AdditionalDocuments_dateTimePicker.Location = New System.Drawing.Point(703, 213)
-            Me.AdditionalDocuments_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.AdditionalDocuments_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.AdditionalDocuments_dateTimePicker.Name = "AdditionalDocuments_dateTimePicker"
             Me.AdditionalDocuments_dateTimePicker.Size = New System.Drawing.Size(265, 27)
             Me.AdditionalDocuments_dateTimePicker.TabIndex = 4
@@ -498,7 +498,7 @@ Namespace DatabaseTestApplication2
             Me.ApprovalSiteVisit_dateTimePicker.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.ApprovalSiteVisit_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.ApprovalSiteVisit_dateTimePicker.Location = New System.Drawing.Point(223, 260)
-            Me.ApprovalSiteVisit_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.ApprovalSiteVisit_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.ApprovalSiteVisit_dateTimePicker.Name = "ApprovalSiteVisit_dateTimePicker"
             Me.ApprovalSiteVisit_dateTimePicker.Size = New System.Drawing.Size(265, 27)
             Me.ApprovalSiteVisit_dateTimePicker.TabIndex = 6
@@ -523,7 +523,7 @@ Namespace DatabaseTestApplication2
             Me.SiteVisitComplete_dateTimePicker.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.SiteVisitComplete_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.SiteVisitComplete_dateTimePicker.Location = New System.Drawing.Point(703, 256)
-            Me.SiteVisitComplete_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.SiteVisitComplete_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.SiteVisitComplete_dateTimePicker.Name = "SiteVisitComplete_dateTimePicker"
             Me.SiteVisitComplete_dateTimePicker.Size = New System.Drawing.Size(265, 27)
             Me.SiteVisitComplete_dateTimePicker.TabIndex = 8
@@ -548,7 +548,7 @@ Namespace DatabaseTestApplication2
             Me.ScopeOfWork_dateTimePicker.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.ScopeOfWork_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.ScopeOfWork_dateTimePicker.Location = New System.Drawing.Point(223, 308)
-            Me.ScopeOfWork_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.ScopeOfWork_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.ScopeOfWork_dateTimePicker.Name = "ScopeOfWork_dateTimePicker"
             Me.ScopeOfWork_dateTimePicker.Size = New System.Drawing.Size(265, 27)
             Me.ScopeOfWork_dateTimePicker.TabIndex = 10
@@ -573,7 +573,7 @@ Namespace DatabaseTestApplication2
             Me.ContractComplete_dateTimePicker.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.ContractComplete_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.ContractComplete_dateTimePicker.Location = New System.Drawing.Point(703, 308)
-            Me.ContractComplete_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.ContractComplete_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.ContractComplete_dateTimePicker.Name = "ContractComplete_dateTimePicker"
             Me.ContractComplete_dateTimePicker.Size = New System.Drawing.Size(265, 27)
             Me.ContractComplete_dateTimePicker.TabIndex = 12
@@ -598,7 +598,7 @@ Namespace DatabaseTestApplication2
             Me.WorkComplete_dateTimePicker.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.WorkComplete_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.WorkComplete_dateTimePicker.Location = New System.Drawing.Point(223, 357)
-            Me.WorkComplete_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.WorkComplete_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
             Me.WorkComplete_dateTimePicker.Name = "WorkComplete_dateTimePicker"
             Me.WorkComplete_dateTimePicker.Size = New System.Drawing.Size(265, 27)
             Me.WorkComplete_dateTimePicker.TabIndex = 14
@@ -621,7 +621,7 @@ Namespace DatabaseTestApplication2
             '
             Me.IDDocumentsTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.IDDocumentsTextBox.Location = New System.Drawing.Point(484, 68)
-            Me.IDDocumentsTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.IDDocumentsTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.IDDocumentsTextBox.Name = "IDDocumentsTextBox"
             Me.IDDocumentsTextBox.Size = New System.Drawing.Size(132, 27)
             Me.IDDocumentsTextBox.TabIndex = 16
@@ -644,7 +644,7 @@ Namespace DatabaseTestApplication2
             '
             Me.IncomeVerifiedTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.IncomeVerifiedTextBox.Location = New System.Drawing.Point(625, 103)
-            Me.IncomeVerifiedTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.IncomeVerifiedTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.IncomeVerifiedTextBox.Name = "IncomeVerifiedTextBox"
             Me.IncomeVerifiedTextBox.Size = New System.Drawing.Size(132, 27)
             Me.IncomeVerifiedTextBox.TabIndex = 18
@@ -667,7 +667,7 @@ Namespace DatabaseTestApplication2
             '
             Me.DeedOfTrustTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.DeedOfTrustTextBox.Location = New System.Drawing.Point(625, 68)
-            Me.DeedOfTrustTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.DeedOfTrustTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.DeedOfTrustTextBox.Name = "DeedOfTrustTextBox"
             Me.DeedOfTrustTextBox.Size = New System.Drawing.Size(132, 27)
             Me.DeedOfTrustTextBox.TabIndex = 20
@@ -690,7 +690,7 @@ Namespace DatabaseTestApplication2
             '
             Me.TaxBillTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.TaxBillTextBox.Location = New System.Drawing.Point(625, 139)
-            Me.TaxBillTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.TaxBillTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.TaxBillTextBox.Name = "TaxBillTextBox"
             Me.TaxBillTextBox.Size = New System.Drawing.Size(132, 27)
             Me.TaxBillTextBox.TabIndex = 22
@@ -713,7 +713,7 @@ Namespace DatabaseTestApplication2
             '
             Me.SatisfactionTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.SatisfactionTextBox.Location = New System.Drawing.Point(767, 68)
-            Me.SatisfactionTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.SatisfactionTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.SatisfactionTextBox.Name = "SatisfactionTextBox"
             Me.SatisfactionTextBox.Size = New System.Drawing.Size(132, 27)
             Me.SatisfactionTextBox.TabIndex = 24
@@ -736,7 +736,7 @@ Namespace DatabaseTestApplication2
             '
             Me.CompletedApplicationTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.CompletedApplicationTextBox.Location = New System.Drawing.Point(767, 103)
-            Me.CompletedApplicationTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.CompletedApplicationTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.CompletedApplicationTextBox.Name = "CompletedApplicationTextBox"
             Me.CompletedApplicationTextBox.Size = New System.Drawing.Size(132, 27)
             Me.CompletedApplicationTextBox.TabIndex = 26
@@ -759,7 +759,7 @@ Namespace DatabaseTestApplication2
             '
             Me.ParcelReportTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.ParcelReportTextBox.Location = New System.Drawing.Point(767, 139)
-            Me.ParcelReportTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.ParcelReportTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.ParcelReportTextBox.Name = "ParcelReportTextBox"
             Me.ParcelReportTextBox.Size = New System.Drawing.Size(132, 27)
             Me.ParcelReportTextBox.TabIndex = 28
@@ -782,7 +782,7 @@ Namespace DatabaseTestApplication2
             '
             Me.GISAssessmentTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.GISAssessmentTextBox.Location = New System.Drawing.Point(908, 103)
-            Me.GISAssessmentTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.GISAssessmentTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.GISAssessmentTextBox.Name = "GISAssessmentTextBox"
             Me.GISAssessmentTextBox.Size = New System.Drawing.Size(132, 27)
             Me.GISAssessmentTextBox.TabIndex = 30
@@ -805,7 +805,7 @@ Namespace DatabaseTestApplication2
             '
             Me.FundingSourceTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.FundingSourceTextBox.Location = New System.Drawing.Point(908, 143)
-            Me.FundingSourceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.FundingSourceTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.FundingSourceTextBox.Name = "FundingSourceTextBox"
             Me.FundingSourceTextBox.Size = New System.Drawing.Size(132, 27)
             Me.FundingSourceTextBox.TabIndex = 32
@@ -827,15 +827,13 @@ Namespace DatabaseTestApplication2
             '
             Me.General_Info_UID_comboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
             Me.General_Info_UID_comboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-            Me.General_Info_UID_comboBox.Enabled = False
             Me.General_Info_UID_comboBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.General_Info_UID_comboBox.FormattingEnabled = True
-            Me.General_Info_UID_comboBox.Location = New System.Drawing.Point(223, 143)
-            Me.General_Info_UID_comboBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.General_Info_UID_comboBox.Location = New System.Drawing.Point(222, 149)
+            Me.General_Info_UID_comboBox.Margin = New System.Windows.Forms.Padding(4)
             Me.General_Info_UID_comboBox.Name = "General_Info_UID_comboBox"
             Me.General_Info_UID_comboBox.Size = New System.Drawing.Size(265, 28)
             Me.General_Info_UID_comboBox.TabIndex = 34
-            Me.General_Info_UID_comboBox.Visible = False
             '
             'mStripMENUBAR
             '
@@ -879,35 +877,35 @@ Namespace DatabaseTestApplication2
             Me.panel3.Controls.Add(Me.panel5)
             Me.panel3.Controls.Add(Me.panel6)
             Me.panel3.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.panel3.Location = New System.Drawing.Point(0, 27)
-            Me.panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel3.Location = New System.Drawing.Point(0, 31)
+            Me.panel3.Margin = New System.Windows.Forms.Padding(4)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(1140, 638)
+            Me.panel3.Size = New System.Drawing.Size(1140, 634)
             Me.panel3.TabIndex = 19
             '
             'panel4
             '
             Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
             Me.panel4.Location = New System.Drawing.Point(1127, 0)
-            Me.panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel4.Margin = New System.Windows.Forms.Padding(4)
             Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(13, 626)
+            Me.panel4.Size = New System.Drawing.Size(13, 622)
             Me.panel4.TabIndex = 3
             '
             'panel5
             '
             Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
             Me.panel5.Location = New System.Drawing.Point(0, 0)
-            Me.panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel5.Margin = New System.Windows.Forms.Padding(4)
             Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(13, 626)
+            Me.panel5.Size = New System.Drawing.Size(13, 622)
             Me.panel5.TabIndex = 5
             '
             'panel6
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 626)
-            Me.panel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel6.Location = New System.Drawing.Point(0, 622)
+            Me.panel6.Margin = New System.Windows.Forms.Padding(4)
             Me.panel6.Name = "panel6"
             Me.panel6.Size = New System.Drawing.Size(1140, 12)
             Me.panel6.TabIndex = 6
@@ -920,7 +918,7 @@ Namespace DatabaseTestApplication2
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
             Me.MainMenuStrip = Me.mStripMENUBAR
-            Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Margin = New System.Windows.Forms.Padding(4)
             Me.Name = "frmrepairs"
             Me.Text = "Repairs"
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
