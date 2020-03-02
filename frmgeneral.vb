@@ -34,12 +34,12 @@ Namespace DatabaseTestApplication2
 			Me.countryAddressTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "countryAddress", True))
 			Me.phoneNumberTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "phoneNumber", True))
 			Me.emailTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "email", True))
-			Me.genderTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "gender", True))
+			Me.genderComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "gender", True))
 			Me.birthdate_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "birthdate", True))
 			Me.householdSizeTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "householdSize", True))
 			Me.householdAMITextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "householdAMI", True))
-			Me.raceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "race", True))
-			Me.maritalStatusTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "maritalStatus", True))
+			Me.raceComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "race", True))
+			Me.maritalStatusComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "maritalStatus", True))
 			Me.notesTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "notes", True))
 		End Sub
 
@@ -187,15 +187,15 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub genderTextBox_Validating(sender As Object, e As CancelEventArgs) Handles genderTextBox.Validating
+		Private Sub genderComboBox_Validating(sender As Object, e As CancelEventArgs)
 
 			e.Cancel = False
-			If String.IsNullOrEmpty(genderTextBox.Text) Then
+			If String.IsNullOrEmpty(genderComboBox.Text) Then
 				e.Cancel = True
-				ErrorProvider1.SetError(genderTextBox, "The field gender is required")
+				ErrorProvider1.SetError(genderComboBox, "The field gender is required")
 			End If
 			If Not e.Cancel Then
-				ErrorProvider1.SetError(genderTextBox, "")
+				ErrorProvider1.SetError(genderComboBox, "")
 			End If
 		End Sub
 
@@ -235,33 +235,33 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub raceTextBox_Validating(sender As Object, e As CancelEventArgs) Handles raceTextBox.Validating
+		Private Sub raceComboBox_Validating(sender As Object, e As CancelEventArgs)
 
 			e.Cancel = False
-			If String.IsNullOrEmpty(raceTextBox.Text) Then
+			If String.IsNullOrEmpty(raceComboBox.Text) Then
 				e.Cancel = True
-				ErrorProvider1.SetError(raceTextBox, "The field race is required")
+				ErrorProvider1.SetError(raceComboBox, "The field race is required")
 			End If
 			If Not e.Cancel Then
-				ErrorProvider1.SetError(raceTextBox, "")
+				ErrorProvider1.SetError(raceComboBox, "")
 			End If
 		End Sub
 
-		Private Sub maritalStatusTextBox_Validating(sender As Object, e As CancelEventArgs) Handles maritalStatusTextBox.Validating
+		Private Sub maritalStatusComboBox_Validating(sender As Object, e As CancelEventArgs)
 
 			e.Cancel = False
-			If String.IsNullOrEmpty(maritalStatusTextBox.Text) Then
+			If String.IsNullOrEmpty(maritalStatusComboBox.Text) Then
 				e.Cancel = True
-				ErrorProvider1.SetError(maritalStatusTextBox, "The field maritalStatus is required")
+				ErrorProvider1.SetError(maritalStatusComboBox, "The field maritalStatus is required")
 			End If
 			Dim v As Integer
-			Dim s As String = maritalStatusTextBox.Text
+			Dim s As String = maritalStatusComboBox.Text
 			If Not Integer.TryParse(s, v) Then
 				e.Cancel = True
-				ErrorProvider1.SetError(maritalStatusTextBox, "The field maritalStatus must be Integer.")
+				ErrorProvider1.SetError(maritalStatusComboBox, "The field maritalStatus must be Integer.")
 			End If
 			If Not e.Cancel Then
-				ErrorProvider1.SetError(maritalStatusTextBox, "")
+				ErrorProvider1.SetError(maritalStatusComboBox, "")
 			End If
 		End Sub
 
