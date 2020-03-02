@@ -53,6 +53,7 @@ Namespace DatabaseTestApplication2
             Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
             Me.panel3 = New System.Windows.Forms.Panel()
             Me.Panel1 = New System.Windows.Forms.Panel()
+            Me.Label1 = New System.Windows.Forms.Label()
             Me.PictureBox1 = New System.Windows.Forms.PictureBox()
             Me.GroupBox6 = New System.Windows.Forms.GroupBox()
             Me.Mortgage6Forgivable = New System.Windows.Forms.CheckBox()
@@ -64,6 +65,7 @@ Namespace DatabaseTestApplication2
             Me.mortgage6NumberOfYearsLabel = New System.Windows.Forms.Label()
             Me.mortgage6OriginalBalanceTextBox = New System.Windows.Forms.TextBox()
             Me.mortgage6NumberOfYearsTextBox = New System.Windows.Forms.TextBox()
+            Me.mortgage6ForgivableTextBox = New System.Windows.Forms.TextBox()
             Me.Mortgage2Groupbox = New System.Windows.Forms.GroupBox()
             Me.Mortgage2Forgivable = New System.Windows.Forms.CheckBox()
             Me.Mortgage2Dropdown = New System.Windows.Forms.ComboBox()
@@ -96,8 +98,8 @@ Namespace DatabaseTestApplication2
             Me.mortgage4NumberOfYearsTextBox = New System.Windows.Forms.TextBox()
             Me.mortgage2BankTextBox = New System.Windows.Forms.TextBox()
             Me.mortgage6BankTextBox = New System.Windows.Forms.TextBox()
-            Me.mortgage6ForgivableTextBox = New System.Windows.Forms.TextBox()
             Me.mortgage5BankTextBox = New System.Windows.Forms.TextBox()
+            Me.HUDHoursCompleteTextBox = New System.Windows.Forms.TextBox()
             Me.mortgage4BankTextBox = New System.Windows.Forms.TextBox()
             Me.mortgage4ForgivableTextBox = New System.Windows.Forms.TextBox()
             Me.mortgage5ForgivableTextBox = New System.Windows.Forms.TextBox()
@@ -116,7 +118,6 @@ Namespace DatabaseTestApplication2
             Me.mortgage1OriginalBalanceTextBox = New System.Windows.Forms.TextBox()
             Me.mortgage1NumberOfYearsTextBox = New System.Windows.Forms.TextBox()
             Me.mortgage1ForgivableTextBox = New System.Windows.Forms.TextBox()
-            Me.Label1 = New System.Windows.Forms.Label()
             Me.Morgage3Box = New System.Windows.Forms.GroupBox()
             Me.Mortgage3Dropdown = New System.Windows.Forms.ComboBox()
             Me.Mortgage3Forgivable = New System.Windows.Forms.CheckBox()
@@ -145,7 +146,6 @@ Namespace DatabaseTestApplication2
             Me.HUDHoursCheckbox = New System.Windows.Forms.CheckBox()
             Me.HUDHoursDate_dateTimePicker = New System.Windows.Forms.DateTimePicker()
             Me.monthlyDepositAmountTextBox = New System.Windows.Forms.TextBox()
-            Me.HUDHoursCompleteTextBox = New System.Windows.Forms.TextBox()
             Me.SweatEquityGroupbox = New System.Windows.Forms.GroupBox()
             Me.SweatEquityNumeric = New System.Windows.Forms.NumericUpDown()
             Me.sweatEquityDate_dateTimePicker = New System.Windows.Forms.DateTimePicker()
@@ -359,6 +359,18 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Size = New System.Drawing.Size(1295, 517)
             Me.Panel1.TabIndex = 1
             '
+            'Label1
+            '
+            Me.Label1.AutoSize = True
+            Me.Label1.BackColor = System.Drawing.Color.Transparent
+            Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+            Me.Label1.Location = New System.Drawing.Point(2, 36)
+            Me.Label1.Name = "Label1"
+            Me.Label1.Size = New System.Drawing.Size(296, 80)
+            Me.Label1.TabIndex = 90
+            Me.Label1.Text = "Tracking"
+            '
             'PictureBox1
             '
             Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
@@ -479,6 +491,15 @@ Namespace DatabaseTestApplication2
             Me.mortgage6NumberOfYearsTextBox.Name = "mortgage6NumberOfYearsTextBox"
             Me.mortgage6NumberOfYearsTextBox.Size = New System.Drawing.Size(174, 22)
             Me.mortgage6NumberOfYearsTextBox.TabIndex = 82
+            '
+            'mortgage6ForgivableTextBox
+            '
+            Me.mortgage6ForgivableTextBox.Location = New System.Drawing.Point(131, 108)
+            Me.mortgage6ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.mortgage6ForgivableTextBox.Name = "mortgage6ForgivableTextBox"
+            Me.mortgage6ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.mortgage6ForgivableTextBox.TabIndex = 78
+            Me.mortgage6ForgivableTextBox.TabStop = False
             '
             'Mortgage2Groupbox
             '
@@ -825,15 +846,6 @@ Namespace DatabaseTestApplication2
             Me.mortgage6BankTextBox.TabIndex = 76
             Me.mortgage6BankTextBox.Visible = False
             '
-            'mortgage6ForgivableTextBox
-            '
-            Me.mortgage6ForgivableTextBox.Location = New System.Drawing.Point(131, 108)
-            Me.mortgage6ForgivableTextBox.Margin = New System.Windows.Forms.Padding(4)
-            Me.mortgage6ForgivableTextBox.Name = "mortgage6ForgivableTextBox"
-            Me.mortgage6ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
-            Me.mortgage6ForgivableTextBox.TabIndex = 78
-            Me.mortgage6ForgivableTextBox.TabStop = False
-            '
             'mortgage5BankTextBox
             '
             Me.mortgage5BankTextBox.Location = New System.Drawing.Point(8, 476)
@@ -842,6 +854,14 @@ Namespace DatabaseTestApplication2
             Me.mortgage5BankTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage5BankTextBox.TabIndex = 66
             Me.mortgage5BankTextBox.Visible = False
+            '
+            'HUDHoursCompleteTextBox
+            '
+            Me.HUDHoursCompleteTextBox.Location = New System.Drawing.Point(99, 65)
+            Me.HUDHoursCompleteTextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.HUDHoursCompleteTextBox.Name = "HUDHoursCompleteTextBox"
+            Me.HUDHoursCompleteTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.HUDHoursCompleteTextBox.TabIndex = 14
             '
             'mortgage4BankTextBox
             '
@@ -1018,18 +1038,6 @@ Namespace DatabaseTestApplication2
             Me.mortgage1ForgivableTextBox.Name = "mortgage1ForgivableTextBox"
             Me.mortgage1ForgivableTextBox.Size = New System.Drawing.Size(132, 22)
             Me.mortgage1ForgivableTextBox.TabIndex = 28
-            '
-            'Label1
-            '
-            Me.Label1.AutoSize = True
-            Me.Label1.BackColor = System.Drawing.Color.Transparent
-            Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.Label1.Location = New System.Drawing.Point(2, 36)
-            Me.Label1.Name = "Label1"
-            Me.Label1.Size = New System.Drawing.Size(296, 80)
-            Me.Label1.TabIndex = 90
-            Me.Label1.Text = "Tracking"
             '
             'Morgage3Box
             '
@@ -1341,14 +1349,6 @@ Namespace DatabaseTestApplication2
             Me.monthlyDepositAmountTextBox.Size = New System.Drawing.Size(132, 22)
             Me.monthlyDepositAmountTextBox.TabIndex = 10
             Me.monthlyDepositAmountTextBox.Visible = False
-            '
-            'HUDHoursCompleteTextBox
-            '
-            Me.HUDHoursCompleteTextBox.Location = New System.Drawing.Point(99, 65)
-            Me.HUDHoursCompleteTextBox.Margin = New System.Windows.Forms.Padding(4)
-            Me.HUDHoursCompleteTextBox.Name = "HUDHoursCompleteTextBox"
-            Me.HUDHoursCompleteTextBox.Size = New System.Drawing.Size(132, 22)
-            Me.HUDHoursCompleteTextBox.TabIndex = 14
             '
             'SweatEquityGroupbox
             '

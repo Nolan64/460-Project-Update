@@ -761,6 +761,7 @@ Namespace DatabaseTestApplication2
 			Me.Close()
 
 		End Sub
+
 	End Class
 
 End Namespace
