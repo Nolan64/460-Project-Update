@@ -18,11 +18,6 @@ Public Class Form1
         command.Parameters.Add("@username", MySqlDbType.VarChar).Value = txtUN.Text
         command.Parameters.Add("@password", MySqlDbType.VarChar).Value = txtPW.Text
 
-        'This should pass the value to the main screen
-        Dim OBJ As New frmmain_menu
-        OBJ.usersName = txtUN.Text
-        OBJ.Show()
-
         Dim adapter As New MySqlDataAdapter(command)
         Dim table As New DataTable()
 
@@ -35,7 +30,10 @@ Public Class Form1
         Else
 
             MessageBox.Show("Logged In")
-            frmmain_menu.Show()
+            'This should pass the value to the main screen
+            Dim OBJ As New frmmain_menu
+            OBJ.usersName = txtUN.Text
+            OBJ.Show()
 
 
 

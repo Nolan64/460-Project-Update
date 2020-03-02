@@ -311,7 +311,7 @@ Namespace DatabaseTestApplication2
             'PictureBox1
             '
             Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-            Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+            Me.PictureBox1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
             Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
             Me.PictureBox1.Location = New System.Drawing.Point(720, 31)
             Me.PictureBox1.Name = "PictureBox1"
@@ -324,7 +324,7 @@ Namespace DatabaseTestApplication2
             Me.generalInfo.AutoSize = True
             Me.generalInfo.BackColor = System.Drawing.Color.Transparent
             Me.generalInfo.Font = New System.Drawing.Font("Microsoft YaHei UI", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.generalInfo.Location = New System.Drawing.Point(353, 77)
+            Me.generalInfo.Location = New System.Drawing.Point(7, 42)
             Me.generalInfo.Name = "generalInfo"
             Me.generalInfo.Size = New System.Drawing.Size(271, 52)
             Me.generalInfo.TabIndex = 38

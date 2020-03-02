@@ -6,4 +6,8 @@
 
         'test
     End Sub
+
+    Private Sub addApplicant_Click(sender As Object, e As EventArgs) Handles addApplicant.Click
+
+    End Sub
 End Class
