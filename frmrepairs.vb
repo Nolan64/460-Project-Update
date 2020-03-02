@@ -229,6 +229,7 @@ Namespace DatabaseTestApplication2
 			repairsBindingSource.AddNew()
 		End Sub
 
-	End Class
-	
+
+    End Class
+
 End Namespace
