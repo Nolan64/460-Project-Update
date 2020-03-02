@@ -30,7 +30,10 @@ Partial Class frmmain_menu
         Me.repairs = New System.Windows.Forms.Button()
         Me.settings = New System.Windows.Forms.Button()
         Me.userName = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.THIS_WILL_BE_A_SEARCH_BAR = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox1
@@ -100,6 +103,21 @@ Partial Class frmmain_menu
         Me.userName.TabIndex = 10
         Me.userName.Text = "GET USER"
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(283, 12)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(885, 580)
+        Me.DataGridView1.TabIndex = 11
+        '
+        'THIS_WILL_BE_A_SEARCH_BAR
+        '
+        Me.THIS_WILL_BE_A_SEARCH_BAR.Location = New System.Drawing.Point(283, -1)
+        Me.THIS_WILL_BE_A_SEARCH_BAR.Name = "THIS_WILL_BE_A_SEARCH_BAR"
+        Me.THIS_WILL_BE_A_SEARCH_BAR.Size = New System.Drawing.Size(885, 20)
+        Me.THIS_WILL_BE_A_SEARCH_BAR.TabIndex = 12
+        '
         'frmmain_menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -108,6 +126,8 @@ Partial Class frmmain_menu
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1170, 600)
+        Me.Controls.Add(Me.THIS_WILL_BE_A_SEARCH_BAR)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.userName)
         Me.Controls.Add(Me.settings)
         Me.Controls.Add(Me.repairs)
@@ -119,6 +139,7 @@ Partial Class frmmain_menu
         Me.Name = "frmmain_menu"
         Me.Text = "MainMenu"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -131,4 +152,6 @@ Partial Class frmmain_menu
     Friend WithEvents repairs As Button
     Friend WithEvents settings As Button
     Friend WithEvents userName As Label
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents THIS_WILL_BE_A_SEARCH_BAR As TextBox
 End Class
