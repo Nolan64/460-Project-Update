@@ -166,10 +166,10 @@
     <Compile Include="homeownership.vb">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="MainMenu.Designer.vb">
-      <DependentUpon>MainMenu.vb</DependentUpon>
+    <Compile Include="frmmain_menu.Designer.vb">
+      <DependentUpon>frmmain_menu.vb</DependentUpon>
     </Compile>
-    <Compile Include="MainMenu.vb">
+    <Compile Include="frmmain_menu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Model1.Context.vb">
@@ -241,8 +241,8 @@
     <EmbeddedResource Include="frmtracking.resx">
       <DependentUpon>frmtracking.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainMenu.resx">
-      <DependentUpon>MainMenu.vb</DependentUpon>
+    <EmbeddedResource Include="frmmain_menu.resx">
+      <DependentUpon>frmmain_menu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
