@@ -260,6 +260,104 @@
           <Property Name="password" Type="varchar" MaxLength="32" Nullable="false" />
           <Property Name="create_time" Type="timestamp" Precision="0" StoreGeneratedPattern="Identity" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'def.mydb.all_table_vw' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="all_table_vw">
+          <Key>
+            <PropertyRef Name="UID" />
+          </Key>
+          <Property Name="UID" Type="int" Nullable="false" />
+          <Property Name="firstName" Type="varchar" MaxLength="45" />
+          <Property Name="lastName" Type="varchar" MaxLength="45" />
+          <Property Name="inquiryDate" Type="date" />
+          <Property Name="streetAddress" Type="varchar" MaxLength="45" />
+          <Property Name="cityAddress" Type="varchar" MaxLength="45" />
+          <Property Name="zipAddress" Type="varchar" MaxLength="45" />
+          <Property Name="stateAddress" Type="varchar" MaxLength="2" />
+          <Property Name="countryAddress" Type="varchar" MaxLength="45" />
+          <Property Name="phoneNumber" Type="varchar" MaxLength="10" />
+          <Property Name="email" Type="varchar" MaxLength="255" />
+          <Property Name="gender" Type="varchar" MaxLength="8" />
+          <Property Name="birthdate" Type="date" />
+          <Property Name="householdSize" Type="int" />
+          <Property Name="householdAMI" Type="double" />
+          <Property Name="race" Type="varchar" MaxLength="45" />
+          <Property Name="maritalStatus" Type="tinyint" />
+          <Property Name="notes" Type="mediumtext" />
+          <Property Name="applicantInfoMeeting" Type="date" />
+          <Property Name="applicationChecklist1" Type="date" />
+          <Property Name="applicationChecklist2" Type="date" />
+          <Property Name="employmentVerified" Type="tinyint" />
+          <Property Name="landlordReference" Type="tinyint" />
+          <Property Name="previousLandlordReference" Type="tinyint" />
+          <Property Name="backgroundCheck" Type="tinyint" />
+          <Property Name="CCCBudget" Type="tinyint" />
+          <Property Name="creditReportRun" Type="tinyint" />
+          <Property Name="homeVisit" Type="date" />
+          <Property Name="committeeDecision" Type="date" />
+          <Property Name="committeeAccepted" Type="tinyint" />
+          <Property Name="committeeReason" Type="varchar" MaxLength="45" />
+          <Property Name="boardVote" Type="date" />
+          <Property Name="boardAccepted" Type="tinyint" />
+          <Property Name="boardReason" Type="varchar" MaxLength="45" />
+          <Property Name="handbookReview" Type="date" />
+          <Property Name="ApplicationSubmission" Type="date" />
+          <Property Name="AdditionalDocuments" Type="date" />
+          <Property Name="ApprovalSiteVisit" Type="date" />
+          <Property Name="SiteVisitComplete" Type="date" />
+          <Property Name="ScopeOfWork" Type="date" />
+          <Property Name="ContractComplete" Type="date" />
+          <Property Name="WorkComplete" Type="date" />
+          <Property Name="IDDocuments" Type="tinyint" />
+          <Property Name="IncomeVerified" Type="tinyint" />
+          <Property Name="DeedOfTrust" Type="tinyint" />
+          <Property Name="TaxBill" Type="tinyint" />
+          <Property Name="Satisfaction" Type="tinyint" />
+          <Property Name="CompletedApplication" Type="tinyint" />
+          <Property Name="ParcelReport" Type="tinyint" />
+          <Property Name="GISAssessment" Type="tinyint" />
+          <Property Name="FundingSource" Type="varchar" MaxLength="45" />
+          <Property Name="sweatEquityDate" Type="date" />
+          <Property Name="sweatEquityAmount" Type="int" />
+          <Property Name="monthlyDepositDate" Type="date" />
+          <Property Name="monthlyDepositAmount" Type="double" />
+          <Property Name="HUDHoursDate" Type="date" />
+          <Property Name="HUDHoursComplete" Type="tinyint" />
+          <Property Name="financeClassesDate" Type="date" />
+          <Property Name="financeClassesComplete" Type="tinyint" />
+          <Property Name="homebuyerEducationDate" Type="date" />
+          <Property Name="homebuyerEducationAmount" Type="tinyint" />
+          <Property Name="mortgage1Price" Type="double" />
+          <Property Name="mortgage1Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage1Forgivable" Type="tinyint" />
+          <Property Name="mortgage1OriginalBalance" Type="double" />
+          <Property Name="mortgage1NumberOfYears" Type="int" />
+          <Property Name="mortgage2Price" Type="double" />
+          <Property Name="mortgage2Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage2Forgivable" Type="tinyint" />
+          <Property Name="mortgage2OriginalBalance" Type="double" />
+          <Property Name="morgage2NumberOfYears" Type="int" />
+          <Property Name="mortgage3Price" Type="double" />
+          <Property Name="mortgage3Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage3Forgivable" Type="tinyint" />
+          <Property Name="mortgage3OriginalBalance" Type="double" />
+          <Property Name="mortgage3NumberOfYears" Type="int" />
+          <Property Name="mortgage4Price" Type="double" />
+          <Property Name="mortgage4Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage4Forgivable" Type="tinyint" />
+          <Property Name="mortgage4OriginalBalance" Type="double" />
+          <Property Name="mortgage4NumberOfYears" Type="int" />
+          <Property Name="mortgage5Price" Type="double" />
+          <Property Name="mortgage5Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage5Forgivable" Type="tinyint" />
+          <Property Name="mortgage5OriginalBalance" Type="double" />
+          <Property Name="mortgage5NumberOfYears" Type="int" />
+          <Property Name="mortgage6Price" Type="double" />
+          <Property Name="mortgage6Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage6Forgivable" Type="tinyint" />
+          <Property Name="mortgage6OriginalBalance" Type="double" />
+          <Property Name="mortgage6NumberOfYears" Type="int" />
+        </EntityType>
         <Association Name="fk_general_has_survey_general1">
           <End Role="general" Type="Self.general" Multiplicity="1" />
           <End Role="general_has_survey" Type="Self.general_has_survey" Multiplicity="*" />
@@ -341,6 +439,101 @@
           <EntitySet Name="survey_results" EntityType="Self.survey_results" Schema="mydb" store:Type="Tables" />
           <EntitySet Name="tracking" EntityType="Self.tracking" Schema="mydb" store:Type="Tables" />
           <EntitySet Name="user" EntityType="Self.user" Schema="mydb" store:Type="Tables" />
+          <EntitySet Name="all_table_vw" EntityType="Self.all_table_vw" store:Type="Views" store:Schema="mydb">
+            <DefiningQuery>SELECT
+`all_table_vw`.`UID`, 
+`all_table_vw`.`firstName`, 
+`all_table_vw`.`lastName`, 
+`all_table_vw`.`inquiryDate`, 
+`all_table_vw`.`streetAddress`, 
+`all_table_vw`.`cityAddress`, 
+`all_table_vw`.`zipAddress`, 
+`all_table_vw`.`stateAddress`, 
+`all_table_vw`.`countryAddress`, 
+`all_table_vw`.`phoneNumber`, 
+`all_table_vw`.`email`, 
+`all_table_vw`.`gender`, 
+`all_table_vw`.`birthdate`, 
+`all_table_vw`.`householdSize`, 
+`all_table_vw`.`householdAMI`, 
+`all_table_vw`.`race`, 
+`all_table_vw`.`maritalStatus`, 
+`all_table_vw`.`notes`, 
+`all_table_vw`.`applicantInfoMeeting`, 
+`all_table_vw`.`applicationChecklist1`, 
+`all_table_vw`.`applicationChecklist2`, 
+`all_table_vw`.`employmentVerified`, 
+`all_table_vw`.`landlordReference`, 
+`all_table_vw`.`previousLandlordReference`, 
+`all_table_vw`.`backgroundCheck`, 
+`all_table_vw`.`CCCBudget`, 
+`all_table_vw`.`creditReportRun`, 
+`all_table_vw`.`homeVisit`, 
+`all_table_vw`.`committeeDecision`, 
+`all_table_vw`.`committeeAccepted`, 
+`all_table_vw`.`committeeReason`, 
+`all_table_vw`.`boardVote`, 
+`all_table_vw`.`boardAccepted`, 
+`all_table_vw`.`boardReason`, 
+`all_table_vw`.`handbookReview`, 
+`all_table_vw`.`ApplicationSubmission`, 
+`all_table_vw`.`AdditionalDocuments`, 
+`all_table_vw`.`ApprovalSiteVisit`, 
+`all_table_vw`.`SiteVisitComplete`, 
+`all_table_vw`.`ScopeOfWork`, 
+`all_table_vw`.`ContractComplete`, 
+`all_table_vw`.`WorkComplete`, 
+`all_table_vw`.`IDDocuments`, 
+`all_table_vw`.`IncomeVerified`, 
+`all_table_vw`.`DeedOfTrust`, 
+`all_table_vw`.`TaxBill`, 
+`all_table_vw`.`Satisfaction`, 
+`all_table_vw`.`CompletedApplication`, 
+`all_table_vw`.`ParcelReport`, 
+`all_table_vw`.`GISAssessment`, 
+`all_table_vw`.`FundingSource`, 
+`all_table_vw`.`sweatEquityDate`, 
+`all_table_vw`.`sweatEquityAmount`, 
+`all_table_vw`.`monthlyDepositDate`, 
+`all_table_vw`.`monthlyDepositAmount`, 
+`all_table_vw`.`HUDHoursDate`, 
+`all_table_vw`.`HUDHoursComplete`, 
+`all_table_vw`.`financeClassesDate`, 
+`all_table_vw`.`financeClassesComplete`, 
+`all_table_vw`.`homebuyerEducationDate`, 
+`all_table_vw`.`homebuyerEducationAmount`, 
+`all_table_vw`.`mortgage1Price`, 
+`all_table_vw`.`mortgage1Bank`, 
+`all_table_vw`.`mortgage1Forgivable`, 
+`all_table_vw`.`mortgage1OriginalBalance`, 
+`all_table_vw`.`mortgage1NumberOfYears`, 
+`all_table_vw`.`mortgage2Price`, 
+`all_table_vw`.`mortgage2Bank`, 
+`all_table_vw`.`mortgage2Forgivable`, 
+`all_table_vw`.`mortgage2OriginalBalance`, 
+`all_table_vw`.`morgage2NumberOfYears`, 
+`all_table_vw`.`mortgage3Price`, 
+`all_table_vw`.`mortgage3Bank`, 
+`all_table_vw`.`mortgage3Forgivable`, 
+`all_table_vw`.`mortgage3OriginalBalance`, 
+`all_table_vw`.`mortgage3NumberOfYears`, 
+`all_table_vw`.`mortgage4Price`, 
+`all_table_vw`.`mortgage4Bank`, 
+`all_table_vw`.`mortgage4Forgivable`, 
+`all_table_vw`.`mortgage4OriginalBalance`, 
+`all_table_vw`.`mortgage4NumberOfYears`, 
+`all_table_vw`.`mortgage5Price`, 
+`all_table_vw`.`mortgage5Bank`, 
+`all_table_vw`.`mortgage5Forgivable`, 
+`all_table_vw`.`mortgage5OriginalBalance`, 
+`all_table_vw`.`mortgage5NumberOfYears`, 
+`all_table_vw`.`mortgage6Price`, 
+`all_table_vw`.`mortgage6Bank`, 
+`all_table_vw`.`mortgage6Forgivable`, 
+`all_table_vw`.`mortgage6OriginalBalance`, 
+`all_table_vw`.`mortgage6NumberOfYears`
+FROM `all_table_vw` AS `all_table_vw`</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="fk_general_has_survey_general1" Association="Self.fk_general_has_survey_general1">
             <End Role="general" EntitySet="general" />
             <End Role="general_has_survey" EntitySet="general_has_survey" />
@@ -563,6 +756,7 @@
             <End Role="general" EntitySet="generals" />
             <End Role="survey" EntitySet="surveys" />
           </AssociationSet>
+          <EntitySet Name="all_table_vw" EntityType="mydbModel.all_table_vw" />
         </EntityContainer>
         <EntityType Name="survey">
           <Key>
@@ -708,6 +902,102 @@
           <End Type="mydbModel.general" Role="general" Multiplicity="*" />
           <End Type="mydbModel.survey" Role="survey" Multiplicity="*" />
         </Association>
+        <EntityType Name="all_table_vw">
+          <Key>
+            <PropertyRef Name="UID" />
+          </Key>
+          <Property Name="UID" Type="Int32" Nullable="false" />
+          <Property Name="firstName" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="lastName" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="inquiryDate" Type="DateTime" />
+          <Property Name="streetAddress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="cityAddress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="zipAddress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="stateAddress" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="countryAddress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="phoneNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="gender" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="birthdate" Type="DateTime" />
+          <Property Name="householdSize" Type="Int32" />
+          <Property Name="householdAMI" Type="Double" />
+          <Property Name="race" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="maritalStatus" Type="SByte" />
+          <Property Name="notes" Type="String" MaxLength="16777215" FixedLength="false" Unicode="false" />
+          <Property Name="applicantInfoMeeting" Type="DateTime" />
+          <Property Name="applicationChecklist1" Type="DateTime" />
+          <Property Name="applicationChecklist2" Type="DateTime" />
+          <Property Name="employmentVerified" Type="SByte" />
+          <Property Name="landlordReference" Type="SByte" />
+          <Property Name="previousLandlordReference" Type="SByte" />
+          <Property Name="backgroundCheck" Type="SByte" />
+          <Property Name="CCCBudget" Type="SByte" />
+          <Property Name="creditReportRun" Type="SByte" />
+          <Property Name="homeVisit" Type="DateTime" />
+          <Property Name="committeeDecision" Type="DateTime" />
+          <Property Name="committeeAccepted" Type="SByte" />
+          <Property Name="committeeReason" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="boardVote" Type="DateTime" />
+          <Property Name="boardAccepted" Type="SByte" />
+          <Property Name="boardReason" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="handbookReview" Type="DateTime" />
+          <Property Name="ApplicationSubmission" Type="DateTime" />
+          <Property Name="AdditionalDocuments" Type="DateTime" />
+          <Property Name="ApprovalSiteVisit" Type="DateTime" />
+          <Property Name="SiteVisitComplete" Type="DateTime" />
+          <Property Name="ScopeOfWork" Type="DateTime" />
+          <Property Name="ContractComplete" Type="DateTime" />
+          <Property Name="WorkComplete" Type="DateTime" />
+          <Property Name="IDDocuments" Type="SByte" />
+          <Property Name="IncomeVerified" Type="SByte" />
+          <Property Name="DeedOfTrust" Type="SByte" />
+          <Property Name="TaxBill" Type="SByte" />
+          <Property Name="Satisfaction" Type="SByte" />
+          <Property Name="CompletedApplication" Type="SByte" />
+          <Property Name="ParcelReport" Type="SByte" />
+          <Property Name="GISAssessment" Type="SByte" />
+          <Property Name="FundingSource" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="sweatEquityDate" Type="DateTime" />
+          <Property Name="sweatEquityAmount" Type="Int32" />
+          <Property Name="monthlyDepositDate" Type="DateTime" />
+          <Property Name="monthlyDepositAmount" Type="Double" />
+          <Property Name="HUDHoursDate" Type="DateTime" />
+          <Property Name="HUDHoursComplete" Type="SByte" />
+          <Property Name="financeClassesDate" Type="DateTime" />
+          <Property Name="financeClassesComplete" Type="SByte" />
+          <Property Name="homebuyerEducationDate" Type="DateTime" />
+          <Property Name="homebuyerEducationAmount" Type="SByte" />
+          <Property Name="mortgage1Price" Type="Double" />
+          <Property Name="mortgage1Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage1Forgivable" Type="SByte" />
+          <Property Name="mortgage1OriginalBalance" Type="Double" />
+          <Property Name="mortgage1NumberOfYears" Type="Int32" />
+          <Property Name="mortgage2Price" Type="Double" />
+          <Property Name="mortgage2Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage2Forgivable" Type="SByte" />
+          <Property Name="mortgage2OriginalBalance" Type="Double" />
+          <Property Name="morgage2NumberOfYears" Type="Int32" />
+          <Property Name="mortgage3Price" Type="Double" />
+          <Property Name="mortgage3Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage3Forgivable" Type="SByte" />
+          <Property Name="mortgage3OriginalBalance" Type="Double" />
+          <Property Name="mortgage3NumberOfYears" Type="Int32" />
+          <Property Name="mortgage4Price" Type="Double" />
+          <Property Name="mortgage4Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage4Forgivable" Type="SByte" />
+          <Property Name="mortgage4OriginalBalance" Type="Double" />
+          <Property Name="mortgage4NumberOfYears" Type="Int32" />
+          <Property Name="mortgage5Price" Type="Double" />
+          <Property Name="mortgage5Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage5Forgivable" Type="SByte" />
+          <Property Name="mortgage5OriginalBalance" Type="Double" />
+          <Property Name="mortgage5NumberOfYears" Type="Int32" />
+          <Property Name="mortgage6Price" Type="Double" />
+          <Property Name="mortgage6Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage6Forgivable" Type="SByte" />
+          <Property Name="mortgage6OriginalBalance" Type="Double" />
+          <Property Name="mortgage6NumberOfYears" Type="Int32" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -976,6 +1266,103 @@
               <ScalarProperty Name="UID" ColumnName="general_UID" />
             </EndProperty>
           </AssociationSetMapping>
+          <EntitySetMapping Name="all_table_vw">
+            <EntityTypeMapping TypeName="mydbModel.all_table_vw">
+              <MappingFragment StoreEntitySet="all_table_vw">
+                <ScalarProperty Name="mortgage6NumberOfYears" ColumnName="mortgage6NumberOfYears" />
+                <ScalarProperty Name="mortgage6OriginalBalance" ColumnName="mortgage6OriginalBalance" />
+                <ScalarProperty Name="mortgage6Forgivable" ColumnName="mortgage6Forgivable" />
+                <ScalarProperty Name="mortgage6Bank" ColumnName="mortgage6Bank" />
+                <ScalarProperty Name="mortgage6Price" ColumnName="mortgage6Price" />
+                <ScalarProperty Name="mortgage5NumberOfYears" ColumnName="mortgage5NumberOfYears" />
+                <ScalarProperty Name="mortgage5OriginalBalance" ColumnName="mortgage5OriginalBalance" />
+                <ScalarProperty Name="mortgage5Forgivable" ColumnName="mortgage5Forgivable" />
+                <ScalarProperty Name="mortgage5Bank" ColumnName="mortgage5Bank" />
+                <ScalarProperty Name="mortgage5Price" ColumnName="mortgage5Price" />
+                <ScalarProperty Name="mortgage4NumberOfYears" ColumnName="mortgage4NumberOfYears" />
+                <ScalarProperty Name="mortgage4OriginalBalance" ColumnName="mortgage4OriginalBalance" />
+                <ScalarProperty Name="mortgage4Forgivable" ColumnName="mortgage4Forgivable" />
+                <ScalarProperty Name="mortgage4Bank" ColumnName="mortgage4Bank" />
+                <ScalarProperty Name="mortgage4Price" ColumnName="mortgage4Price" />
+                <ScalarProperty Name="mortgage3NumberOfYears" ColumnName="mortgage3NumberOfYears" />
+                <ScalarProperty Name="mortgage3OriginalBalance" ColumnName="mortgage3OriginalBalance" />
+                <ScalarProperty Name="mortgage3Forgivable" ColumnName="mortgage3Forgivable" />
+                <ScalarProperty Name="mortgage3Bank" ColumnName="mortgage3Bank" />
+                <ScalarProperty Name="mortgage3Price" ColumnName="mortgage3Price" />
+                <ScalarProperty Name="morgage2NumberOfYears" ColumnName="morgage2NumberOfYears" />
+                <ScalarProperty Name="mortgage2OriginalBalance" ColumnName="mortgage2OriginalBalance" />
+                <ScalarProperty Name="mortgage2Forgivable" ColumnName="mortgage2Forgivable" />
+                <ScalarProperty Name="mortgage2Bank" ColumnName="mortgage2Bank" />
+                <ScalarProperty Name="mortgage2Price" ColumnName="mortgage2Price" />
+                <ScalarProperty Name="mortgage1NumberOfYears" ColumnName="mortgage1NumberOfYears" />
+                <ScalarProperty Name="mortgage1OriginalBalance" ColumnName="mortgage1OriginalBalance" />
+                <ScalarProperty Name="mortgage1Forgivable" ColumnName="mortgage1Forgivable" />
+                <ScalarProperty Name="mortgage1Bank" ColumnName="mortgage1Bank" />
+                <ScalarProperty Name="mortgage1Price" ColumnName="mortgage1Price" />
+                <ScalarProperty Name="homebuyerEducationAmount" ColumnName="homebuyerEducationAmount" />
+                <ScalarProperty Name="homebuyerEducationDate" ColumnName="homebuyerEducationDate" />
+                <ScalarProperty Name="financeClassesComplete" ColumnName="financeClassesComplete" />
+                <ScalarProperty Name="financeClassesDate" ColumnName="financeClassesDate" />
+                <ScalarProperty Name="HUDHoursComplete" ColumnName="HUDHoursComplete" />
+                <ScalarProperty Name="HUDHoursDate" ColumnName="HUDHoursDate" />
+                <ScalarProperty Name="monthlyDepositAmount" ColumnName="monthlyDepositAmount" />
+                <ScalarProperty Name="monthlyDepositDate" ColumnName="monthlyDepositDate" />
+                <ScalarProperty Name="sweatEquityAmount" ColumnName="sweatEquityAmount" />
+                <ScalarProperty Name="sweatEquityDate" ColumnName="sweatEquityDate" />
+                <ScalarProperty Name="FundingSource" ColumnName="FundingSource" />
+                <ScalarProperty Name="GISAssessment" ColumnName="GISAssessment" />
+                <ScalarProperty Name="ParcelReport" ColumnName="ParcelReport" />
+                <ScalarProperty Name="CompletedApplication" ColumnName="CompletedApplication" />
+                <ScalarProperty Name="Satisfaction" ColumnName="Satisfaction" />
+                <ScalarProperty Name="TaxBill" ColumnName="TaxBill" />
+                <ScalarProperty Name="DeedOfTrust" ColumnName="DeedOfTrust" />
+                <ScalarProperty Name="IncomeVerified" ColumnName="IncomeVerified" />
+                <ScalarProperty Name="IDDocuments" ColumnName="IDDocuments" />
+                <ScalarProperty Name="WorkComplete" ColumnName="WorkComplete" />
+                <ScalarProperty Name="ContractComplete" ColumnName="ContractComplete" />
+                <ScalarProperty Name="ScopeOfWork" ColumnName="ScopeOfWork" />
+                <ScalarProperty Name="SiteVisitComplete" ColumnName="SiteVisitComplete" />
+                <ScalarProperty Name="ApprovalSiteVisit" ColumnName="ApprovalSiteVisit" />
+                <ScalarProperty Name="AdditionalDocuments" ColumnName="AdditionalDocuments" />
+                <ScalarProperty Name="ApplicationSubmission" ColumnName="ApplicationSubmission" />
+                <ScalarProperty Name="handbookReview" ColumnName="handbookReview" />
+                <ScalarProperty Name="boardReason" ColumnName="boardReason" />
+                <ScalarProperty Name="boardAccepted" ColumnName="boardAccepted" />
+                <ScalarProperty Name="boardVote" ColumnName="boardVote" />
+                <ScalarProperty Name="committeeReason" ColumnName="committeeReason" />
+                <ScalarProperty Name="committeeAccepted" ColumnName="committeeAccepted" />
+                <ScalarProperty Name="committeeDecision" ColumnName="committeeDecision" />
+                <ScalarProperty Name="homeVisit" ColumnName="homeVisit" />
+                <ScalarProperty Name="creditReportRun" ColumnName="creditReportRun" />
+                <ScalarProperty Name="CCCBudget" ColumnName="CCCBudget" />
+                <ScalarProperty Name="backgroundCheck" ColumnName="backgroundCheck" />
+                <ScalarProperty Name="previousLandlordReference" ColumnName="previousLandlordReference" />
+                <ScalarProperty Name="landlordReference" ColumnName="landlordReference" />
+                <ScalarProperty Name="employmentVerified" ColumnName="employmentVerified" />
+                <ScalarProperty Name="applicationChecklist2" ColumnName="applicationChecklist2" />
+                <ScalarProperty Name="applicationChecklist1" ColumnName="applicationChecklist1" />
+                <ScalarProperty Name="applicantInfoMeeting" ColumnName="applicantInfoMeeting" />
+                <ScalarProperty Name="notes" ColumnName="notes" />
+                <ScalarProperty Name="maritalStatus" ColumnName="maritalStatus" />
+                <ScalarProperty Name="race" ColumnName="race" />
+                <ScalarProperty Name="householdAMI" ColumnName="householdAMI" />
+                <ScalarProperty Name="householdSize" ColumnName="householdSize" />
+                <ScalarProperty Name="birthdate" ColumnName="birthdate" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
+                <ScalarProperty Name="countryAddress" ColumnName="countryAddress" />
+                <ScalarProperty Name="stateAddress" ColumnName="stateAddress" />
+                <ScalarProperty Name="zipAddress" ColumnName="zipAddress" />
+                <ScalarProperty Name="cityAddress" ColumnName="cityAddress" />
+                <ScalarProperty Name="streetAddress" ColumnName="streetAddress" />
+                <ScalarProperty Name="inquiryDate" ColumnName="inquiryDate" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="UID" ColumnName="UID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

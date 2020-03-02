@@ -31,6 +31,7 @@ Namespace DatabaseTestApplication2
         Public Overridable Property users() As DbSet(Of user)
         Public Overridable Property surveys() As DbSet(Of survey)
         Public Overridable Property survey_results() As DbSet(Of survey_results)
+        Public Overridable Property all_table_vw() As DbSet(Of all_table_vw)
     
     End Class
 

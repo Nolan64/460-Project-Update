@@ -37,7 +37,7 @@ Partial Class frmmain_menu
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
-        Me.PictureBox1.Location = New System.Drawing.Point(16, 15)
+        Me.PictureBox1.Location = New System.Drawing.Point(13, 29)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(353, 127)
