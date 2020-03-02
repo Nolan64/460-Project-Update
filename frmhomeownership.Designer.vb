@@ -237,6 +237,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.AutoScroll = True
             Me.Panel1.AutoSize = True
             Me.Panel1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.angryimg__12_
+            Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
             Me.Panel1.Controls.Add(Me.Panel7)
             Me.Panel1.Controls.Add(Me.Panel2)
             Me.Panel1.Controls.Add(Me.PictureBox1)
@@ -270,7 +271,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Location = New System.Drawing.Point(13, 0)
             Me.Panel1.Margin = New System.Windows.Forms.Padding(13, 4, 13, 4)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(1000, 538)
+            Me.Panel1.Size = New System.Drawing.Size(1256, 538)
             Me.Panel1.TabIndex = 1
             '
             'Panel7
@@ -774,7 +775,7 @@ Namespace DatabaseTestApplication2
             Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.GeneralInfoToolStripMenuItem, Me.HomeownershipToolStripMenuItem, Me.RepairsToolStripMenuItem})
             Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
             Me.MenuStrip1.Name = "MenuStrip1"
-            Me.MenuStrip1.Size = New System.Drawing.Size(1000, 28)
+            Me.MenuStrip1.Size = New System.Drawing.Size(1256, 28)
             Me.MenuStrip1.TabIndex = 37
             Me.MenuStrip1.Text = "MenuStrip1"
             '
@@ -818,10 +819,10 @@ Namespace DatabaseTestApplication2
             'panel4
             '
             Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
-            Me.panel4.Location = New System.Drawing.Point(1013, 0)
+            Me.panel4.Location = New System.Drawing.Point(1269, 0)
             Me.panel4.Margin = New System.Windows.Forms.Padding(4)
             Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(267, 538)
+            Me.panel4.Size = New System.Drawing.Size(11, 538)
             Me.panel4.TabIndex = 3
             '
             'panel5
