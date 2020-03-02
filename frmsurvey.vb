@@ -814,7 +814,6 @@ Namespace DatabaseTestApplication2
 		Private Sub bindingNavigatorAddNewItem_Click(sender As System.Object, e As System.EventArgs) Handles BindingNavigatorAddNewItem.Click
 			surveyBindingSource.AddNew()
 		End Sub
-
 	End Class
 	
 End Namespace
