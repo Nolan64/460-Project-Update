@@ -335,12 +335,12 @@ Namespace DatabaseTestApplication2
             Me.UIDLabel.AutoSize = True
             Me.UIDLabel.BackColor = System.Drawing.Color.Transparent
             Me.UIDLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.UIDLabel.Location = New System.Drawing.Point(143, 175)
+            Me.UIDLabel.Location = New System.Drawing.Point(91, 175)
             Me.UIDLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.UIDLabel.Name = "UIDLabel"
-            Me.UIDLabel.Size = New System.Drawing.Size(31, 17)
+            Me.UIDLabel.Size = New System.Drawing.Size(83, 17)
             Me.UIDLabel.TabIndex = 1
-            Me.UIDLabel.Text = "UID"
+            Me.UIDLabel.Text = "Applicant ID"
             '
             'UIDTextBox
             '

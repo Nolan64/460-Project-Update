@@ -3,12 +3,12 @@
 
 Public Class Form1
     Dim connection As New MySqlConnection("datasource=localhost;port=3306;username=root;password=root;database=mydb")
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         DatabaseTestApplication2.frmgeneral.Show()
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         DatabaseTestApplication2.frmtracking.Show()
     End Sub
 
@@ -35,7 +35,7 @@ Public Class Form1
         Else
 
             MessageBox.Show("Logged In")
-            DatabaseTestApplication2.frmgeneral.Show()
+            frmmain_menu.Show()
 
 
 

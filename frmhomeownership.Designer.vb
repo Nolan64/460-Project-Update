@@ -750,12 +750,12 @@ Namespace DatabaseTestApplication2
             Me.general_UIDLabel.BackColor = System.Drawing.Color.Transparent
             Me.general_UIDLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.general_UIDLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.general_UIDLabel.Location = New System.Drawing.Point(551, 501)
+            Me.general_UIDLabel.Location = New System.Drawing.Point(611, 502)
             Me.general_UIDLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.general_UIDLabel.Name = "general_UIDLabel"
-            Me.general_UIDLabel.Size = New System.Drawing.Size(101, 17)
+            Me.general_UIDLabel.Size = New System.Drawing.Size(95, 17)
             Me.general_UIDLabel.TabIndex = 35
-            Me.general_UIDLabel.Text = "General_UID"
+            Me.general_UIDLabel.Text = "Applicant ID"
             '
             'general_UID_comboBox
             '
