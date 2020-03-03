@@ -39,5 +39,25 @@ Public Class frmmain_menu
     Private Sub addApplicant_Click(sender As Object, e As EventArgs) Handles addApplicant.Click
         DatabaseTestApplication2.frmgeneral.Show()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Try
+            Dim SDA As New MySqlDataAdapter
+            Dim dbDataset As New DataTable
+            Dim bsource As New BindingSource
+            connection.Open()
+            Dim Query As String
+            Query = "select * from mydb.all_table_vw"
+            Dim Command2 As New MySqlCommand(Query, connection)
+            SDA.SelectCommand = Command2
+            SDA.Fill(dbDataset)
+            bsource.DataSource = dbDataset
+            DataGridView1.DataSource = bsource
+            SDA.Update(dbDataset)
+            connection.Close()
+        Catch
+            MessageBox.Show("fuck u")
+        End Try
+    End Sub
 End Class
 
