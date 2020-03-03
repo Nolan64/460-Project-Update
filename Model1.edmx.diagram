@@ -17,7 +17,7 @@
         <EntityTypeShape EntityType="mydbModel.survey_results" Width="1.5" PointX="5.25" PointY="17.125" />
         <AssociationConnector Association="mydbModel.fk_survey_results_survey1" />
         <AssociationConnector Association="mydbModel.general_has_survey" />
-        <EntityTypeShape EntityType="mydbModel.all_table_vw" Width="1.5" PointX="8.375" PointY="0.75" />
+        <EntityTypeShape EntityType="mydbModel.all_table_vw" Width="1.5" PointX="8.375" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
