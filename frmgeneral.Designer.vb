@@ -405,7 +405,7 @@ Namespace DatabaseTestApplication2
             '
             'inquiryDate_dateTimePicker
             '
-            Me.inquiryDate_dateTimePicker.CustomFormat = "dd/MM/yyyy"
+            Me.inquiryDate_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.inquiryDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.inquiryDate_dateTimePicker.Location = New System.Drawing.Point(182, 300)
             Me.inquiryDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
@@ -580,7 +580,7 @@ Namespace DatabaseTestApplication2
             '
             'birthdate_dateTimePicker
             '
-            Me.birthdate_dateTimePicker.CustomFormat = "dd/MM/yyyy"
+            Me.birthdate_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.birthdate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
             Me.birthdate_dateTimePicker.Location = New System.Drawing.Point(565, 300)
             Me.birthdate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
