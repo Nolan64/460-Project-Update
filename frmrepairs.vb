@@ -77,7 +77,9 @@ Namespace DatabaseTestApplication2
 
 		Private Sub IDDocumentsTextBox_Validating(sender As Object, e As CancelEventArgs) Handles IDDocumentsTextBox.Validating
 
-			e.Cancel = False
+            Call CheckToTextValidation()
+
+            e.Cancel = False
 			If String.IsNullOrEmpty(IDDocumentsTextBox.Text) Then
 				e.Cancel = True
 				ErrorProvider1.SetError(IDDocumentsTextBox, "The field IDDocuments is required")
@@ -95,7 +97,9 @@ Namespace DatabaseTestApplication2
 
 		Private Sub IncomeVerifiedTextBox_Validating(sender As Object, e As CancelEventArgs) Handles IncomeVerifiedTextBox.Validating
 
-			e.Cancel = False
+            Call CheckToTextValidation()
+
+            e.Cancel = False
 			If String.IsNullOrEmpty(IncomeVerifiedTextBox.Text) Then
 				e.Cancel = True
 				ErrorProvider1.SetError(IncomeVerifiedTextBox, "The field IncomeVerified is required")
@@ -113,7 +117,9 @@ Namespace DatabaseTestApplication2
 
 		Private Sub DeedOfTrustTextBox_Validating(sender As Object, e As CancelEventArgs) Handles DeedOfTrustTextBox.Validating
 
-			e.Cancel = False
+            Call CheckToTextValidation()
+
+            e.Cancel = False
 			If String.IsNullOrEmpty(DeedOfTrustTextBox.Text) Then
 				e.Cancel = True
 				ErrorProvider1.SetError(DeedOfTrustTextBox, "The field DeedOfTrust is required")
@@ -131,7 +137,9 @@ Namespace DatabaseTestApplication2
 
 		Private Sub TaxBillTextBox_Validating(sender As Object, e As CancelEventArgs) Handles TaxBillTextBox.Validating
 
-			e.Cancel = False
+            Call CheckToTextValidation()
+
+            e.Cancel = False
 			If String.IsNullOrEmpty(TaxBillTextBox.Text) Then
 				e.Cancel = True
 				ErrorProvider1.SetError(TaxBillTextBox, "The field TaxBill is required")
@@ -149,7 +157,9 @@ Namespace DatabaseTestApplication2
 
 		Private Sub SatisfactionTextBox_Validating(sender As Object, e As CancelEventArgs) Handles SatisfactionTextBox.Validating
 
-			e.Cancel = False
+            Call CheckToTextValidation()
+
+            e.Cancel = False
 			If String.IsNullOrEmpty(SatisfactionTextBox.Text) Then
 				e.Cancel = True
 				ErrorProvider1.SetError(SatisfactionTextBox, "The field Satisfaction is required")
@@ -167,7 +177,9 @@ Namespace DatabaseTestApplication2
 
 		Private Sub CompletedApplicationTextBox_Validating(sender As Object, e As CancelEventArgs) Handles CompletedApplicationTextBox.Validating
 
-			e.Cancel = False
+            Call CheckToTextValidation()
+
+            e.Cancel = False
 			If String.IsNullOrEmpty(CompletedApplicationTextBox.Text) Then
 				e.Cancel = True
 				ErrorProvider1.SetError(CompletedApplicationTextBox, "The field CompletedApplication is required")
@@ -185,7 +197,9 @@ Namespace DatabaseTestApplication2
 
 		Private Sub ParcelReportTextBox_Validating(sender As Object, e As CancelEventArgs) Handles ParcelReportTextBox.Validating
 
-			e.Cancel = False
+            Call CheckToTextValidation()
+
+            e.Cancel = False
 			If String.IsNullOrEmpty(ParcelReportTextBox.Text) Then
 				e.Cancel = True
 				ErrorProvider1.SetError(ParcelReportTextBox, "The field ParcelReport is required")
@@ -203,7 +217,9 @@ Namespace DatabaseTestApplication2
 
 		Private Sub GISAssessmentTextBox_Validating(sender As Object, e As CancelEventArgs) Handles GISAssessmentTextBox.Validating
 
-			e.Cancel = False
+            Call CheckToTextValidation()
+
+            e.Cancel = False
 			If String.IsNullOrEmpty(GISAssessmentTextBox.Text) Then
 				e.Cancel = True
 				ErrorProvider1.SetError(GISAssessmentTextBox, "The field GISAssessment is required")
@@ -221,7 +237,9 @@ Namespace DatabaseTestApplication2
 
 		Private Sub FundingSourceTextBox_Validating(sender As Object, e As CancelEventArgs) Handles FundingSourceTextBox.Validating
 
-			e.Cancel = False
+            Call CheckToTextValidation()
+
+            e.Cancel = False
 			If String.IsNullOrEmpty(FundingSourceTextBox.Text) Then
 				e.Cancel = True
 				ErrorProvider1.SetError(FundingSourceTextBox, "The field FundingSource is required")
@@ -261,6 +279,64 @@ Namespace DatabaseTestApplication2
             frmhomeownership.Show()
             Me.Close()
         End Sub
+
+        Private Sub CheckToTextValidation()
+            If chkCompletedApp.Checked = True Then
+                CompletedApplicationTextBox.Text = "1"
+            ElseIf chkCompletedApp.Checked = False Then
+                CompletedApplicationTextBox.Text = "0"
+            End If
+
+            If chkDeed.Checked = True Then
+                DeedOfTrustTextBox.Text = "1"
+            ElseIf chkDeed.Checked = False Then
+                DeedOfTrustTextBox.Text = "0"
+            End If
+
+            If chkFundSource.Checked = True Then
+                FundingSourceTextBox.Text = "1"
+            ElseIf chkFundSource.Checked = False Then
+                FundingSourceTextBox.Text = "0"
+            End If
+
+            If chkGISAssessment.Checked = True Then
+                GISAssessmentTextBox.Text = "1"
+            ElseIf chkGISAssessment.Checked = False Then
+                GISAssessmentTextBox.Text = "0"
+            End If
+
+            If chkIDDocs.Checked = True Then
+                IDDocumentsTextBox.Text = "1"
+            ElseIf chkIDDocs.Checked = False Then
+                IDDocumentsTextBox.Text = "0"
+            End If
+
+            If chkIncomeVerified.Checked = True Then
+                IncomeVerifiedTextBox.Text = "1"
+            ElseIf chkIncomeVerified.Checked = False Then
+                IncomeVerifiedTextBox.Text = "0"
+            End If
+
+            If chkParcelReport.Checked = True Then
+                ParcelReportTextBox.Text = "1"
+            ElseIf chkParcelReport.Checked = False Then
+                ParcelReportTextBox.Text = "0"
+            End If
+
+            If chkSatisfaction.Checked = True Then
+                SatisfactionTextBox.Text = "1"
+            ElseIf chkSatisfaction.Checked = False Then
+                SatisfactionTextBox.Text = "0"
+            End If
+
+            If chkTaxBill.Checked = True Then
+                TaxBillTextBox.Text = "1"
+            ElseIf chkTaxBill.Checked = False Then
+                TaxBillTextBox.Text = "0"
+            End If
+        End Sub
+
+
     End Class
 
 End Namespace
