@@ -27,6 +27,8 @@
           <Property Name="race" Type="varchar" MaxLength="45" />
           <Property Name="maritalStatus" Type="tinyint" />
           <Property Name="notes" Type="mediumtext" />
+          <Property Name="coapplicantName" Type="varchar" MaxLength="255" />
+          <Property Name="dependentName" Type="varchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="general_has_survey">
           <Key>
@@ -589,6 +591,8 @@ FROM `all_table_vw` AS `all_table_vw`</DefiningQuery>
           <NavigationProperty Name="repair" Relationship="Self.fk_Repairs_General_Info" FromRole="general" ToRole="repairs" />
           <NavigationProperty Name="tracking" Relationship="Self.fk_tracking_general1" FromRole="general" ToRole="tracking" />
           <NavigationProperty Name="surveys" Relationship="mydbModel.general_has_survey" FromRole="general" ToRole="survey" />
+          <Property Name="coapplicantName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="dependentName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="homeownership">
           <Key>
@@ -1007,6 +1011,8 @@ FROM `all_table_vw` AS `all_table_vw`</DefiningQuery>
           <EntitySetMapping Name="generals">
             <EntityTypeMapping TypeName="mydbModel.general">
               <MappingFragment StoreEntitySet="general">
+                <ScalarProperty Name="dependentName" ColumnName="dependentName" />
+                <ScalarProperty Name="coapplicantName" ColumnName="coapplicantName" />
                 <ScalarProperty Name="UID" ColumnName="UID" />
                 <ScalarProperty Name="firstName" ColumnName="firstName" />
                 <ScalarProperty Name="lastName" ColumnName="lastName" />

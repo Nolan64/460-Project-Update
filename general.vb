@@ -31,6 +31,8 @@ Namespace DatabaseTestApplication2
         Public Property race As String
         Public Property maritalStatus As Nullable(Of SByte)
         Public Property notes As String
+        Public Property coapplicantName As String
+        Public Property dependentName As String
     
         Public Overridable Property homeownership As homeownership
         Public Overridable Property repair As repair

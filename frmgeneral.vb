@@ -41,6 +41,8 @@ Namespace DatabaseTestApplication2
 			Me.raceComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "race", True))
 			Me.maritalStatusComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "maritalStatus", True))
 			Me.notesTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "notes", True))
+			Me.coapplicanttxt.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "coapplicantName", True))
+			Me.dependenttxt.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "dependentName", True))
 		End Sub
 
 		Private Sub ToolStripButton1_Click(sender As System.Object, e As System.EventArgs) Handles ToolStripButton1.Click
@@ -277,6 +279,30 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
+		Private Sub coapplicantName_Validating(sender As Object, e As CancelEventArgs) Handles coapplicanttxt.Validating
+
+			e.Cancel = False
+			If String.IsNullOrEmpty(coapplicanttxt.Text) Then
+				e.Cancel = True
+				ErrorProvider1.SetError(coapplicanttxt, "The field coapplicant is required")
+			End If
+			If Not e.Cancel Then
+				ErrorProvider1.SetError(coapplicanttxt, "")
+			End If
+		End Sub
+
+		Private Sub dependenttxt_Validating(sender As Object, e As CancelEventArgs) Handles dependenttxt.Validating
+
+			e.Cancel = False
+			If String.IsNullOrEmpty(dependenttxt.Text) Then
+				e.Cancel = True
+				ErrorProvider1.SetError(dependenttxt, "The field dependent is required")
+			End If
+			If Not e.Cancel Then
+				ErrorProvider1.SetError(dependenttxt, "")
+			End If
+		End Sub
+
 
 		Private Sub bindingNavigatorAddNewItem_Click(sender As System.Object, e As System.EventArgs) Handles BindingNavigatorAddNewItem.Click
 			generalBindingSource.AddNew()
@@ -300,6 +326,8 @@ Namespace DatabaseTestApplication2
 		Private Sub MainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MainMenuToolStripMenuItem.Click
 			Me.Hide()
 		End Sub
+
+
 	End Class
 
 End Namespace

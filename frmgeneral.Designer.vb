@@ -52,6 +52,8 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
             Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
             Me.Panel1 = New System.Windows.Forms.Panel()
+            Me.dependenttxt = New System.Windows.Forms.TextBox()
+            Me.coapplicanttxt = New System.Windows.Forms.TextBox()
             Me.raceComboBox = New System.Windows.Forms.ComboBox()
             Me.maritalStatusComboBox = New System.Windows.Forms.ComboBox()
             Me.genderComboBox = New System.Windows.Forms.ComboBox()
@@ -99,6 +101,8 @@ Namespace DatabaseTestApplication2
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
+            Me.Label1 = New System.Windows.Forms.Label()
+            Me.Label2 = New System.Windows.Forms.Label()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
             CType(Me.generalBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -234,6 +238,10 @@ Namespace DatabaseTestApplication2
             Me.Panel1.AutoSize = True
             Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
             Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+            Me.Panel1.Controls.Add(Me.Label2)
+            Me.Panel1.Controls.Add(Me.Label1)
+            Me.Panel1.Controls.Add(Me.dependenttxt)
+            Me.Panel1.Controls.Add(Me.coapplicanttxt)
             Me.Panel1.Controls.Add(Me.raceComboBox)
             Me.Panel1.Controls.Add(Me.maritalStatusComboBox)
             Me.Panel1.Controls.Add(Me.genderComboBox)
@@ -278,8 +286,22 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Location = New System.Drawing.Point(13, 0)
             Me.Panel1.Margin = New System.Windows.Forms.Padding(13, 4, 13, 4)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(963, 584)
+            Me.Panel1.Size = New System.Drawing.Size(963, 617)
             Me.Panel1.TabIndex = 1
+            '
+            'dependenttxt
+            '
+            Me.dependenttxt.Location = New System.Drawing.Point(565, 550)
+            Me.dependenttxt.Name = "dependenttxt"
+            Me.dependenttxt.Size = New System.Drawing.Size(221, 22)
+            Me.dependenttxt.TabIndex = 44
+            '
+            'coapplicanttxt
+            '
+            Me.coapplicanttxt.Location = New System.Drawing.Point(182, 550)
+            Me.coapplicanttxt.Name = "coapplicanttxt"
+            Me.coapplicanttxt.Size = New System.Drawing.Size(221, 22)
+            Me.coapplicanttxt.TabIndex = 43
             '
             'raceComboBox
             '
@@ -323,10 +345,10 @@ Namespace DatabaseTestApplication2
             '
             Me.generalInfo.AutoSize = True
             Me.generalInfo.BackColor = System.Drawing.Color.Transparent
-            Me.generalInfo.Font = New System.Drawing.Font("Microsoft YaHei UI", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.generalInfo.Location = New System.Drawing.Point(7, 42)
+            Me.generalInfo.Font = New System.Drawing.Font("Microsoft YaHei UI", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.generalInfo.Location = New System.Drawing.Point(2, 29)
             Me.generalInfo.Name = "generalInfo"
-            Me.generalInfo.Size = New System.Drawing.Size(271, 52)
+            Me.generalInfo.Size = New System.Drawing.Size(407, 80)
             Me.generalInfo.TabIndex = 38
             Me.generalInfo.Text = "General Info"
             '
@@ -335,7 +357,7 @@ Namespace DatabaseTestApplication2
             Me.UIDLabel.AutoSize = True
             Me.UIDLabel.BackColor = System.Drawing.Color.Transparent
             Me.UIDLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.UIDLabel.Location = New System.Drawing.Point(91, 175)
+            Me.UIDLabel.Location = New System.Drawing.Point(96, 178)
             Me.UIDLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.UIDLabel.Name = "UIDLabel"
             Me.UIDLabel.Size = New System.Drawing.Size(83, 17)
@@ -356,7 +378,7 @@ Namespace DatabaseTestApplication2
             Me.firstNameLabel.AutoSize = True
             Me.firstNameLabel.BackColor = System.Drawing.Color.Transparent
             Me.firstNameLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.firstNameLabel.Location = New System.Drawing.Point(98, 216)
+            Me.firstNameLabel.Location = New System.Drawing.Point(98, 219)
             Me.firstNameLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.firstNameLabel.Name = "firstNameLabel"
             Me.firstNameLabel.Size = New System.Drawing.Size(76, 17)
@@ -376,7 +398,7 @@ Namespace DatabaseTestApplication2
             Me.lastNameLabel.AutoSize = True
             Me.lastNameLabel.BackColor = System.Drawing.Color.Transparent
             Me.lastNameLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.lastNameLabel.Location = New System.Drawing.Point(98, 258)
+            Me.lastNameLabel.Location = New System.Drawing.Point(98, 261)
             Me.lastNameLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.lastNameLabel.Name = "lastNameLabel"
             Me.lastNameLabel.Size = New System.Drawing.Size(76, 17)
@@ -396,7 +418,7 @@ Namespace DatabaseTestApplication2
             Me.inquiryDateLabel.AutoSize = True
             Me.inquiryDateLabel.BackColor = System.Drawing.Color.Transparent
             Me.inquiryDateLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.inquiryDateLabel.Location = New System.Drawing.Point(90, 300)
+            Me.inquiryDateLabel.Location = New System.Drawing.Point(90, 305)
             Me.inquiryDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.inquiryDateLabel.Name = "inquiryDateLabel"
             Me.inquiryDateLabel.Size = New System.Drawing.Size(84, 17)
@@ -439,7 +461,7 @@ Namespace DatabaseTestApplication2
             Me.cityAddressLabel.AutoSize = True
             Me.cityAddressLabel.BackColor = System.Drawing.Color.Transparent
             Me.cityAddressLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.cityAddressLabel.Location = New System.Drawing.Point(143, 384)
+            Me.cityAddressLabel.Location = New System.Drawing.Point(143, 387)
             Me.cityAddressLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.cityAddressLabel.Name = "cityAddressLabel"
             Me.cityAddressLabel.Size = New System.Drawing.Size(31, 17)
@@ -459,7 +481,7 @@ Namespace DatabaseTestApplication2
             Me.zipAddressLabel.AutoSize = True
             Me.zipAddressLabel.BackColor = System.Drawing.Color.Transparent
             Me.zipAddressLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.zipAddressLabel.Location = New System.Drawing.Point(109, 467)
+            Me.zipAddressLabel.Location = New System.Drawing.Point(114, 470)
             Me.zipAddressLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.zipAddressLabel.Name = "zipAddressLabel"
             Me.zipAddressLabel.Size = New System.Drawing.Size(65, 17)
@@ -479,7 +501,7 @@ Namespace DatabaseTestApplication2
             Me.stateAddressLabel.AutoSize = True
             Me.stateAddressLabel.BackColor = System.Drawing.Color.Transparent
             Me.stateAddressLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.stateAddressLabel.Location = New System.Drawing.Point(133, 426)
+            Me.stateAddressLabel.Location = New System.Drawing.Point(133, 429)
             Me.stateAddressLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.stateAddressLabel.Name = "stateAddressLabel"
             Me.stateAddressLabel.Size = New System.Drawing.Size(41, 17)
@@ -499,7 +521,7 @@ Namespace DatabaseTestApplication2
             Me.countryAddressLabel.AutoSize = True
             Me.countryAddressLabel.BackColor = System.Drawing.Color.Transparent
             Me.countryAddressLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.countryAddressLabel.Location = New System.Drawing.Point(117, 509)
+            Me.countryAddressLabel.Location = New System.Drawing.Point(117, 512)
             Me.countryAddressLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.countryAddressLabel.Name = "countryAddressLabel"
             Me.countryAddressLabel.Size = New System.Drawing.Size(57, 17)
@@ -519,7 +541,7 @@ Namespace DatabaseTestApplication2
             Me.phoneNumberLabel.AutoSize = True
             Me.phoneNumberLabel.BackColor = System.Drawing.Color.Transparent
             Me.phoneNumberLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.phoneNumberLabel.Location = New System.Drawing.Point(454, 175)
+            Me.phoneNumberLabel.Location = New System.Drawing.Point(460, 178)
             Me.phoneNumberLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.phoneNumberLabel.Name = "phoneNumberLabel"
             Me.phoneNumberLabel.Size = New System.Drawing.Size(103, 17)
@@ -539,7 +561,7 @@ Namespace DatabaseTestApplication2
             Me.emailLabel.AutoSize = True
             Me.emailLabel.BackColor = System.Drawing.Color.Transparent
             Me.emailLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.emailLabel.Location = New System.Drawing.Point(515, 216)
+            Me.emailLabel.Location = New System.Drawing.Point(515, 219)
             Me.emailLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.emailLabel.Name = "emailLabel"
             Me.emailLabel.Size = New System.Drawing.Size(42, 17)
@@ -559,7 +581,7 @@ Namespace DatabaseTestApplication2
             Me.genderLabel.AutoSize = True
             Me.genderLabel.BackColor = System.Drawing.Color.Transparent
             Me.genderLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.genderLabel.Location = New System.Drawing.Point(501, 258)
+            Me.genderLabel.Location = New System.Drawing.Point(502, 261)
             Me.genderLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.genderLabel.Name = "genderLabel"
             Me.genderLabel.Size = New System.Drawing.Size(56, 17)
@@ -571,7 +593,7 @@ Namespace DatabaseTestApplication2
             Me.birthdateLabel.AutoSize = True
             Me.birthdateLabel.BackColor = System.Drawing.Color.Transparent
             Me.birthdateLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.birthdateLabel.Location = New System.Drawing.Point(486, 300)
+            Me.birthdateLabel.Location = New System.Drawing.Point(486, 305)
             Me.birthdateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.birthdateLabel.Name = "birthdateLabel"
             Me.birthdateLabel.Size = New System.Drawing.Size(71, 17)
@@ -594,7 +616,7 @@ Namespace DatabaseTestApplication2
             Me.householdSizeLabel.AutoSize = True
             Me.householdSizeLabel.BackColor = System.Drawing.Color.Transparent
             Me.householdSizeLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.householdSizeLabel.Location = New System.Drawing.Point(450, 342)
+            Me.householdSizeLabel.Location = New System.Drawing.Point(451, 345)
             Me.householdSizeLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.householdSizeLabel.Name = "householdSizeLabel"
             Me.householdSizeLabel.Size = New System.Drawing.Size(107, 17)
@@ -614,7 +636,7 @@ Namespace DatabaseTestApplication2
             Me.householdAMILabel.AutoSize = True
             Me.householdAMILabel.BackColor = System.Drawing.Color.Transparent
             Me.householdAMILabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.householdAMILabel.Location = New System.Drawing.Point(454, 384)
+            Me.householdAMILabel.Location = New System.Drawing.Point(454, 387)
             Me.householdAMILabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.householdAMILabel.Name = "householdAMILabel"
             Me.householdAMILabel.Size = New System.Drawing.Size(103, 17)
@@ -634,7 +656,7 @@ Namespace DatabaseTestApplication2
             Me.raceLabel.AutoSize = True
             Me.raceLabel.BackColor = System.Drawing.Color.Transparent
             Me.raceLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.raceLabel.Location = New System.Drawing.Point(516, 426)
+            Me.raceLabel.Location = New System.Drawing.Point(515, 426)
             Me.raceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.raceLabel.Name = "raceLabel"
             Me.raceLabel.Size = New System.Drawing.Size(41, 17)
@@ -646,7 +668,7 @@ Namespace DatabaseTestApplication2
             Me.maritalStatusLabel.AutoSize = True
             Me.maritalStatusLabel.BackColor = System.Drawing.Color.Transparent
             Me.maritalStatusLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.maritalStatusLabel.Location = New System.Drawing.Point(463, 467)
+            Me.maritalStatusLabel.Location = New System.Drawing.Point(464, 470)
             Me.maritalStatusLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.maritalStatusLabel.Name = "maritalStatusLabel"
             Me.maritalStatusLabel.Size = New System.Drawing.Size(94, 17)
@@ -658,7 +680,7 @@ Namespace DatabaseTestApplication2
             Me.notesLabel.AutoSize = True
             Me.notesLabel.BackColor = System.Drawing.Color.Transparent
             Me.notesLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.notesLabel.Location = New System.Drawing.Point(512, 509)
+            Me.notesLabel.Location = New System.Drawing.Point(515, 515)
             Me.notesLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.notesLabel.Name = "notesLabel"
             Me.notesLabel.Size = New System.Drawing.Size(45, 17)
@@ -667,7 +689,7 @@ Namespace DatabaseTestApplication2
             '
             'notesTextBox
             '
-            Me.notesTextBox.Location = New System.Drawing.Point(565, 509)
+            Me.notesTextBox.Location = New System.Drawing.Point(565, 512)
             Me.notesTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.notesTextBox.Name = "notesTextBox"
             Me.notesTextBox.Size = New System.Drawing.Size(221, 22)
@@ -717,7 +739,7 @@ Namespace DatabaseTestApplication2
             Me.panel3.Location = New System.Drawing.Point(0, 27)
             Me.panel3.Margin = New System.Windows.Forms.Padding(4)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(989, 596)
+            Me.panel3.Size = New System.Drawing.Size(989, 629)
             Me.panel3.TabIndex = 19
             '
             'panel4
@@ -726,7 +748,7 @@ Namespace DatabaseTestApplication2
             Me.panel4.Location = New System.Drawing.Point(976, 0)
             Me.panel4.Margin = New System.Windows.Forms.Padding(4)
             Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(13, 584)
+            Me.panel4.Size = New System.Drawing.Size(13, 617)
             Me.panel4.TabIndex = 3
             '
             'panel5
@@ -735,23 +757,43 @@ Namespace DatabaseTestApplication2
             Me.panel5.Location = New System.Drawing.Point(0, 0)
             Me.panel5.Margin = New System.Windows.Forms.Padding(4)
             Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(13, 584)
+            Me.panel5.Size = New System.Drawing.Size(13, 617)
             Me.panel5.TabIndex = 5
             '
             'panel6
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 584)
+            Me.panel6.Location = New System.Drawing.Point(0, 617)
             Me.panel6.Margin = New System.Windows.Forms.Padding(4)
             Me.panel6.Name = "panel6"
             Me.panel6.Size = New System.Drawing.Size(989, 12)
             Me.panel6.TabIndex = 6
             '
+            'Label1
+            '
+            Me.Label1.AutoSize = True
+            Me.Label1.BackColor = System.Drawing.Color.Transparent
+            Me.Label1.Location = New System.Drawing.Point(51, 553)
+            Me.Label1.Name = "Label1"
+            Me.Label1.Size = New System.Drawing.Size(123, 17)
+            Me.Label1.TabIndex = 45
+            Me.Label1.Text = "Coapplicant Name"
+            '
+            'Label2
+            '
+            Me.Label2.AutoSize = True
+            Me.Label2.BackColor = System.Drawing.Color.Transparent
+            Me.Label2.Location = New System.Drawing.Point(427, 553)
+            Me.Label2.Name = "Label2"
+            Me.Label2.Size = New System.Drawing.Size(136, 17)
+            Me.Label2.TabIndex = 46
+            Me.Label2.Text = "Dependent Name(s)"
+            '
             'frmgeneral
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(989, 623)
+            Me.ClientSize = New System.Drawing.Size(989, 656)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
             Me.MainMenuStrip = Me.MenuStrip1
@@ -837,6 +879,10 @@ Namespace DatabaseTestApplication2
         Friend WithEvents genderComboBox As ComboBox
         Friend WithEvents maritalStatusComboBox As ComboBox
         Friend WithEvents raceComboBox As ComboBox
+        Friend WithEvents dependenttxt As TextBox
+        Friend WithEvents coapplicanttxt As TextBox
+        Friend WithEvents Label2 As Label
+        Friend WithEvents Label1 As Label
     End Class
 
 End Namespace
