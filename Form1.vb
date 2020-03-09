@@ -33,8 +33,11 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        txtUN.Text = My.Settings.username
-        txtPW.Text = My.Settings.password
+        If My.Settings.username.Equals("") = False Then
+            txtUN.Text = My.Settings.username
+            txtPW.Text = My.Settings.password
+            CheckBox1.Checked = True
+        End If
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -49,7 +52,12 @@ Public Class Form1
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
         If CheckBox1.Checked = True Then
             My.Settings.username = txtUN.Text
-            My.Settings.Password = txtPW.Text
+            My.Settings.password = txtPW.Text
+            My.Settings.Save()
+            My.Settings.Reload()
+        Else
+            My.Settings.username = ""
+            My.Settings.password = ""
             My.Settings.Save()
             My.Settings.Reload()
         End If

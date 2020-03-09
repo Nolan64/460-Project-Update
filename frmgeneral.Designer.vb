@@ -52,12 +52,13 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
             Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
             Me.Panel1 = New System.Windows.Forms.Panel()
+            Me.Label2 = New System.Windows.Forms.Label()
+            Me.Label1 = New System.Windows.Forms.Label()
             Me.dependenttxt = New System.Windows.Forms.TextBox()
             Me.coapplicanttxt = New System.Windows.Forms.TextBox()
             Me.raceComboBox = New System.Windows.Forms.ComboBox()
             Me.maritalStatusComboBox = New System.Windows.Forms.ComboBox()
             Me.genderComboBox = New System.Windows.Forms.ComboBox()
-            Me.PictureBox1 = New System.Windows.Forms.PictureBox()
             Me.generalInfo = New System.Windows.Forms.Label()
             Me.UIDLabel = New System.Windows.Forms.Label()
             Me.UIDTextBox = New System.Windows.Forms.TextBox()
@@ -101,16 +102,15 @@ Namespace DatabaseTestApplication2
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
-            Me.Label1 = New System.Windows.Forms.Label()
-            Me.Label2 = New System.Windows.Forms.Label()
+            Me.PictureBox2 = New System.Windows.Forms.PictureBox()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
             CType(Me.generalBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.Panel1.SuspendLayout()
-            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.MenuStrip1.SuspendLayout()
             Me.panel3.SuspendLayout()
+            CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'BindingNavigator1
@@ -238,6 +238,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.AutoSize = True
             Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
             Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+            Me.Panel1.Controls.Add(Me.PictureBox2)
             Me.Panel1.Controls.Add(Me.Label2)
             Me.Panel1.Controls.Add(Me.Label1)
             Me.Panel1.Controls.Add(Me.dependenttxt)
@@ -245,7 +246,6 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.raceComboBox)
             Me.Panel1.Controls.Add(Me.maritalStatusComboBox)
             Me.Panel1.Controls.Add(Me.genderComboBox)
-            Me.Panel1.Controls.Add(Me.PictureBox1)
             Me.Panel1.Controls.Add(Me.generalInfo)
             Me.Panel1.Controls.Add(Me.UIDLabel)
             Me.Panel1.Controls.Add(Me.UIDTextBox)
@@ -289,6 +289,26 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Size = New System.Drawing.Size(963, 617)
             Me.Panel1.TabIndex = 1
             '
+            'Label2
+            '
+            Me.Label2.AutoSize = True
+            Me.Label2.BackColor = System.Drawing.Color.Transparent
+            Me.Label2.Location = New System.Drawing.Point(427, 553)
+            Me.Label2.Name = "Label2"
+            Me.Label2.Size = New System.Drawing.Size(136, 17)
+            Me.Label2.TabIndex = 46
+            Me.Label2.Text = "Dependent Name(s)"
+            '
+            'Label1
+            '
+            Me.Label1.AutoSize = True
+            Me.Label1.BackColor = System.Drawing.Color.Transparent
+            Me.Label1.Location = New System.Drawing.Point(51, 553)
+            Me.Label1.Name = "Label1"
+            Me.Label1.Size = New System.Drawing.Size(123, 17)
+            Me.Label1.TabIndex = 45
+            Me.Label1.Text = "Coapplicant Name"
+            '
             'dependenttxt
             '
             Me.dependenttxt.Location = New System.Drawing.Point(565, 550)
@@ -330,23 +350,12 @@ Namespace DatabaseTestApplication2
             Me.genderComboBox.Size = New System.Drawing.Size(221, 24)
             Me.genderComboBox.TabIndex = 40
             '
-            'PictureBox1
-            '
-            Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-            Me.PictureBox1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
-            Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-            Me.PictureBox1.Location = New System.Drawing.Point(720, 31)
-            Me.PictureBox1.Name = "PictureBox1"
-            Me.PictureBox1.Size = New System.Drawing.Size(237, 107)
-            Me.PictureBox1.TabIndex = 39
-            Me.PictureBox1.TabStop = False
-            '
             'generalInfo
             '
             Me.generalInfo.AutoSize = True
             Me.generalInfo.BackColor = System.Drawing.Color.Transparent
             Me.generalInfo.Font = New System.Drawing.Font("Microsoft YaHei UI", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.generalInfo.Location = New System.Drawing.Point(2, 29)
+            Me.generalInfo.Location = New System.Drawing.Point(3, 40)
             Me.generalInfo.Name = "generalInfo"
             Me.generalInfo.Size = New System.Drawing.Size(407, 80)
             Me.generalInfo.TabIndex = 38
@@ -769,25 +778,17 @@ Namespace DatabaseTestApplication2
             Me.panel6.Size = New System.Drawing.Size(989, 12)
             Me.panel6.TabIndex = 6
             '
-            'Label1
+            'PictureBox2
             '
-            Me.Label1.AutoSize = True
-            Me.Label1.BackColor = System.Drawing.Color.Transparent
-            Me.Label1.Location = New System.Drawing.Point(51, 553)
-            Me.Label1.Name = "Label1"
-            Me.Label1.Size = New System.Drawing.Size(123, 17)
-            Me.Label1.TabIndex = 45
-            Me.Label1.Text = "Coapplicant Name"
-            '
-            'Label2
-            '
-            Me.Label2.AutoSize = True
-            Me.Label2.BackColor = System.Drawing.Color.Transparent
-            Me.Label2.Location = New System.Drawing.Point(427, 553)
-            Me.Label2.Name = "Label2"
-            Me.Label2.Size = New System.Drawing.Size(136, 17)
-            Me.Label2.TabIndex = 46
-            Me.Label2.Text = "Dependent Name(s)"
+            Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+            Me.PictureBox2.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
+            Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+            Me.PictureBox2.Location = New System.Drawing.Point(765, 40)
+            Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+            Me.PictureBox2.Name = "PictureBox2"
+            Me.PictureBox2.Size = New System.Drawing.Size(191, 66)
+            Me.PictureBox2.TabIndex = 98
+            Me.PictureBox2.TabStop = False
             '
             'frmgeneral
             '
@@ -807,11 +808,11 @@ Namespace DatabaseTestApplication2
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.Panel1.ResumeLayout(False)
             Me.Panel1.PerformLayout()
-            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.MenuStrip1.ResumeLayout(False)
             Me.MenuStrip1.PerformLayout()
             Me.panel3.ResumeLayout(False)
             Me.panel3.PerformLayout()
+            CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
@@ -875,7 +876,6 @@ Namespace DatabaseTestApplication2
         Friend WithEvents RepairsToolStripMenuItem As ToolStripMenuItem
         Friend WithEvents TrackingToolStripMenuItem As ToolStripMenuItem
         Friend WithEvents generalInfo As Label
-        Friend WithEvents PictureBox1 As PictureBox
         Friend WithEvents genderComboBox As ComboBox
         Friend WithEvents maritalStatusComboBox As ComboBox
         Friend WithEvents raceComboBox As ComboBox
@@ -883,6 +883,7 @@ Namespace DatabaseTestApplication2
         Friend WithEvents coapplicanttxt As TextBox
         Friend WithEvents Label2 As Label
         Friend WithEvents Label1 As Label
+        Friend WithEvents PictureBox2 As PictureBox
     End Class
 
 End Namespace
