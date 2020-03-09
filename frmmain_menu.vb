@@ -40,7 +40,7 @@ Public Class frmmain_menu
         DatabaseTestApplication2.frmgeneral.Show()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Refreshbtn.Click
         Try
             Dim SDA As New MySqlDataAdapter
             Dim dbDataset As New DataTable

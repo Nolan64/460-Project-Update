@@ -765,6 +765,23 @@ Namespace DatabaseTestApplication2
 		Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
 		End Sub
+
+		Private Sub MainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MainMenuToolStripMenuItem.Click
+			Me.Hide()
+
+		End Sub
+
+		Private Sub HomeownershipToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeownershipToolStripMenuItem.Click
+			frmhomeownership.Show()
+			Me.Hide()
+
+		End Sub
+
+		Private Sub RepairsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RepairsToolStripMenuItem.Click
+			frmrepairs.Show()
+			Me.Hide()
+
+		End Sub
 	End Class
 
 End Namespace

@@ -45,7 +45,8 @@ Partial Class frmmain_menu
         Me.All_table_vwBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.All_table_vwBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Refreshbtn = New System.Windows.Forms.Button()
+        Me.Reportsbtn = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.All_table_vwBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -241,14 +242,25 @@ Partial Class frmmain_menu
         '
         Me.All_table_vwBindingSource.DataSource = GetType(DatabaseTestApplication2.all_table_vw)
         '
-        'Button1
+        'Refreshbtn
         '
-        Me.Button1.Location = New System.Drawing.Point(291, 147)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 12
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Refreshbtn.Location = New System.Drawing.Point(291, 147)
+        Me.Refreshbtn.Name = "Refreshbtn"
+        Me.Refreshbtn.Size = New System.Drawing.Size(75, 23)
+        Me.Refreshbtn.TabIndex = 12
+        Me.Refreshbtn.Text = "Refresh"
+        Me.Refreshbtn.UseVisualStyleBackColor = True
+        '
+        'Reportsbtn
+        '
+        Me.Reportsbtn.BackColor = System.Drawing.Color.Transparent
+        Me.Reportsbtn.Location = New System.Drawing.Point(20, 332)
+        Me.Reportsbtn.Margin = New System.Windows.Forms.Padding(4)
+        Me.Reportsbtn.Name = "Reportsbtn"
+        Me.Reportsbtn.Size = New System.Drawing.Size(165, 30)
+        Me.Reportsbtn.TabIndex = 13
+        Me.Reportsbtn.Text = "Reports"
+        Me.Reportsbtn.UseVisualStyleBackColor = False
         '
         'frmmain_menu
         '
@@ -258,7 +270,8 @@ Partial Class frmmain_menu
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1560, 749)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Reportsbtn)
+        Me.Controls.Add(Me.Refreshbtn)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.userName)
         Me.Controls.Add(Me.settings)
@@ -300,5 +313,6 @@ Partial Class frmmain_menu
     Friend WithEvents All_table_vwBindingNavigatorSaveItem As ToolStripButton
     Friend WithEvents All_table_vwBindingSource As BindingSource
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Refreshbtn As Button
+    Friend WithEvents Reportsbtn As Button
 End Class
