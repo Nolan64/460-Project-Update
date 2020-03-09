@@ -409,7 +409,7 @@ Namespace DatabaseTestApplication2
             Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
             Me.PictureBox1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
             Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-            Me.PictureBox1.Location = New System.Drawing.Point(921, 30)
+            Me.PictureBox1.Location = New System.Drawing.Point(902, 47)
             Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
             Me.PictureBox1.Name = "PictureBox1"
             Me.PictureBox1.Size = New System.Drawing.Size(191, 66)
@@ -424,7 +424,7 @@ Namespace DatabaseTestApplication2
             Me.Label1.Location = New System.Drawing.Point(5, 30)
             Me.Label1.Margin = New System.Windows.Forms.Padding(9, 0, 9, 0)
             Me.Label1.Name = "Label1"
-            Me.Label1.Size = New System.Drawing.Size(336, 96)
+            Me.Label1.Size = New System.Drawing.Size(266, 83)
             Me.Label1.TabIndex = 35
             Me.Label1.Text = "Repairs"
             Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter

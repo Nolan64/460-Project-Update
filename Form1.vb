@@ -3,14 +3,6 @@
 
 Public Class Form1
     Dim connection As New MySqlConnection("datasource=localhost;port=3306;username=root;password=root;database=mydb")
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-        DatabaseTestApplication2.frmgeneral.Show()
-
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
-        DatabaseTestApplication2.frmtracking.Show()
-    End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Dim command As New MySqlCommand("SELECT `username`, `password` FROM `user` WHERE `username` = @username AND `password` = @password", connection)
@@ -35,18 +27,31 @@ Public Class Form1
             OBJ.usersName = txtUN.Text
             OBJ.Show()
 
-
-
             Me.Hide()
 
         End If
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        txtUN.Text = My.Settings.username
+        txtPW.Text = My.Settings.password
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        txtUN.Clear()
+        txtPW.Clear()
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If CheckBox1.Checked = True Then
+            My.Settings.username = txtUN.Text
+            My.Settings.Password = txtPW.Text
+            My.Settings.Save()
+            My.Settings.Reload()
+        End If
     End Sub
 End Class

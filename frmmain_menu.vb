@@ -56,7 +56,7 @@ Public Class frmmain_menu
             SDA.Update(dbDataset)
             connection.Close()
         Catch
-            MessageBox.Show("fuck u")
+            MessageBox.Show("Error Saving Information")
         End Try
     End Sub
 End Class

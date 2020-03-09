@@ -37,13 +37,15 @@ Partial Class Form1
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(691, 510)
-        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
+        Me.CheckBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.CheckBox1.Location = New System.Drawing.Point(689, 509)
+        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(100, 21)
+        Me.CheckBox1.Size = New System.Drawing.Size(164, 21)
         Me.CheckBox1.TabIndex = 22
-        Me.CheckBox1.Text = "CheckBox1"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.CheckBox1.Text = "Remember Password"
+        Me.CheckBox1.UseVisualStyleBackColor = False
         '
         'btnClear
         '
@@ -120,6 +122,7 @@ Partial Class Form1
         '
         'Form1
         '
+        Me.AcceptButton = Me.btnLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
