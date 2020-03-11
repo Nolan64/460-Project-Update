@@ -8,13 +8,14 @@
     <OutputType>WinExe</OutputType>
     <StartupObject>DatabaseTestApplication2.My.MyApplication</StartupObject>
     <RootNamespace>DatabaseTestApplication2</RootNamespace>
-    <AssemblyName>DatabaseTestApplication2</AssemblyName>
+    <AssemblyName>Habitat Database System</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <PublishUrl>publish\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\NGarr\Desktop\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -24,10 +25,13 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <ProductName>Habitat DBMS</ProductName>
+    <PublisherName>Da Bois</PublisherName>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -37,8 +41,9 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>DatabaseTestApplication2.xml</DocumentationFile>
+    <DocumentationFile>Habitat Database System.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,7 +52,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>DatabaseTestApplication2.xml</DocumentationFile>
+    <DocumentationFile>Habitat Database System.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -66,13 +71,22 @@
     <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>false</GenerateManifests>
+    <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Resources\h4hlogo3.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A857011CC57F033479D02CBC20644274003F32E0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>DatabaseTestApplication2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
@@ -173,6 +187,12 @@
     <Compile Include="frmrepairs.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmreport.Designer.vb">
+      <DependentUpon>frmreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmsurvey.designer.vb">
       <DependentUpon>frmsurvey.vb</DependentUpon>
     </Compile>
@@ -262,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmrepairs.resx">
       <DependentUpon>frmrepairs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmreport.resx">
+      <DependentUpon>frmreport.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmsurvey.resx">
       <DependentUpon>frmsurvey.vb</DependentUpon>

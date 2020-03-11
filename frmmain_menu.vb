@@ -56,8 +56,12 @@ Public Class frmmain_menu
             SDA.Update(dbDataset)
             connection.Close()
         Catch
-            MessageBox.Show("Error Saving Information")
+            MessageBox.Show("Error")
         End Try
+    End Sub
+
+    Private Sub Reportsbtn_Click(sender As Object, e As EventArgs) Handles Reportsbtn.Click
+        frmreport.Show()
     End Sub
 End Class
 

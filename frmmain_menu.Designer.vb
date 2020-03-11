@@ -44,9 +44,9 @@ Partial Class frmmain_menu
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.All_table_vwBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.All_table_vwBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Refreshbtn = New System.Windows.Forms.Button()
         Me.Reportsbtn = New System.Windows.Forms.Button()
+        Me.All_table_vwBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.All_table_vwBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -238,10 +238,6 @@ Partial Class frmmain_menu
         Me.DataGridView1.Size = New System.Drawing.Size(1175, 724)
         Me.DataGridView1.TabIndex = 11
         '
-        'All_table_vwBindingSource
-        '
-        Me.All_table_vwBindingSource.DataSource = GetType(DatabaseTestApplication2.all_table_vw)
-        '
         'Refreshbtn
         '
         Me.Refreshbtn.Location = New System.Drawing.Point(291, 147)
@@ -261,6 +257,10 @@ Partial Class frmmain_menu
         Me.Reportsbtn.TabIndex = 13
         Me.Reportsbtn.Text = "Reports"
         Me.Reportsbtn.UseVisualStyleBackColor = False
+        '
+        'All_table_vwBindingSource
+        '
+        Me.All_table_vwBindingSource.DataSource = GetType(DatabaseTestApplication2.all_table_vw)
         '
         'frmmain_menu
         '
