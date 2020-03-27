@@ -63,5 +63,17 @@ Public Class frmmain_menu
     Private Sub Reportsbtn_Click(sender As Object, e As EventArgs) Handles Reportsbtn.Click
         frmreport.Show()
     End Sub
+
+    Private Sub editSurvey_Click(sender As Object, e As EventArgs) Handles editSurvey.Click
+        DatabaseTestApplication2.frmsurvey.Show()
+    End Sub
+
+    Private Sub tracking_Click(sender As Object, e As EventArgs) Handles tracking.Click
+        DatabaseTestApplication2.frmtracking.Show()
+    End Sub
+
+    Private Sub repairs_Click(sender As Object, e As EventArgs) Handles repairs.Click
+        DatabaseTestApplication2.frmrepairs.Show()
+    End Sub
 End Class
 

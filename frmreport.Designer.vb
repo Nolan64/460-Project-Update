@@ -26,7 +26,6 @@ Partial Class frmreport
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.ExportCSV = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,9 +49,9 @@ Partial Class frmreport
         '
         Me.Button1.Location = New System.Drawing.Point(24, 52)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(94, 23)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Age 65+"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox1
@@ -71,31 +70,22 @@ Partial Class frmreport
         Me.Button2.Text = "Button2"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'ExportCSV
-        '
-        Me.ExportCSV.Location = New System.Drawing.Point(12, 129)
-        Me.ExportCSV.Name = "ExportCSV"
-        Me.ExportCSV.Size = New System.Drawing.Size(112, 23)
-        Me.ExportCSV.TabIndex = 4
-        Me.ExportCSV.Text = "Export to CSV"
-        Me.ExportCSV.UseVisualStyleBackColor = True
-        '
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(24, 81)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.Size = New System.Drawing.Size(94, 23)
         Me.Button3.TabIndex = 5
-        Me.Button3.Text = "Button3"
+        Me.Button3.Text = "All Records"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(39, 199)
+        Me.Button4.Location = New System.Drawing.Point(24, 110)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 52)
+        Me.Button4.Size = New System.Drawing.Size(94, 44)
         Me.Button4.TabIndex = 6
-        Me.Button4.Text = "Button4"
+        Me.Button4.Text = "Export to CSV"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'frmreport
@@ -107,7 +97,6 @@ Partial Class frmreport
         Me.ClientSize = New System.Drawing.Size(1263, 640)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.ExportCSV)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
@@ -125,7 +114,6 @@ Partial Class frmreport
     Friend WithEvents Button1 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button2 As Button
-    Friend WithEvents ExportCSV As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
 End Class

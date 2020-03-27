@@ -230,12 +230,12 @@ Partial Class frmmain_menu
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AllowUserToOrderColumns = True
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(373, 13)
+        Me.DataGridView1.Location = New System.Drawing.Point(385, 0)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(1175, 724)
+        Me.DataGridView1.Size = New System.Drawing.Size(1175, 749)
         Me.DataGridView1.TabIndex = 11
         '
         'Refreshbtn

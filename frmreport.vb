@@ -35,7 +35,7 @@ Public Class frmreport
         End Try
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles ExportCSV.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         'create empty string
         Dim thecsvfile As String = String.Empty
         'get the column headers
