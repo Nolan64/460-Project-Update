@@ -23,94 +23,28 @@ Namespace DatabaseTestApplication2
 			ctx.homeownerships.Load()
 			Dim _entities As BindingList(Of homeownership) = ctx.homeownerships.Local.ToBindingList()
 			homeownershipBindingSource.DataSource = _entities
-			Me.applicantInfoMeeting_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "applicantInfoMeeting", True ))
-			Me.applicationChecklist1_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "applicationChecklist1", True ))
-			Me.applicationChecklist2_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "applicationChecklist2", True ))
-			Me.employmentVerifiedTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "employmentVerified", True ))
-			Me.landlordReferenceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "landlordReference", True ))
-			Me.previousLandlordReferenceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "previousLandlordReference", True ))
-			Me.backgroundCheckTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "backgroundCheck", True ))
-			Me.CCCBudgetTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "CCCBudget", True ))
-			Me.creditReportRunTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "creditReportRun", True ))
-			Me.homeVisit_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "homeVisit", True ))
-			Me.committeeDecision_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "committeeDecision", True ))
-			Me.committeeAcceptedTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "committeeAccepted", True ))
-			Me.committeeReasonTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "committeeReason", True ))
-			Me.boardVote_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "boardVote", True ))
-			Me.boardAcceptedTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "boardAccepted", True ))
-			Me.boardReasonTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "boardReason", True ))
-			Me.handbookReview_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "handbookReview", True ))
+			Me.applicantInfoMeeting_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "applicantInfoMeeting", True))
+			Me.applicationChecklist1_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "applicationChecklist1", True))
+			Me.applicationChecklist2_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "applicationChecklist2", True))
+			Me.employmentVerifiedTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "employmentVerified", True))
+			Me.landlordReferenceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "landlordReference", True))
+			Me.previousLandlordReferenceTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "previousLandlordReference", True))
+			Me.backgroundCheckTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "backgroundCheck", True))
+			Me.CCCBudgetTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "CCCBudget", True))
+			Me.creditReportRunTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "creditReportRun", True))
+			Me.homeVisit_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "homeVisit", True))
+			Me.committeeDecision_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "committeeDecision", True))
+			Me.committeeAcceptedTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "committeeAccepted", True))
+			Me.committeeReasonTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "committeeReason", True))
+			Me.boardVote_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "boardVote", True))
+			Me.boardAcceptedTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "boardAccepted", True))
+			Me.boardReasonTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "boardReason", True))
+			Me.handbookReview_dateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.homeownershipBindingSource, "handbookReview", True))
 			Me.general_UID_comboBox.DataSource = ctx.generals.ToList()
 			Me.general_UID_comboBox.DisplayMember = "UID"
 			Me.general_UID_comboBox.ValueMember = "UID"
 			Me.general_UID_comboBox.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.homeownershipBindingSource, "general_UID", True))
-
-			If checkboxEmployment.Checked Then
-				checkboxEmployment.Tag = "1" = True
-			End If
-
-			If checkboxLandlord.Checked = True Then
-				checkboxLandlord.Tag = "1"
-			End If
-
-			If checkboxPrevLandlord.Checked = True Then
-				checkboxPrevLandlord.Tag = "1"
-			End If
-
-			If checkboxBackground.Checked = True Then
-				checkboxBackground.Tag = "1"
-			End If
-
-			If checkboxBudget.Checked = True Then
-				checkboxBudget.Tag = "1"
-			End If
-
-			If checkboxReportRun.Checked = True Then
-				checkboxReportRun.Tag = "1"
-			End If
-
-			If checkboxCommittee.Checked = True Then
-				checkboxCommittee.Tag = "1"
-			End If
-
-			If checkboxBoard.Checked = True Then
-				checkboxBoard.Tag = "1"
-			End If
-
-
 		End Sub
-
-		Private Function CCCBudgetTextBox() As Object
-			Throw New NotImplementedException()
-		End Function
-
-		Private Function previousLandlordReferenceTextBox() As Object
-			Throw New NotImplementedException()
-		End Function
-
-		Private Function backgroundCheckTextBox() As Object
-			Throw New NotImplementedException()
-		End Function
-
-		Private Function landlordReferenceTextBox() As Object
-			Throw New NotImplementedException()
-		End Function
-
-		Private Function employmentVerifiedTextBox() As Object
-			Throw New NotImplementedException()
-		End Function
-
-		Private Function creditReportRunTextBox() As Object
-			Throw New NotImplementedException()
-		End Function
-
-		Private Function committeeAcceptedTextBox() As Object
-			Throw New NotImplementedException()
-		End Function
-
-		Private Function boardAcceptedTextBox() As Object
-			Throw New NotImplementedException()
-		End Function
 
 		Private Sub ToolStripButton1_Click(sender As System.Object, e As System.EventArgs) Handles ToolStripButton1.Click
 			If Not Me.Validate() Then
@@ -119,12 +53,12 @@ Namespace DatabaseTestApplication2
 			homeownershipBindingSource.EndEdit()
 			ctx.SaveChanges()
 		End Sub
-		
+
 		Private Sub Form1_FormClosing(sender As System.Object, e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
 			e.Cancel = False
 		End Sub
 
-		Private Sub employmentVerifiedTextBox_Validating(sender As Object, e As CancelEventArgs)
+		Private Sub employmentVerifiedTextBox_Validating(sender As Object, e As CancelEventArgs) Handles employmentVerifiedTextBox.Validating
 
 			e.Cancel = False
 			If String.IsNullOrEmpty(employmentVerifiedTextBox.Text) Then
@@ -142,7 +76,7 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub landlordReferenceTextBox_Validating(sender As Object, e As CancelEventArgs)
+		Private Sub landlordReferenceTextBox_Validating(sender As Object, e As CancelEventArgs) Handles landlordReferenceTextBox.Validating
 
 			e.Cancel = False
 			If String.IsNullOrEmpty(landlordReferenceTextBox.Text) Then
@@ -160,7 +94,7 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub previousLandlordReferenceTextBox_Validating(sender As Object, e As CancelEventArgs)
+		Private Sub previousLandlordReferenceTextBox_Validating(sender As Object, e As CancelEventArgs) Handles previousLandlordReferenceTextBox.Validating
 
 			e.Cancel = False
 			If String.IsNullOrEmpty(previousLandlordReferenceTextBox.Text) Then
@@ -178,7 +112,7 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub backgroundCheckTextBox_Validating(sender As Object, e As CancelEventArgs)
+		Private Sub backgroundCheckTextBox_Validating(sender As Object, e As CancelEventArgs) Handles backgroundCheckTextBox.Validating
 
 			e.Cancel = False
 			If String.IsNullOrEmpty(backgroundCheckTextBox.Text) Then
@@ -196,7 +130,7 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub CCCBudgetTextBox_Validating(sender As Object, e As CancelEventArgs)
+		Private Sub CCCBudgetTextBox_Validating(sender As Object, e As CancelEventArgs) Handles CCCBudgetTextBox.Validating
 
 			e.Cancel = False
 			If String.IsNullOrEmpty(CCCBudgetTextBox.Text) Then
@@ -214,7 +148,7 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub creditReportRunTextBox_Validating(sender As Object, e As CancelEventArgs)
+		Private Sub creditReportRunTextBox_Validating(sender As Object, e As CancelEventArgs) Handles creditReportRunTextBox.Validating
 
 			e.Cancel = False
 			If String.IsNullOrEmpty(creditReportRunTextBox.Text) Then
@@ -232,7 +166,7 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub committeeAcceptedTextBox_Validating(sender As Object, e As CancelEventArgs)
+		Private Sub committeeAcceptedTextBox_Validating(sender As Object, e As CancelEventArgs) Handles committeeAcceptedTextBox.Validating
 
 			e.Cancel = False
 			If String.IsNullOrEmpty(committeeAcceptedTextBox.Text) Then
@@ -262,7 +196,7 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub boardAcceptedTextBox_Validating(sender As Object, e As CancelEventArgs)
+		Private Sub boardAcceptedTextBox_Validating(sender As Object, e As CancelEventArgs) Handles boardAcceptedTextBox.Validating
 
 			e.Cancel = False
 			If String.IsNullOrEmpty(boardAcceptedTextBox.Text) Then
@@ -307,29 +241,6 @@ Namespace DatabaseTestApplication2
 		Private Sub bindingNavigatorAddNewItem_Click(sender As System.Object, e As System.EventArgs) Handles BindingNavigatorAddNewItem.Click
 			homeownershipBindingSource.AddNew()
 		End Sub
-
-		Private Sub MainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MainMenuToolStripMenuItem.Click
-			Form1.Show()
-			Me.Close()
-		End Sub
-
-		Private Sub GeneralInfoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GeneralInfoToolStripMenuItem.Click
-			frmgeneral.Show()
-			Me.Close()
-		End Sub
-
-		Private Sub HomeownershipToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeownershipToolStripMenuItem.Click
-			frmtracking.Show()
-			Me.Close()
-
-		End Sub
-
-		Private Sub RepairsToolStripMenuItem_Click(sender As Object, e As EventArgs)
-			frmrepairs.Show()
-			Me.Close()
-
-		End Sub
-
 
 	End Class
 

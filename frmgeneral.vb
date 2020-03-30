@@ -309,17 +309,17 @@ Namespace DatabaseTestApplication2
 		End Sub
 
 		Private Sub RepairsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RepairsToolStripMenuItem.Click
-			frmrepairs.Show()
+			DatabaseTestApplication2.frmrepairs.Show()
 			Me.Hide()
 		End Sub
 
 		Private Sub TrackingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TrackingToolStripMenuItem.Click
-			frmtracking.Show()
+			DatabaseTestApplication2.frmtracking.Show()
 			Me.Hide()
 		End Sub
 
 		Private Sub HomeownershipToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeownershipToolStripMenuItem.Click
-			frmhomeownership.Show()
+			DatabaseTestApplication2.frmhomeownership.Show()
 			Me.Hide()
 		End Sub
 
