@@ -107,7 +107,7 @@ Partial Class frmmain_menu
         '
         'settings
         '
-        Me.settings.Location = New System.Drawing.Point(20, 699)
+        Me.settings.Location = New System.Drawing.Point(13, 990)
         Me.settings.Margin = New System.Windows.Forms.Padding(4)
         Me.settings.Name = "settings"
         Me.settings.Size = New System.Drawing.Size(165, 30)
@@ -119,7 +119,8 @@ Partial Class frmmain_menu
         '
         Me.userName.AutoSize = True
         Me.userName.BackColor = System.Drawing.Color.Transparent
-        Me.userName.Location = New System.Drawing.Point(16, 679)
+        Me.userName.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.userName.Location = New System.Drawing.Point(13, 969)
         Me.userName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.userName.Name = "userName"
         Me.userName.Size = New System.Drawing.Size(79, 17)
@@ -235,7 +236,7 @@ Partial Class frmmain_menu
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(1175, 749)
+        Me.DataGridView1.Size = New System.Drawing.Size(1920, 1080)
         Me.DataGridView1.TabIndex = 11
         '
         'Refreshbtn
@@ -269,7 +270,7 @@ Partial Class frmmain_menu
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1560, 749)
+        Me.ClientSize = New System.Drawing.Size(1902, 1033)
         Me.Controls.Add(Me.Reportsbtn)
         Me.Controls.Add(Me.Refreshbtn)
         Me.Controls.Add(Me.DataGridView1)
