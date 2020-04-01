@@ -52,6 +52,7 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
             Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
             Me.Panel1 = New System.Windows.Forms.Panel()
+            Me.PictureBox2 = New System.Windows.Forms.PictureBox()
             Me.Label2 = New System.Windows.Forms.Label()
             Me.Label1 = New System.Windows.Forms.Label()
             Me.dependenttxt = New System.Windows.Forms.TextBox()
@@ -102,15 +103,14 @@ Namespace DatabaseTestApplication2
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
-            Me.PictureBox2 = New System.Windows.Forms.PictureBox()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
             CType(Me.generalBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.Panel1.SuspendLayout()
+            CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.MenuStrip1.SuspendLayout()
             Me.panel3.SuspendLayout()
-            CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'BindingNavigator1
@@ -288,6 +288,18 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Name = "Panel1"
             Me.Panel1.Size = New System.Drawing.Size(963, 617)
             Me.Panel1.TabIndex = 1
+            '
+            'PictureBox2
+            '
+            Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+            Me.PictureBox2.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
+            Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+            Me.PictureBox2.Location = New System.Drawing.Point(765, 40)
+            Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+            Me.PictureBox2.Name = "PictureBox2"
+            Me.PictureBox2.Size = New System.Drawing.Size(191, 66)
+            Me.PictureBox2.TabIndex = 98
+            Me.PictureBox2.TabStop = False
             '
             'Label2
             '
@@ -778,18 +790,6 @@ Namespace DatabaseTestApplication2
             Me.panel6.Size = New System.Drawing.Size(989, 12)
             Me.panel6.TabIndex = 6
             '
-            'PictureBox2
-            '
-            Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-            Me.PictureBox2.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
-            Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-            Me.PictureBox2.Location = New System.Drawing.Point(765, 40)
-            Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-            Me.PictureBox2.Name = "PictureBox2"
-            Me.PictureBox2.Size = New System.Drawing.Size(191, 66)
-            Me.PictureBox2.TabIndex = 98
-            Me.PictureBox2.TabStop = False
-            '
             'frmgeneral
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -808,11 +808,11 @@ Namespace DatabaseTestApplication2
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.Panel1.ResumeLayout(False)
             Me.Panel1.PerformLayout()
+            CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
             Me.MenuStrip1.ResumeLayout(False)
             Me.MenuStrip1.PerformLayout()
             Me.panel3.ResumeLayout(False)
             Me.panel3.PerformLayout()
-            CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
