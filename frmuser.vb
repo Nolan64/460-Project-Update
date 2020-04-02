@@ -15,17 +15,16 @@ Imports System.Data.Entity
 Namespace DatabaseTestApplication2
 	
 	Public Class frmuser
-		
-		Private ctx As mydbEntities
-		
+
+		Private ctx As mydbEntities1
+
 		Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-			ctx = new mydbEntities()
-			ctx.user.Load()
-			Dim _entities As BindingList(Of user) = ctx.user.Local.ToBindingList()
+			ctx = New mydbEntities1()
+			ctx.users.Load()
+			Dim _entities As BindingList(Of user) = ctx.users.Local.ToBindingList()
 			userBindingSource.DataSource = _entities
 			Me.usernameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.userBindingSource, "username", True ))
-			Me.passwordTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.userBindingSource, "password", True ))
-			Me.create_timeTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.userBindingSource, "create_time", True ))
+			Me.passwordTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.userBindingSource, "password", True))
 		End Sub
 		
 		Private Sub ToolStripButton1_Click(sender As System.Object, e As System.EventArgs) Handles ToolStripButton1.Click
