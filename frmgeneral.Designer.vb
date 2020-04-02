@@ -388,6 +388,7 @@ Namespace DatabaseTestApplication2
             'UIDTextBox
             '
             Me.UIDTextBox.BackColor = System.Drawing.SystemColors.Window
+            Me.UIDTextBox.Enabled = False
             Me.UIDTextBox.Location = New System.Drawing.Point(182, 175)
             Me.UIDTextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.UIDTextBox.Name = "UIDTextBox"

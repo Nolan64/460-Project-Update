@@ -107,7 +107,7 @@ Partial Class frmmain_menu
         '
         'settings
         '
-        Me.settings.Location = New System.Drawing.Point(13, 990)
+        Me.settings.Location = New System.Drawing.Point(13, 879)
         Me.settings.Margin = New System.Windows.Forms.Padding(4)
         Me.settings.Name = "settings"
         Me.settings.Size = New System.Drawing.Size(165, 30)
@@ -120,7 +120,7 @@ Partial Class frmmain_menu
         Me.userName.AutoSize = True
         Me.userName.BackColor = System.Drawing.Color.Transparent
         Me.userName.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.userName.Location = New System.Drawing.Point(13, 969)
+        Me.userName.Location = New System.Drawing.Point(13, 858)
         Me.userName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.userName.Name = "userName"
         Me.userName.Size = New System.Drawing.Size(79, 17)
@@ -231,12 +231,12 @@ Partial Class frmmain_menu
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AllowUserToOrderColumns = True
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(373, 2)
+        Me.DataGridView1.Location = New System.Drawing.Point(373, 13)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(1754, 1019)
+        Me.DataGridView1.Size = New System.Drawing.Size(1517, 896)
         Me.DataGridView1.TabIndex = 11
         '
         'Refreshbtn
@@ -261,7 +261,7 @@ Partial Class frmmain_menu
         '
         'All_table_vwBindingSource
         '
-        Me.All_table_vwBindingSource.DataSource = GetType(DatabaseTestApplication2.DatabaseTestApplication2.all_table_vw)
+        Me.All_table_vwBindingSource.DataSource = GetType(DatabaseTestApplication2.all_table_vw)
         '
         'frmmain_menu
         '
