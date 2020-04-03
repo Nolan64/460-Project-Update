@@ -374,6 +374,14 @@ Namespace DatabaseTestApplication2
 		Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
 		End Sub
+
+		Private Sub General_Info_UIDLabel_Click(sender As Object, e As EventArgs)
+
+		End Sub
+
+		Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+		End Sub
 	End Class
 
 End Namespace

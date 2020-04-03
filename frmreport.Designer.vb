@@ -63,11 +63,11 @@ Partial Class frmreport
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(1176, 12)
+        Me.Button2.Location = New System.Drawing.Point(1176, 11)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Button2"
+        Me.Button2.Text = "Search"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3

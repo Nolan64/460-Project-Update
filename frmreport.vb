@@ -110,4 +110,24 @@ Public Class frmreport
         'CHANGE ON FINAL RELEASE
         My.Computer.FileSystem.WriteAllText("C:\Users\NGarr\Desktop\" + filename + ".csv", thecsvfile, False)
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Try
+            Dim SDA As New MySqlDataAdapter
+            Dim dbDataset As New DataTable
+            Dim bsource As New BindingSource
+            connection.Open()
+            Dim Query As String
+            Query = "select * from mydb.all_table_vw where firstName like '" + TextBox1.Text + "' or lastName like '" + TextBox1.Text + "'"
+            Dim Command2 As New MySqlCommand(Query, connection)
+            SDA.SelectCommand = Command2
+            SDA.Fill(dbDataset)
+            bsource.DataSource = dbDataset
+            DataGridView1.DataSource = bsource
+            SDA.Update(dbDataset)
+            connection.Close()
+        Catch
+            MessageBox.Show("Error")
+        End Try
+    End Sub
 End Class

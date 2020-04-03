@@ -95,7 +95,6 @@ Namespace DatabaseTestApplication2
             Me.GISAssessmentTextBox = New System.Windows.Forms.TextBox()
             Me.FundingSourceLabel = New System.Windows.Forms.Label()
             Me.FundingSourceTextBox = New System.Windows.Forms.TextBox()
-            Me.General_Info_UIDLabel = New System.Windows.Forms.Label()
             Me.General_Info_UID_comboBox = New System.Windows.Forms.ComboBox()
             Me.mStripMENUBAR = New System.Windows.Forms.MenuStrip()
             Me.tstripMainMenu = New System.Windows.Forms.ToolStripMenuItem()
@@ -106,6 +105,7 @@ Namespace DatabaseTestApplication2
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
+            Me.Label2 = New System.Windows.Forms.Label()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
             CType(Me.repairsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -242,6 +242,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.BackColor = System.Drawing.Color.Transparent
             Me.Panel1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.angryimg__12_
             Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+            Me.Panel1.Controls.Add(Me.Label2)
             Me.Panel1.Controls.Add(Me.chkIDDocs)
             Me.Panel1.Controls.Add(Me.chkFundSource)
             Me.Panel1.Controls.Add(Me.chkGISAssessment)
@@ -285,7 +286,6 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.GISAssessmentTextBox)
             Me.Panel1.Controls.Add(Me.FundingSourceLabel)
             Me.Panel1.Controls.Add(Me.FundingSourceTextBox)
-            Me.Panel1.Controls.Add(Me.General_Info_UIDLabel)
             Me.Panel1.Controls.Add(Me.General_Info_UID_comboBox)
             Me.Panel1.Controls.Add(Me.mStripMENUBAR)
             Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -802,19 +802,6 @@ Namespace DatabaseTestApplication2
             Me.FundingSourceTextBox.Size = New System.Drawing.Size(132, 27)
             Me.FundingSourceTextBox.TabIndex = 32
             '
-            'General_Info_UIDLabel
-            '
-            Me.General_Info_UIDLabel.Enabled = False
-            Me.General_Info_UIDLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.General_Info_UIDLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.General_Info_UIDLabel.Location = New System.Drawing.Point(17, 149)
-            Me.General_Info_UIDLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-            Me.General_Info_UIDLabel.Name = "General_Info_UIDLabel"
-            Me.General_Info_UIDLabel.Size = New System.Drawing.Size(197, 25)
-            Me.General_Info_UIDLabel.TabIndex = 33
-            Me.General_Info_UIDLabel.Text = "Applicant ID"
-            Me.General_Info_UIDLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-            '
             'General_Info_UID_comboBox
             '
             Me.General_Info_UID_comboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
@@ -903,6 +890,19 @@ Namespace DatabaseTestApplication2
             Me.panel6.Size = New System.Drawing.Size(1140, 12)
             Me.panel6.TabIndex = 6
             '
+            'Label2
+            '
+            Me.Label2.BackColor = System.Drawing.Color.Transparent
+            Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
+            Me.Label2.ForeColor = System.Drawing.Color.White
+            Me.Label2.Location = New System.Drawing.Point(24, 152)
+            Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Label2.Name = "Label2"
+            Me.Label2.Size = New System.Drawing.Size(197, 25)
+            Me.Label2.TabIndex = 109
+            Me.Label2.Text = "Applicant ID"
+            Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+            '
             'frmrepairs
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -979,11 +979,10 @@ Namespace DatabaseTestApplication2
 		Friend WithEvents FundingSourceTextBox As System.Windows.Forms.TextBox
 		Friend WithEvents FundingSourceLabel As System.Windows.Forms.Label
 		Friend WithEvents General_Info_UID_comboBox As System.Windows.Forms.ComboBox
-		Friend WithEvents General_Info_UIDLabel As System.Windows.Forms.Label
-		Friend WithEvents panel3 As System.Windows.Forms.Panel
-		Friend WithEvents panel4 As System.Windows.Forms.Panel
-		Friend WithEvents panel5 As System.Windows.Forms.Panel
-		Friend WithEvents panel6 As System.Windows.Forms.Panel
+        Friend WithEvents panel3 As System.Windows.Forms.Panel
+        Friend WithEvents panel4 As System.Windows.Forms.Panel
+        Friend WithEvents panel5 As System.Windows.Forms.Panel
+        Friend WithEvents panel6 As System.Windows.Forms.Panel
         Friend WithEvents Label1 As Label
         Friend WithEvents PictureBox1 As PictureBox
         Friend WithEvents chkIncomeVerified As CheckBox
@@ -1000,6 +999,7 @@ Namespace DatabaseTestApplication2
         Friend WithEvents tstripGeneral As ToolStripMenuItem
         Friend WithEvents tstripHomeownership As ToolStripMenuItem
         Friend WithEvents RepairsToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents Label2 As Label
     End Class
 
 End Namespace
