@@ -175,7 +175,14 @@ Namespace DatabaseTestApplication2
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
-            Me.Label1 = New System.Windows.Forms.Label()
+            Me.SurveyEditorLabel = New System.Windows.Forms.Label()
+            Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+            Me.MainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.GeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.HomeownershipToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.RepairsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.SurveyEditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.SurveyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
             CType(Me.surveyBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -183,6 +190,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.SuspendLayout()
             CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.panel3.SuspendLayout()
+            Me.MenuStrip1.SuspendLayout()
             Me.SuspendLayout()
             '
             'BindingNavigator1
@@ -311,7 +319,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.BackColor = System.Drawing.Color.Transparent
             Me.Panel1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.angryimg__12_
             Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-            Me.Panel1.Controls.Add(Me.Label1)
+            Me.Panel1.Controls.Add(Me.SurveyEditorLabel)
             Me.Panel1.Controls.Add(Me.PictureBox1)
             Me.Panel1.Controls.Add(Me.NotesLabel)
             Me.Panel1.Controls.Add(Me.NotesTextBox)
@@ -431,6 +439,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.SurveyIDTextBox)
             Me.Panel1.Controls.Add(Me.SurveyNameLabel)
             Me.Panel1.Controls.Add(Me.SurveyNameTextBox)
+            Me.Panel1.Controls.Add(Me.MenuStrip1)
             Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.Panel1.Location = New System.Drawing.Point(10, 0)
             Me.Panel1.Margin = New System.Windows.Forms.Padding(10, 3, 10, 3)
@@ -442,9 +451,9 @@ Namespace DatabaseTestApplication2
             '
             Me.PictureBox1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
             Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-            Me.PictureBox1.Location = New System.Drawing.Point(505, 10)
+            Me.PictureBox1.Location = New System.Drawing.Point(560, 29)
             Me.PictureBox1.Name = "PictureBox1"
-            Me.PictureBox1.Size = New System.Drawing.Size(285, 80)
+            Me.PictureBox1.Size = New System.Drawing.Size(230, 87)
             Me.PictureBox1.TabIndex = 119
             Me.PictureBox1.TabStop = False
             '
@@ -1428,15 +1437,60 @@ Namespace DatabaseTestApplication2
             Me.panel6.Size = New System.Drawing.Size(842, 10)
             Me.panel6.TabIndex = 6
             '
-            'Label1
+            'SurveyEditorLabel
             '
-            Me.Label1.AutoSize = True
-            Me.Label1.ForeColor = System.Drawing.SystemColors.Control
-            Me.Label1.Location = New System.Drawing.Point(68, 50)
-            Me.Label1.Name = "Label1"
-            Me.Label1.Size = New System.Drawing.Size(77, 13)
-            Me.Label1.TabIndex = 120
-            Me.Label1.Text = "Survey Creator"
+            Me.SurveyEditorLabel.AutoSize = True
+            Me.SurveyEditorLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.SurveyEditorLabel.Location = New System.Drawing.Point(68, 50)
+            Me.SurveyEditorLabel.Name = "SurveyEditorLabel"
+            Me.SurveyEditorLabel.Size = New System.Drawing.Size(70, 13)
+            Me.SurveyEditorLabel.TabIndex = 120
+            Me.SurveyEditorLabel.Text = "Survey Editor"
+            '
+            'MenuStrip1
+            '
+            Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.GeneralToolStripMenuItem, Me.HomeownershipToolStripMenuItem, Me.RepairsToolStripMenuItem, Me.SurveyEditorToolStripMenuItem, Me.SurveyToolStripMenuItem})
+            Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+            Me.MenuStrip1.Name = "MenuStrip1"
+            Me.MenuStrip1.Size = New System.Drawing.Size(805, 24)
+            Me.MenuStrip1.TabIndex = 121
+            Me.MenuStrip1.Text = "MenuStrip1"
+            '
+            'MainMenuToolStripMenuItem
+            '
+            Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
+            Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(80, 20)
+            Me.MainMenuToolStripMenuItem.Text = "Main Menu"
+            '
+            'GeneralToolStripMenuItem
+            '
+            Me.GeneralToolStripMenuItem.Name = "GeneralToolStripMenuItem"
+            Me.GeneralToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
+            Me.GeneralToolStripMenuItem.Text = "General"
+            '
+            'HomeownershipToolStripMenuItem
+            '
+            Me.HomeownershipToolStripMenuItem.Name = "HomeownershipToolStripMenuItem"
+            Me.HomeownershipToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
+            Me.HomeownershipToolStripMenuItem.Text = "Homeownership"
+            '
+            'RepairsToolStripMenuItem
+            '
+            Me.RepairsToolStripMenuItem.Name = "RepairsToolStripMenuItem"
+            Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+            Me.RepairsToolStripMenuItem.Text = "Repairs"
+            '
+            'SurveyEditorToolStripMenuItem
+            '
+            Me.SurveyEditorToolStripMenuItem.Name = "SurveyEditorToolStripMenuItem"
+            Me.SurveyEditorToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
+            Me.SurveyEditorToolStripMenuItem.Text = "Survey Editor"
+            '
+            'SurveyToolStripMenuItem
+            '
+            Me.SurveyToolStripMenuItem.Name = "SurveyToolStripMenuItem"
+            Me.SurveyToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
+            Me.SurveyToolStripMenuItem.Text = "Survey Results"
             '
             'frmsurvey
             '
@@ -1445,6 +1499,7 @@ Namespace DatabaseTestApplication2
             Me.ClientSize = New System.Drawing.Size(842, 609)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
+            Me.MainMenuStrip = Me.MenuStrip1
             Me.Name = "frmsurvey"
             Me.Text = "Survey"
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1457,6 +1512,8 @@ Namespace DatabaseTestApplication2
             CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.panel3.ResumeLayout(False)
             Me.panel3.PerformLayout()
+            Me.MenuStrip1.ResumeLayout(False)
+            Me.MenuStrip1.PerformLayout()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
@@ -1600,7 +1657,14 @@ Namespace DatabaseTestApplication2
 		Friend WithEvents panel5 As System.Windows.Forms.Panel
 		Friend WithEvents panel6 As System.Windows.Forms.Panel
         Friend WithEvents PictureBox1 As PictureBox
-        Friend WithEvents Label1 As Label
+        Friend WithEvents SurveyEditorLabel As Label
+        Friend WithEvents MenuStrip1 As MenuStrip
+        Friend WithEvents MainMenuToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents GeneralToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents HomeownershipToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents RepairsToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents SurveyEditorToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents SurveyToolStripMenuItem As ToolStripMenuItem
     End Class
 
 End Namespace
