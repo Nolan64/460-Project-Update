@@ -58,12 +58,6 @@ Namespace DatabaseTestApplication2
 				DeedOfTrustTextBox.Text = "0"
 			End If
 
-			If chkFundSource.Checked = True Then
-				FundingSourceTextBox.Text = "1"
-			ElseIf chkFundSource.Checked = False Then
-				FundingSourceTextBox.Text = "0"
-			End If
-
 			If chkGISAssessment.Checked = True Then
 				GISAssessmentTextBox.Text = "1"
 			ElseIf chkGISAssessment.Checked = False Then
@@ -328,13 +322,8 @@ Namespace DatabaseTestApplication2
                 DeedOfTrustTextBox.Text = "0"
             End If
 
-            If chkFundSource.Checked = True Then
-                FundingSourceTextBox.Text = "1"
-            ElseIf chkFundSource.Checked = False Then
-                FundingSourceTextBox.Text = "0"
-            End If
 
-            If chkGISAssessment.Checked = True Then
+			If chkGISAssessment.Checked = True Then
                 GISAssessmentTextBox.Text = "1"
             ElseIf chkGISAssessment.Checked = False Then
                 GISAssessmentTextBox.Text = "0"
@@ -371,9 +360,7 @@ Namespace DatabaseTestApplication2
             End If
         End Sub
 
-		Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
-		End Sub
 
 		Private Sub General_Info_UIDLabel_Click(sender As Object, e As EventArgs)
 

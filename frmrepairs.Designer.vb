@@ -58,7 +58,6 @@ Namespace DatabaseTestApplication2
             Me.Label3 = New System.Windows.Forms.Label()
             Me.Label2 = New System.Windows.Forms.Label()
             Me.chkIDDocs = New System.Windows.Forms.CheckBox()
-            Me.chkFundSource = New System.Windows.Forms.CheckBox()
             Me.chkGISAssessment = New System.Windows.Forms.CheckBox()
             Me.chkParcelReport = New System.Windows.Forms.CheckBox()
             Me.chkCompletedApp = New System.Windows.Forms.CheckBox()
@@ -265,7 +264,6 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.Label3)
             Me.Panel1.Controls.Add(Me.Label2)
             Me.Panel1.Controls.Add(Me.chkIDDocs)
-            Me.Panel1.Controls.Add(Me.chkFundSource)
             Me.Panel1.Controls.Add(Me.chkGISAssessment)
             Me.Panel1.Controls.Add(Me.chkParcelReport)
             Me.Panel1.Controls.Add(Me.chkCompletedApp)
@@ -377,23 +375,11 @@ Namespace DatabaseTestApplication2
             Me.chkIDDocs.Text = " "
             Me.chkIDDocs.UseVisualStyleBackColor = True
             '
-            'chkFundSource
-            '
-            Me.chkFundSource.AutoSize = True
-            Me.chkFundSource.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.chkFundSource.Location = New System.Drawing.Point(585, 585)
-            Me.chkFundSource.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-            Me.chkFundSource.Name = "chkFundSource"
-            Me.chkFundSource.Size = New System.Drawing.Size(35, 24)
-            Me.chkFundSource.TabIndex = 16
-            Me.chkFundSource.Text = " "
-            Me.chkFundSource.UseVisualStyleBackColor = True
-            '
             'chkGISAssessment
             '
             Me.chkGISAssessment.AutoSize = True
             Me.chkGISAssessment.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.chkGISAssessment.Location = New System.Drawing.Point(585, 538)
+            Me.chkGISAssessment.Location = New System.Drawing.Point(541, 535)
             Me.chkGISAssessment.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.chkGISAssessment.Name = "chkGISAssessment"
             Me.chkGISAssessment.Size = New System.Drawing.Size(35, 24)
@@ -405,7 +391,7 @@ Namespace DatabaseTestApplication2
             '
             Me.chkParcelReport.AutoSize = True
             Me.chkParcelReport.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.chkParcelReport.Location = New System.Drawing.Point(585, 491)
+            Me.chkParcelReport.Location = New System.Drawing.Point(541, 492)
             Me.chkParcelReport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.chkParcelReport.Name = "chkParcelReport"
             Me.chkParcelReport.Size = New System.Drawing.Size(35, 24)
@@ -490,7 +476,7 @@ Namespace DatabaseTestApplication2
             Me.Label1.BackColor = System.Drawing.Color.Transparent
             Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.Label1.ForeColor = System.Drawing.Color.White
-            Me.Label1.Location = New System.Drawing.Point(5, 30)
+            Me.Label1.Location = New System.Drawing.Point(7, 41)
             Me.Label1.Margin = New System.Windows.Forms.Padding(9, 0, 9, 0)
             Me.Label1.Name = "Label1"
             Me.Label1.Size = New System.Drawing.Size(281, 82)
@@ -689,7 +675,7 @@ Namespace DatabaseTestApplication2
             'IDDocumentsTextBox
             '
             Me.IDDocumentsTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.IDDocumentsTextBox.Location = New System.Drawing.Point(85, 69)
+            Me.IDDocumentsTextBox.Location = New System.Drawing.Point(41, 94)
             Me.IDDocumentsTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.IDDocumentsTextBox.Name = "IDDocumentsTextBox"
             Me.IDDocumentsTextBox.Size = New System.Drawing.Size(132, 27)
@@ -711,7 +697,7 @@ Namespace DatabaseTestApplication2
             'IncomeVerifiedTextBox
             '
             Me.IncomeVerifiedTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.IncomeVerifiedTextBox.Location = New System.Drawing.Point(89, 69)
+            Me.IncomeVerifiedTextBox.Location = New System.Drawing.Point(71, 86)
             Me.IncomeVerifiedTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.IncomeVerifiedTextBox.Name = "IncomeVerifiedTextBox"
             Me.IncomeVerifiedTextBox.Size = New System.Drawing.Size(132, 27)
@@ -733,7 +719,7 @@ Namespace DatabaseTestApplication2
             'DeedOfTrustTextBox
             '
             Me.DeedOfTrustTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.DeedOfTrustTextBox.Location = New System.Drawing.Point(101, 69)
+            Me.DeedOfTrustTextBox.Location = New System.Drawing.Point(24, 59)
             Me.DeedOfTrustTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.DeedOfTrustTextBox.Name = "DeedOfTrustTextBox"
             Me.DeedOfTrustTextBox.Size = New System.Drawing.Size(132, 27)
@@ -755,7 +741,7 @@ Namespace DatabaseTestApplication2
             'TaxBillTextBox
             '
             Me.TaxBillTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.TaxBillTextBox.Location = New System.Drawing.Point(101, 59)
+            Me.TaxBillTextBox.Location = New System.Drawing.Point(57, 47)
             Me.TaxBillTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.TaxBillTextBox.Name = "TaxBillTextBox"
             Me.TaxBillTextBox.Size = New System.Drawing.Size(132, 27)
@@ -777,7 +763,7 @@ Namespace DatabaseTestApplication2
             'SatisfactionTextBox
             '
             Me.SatisfactionTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.SatisfactionTextBox.Location = New System.Drawing.Point(89, 59)
+            Me.SatisfactionTextBox.Location = New System.Drawing.Point(42, 69)
             Me.SatisfactionTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.SatisfactionTextBox.Name = "SatisfactionTextBox"
             Me.SatisfactionTextBox.Size = New System.Drawing.Size(132, 27)
@@ -799,7 +785,7 @@ Namespace DatabaseTestApplication2
             'CompletedApplicationTextBox
             '
             Me.CompletedApplicationTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.CompletedApplicationTextBox.Location = New System.Drawing.Point(101, 69)
+            Me.CompletedApplicationTextBox.Location = New System.Drawing.Point(42, 59)
             Me.CompletedApplicationTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.CompletedApplicationTextBox.Name = "CompletedApplicationTextBox"
             Me.CompletedApplicationTextBox.Size = New System.Drawing.Size(132, 27)
@@ -810,7 +796,7 @@ Namespace DatabaseTestApplication2
             Me.ParcelReportLabel.BackColor = System.Drawing.Color.Transparent
             Me.ParcelReportLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.ParcelReportLabel.ForeColor = System.Drawing.Color.White
-            Me.ParcelReportLabel.Location = New System.Drawing.Point(380, 490)
+            Me.ParcelReportLabel.Location = New System.Drawing.Point(291, 490)
             Me.ParcelReportLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.ParcelReportLabel.Name = "ParcelReportLabel"
             Me.ParcelReportLabel.Size = New System.Drawing.Size(197, 25)
@@ -821,7 +807,7 @@ Namespace DatabaseTestApplication2
             'ParcelReportTextBox
             '
             Me.ParcelReportTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.ParcelReportTextBox.Location = New System.Drawing.Point(89, 59)
+            Me.ParcelReportTextBox.Location = New System.Drawing.Point(42, 59)
             Me.ParcelReportTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.ParcelReportTextBox.Name = "ParcelReportTextBox"
             Me.ParcelReportTextBox.Size = New System.Drawing.Size(132, 27)
@@ -832,7 +818,7 @@ Namespace DatabaseTestApplication2
             Me.GISAssessmentLabel.BackColor = System.Drawing.Color.Transparent
             Me.GISAssessmentLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.GISAssessmentLabel.ForeColor = System.Drawing.Color.White
-            Me.GISAssessmentLabel.Location = New System.Drawing.Point(380, 538)
+            Me.GISAssessmentLabel.Location = New System.Drawing.Point(291, 535)
             Me.GISAssessmentLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.GISAssessmentLabel.Name = "GISAssessmentLabel"
             Me.GISAssessmentLabel.Size = New System.Drawing.Size(197, 25)
@@ -843,7 +829,7 @@ Namespace DatabaseTestApplication2
             'GISAssessmentTextBox
             '
             Me.GISAssessmentTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.GISAssessmentTextBox.Location = New System.Drawing.Point(101, 69)
+            Me.GISAssessmentTextBox.Location = New System.Drawing.Point(71, 47)
             Me.GISAssessmentTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.GISAssessmentTextBox.Name = "GISAssessmentTextBox"
             Me.GISAssessmentTextBox.Size = New System.Drawing.Size(132, 27)
@@ -854,7 +840,7 @@ Namespace DatabaseTestApplication2
             Me.FundingSourceLabel.BackColor = System.Drawing.Color.Transparent
             Me.FundingSourceLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.FundingSourceLabel.ForeColor = System.Drawing.Color.White
-            Me.FundingSourceLabel.Location = New System.Drawing.Point(380, 583)
+            Me.FundingSourceLabel.Location = New System.Drawing.Point(291, 581)
             Me.FundingSourceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
             Me.FundingSourceLabel.Name = "FundingSourceLabel"
             Me.FundingSourceLabel.Size = New System.Drawing.Size(197, 25)
@@ -865,7 +851,7 @@ Namespace DatabaseTestApplication2
             'FundingSourceTextBox
             '
             Me.FundingSourceTextBox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.FundingSourceTextBox.Location = New System.Drawing.Point(101, 59)
+            Me.FundingSourceTextBox.Location = New System.Drawing.Point(488, 580)
             Me.FundingSourceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.FundingSourceTextBox.Name = "FundingSourceTextBox"
             Me.FundingSourceTextBox.Size = New System.Drawing.Size(132, 27)
@@ -1043,7 +1029,6 @@ Namespace DatabaseTestApplication2
         Friend WithEvents PictureBox1 As PictureBox
         Friend WithEvents chkIncomeVerified As CheckBox
         Friend WithEvents chkIDDocs As CheckBox
-        Friend WithEvents chkFundSource As CheckBox
         Friend WithEvents chkGISAssessment As CheckBox
         Friend WithEvents chkParcelReport As CheckBox
         Friend WithEvents chkCompletedApp As CheckBox
