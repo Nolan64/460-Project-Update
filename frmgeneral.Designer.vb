@@ -58,7 +58,6 @@ Namespace DatabaseTestApplication2
             Me.dependenttxt = New System.Windows.Forms.TextBox()
             Me.coapplicanttxt = New System.Windows.Forms.TextBox()
             Me.raceComboBox = New System.Windows.Forms.ComboBox()
-            Me.maritalStatusComboBox = New System.Windows.Forms.ComboBox()
             Me.genderComboBox = New System.Windows.Forms.ComboBox()
             Me.generalInfo = New System.Windows.Forms.Label()
             Me.UIDLabel = New System.Windows.Forms.Label()
@@ -103,6 +102,8 @@ Namespace DatabaseTestApplication2
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
+            Me.TextBox1 = New System.Windows.Forms.TextBox()
+            Me.CheckBox1 = New System.Windows.Forms.CheckBox()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
             CType(Me.generalBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -238,13 +239,13 @@ Namespace DatabaseTestApplication2
             Me.Panel1.AutoSize = True
             Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
             Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+            Me.Panel1.Controls.Add(Me.CheckBox1)
             Me.Panel1.Controls.Add(Me.PictureBox2)
             Me.Panel1.Controls.Add(Me.Label2)
             Me.Panel1.Controls.Add(Me.Label1)
             Me.Panel1.Controls.Add(Me.dependenttxt)
             Me.Panel1.Controls.Add(Me.coapplicanttxt)
             Me.Panel1.Controls.Add(Me.raceComboBox)
-            Me.Panel1.Controls.Add(Me.maritalStatusComboBox)
             Me.Panel1.Controls.Add(Me.genderComboBox)
             Me.Panel1.Controls.Add(Me.generalInfo)
             Me.Panel1.Controls.Add(Me.UIDLabel)
@@ -281,6 +282,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.notesLabel)
             Me.Panel1.Controls.Add(Me.notesTextBox)
             Me.Panel1.Controls.Add(Me.MenuStrip1)
+            Me.Panel1.Controls.Add(Me.TextBox1)
             Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.Panel1.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.Panel1.Location = New System.Drawing.Point(13, 0)
@@ -343,15 +345,6 @@ Namespace DatabaseTestApplication2
             Me.raceComboBox.Name = "raceComboBox"
             Me.raceComboBox.Size = New System.Drawing.Size(221, 24)
             Me.raceComboBox.TabIndex = 42
-            '
-            'maritalStatusComboBox
-            '
-            Me.maritalStatusComboBox.FormattingEnabled = True
-            Me.maritalStatusComboBox.Items.AddRange(New Object() {"Married", "Widowed", "Single", "Divorced or Separated"})
-            Me.maritalStatusComboBox.Location = New System.Drawing.Point(565, 467)
-            Me.maritalStatusComboBox.Name = "maritalStatusComboBox"
-            Me.maritalStatusComboBox.Size = New System.Drawing.Size(221, 24)
-            Me.maritalStatusComboBox.TabIndex = 41
             '
             'genderComboBox
             '
@@ -723,7 +716,7 @@ Namespace DatabaseTestApplication2
             Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.HomeownershipToolStripMenuItem, Me.RepairsToolStripMenuItem, Me.TrackingToolStripMenuItem})
             Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
             Me.MenuStrip1.Name = "MenuStrip1"
-            Me.MenuStrip1.Size = New System.Drawing.Size(963, 28)
+            Me.MenuStrip1.Size = New System.Drawing.Size(963, 30)
             Me.MenuStrip1.TabIndex = 37
             Me.MenuStrip1.Text = "MenuStrip1"
             '
@@ -791,6 +784,23 @@ Namespace DatabaseTestApplication2
             Me.panel6.Size = New System.Drawing.Size(989, 12)
             Me.panel6.TabIndex = 6
             '
+            'TextBox1
+            '
+            Me.TextBox1.Location = New System.Drawing.Point(182, 68)
+            Me.TextBox1.Name = "TextBox1"
+            Me.TextBox1.Size = New System.Drawing.Size(100, 22)
+            Me.TextBox1.TabIndex = 99
+            '
+            'CheckBox1
+            '
+            Me.CheckBox1.AutoSize = True
+            Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
+            Me.CheckBox1.Location = New System.Drawing.Point(565, 470)
+            Me.CheckBox1.Name = "CheckBox1"
+            Me.CheckBox1.Size = New System.Drawing.Size(18, 17)
+            Me.CheckBox1.TabIndex = 100
+            Me.CheckBox1.UseVisualStyleBackColor = False
+            '
             'frmgeneral
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -798,6 +808,7 @@ Namespace DatabaseTestApplication2
             Me.ClientSize = New System.Drawing.Size(989, 656)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
+            Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
             Me.MainMenuStrip = Me.MenuStrip1
             Me.Margin = New System.Windows.Forms.Padding(4)
             Me.Name = "frmgeneral"
@@ -878,13 +889,14 @@ Namespace DatabaseTestApplication2
         Friend WithEvents TrackingToolStripMenuItem As ToolStripMenuItem
         Friend WithEvents generalInfo As Label
         Friend WithEvents genderComboBox As ComboBox
-        Friend WithEvents maritalStatusComboBox As ComboBox
         Friend WithEvents raceComboBox As ComboBox
         Friend WithEvents dependenttxt As TextBox
         Friend WithEvents coapplicanttxt As TextBox
         Friend WithEvents Label2 As Label
         Friend WithEvents Label1 As Label
         Friend WithEvents PictureBox2 As PictureBox
+        Friend WithEvents CheckBox1 As CheckBox
+        Friend WithEvents TextBox1 As TextBox
     End Class
 
 End Namespace

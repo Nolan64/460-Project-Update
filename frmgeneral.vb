@@ -39,7 +39,7 @@ Namespace DatabaseTestApplication2
 			Me.householdSizeTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "householdSize", True))
 			Me.householdAMITextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "householdAMI", True))
 			Me.raceComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "race", True))
-			Me.maritalStatusComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "maritalStatus", True))
+			Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "maritalStatus", True))
 			Me.notesTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "notes", True))
 			Me.coapplicanttxt.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "coapplicantName", True))
 			Me.dependenttxt.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "dependentName", True))
@@ -51,6 +51,11 @@ Namespace DatabaseTestApplication2
 			End If
 			generalBindingSource.EndEdit()
 			Try
+				If CheckBox1.Checked = True Then
+					TextBox1.Text = "1"
+				ElseIf checkbox1.Checked = False Then
+					TextBox1.Text = "0"
+				End If
 				ctx.SaveChanges()
 
 			Catch
@@ -249,35 +254,7 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub maritalStatusComboBox_Validating(sender As Object, e As CancelEventArgs)
 
-			e.Cancel = False
-			If String.IsNullOrEmpty(maritalStatusComboBox.Text) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(maritalStatusComboBox, "The field maritalStatus is required")
-			End If
-			Dim v As Integer
-			Dim s As String = maritalStatusComboBox.Text
-			If Not Integer.TryParse(s, v) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(maritalStatusComboBox, "The field maritalStatus must be Integer.")
-			End If
-			If Not e.Cancel Then
-				ErrorProvider1.SetError(maritalStatusComboBox, "")
-			End If
-		End Sub
-
-		Private Sub notesTextBox_Validating(sender As Object, e As CancelEventArgs) Handles notesTextBox.Validating
-
-			e.Cancel = False
-			If String.IsNullOrEmpty(notesTextBox.Text) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(notesTextBox, "The field notes is required")
-			End If
-			If Not e.Cancel Then
-				ErrorProvider1.SetError(notesTextBox, "")
-			End If
-		End Sub
 
 		Private Sub coapplicantName_Validating(sender As Object, e As CancelEventArgs) Handles coapplicanttxt.Validating
 

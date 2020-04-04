@@ -86,7 +86,7 @@ Partial Class frmmain_menu
         '
         'tracking
         '
-        Me.tracking.Location = New System.Drawing.Point(20, 257)
+        Me.tracking.Location = New System.Drawing.Point(20, 296)
         Me.tracking.Margin = New System.Windows.Forms.Padding(4)
         Me.tracking.Name = "tracking"
         Me.tracking.Size = New System.Drawing.Size(165, 30)
@@ -97,7 +97,7 @@ Partial Class frmmain_menu
         'repairs
         '
         Me.repairs.BackColor = System.Drawing.Color.Transparent
-        Me.repairs.Location = New System.Drawing.Point(20, 294)
+        Me.repairs.Location = New System.Drawing.Point(20, 258)
         Me.repairs.Margin = New System.Windows.Forms.Padding(4)
         Me.repairs.Name = "repairs"
         Me.repairs.Size = New System.Drawing.Size(165, 30)
@@ -251,7 +251,7 @@ Partial Class frmmain_menu
         'Reportsbtn
         '
         Me.Reportsbtn.BackColor = System.Drawing.Color.Transparent
-        Me.Reportsbtn.Location = New System.Drawing.Point(20, 332)
+        Me.Reportsbtn.Location = New System.Drawing.Point(20, 334)
         Me.Reportsbtn.Margin = New System.Windows.Forms.Padding(4)
         Me.Reportsbtn.Name = "Reportsbtn"
         Me.Reportsbtn.Size = New System.Drawing.Size(165, 30)
@@ -282,9 +282,10 @@ Partial Class frmmain_menu
         Me.Controls.Add(Me.addApplicant)
         Me.Controls.Add(Me.PictureBox1)
         Me.DoubleBuffered = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmmain_menu"
-        Me.Text = "MainMenu"
+        Me.Text = "Main Menu"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.All_table_vwBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
