@@ -193,16 +193,16 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigator1.MoveNextItem = Me.BindingNavigatorMoveNextItem
             Me.BindingNavigator1.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
             Me.BindingNavigator1.Name = "BindingNavigator1"
-            Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(13, 0, 13, 0)
+            Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
             Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-            Me.BindingNavigator1.Size = New System.Drawing.Size(1312, 31)
+            Me.BindingNavigator1.Size = New System.Drawing.Size(984, 27)
             Me.BindingNavigator1.TabIndex = 0
             Me.BindingNavigator1.Text = "BindingNavigator1"
             '
             'BindingNavigatorCountItem
             '
             Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 28)
+            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 24)
             Me.BindingNavigatorCountItem.Text = "of {0}"
             Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
             '
@@ -212,7 +212,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
             Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorDeleteItem.Text = "Delete"
             '
             'BindingNavigatorMoveFirstItem
@@ -221,7 +221,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
             Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorMoveFirstItem.Text = "Move first"
             '
             'BindingNavigatorMovePreviousItem
@@ -230,13 +230,13 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
             Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
             '
             'BindingNavigatorSeparator
             '
             Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-            Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 31)
+            Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
             '
             'BindingNavigatorPositionItem
             '
@@ -244,14 +244,14 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorPositionItem.AutoSize = False
             Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
             Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-            Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(65, 27)
+            Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
             Me.BindingNavigatorPositionItem.Text = "0"
             Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
             '
             'BindingNavigatorSeparator1
             '
             Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-            Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 31)
+            Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
             '
             'BindingNavigatorMoveNextItem
             '
@@ -259,7 +259,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
             Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorMoveNextItem.Text = "Move next"
             '
             'BindingNavigatorMoveLastItem
@@ -268,13 +268,13 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
             Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorMoveLastItem.Text = "Move last"
             '
             'BindingNavigatorSeparator2
             '
             Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-            Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 31)
+            Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
             '
             'BindingNavigatorAddNewItem
             '
@@ -282,7 +282,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
             Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorAddNewItem.Text = "Add new"
             '
             'ToolStripButton1
@@ -291,7 +291,7 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
             Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
             Me.ToolStripButton1.Name = "ToolStripButton1"
-            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 28)
+            Me.ToolStripButton1.Size = New System.Drawing.Size(24, 24)
             Me.ToolStripButton1.Text = "Save"
             '
             'ErrorProvider1
@@ -420,20 +420,20 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.survey_SurveyIDLabel)
             Me.Panel1.Controls.Add(Me.survey_SurveyID_comboBox)
             Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.Panel1.Location = New System.Drawing.Point(13, 0)
-            Me.Panel1.Margin = New System.Windows.Forms.Padding(13, 4, 13, 4)
+            Me.Panel1.Location = New System.Drawing.Point(10, 0)
+            Me.Panel1.Margin = New System.Windows.Forms.Padding(10, 3, 10, 3)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(1286, 703)
+            Me.Panel1.Size = New System.Drawing.Size(964, 569)
             Me.Panel1.TabIndex = 1
             '
             'Label1
             '
             Me.Label1.AutoSize = True
             Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.Label1.Location = New System.Drawing.Point(104, 33)
-            Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Label1.ForeColor = System.Drawing.SystemColors.Control
+            Me.Label1.Location = New System.Drawing.Point(78, 27)
             Me.Label1.Name = "Label1"
-            Me.Label1.Size = New System.Drawing.Size(317, 52)
+            Me.Label1.Size = New System.Drawing.Size(252, 39)
             Me.Label1.TabIndex = 114
             Me.Label1.Text = "Survey Results"
             '
@@ -441,1110 +441,998 @@ Namespace DatabaseTestApplication2
             '
             Me.PictureBox1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
             Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-            Me.PictureBox1.Location = New System.Drawing.Point(720, 4)
-            Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
+            Me.PictureBox1.Location = New System.Drawing.Point(540, 3)
             Me.PictureBox1.Name = "PictureBox1"
-            Me.PictureBox1.Size = New System.Drawing.Size(539, 170)
+            Me.PictureBox1.Size = New System.Drawing.Size(404, 138)
             Me.PictureBox1.TabIndex = 113
             Me.PictureBox1.TabStop = False
             '
             'Question1Label
             '
             Me.Question1Label.AutoSize = True
-            Me.Question1Label.Location = New System.Drawing.Point(117, 124)
-            Me.Question1Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question1Label.Location = New System.Drawing.Point(88, 101)
             Me.Question1Label.Name = "Question1Label"
-            Me.Question1Label.Size = New System.Drawing.Size(73, 17)
+            Me.Question1Label.Size = New System.Drawing.Size(58, 13)
             Me.Question1Label.TabIndex = 1
-            Me.Question1Label.Text = "Question1"
+            Me.Question1Label.Text = "Question 1"
             '
             'Question1CheckBox
             '
             Me.Question1CheckBox.AutoSize = True
-            Me.Question1CheckBox.Location = New System.Drawing.Point(231, 123)
-            Me.Question1CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question1CheckBox.Location = New System.Drawing.Point(173, 100)
             Me.Question1CheckBox.Name = "Question1CheckBox"
-            Me.Question1CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question1CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question1CheckBox.TabIndex = 2
             Me.Question1CheckBox.UseVisualStyleBackColor = True
             '
             'Question10Label
             '
             Me.Question10Label.AutoSize = True
-            Me.Question10Label.Location = New System.Drawing.Point(109, 476)
-            Me.Question10Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question10Label.Location = New System.Drawing.Point(82, 387)
             Me.Question10Label.Name = "Question10Label"
-            Me.Question10Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question10Label.Size = New System.Drawing.Size(64, 13)
             Me.Question10Label.TabIndex = 3
-            Me.Question10Label.Text = "Question10"
+            Me.Question10Label.Text = "Question 10"
             '
             'Question10CheckBox
             '
             Me.Question10CheckBox.AutoSize = True
-            Me.Question10CheckBox.Location = New System.Drawing.Point(231, 480)
-            Me.Question10CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question10CheckBox.Location = New System.Drawing.Point(173, 390)
             Me.Question10CheckBox.Name = "Question10CheckBox"
-            Me.Question10CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question10CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question10CheckBox.TabIndex = 4
             Me.Question10CheckBox.UseVisualStyleBackColor = True
             '
             'Question11Label
             '
             Me.Question11Label.AutoSize = True
-            Me.Question11Label.Location = New System.Drawing.Point(109, 518)
-            Me.Question11Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question11Label.Location = New System.Drawing.Point(82, 421)
             Me.Question11Label.Name = "Question11Label"
-            Me.Question11Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question11Label.Size = New System.Drawing.Size(64, 13)
             Me.Question11Label.TabIndex = 5
-            Me.Question11Label.Text = "Question11"
+            Me.Question11Label.Text = "Question 11"
             '
             'Question11CheckBox
             '
             Me.Question11CheckBox.AutoSize = True
-            Me.Question11CheckBox.Location = New System.Drawing.Point(231, 522)
-            Me.Question11CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question11CheckBox.Location = New System.Drawing.Point(173, 424)
             Me.Question11CheckBox.Name = "Question11CheckBox"
-            Me.Question11CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question11CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question11CheckBox.TabIndex = 6
             Me.Question11CheckBox.UseVisualStyleBackColor = True
             '
             'Question12Label
             '
             Me.Question12Label.AutoSize = True
-            Me.Question12Label.Location = New System.Drawing.Point(109, 560)
-            Me.Question12Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question12Label.Location = New System.Drawing.Point(82, 455)
             Me.Question12Label.Name = "Question12Label"
-            Me.Question12Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question12Label.Size = New System.Drawing.Size(64, 13)
             Me.Question12Label.TabIndex = 7
-            Me.Question12Label.Text = "Question12"
+            Me.Question12Label.Text = "Question 12"
             '
             'Question12CheckBox
             '
             Me.Question12CheckBox.AutoSize = True
-            Me.Question12CheckBox.Location = New System.Drawing.Point(231, 564)
-            Me.Question12CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question12CheckBox.Location = New System.Drawing.Point(173, 458)
             Me.Question12CheckBox.Name = "Question12CheckBox"
-            Me.Question12CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question12CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question12CheckBox.TabIndex = 8
             Me.Question12CheckBox.UseVisualStyleBackColor = True
             '
             'Question13Label
             '
             Me.Question13Label.AutoSize = True
-            Me.Question13Label.Location = New System.Drawing.Point(109, 602)
-            Me.Question13Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question13Label.Location = New System.Drawing.Point(82, 489)
             Me.Question13Label.Name = "Question13Label"
-            Me.Question13Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question13Label.Size = New System.Drawing.Size(64, 13)
             Me.Question13Label.TabIndex = 9
-            Me.Question13Label.Text = "Question13"
+            Me.Question13Label.Text = "Question 13"
             '
             'Question13CheckBox
             '
             Me.Question13CheckBox.AutoSize = True
-            Me.Question13CheckBox.Location = New System.Drawing.Point(231, 606)
-            Me.Question13CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question13CheckBox.Location = New System.Drawing.Point(173, 492)
             Me.Question13CheckBox.Name = "Question13CheckBox"
-            Me.Question13CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question13CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question13CheckBox.TabIndex = 10
             Me.Question13CheckBox.UseVisualStyleBackColor = True
             '
             'Question14Label
             '
             Me.Question14Label.AutoSize = True
-            Me.Question14Label.Location = New System.Drawing.Point(109, 644)
-            Me.Question14Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question14Label.Location = New System.Drawing.Point(82, 523)
             Me.Question14Label.Name = "Question14Label"
-            Me.Question14Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question14Label.Size = New System.Drawing.Size(64, 13)
             Me.Question14Label.TabIndex = 11
-            Me.Question14Label.Text = "Question14"
+            Me.Question14Label.Text = "Question 14"
             '
             'Question14CheckBox
             '
             Me.Question14CheckBox.AutoSize = True
-            Me.Question14CheckBox.Location = New System.Drawing.Point(231, 647)
-            Me.Question14CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question14CheckBox.Location = New System.Drawing.Point(173, 526)
             Me.Question14CheckBox.Name = "Question14CheckBox"
-            Me.Question14CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question14CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question14CheckBox.TabIndex = 12
             Me.Question14CheckBox.UseVisualStyleBackColor = True
             '
             'Question15Label
             '
             Me.Question15Label.AutoSize = True
-            Me.Question15Label.Location = New System.Drawing.Point(109, 686)
-            Me.Question15Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question15Label.Location = New System.Drawing.Point(82, 557)
             Me.Question15Label.Name = "Question15Label"
-            Me.Question15Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question15Label.Size = New System.Drawing.Size(64, 13)
             Me.Question15Label.TabIndex = 13
-            Me.Question15Label.Text = "Question15"
+            Me.Question15Label.Text = "Question 15"
             '
             'Question15CheckBox
             '
             Me.Question15CheckBox.AutoSize = True
-            Me.Question15CheckBox.Location = New System.Drawing.Point(231, 689)
-            Me.Question15CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question15CheckBox.Location = New System.Drawing.Point(173, 560)
             Me.Question15CheckBox.Name = "Question15CheckBox"
-            Me.Question15CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question15CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question15CheckBox.TabIndex = 14
             Me.Question15CheckBox.UseVisualStyleBackColor = True
             '
             'Question16Label
             '
             Me.Question16Label.AutoSize = True
-            Me.Question16Label.Location = New System.Drawing.Point(109, 727)
-            Me.Question16Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question16Label.Location = New System.Drawing.Point(82, 591)
             Me.Question16Label.Name = "Question16Label"
-            Me.Question16Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question16Label.Size = New System.Drawing.Size(64, 13)
             Me.Question16Label.TabIndex = 15
-            Me.Question16Label.Text = "Question16"
+            Me.Question16Label.Text = "Question 16"
             '
             'Question16CheckBox
             '
             Me.Question16CheckBox.AutoSize = True
-            Me.Question16CheckBox.Location = New System.Drawing.Point(231, 731)
-            Me.Question16CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question16CheckBox.Location = New System.Drawing.Point(173, 594)
             Me.Question16CheckBox.Name = "Question16CheckBox"
-            Me.Question16CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question16CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question16CheckBox.TabIndex = 16
             Me.Question16CheckBox.UseVisualStyleBackColor = True
             '
             'Question17Label
             '
             Me.Question17Label.AutoSize = True
-            Me.Question17Label.Location = New System.Drawing.Point(109, 769)
-            Me.Question17Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question17Label.Location = New System.Drawing.Point(82, 625)
             Me.Question17Label.Name = "Question17Label"
-            Me.Question17Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question17Label.Size = New System.Drawing.Size(64, 13)
             Me.Question17Label.TabIndex = 17
-            Me.Question17Label.Text = "Question17"
+            Me.Question17Label.Text = "Question 17"
             '
             'Question17CheckBox
             '
             Me.Question17CheckBox.AutoSize = True
-            Me.Question17CheckBox.Location = New System.Drawing.Point(231, 773)
-            Me.Question17CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question17CheckBox.Location = New System.Drawing.Point(173, 628)
             Me.Question17CheckBox.Name = "Question17CheckBox"
-            Me.Question17CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question17CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question17CheckBox.TabIndex = 18
             Me.Question17CheckBox.UseVisualStyleBackColor = True
             '
             'Question18Label
             '
             Me.Question18Label.AutoSize = True
-            Me.Question18Label.Location = New System.Drawing.Point(109, 815)
-            Me.Question18Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question18Label.Location = New System.Drawing.Point(82, 662)
             Me.Question18Label.Name = "Question18Label"
-            Me.Question18Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question18Label.Size = New System.Drawing.Size(64, 13)
             Me.Question18Label.TabIndex = 19
-            Me.Question18Label.Text = "Question18"
+            Me.Question18Label.Text = "Question 18"
             '
             'Question18CheckBox
             '
             Me.Question18CheckBox.AutoSize = True
-            Me.Question18CheckBox.Location = New System.Drawing.Point(231, 818)
-            Me.Question18CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question18CheckBox.Location = New System.Drawing.Point(173, 665)
             Me.Question18CheckBox.Name = "Question18CheckBox"
-            Me.Question18CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question18CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question18CheckBox.TabIndex = 20
             Me.Question18CheckBox.UseVisualStyleBackColor = True
             '
             'Question19Label
             '
             Me.Question19Label.AutoSize = True
-            Me.Question19Label.Location = New System.Drawing.Point(109, 857)
-            Me.Question19Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question19Label.Location = New System.Drawing.Point(82, 696)
             Me.Question19Label.Name = "Question19Label"
-            Me.Question19Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question19Label.Size = New System.Drawing.Size(64, 13)
             Me.Question19Label.TabIndex = 21
-            Me.Question19Label.Text = "Question19"
+            Me.Question19Label.Text = "Question 19"
             '
             'Question19CheckBox
             '
             Me.Question19CheckBox.AutoSize = True
-            Me.Question19CheckBox.Location = New System.Drawing.Point(231, 860)
-            Me.Question19CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question19CheckBox.Location = New System.Drawing.Point(173, 699)
             Me.Question19CheckBox.Name = "Question19CheckBox"
-            Me.Question19CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question19CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question19CheckBox.TabIndex = 22
             Me.Question19CheckBox.UseVisualStyleBackColor = True
             '
             'Question2Label
             '
             Me.Question2Label.AutoSize = True
-            Me.Question2Label.Location = New System.Drawing.Point(117, 169)
-            Me.Question2Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question2Label.Location = New System.Drawing.Point(88, 137)
             Me.Question2Label.Name = "Question2Label"
-            Me.Question2Label.Size = New System.Drawing.Size(73, 17)
+            Me.Question2Label.Size = New System.Drawing.Size(58, 13)
             Me.Question2Label.TabIndex = 23
-            Me.Question2Label.Text = "Question2"
+            Me.Question2Label.Text = "Question 2"
             '
             'Question2CheckBox
             '
             Me.Question2CheckBox.AutoSize = True
-            Me.Question2CheckBox.Location = New System.Drawing.Point(231, 169)
-            Me.Question2CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question2CheckBox.Location = New System.Drawing.Point(173, 137)
             Me.Question2CheckBox.Name = "Question2CheckBox"
-            Me.Question2CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question2CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question2CheckBox.TabIndex = 24
             Me.Question2CheckBox.UseVisualStyleBackColor = True
             '
             'Question20Label
             '
             Me.Question20Label.AutoSize = True
-            Me.Question20Label.Location = New System.Drawing.Point(109, 894)
-            Me.Question20Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question20Label.Location = New System.Drawing.Point(82, 726)
             Me.Question20Label.Name = "Question20Label"
-            Me.Question20Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question20Label.Size = New System.Drawing.Size(64, 13)
             Me.Question20Label.TabIndex = 25
-            Me.Question20Label.Text = "Question20"
+            Me.Question20Label.Text = "Question 20"
             '
             'Question20CheckBox
             '
             Me.Question20CheckBox.AutoSize = True
-            Me.Question20CheckBox.Location = New System.Drawing.Point(231, 897)
-            Me.Question20CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question20CheckBox.Location = New System.Drawing.Point(173, 729)
             Me.Question20CheckBox.Name = "Question20CheckBox"
-            Me.Question20CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question20CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question20CheckBox.TabIndex = 26
             Me.Question20CheckBox.UseVisualStyleBackColor = True
             '
             'Question21Label
             '
             Me.Question21Label.AutoSize = True
-            Me.Question21Label.Location = New System.Drawing.Point(109, 935)
-            Me.Question21Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question21Label.Location = New System.Drawing.Point(82, 760)
             Me.Question21Label.Name = "Question21Label"
-            Me.Question21Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question21Label.Size = New System.Drawing.Size(64, 13)
             Me.Question21Label.TabIndex = 27
-            Me.Question21Label.Text = "Question21"
+            Me.Question21Label.Text = "Question 21"
             '
             'Question21CheckBox
             '
             Me.Question21CheckBox.AutoSize = True
-            Me.Question21CheckBox.Location = New System.Drawing.Point(231, 939)
-            Me.Question21CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question21CheckBox.Location = New System.Drawing.Point(173, 763)
             Me.Question21CheckBox.Name = "Question21CheckBox"
-            Me.Question21CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question21CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question21CheckBox.TabIndex = 28
             Me.Question21CheckBox.UseVisualStyleBackColor = True
             '
             'Question22Label
             '
             Me.Question22Label.AutoSize = True
-            Me.Question22Label.Location = New System.Drawing.Point(109, 977)
-            Me.Question22Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question22Label.Location = New System.Drawing.Point(82, 794)
             Me.Question22Label.Name = "Question22Label"
-            Me.Question22Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question22Label.Size = New System.Drawing.Size(64, 13)
             Me.Question22Label.TabIndex = 29
-            Me.Question22Label.Text = "Question22"
+            Me.Question22Label.Text = "Question 22"
             '
             'Question22CheckBox
             '
             Me.Question22CheckBox.AutoSize = True
-            Me.Question22CheckBox.Location = New System.Drawing.Point(231, 981)
-            Me.Question22CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question22CheckBox.Location = New System.Drawing.Point(173, 797)
             Me.Question22CheckBox.Name = "Question22CheckBox"
-            Me.Question22CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question22CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question22CheckBox.TabIndex = 30
             Me.Question22CheckBox.UseVisualStyleBackColor = True
             '
             'Question23Label
             '
             Me.Question23Label.AutoSize = True
-            Me.Question23Label.Location = New System.Drawing.Point(109, 1019)
-            Me.Question23Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question23Label.Location = New System.Drawing.Point(82, 828)
             Me.Question23Label.Name = "Question23Label"
-            Me.Question23Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question23Label.Size = New System.Drawing.Size(64, 13)
             Me.Question23Label.TabIndex = 31
-            Me.Question23Label.Text = "Question23"
+            Me.Question23Label.Text = "Question 23"
             '
             'Question23CheckBox
             '
             Me.Question23CheckBox.AutoSize = True
-            Me.Question23CheckBox.Location = New System.Drawing.Point(231, 1023)
-            Me.Question23CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question23CheckBox.Location = New System.Drawing.Point(173, 831)
             Me.Question23CheckBox.Name = "Question23CheckBox"
-            Me.Question23CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question23CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question23CheckBox.TabIndex = 32
             Me.Question23CheckBox.UseVisualStyleBackColor = True
             '
             'Question24Label
             '
             Me.Question24Label.AutoSize = True
-            Me.Question24Label.Location = New System.Drawing.Point(109, 1061)
-            Me.Question24Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question24Label.Location = New System.Drawing.Point(82, 862)
             Me.Question24Label.Name = "Question24Label"
-            Me.Question24Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question24Label.Size = New System.Drawing.Size(64, 13)
             Me.Question24Label.TabIndex = 33
-            Me.Question24Label.Text = "Question24"
+            Me.Question24Label.Text = "Question 24"
             '
             'Question24CheckBox
             '
             Me.Question24CheckBox.AutoSize = True
-            Me.Question24CheckBox.Location = New System.Drawing.Point(231, 1065)
-            Me.Question24CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question24CheckBox.Location = New System.Drawing.Point(173, 865)
             Me.Question24CheckBox.Name = "Question24CheckBox"
-            Me.Question24CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question24CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question24CheckBox.TabIndex = 34
             Me.Question24CheckBox.UseVisualStyleBackColor = True
             '
             'Question25Label
             '
             Me.Question25Label.AutoSize = True
-            Me.Question25Label.Location = New System.Drawing.Point(109, 1103)
-            Me.Question25Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question25Label.Location = New System.Drawing.Point(82, 896)
             Me.Question25Label.Name = "Question25Label"
-            Me.Question25Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question25Label.Size = New System.Drawing.Size(64, 13)
             Me.Question25Label.TabIndex = 35
-            Me.Question25Label.Text = "Question25"
+            Me.Question25Label.Text = "Question 25"
             '
             'Question25CheckBox
             '
             Me.Question25CheckBox.AutoSize = True
-            Me.Question25CheckBox.Location = New System.Drawing.Point(231, 1106)
-            Me.Question25CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question25CheckBox.Location = New System.Drawing.Point(173, 899)
             Me.Question25CheckBox.Name = "Question25CheckBox"
-            Me.Question25CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question25CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question25CheckBox.TabIndex = 36
             Me.Question25CheckBox.UseVisualStyleBackColor = True
             '
             'Question26Label
             '
             Me.Question26Label.AutoSize = True
-            Me.Question26Label.Location = New System.Drawing.Point(109, 1145)
-            Me.Question26Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question26Label.Location = New System.Drawing.Point(419, 111)
             Me.Question26Label.Name = "Question26Label"
-            Me.Question26Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question26Label.Size = New System.Drawing.Size(64, 13)
             Me.Question26Label.TabIndex = 37
-            Me.Question26Label.Text = "Question26"
+            Me.Question26Label.Text = "Question 26"
             '
             'Question26CheckBox
             '
             Me.Question26CheckBox.AutoSize = True
-            Me.Question26CheckBox.Location = New System.Drawing.Point(231, 1148)
-            Me.Question26CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question26CheckBox.Location = New System.Drawing.Point(510, 114)
             Me.Question26CheckBox.Name = "Question26CheckBox"
-            Me.Question26CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question26CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question26CheckBox.TabIndex = 38
             Me.Question26CheckBox.UseVisualStyleBackColor = True
             '
             'Question27Label
             '
             Me.Question27Label.AutoSize = True
-            Me.Question27Label.Location = New System.Drawing.Point(109, 1175)
-            Me.Question27Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question27Label.Location = New System.Drawing.Point(419, 136)
             Me.Question27Label.Name = "Question27Label"
-            Me.Question27Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question27Label.Size = New System.Drawing.Size(64, 13)
             Me.Question27Label.TabIndex = 39
-            Me.Question27Label.Text = "Question27"
+            Me.Question27Label.Text = "Question 27"
             '
             'Question27CheckBox
             '
             Me.Question27CheckBox.AutoSize = True
-            Me.Question27CheckBox.Location = New System.Drawing.Point(231, 1175)
-            Me.Question27CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question27CheckBox.Location = New System.Drawing.Point(510, 136)
             Me.Question27CheckBox.Name = "Question27CheckBox"
-            Me.Question27CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question27CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question27CheckBox.TabIndex = 40
             Me.Question27CheckBox.UseVisualStyleBackColor = True
             '
             'Question28Label
             '
             Me.Question28Label.AutoSize = True
-            Me.Question28Label.Location = New System.Drawing.Point(559, 30)
-            Me.Question28Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question28Label.Location = New System.Drawing.Point(419, 166)
             Me.Question28Label.Name = "Question28Label"
-            Me.Question28Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question28Label.Size = New System.Drawing.Size(64, 13)
             Me.Question28Label.TabIndex = 41
-            Me.Question28Label.Text = "Question28"
+            Me.Question28Label.Text = "Question 28"
             '
             'Question28CheckBox
             '
             Me.Question28CheckBox.AutoSize = True
-            Me.Question28CheckBox.Location = New System.Drawing.Point(680, 33)
-            Me.Question28CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question28CheckBox.Location = New System.Drawing.Point(510, 169)
             Me.Question28CheckBox.Name = "Question28CheckBox"
-            Me.Question28CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question28CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question28CheckBox.TabIndex = 42
             Me.Question28CheckBox.UseVisualStyleBackColor = True
             '
             'Question29Label
             '
             Me.Question29Label.AutoSize = True
-            Me.Question29Label.Location = New System.Drawing.Point(559, 71)
-            Me.Question29Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question29Label.Location = New System.Drawing.Point(419, 200)
             Me.Question29Label.Name = "Question29Label"
-            Me.Question29Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question29Label.Size = New System.Drawing.Size(64, 13)
             Me.Question29Label.TabIndex = 43
-            Me.Question29Label.Text = "Question29"
+            Me.Question29Label.Text = "Question 29"
             '
             'Question29CheckBox
             '
             Me.Question29CheckBox.AutoSize = True
-            Me.Question29CheckBox.Location = New System.Drawing.Point(680, 75)
-            Me.Question29CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question29CheckBox.Location = New System.Drawing.Point(510, 203)
             Me.Question29CheckBox.Name = "Question29CheckBox"
-            Me.Question29CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question29CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question29CheckBox.TabIndex = 44
             Me.Question29CheckBox.UseVisualStyleBackColor = True
             '
             'Question3Label
             '
             Me.Question3Label.AutoSize = True
-            Me.Question3Label.Location = New System.Drawing.Point(117, 213)
-            Me.Question3Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question3Label.Location = New System.Drawing.Point(88, 173)
             Me.Question3Label.Name = "Question3Label"
-            Me.Question3Label.Size = New System.Drawing.Size(73, 17)
+            Me.Question3Label.Size = New System.Drawing.Size(58, 13)
             Me.Question3Label.TabIndex = 45
-            Me.Question3Label.Text = "Question3"
+            Me.Question3Label.Text = "Question 3"
             '
             'Question3CheckBox
             '
             Me.Question3CheckBox.AutoSize = True
-            Me.Question3CheckBox.Location = New System.Drawing.Point(231, 213)
-            Me.Question3CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question3CheckBox.Location = New System.Drawing.Point(173, 173)
             Me.Question3CheckBox.Name = "Question3CheckBox"
-            Me.Question3CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question3CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question3CheckBox.TabIndex = 46
             Me.Question3CheckBox.UseVisualStyleBackColor = True
             '
             'Question30Label
             '
             Me.Question30Label.AutoSize = True
-            Me.Question30Label.Location = New System.Drawing.Point(559, 103)
-            Me.Question30Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question30Label.Location = New System.Drawing.Point(419, 226)
             Me.Question30Label.Name = "Question30Label"
-            Me.Question30Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question30Label.Size = New System.Drawing.Size(64, 13)
             Me.Question30Label.TabIndex = 47
-            Me.Question30Label.Text = "Question30"
+            Me.Question30Label.Text = "Question 30"
             '
             'Question30CheckBox
             '
             Me.Question30CheckBox.AutoSize = True
-            Me.Question30CheckBox.Location = New System.Drawing.Point(680, 107)
-            Me.Question30CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question30CheckBox.Location = New System.Drawing.Point(510, 229)
             Me.Question30CheckBox.Name = "Question30CheckBox"
-            Me.Question30CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question30CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question30CheckBox.TabIndex = 48
             Me.Question30CheckBox.UseVisualStyleBackColor = True
             '
             'Question31Label
             '
             Me.Question31Label.AutoSize = True
-            Me.Question31Label.Location = New System.Drawing.Point(559, 145)
-            Me.Question31Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question31Label.Location = New System.Drawing.Point(419, 260)
             Me.Question31Label.Name = "Question31Label"
-            Me.Question31Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question31Label.Size = New System.Drawing.Size(64, 13)
             Me.Question31Label.TabIndex = 49
-            Me.Question31Label.Text = "Question31"
+            Me.Question31Label.Text = "Question 31"
             '
             'Question31CheckBox
             '
             Me.Question31CheckBox.AutoSize = True
-            Me.Question31CheckBox.Location = New System.Drawing.Point(680, 149)
-            Me.Question31CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question31CheckBox.Location = New System.Drawing.Point(510, 263)
             Me.Question31CheckBox.Name = "Question31CheckBox"
-            Me.Question31CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question31CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question31CheckBox.TabIndex = 50
             Me.Question31CheckBox.UseVisualStyleBackColor = True
             '
             'Question32Label
             '
             Me.Question32Label.AutoSize = True
-            Me.Question32Label.Location = New System.Drawing.Point(559, 187)
-            Me.Question32Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question32Label.Location = New System.Drawing.Point(419, 294)
             Me.Question32Label.Name = "Question32Label"
-            Me.Question32Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question32Label.Size = New System.Drawing.Size(64, 13)
             Me.Question32Label.TabIndex = 51
-            Me.Question32Label.Text = "Question32"
+            Me.Question32Label.Text = "Question 32"
             '
             'Question32CheckBox
             '
             Me.Question32CheckBox.AutoSize = True
-            Me.Question32CheckBox.Location = New System.Drawing.Point(680, 191)
-            Me.Question32CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question32CheckBox.Location = New System.Drawing.Point(510, 297)
             Me.Question32CheckBox.Name = "Question32CheckBox"
-            Me.Question32CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question32CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question32CheckBox.TabIndex = 52
             Me.Question32CheckBox.UseVisualStyleBackColor = True
             '
             'Question33Label
             '
             Me.Question33Label.AutoSize = True
-            Me.Question33Label.Location = New System.Drawing.Point(559, 229)
-            Me.Question33Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question33Label.Location = New System.Drawing.Point(419, 328)
             Me.Question33Label.Name = "Question33Label"
-            Me.Question33Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question33Label.Size = New System.Drawing.Size(64, 13)
             Me.Question33Label.TabIndex = 53
-            Me.Question33Label.Text = "Question33"
+            Me.Question33Label.Text = "Question 33"
             '
             'Question33CheckBox
             '
             Me.Question33CheckBox.AutoSize = True
-            Me.Question33CheckBox.Location = New System.Drawing.Point(680, 233)
-            Me.Question33CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question33CheckBox.Location = New System.Drawing.Point(510, 331)
             Me.Question33CheckBox.Name = "Question33CheckBox"
-            Me.Question33CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question33CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question33CheckBox.TabIndex = 54
             Me.Question33CheckBox.UseVisualStyleBackColor = True
             '
             'Question34Label
             '
             Me.Question34Label.AutoSize = True
-            Me.Question34Label.Location = New System.Drawing.Point(559, 271)
-            Me.Question34Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question34Label.Location = New System.Drawing.Point(419, 356)
             Me.Question34Label.Name = "Question34Label"
-            Me.Question34Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question34Label.Size = New System.Drawing.Size(64, 13)
             Me.Question34Label.TabIndex = 55
-            Me.Question34Label.Text = "Question34"
+            Me.Question34Label.Text = "Question 34"
             '
             'Question34CheckBox
             '
             Me.Question34CheckBox.AutoSize = True
-            Me.Question34CheckBox.Location = New System.Drawing.Point(680, 274)
-            Me.Question34CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question34CheckBox.Location = New System.Drawing.Point(510, 359)
             Me.Question34CheckBox.Name = "Question34CheckBox"
-            Me.Question34CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question34CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question34CheckBox.TabIndex = 56
             Me.Question34CheckBox.UseVisualStyleBackColor = True
             '
             'Question35Label
             '
             Me.Question35Label.AutoSize = True
-            Me.Question35Label.Location = New System.Drawing.Point(559, 313)
-            Me.Question35Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question35Label.Location = New System.Drawing.Point(419, 390)
             Me.Question35Label.Name = "Question35Label"
-            Me.Question35Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question35Label.Size = New System.Drawing.Size(64, 13)
             Me.Question35Label.TabIndex = 57
-            Me.Question35Label.Text = "Question35"
+            Me.Question35Label.Text = "Question 35"
             '
             'Question35CheckBox
             '
             Me.Question35CheckBox.AutoSize = True
-            Me.Question35CheckBox.Location = New System.Drawing.Point(680, 316)
-            Me.Question35CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question35CheckBox.Location = New System.Drawing.Point(510, 393)
             Me.Question35CheckBox.Name = "Question35CheckBox"
-            Me.Question35CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question35CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question35CheckBox.TabIndex = 58
             Me.Question35CheckBox.UseVisualStyleBackColor = True
             '
             'Question36Label
             '
             Me.Question36Label.AutoSize = True
-            Me.Question36Label.Location = New System.Drawing.Point(559, 354)
-            Me.Question36Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question36Label.Location = New System.Drawing.Point(419, 424)
             Me.Question36Label.Name = "Question36Label"
-            Me.Question36Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question36Label.Size = New System.Drawing.Size(64, 13)
             Me.Question36Label.TabIndex = 59
-            Me.Question36Label.Text = "Question36"
+            Me.Question36Label.Text = "Question 36"
             '
             'Question36CheckBox
             '
             Me.Question36CheckBox.AutoSize = True
-            Me.Question36CheckBox.Location = New System.Drawing.Point(680, 358)
-            Me.Question36CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question36CheckBox.Location = New System.Drawing.Point(510, 427)
             Me.Question36CheckBox.Name = "Question36CheckBox"
-            Me.Question36CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question36CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question36CheckBox.TabIndex = 60
             Me.Question36CheckBox.UseVisualStyleBackColor = True
             '
             'Question37Label
             '
             Me.Question37Label.AutoSize = True
-            Me.Question37Label.Location = New System.Drawing.Point(559, 396)
-            Me.Question37Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question37Label.Location = New System.Drawing.Point(419, 458)
             Me.Question37Label.Name = "Question37Label"
-            Me.Question37Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question37Label.Size = New System.Drawing.Size(64, 13)
             Me.Question37Label.TabIndex = 61
-            Me.Question37Label.Text = "Question37"
+            Me.Question37Label.Text = "Question 37"
             '
             'Question37CheckBox
             '
             Me.Question37CheckBox.AutoSize = True
-            Me.Question37CheckBox.Location = New System.Drawing.Point(680, 400)
-            Me.Question37CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question37CheckBox.Location = New System.Drawing.Point(510, 461)
             Me.Question37CheckBox.Name = "Question37CheckBox"
-            Me.Question37CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question37CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question37CheckBox.TabIndex = 62
             Me.Question37CheckBox.UseVisualStyleBackColor = True
             '
             'Question38Label
             '
             Me.Question38Label.AutoSize = True
-            Me.Question38Label.Location = New System.Drawing.Point(559, 438)
-            Me.Question38Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question38Label.Location = New System.Drawing.Point(419, 492)
             Me.Question38Label.Name = "Question38Label"
-            Me.Question38Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question38Label.Size = New System.Drawing.Size(64, 13)
             Me.Question38Label.TabIndex = 63
-            Me.Question38Label.Text = "Question38"
+            Me.Question38Label.Text = "Question 38"
             '
             'Question38CheckBox
             '
             Me.Question38CheckBox.AutoSize = True
-            Me.Question38CheckBox.Location = New System.Drawing.Point(680, 442)
-            Me.Question38CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question38CheckBox.Location = New System.Drawing.Point(510, 495)
             Me.Question38CheckBox.Name = "Question38CheckBox"
-            Me.Question38CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question38CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question38CheckBox.TabIndex = 64
             Me.Question38CheckBox.UseVisualStyleBackColor = True
             '
             'Question39Label
             '
             Me.Question39Label.AutoSize = True
-            Me.Question39Label.Location = New System.Drawing.Point(559, 480)
-            Me.Question39Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question39Label.Location = New System.Drawing.Point(419, 526)
             Me.Question39Label.Name = "Question39Label"
-            Me.Question39Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question39Label.Size = New System.Drawing.Size(64, 13)
             Me.Question39Label.TabIndex = 65
-            Me.Question39Label.Text = "Question39"
+            Me.Question39Label.Text = "Question 39"
             '
             'Question39CheckBox
             '
             Me.Question39CheckBox.AutoSize = True
-            Me.Question39CheckBox.Location = New System.Drawing.Point(680, 484)
-            Me.Question39CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question39CheckBox.Location = New System.Drawing.Point(510, 529)
             Me.Question39CheckBox.Name = "Question39CheckBox"
-            Me.Question39CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question39CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question39CheckBox.TabIndex = 66
             Me.Question39CheckBox.UseVisualStyleBackColor = True
             '
             'Question4Label
             '
             Me.Question4Label.AutoSize = True
-            Me.Question4Label.Location = New System.Drawing.Point(117, 256)
-            Me.Question4Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question4Label.Location = New System.Drawing.Point(88, 208)
             Me.Question4Label.Name = "Question4Label"
-            Me.Question4Label.Size = New System.Drawing.Size(73, 17)
+            Me.Question4Label.Size = New System.Drawing.Size(58, 13)
             Me.Question4Label.TabIndex = 67
-            Me.Question4Label.Text = "Question4"
+            Me.Question4Label.Text = "Question 4"
             '
             'Question4CheckBox
             '
             Me.Question4CheckBox.AutoSize = True
-            Me.Question4CheckBox.Location = New System.Drawing.Point(231, 255)
-            Me.Question4CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question4CheckBox.Location = New System.Drawing.Point(173, 207)
             Me.Question4CheckBox.Name = "Question4CheckBox"
-            Me.Question4CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question4CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question4CheckBox.TabIndex = 68
             Me.Question4CheckBox.UseVisualStyleBackColor = True
             '
             'Question40Label
             '
             Me.Question40Label.AutoSize = True
-            Me.Question40Label.Location = New System.Drawing.Point(559, 518)
-            Me.Question40Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question40Label.Location = New System.Drawing.Point(419, 557)
             Me.Question40Label.Name = "Question40Label"
-            Me.Question40Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question40Label.Size = New System.Drawing.Size(64, 13)
             Me.Question40Label.TabIndex = 69
-            Me.Question40Label.Text = "Question40"
+            Me.Question40Label.Text = "Question 40"
             '
             'Question40CheckBox
             '
             Me.Question40CheckBox.AutoSize = True
-            Me.Question40CheckBox.Location = New System.Drawing.Point(680, 522)
-            Me.Question40CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question40CheckBox.Location = New System.Drawing.Point(510, 560)
             Me.Question40CheckBox.Name = "Question40CheckBox"
-            Me.Question40CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question40CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question40CheckBox.TabIndex = 70
             Me.Question40CheckBox.UseVisualStyleBackColor = True
             '
             'Question41Label
             '
             Me.Question41Label.AutoSize = True
-            Me.Question41Label.Location = New System.Drawing.Point(559, 560)
-            Me.Question41Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question41Label.Location = New System.Drawing.Point(419, 591)
             Me.Question41Label.Name = "Question41Label"
-            Me.Question41Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question41Label.Size = New System.Drawing.Size(64, 13)
             Me.Question41Label.TabIndex = 71
-            Me.Question41Label.Text = "Question41"
+            Me.Question41Label.Text = "Question 41"
             '
             'Question41CheckBox
             '
             Me.Question41CheckBox.AutoSize = True
-            Me.Question41CheckBox.Location = New System.Drawing.Point(680, 564)
-            Me.Question41CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question41CheckBox.Location = New System.Drawing.Point(510, 594)
             Me.Question41CheckBox.Name = "Question41CheckBox"
-            Me.Question41CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question41CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question41CheckBox.TabIndex = 72
             Me.Question41CheckBox.UseVisualStyleBackColor = True
             '
             'Question42Label
             '
             Me.Question42Label.AutoSize = True
-            Me.Question42Label.Location = New System.Drawing.Point(559, 602)
-            Me.Question42Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question42Label.Location = New System.Drawing.Point(419, 625)
             Me.Question42Label.Name = "Question42Label"
-            Me.Question42Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question42Label.Size = New System.Drawing.Size(64, 13)
             Me.Question42Label.TabIndex = 73
-            Me.Question42Label.Text = "Question42"
+            Me.Question42Label.Text = "Question 42"
             '
             'Question42CheckBox
             '
             Me.Question42CheckBox.AutoSize = True
-            Me.Question42CheckBox.Location = New System.Drawing.Point(680, 606)
-            Me.Question42CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question42CheckBox.Location = New System.Drawing.Point(510, 628)
             Me.Question42CheckBox.Name = "Question42CheckBox"
-            Me.Question42CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question42CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question42CheckBox.TabIndex = 74
             Me.Question42CheckBox.UseVisualStyleBackColor = True
             '
             'Question43Label
             '
             Me.Question43Label.AutoSize = True
-            Me.Question43Label.Location = New System.Drawing.Point(559, 644)
-            Me.Question43Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question43Label.Location = New System.Drawing.Point(419, 654)
             Me.Question43Label.Name = "Question43Label"
-            Me.Question43Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question43Label.Size = New System.Drawing.Size(64, 13)
             Me.Question43Label.TabIndex = 75
-            Me.Question43Label.Text = "Question43"
+            Me.Question43Label.Text = "Question 43"
             '
             'Question43CheckBox
             '
             Me.Question43CheckBox.AutoSize = True
-            Me.Question43CheckBox.Location = New System.Drawing.Point(680, 647)
-            Me.Question43CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question43CheckBox.Location = New System.Drawing.Point(510, 657)
             Me.Question43CheckBox.Name = "Question43CheckBox"
-            Me.Question43CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question43CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question43CheckBox.TabIndex = 76
             Me.Question43CheckBox.UseVisualStyleBackColor = True
             '
             'Question44Label
             '
             Me.Question44Label.AutoSize = True
-            Me.Question44Label.Location = New System.Drawing.Point(559, 686)
-            Me.Question44Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question44Label.Location = New System.Drawing.Point(419, 688)
             Me.Question44Label.Name = "Question44Label"
-            Me.Question44Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question44Label.Size = New System.Drawing.Size(64, 13)
             Me.Question44Label.TabIndex = 77
-            Me.Question44Label.Text = "Question44"
+            Me.Question44Label.Text = "Question 44"
             '
             'Question44CheckBox
             '
             Me.Question44CheckBox.AutoSize = True
-            Me.Question44CheckBox.Location = New System.Drawing.Point(680, 689)
-            Me.Question44CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question44CheckBox.Location = New System.Drawing.Point(510, 691)
             Me.Question44CheckBox.Name = "Question44CheckBox"
-            Me.Question44CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question44CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question44CheckBox.TabIndex = 78
             Me.Question44CheckBox.UseVisualStyleBackColor = True
             '
             'Question45Label
             '
             Me.Question45Label.AutoSize = True
-            Me.Question45Label.Location = New System.Drawing.Point(559, 727)
-            Me.Question45Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question45Label.Location = New System.Drawing.Point(419, 722)
             Me.Question45Label.Name = "Question45Label"
-            Me.Question45Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question45Label.Size = New System.Drawing.Size(64, 13)
             Me.Question45Label.TabIndex = 79
-            Me.Question45Label.Text = "Question45"
+            Me.Question45Label.Text = "Question 45"
             '
             'Question45CheckBox
             '
             Me.Question45CheckBox.AutoSize = True
-            Me.Question45CheckBox.Location = New System.Drawing.Point(680, 731)
-            Me.Question45CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question45CheckBox.Location = New System.Drawing.Point(510, 725)
             Me.Question45CheckBox.Name = "Question45CheckBox"
-            Me.Question45CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question45CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question45CheckBox.TabIndex = 80
             Me.Question45CheckBox.UseVisualStyleBackColor = True
             '
             'Question46Label
             '
             Me.Question46Label.AutoSize = True
-            Me.Question46Label.Location = New System.Drawing.Point(559, 769)
-            Me.Question46Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question46Label.Location = New System.Drawing.Point(419, 756)
             Me.Question46Label.Name = "Question46Label"
-            Me.Question46Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question46Label.Size = New System.Drawing.Size(64, 13)
             Me.Question46Label.TabIndex = 81
-            Me.Question46Label.Text = "Question46"
+            Me.Question46Label.Text = "Question 46"
             '
             'Question46CheckBox
             '
             Me.Question46CheckBox.AutoSize = True
-            Me.Question46CheckBox.Location = New System.Drawing.Point(680, 773)
-            Me.Question46CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question46CheckBox.Location = New System.Drawing.Point(510, 759)
             Me.Question46CheckBox.Name = "Question46CheckBox"
-            Me.Question46CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question46CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question46CheckBox.TabIndex = 82
             Me.Question46CheckBox.UseVisualStyleBackColor = True
             '
             'Question47Label
             '
             Me.Question47Label.AutoSize = True
-            Me.Question47Label.Location = New System.Drawing.Point(559, 811)
-            Me.Question47Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question47Label.Location = New System.Drawing.Point(419, 790)
             Me.Question47Label.Name = "Question47Label"
-            Me.Question47Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question47Label.Size = New System.Drawing.Size(64, 13)
             Me.Question47Label.TabIndex = 83
-            Me.Question47Label.Text = "Question47"
+            Me.Question47Label.Text = "Question 47"
             '
             'Question47CheckBox
             '
             Me.Question47CheckBox.AutoSize = True
-            Me.Question47CheckBox.Location = New System.Drawing.Point(680, 815)
-            Me.Question47CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question47CheckBox.Location = New System.Drawing.Point(510, 793)
             Me.Question47CheckBox.Name = "Question47CheckBox"
-            Me.Question47CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question47CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question47CheckBox.TabIndex = 84
             Me.Question47CheckBox.UseVisualStyleBackColor = True
             '
             'Question48Label
             '
             Me.Question48Label.AutoSize = True
-            Me.Question48Label.Location = New System.Drawing.Point(559, 853)
-            Me.Question48Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question48Label.Location = New System.Drawing.Point(419, 824)
             Me.Question48Label.Name = "Question48Label"
-            Me.Question48Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question48Label.Size = New System.Drawing.Size(64, 13)
             Me.Question48Label.TabIndex = 85
-            Me.Question48Label.Text = "Question48"
+            Me.Question48Label.Text = "Question 48"
             '
             'Question48CheckBox
             '
             Me.Question48CheckBox.AutoSize = True
-            Me.Question48CheckBox.Location = New System.Drawing.Point(680, 857)
-            Me.Question48CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question48CheckBox.Location = New System.Drawing.Point(510, 827)
             Me.Question48CheckBox.Name = "Question48CheckBox"
-            Me.Question48CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question48CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question48CheckBox.TabIndex = 86
             Me.Question48CheckBox.UseVisualStyleBackColor = True
             '
             'Question49Label
             '
             Me.Question49Label.AutoSize = True
-            Me.Question49Label.Location = New System.Drawing.Point(559, 895)
-            Me.Question49Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question49Label.Location = New System.Drawing.Point(419, 858)
             Me.Question49Label.Name = "Question49Label"
-            Me.Question49Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question49Label.Size = New System.Drawing.Size(64, 13)
             Me.Question49Label.TabIndex = 87
-            Me.Question49Label.Text = "Question49"
+            Me.Question49Label.Text = "Question 49"
             '
             'Question49CheckBox
             '
             Me.Question49CheckBox.AutoSize = True
-            Me.Question49CheckBox.Location = New System.Drawing.Point(680, 898)
-            Me.Question49CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question49CheckBox.Location = New System.Drawing.Point(510, 861)
             Me.Question49CheckBox.Name = "Question49CheckBox"
-            Me.Question49CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question49CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question49CheckBox.TabIndex = 88
             Me.Question49CheckBox.UseVisualStyleBackColor = True
             '
             'Question5Label
             '
             Me.Question5Label.AutoSize = True
-            Me.Question5Label.Location = New System.Drawing.Point(117, 292)
-            Me.Question5Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question5Label.Location = New System.Drawing.Point(88, 237)
             Me.Question5Label.Name = "Question5Label"
-            Me.Question5Label.Size = New System.Drawing.Size(73, 17)
+            Me.Question5Label.Size = New System.Drawing.Size(58, 13)
             Me.Question5Label.TabIndex = 89
-            Me.Question5Label.Text = "Question5"
+            Me.Question5Label.Text = "Question 5"
             '
             'Question5CheckBox
             '
             Me.Question5CheckBox.AutoSize = True
-            Me.Question5CheckBox.Location = New System.Drawing.Point(231, 292)
-            Me.Question5CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question5CheckBox.Location = New System.Drawing.Point(173, 237)
             Me.Question5CheckBox.Name = "Question5CheckBox"
-            Me.Question5CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question5CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question5CheckBox.TabIndex = 90
             Me.Question5CheckBox.UseVisualStyleBackColor = True
             '
             'Question50Label
             '
             Me.Question50Label.AutoSize = True
-            Me.Question50Label.Location = New System.Drawing.Point(559, 937)
-            Me.Question50Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question50Label.Location = New System.Drawing.Point(419, 892)
             Me.Question50Label.Name = "Question50Label"
-            Me.Question50Label.Size = New System.Drawing.Size(81, 17)
+            Me.Question50Label.Size = New System.Drawing.Size(64, 13)
             Me.Question50Label.TabIndex = 91
-            Me.Question50Label.Text = "Question50"
+            Me.Question50Label.Text = "Question 50"
             '
             'Question50CheckBox
             '
             Me.Question50CheckBox.AutoSize = True
-            Me.Question50CheckBox.Location = New System.Drawing.Point(680, 940)
-            Me.Question50CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question50CheckBox.Location = New System.Drawing.Point(510, 895)
             Me.Question50CheckBox.Name = "Question50CheckBox"
-            Me.Question50CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question50CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question50CheckBox.TabIndex = 92
             Me.Question50CheckBox.UseVisualStyleBackColor = True
             '
             'Question6Label
             '
             Me.Question6Label.AutoSize = True
-            Me.Question6Label.Location = New System.Drawing.Point(120, 332)
-            Me.Question6Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question6Label.Location = New System.Drawing.Point(90, 270)
             Me.Question6Label.Name = "Question6Label"
-            Me.Question6Label.Size = New System.Drawing.Size(73, 17)
+            Me.Question6Label.Size = New System.Drawing.Size(58, 13)
             Me.Question6Label.TabIndex = 93
-            Me.Question6Label.Text = "Question6"
+            Me.Question6Label.Text = "Question 6"
             '
             'Question6CheckBox
             '
             Me.Question6CheckBox.AutoSize = True
-            Me.Question6CheckBox.Location = New System.Drawing.Point(231, 332)
-            Me.Question6CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question6CheckBox.Location = New System.Drawing.Point(173, 270)
             Me.Question6CheckBox.Name = "Question6CheckBox"
-            Me.Question6CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question6CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question6CheckBox.TabIndex = 94
             Me.Question6CheckBox.UseVisualStyleBackColor = True
             '
             'Question7Label
             '
             Me.Question7Label.AutoSize = True
-            Me.Question7Label.Location = New System.Drawing.Point(117, 375)
-            Me.Question7Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question7Label.Location = New System.Drawing.Point(88, 305)
             Me.Question7Label.Name = "Question7Label"
-            Me.Question7Label.Size = New System.Drawing.Size(73, 17)
+            Me.Question7Label.Size = New System.Drawing.Size(58, 13)
             Me.Question7Label.TabIndex = 95
-            Me.Question7Label.Text = "Question7"
+            Me.Question7Label.Text = "Question 7"
             '
             'Question7CheckBox
             '
             Me.Question7CheckBox.AutoSize = True
-            Me.Question7CheckBox.Location = New System.Drawing.Point(231, 375)
-            Me.Question7CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question7CheckBox.Location = New System.Drawing.Point(173, 305)
             Me.Question7CheckBox.Name = "Question7CheckBox"
-            Me.Question7CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question7CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question7CheckBox.TabIndex = 96
             Me.Question7CheckBox.UseVisualStyleBackColor = True
             '
             'Question8Label
             '
             Me.Question8Label.AutoSize = True
-            Me.Question8Label.Location = New System.Drawing.Point(120, 409)
-            Me.Question8Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question8Label.Location = New System.Drawing.Point(90, 332)
             Me.Question8Label.Name = "Question8Label"
-            Me.Question8Label.Size = New System.Drawing.Size(73, 17)
+            Me.Question8Label.Size = New System.Drawing.Size(58, 13)
             Me.Question8Label.TabIndex = 97
-            Me.Question8Label.Text = "Question8"
+            Me.Question8Label.Text = "Question 8"
             '
             'Question8CheckBox
             '
             Me.Question8CheckBox.AutoSize = True
-            Me.Question8CheckBox.Location = New System.Drawing.Point(231, 409)
-            Me.Question8CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question8CheckBox.Location = New System.Drawing.Point(173, 332)
             Me.Question8CheckBox.Name = "Question8CheckBox"
-            Me.Question8CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question8CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question8CheckBox.TabIndex = 98
             Me.Question8CheckBox.UseVisualStyleBackColor = True
             '
             'Question9Label
             '
             Me.Question9Label.AutoSize = True
-            Me.Question9Label.Location = New System.Drawing.Point(120, 442)
-            Me.Question9Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.Question9Label.Location = New System.Drawing.Point(90, 359)
             Me.Question9Label.Name = "Question9Label"
-            Me.Question9Label.Size = New System.Drawing.Size(73, 17)
+            Me.Question9Label.Size = New System.Drawing.Size(58, 13)
             Me.Question9Label.TabIndex = 99
-            Me.Question9Label.Text = "Question9"
+            Me.Question9Label.Text = "Question 9"
             '
             'Question9CheckBox
             '
             Me.Question9CheckBox.AutoSize = True
-            Me.Question9CheckBox.Location = New System.Drawing.Point(231, 442)
-            Me.Question9CheckBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.Question9CheckBox.Location = New System.Drawing.Point(173, 359)
             Me.Question9CheckBox.Name = "Question9CheckBox"
-            Me.Question9CheckBox.Size = New System.Drawing.Size(18, 17)
+            Me.Question9CheckBox.Size = New System.Drawing.Size(15, 14)
             Me.Question9CheckBox.TabIndex = 100
             Me.Question9CheckBox.UseVisualStyleBackColor = True
             '
             'QuestionNum1Label
             '
             Me.QuestionNum1Label.AutoSize = True
-            Me.QuestionNum1Label.Location = New System.Drawing.Point(531, 981)
-            Me.QuestionNum1Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.QuestionNum1Label.Location = New System.Drawing.Point(570, 299)
             Me.QuestionNum1Label.Name = "QuestionNum1Label"
-            Me.QuestionNum1Label.Size = New System.Drawing.Size(102, 17)
+            Me.QuestionNum1Label.Size = New System.Drawing.Size(80, 13)
             Me.QuestionNum1Label.TabIndex = 101
-            Me.QuestionNum1Label.Text = "QuestionNum1"
+            Me.QuestionNum1Label.Text = "Question Num1"
             '
             'QuestionNum1TextBox
             '
-            Me.QuestionNum1TextBox.Location = New System.Drawing.Point(680, 981)
-            Me.QuestionNum1TextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.QuestionNum1TextBox.Location = New System.Drawing.Point(682, 299)
             Me.QuestionNum1TextBox.Name = "QuestionNum1TextBox"
-            Me.QuestionNum1TextBox.Size = New System.Drawing.Size(132, 22)
+            Me.QuestionNum1TextBox.Size = New System.Drawing.Size(100, 20)
             Me.QuestionNum1TextBox.TabIndex = 102
             '
             'QuestionNum2Label
             '
             Me.QuestionNum2Label.AutoSize = True
-            Me.QuestionNum2Label.Location = New System.Drawing.Point(531, 1023)
-            Me.QuestionNum2Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.QuestionNum2Label.Location = New System.Drawing.Point(570, 333)
             Me.QuestionNum2Label.Name = "QuestionNum2Label"
-            Me.QuestionNum2Label.Size = New System.Drawing.Size(102, 17)
+            Me.QuestionNum2Label.Size = New System.Drawing.Size(80, 13)
             Me.QuestionNum2Label.TabIndex = 103
-            Me.QuestionNum2Label.Text = "QuestionNum2"
+            Me.QuestionNum2Label.Text = "Question Num2"
             '
             'QuestionNum2TextBox
             '
-            Me.QuestionNum2TextBox.Location = New System.Drawing.Point(680, 1023)
-            Me.QuestionNum2TextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.QuestionNum2TextBox.Location = New System.Drawing.Point(682, 333)
             Me.QuestionNum2TextBox.Name = "QuestionNum2TextBox"
-            Me.QuestionNum2TextBox.Size = New System.Drawing.Size(132, 22)
+            Me.QuestionNum2TextBox.Size = New System.Drawing.Size(100, 20)
             Me.QuestionNum2TextBox.TabIndex = 104
             '
             'QuestionNum3Label
             '
             Me.QuestionNum3Label.AutoSize = True
-            Me.QuestionNum3Label.Location = New System.Drawing.Point(531, 1065)
-            Me.QuestionNum3Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.QuestionNum3Label.Location = New System.Drawing.Point(570, 367)
             Me.QuestionNum3Label.Name = "QuestionNum3Label"
-            Me.QuestionNum3Label.Size = New System.Drawing.Size(102, 17)
+            Me.QuestionNum3Label.Size = New System.Drawing.Size(80, 13)
             Me.QuestionNum3Label.TabIndex = 105
-            Me.QuestionNum3Label.Text = "QuestionNum3"
+            Me.QuestionNum3Label.Text = "Question Num3"
             '
             'QuestionNum3TextBox
             '
-            Me.QuestionNum3TextBox.Location = New System.Drawing.Point(680, 1065)
-            Me.QuestionNum3TextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.QuestionNum3TextBox.Location = New System.Drawing.Point(682, 367)
             Me.QuestionNum3TextBox.Name = "QuestionNum3TextBox"
-            Me.QuestionNum3TextBox.Size = New System.Drawing.Size(132, 22)
+            Me.QuestionNum3TextBox.Size = New System.Drawing.Size(100, 20)
             Me.QuestionNum3TextBox.TabIndex = 106
             '
             'QuestionNum4Label
             '
             Me.QuestionNum4Label.AutoSize = True
-            Me.QuestionNum4Label.Location = New System.Drawing.Point(531, 1106)
-            Me.QuestionNum4Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.QuestionNum4Label.Location = New System.Drawing.Point(570, 401)
             Me.QuestionNum4Label.Name = "QuestionNum4Label"
-            Me.QuestionNum4Label.Size = New System.Drawing.Size(102, 17)
+            Me.QuestionNum4Label.Size = New System.Drawing.Size(80, 13)
             Me.QuestionNum4Label.TabIndex = 107
-            Me.QuestionNum4Label.Text = "QuestionNum4"
+            Me.QuestionNum4Label.Text = "Question Num4"
             '
             'QuestionNum4TextBox
             '
-            Me.QuestionNum4TextBox.Location = New System.Drawing.Point(680, 1106)
-            Me.QuestionNum4TextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.QuestionNum4TextBox.Location = New System.Drawing.Point(682, 401)
             Me.QuestionNum4TextBox.Name = "QuestionNum4TextBox"
-            Me.QuestionNum4TextBox.Size = New System.Drawing.Size(132, 22)
+            Me.QuestionNum4TextBox.Size = New System.Drawing.Size(100, 20)
             Me.QuestionNum4TextBox.TabIndex = 108
             '
             'QuestionNum5Label
             '
             Me.QuestionNum5Label.AutoSize = True
-            Me.QuestionNum5Label.Location = New System.Drawing.Point(531, 1148)
-            Me.QuestionNum5Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.QuestionNum5Label.Location = New System.Drawing.Point(570, 435)
             Me.QuestionNum5Label.Name = "QuestionNum5Label"
-            Me.QuestionNum5Label.Size = New System.Drawing.Size(102, 17)
+            Me.QuestionNum5Label.Size = New System.Drawing.Size(80, 13)
             Me.QuestionNum5Label.TabIndex = 109
-            Me.QuestionNum5Label.Text = "QuestionNum5"
+            Me.QuestionNum5Label.Text = "Question Num5"
             '
             'QuestionNum5TextBox
             '
-            Me.QuestionNum5TextBox.Location = New System.Drawing.Point(680, 1148)
-            Me.QuestionNum5TextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.QuestionNum5TextBox.Location = New System.Drawing.Point(682, 435)
             Me.QuestionNum5TextBox.Name = "QuestionNum5TextBox"
-            Me.QuestionNum5TextBox.Size = New System.Drawing.Size(132, 22)
+            Me.QuestionNum5TextBox.Size = New System.Drawing.Size(100, 20)
             Me.QuestionNum5TextBox.TabIndex = 110
             '
             'survey_SurveyIDLabel
             '
             Me.survey_SurveyIDLabel.AutoSize = True
-            Me.survey_SurveyIDLabel.Location = New System.Drawing.Point(761, 231)
-            Me.survey_SurveyIDLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.survey_SurveyIDLabel.Location = New System.Drawing.Point(571, 188)
             Me.survey_SurveyIDLabel.Name = "survey_SurveyIDLabel"
-            Me.survey_SurveyIDLabel.Size = New System.Drawing.Size(65, 17)
+            Me.survey_SurveyIDLabel.Size = New System.Drawing.Size(51, 13)
             Me.survey_SurveyIDLabel.TabIndex = 111
             Me.survey_SurveyIDLabel.Text = "SurveyID"
             '
@@ -1553,10 +1441,9 @@ Namespace DatabaseTestApplication2
             Me.survey_SurveyID_comboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
             Me.survey_SurveyID_comboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
             Me.survey_SurveyID_comboBox.FormattingEnabled = True
-            Me.survey_SurveyID_comboBox.Location = New System.Drawing.Point(855, 225)
-            Me.survey_SurveyID_comboBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.survey_SurveyID_comboBox.Location = New System.Drawing.Point(641, 183)
             Me.survey_SurveyID_comboBox.Name = "survey_SurveyID_comboBox"
-            Me.survey_SurveyID_comboBox.Size = New System.Drawing.Size(273, 24)
+            Me.survey_SurveyID_comboBox.Size = New System.Drawing.Size(206, 21)
             Me.survey_SurveyID_comboBox.TabIndex = 112
             '
             'panel3
@@ -1566,47 +1453,42 @@ Namespace DatabaseTestApplication2
             Me.panel3.Controls.Add(Me.panel5)
             Me.panel3.Controls.Add(Me.panel6)
             Me.panel3.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.panel3.Location = New System.Drawing.Point(0, 31)
-            Me.panel3.Margin = New System.Windows.Forms.Padding(4)
+            Me.panel3.Location = New System.Drawing.Point(0, 27)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(1312, 715)
+            Me.panel3.Size = New System.Drawing.Size(984, 579)
             Me.panel3.TabIndex = 19
             '
             'panel4
             '
             Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
-            Me.panel4.Location = New System.Drawing.Point(1299, 0)
-            Me.panel4.Margin = New System.Windows.Forms.Padding(4)
+            Me.panel4.Location = New System.Drawing.Point(974, 0)
             Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(13, 703)
+            Me.panel4.Size = New System.Drawing.Size(10, 569)
             Me.panel4.TabIndex = 3
             '
             'panel5
             '
             Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
             Me.panel5.Location = New System.Drawing.Point(0, 0)
-            Me.panel5.Margin = New System.Windows.Forms.Padding(4)
             Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(13, 703)
+            Me.panel5.Size = New System.Drawing.Size(10, 569)
             Me.panel5.TabIndex = 5
             '
             'panel6
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 703)
-            Me.panel6.Margin = New System.Windows.Forms.Padding(4)
+            Me.panel6.Location = New System.Drawing.Point(0, 569)
             Me.panel6.Name = "panel6"
-            Me.panel6.Size = New System.Drawing.Size(1312, 12)
+            Me.panel6.Size = New System.Drawing.Size(984, 10)
             Me.panel6.TabIndex = 6
             '
             'frmsurvey_results
             '
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(1312, 746)
+            Me.ClientSize = New System.Drawing.Size(984, 606)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
-            Me.Margin = New System.Windows.Forms.Padding(4)
             Me.Name = "frmsurvey_results"
             Me.Text = "Survey_Results"
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
