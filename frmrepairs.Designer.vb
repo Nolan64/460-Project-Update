@@ -36,6 +36,7 @@ Namespace DatabaseTestApplication2
 		Private Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmrepairs))
+            Dim DateTimePicker1 As System.Windows.Forms.DateTimePicker
             Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
             Me.repairsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
@@ -106,6 +107,10 @@ Namespace DatabaseTestApplication2
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
+            Me.Label3 = New System.Windows.Forms.Label()
+            Me.IncomeUpdated_DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+            Me.Label4 = New System.Windows.Forms.Label()
+            DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
             CType(Me.repairsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -242,6 +247,10 @@ Namespace DatabaseTestApplication2
             Me.Panel1.BackColor = System.Drawing.Color.Transparent
             Me.Panel1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.angryimg__12_
             Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+            Me.Panel1.Controls.Add(DateTimePicker1)
+            Me.Panel1.Controls.Add(Me.Label4)
+            Me.Panel1.Controls.Add(Me.IncomeUpdated_DateTimePicker1)
+            Me.Panel1.Controls.Add(Me.Label3)
             Me.Panel1.Controls.Add(Me.Label2)
             Me.Panel1.Controls.Add(Me.chkIDDocs)
             Me.Panel1.Controls.Add(Me.chkFundSource)
@@ -312,7 +321,7 @@ Namespace DatabaseTestApplication2
             '
             Me.chkIDDocs.AutoSize = True
             Me.chkIDDocs.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.chkIDDocs.Location = New System.Drawing.Point(649, 361)
+            Me.chkIDDocs.Location = New System.Drawing.Point(642, 397)
             Me.chkIDDocs.Name = "chkIDDocs"
             Me.chkIDDocs.Size = New System.Drawing.Size(31, 21)
             Me.chkIDDocs.TabIndex = 107
@@ -356,7 +365,7 @@ Namespace DatabaseTestApplication2
             '
             Me.chkCompletedApp.AutoSize = True
             Me.chkCompletedApp.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.chkCompletedApp.Location = New System.Drawing.Point(439, 358)
+            Me.chkCompletedApp.Location = New System.Drawing.Point(642, 437)
             Me.chkCompletedApp.Name = "chkCompletedApp"
             Me.chkCompletedApp.Size = New System.Drawing.Size(31, 21)
             Me.chkCompletedApp.TabIndex = 103
@@ -389,7 +398,7 @@ Namespace DatabaseTestApplication2
             '
             Me.chkDeed.AutoSize = True
             Me.chkDeed.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
-            Me.chkDeed.Location = New System.Drawing.Point(167, 359)
+            Me.chkDeed.Location = New System.Drawing.Point(642, 473)
             Me.chkDeed.Name = "chkDeed"
             Me.chkDeed.Size = New System.Drawing.Size(31, 21)
             Me.chkDeed.TabIndex = 100
@@ -413,7 +422,7 @@ Namespace DatabaseTestApplication2
             Me.PictureBox1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
             Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
             Me.PictureBox1.Location = New System.Drawing.Point(676, 38)
-            Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
             Me.PictureBox1.Name = "PictureBox1"
             Me.PictureBox1.Size = New System.Drawing.Size(143, 54)
             Me.PictureBox1.TabIndex = 98
@@ -598,7 +607,7 @@ Namespace DatabaseTestApplication2
             Me.IDDocumentsLabel.BackColor = System.Drawing.Color.Transparent
             Me.IDDocumentsLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.IDDocumentsLabel.ForeColor = System.Drawing.Color.White
-            Me.IDDocumentsLabel.Location = New System.Drawing.Point(495, 360)
+            Me.IDDocumentsLabel.Location = New System.Drawing.Point(488, 398)
             Me.IDDocumentsLabel.Name = "IDDocumentsLabel"
             Me.IDDocumentsLabel.Size = New System.Drawing.Size(148, 20)
             Me.IDDocumentsLabel.TabIndex = 15
@@ -638,7 +647,7 @@ Namespace DatabaseTestApplication2
             Me.DeedOfTrustLabel.BackColor = System.Drawing.Color.Transparent
             Me.DeedOfTrustLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.DeedOfTrustLabel.ForeColor = System.Drawing.Color.White
-            Me.DeedOfTrustLabel.Location = New System.Drawing.Point(13, 358)
+            Me.DeedOfTrustLabel.Location = New System.Drawing.Point(488, 472)
             Me.DeedOfTrustLabel.Name = "DeedOfTrustLabel"
             Me.DeedOfTrustLabel.Size = New System.Drawing.Size(148, 20)
             Me.DeedOfTrustLabel.TabIndex = 19
@@ -698,7 +707,7 @@ Namespace DatabaseTestApplication2
             Me.CompletedApplicationLabel.BackColor = System.Drawing.Color.Transparent
             Me.CompletedApplicationLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!)
             Me.CompletedApplicationLabel.ForeColor = System.Drawing.Color.White
-            Me.CompletedApplicationLabel.Location = New System.Drawing.Point(285, 356)
+            Me.CompletedApplicationLabel.Location = New System.Drawing.Point(488, 435)
             Me.CompletedApplicationLabel.Name = "CompletedApplicationLabel"
             Me.CompletedApplicationLabel.Size = New System.Drawing.Size(148, 20)
             Me.CompletedApplicationLabel.TabIndex = 25
@@ -856,6 +865,49 @@ Namespace DatabaseTestApplication2
             Me.panel6.Size = New System.Drawing.Size(855, 10)
             Me.panel6.TabIndex = 6
             '
+            'Label3
+            '
+            Me.Label3.AutoSize = True
+            Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.Label3.Location = New System.Drawing.Point(391, 295)
+            Me.Label3.MinimumSize = New System.Drawing.Size(105, 20)
+            Me.Label3.Name = "Label3"
+            Me.Label3.Size = New System.Drawing.Size(106, 20)
+            Me.Label3.TabIndex = 110
+            Me.Label3.Text = "Income Updated"
+            '
+            'IncomeUpdated_DateTimePicker1
+            '
+            Me.IncomeUpdated_DateTimePicker1.CustomFormat = "MM/dd/yyyy"
+            Me.IncomeUpdated_DateTimePicker1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.IncomeUpdated_DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+            Me.IncomeUpdated_DateTimePicker1.Location = New System.Drawing.Point(527, 294)
+            Me.IncomeUpdated_DateTimePicker1.Name = "IncomeUpdated_DateTimePicker1"
+            Me.IncomeUpdated_DateTimePicker1.Size = New System.Drawing.Size(200, 23)
+            Me.IncomeUpdated_DateTimePicker1.TabIndex = 111
+            Me.IncomeUpdated_DateTimePicker1.Value = New Date(2020, 4, 3, 22, 33, 0, 0)
+            '
+            'Label4
+            '
+            Me.Label4.AutoSize = True
+            Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.Label4.Location = New System.Drawing.Point(28, 338)
+            Me.Label4.Name = "Label4"
+            Me.Label4.Size = New System.Drawing.Size(120, 17)
+            Me.Label4.TabIndex = 112
+            Me.Label4.Text = "Funding Requested"
+            '
+            'DateTimePicker1
+            '
+            DateTimePicker1.CustomFormat = "MM/dd/yyyy"
+            DateTimePicker1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+            DateTimePicker1.Location = New System.Drawing.Point(167, 338)
+            DateTimePicker1.Name = "DateTimePicker1"
+            DateTimePicker1.Size = New System.Drawing.Size(200, 23)
+            DateTimePicker1.TabIndex = 113
+            DateTimePicker1.Value = New Date(2020, 4, 3, 0, 0, 0, 0)
+            '
             'frmrepairs
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -952,6 +1004,9 @@ Namespace DatabaseTestApplication2
         Friend WithEvents tstripHomeownership As ToolStripMenuItem
         Friend WithEvents RepairsToolStripMenuItem As ToolStripMenuItem
         Friend WithEvents Label2 As Label
+        Friend WithEvents Label3 As Label
+        Friend WithEvents Label4 As Label
+        Friend WithEvents IncomeUpdated_DateTimePicker1 As DateTimePicker
     End Class
 
 End Namespace
