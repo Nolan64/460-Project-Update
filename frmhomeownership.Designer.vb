@@ -37,6 +37,7 @@ Namespace DatabaseTestApplication2
             Me.components = New System.ComponentModel.Container()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmhomeownership))
             Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
+            Me.homeownershipBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
             Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
             Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
@@ -49,7 +50,6 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
             Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
             Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-            Me.homeownershipBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
             Me.Panel1 = New System.Windows.Forms.Panel()
             Me.applicantInfoMeetingLabel = New System.Windows.Forms.Label()
@@ -92,12 +92,20 @@ Namespace DatabaseTestApplication2
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
+            Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+            Me.MainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.GeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.HomeownershipToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.RepairsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.SurveyEditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.SurveyResultsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
             CType(Me.homeownershipBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.Panel1.SuspendLayout()
             Me.panel3.SuspendLayout()
+            Me.MenuStrip1.SuspendLayout()
             Me.SuspendLayout()
             '
             'BindingNavigator1
@@ -114,16 +122,16 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigator1.MoveNextItem = Me.BindingNavigatorMoveNextItem
             Me.BindingNavigator1.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
             Me.BindingNavigator1.Name = "BindingNavigator1"
-            Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(13, 0, 13, 0)
+            Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
             Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-            Me.BindingNavigator1.Size = New System.Drawing.Size(1190, 27)
+            Me.BindingNavigator1.Size = New System.Drawing.Size(892, 27)
             Me.BindingNavigator1.TabIndex = 0
             Me.BindingNavigator1.Text = "BindingNavigator1"
             '
             'BindingNavigatorCountItem
             '
             Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
+            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 24)
             Me.BindingNavigatorCountItem.Text = "of {0}"
             Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
             '
@@ -133,7 +141,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
             Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorDeleteItem.Text = "Delete"
             '
             'BindingNavigatorMoveFirstItem
@@ -142,7 +150,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
             Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorMoveFirstItem.Text = "Move first"
             '
             'BindingNavigatorMovePreviousItem
@@ -151,7 +159,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
             Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
             '
             'BindingNavigatorSeparator
@@ -165,7 +173,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorPositionItem.AutoSize = False
             Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
             Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-            Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(65, 27)
+            Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
             Me.BindingNavigatorPositionItem.Text = "0"
             Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
             '
@@ -180,7 +188,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
             Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorMoveNextItem.Text = "Move next"
             '
             'BindingNavigatorMoveLastItem
@@ -189,7 +197,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
             Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorMoveLastItem.Text = "Move last"
             '
             'BindingNavigatorSeparator2
@@ -203,7 +211,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
             Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorAddNewItem.Text = "Add new"
             '
             'ToolStripButton1
@@ -212,7 +220,7 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
             Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
             Me.ToolStripButton1.Name = "ToolStripButton1"
-            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 24)
+            Me.ToolStripButton1.Size = New System.Drawing.Size(24, 24)
             Me.ToolStripButton1.Text = "Save"
             '
             'ErrorProvider1
@@ -259,347 +267,313 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.handbookReview_dateTimePicker)
             Me.Panel1.Controls.Add(Me.general_UIDLabel)
             Me.Panel1.Controls.Add(Me.general_UID_comboBox)
+            Me.Panel1.Controls.Add(Me.MenuStrip1)
             Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.Panel1.Location = New System.Drawing.Point(13, 0)
-            Me.Panel1.Margin = New System.Windows.Forms.Padding(13, 4, 13, 4)
+            Me.Panel1.Location = New System.Drawing.Point(10, 0)
+            Me.Panel1.Margin = New System.Windows.Forms.Padding(10, 3, 10, 3)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(1164, 448)
+            Me.Panel1.Size = New System.Drawing.Size(872, 359)
             Me.Panel1.TabIndex = 1
             '
             'applicantInfoMeetingLabel
             '
             Me.applicantInfoMeetingLabel.AutoSize = True
-            Me.applicantInfoMeetingLabel.Location = New System.Drawing.Point(128, 62)
-            Me.applicantInfoMeetingLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.applicantInfoMeetingLabel.Location = New System.Drawing.Point(110, 50)
             Me.applicantInfoMeetingLabel.Name = "applicantInfoMeetingLabel"
-            Me.applicantInfoMeetingLabel.Size = New System.Drawing.Size(138, 17)
+            Me.applicantInfoMeetingLabel.Size = New System.Drawing.Size(113, 13)
             Me.applicantInfoMeetingLabel.TabIndex = 1
-            Me.applicantInfoMeetingLabel.Text = "applicantInfoMeeting"
+            Me.applicantInfoMeetingLabel.Text = "Applicant Info Meeting"
             '
             'applicantInfoMeeting_dateTimePicker
             '
             Me.applicantInfoMeeting_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.applicantInfoMeeting_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.applicantInfoMeeting_dateTimePicker.Location = New System.Drawing.Point(325, 62)
-            Me.applicantInfoMeeting_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.applicantInfoMeeting_dateTimePicker.Location = New System.Drawing.Point(244, 50)
             Me.applicantInfoMeeting_dateTimePicker.Name = "applicantInfoMeeting_dateTimePicker"
-            Me.applicantInfoMeeting_dateTimePicker.Size = New System.Drawing.Size(265, 22)
+            Me.applicantInfoMeeting_dateTimePicker.Size = New System.Drawing.Size(200, 20)
             Me.applicantInfoMeeting_dateTimePicker.TabIndex = 2
             Me.applicantInfoMeeting_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
             '
             'applicationChecklist1Label
             '
             Me.applicationChecklist1Label.AutoSize = True
-            Me.applicationChecklist1Label.Location = New System.Drawing.Point(125, 103)
-            Me.applicationChecklist1Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.applicationChecklist1Label.Location = New System.Drawing.Point(109, 84)
             Me.applicationChecklist1Label.Name = "applicationChecklist1Label"
-            Me.applicationChecklist1Label.Size = New System.Drawing.Size(140, 17)
+            Me.applicationChecklist1Label.Size = New System.Drawing.Size(114, 13)
             Me.applicationChecklist1Label.TabIndex = 3
-            Me.applicationChecklist1Label.Text = "applicationChecklist1"
+            Me.applicationChecklist1Label.Text = "Application Checklist 1"
             '
             'applicationChecklist1_dateTimePicker
             '
             Me.applicationChecklist1_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.applicationChecklist1_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.applicationChecklist1_dateTimePicker.Location = New System.Drawing.Point(325, 103)
-            Me.applicationChecklist1_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.applicationChecklist1_dateTimePicker.Location = New System.Drawing.Point(244, 84)
             Me.applicationChecklist1_dateTimePicker.Name = "applicationChecklist1_dateTimePicker"
-            Me.applicationChecklist1_dateTimePicker.Size = New System.Drawing.Size(265, 22)
+            Me.applicationChecklist1_dateTimePicker.Size = New System.Drawing.Size(200, 20)
             Me.applicationChecklist1_dateTimePicker.TabIndex = 4
             Me.applicationChecklist1_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
             '
             'applicationChecklist2Label
             '
             Me.applicationChecklist2Label.AutoSize = True
-            Me.applicationChecklist2Label.Location = New System.Drawing.Point(125, 145)
-            Me.applicationChecklist2Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.applicationChecklist2Label.Location = New System.Drawing.Point(109, 118)
             Me.applicationChecklist2Label.Name = "applicationChecklist2Label"
-            Me.applicationChecklist2Label.Size = New System.Drawing.Size(140, 17)
+            Me.applicationChecklist2Label.Size = New System.Drawing.Size(114, 13)
             Me.applicationChecklist2Label.TabIndex = 5
-            Me.applicationChecklist2Label.Text = "applicationChecklist2"
+            Me.applicationChecklist2Label.Text = "Application Checklist 2"
             '
             'applicationChecklist2_dateTimePicker
             '
             Me.applicationChecklist2_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.applicationChecklist2_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.applicationChecklist2_dateTimePicker.Location = New System.Drawing.Point(325, 145)
-            Me.applicationChecklist2_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.applicationChecklist2_dateTimePicker.Location = New System.Drawing.Point(244, 118)
             Me.applicationChecklist2_dateTimePicker.Name = "applicationChecklist2_dateTimePicker"
-            Me.applicationChecklist2_dateTimePicker.Size = New System.Drawing.Size(265, 22)
+            Me.applicationChecklist2_dateTimePicker.Size = New System.Drawing.Size(200, 20)
             Me.applicationChecklist2_dateTimePicker.TabIndex = 6
             Me.applicationChecklist2_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
             '
             'employmentVerifiedLabel
             '
             Me.employmentVerifiedLabel.AutoSize = True
-            Me.employmentVerifiedLabel.Location = New System.Drawing.Point(136, 187)
-            Me.employmentVerifiedLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.employmentVerifiedLabel.Location = New System.Drawing.Point(524, 193)
             Me.employmentVerifiedLabel.Name = "employmentVerifiedLabel"
-            Me.employmentVerifiedLabel.Size = New System.Drawing.Size(132, 17)
+            Me.employmentVerifiedLabel.Size = New System.Drawing.Size(102, 13)
             Me.employmentVerifiedLabel.TabIndex = 7
-            Me.employmentVerifiedLabel.Text = "employmentVerified"
+            Me.employmentVerifiedLabel.Text = "Employment Verified"
             '
             'employmentVerifiedTextBox
             '
-            Me.employmentVerifiedTextBox.Location = New System.Drawing.Point(325, 187)
-            Me.employmentVerifiedTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.employmentVerifiedTextBox.Location = New System.Drawing.Point(648, 186)
             Me.employmentVerifiedTextBox.Name = "employmentVerifiedTextBox"
-            Me.employmentVerifiedTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.employmentVerifiedTextBox.Size = New System.Drawing.Size(100, 20)
             Me.employmentVerifiedTextBox.TabIndex = 8
             '
             'landlordReferenceLabel
             '
             Me.landlordReferenceLabel.AutoSize = True
-            Me.landlordReferenceLabel.Location = New System.Drawing.Point(145, 229)
-            Me.landlordReferenceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.landlordReferenceLabel.Location = New System.Drawing.Point(122, 186)
             Me.landlordReferenceLabel.Name = "landlordReferenceLabel"
-            Me.landlordReferenceLabel.Size = New System.Drawing.Size(125, 17)
+            Me.landlordReferenceLabel.Size = New System.Drawing.Size(101, 13)
             Me.landlordReferenceLabel.TabIndex = 9
-            Me.landlordReferenceLabel.Text = "landlordReference"
+            Me.landlordReferenceLabel.Text = "Landlord Reference"
             '
             'landlordReferenceTextBox
             '
-            Me.landlordReferenceTextBox.Location = New System.Drawing.Point(325, 229)
-            Me.landlordReferenceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.landlordReferenceTextBox.Location = New System.Drawing.Point(244, 186)
             Me.landlordReferenceTextBox.Name = "landlordReferenceTextBox"
-            Me.landlordReferenceTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.landlordReferenceTextBox.Size = New System.Drawing.Size(100, 20)
             Me.landlordReferenceTextBox.TabIndex = 10
             '
             'previousLandlordReferenceLabel
             '
             Me.previousLandlordReferenceLabel.AutoSize = True
-            Me.previousLandlordReferenceLabel.Location = New System.Drawing.Point(67, 271)
-            Me.previousLandlordReferenceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.previousLandlordReferenceLabel.Location = New System.Drawing.Point(78, 220)
             Me.previousLandlordReferenceLabel.Name = "previousLandlordReferenceLabel"
-            Me.previousLandlordReferenceLabel.Size = New System.Drawing.Size(184, 17)
+            Me.previousLandlordReferenceLabel.Size = New System.Drawing.Size(145, 13)
             Me.previousLandlordReferenceLabel.TabIndex = 11
-            Me.previousLandlordReferenceLabel.Text = "previousLandlordReference"
+            Me.previousLandlordReferenceLabel.Text = "Previous Landlord Reference"
             '
             'previousLandlordReferenceTextBox
             '
-            Me.previousLandlordReferenceTextBox.Location = New System.Drawing.Point(325, 271)
-            Me.previousLandlordReferenceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.previousLandlordReferenceTextBox.Location = New System.Drawing.Point(244, 220)
             Me.previousLandlordReferenceTextBox.Name = "previousLandlordReferenceTextBox"
-            Me.previousLandlordReferenceTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.previousLandlordReferenceTextBox.Size = New System.Drawing.Size(100, 20)
             Me.previousLandlordReferenceTextBox.TabIndex = 12
             '
             'backgroundCheckLabel
             '
             Me.backgroundCheckLabel.AutoSize = True
-            Me.backgroundCheckLabel.Location = New System.Drawing.Point(149, 313)
-            Me.backgroundCheckLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.backgroundCheckLabel.Location = New System.Drawing.Point(121, 254)
             Me.backgroundCheckLabel.Name = "backgroundCheckLabel"
-            Me.backgroundCheckLabel.Size = New System.Drawing.Size(122, 17)
+            Me.backgroundCheckLabel.Size = New System.Drawing.Size(99, 13)
             Me.backgroundCheckLabel.TabIndex = 13
-            Me.backgroundCheckLabel.Text = "backgroundCheck"
+            Me.backgroundCheckLabel.Text = "Background Check"
             '
             'backgroundCheckTextBox
             '
-            Me.backgroundCheckTextBox.Location = New System.Drawing.Point(325, 313)
-            Me.backgroundCheckTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.backgroundCheckTextBox.Location = New System.Drawing.Point(244, 254)
             Me.backgroundCheckTextBox.Name = "backgroundCheckTextBox"
-            Me.backgroundCheckTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.backgroundCheckTextBox.Size = New System.Drawing.Size(100, 20)
             Me.backgroundCheckTextBox.TabIndex = 14
             '
             'CCCBudgetLabel
             '
             Me.CCCBudgetLabel.AutoSize = True
-            Me.CCCBudgetLabel.Location = New System.Drawing.Point(205, 354)
-            Me.CCCBudgetLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.CCCBudgetLabel.Location = New System.Drawing.Point(154, 288)
             Me.CCCBudgetLabel.Name = "CCCBudgetLabel"
-            Me.CCCBudgetLabel.Size = New System.Drawing.Size(80, 17)
+            Me.CCCBudgetLabel.Size = New System.Drawing.Size(65, 13)
             Me.CCCBudgetLabel.TabIndex = 15
-            Me.CCCBudgetLabel.Text = "CCCBudget"
+            Me.CCCBudgetLabel.Text = "CCC Budget"
             '
             'CCCBudgetTextBox
             '
-            Me.CCCBudgetTextBox.Location = New System.Drawing.Point(325, 354)
-            Me.CCCBudgetTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.CCCBudgetTextBox.Location = New System.Drawing.Point(244, 288)
             Me.CCCBudgetTextBox.Name = "CCCBudgetTextBox"
-            Me.CCCBudgetTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.CCCBudgetTextBox.Size = New System.Drawing.Size(100, 20)
             Me.CCCBudgetTextBox.TabIndex = 16
             '
             'creditReportRunLabel
             '
             Me.creditReportRunLabel.AutoSize = True
-            Me.creditReportRunLabel.Location = New System.Drawing.Point(163, 396)
-            Me.creditReportRunLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.creditReportRunLabel.Location = New System.Drawing.Point(131, 325)
             Me.creditReportRunLabel.Name = "creditReportRunLabel"
-            Me.creditReportRunLabel.Size = New System.Drawing.Size(112, 17)
+            Me.creditReportRunLabel.Size = New System.Drawing.Size(92, 13)
             Me.creditReportRunLabel.TabIndex = 17
-            Me.creditReportRunLabel.Text = "creditReportRun"
+            Me.creditReportRunLabel.Text = "Credit Report Run"
             '
             'creditReportRunTextBox
             '
-            Me.creditReportRunTextBox.Location = New System.Drawing.Point(325, 396)
-            Me.creditReportRunTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.creditReportRunTextBox.Location = New System.Drawing.Point(244, 322)
             Me.creditReportRunTextBox.Name = "creditReportRunTextBox"
-            Me.creditReportRunTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.creditReportRunTextBox.Size = New System.Drawing.Size(100, 20)
             Me.creditReportRunTextBox.TabIndex = 18
             '
             'homeVisitLabel
             '
             Me.homeVisitLabel.AutoSize = True
-            Me.homeVisitLabel.Location = New System.Drawing.Point(759, 62)
-            Me.homeVisitLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.homeVisitLabel.Location = New System.Drawing.Point(538, 159)
             Me.homeVisitLabel.Name = "homeVisitLabel"
-            Me.homeVisitLabel.Size = New System.Drawing.Size(69, 17)
+            Me.homeVisitLabel.Size = New System.Drawing.Size(83, 13)
             Me.homeVisitLabel.TabIndex = 19
-            Me.homeVisitLabel.Text = "homeVisit"
+            Me.homeVisitLabel.Text = "Home Visit Date"
             '
             'homeVisit_dateTimePicker
             '
             Me.homeVisit_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.homeVisit_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.homeVisit_dateTimePicker.Location = New System.Drawing.Point(864, 62)
-            Me.homeVisit_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.homeVisit_dateTimePicker.Location = New System.Drawing.Point(648, 50)
             Me.homeVisit_dateTimePicker.Name = "homeVisit_dateTimePicker"
-            Me.homeVisit_dateTimePicker.Size = New System.Drawing.Size(265, 22)
+            Me.homeVisit_dateTimePicker.Size = New System.Drawing.Size(200, 20)
             Me.homeVisit_dateTimePicker.TabIndex = 20
             Me.homeVisit_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
             '
             'committeeDecisionLabel
             '
             Me.committeeDecisionLabel.AutoSize = True
-            Me.committeeDecisionLabel.Location = New System.Drawing.Point(683, 103)
-            Me.committeeDecisionLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.committeeDecisionLabel.Location = New System.Drawing.Point(495, 50)
             Me.committeeDecisionLabel.Name = "committeeDecisionLabel"
-            Me.committeeDecisionLabel.Size = New System.Drawing.Size(126, 17)
+            Me.committeeDecisionLabel.Size = New System.Drawing.Size(126, 13)
             Me.committeeDecisionLabel.TabIndex = 21
-            Me.committeeDecisionLabel.Text = "committeeDecision"
+            Me.committeeDecisionLabel.Text = "Committee Decision Date"
             '
             'committeeDecision_dateTimePicker
             '
             Me.committeeDecision_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.committeeDecision_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.committeeDecision_dateTimePicker.Location = New System.Drawing.Point(864, 103)
-            Me.committeeDecision_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.committeeDecision_dateTimePicker.Location = New System.Drawing.Point(648, 84)
             Me.committeeDecision_dateTimePicker.Name = "committeeDecision_dateTimePicker"
-            Me.committeeDecision_dateTimePicker.Size = New System.Drawing.Size(265, 22)
+            Me.committeeDecision_dateTimePicker.Size = New System.Drawing.Size(200, 20)
             Me.committeeDecision_dateTimePicker.TabIndex = 22
             Me.committeeDecision_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
             '
             'committeeAcceptedLabel
             '
             Me.committeeAcceptedLabel.AutoSize = True
-            Me.committeeAcceptedLabel.Location = New System.Drawing.Point(676, 145)
-            Me.committeeAcceptedLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.committeeAcceptedLabel.Location = New System.Drawing.Point(517, 284)
             Me.committeeAcceptedLabel.Name = "committeeAcceptedLabel"
-            Me.committeeAcceptedLabel.Size = New System.Drawing.Size(131, 17)
+            Me.committeeAcceptedLabel.Size = New System.Drawing.Size(105, 13)
             Me.committeeAcceptedLabel.TabIndex = 23
-            Me.committeeAcceptedLabel.Text = "committeeAccepted"
+            Me.committeeAcceptedLabel.Text = "Committee Accepted"
             '
             'committeeAcceptedTextBox
             '
-            Me.committeeAcceptedTextBox.Location = New System.Drawing.Point(864, 145)
-            Me.committeeAcceptedTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.committeeAcceptedTextBox.Location = New System.Drawing.Point(648, 284)
             Me.committeeAcceptedTextBox.Name = "committeeAcceptedTextBox"
-            Me.committeeAcceptedTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.committeeAcceptedTextBox.Size = New System.Drawing.Size(100, 20)
             Me.committeeAcceptedTextBox.TabIndex = 24
             '
             'committeeReasonLabel
             '
             Me.committeeReasonLabel.AutoSize = True
-            Me.committeeReasonLabel.Location = New System.Drawing.Point(689, 187)
-            Me.committeeReasonLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.committeeReasonLabel.Location = New System.Drawing.Point(528, 318)
             Me.committeeReasonLabel.Name = "committeeReasonLabel"
-            Me.committeeReasonLabel.Size = New System.Drawing.Size(121, 17)
+            Me.committeeReasonLabel.Size = New System.Drawing.Size(96, 13)
             Me.committeeReasonLabel.TabIndex = 25
-            Me.committeeReasonLabel.Text = "committeeReason"
+            Me.committeeReasonLabel.Text = "Committee Reason"
             '
             'committeeReasonTextBox
             '
-            Me.committeeReasonTextBox.Location = New System.Drawing.Point(864, 187)
-            Me.committeeReasonTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.committeeReasonTextBox.Location = New System.Drawing.Point(648, 318)
             Me.committeeReasonTextBox.Name = "committeeReasonTextBox"
-            Me.committeeReasonTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.committeeReasonTextBox.Size = New System.Drawing.Size(100, 20)
             Me.committeeReasonTextBox.TabIndex = 26
             '
             'boardVoteLabel
             '
             Me.boardVoteLabel.AutoSize = True
-            Me.boardVoteLabel.Location = New System.Drawing.Point(752, 229)
-            Me.boardVoteLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.boardVoteLabel.Location = New System.Drawing.Point(537, 125)
             Me.boardVoteLabel.Name = "boardVoteLabel"
-            Me.boardVoteLabel.Size = New System.Drawing.Size(74, 17)
+            Me.boardVoteLabel.Size = New System.Drawing.Size(86, 13)
             Me.boardVoteLabel.TabIndex = 27
-            Me.boardVoteLabel.Text = "boardVote"
+            Me.boardVoteLabel.Text = "Board Vote Date"
             '
             'boardVote_dateTimePicker
             '
             Me.boardVote_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.boardVote_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.boardVote_dateTimePicker.Location = New System.Drawing.Point(864, 229)
-            Me.boardVote_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.boardVote_dateTimePicker.Location = New System.Drawing.Point(648, 118)
             Me.boardVote_dateTimePicker.Name = "boardVote_dateTimePicker"
-            Me.boardVote_dateTimePicker.Size = New System.Drawing.Size(265, 22)
+            Me.boardVote_dateTimePicker.Size = New System.Drawing.Size(200, 20)
             Me.boardVote_dateTimePicker.TabIndex = 28
             Me.boardVote_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
             '
             'boardAcceptedLabel
             '
             Me.boardAcceptedLabel.AutoSize = True
-            Me.boardAcceptedLabel.Location = New System.Drawing.Point(712, 271)
-            Me.boardAcceptedLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.boardAcceptedLabel.Location = New System.Drawing.Point(541, 220)
             Me.boardAcceptedLabel.Name = "boardAcceptedLabel"
-            Me.boardAcceptedLabel.Size = New System.Drawing.Size(104, 17)
+            Me.boardAcceptedLabel.Size = New System.Drawing.Size(84, 13)
             Me.boardAcceptedLabel.TabIndex = 29
-            Me.boardAcceptedLabel.Text = "boardAccepted"
+            Me.boardAcceptedLabel.Text = "Board Accepted"
             '
             'boardAcceptedTextBox
             '
-            Me.boardAcceptedTextBox.Location = New System.Drawing.Point(864, 271)
-            Me.boardAcceptedTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.boardAcceptedTextBox.Location = New System.Drawing.Point(648, 220)
             Me.boardAcceptedTextBox.Name = "boardAcceptedTextBox"
-            Me.boardAcceptedTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.boardAcceptedTextBox.Size = New System.Drawing.Size(100, 20)
             Me.boardAcceptedTextBox.TabIndex = 30
             '
             'boardReasonLabel
             '
             Me.boardReasonLabel.AutoSize = True
-            Me.boardReasonLabel.Location = New System.Drawing.Point(725, 313)
-            Me.boardReasonLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.boardReasonLabel.Location = New System.Drawing.Point(549, 257)
             Me.boardReasonLabel.Name = "boardReasonLabel"
-            Me.boardReasonLabel.Size = New System.Drawing.Size(94, 17)
+            Me.boardReasonLabel.Size = New System.Drawing.Size(75, 13)
             Me.boardReasonLabel.TabIndex = 31
-            Me.boardReasonLabel.Text = "boardReason"
+            Me.boardReasonLabel.Text = "Board Reason"
             '
             'boardReasonTextBox
             '
-            Me.boardReasonTextBox.Location = New System.Drawing.Point(864, 313)
-            Me.boardReasonTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.boardReasonTextBox.Location = New System.Drawing.Point(648, 254)
             Me.boardReasonTextBox.Name = "boardReasonTextBox"
-            Me.boardReasonTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.boardReasonTextBox.Size = New System.Drawing.Size(100, 20)
             Me.boardReasonTextBox.TabIndex = 32
             '
             'handbookReviewLabel
             '
             Me.handbookReviewLabel.AutoSize = True
-            Me.handbookReviewLabel.Location = New System.Drawing.Point(696, 354)
-            Me.handbookReviewLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.handbookReviewLabel.Location = New System.Drawing.Point(501, 90)
             Me.handbookReviewLabel.Name = "handbookReviewLabel"
-            Me.handbookReviewLabel.Size = New System.Drawing.Size(116, 17)
+            Me.handbookReviewLabel.Size = New System.Drawing.Size(122, 13)
             Me.handbookReviewLabel.TabIndex = 33
-            Me.handbookReviewLabel.Text = "handbookReview"
+            Me.handbookReviewLabel.Text = "Handbook Review Date"
             '
             'handbookReview_dateTimePicker
             '
             Me.handbookReview_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.handbookReview_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.handbookReview_dateTimePicker.Location = New System.Drawing.Point(864, 354)
-            Me.handbookReview_dateTimePicker.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.handbookReview_dateTimePicker.Location = New System.Drawing.Point(648, 159)
             Me.handbookReview_dateTimePicker.Name = "handbookReview_dateTimePicker"
-            Me.handbookReview_dateTimePicker.Size = New System.Drawing.Size(265, 22)
+            Me.handbookReview_dateTimePicker.Size = New System.Drawing.Size(200, 20)
             Me.handbookReview_dateTimePicker.TabIndex = 34
             Me.handbookReview_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
             '
             'general_UIDLabel
             '
             Me.general_UIDLabel.AutoSize = True
-            Me.general_UIDLabel.Location = New System.Drawing.Point(735, 396)
-            Me.general_UIDLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.general_UIDLabel.Location = New System.Drawing.Point(144, 154)
             Me.general_UIDLabel.Name = "general_UIDLabel"
-            Me.general_UIDLabel.Size = New System.Drawing.Size(87, 17)
+            Me.general_UIDLabel.Size = New System.Drawing.Size(67, 13)
             Me.general_UIDLabel.TabIndex = 35
             Me.general_UIDLabel.Text = "general_UID"
             '
@@ -608,10 +582,9 @@ Namespace DatabaseTestApplication2
             Me.general_UID_comboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
             Me.general_UID_comboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
             Me.general_UID_comboBox.FormattingEnabled = True
-            Me.general_UID_comboBox.Location = New System.Drawing.Point(864, 396)
-            Me.general_UID_comboBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.general_UID_comboBox.Location = New System.Drawing.Point(244, 151)
             Me.general_UID_comboBox.Name = "general_UID_comboBox"
-            Me.general_UID_comboBox.Size = New System.Drawing.Size(273, 24)
+            Me.general_UID_comboBox.Size = New System.Drawing.Size(200, 21)
             Me.general_UID_comboBox.TabIndex = 36
             '
             'panel3
@@ -622,46 +595,87 @@ Namespace DatabaseTestApplication2
             Me.panel3.Controls.Add(Me.panel6)
             Me.panel3.Dock = System.Windows.Forms.DockStyle.Fill
             Me.panel3.Location = New System.Drawing.Point(0, 27)
-            Me.panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(1190, 460)
+            Me.panel3.Size = New System.Drawing.Size(892, 369)
             Me.panel3.TabIndex = 19
             '
             'panel4
             '
             Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
-            Me.panel4.Location = New System.Drawing.Point(1177, 0)
-            Me.panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel4.Location = New System.Drawing.Point(882, 0)
             Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(13, 448)
+            Me.panel4.Size = New System.Drawing.Size(10, 359)
             Me.panel4.TabIndex = 3
             '
             'panel5
             '
             Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
             Me.panel5.Location = New System.Drawing.Point(0, 0)
-            Me.panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(13, 448)
+            Me.panel5.Size = New System.Drawing.Size(10, 359)
             Me.panel5.TabIndex = 5
             '
             'panel6
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 448)
-            Me.panel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel6.Location = New System.Drawing.Point(0, 359)
             Me.panel6.Name = "panel6"
-            Me.panel6.Size = New System.Drawing.Size(1190, 12)
+            Me.panel6.Size = New System.Drawing.Size(892, 10)
             Me.panel6.TabIndex = 6
+            '
+            'MenuStrip1
+            '
+            Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.GeneralToolStripMenuItem, Me.HomeownershipToolStripMenuItem, Me.RepairsToolStripMenuItem, Me.SurveyEditorToolStripMenuItem, Me.SurveyResultsToolStripMenuItem})
+            Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+            Me.MenuStrip1.Name = "MenuStrip1"
+            Me.MenuStrip1.Size = New System.Drawing.Size(872, 24)
+            Me.MenuStrip1.TabIndex = 37
+            Me.MenuStrip1.Text = "MenuStrip1"
+            '
+            'MainMenuToolStripMenuItem
+            '
+            Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
+            Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(80, 20)
+            Me.MainMenuToolStripMenuItem.Text = "Main Menu"
+            '
+            'GeneralToolStripMenuItem
+            '
+            Me.GeneralToolStripMenuItem.Name = "GeneralToolStripMenuItem"
+            Me.GeneralToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
+            Me.GeneralToolStripMenuItem.Text = "General "
+            '
+            'HomeownershipToolStripMenuItem
+            '
+            Me.HomeownershipToolStripMenuItem.Name = "HomeownershipToolStripMenuItem"
+            Me.HomeownershipToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
+            Me.HomeownershipToolStripMenuItem.Text = "Homeownership"
+            '
+            'RepairsToolStripMenuItem
+            '
+            Me.RepairsToolStripMenuItem.Name = "RepairsToolStripMenuItem"
+            Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+            Me.RepairsToolStripMenuItem.Text = "Repairs"
+            '
+            'SurveyEditorToolStripMenuItem
+            '
+            Me.SurveyEditorToolStripMenuItem.Name = "SurveyEditorToolStripMenuItem"
+            Me.SurveyEditorToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
+            Me.SurveyEditorToolStripMenuItem.Text = "Survey Editor"
+            '
+            'SurveyResultsToolStripMenuItem
+            '
+            Me.SurveyResultsToolStripMenuItem.Name = "SurveyResultsToolStripMenuItem"
+            Me.SurveyResultsToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
+            Me.SurveyResultsToolStripMenuItem.Text = "Survey Results"
             '
             'frmhomeownership
             '
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(1190, 487)
+            Me.ClientSize = New System.Drawing.Size(892, 396)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
-            Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.MainMenuStrip = Me.MenuStrip1
             Me.Name = "frmhomeownership"
             Me.Text = "Homeownership"
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -673,6 +687,8 @@ Namespace DatabaseTestApplication2
             Me.Panel1.PerformLayout()
             Me.panel3.ResumeLayout(False)
             Me.panel3.PerformLayout()
+            Me.MenuStrip1.ResumeLayout(False)
+            Me.MenuStrip1.PerformLayout()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
@@ -733,7 +749,13 @@ Namespace DatabaseTestApplication2
 		Friend WithEvents panel4 As System.Windows.Forms.Panel
 		Friend WithEvents panel5 As System.Windows.Forms.Panel
 		Friend WithEvents panel6 As System.Windows.Forms.Panel
-		
-	End Class
-	
+        Friend WithEvents MenuStrip1 As MenuStrip
+        Friend WithEvents MainMenuToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents GeneralToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents HomeownershipToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents RepairsToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents SurveyEditorToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents SurveyResultsToolStripMenuItem As ToolStripMenuItem
+    End Class
+
 End Namespace
