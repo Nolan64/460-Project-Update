@@ -193,41 +193,7 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub HUDHoursCompleteTextBox_Validating(sender As Object, e As CancelEventArgs) Handles HUDHoursCompleteTextBox.Validating
 
-			e.Cancel = False
-			If String.IsNullOrEmpty(HUDHoursCompleteTextBox.Text) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(HUDHoursCompleteTextBox, "The field HUDHoursComplete is required")
-			End If
-			Dim v As Integer
-			Dim s As String = HUDHoursCompleteTextBox.Text
-			If Not Integer.TryParse(s, v) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(HUDHoursCompleteTextBox, "The field HUDHoursComplete must be Integer.")
-			End If
-			If Not e.Cancel Then
-				ErrorProvider1.SetError(HUDHoursCompleteTextBox, "")
-			End If
-		End Sub
-
-		Private Sub financeClassesCompleteTextBox_Validating(sender As Object, e As CancelEventArgs) Handles financeClassesCompleteTextBox.Validating
-
-			e.Cancel = False
-			If String.IsNullOrEmpty(financeClassesCompleteTextBox.Text) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(financeClassesCompleteTextBox, "The field financeClassesComplete is required")
-			End If
-			Dim v As Integer
-			Dim s As String = financeClassesCompleteTextBox.Text
-			If Not Integer.TryParse(s, v) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(financeClassesCompleteTextBox, "The field financeClassesComplete must be Integer.")
-			End If
-			If Not e.Cancel Then
-				ErrorProvider1.SetError(financeClassesCompleteTextBox, "")
-			End If
-		End Sub
 
 		Private Sub homebuyerEducationAmountTextBox_Validating(sender As Object, e As CancelEventArgs) Handles homebuyerEducationAmountTextBox.Validating
 
@@ -277,23 +243,6 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub mortgage1ForgivableTextBox_Validating(sender As Object, e As CancelEventArgs) Handles mortgage1ForgivableTextBox.Validating
-
-			e.Cancel = False
-			If String.IsNullOrEmpty(mortgage1ForgivableTextBox.Text) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(mortgage1ForgivableTextBox, "The field mortgage1Forgivable is required")
-			End If
-			Dim v As Integer
-			Dim s As String = mortgage1ForgivableTextBox.Text
-			If Not Integer.TryParse(s, v) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(mortgage1ForgivableTextBox, "The field mortgage1Forgivable must be Integer.")
-			End If
-			If Not e.Cancel Then
-				ErrorProvider1.SetError(mortgage1ForgivableTextBox, "")
-			End If
-		End Sub
 
 		Private Sub mortgage1OriginalBalanceTextBox_Validating(sender As Object, e As CancelEventArgs) Handles mortgage1OriginalBalanceTextBox.Validating
 
@@ -361,23 +310,6 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub mortgage2ForgivableTextBox_Validating(sender As Object, e As CancelEventArgs) Handles mortgage2ForgivableTextBox.Validating
-
-			e.Cancel = False
-			If String.IsNullOrEmpty(mortgage2ForgivableTextBox.Text) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(mortgage2ForgivableTextBox, "The field mortgage2Forgivable is required")
-			End If
-			Dim v As Integer
-			Dim s As String = mortgage2ForgivableTextBox.Text
-			If Not Integer.TryParse(s, v) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(mortgage2ForgivableTextBox, "The field mortgage2Forgivable must be Integer.")
-			End If
-			If Not e.Cancel Then
-				ErrorProvider1.SetError(mortgage2ForgivableTextBox, "")
-			End If
-		End Sub
 
 		Private Sub mortgage2OriginalBalanceTextBox_Validating(sender As Object, e As CancelEventArgs) Handles mortgage2OriginalBalanceTextBox.Validating
 
@@ -445,23 +377,6 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub mortgage3ForgivableTextBox_Validating(sender As Object, e As CancelEventArgs) Handles mortgage3ForgivableTextBox.Validating
-
-			e.Cancel = False
-			If String.IsNullOrEmpty(mortgage3ForgivableTextBox.Text) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(mortgage3ForgivableTextBox, "The field mortgage3Forgivable is required")
-			End If
-			Dim v As Integer
-			Dim s As String = mortgage3ForgivableTextBox.Text
-			If Not Integer.TryParse(s, v) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(mortgage3ForgivableTextBox, "The field mortgage3Forgivable must be Integer.")
-			End If
-			If Not e.Cancel Then
-				ErrorProvider1.SetError(mortgage3ForgivableTextBox, "")
-			End If
-		End Sub
 
 		Private Sub mortgage3OriginalBalanceTextBox_Validating(sender As Object, e As CancelEventArgs) Handles mortgage3OriginalBalanceTextBox.Validating
 
@@ -529,23 +444,6 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub mortgage4ForgivableTextBox_Validating(sender As Object, e As CancelEventArgs) Handles mortgage4ForgivableTextBox.Validating
-
-			e.Cancel = False
-			If String.IsNullOrEmpty(mortgage4ForgivableTextBox.Text) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(mortgage4ForgivableTextBox, "The field mortgage4Forgivable is required")
-			End If
-			Dim v As Integer
-			Dim s As String = mortgage4ForgivableTextBox.Text
-			If Not Integer.TryParse(s, v) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(mortgage4ForgivableTextBox, "The field mortgage4Forgivable must be Integer.")
-			End If
-			If Not e.Cancel Then
-				ErrorProvider1.SetError(mortgage4ForgivableTextBox, "")
-			End If
-		End Sub
 
 		Private Sub mortgage4OriginalBalanceTextBox_Validating(sender As Object, e As CancelEventArgs) Handles mortgage4OriginalBalanceTextBox.Validating
 
@@ -613,23 +511,6 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub mortgage5ForgivableTextBox_Validating(sender As Object, e As CancelEventArgs) Handles mortgage5ForgivableTextBox.Validating
-
-			e.Cancel = False
-			If String.IsNullOrEmpty(mortgage5ForgivableTextBox.Text) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(mortgage5ForgivableTextBox, "The field mortgage5Forgivable is required")
-			End If
-			Dim v As Integer
-			Dim s As String = mortgage5ForgivableTextBox.Text
-			If Not Integer.TryParse(s, v) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(mortgage5ForgivableTextBox, "The field mortgage5Forgivable must be Integer.")
-			End If
-			If Not e.Cancel Then
-				ErrorProvider1.SetError(mortgage5ForgivableTextBox, "")
-			End If
-		End Sub
 
 		Private Sub mortgage5OriginalBalanceTextBox_Validating(sender As Object, e As CancelEventArgs) Handles mortgage5OriginalBalanceTextBox.Validating
 
@@ -697,23 +578,7 @@ Namespace DatabaseTestApplication2
 			End If
 		End Sub
 
-		Private Sub mortgage6ForgivableTextBox_Validating(sender As Object, e As CancelEventArgs) Handles mortgage6ForgivableTextBox.Validating
 
-			e.Cancel = False
-			If String.IsNullOrEmpty(mortgage6ForgivableTextBox.Text) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(mortgage6ForgivableTextBox, "The field mortgage6Forgivable is required")
-			End If
-			Dim v As Integer
-			Dim s As String = mortgage6ForgivableTextBox.Text
-			If Not Integer.TryParse(s, v) Then
-				e.Cancel = True
-				ErrorProvider1.SetError(mortgage6ForgivableTextBox, "The field mortgage6Forgivable must be Integer.")
-			End If
-			If Not e.Cancel Then
-				ErrorProvider1.SetError(mortgage6ForgivableTextBox, "")
-			End If
-		End Sub
 
 		Private Sub mortgage6OriginalBalanceTextBox_Validating(sender As Object, e As CancelEventArgs) Handles mortgage6OriginalBalanceTextBox.Validating
 
@@ -782,6 +647,8 @@ Namespace DatabaseTestApplication2
 			Me.Hide()
 
 		End Sub
+
+
 	End Class
 
 End Namespace

@@ -107,7 +107,7 @@ Partial Class frmmain_menu
         '
         'settings
         '
-        Me.settings.Location = New System.Drawing.Point(13, 879)
+        Me.settings.Location = New System.Drawing.Point(20, 731)
         Me.settings.Margin = New System.Windows.Forms.Padding(4)
         Me.settings.Name = "settings"
         Me.settings.Size = New System.Drawing.Size(165, 30)
@@ -120,7 +120,7 @@ Partial Class frmmain_menu
         Me.userName.AutoSize = True
         Me.userName.BackColor = System.Drawing.Color.Transparent
         Me.userName.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.userName.Location = New System.Drawing.Point(13, 858)
+        Me.userName.Location = New System.Drawing.Point(17, 710)
         Me.userName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.userName.Name = "userName"
         Me.userName.Size = New System.Drawing.Size(79, 17)
