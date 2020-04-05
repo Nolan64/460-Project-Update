@@ -52,6 +52,14 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
             Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
             Me.Panel1 = New System.Windows.Forms.Panel()
+            Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+            Me.MainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.GeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.HomeownershipToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.RepairsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.TrackingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+            Me.SurveyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.PictureBox2 = New System.Windows.Forms.PictureBox()
             Me.Label2 = New System.Windows.Forms.Label()
             Me.Label1 = New System.Windows.Forms.Label()
@@ -60,7 +68,7 @@ Namespace DatabaseTestApplication2
             Me.raceComboBox = New System.Windows.Forms.ComboBox()
             Me.maritalStatusComboBox = New System.Windows.Forms.ComboBox()
             Me.genderComboBox = New System.Windows.Forms.ComboBox()
-            Me.generalInfo = New System.Windows.Forms.Label()
+            Me.frmgeneralTitle = New System.Windows.Forms.Label()
             Me.UIDLabel = New System.Windows.Forms.Label()
             Me.UIDTextBox = New System.Windows.Forms.TextBox()
             Me.firstNameLabel = New System.Windows.Forms.Label()
@@ -98,22 +106,14 @@ Namespace DatabaseTestApplication2
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
-            Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-            Me.MainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.GeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.HomeownershipToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.RepairsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.TrackingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
-            Me.SurveyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
             CType(Me.generalBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.Panel1.SuspendLayout()
+            Me.MenuStrip1.SuspendLayout()
             CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.panel3.SuspendLayout()
-            Me.MenuStrip1.SuspendLayout()
             Me.SuspendLayout()
             '
             'BindingNavigator1
@@ -250,7 +250,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.raceComboBox)
             Me.Panel1.Controls.Add(Me.maritalStatusComboBox)
             Me.Panel1.Controls.Add(Me.genderComboBox)
-            Me.Panel1.Controls.Add(Me.generalInfo)
+            Me.Panel1.Controls.Add(Me.frmgeneralTitle)
             Me.Panel1.Controls.Add(Me.UIDLabel)
             Me.Panel1.Controls.Add(Me.UIDTextBox)
             Me.Panel1.Controls.Add(Me.firstNameLabel)
@@ -292,13 +292,65 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Size = New System.Drawing.Size(722, 496)
             Me.Panel1.TabIndex = 1
             '
+            'MenuStrip1
+            '
+            Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.GeneralToolStripMenuItem, Me.HomeownershipToolStripMenuItem, Me.RepairsToolStripMenuItem, Me.TrackingToolStripMenuItem, Me.ToolStripMenuItem3, Me.SurveyToolStripMenuItem})
+            Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+            Me.MenuStrip1.Name = "MenuStrip1"
+            Me.MenuStrip1.Size = New System.Drawing.Size(722, 24)
+            Me.MenuStrip1.TabIndex = 122
+            Me.MenuStrip1.Text = "MenuStrip1"
+            '
+            'MainMenuToolStripMenuItem
+            '
+            Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
+            Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(80, 20)
+            Me.MainMenuToolStripMenuItem.Text = "Main Menu"
+            '
+            'GeneralToolStripMenuItem
+            '
+            Me.GeneralToolStripMenuItem.Enabled = False
+            Me.GeneralToolStripMenuItem.Name = "GeneralToolStripMenuItem"
+            Me.GeneralToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
+            Me.GeneralToolStripMenuItem.Text = "General"
+            '
+            'HomeownershipToolStripMenuItem
+            '
+            Me.HomeownershipToolStripMenuItem.Name = "HomeownershipToolStripMenuItem"
+            Me.HomeownershipToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
+            Me.HomeownershipToolStripMenuItem.Text = "Homeownership"
+            '
+            'RepairsToolStripMenuItem
+            '
+            Me.RepairsToolStripMenuItem.Name = "RepairsToolStripMenuItem"
+            Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+            Me.RepairsToolStripMenuItem.Text = "Repairs"
+            '
+            'TrackingToolStripMenuItem
+            '
+            Me.TrackingToolStripMenuItem.Name = "TrackingToolStripMenuItem"
+            Me.TrackingToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
+            Me.TrackingToolStripMenuItem.Text = "Tracking"
+            '
+            'ToolStripMenuItem3
+            '
+            Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+            Me.ToolStripMenuItem3.Size = New System.Drawing.Size(88, 20)
+            Me.ToolStripMenuItem3.Text = "Survey Editor"
+            '
+            'SurveyToolStripMenuItem
+            '
+            Me.SurveyToolStripMenuItem.Name = "SurveyToolStripMenuItem"
+            Me.SurveyToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
+            Me.SurveyToolStripMenuItem.Text = "Survey Results"
+            '
             'PictureBox2
             '
             Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
             Me.PictureBox2.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
             Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
             Me.PictureBox2.Location = New System.Drawing.Point(574, 32)
-            Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
             Me.PictureBox2.Name = "PictureBox2"
             Me.PictureBox2.Size = New System.Drawing.Size(143, 54)
             Me.PictureBox2.TabIndex = 98
@@ -329,7 +381,7 @@ Namespace DatabaseTestApplication2
             'dependenttxt
             '
             Me.dependenttxt.Location = New System.Drawing.Point(424, 447)
-            Me.dependenttxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.dependenttxt.Margin = New System.Windows.Forms.Padding(2)
             Me.dependenttxt.Name = "dependenttxt"
             Me.dependenttxt.Size = New System.Drawing.Size(167, 20)
             Me.dependenttxt.TabIndex = 44
@@ -337,7 +389,7 @@ Namespace DatabaseTestApplication2
             'coapplicanttxt
             '
             Me.coapplicanttxt.Location = New System.Drawing.Point(136, 447)
-            Me.coapplicanttxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.coapplicanttxt.Margin = New System.Windows.Forms.Padding(2)
             Me.coapplicanttxt.Name = "coapplicanttxt"
             Me.coapplicanttxt.Size = New System.Drawing.Size(167, 20)
             Me.coapplicanttxt.TabIndex = 43
@@ -347,7 +399,7 @@ Namespace DatabaseTestApplication2
             Me.raceComboBox.FormattingEnabled = True
             Me.raceComboBox.Items.AddRange(New Object() {"White", "Black or African American", "American Indian or Alaska Native", "Asian", "Native Hawaiian or Other Pacific Islander"})
             Me.raceComboBox.Location = New System.Drawing.Point(424, 344)
-            Me.raceComboBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.raceComboBox.Margin = New System.Windows.Forms.Padding(2)
             Me.raceComboBox.Name = "raceComboBox"
             Me.raceComboBox.Size = New System.Drawing.Size(167, 21)
             Me.raceComboBox.TabIndex = 42
@@ -357,7 +409,7 @@ Namespace DatabaseTestApplication2
             Me.maritalStatusComboBox.FormattingEnabled = True
             Me.maritalStatusComboBox.Items.AddRange(New Object() {"Married", "Widowed", "Single", "Divorced or Separated"})
             Me.maritalStatusComboBox.Location = New System.Drawing.Point(424, 379)
-            Me.maritalStatusComboBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.maritalStatusComboBox.Margin = New System.Windows.Forms.Padding(2)
             Me.maritalStatusComboBox.Name = "maritalStatusComboBox"
             Me.maritalStatusComboBox.Size = New System.Drawing.Size(167, 21)
             Me.maritalStatusComboBox.TabIndex = 41
@@ -367,22 +419,22 @@ Namespace DatabaseTestApplication2
             Me.genderComboBox.FormattingEnabled = True
             Me.genderComboBox.Items.AddRange(New Object() {"Male", "Female", "Other"})
             Me.genderComboBox.Location = New System.Drawing.Point(424, 210)
-            Me.genderComboBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.genderComboBox.Margin = New System.Windows.Forms.Padding(2)
             Me.genderComboBox.Name = "genderComboBox"
             Me.genderComboBox.Size = New System.Drawing.Size(167, 21)
             Me.genderComboBox.TabIndex = 40
             '
-            'generalInfo
+            'frmgeneralTitle
             '
-            Me.generalInfo.AutoSize = True
-            Me.generalInfo.BackColor = System.Drawing.Color.Transparent
-            Me.generalInfo.Font = New System.Drawing.Font("Microsoft YaHei UI", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.generalInfo.Location = New System.Drawing.Point(2, 32)
-            Me.generalInfo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-            Me.generalInfo.Name = "generalInfo"
-            Me.generalInfo.Size = New System.Drawing.Size(326, 64)
-            Me.generalInfo.TabIndex = 38
-            Me.generalInfo.Text = "General Info"
+            Me.frmgeneralTitle.AutoSize = True
+            Me.frmgeneralTitle.BackColor = System.Drawing.Color.Transparent
+            Me.frmgeneralTitle.Font = New System.Drawing.Font("Microsoft YaHei UI", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.frmgeneralTitle.Location = New System.Drawing.Point(2, 32)
+            Me.frmgeneralTitle.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+            Me.frmgeneralTitle.Name = "frmgeneralTitle"
+            Me.frmgeneralTitle.Size = New System.Drawing.Size(326, 64)
+            Me.frmgeneralTitle.TabIndex = 38
+            Me.frmgeneralTitle.Text = "General Info"
             '
             'UIDLabel
             '
@@ -731,58 +783,6 @@ Namespace DatabaseTestApplication2
             Me.panel6.Size = New System.Drawing.Size(742, 10)
             Me.panel6.TabIndex = 6
             '
-            'MenuStrip1
-            '
-            Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.GeneralToolStripMenuItem, Me.HomeownershipToolStripMenuItem, Me.RepairsToolStripMenuItem, Me.TrackingToolStripMenuItem, Me.ToolStripMenuItem3, Me.SurveyToolStripMenuItem})
-            Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-            Me.MenuStrip1.Name = "MenuStrip1"
-            Me.MenuStrip1.Size = New System.Drawing.Size(722, 24)
-            Me.MenuStrip1.TabIndex = 122
-            Me.MenuStrip1.Text = "MenuStrip1"
-            '
-            'MainMenuToolStripMenuItem
-            '
-            Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
-            Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(80, 20)
-            Me.MainMenuToolStripMenuItem.Text = "Main Menu"
-            '
-            'GeneralToolStripMenuItem
-            '
-            Me.GeneralToolStripMenuItem.Enabled = False
-            Me.GeneralToolStripMenuItem.Name = "GeneralToolStripMenuItem"
-            Me.GeneralToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
-            Me.GeneralToolStripMenuItem.Text = "General"
-            '
-            'HomeownershipToolStripMenuItem
-            '
-            Me.HomeownershipToolStripMenuItem.Name = "HomeownershipToolStripMenuItem"
-            Me.HomeownershipToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
-            Me.HomeownershipToolStripMenuItem.Text = "Homeownership"
-            '
-            'RepairsToolStripMenuItem
-            '
-            Me.RepairsToolStripMenuItem.Name = "RepairsToolStripMenuItem"
-            Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
-            Me.RepairsToolStripMenuItem.Text = "Repairs"
-            '
-            'TrackingToolStripMenuItem
-            '
-            Me.TrackingToolStripMenuItem.Name = "TrackingToolStripMenuItem"
-            Me.TrackingToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
-            Me.TrackingToolStripMenuItem.Text = "Tracking"
-            '
-            'ToolStripMenuItem3
-            '
-            Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-            Me.ToolStripMenuItem3.Size = New System.Drawing.Size(88, 20)
-            Me.ToolStripMenuItem3.Text = "Survey Editor"
-            '
-            'SurveyToolStripMenuItem
-            '
-            Me.SurveyToolStripMenuItem.Name = "SurveyToolStripMenuItem"
-            Me.SurveyToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
-            Me.SurveyToolStripMenuItem.Text = "Survey Results"
-            '
             'frmgeneral
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -799,11 +799,11 @@ Namespace DatabaseTestApplication2
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.Panel1.ResumeLayout(False)
             Me.Panel1.PerformLayout()
+            Me.MenuStrip1.ResumeLayout(False)
+            Me.MenuStrip1.PerformLayout()
             CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
             Me.panel3.ResumeLayout(False)
             Me.panel3.PerformLayout()
-            Me.MenuStrip1.ResumeLayout(False)
-            Me.MenuStrip1.PerformLayout()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
@@ -861,7 +861,7 @@ Namespace DatabaseTestApplication2
         Friend WithEvents panel4 As System.Windows.Forms.Panel
         Friend WithEvents panel5 As System.Windows.Forms.Panel
         Friend WithEvents panel6 As System.Windows.Forms.Panel
-        Friend WithEvents generalInfo As Label
+        Friend WithEvents frmgeneralTitle As Label
         Friend WithEvents genderComboBox As ComboBox
         Friend WithEvents maritalStatusComboBox As ComboBox
         Friend WithEvents raceComboBox As ComboBox

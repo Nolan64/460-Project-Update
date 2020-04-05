@@ -67,7 +67,7 @@ Namespace DatabaseTestApplication2
             Me.chkDeed = New System.Windows.Forms.CheckBox()
             Me.chkIncomeVerified = New System.Windows.Forms.CheckBox()
             Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-            Me.Label1 = New System.Windows.Forms.Label()
+            Me.frmrepairsTitle = New System.Windows.Forms.Label()
             Me.ApplicationSubmissionLabel = New System.Windows.Forms.Label()
             Me.ApplicationSubmission_dateTimePicker = New System.Windows.Forms.DateTimePicker()
             Me.AdditionalDocumentsLabel = New System.Windows.Forms.Label()
@@ -105,13 +105,14 @@ Namespace DatabaseTestApplication2
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
-            Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-            Me.MainMenyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.GeneralInfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.HomeownershipToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-            Me.SurveyEditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.SurveyResultsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
+            Me.MainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.GeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+            Me.RepairsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.TrackingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+            Me.SurveyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
@@ -120,7 +121,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.SuspendLayout()
             CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.panel3.SuspendLayout()
-            Me.MenuStrip1.SuspendLayout()
+            Me.MenuStrip2.SuspendLayout()
             Me.SuspendLayout()
             '
             'DateTimePicker1
@@ -260,7 +261,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.BackColor = System.Drawing.Color.Transparent
             Me.Panel1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.angryimg__12_
             Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-            Me.Panel1.Controls.Add(Me.MenuStrip1)
+            Me.Panel1.Controls.Add(Me.MenuStrip2)
             Me.Panel1.Controls.Add(DateTimePicker1)
             Me.Panel1.Controls.Add(Me.Label4)
             Me.Panel1.Controls.Add(Me.IncomeUpdated_DateTimePicker1)
@@ -276,7 +277,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.chkDeed)
             Me.Panel1.Controls.Add(Me.chkIncomeVerified)
             Me.Panel1.Controls.Add(Me.PictureBox1)
-            Me.Panel1.Controls.Add(Me.Label1)
+            Me.Panel1.Controls.Add(Me.frmrepairsTitle)
             Me.Panel1.Controls.Add(Me.ApplicationSubmissionLabel)
             Me.Panel1.Controls.Add(Me.ApplicationSubmission_dateTimePicker)
             Me.Panel1.Controls.Add(Me.AdditionalDocumentsLabel)
@@ -473,18 +474,18 @@ Namespace DatabaseTestApplication2
             Me.PictureBox1.TabIndex = 98
             Me.PictureBox1.TabStop = False
             '
-            'Label1
+            'frmrepairsTitle
             '
-            Me.Label1.BackColor = System.Drawing.Color.Transparent
-            Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.Label1.ForeColor = System.Drawing.Color.White
-            Me.Label1.Location = New System.Drawing.Point(4, 24)
-            Me.Label1.Margin = New System.Windows.Forms.Padding(7, 0, 7, 0)
-            Me.Label1.Name = "Label1"
-            Me.Label1.Size = New System.Drawing.Size(211, 67)
-            Me.Label1.TabIndex = 35
-            Me.Label1.Text = "Repairs"
-            Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+            Me.frmrepairsTitle.BackColor = System.Drawing.Color.Transparent
+            Me.frmrepairsTitle.Font = New System.Drawing.Font("Microsoft YaHei UI", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+            Me.frmrepairsTitle.ForeColor = System.Drawing.Color.White
+            Me.frmrepairsTitle.Location = New System.Drawing.Point(4, 24)
+            Me.frmrepairsTitle.Margin = New System.Windows.Forms.Padding(7, 0, 7, 0)
+            Me.frmrepairsTitle.Name = "frmrepairsTitle"
+            Me.frmrepairsTitle.Size = New System.Drawing.Size(211, 67)
+            Me.frmrepairsTitle.TabIndex = 35
+            Me.frmrepairsTitle.Text = "Repairs"
+            Me.frmrepairsTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
             '
             'ApplicationSubmissionLabel
             '
@@ -874,51 +875,57 @@ Namespace DatabaseTestApplication2
             Me.panel6.Size = New System.Drawing.Size(855, 10)
             Me.panel6.TabIndex = 6
             '
-            'MenuStrip1
+            'MenuStrip2
             '
-            Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenyToolStripMenuItem, Me.GeneralInfoToolStripMenuItem, Me.HomeownershipToolStripMenuItem, Me.ToolStripMenuItem1, Me.SurveyEditorToolStripMenuItem, Me.SurveyResultsToolStripMenuItem})
-            Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-            Me.MenuStrip1.Name = "MenuStrip1"
-            Me.MenuStrip1.Size = New System.Drawing.Size(835, 24)
-            Me.MenuStrip1.TabIndex = 116
-            Me.MenuStrip1.Text = "MenuStrip1"
+            Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.GeneralToolStripMenuItem, Me.ToolStripMenuItem2, Me.RepairsToolStripMenuItem, Me.TrackingToolStripMenuItem, Me.ToolStripMenuItem3, Me.SurveyToolStripMenuItem})
+            Me.MenuStrip2.Location = New System.Drawing.Point(0, 0)
+            Me.MenuStrip2.Name = "MenuStrip2"
+            Me.MenuStrip2.Size = New System.Drawing.Size(835, 24)
+            Me.MenuStrip2.TabIndex = 123
+            Me.MenuStrip2.Text = "MenuStrip2"
             '
-            'MainMenyToolStripMenuItem
+            'MainMenuToolStripMenuItem
             '
-            Me.MainMenyToolStripMenuItem.Name = "MainMenyToolStripMenuItem"
-            Me.MainMenyToolStripMenuItem.Size = New System.Drawing.Size(80, 20)
-            Me.MainMenyToolStripMenuItem.Text = "Main Menu"
+            Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
+            Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(80, 20)
+            Me.MainMenuToolStripMenuItem.Text = "Main Menu"
             '
-            'GeneralInfoToolStripMenuItem
+            'GeneralToolStripMenuItem
             '
-            Me.GeneralInfoToolStripMenuItem.Name = "GeneralInfoToolStripMenuItem"
-            Me.GeneralInfoToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
-            Me.GeneralInfoToolStripMenuItem.Text = "General"
+            Me.GeneralToolStripMenuItem.Name = "GeneralToolStripMenuItem"
+            Me.GeneralToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
+            Me.GeneralToolStripMenuItem.Text = "General"
             '
-            'HomeownershipToolStripMenuItem
+            'ToolStripMenuItem2
             '
-            Me.HomeownershipToolStripMenuItem.Name = "HomeownershipToolStripMenuItem"
-            Me.HomeownershipToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
-            Me.HomeownershipToolStripMenuItem.Text = "Homeownership"
+            Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+            Me.ToolStripMenuItem2.Size = New System.Drawing.Size(107, 20)
+            Me.ToolStripMenuItem2.Text = "Homeownership"
             '
-            'ToolStripMenuItem1
+            'RepairsToolStripMenuItem
             '
-            Me.ToolStripMenuItem1.Enabled = False
-            Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-            Me.ToolStripMenuItem1.Size = New System.Drawing.Size(57, 20)
-            Me.ToolStripMenuItem1.Text = "Repairs"
+            Me.RepairsToolStripMenuItem.Enabled = False
+            Me.RepairsToolStripMenuItem.Name = "RepairsToolStripMenuItem"
+            Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+            Me.RepairsToolStripMenuItem.Text = "Repairs"
             '
-            'SurveyEditorToolStripMenuItem
+            'TrackingToolStripMenuItem
             '
-            Me.SurveyEditorToolStripMenuItem.Name = "SurveyEditorToolStripMenuItem"
-            Me.SurveyEditorToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
-            Me.SurveyEditorToolStripMenuItem.Text = "Survey Editor"
+            Me.TrackingToolStripMenuItem.Name = "TrackingToolStripMenuItem"
+            Me.TrackingToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
+            Me.TrackingToolStripMenuItem.Text = "Tracking"
             '
-            'SurveyResultsToolStripMenuItem
+            'ToolStripMenuItem3
             '
-            Me.SurveyResultsToolStripMenuItem.Name = "SurveyResultsToolStripMenuItem"
-            Me.SurveyResultsToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
-            Me.SurveyResultsToolStripMenuItem.Text = "Survey Results"
+            Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+            Me.ToolStripMenuItem3.Size = New System.Drawing.Size(88, 20)
+            Me.ToolStripMenuItem3.Text = "Survey Editor"
+            '
+            'SurveyToolStripMenuItem
+            '
+            Me.SurveyToolStripMenuItem.Name = "SurveyToolStripMenuItem"
+            Me.SurveyToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
+            Me.SurveyToolStripMenuItem.Text = "Survey Results"
             '
             'frmrepairs
             '
@@ -939,8 +946,8 @@ Namespace DatabaseTestApplication2
             CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.panel3.ResumeLayout(False)
             Me.panel3.PerformLayout()
-            Me.MenuStrip1.ResumeLayout(False)
-            Me.MenuStrip1.PerformLayout()
+            Me.MenuStrip2.ResumeLayout(False)
+            Me.MenuStrip2.PerformLayout()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
@@ -998,7 +1005,7 @@ Namespace DatabaseTestApplication2
         Friend WithEvents panel4 As System.Windows.Forms.Panel
         Friend WithEvents panel5 As System.Windows.Forms.Panel
         Friend WithEvents panel6 As System.Windows.Forms.Panel
-        Friend WithEvents Label1 As Label
+        Friend WithEvents frmrepairsTitle As Label
         Friend WithEvents PictureBox1 As PictureBox
         Friend WithEvents chkIncomeVerified As CheckBox
         Friend WithEvents chkIDDocs As CheckBox
@@ -1013,13 +1020,14 @@ Namespace DatabaseTestApplication2
         Friend WithEvents Label3 As Label
         Friend WithEvents Label4 As Label
         Friend WithEvents IncomeUpdated_DateTimePicker1 As DateTimePicker
-        Friend WithEvents MenuStrip1 As MenuStrip
-        Friend WithEvents MainMenyToolStripMenuItem As ToolStripMenuItem
-        Friend WithEvents GeneralInfoToolStripMenuItem As ToolStripMenuItem
-        Friend WithEvents HomeownershipToolStripMenuItem As ToolStripMenuItem
-        Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
-        Friend WithEvents SurveyEditorToolStripMenuItem As ToolStripMenuItem
-        Friend WithEvents SurveyResultsToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents MenuStrip2 As MenuStrip
+        Friend WithEvents MainMenuToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents GeneralToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+        Friend WithEvents RepairsToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents TrackingToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
+        Friend WithEvents SurveyToolStripMenuItem As ToolStripMenuItem
     End Class
 
 End Namespace

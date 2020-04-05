@@ -177,13 +177,13 @@ Namespace DatabaseTestApplication2
             Me.GeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.HomeownershipToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.RepairsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.TrackingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.SurveyEditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.SurveyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.panel3 = New System.Windows.Forms.Panel()
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
-            Me.TrackingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
             CType(Me.surveyBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -451,10 +451,11 @@ Namespace DatabaseTestApplication2
             'frmsurveyTitle
             '
             Me.frmsurveyTitle.AutoSize = True
+            Me.frmsurveyTitle.Font = New System.Drawing.Font("Microsoft YaHei UI", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
             Me.frmsurveyTitle.ForeColor = System.Drawing.SystemColors.Control
             Me.frmsurveyTitle.Location = New System.Drawing.Point(68, 50)
             Me.frmsurveyTitle.Name = "frmsurveyTitle"
-            Me.frmsurveyTitle.Size = New System.Drawing.Size(70, 13)
+            Me.frmsurveyTitle.Size = New System.Drawing.Size(233, 42)
             Me.frmsurveyTitle.TabIndex = 120
             Me.frmsurveyTitle.Text = "Survey Editor"
             '
@@ -1445,6 +1446,12 @@ Namespace DatabaseTestApplication2
             Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
             Me.RepairsToolStripMenuItem.Text = "Repairs"
             '
+            'TrackingToolStripMenuItem
+            '
+            Me.TrackingToolStripMenuItem.Name = "TrackingToolStripMenuItem"
+            Me.TrackingToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
+            Me.TrackingToolStripMenuItem.Text = "Tracking"
+            '
             'SurveyEditorToolStripMenuItem
             '
             Me.SurveyEditorToolStripMenuItem.Enabled = False
@@ -1493,12 +1500,6 @@ Namespace DatabaseTestApplication2
             Me.panel6.Name = "panel6"
             Me.panel6.Size = New System.Drawing.Size(842, 10)
             Me.panel6.TabIndex = 6
-            '
-            'TrackingToolStripMenuItem
-            '
-            Me.TrackingToolStripMenuItem.Name = "TrackingToolStripMenuItem"
-            Me.TrackingToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
-            Me.TrackingToolStripMenuItem.Text = "Tracking"
             '
             'frmsurvey
             '
