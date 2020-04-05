@@ -195,17 +195,17 @@
   <data name="ToolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJQSURBVDhPY6ALcDaz9V8bGPixydS4GypEOkgwZnddtHTp
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJQSURBVDhPY6ALcDaz9V8bGPixydS4GypEOkgwZnddtHTp
         170z5vxvcHXthwqTBnLNGPwvzI799vBAy/+UlJT1UGH8ICUjf3tqZsF/GI7wsvt/bn7Y/y/n6v5XBMvD
         xeE4o6AXqhUVgCR//Pr7/+Gr7/+r85P+n5js/P/j4Zz/JX5S/y/efAYWh+Ffv//9zy8q+wjVigpABt1+
         9u1/QFb//3MTLf6/2xr8P8tZ4H9819H/6dOuo+Anb34gG8QjIMZVDWUjDCpOCP7/bE/z/5JQPayGoBnE
         o2EjcWHa1Zj/Tglae4B8ZrBBNx5//u/q4vw/MDD4f1L/WayGgDDIoEVLVny39zZ8Oe1GxP/5T+P+z34Q
         898hRnUfShjB8L3Hr//fefQKRQyEP3z89D8g3un/xCtB/2c9DAfj3nMB/+WNBE8DDcrbCzIMhmfMnv/f
         wcf0v0eQ3f+O7glw8dlzF/73j3P4333B+/+UuwFg3HHa87+8HtAQBgZOUDAhA2lDF9lPzaec/9fsd/jv
-        Gmb75+nTp9aPHj3K9Y21/996xuV/700PMG487vRfVpf/FFAPhiEg0JU0W/9/21UHMC7aYvbfJ9jnl0+M
+        Embz5+nTp9aPHj3K9Y21/996xuV/700PMG487vRfVpf/FFAPhiEg0JU0W/9/21UHMC7aYvbfJ8jnl0+M
         7f+6EzZw8erD1v+ldHhwGgICzByCrJvTV+n+r79oDsZZ6/X+Vxw1gfOL9xr9l9LgxmsIDLDxirEeyNig
         +b/yrAEKztul/V9Sg4soQ2CAk1+a9Uz6FtX/xSc1wThjm+p/UQ12kgyBAX4RFfYradsU/ydvVPgvqkKe
-        ITAgyiXEvIqdlxFUAuAxhIEBALUjqO2w4sk/AAAAAElFTkSuQmCC
+        ITAgyiXEvIqdlxFUAuAxhIEBAK/NqOpw8hs/AAAAAElFTkSuQmCC
 </value>
   </data>
   <metadata name="ErrorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -223,7 +223,10 @@
   <metadata name="Panel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Label1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="MenuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>695, 17</value>
+  </metadata>
+  <metadata name="frmsurvey_resultsTitle.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="PictureBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -563,12 +566,6 @@
     <value>True</value>
   </metadata>
   <metadata name="survey_SurveyID_comboBox.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>580, 17</value>
-  </metadata>
-  <metadata name="MenuStrip1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="panel4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
