@@ -58,6 +58,7 @@ Namespace DatabaseTestApplication2
             Me.dependenttxt = New System.Windows.Forms.TextBox()
             Me.coapplicanttxt = New System.Windows.Forms.TextBox()
             Me.raceComboBox = New System.Windows.Forms.ComboBox()
+            Me.maritalStatusComboBox = New System.Windows.Forms.ComboBox()
             Me.genderComboBox = New System.Windows.Forms.ComboBox()
             Me.generalInfo = New System.Windows.Forms.Label()
             Me.UIDLabel = New System.Windows.Forms.Label()
@@ -93,25 +94,26 @@ Namespace DatabaseTestApplication2
             Me.maritalStatusLabel = New System.Windows.Forms.Label()
             Me.notesLabel = New System.Windows.Forms.Label()
             Me.notesTextBox = New System.Windows.Forms.TextBox()
-            Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-            Me.MainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.HomeownershipToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.RepairsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.TrackingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.panel3 = New System.Windows.Forms.Panel()
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
-            Me.TextBox1 = New System.Windows.Forms.TextBox()
-            Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+            Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+            Me.MainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.GeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.HomeownershipToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.RepairsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.TrackingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+            Me.SurveyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
             CType(Me.generalBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.Panel1.SuspendLayout()
             CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-            Me.MenuStrip1.SuspendLayout()
             Me.panel3.SuspendLayout()
+            Me.MenuStrip1.SuspendLayout()
             Me.SuspendLayout()
             '
             'BindingNavigator1
@@ -128,16 +130,16 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigator1.MoveNextItem = Me.BindingNavigatorMoveNextItem
             Me.BindingNavigator1.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
             Me.BindingNavigator1.Name = "BindingNavigator1"
-            Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(13, 0, 13, 0)
+            Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
             Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-            Me.BindingNavigator1.Size = New System.Drawing.Size(989, 27)
+            Me.BindingNavigator1.Size = New System.Drawing.Size(742, 27)
             Me.BindingNavigator1.TabIndex = 0
             Me.BindingNavigator1.Text = "BindingNavigator1"
             '
             'BindingNavigatorCountItem
             '
             Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
+            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 24)
             Me.BindingNavigatorCountItem.Text = "of {0}"
             Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
             '
@@ -147,7 +149,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
             Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorDeleteItem.Text = "Delete"
             '
             'BindingNavigatorMoveFirstItem
@@ -156,7 +158,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
             Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorMoveFirstItem.Text = "Move first"
             '
             'BindingNavigatorMovePreviousItem
@@ -165,7 +167,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
             Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
             '
             'BindingNavigatorSeparator
@@ -179,7 +181,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorPositionItem.AutoSize = False
             Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
             Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-            Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(65, 27)
+            Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
             Me.BindingNavigatorPositionItem.Text = "0"
             Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
             '
@@ -194,7 +196,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
             Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorMoveNextItem.Text = "Move next"
             '
             'BindingNavigatorMoveLastItem
@@ -203,7 +205,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
             Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorMoveLastItem.Text = "Move last"
             '
             'BindingNavigatorSeparator2
@@ -217,7 +219,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
             Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorAddNewItem.Text = "Add new"
             '
             'ToolStripButton1
@@ -226,7 +228,7 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
             Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
             Me.ToolStripButton1.Name = "ToolStripButton1"
-            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 24)
+            Me.ToolStripButton1.Size = New System.Drawing.Size(24, 24)
             Me.ToolStripButton1.Text = "Save"
             '
             'ErrorProvider1
@@ -239,13 +241,14 @@ Namespace DatabaseTestApplication2
             Me.Panel1.AutoSize = True
             Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
             Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-            Me.Panel1.Controls.Add(Me.CheckBox1)
+            Me.Panel1.Controls.Add(Me.MenuStrip1)
             Me.Panel1.Controls.Add(Me.PictureBox2)
             Me.Panel1.Controls.Add(Me.Label2)
             Me.Panel1.Controls.Add(Me.Label1)
             Me.Panel1.Controls.Add(Me.dependenttxt)
             Me.Panel1.Controls.Add(Me.coapplicanttxt)
             Me.Panel1.Controls.Add(Me.raceComboBox)
+            Me.Panel1.Controls.Add(Me.maritalStatusComboBox)
             Me.Panel1.Controls.Add(Me.genderComboBox)
             Me.Panel1.Controls.Add(Me.generalInfo)
             Me.Panel1.Controls.Add(Me.UIDLabel)
@@ -281,14 +284,12 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Controls.Add(Me.maritalStatusLabel)
             Me.Panel1.Controls.Add(Me.notesLabel)
             Me.Panel1.Controls.Add(Me.notesTextBox)
-            Me.Panel1.Controls.Add(Me.MenuStrip1)
-            Me.Panel1.Controls.Add(Me.TextBox1)
             Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.Panel1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.Panel1.Location = New System.Drawing.Point(13, 0)
-            Me.Panel1.Margin = New System.Windows.Forms.Padding(13, 4, 13, 4)
+            Me.Panel1.Location = New System.Drawing.Point(10, 0)
+            Me.Panel1.Margin = New System.Windows.Forms.Padding(10, 3, 10, 3)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(963, 617)
+            Me.Panel1.Size = New System.Drawing.Size(722, 496)
             Me.Panel1.TabIndex = 1
             '
             'PictureBox2
@@ -296,10 +297,10 @@ Namespace DatabaseTestApplication2
             Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
             Me.PictureBox2.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
             Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-            Me.PictureBox2.Location = New System.Drawing.Point(765, 40)
-            Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+            Me.PictureBox2.Location = New System.Drawing.Point(574, 32)
+            Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
             Me.PictureBox2.Name = "PictureBox2"
-            Me.PictureBox2.Size = New System.Drawing.Size(191, 66)
+            Me.PictureBox2.Size = New System.Drawing.Size(143, 54)
             Me.PictureBox2.TabIndex = 98
             Me.PictureBox2.TabStop = False
             '
@@ -307,9 +308,10 @@ Namespace DatabaseTestApplication2
             '
             Me.Label2.AutoSize = True
             Me.Label2.BackColor = System.Drawing.Color.Transparent
-            Me.Label2.Location = New System.Drawing.Point(427, 553)
+            Me.Label2.Location = New System.Drawing.Point(320, 449)
+            Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
             Me.Label2.Name = "Label2"
-            Me.Label2.Size = New System.Drawing.Size(136, 17)
+            Me.Label2.Size = New System.Drawing.Size(102, 13)
             Me.Label2.TabIndex = 46
             Me.Label2.Text = "Dependent Name(s)"
             '
@@ -317,42 +319,57 @@ Namespace DatabaseTestApplication2
             '
             Me.Label1.AutoSize = True
             Me.Label1.BackColor = System.Drawing.Color.Transparent
-            Me.Label1.Location = New System.Drawing.Point(51, 553)
+            Me.Label1.Location = New System.Drawing.Point(38, 449)
+            Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
             Me.Label1.Name = "Label1"
-            Me.Label1.Size = New System.Drawing.Size(123, 17)
+            Me.Label1.Size = New System.Drawing.Size(94, 13)
             Me.Label1.TabIndex = 45
             Me.Label1.Text = "Coapplicant Name"
             '
             'dependenttxt
             '
-            Me.dependenttxt.Location = New System.Drawing.Point(565, 550)
+            Me.dependenttxt.Location = New System.Drawing.Point(424, 447)
+            Me.dependenttxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
             Me.dependenttxt.Name = "dependenttxt"
-            Me.dependenttxt.Size = New System.Drawing.Size(221, 22)
+            Me.dependenttxt.Size = New System.Drawing.Size(167, 20)
             Me.dependenttxt.TabIndex = 44
             '
             'coapplicanttxt
             '
-            Me.coapplicanttxt.Location = New System.Drawing.Point(182, 550)
+            Me.coapplicanttxt.Location = New System.Drawing.Point(136, 447)
+            Me.coapplicanttxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
             Me.coapplicanttxt.Name = "coapplicanttxt"
-            Me.coapplicanttxt.Size = New System.Drawing.Size(221, 22)
+            Me.coapplicanttxt.Size = New System.Drawing.Size(167, 20)
             Me.coapplicanttxt.TabIndex = 43
             '
             'raceComboBox
             '
             Me.raceComboBox.FormattingEnabled = True
             Me.raceComboBox.Items.AddRange(New Object() {"White", "Black or African American", "American Indian or Alaska Native", "Asian", "Native Hawaiian or Other Pacific Islander"})
-            Me.raceComboBox.Location = New System.Drawing.Point(565, 423)
+            Me.raceComboBox.Location = New System.Drawing.Point(424, 344)
+            Me.raceComboBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
             Me.raceComboBox.Name = "raceComboBox"
-            Me.raceComboBox.Size = New System.Drawing.Size(221, 24)
+            Me.raceComboBox.Size = New System.Drawing.Size(167, 21)
             Me.raceComboBox.TabIndex = 42
+            '
+            'maritalStatusComboBox
+            '
+            Me.maritalStatusComboBox.FormattingEnabled = True
+            Me.maritalStatusComboBox.Items.AddRange(New Object() {"Married", "Widowed", "Single", "Divorced or Separated"})
+            Me.maritalStatusComboBox.Location = New System.Drawing.Point(424, 379)
+            Me.maritalStatusComboBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.maritalStatusComboBox.Name = "maritalStatusComboBox"
+            Me.maritalStatusComboBox.Size = New System.Drawing.Size(167, 21)
+            Me.maritalStatusComboBox.TabIndex = 41
             '
             'genderComboBox
             '
             Me.genderComboBox.FormattingEnabled = True
             Me.genderComboBox.Items.AddRange(New Object() {"Male", "Female", "Other"})
-            Me.genderComboBox.Location = New System.Drawing.Point(565, 258)
+            Me.genderComboBox.Location = New System.Drawing.Point(424, 210)
+            Me.genderComboBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
             Me.genderComboBox.Name = "genderComboBox"
-            Me.genderComboBox.Size = New System.Drawing.Size(221, 24)
+            Me.genderComboBox.Size = New System.Drawing.Size(167, 21)
             Me.genderComboBox.TabIndex = 40
             '
             'generalInfo
@@ -360,9 +377,10 @@ Namespace DatabaseTestApplication2
             Me.generalInfo.AutoSize = True
             Me.generalInfo.BackColor = System.Drawing.Color.Transparent
             Me.generalInfo.Font = New System.Drawing.Font("Microsoft YaHei UI", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-            Me.generalInfo.Location = New System.Drawing.Point(3, 40)
+            Me.generalInfo.Location = New System.Drawing.Point(2, 32)
+            Me.generalInfo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
             Me.generalInfo.Name = "generalInfo"
-            Me.generalInfo.Size = New System.Drawing.Size(407, 80)
+            Me.generalInfo.Size = New System.Drawing.Size(326, 64)
             Me.generalInfo.TabIndex = 38
             Me.generalInfo.Text = "General Info"
             '
@@ -371,10 +389,9 @@ Namespace DatabaseTestApplication2
             Me.UIDLabel.AutoSize = True
             Me.UIDLabel.BackColor = System.Drawing.Color.Transparent
             Me.UIDLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.UIDLabel.Location = New System.Drawing.Point(96, 178)
-            Me.UIDLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.UIDLabel.Location = New System.Drawing.Point(72, 145)
             Me.UIDLabel.Name = "UIDLabel"
-            Me.UIDLabel.Size = New System.Drawing.Size(83, 17)
+            Me.UIDLabel.Size = New System.Drawing.Size(65, 13)
             Me.UIDLabel.TabIndex = 1
             Me.UIDLabel.Text = "Applicant ID"
             '
@@ -382,10 +399,9 @@ Namespace DatabaseTestApplication2
             '
             Me.UIDTextBox.BackColor = System.Drawing.SystemColors.Window
             Me.UIDTextBox.Enabled = False
-            Me.UIDTextBox.Location = New System.Drawing.Point(182, 175)
-            Me.UIDTextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.UIDTextBox.Location = New System.Drawing.Point(136, 142)
             Me.UIDTextBox.Name = "UIDTextBox"
-            Me.UIDTextBox.Size = New System.Drawing.Size(221, 22)
+            Me.UIDTextBox.Size = New System.Drawing.Size(167, 20)
             Me.UIDTextBox.TabIndex = 2
             '
             'firstNameLabel
@@ -393,19 +409,17 @@ Namespace DatabaseTestApplication2
             Me.firstNameLabel.AutoSize = True
             Me.firstNameLabel.BackColor = System.Drawing.Color.Transparent
             Me.firstNameLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.firstNameLabel.Location = New System.Drawing.Point(98, 219)
-            Me.firstNameLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.firstNameLabel.Location = New System.Drawing.Point(74, 178)
             Me.firstNameLabel.Name = "firstNameLabel"
-            Me.firstNameLabel.Size = New System.Drawing.Size(76, 17)
+            Me.firstNameLabel.Size = New System.Drawing.Size(57, 13)
             Me.firstNameLabel.TabIndex = 3
             Me.firstNameLabel.Text = "First Name"
             '
             'firstNameTextBox
             '
-            Me.firstNameTextBox.Location = New System.Drawing.Point(182, 216)
-            Me.firstNameTextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.firstNameTextBox.Location = New System.Drawing.Point(136, 176)
             Me.firstNameTextBox.Name = "firstNameTextBox"
-            Me.firstNameTextBox.Size = New System.Drawing.Size(221, 22)
+            Me.firstNameTextBox.Size = New System.Drawing.Size(167, 20)
             Me.firstNameTextBox.TabIndex = 4
             '
             'lastNameLabel
@@ -413,19 +427,17 @@ Namespace DatabaseTestApplication2
             Me.lastNameLabel.AutoSize = True
             Me.lastNameLabel.BackColor = System.Drawing.Color.Transparent
             Me.lastNameLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.lastNameLabel.Location = New System.Drawing.Point(98, 261)
-            Me.lastNameLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.lastNameLabel.Location = New System.Drawing.Point(74, 212)
             Me.lastNameLabel.Name = "lastNameLabel"
-            Me.lastNameLabel.Size = New System.Drawing.Size(76, 17)
+            Me.lastNameLabel.Size = New System.Drawing.Size(58, 13)
             Me.lastNameLabel.TabIndex = 5
             Me.lastNameLabel.Text = "Last Name"
             '
             'lastNameTextBox
             '
-            Me.lastNameTextBox.Location = New System.Drawing.Point(182, 258)
-            Me.lastNameTextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.lastNameTextBox.Location = New System.Drawing.Point(136, 210)
             Me.lastNameTextBox.Name = "lastNameTextBox"
-            Me.lastNameTextBox.Size = New System.Drawing.Size(221, 22)
+            Me.lastNameTextBox.Size = New System.Drawing.Size(167, 20)
             Me.lastNameTextBox.TabIndex = 6
             '
             'inquiryDateLabel
@@ -433,10 +445,9 @@ Namespace DatabaseTestApplication2
             Me.inquiryDateLabel.AutoSize = True
             Me.inquiryDateLabel.BackColor = System.Drawing.Color.Transparent
             Me.inquiryDateLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.inquiryDateLabel.Location = New System.Drawing.Point(90, 305)
-            Me.inquiryDateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.inquiryDateLabel.Location = New System.Drawing.Point(68, 248)
             Me.inquiryDateLabel.Name = "inquiryDateLabel"
-            Me.inquiryDateLabel.Size = New System.Drawing.Size(84, 17)
+            Me.inquiryDateLabel.Size = New System.Drawing.Size(64, 13)
             Me.inquiryDateLabel.TabIndex = 7
             Me.inquiryDateLabel.Text = "Inquiry Date"
             '
@@ -444,10 +455,9 @@ Namespace DatabaseTestApplication2
             '
             Me.inquiryDate_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.inquiryDate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.inquiryDate_dateTimePicker.Location = New System.Drawing.Point(182, 300)
-            Me.inquiryDate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
+            Me.inquiryDate_dateTimePicker.Location = New System.Drawing.Point(136, 244)
             Me.inquiryDate_dateTimePicker.Name = "inquiryDate_dateTimePicker"
-            Me.inquiryDate_dateTimePicker.Size = New System.Drawing.Size(221, 22)
+            Me.inquiryDate_dateTimePicker.Size = New System.Drawing.Size(167, 20)
             Me.inquiryDate_dateTimePicker.TabIndex = 8
             Me.inquiryDate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
             '
@@ -456,19 +466,17 @@ Namespace DatabaseTestApplication2
             Me.streetAddressLabel.AutoSize = True
             Me.streetAddressLabel.BackColor = System.Drawing.Color.Transparent
             Me.streetAddressLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.streetAddressLabel.Location = New System.Drawing.Point(72, 342)
-            Me.streetAddressLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.streetAddressLabel.Location = New System.Drawing.Point(54, 278)
             Me.streetAddressLabel.Name = "streetAddressLabel"
-            Me.streetAddressLabel.Size = New System.Drawing.Size(102, 17)
+            Me.streetAddressLabel.Size = New System.Drawing.Size(76, 13)
             Me.streetAddressLabel.TabIndex = 9
             Me.streetAddressLabel.Text = "Street Address"
             '
             'streetAddressTextBox
             '
-            Me.streetAddressTextBox.Location = New System.Drawing.Point(182, 342)
-            Me.streetAddressTextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.streetAddressTextBox.Location = New System.Drawing.Point(136, 278)
             Me.streetAddressTextBox.Name = "streetAddressTextBox"
-            Me.streetAddressTextBox.Size = New System.Drawing.Size(221, 22)
+            Me.streetAddressTextBox.Size = New System.Drawing.Size(167, 20)
             Me.streetAddressTextBox.TabIndex = 10
             '
             'cityAddressLabel
@@ -476,19 +484,17 @@ Namespace DatabaseTestApplication2
             Me.cityAddressLabel.AutoSize = True
             Me.cityAddressLabel.BackColor = System.Drawing.Color.Transparent
             Me.cityAddressLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.cityAddressLabel.Location = New System.Drawing.Point(143, 387)
-            Me.cityAddressLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.cityAddressLabel.Location = New System.Drawing.Point(107, 314)
             Me.cityAddressLabel.Name = "cityAddressLabel"
-            Me.cityAddressLabel.Size = New System.Drawing.Size(31, 17)
+            Me.cityAddressLabel.Size = New System.Drawing.Size(24, 13)
             Me.cityAddressLabel.TabIndex = 11
             Me.cityAddressLabel.Text = "City"
             '
             'cityAddressTextBox
             '
-            Me.cityAddressTextBox.Location = New System.Drawing.Point(182, 384)
-            Me.cityAddressTextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.cityAddressTextBox.Location = New System.Drawing.Point(136, 312)
             Me.cityAddressTextBox.Name = "cityAddressTextBox"
-            Me.cityAddressTextBox.Size = New System.Drawing.Size(221, 22)
+            Me.cityAddressTextBox.Size = New System.Drawing.Size(167, 20)
             Me.cityAddressTextBox.TabIndex = 12
             '
             'zipAddressLabel
@@ -496,19 +502,17 @@ Namespace DatabaseTestApplication2
             Me.zipAddressLabel.AutoSize = True
             Me.zipAddressLabel.BackColor = System.Drawing.Color.Transparent
             Me.zipAddressLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.zipAddressLabel.Location = New System.Drawing.Point(114, 470)
-            Me.zipAddressLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.zipAddressLabel.Location = New System.Drawing.Point(86, 382)
             Me.zipAddressLabel.Name = "zipAddressLabel"
-            Me.zipAddressLabel.Size = New System.Drawing.Size(65, 17)
+            Me.zipAddressLabel.Size = New System.Drawing.Size(50, 13)
             Me.zipAddressLabel.TabIndex = 13
             Me.zipAddressLabel.Text = "Zip Code"
             '
             'zipAddressTextBox
             '
-            Me.zipAddressTextBox.Location = New System.Drawing.Point(182, 467)
-            Me.zipAddressTextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.zipAddressTextBox.Location = New System.Drawing.Point(136, 379)
             Me.zipAddressTextBox.Name = "zipAddressTextBox"
-            Me.zipAddressTextBox.Size = New System.Drawing.Size(221, 22)
+            Me.zipAddressTextBox.Size = New System.Drawing.Size(167, 20)
             Me.zipAddressTextBox.TabIndex = 14
             '
             'stateAddressLabel
@@ -516,19 +520,17 @@ Namespace DatabaseTestApplication2
             Me.stateAddressLabel.AutoSize = True
             Me.stateAddressLabel.BackColor = System.Drawing.Color.Transparent
             Me.stateAddressLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.stateAddressLabel.Location = New System.Drawing.Point(133, 429)
-            Me.stateAddressLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.stateAddressLabel.Location = New System.Drawing.Point(100, 349)
             Me.stateAddressLabel.Name = "stateAddressLabel"
-            Me.stateAddressLabel.Size = New System.Drawing.Size(41, 17)
+            Me.stateAddressLabel.Size = New System.Drawing.Size(32, 13)
             Me.stateAddressLabel.TabIndex = 15
             Me.stateAddressLabel.Text = "State"
             '
             'stateAddressTextBox
             '
-            Me.stateAddressTextBox.Location = New System.Drawing.Point(182, 426)
-            Me.stateAddressTextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.stateAddressTextBox.Location = New System.Drawing.Point(136, 346)
             Me.stateAddressTextBox.Name = "stateAddressTextBox"
-            Me.stateAddressTextBox.Size = New System.Drawing.Size(221, 22)
+            Me.stateAddressTextBox.Size = New System.Drawing.Size(167, 20)
             Me.stateAddressTextBox.TabIndex = 16
             '
             'countryAddressLabel
@@ -536,19 +538,17 @@ Namespace DatabaseTestApplication2
             Me.countryAddressLabel.AutoSize = True
             Me.countryAddressLabel.BackColor = System.Drawing.Color.Transparent
             Me.countryAddressLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.countryAddressLabel.Location = New System.Drawing.Point(117, 512)
-            Me.countryAddressLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.countryAddressLabel.Location = New System.Drawing.Point(88, 416)
             Me.countryAddressLabel.Name = "countryAddressLabel"
-            Me.countryAddressLabel.Size = New System.Drawing.Size(57, 17)
+            Me.countryAddressLabel.Size = New System.Drawing.Size(43, 13)
             Me.countryAddressLabel.TabIndex = 17
             Me.countryAddressLabel.Text = "Country"
             '
             'countryAddressTextBox
             '
-            Me.countryAddressTextBox.Location = New System.Drawing.Point(182, 509)
-            Me.countryAddressTextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.countryAddressTextBox.Location = New System.Drawing.Point(136, 414)
             Me.countryAddressTextBox.Name = "countryAddressTextBox"
-            Me.countryAddressTextBox.Size = New System.Drawing.Size(221, 22)
+            Me.countryAddressTextBox.Size = New System.Drawing.Size(167, 20)
             Me.countryAddressTextBox.TabIndex = 18
             '
             'phoneNumberLabel
@@ -556,19 +556,17 @@ Namespace DatabaseTestApplication2
             Me.phoneNumberLabel.AutoSize = True
             Me.phoneNumberLabel.BackColor = System.Drawing.Color.Transparent
             Me.phoneNumberLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.phoneNumberLabel.Location = New System.Drawing.Point(460, 178)
-            Me.phoneNumberLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.phoneNumberLabel.Location = New System.Drawing.Point(345, 145)
             Me.phoneNumberLabel.Name = "phoneNumberLabel"
-            Me.phoneNumberLabel.Size = New System.Drawing.Size(103, 17)
+            Me.phoneNumberLabel.Size = New System.Drawing.Size(78, 13)
             Me.phoneNumberLabel.TabIndex = 19
             Me.phoneNumberLabel.Text = "Phone Number"
             '
             'phoneNumberTextBox
             '
-            Me.phoneNumberTextBox.Location = New System.Drawing.Point(565, 175)
-            Me.phoneNumberTextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.phoneNumberTextBox.Location = New System.Drawing.Point(424, 142)
             Me.phoneNumberTextBox.Name = "phoneNumberTextBox"
-            Me.phoneNumberTextBox.Size = New System.Drawing.Size(221, 22)
+            Me.phoneNumberTextBox.Size = New System.Drawing.Size(167, 20)
             Me.phoneNumberTextBox.TabIndex = 20
             '
             'emailLabel
@@ -576,19 +574,17 @@ Namespace DatabaseTestApplication2
             Me.emailLabel.AutoSize = True
             Me.emailLabel.BackColor = System.Drawing.Color.Transparent
             Me.emailLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.emailLabel.Location = New System.Drawing.Point(515, 219)
-            Me.emailLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.emailLabel.Location = New System.Drawing.Point(386, 178)
             Me.emailLabel.Name = "emailLabel"
-            Me.emailLabel.Size = New System.Drawing.Size(42, 17)
+            Me.emailLabel.Size = New System.Drawing.Size(32, 13)
             Me.emailLabel.TabIndex = 21
             Me.emailLabel.Text = "Email"
             '
             'emailTextBox
             '
-            Me.emailTextBox.Location = New System.Drawing.Point(565, 216)
-            Me.emailTextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.emailTextBox.Location = New System.Drawing.Point(424, 176)
             Me.emailTextBox.Name = "emailTextBox"
-            Me.emailTextBox.Size = New System.Drawing.Size(221, 22)
+            Me.emailTextBox.Size = New System.Drawing.Size(167, 20)
             Me.emailTextBox.TabIndex = 22
             '
             'genderLabel
@@ -596,10 +592,9 @@ Namespace DatabaseTestApplication2
             Me.genderLabel.AutoSize = True
             Me.genderLabel.BackColor = System.Drawing.Color.Transparent
             Me.genderLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.genderLabel.Location = New System.Drawing.Point(502, 261)
-            Me.genderLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.genderLabel.Location = New System.Drawing.Point(376, 212)
             Me.genderLabel.Name = "genderLabel"
-            Me.genderLabel.Size = New System.Drawing.Size(56, 17)
+            Me.genderLabel.Size = New System.Drawing.Size(42, 13)
             Me.genderLabel.TabIndex = 23
             Me.genderLabel.Text = "Gender"
             '
@@ -608,10 +603,9 @@ Namespace DatabaseTestApplication2
             Me.birthdateLabel.AutoSize = True
             Me.birthdateLabel.BackColor = System.Drawing.Color.Transparent
             Me.birthdateLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.birthdateLabel.Location = New System.Drawing.Point(486, 305)
-            Me.birthdateLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.birthdateLabel.Location = New System.Drawing.Point(364, 248)
             Me.birthdateLabel.Name = "birthdateLabel"
-            Me.birthdateLabel.Size = New System.Drawing.Size(71, 17)
+            Me.birthdateLabel.Size = New System.Drawing.Size(54, 13)
             Me.birthdateLabel.TabIndex = 25
             Me.birthdateLabel.Text = "Birth Date"
             '
@@ -619,10 +613,9 @@ Namespace DatabaseTestApplication2
             '
             Me.birthdate_dateTimePicker.CustomFormat = "MM/dd/yyyy"
             Me.birthdate_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.birthdate_dateTimePicker.Location = New System.Drawing.Point(565, 300)
-            Me.birthdate_dateTimePicker.Margin = New System.Windows.Forms.Padding(4)
+            Me.birthdate_dateTimePicker.Location = New System.Drawing.Point(424, 244)
             Me.birthdate_dateTimePicker.Name = "birthdate_dateTimePicker"
-            Me.birthdate_dateTimePicker.Size = New System.Drawing.Size(221, 22)
+            Me.birthdate_dateTimePicker.Size = New System.Drawing.Size(167, 20)
             Me.birthdate_dateTimePicker.TabIndex = 26
             Me.birthdate_dateTimePicker.Value = New Date(2014, 5, 26, 17, 35, 11, 0)
             '
@@ -631,19 +624,17 @@ Namespace DatabaseTestApplication2
             Me.householdSizeLabel.AutoSize = True
             Me.householdSizeLabel.BackColor = System.Drawing.Color.Transparent
             Me.householdSizeLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.householdSizeLabel.Location = New System.Drawing.Point(451, 345)
-            Me.householdSizeLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.householdSizeLabel.Location = New System.Drawing.Point(338, 280)
             Me.householdSizeLabel.Name = "householdSizeLabel"
-            Me.householdSizeLabel.Size = New System.Drawing.Size(107, 17)
+            Me.householdSizeLabel.Size = New System.Drawing.Size(81, 13)
             Me.householdSizeLabel.TabIndex = 27
             Me.householdSizeLabel.Text = "Household Size"
             '
             'householdSizeTextBox
             '
-            Me.householdSizeTextBox.Location = New System.Drawing.Point(565, 342)
-            Me.householdSizeTextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.householdSizeTextBox.Location = New System.Drawing.Point(424, 278)
             Me.householdSizeTextBox.Name = "householdSizeTextBox"
-            Me.householdSizeTextBox.Size = New System.Drawing.Size(221, 22)
+            Me.householdSizeTextBox.Size = New System.Drawing.Size(167, 20)
             Me.householdSizeTextBox.TabIndex = 28
             '
             'householdAMILabel
@@ -651,19 +642,17 @@ Namespace DatabaseTestApplication2
             Me.householdAMILabel.AutoSize = True
             Me.householdAMILabel.BackColor = System.Drawing.Color.Transparent
             Me.householdAMILabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.householdAMILabel.Location = New System.Drawing.Point(454, 387)
-            Me.householdAMILabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.householdAMILabel.Location = New System.Drawing.Point(340, 314)
             Me.householdAMILabel.Name = "householdAMILabel"
-            Me.householdAMILabel.Size = New System.Drawing.Size(103, 17)
+            Me.householdAMILabel.Size = New System.Drawing.Size(80, 13)
             Me.householdAMILabel.TabIndex = 29
             Me.householdAMILabel.Text = "Household AMI"
             '
             'householdAMITextBox
             '
-            Me.householdAMITextBox.Location = New System.Drawing.Point(565, 384)
-            Me.householdAMITextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.householdAMITextBox.Location = New System.Drawing.Point(424, 312)
             Me.householdAMITextBox.Name = "householdAMITextBox"
-            Me.householdAMITextBox.Size = New System.Drawing.Size(221, 22)
+            Me.householdAMITextBox.Size = New System.Drawing.Size(167, 20)
             Me.householdAMITextBox.TabIndex = 30
             '
             'raceLabel
@@ -671,10 +660,9 @@ Namespace DatabaseTestApplication2
             Me.raceLabel.AutoSize = True
             Me.raceLabel.BackColor = System.Drawing.Color.Transparent
             Me.raceLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.raceLabel.Location = New System.Drawing.Point(515, 426)
-            Me.raceLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.raceLabel.Location = New System.Drawing.Point(386, 346)
             Me.raceLabel.Name = "raceLabel"
-            Me.raceLabel.Size = New System.Drawing.Size(41, 17)
+            Me.raceLabel.Size = New System.Drawing.Size(33, 13)
             Me.raceLabel.TabIndex = 31
             Me.raceLabel.Text = "Race"
             '
@@ -683,10 +671,9 @@ Namespace DatabaseTestApplication2
             Me.maritalStatusLabel.AutoSize = True
             Me.maritalStatusLabel.BackColor = System.Drawing.Color.Transparent
             Me.maritalStatusLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.maritalStatusLabel.Location = New System.Drawing.Point(464, 470)
-            Me.maritalStatusLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.maritalStatusLabel.Location = New System.Drawing.Point(348, 382)
             Me.maritalStatusLabel.Name = "maritalStatusLabel"
-            Me.maritalStatusLabel.Size = New System.Drawing.Size(94, 17)
+            Me.maritalStatusLabel.Size = New System.Drawing.Size(71, 13)
             Me.maritalStatusLabel.TabIndex = 33
             Me.maritalStatusLabel.Text = "Marital Status"
             '
@@ -695,54 +682,18 @@ Namespace DatabaseTestApplication2
             Me.notesLabel.AutoSize = True
             Me.notesLabel.BackColor = System.Drawing.Color.Transparent
             Me.notesLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-            Me.notesLabel.Location = New System.Drawing.Point(515, 515)
-            Me.notesLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.notesLabel.Location = New System.Drawing.Point(386, 418)
             Me.notesLabel.Name = "notesLabel"
-            Me.notesLabel.Size = New System.Drawing.Size(45, 17)
+            Me.notesLabel.Size = New System.Drawing.Size(35, 13)
             Me.notesLabel.TabIndex = 35
             Me.notesLabel.Text = "Notes"
             '
             'notesTextBox
             '
-            Me.notesTextBox.Location = New System.Drawing.Point(565, 512)
-            Me.notesTextBox.Margin = New System.Windows.Forms.Padding(4)
+            Me.notesTextBox.Location = New System.Drawing.Point(424, 416)
             Me.notesTextBox.Name = "notesTextBox"
-            Me.notesTextBox.Size = New System.Drawing.Size(221, 22)
+            Me.notesTextBox.Size = New System.Drawing.Size(167, 20)
             Me.notesTextBox.TabIndex = 36
-            '
-            'MenuStrip1
-            '
-            Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-            Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.HomeownershipToolStripMenuItem, Me.RepairsToolStripMenuItem, Me.TrackingToolStripMenuItem})
-            Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-            Me.MenuStrip1.Name = "MenuStrip1"
-            Me.MenuStrip1.Size = New System.Drawing.Size(963, 30)
-            Me.MenuStrip1.TabIndex = 37
-            Me.MenuStrip1.Text = "MenuStrip1"
-            '
-            'MainMenuToolStripMenuItem
-            '
-            Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
-            Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(97, 24)
-            Me.MainMenuToolStripMenuItem.Text = "Main Menu"
-            '
-            'HomeownershipToolStripMenuItem
-            '
-            Me.HomeownershipToolStripMenuItem.Name = "HomeownershipToolStripMenuItem"
-            Me.HomeownershipToolStripMenuItem.Size = New System.Drawing.Size(132, 24)
-            Me.HomeownershipToolStripMenuItem.Text = "Homeownership"
-            '
-            'RepairsToolStripMenuItem
-            '
-            Me.RepairsToolStripMenuItem.Name = "RepairsToolStripMenuItem"
-            Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(72, 24)
-            Me.RepairsToolStripMenuItem.Text = "Repairs"
-            '
-            'TrackingToolStripMenuItem
-            '
-            Me.TrackingToolStripMenuItem.Name = "TrackingToolStripMenuItem"
-            Me.TrackingToolStripMenuItem.Size = New System.Drawing.Size(78, 24)
-            Me.TrackingToolStripMenuItem.Text = "Tracking"
             '
             'panel3
             '
@@ -752,65 +703,93 @@ Namespace DatabaseTestApplication2
             Me.panel3.Controls.Add(Me.panel6)
             Me.panel3.Dock = System.Windows.Forms.DockStyle.Fill
             Me.panel3.Location = New System.Drawing.Point(0, 27)
-            Me.panel3.Margin = New System.Windows.Forms.Padding(4)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(989, 629)
+            Me.panel3.Size = New System.Drawing.Size(742, 506)
             Me.panel3.TabIndex = 19
             '
             'panel4
             '
             Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
-            Me.panel4.Location = New System.Drawing.Point(976, 0)
-            Me.panel4.Margin = New System.Windows.Forms.Padding(4)
+            Me.panel4.Location = New System.Drawing.Point(732, 0)
             Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(13, 617)
+            Me.panel4.Size = New System.Drawing.Size(10, 496)
             Me.panel4.TabIndex = 3
             '
             'panel5
             '
             Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
             Me.panel5.Location = New System.Drawing.Point(0, 0)
-            Me.panel5.Margin = New System.Windows.Forms.Padding(4)
             Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(13, 617)
+            Me.panel5.Size = New System.Drawing.Size(10, 496)
             Me.panel5.TabIndex = 5
             '
             'panel6
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 617)
-            Me.panel6.Margin = New System.Windows.Forms.Padding(4)
+            Me.panel6.Location = New System.Drawing.Point(0, 496)
             Me.panel6.Name = "panel6"
-            Me.panel6.Size = New System.Drawing.Size(989, 12)
+            Me.panel6.Size = New System.Drawing.Size(742, 10)
             Me.panel6.TabIndex = 6
             '
-            'TextBox1
+            'MenuStrip1
             '
-            Me.TextBox1.Location = New System.Drawing.Point(182, 68)
-            Me.TextBox1.Name = "TextBox1"
-            Me.TextBox1.Size = New System.Drawing.Size(100, 22)
-            Me.TextBox1.TabIndex = 99
+            Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.GeneralToolStripMenuItem, Me.HomeownershipToolStripMenuItem, Me.RepairsToolStripMenuItem, Me.TrackingToolStripMenuItem, Me.ToolStripMenuItem3, Me.SurveyToolStripMenuItem})
+            Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+            Me.MenuStrip1.Name = "MenuStrip1"
+            Me.MenuStrip1.Size = New System.Drawing.Size(722, 24)
+            Me.MenuStrip1.TabIndex = 122
+            Me.MenuStrip1.Text = "MenuStrip1"
             '
-            'CheckBox1
+            'MainMenuToolStripMenuItem
             '
-            Me.CheckBox1.AutoSize = True
-            Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
-            Me.CheckBox1.Location = New System.Drawing.Point(565, 470)
-            Me.CheckBox1.Name = "CheckBox1"
-            Me.CheckBox1.Size = New System.Drawing.Size(18, 17)
-            Me.CheckBox1.TabIndex = 100
-            Me.CheckBox1.UseVisualStyleBackColor = False
+            Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
+            Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(80, 20)
+            Me.MainMenuToolStripMenuItem.Text = "Main Menu"
+            '
+            'GeneralToolStripMenuItem
+            '
+            Me.GeneralToolStripMenuItem.Enabled = False
+            Me.GeneralToolStripMenuItem.Name = "GeneralToolStripMenuItem"
+            Me.GeneralToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
+            Me.GeneralToolStripMenuItem.Text = "General"
+            '
+            'HomeownershipToolStripMenuItem
+            '
+            Me.HomeownershipToolStripMenuItem.Name = "HomeownershipToolStripMenuItem"
+            Me.HomeownershipToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
+            Me.HomeownershipToolStripMenuItem.Text = "Homeownership"
+            '
+            'RepairsToolStripMenuItem
+            '
+            Me.RepairsToolStripMenuItem.Name = "RepairsToolStripMenuItem"
+            Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+            Me.RepairsToolStripMenuItem.Text = "Repairs"
+            '
+            'TrackingToolStripMenuItem
+            '
+            Me.TrackingToolStripMenuItem.Name = "TrackingToolStripMenuItem"
+            Me.TrackingToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
+            Me.TrackingToolStripMenuItem.Text = "Tracking"
+            '
+            'ToolStripMenuItem3
+            '
+            Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+            Me.ToolStripMenuItem3.Size = New System.Drawing.Size(88, 20)
+            Me.ToolStripMenuItem3.Text = "Survey Editor"
+            '
+            'SurveyToolStripMenuItem
+            '
+            Me.SurveyToolStripMenuItem.Name = "SurveyToolStripMenuItem"
+            Me.SurveyToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
+            Me.SurveyToolStripMenuItem.Text = "Survey Results"
             '
             'frmgeneral
             '
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(989, 656)
+            Me.ClientSize = New System.Drawing.Size(742, 533)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
-            Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-            Me.MainMenuStrip = Me.MenuStrip1
-            Me.Margin = New System.Windows.Forms.Padding(4)
             Me.Name = "frmgeneral"
             Me.Text = "General"
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -821,10 +800,10 @@ Namespace DatabaseTestApplication2
             Me.Panel1.ResumeLayout(False)
             Me.Panel1.PerformLayout()
             CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-            Me.MenuStrip1.ResumeLayout(False)
-            Me.MenuStrip1.PerformLayout()
             Me.panel3.ResumeLayout(False)
             Me.panel3.PerformLayout()
+            Me.MenuStrip1.ResumeLayout(False)
+            Me.MenuStrip1.PerformLayout()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
@@ -882,21 +861,23 @@ Namespace DatabaseTestApplication2
         Friend WithEvents panel4 As System.Windows.Forms.Panel
         Friend WithEvents panel5 As System.Windows.Forms.Panel
         Friend WithEvents panel6 As System.Windows.Forms.Panel
-        Friend WithEvents MenuStrip1 As MenuStrip
-        Friend WithEvents MainMenuToolStripMenuItem As ToolStripMenuItem
-        Friend WithEvents HomeownershipToolStripMenuItem As ToolStripMenuItem
-        Friend WithEvents RepairsToolStripMenuItem As ToolStripMenuItem
-        Friend WithEvents TrackingToolStripMenuItem As ToolStripMenuItem
         Friend WithEvents generalInfo As Label
         Friend WithEvents genderComboBox As ComboBox
+        Friend WithEvents maritalStatusComboBox As ComboBox
         Friend WithEvents raceComboBox As ComboBox
         Friend WithEvents dependenttxt As TextBox
         Friend WithEvents coapplicanttxt As TextBox
         Friend WithEvents Label2 As Label
         Friend WithEvents Label1 As Label
         Friend WithEvents PictureBox2 As PictureBox
-        Friend WithEvents CheckBox1 As CheckBox
-        Friend WithEvents TextBox1 As TextBox
+        Friend WithEvents MenuStrip1 As MenuStrip
+        Friend WithEvents MainMenuToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents GeneralToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents HomeownershipToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents RepairsToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents TrackingToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
+        Friend WithEvents SurveyToolStripMenuItem As ToolStripMenuItem
     End Class
 
 End Namespace

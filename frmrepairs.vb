@@ -294,22 +294,22 @@ Namespace DatabaseTestApplication2
 			repairsBindingSource.AddNew()
 		End Sub
 
-        Private Sub tstripMainMenu_Click(sender As Object, e As EventArgs) Handles tstripMainMenu.Click
-            frmmain_menu.Show()
-            Me.Close()
-        End Sub
+		Private Sub tstripMainMenu_Click(sender As Object, e As EventArgs)
+			frmmain_menu.Show()
+			Me.Close()
+		End Sub
 
-        Private Sub tstripGeneral_Click(sender As Object, e As EventArgs) Handles tstripGeneral.Click
-            frmgeneral.Show()
-            Me.Close()
-        End Sub
+		Private Sub tstripGeneral_Click(sender As Object, e As EventArgs)
+			frmgeneral.Show()
+			Me.Close()
+		End Sub
 
-        Private Sub tstripHomeownership_Click(sender As Object, e As EventArgs) Handles tstripHomeownership.Click
-            frmhomeownership.Show()
-            Me.Close()
-        End Sub
+		Private Sub tstripHomeownership_Click(sender As Object, e As EventArgs)
+			frmhomeownership.Show()
+			Me.Close()
+		End Sub
 
-        Private Sub CheckToTextValidation()
+		Private Sub CheckToTextValidation()
             If chkCompletedApp.Checked = True Then
                 CompletedApplicationTextBox.Text = "1"
             ElseIf chkCompletedApp.Checked = False Then

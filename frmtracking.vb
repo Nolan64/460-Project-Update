@@ -621,28 +621,28 @@ Namespace DatabaseTestApplication2
 			trackingBindingSource.AddNew()
 		End Sub
 
-		Private Sub GeneralInfoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GeneralInfoToolStripMenuItem.Click
+		Private Sub GeneralInfoToolStripMenuItem_Click(sender As Object, e As EventArgs) 
 			frmgeneral.Show()
 			Me.Close()
 
 		End Sub
 
-		Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+		Private Sub Label1_Click(sender As Object, e As EventArgs) Handles frmtrackingTitle.Click
 
 		End Sub
 
-		Private Sub MainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MainMenuToolStripMenuItem.Click
+		Private Sub MainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) 
 			Me.Hide()
 
 		End Sub
 
-		Private Sub HomeownershipToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeownershipToolStripMenuItem.Click
+		Private Sub HomeownershipToolStripMenuItem_Click(sender As Object, e As EventArgs) 
 			frmhomeownership.Show()
 			Me.Hide()
 
 		End Sub
 
-		Private Sub RepairsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RepairsToolStripMenuItem.Click
+		Private Sub RepairsToolStripMenuItem_Click(sender As Object, e As EventArgs) 
 			frmrepairs.Show()
 			Me.Hide()
 

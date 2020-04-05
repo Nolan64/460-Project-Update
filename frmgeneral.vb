@@ -285,26 +285,26 @@ Namespace DatabaseTestApplication2
 			generalBindingSource.AddNew()
 		End Sub
 
-		Private Sub RepairsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RepairsToolStripMenuItem.Click
+		Private Sub RepairsToolStripMenuItem_Click(sender As Object, e As EventArgs)
 			DatabaseTestApplication2.frmrepairs.Show()
 			Me.Hide()
 		End Sub
 
-		Private Sub TrackingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TrackingToolStripMenuItem.Click
+		Private Sub TrackingToolStripMenuItem_Click(sender As Object, e As EventArgs)
 			DatabaseTestApplication2.frmtracking.Show()
 			Me.Hide()
 		End Sub
 
-		Private Sub HomeownershipToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeownershipToolStripMenuItem.Click
+		Private Sub HomeownershipToolStripMenuItem_Click(sender As Object, e As EventArgs)
 			DatabaseTestApplication2.frmhomeownership.Show()
 			Me.Hide()
 		End Sub
 
-		Private Sub MainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MainMenuToolStripMenuItem.Click
+		Private Sub MainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs)
 			Me.Hide()
 		End Sub
 
-		Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
+		Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
 
 		End Sub
 	End Class

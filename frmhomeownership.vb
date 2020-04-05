@@ -242,6 +242,9 @@ Namespace DatabaseTestApplication2
 			homeownershipBindingSource.AddNew()
 		End Sub
 
+		Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
+
+		End Sub
 	End Class
 
 End Namespace
