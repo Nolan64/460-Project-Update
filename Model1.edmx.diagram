@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="d76320978b4e4cd3ae97bd0cad25bf26" Name="Diagram1">
+      <Diagram DiagramId="d76320978b4e4cd3ae97bd0cad25bf26" Name="Diagram1" ZoomLevel="46">
         <EntityTypeShape EntityType="mydbModel.general" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
         <EntityTypeShape EntityType="mydbModel.homeownership" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
         <EntityTypeShape EntityType="mydbModel.repair" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
@@ -18,6 +18,7 @@
         <AssociationConnector Association="mydbModel.fk_survey_results_survey1" />
         <AssociationConnector Association="mydbModel.general_has_survey" />
         <EntityTypeShape EntityType="mydbModel.all_table_vw" Width="1.5" PointX="8.375" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="mydbModel.general_has_survey_results" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

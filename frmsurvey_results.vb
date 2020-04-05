@@ -201,6 +201,10 @@ Namespace DatabaseTestApplication2
 		Private Sub bindingNavigatorAddNewItem_Click(sender As System.Object, e As System.EventArgs) Handles BindingNavigatorAddNewItem.Click
 			survey_resultsBindingSource.AddNew()
 		End Sub
+
+		Private Sub Question1CheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles Question1CheckBox.CheckedChanged
+
+		End Sub
 	End Class
-	
+
 End Namespace
