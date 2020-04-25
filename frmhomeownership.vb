@@ -242,9 +242,37 @@ Namespace DatabaseTestApplication2
 			homeownershipBindingSource.AddNew()
 		End Sub
 
-		Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
 
+		Private Sub MainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MainMenuToolStripMenuItem.Click
+			Me.Close()
 		End Sub
+
+		Private Sub GeneralToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GeneralToolStripMenuItem.Click
+			DatabaseTestApplication2.frmgeneral.Show()
+			Me.Close()
+		End Sub
+
+		Private Sub RepairsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RepairsToolStripMenuItem.Click
+			DatabaseTestApplication2.frmrepairs.Show()
+			Me.Close()
+		End Sub
+
+		Private Sub TrackingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TrackingToolStripMenuItem.Click
+			DatabaseTestApplication2.frmtracking.Show()
+			Me.Close()
+		End Sub
+
+		Private Sub SurveyEditorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SurveyEditorToolStripMenuItem.Click
+			DatabaseTestApplication2.frmsurvey.Show()
+			Me.Close()
+		End Sub
+
+		Private Sub SurveyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SurveyToolStripMenuItem.Click
+			DatabaseTestApplication2.frmsurvey_results.Show()
+			Me.Close()
+		End Sub
+
+
 	End Class
 
 End Namespace

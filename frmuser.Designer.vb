@@ -37,6 +37,7 @@ Namespace DatabaseTestApplication2
             Me.components = New System.ComponentModel.Container()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmuser))
             Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
+            Me.userBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
             Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
             Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
@@ -49,9 +50,15 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
             Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
             Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-            Me.userBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
             Me.Panel1 = New System.Windows.Forms.Panel()
+            Me.Button1 = New System.Windows.Forms.Button()
+            Me.Label3 = New System.Windows.Forms.Label()
+            Me.Label2 = New System.Windows.Forms.Label()
+            Me.Label1 = New System.Windows.Forms.Label()
+            Me.TextBox3 = New System.Windows.Forms.TextBox()
+            Me.TextBox2 = New System.Windows.Forms.TextBox()
+            Me.TextBox1 = New System.Windows.Forms.TextBox()
             Me.usernameLabel = New System.Windows.Forms.Label()
             Me.usernameTextBox = New System.Windows.Forms.TextBox()
             Me.passwordLabel = New System.Windows.Forms.Label()
@@ -60,12 +67,15 @@ Namespace DatabaseTestApplication2
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
+            Me.frmuserTitle = New System.Windows.Forms.Label()
+            Me.PictureBox1 = New System.Windows.Forms.PictureBox()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
             CType(Me.userBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.Panel1.SuspendLayout()
             Me.panel3.SuspendLayout()
+            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'BindingNavigator1
@@ -82,16 +92,16 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigator1.MoveNextItem = Me.BindingNavigatorMoveNextItem
             Me.BindingNavigator1.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
             Me.BindingNavigator1.Name = "BindingNavigator1"
-            Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(13, 0, 13, 0)
+            Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
             Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-            Me.BindingNavigator1.Size = New System.Drawing.Size(898, 27)
+            Me.BindingNavigator1.Size = New System.Drawing.Size(674, 27)
             Me.BindingNavigator1.TabIndex = 0
             Me.BindingNavigator1.Text = "BindingNavigator1"
             '
             'BindingNavigatorCountItem
             '
             Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
+            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 24)
             Me.BindingNavigatorCountItem.Text = "of {0}"
             Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
             '
@@ -101,7 +111,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
             Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorDeleteItem.Text = "Delete"
             '
             'BindingNavigatorMoveFirstItem
@@ -110,7 +120,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
             Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorMoveFirstItem.Text = "Move first"
             '
             'BindingNavigatorMovePreviousItem
@@ -119,7 +129,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
             Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
             '
             'BindingNavigatorSeparator
@@ -133,7 +143,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorPositionItem.AutoSize = False
             Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
             Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-            Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(65, 27)
+            Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
             Me.BindingNavigatorPositionItem.Text = "0"
             Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
             '
@@ -148,7 +158,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
             Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorMoveNextItem.Text = "Move next"
             '
             'BindingNavigatorMoveLastItem
@@ -157,7 +167,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
             Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorMoveLastItem.Text = "Move last"
             '
             'BindingNavigatorSeparator2
@@ -171,7 +181,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
             Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(24, 24)
             Me.BindingNavigatorAddNewItem.Text = "Add new"
             '
             'ToolStripButton1
@@ -180,7 +190,7 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
             Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
             Me.ToolStripButton1.Name = "ToolStripButton1"
-            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 24)
+            Me.ToolStripButton1.Size = New System.Drawing.Size(24, 24)
             Me.ToolStripButton1.Text = "Save"
             '
             'ErrorProvider1
@@ -191,51 +201,128 @@ Namespace DatabaseTestApplication2
             '
             Me.Panel1.AutoScroll = True
             Me.Panel1.AutoSize = True
+            Me.Panel1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.angryimg__12_
+            Me.Panel1.Controls.Add(Me.PictureBox1)
+            Me.Panel1.Controls.Add(Me.frmuserTitle)
+            Me.Panel1.Controls.Add(Me.Button1)
+            Me.Panel1.Controls.Add(Me.Label3)
+            Me.Panel1.Controls.Add(Me.Label2)
+            Me.Panel1.Controls.Add(Me.Label1)
+            Me.Panel1.Controls.Add(Me.TextBox3)
+            Me.Panel1.Controls.Add(Me.TextBox2)
+            Me.Panel1.Controls.Add(Me.TextBox1)
             Me.Panel1.Controls.Add(Me.usernameLabel)
             Me.Panel1.Controls.Add(Me.usernameTextBox)
             Me.Panel1.Controls.Add(Me.passwordLabel)
             Me.Panel1.Controls.Add(Me.passwordTextBox)
             Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.Panel1.Location = New System.Drawing.Point(13, 0)
-            Me.Panel1.Margin = New System.Windows.Forms.Padding(13, 4, 13, 4)
+            Me.Panel1.Location = New System.Drawing.Point(10, 0)
+            Me.Panel1.Margin = New System.Windows.Forms.Padding(10, 3, 10, 3)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(872, 403)
+            Me.Panel1.Size = New System.Drawing.Size(654, 322)
             Me.Panel1.TabIndex = 1
+            '
+            'Button1
+            '
+            Me.Button1.Location = New System.Drawing.Point(472, 268)
+            Me.Button1.Name = "Button1"
+            Me.Button1.Size = New System.Drawing.Size(75, 23)
+            Me.Button1.TabIndex = 11
+            Me.Button1.Text = "Update"
+            Me.Button1.UseVisualStyleBackColor = True
+            '
+            'Label3
+            '
+            Me.Label3.AutoSize = True
+            Me.Label3.BackColor = System.Drawing.Color.Transparent
+            Me.Label3.ForeColor = System.Drawing.SystemColors.Control
+            Me.Label3.Location = New System.Drawing.Point(258, 255)
+            Me.Label3.Name = "Label3"
+            Me.Label3.Size = New System.Drawing.Size(97, 13)
+            Me.Label3.TabIndex = 10
+            Me.Label3.Text = "Re-Type Password"
+            '
+            'Label2
+            '
+            Me.Label2.AutoSize = True
+            Me.Label2.BackColor = System.Drawing.Color.Transparent
+            Me.Label2.ForeColor = System.Drawing.SystemColors.Control
+            Me.Label2.Location = New System.Drawing.Point(72, 255)
+            Me.Label2.Name = "Label2"
+            Me.Label2.Size = New System.Drawing.Size(78, 13)
+            Me.Label2.TabIndex = 9
+            Me.Label2.Text = "New Password"
+            '
+            'Label1
+            '
+            Me.Label1.AutoSize = True
+            Me.Label1.BackColor = System.Drawing.Color.Transparent
+            Me.Label1.ForeColor = System.Drawing.SystemColors.Control
+            Me.Label1.Location = New System.Drawing.Point(72, 178)
+            Me.Label1.Name = "Label1"
+            Me.Label1.Size = New System.Drawing.Size(90, 13)
+            Me.Label1.TabIndex = 8
+            Me.Label1.Text = "Current Password"
+            '
+            'TextBox3
+            '
+            Me.TextBox3.Location = New System.Drawing.Point(261, 271)
+            Me.TextBox3.Name = "TextBox3"
+            Me.TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+            Me.TextBox3.Size = New System.Drawing.Size(100, 20)
+            Me.TextBox3.TabIndex = 7
+            '
+            'TextBox2
+            '
+            Me.TextBox2.Location = New System.Drawing.Point(75, 271)
+            Me.TextBox2.Name = "TextBox2"
+            Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+            Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+            Me.TextBox2.TabIndex = 6
+            '
+            'TextBox1
+            '
+            Me.TextBox1.Location = New System.Drawing.Point(75, 194)
+            Me.TextBox1.Name = "TextBox1"
+            Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+            Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+            Me.TextBox1.TabIndex = 5
             '
             'usernameLabel
             '
             Me.usernameLabel.AutoSize = True
-            Me.usernameLabel.Location = New System.Drawing.Point(81, 62)
-            Me.usernameLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.usernameLabel.BackColor = System.Drawing.Color.Transparent
+            Me.usernameLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.usernameLabel.Location = New System.Drawing.Point(72, 108)
             Me.usernameLabel.Name = "usernameLabel"
-            Me.usernameLabel.Size = New System.Drawing.Size(71, 17)
+            Me.usernameLabel.Size = New System.Drawing.Size(53, 13)
             Me.usernameLabel.TabIndex = 1
             Me.usernameLabel.Text = "username"
             '
             'usernameTextBox
             '
-            Me.usernameTextBox.Location = New System.Drawing.Point(189, 62)
-            Me.usernameTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.usernameTextBox.Location = New System.Drawing.Point(75, 124)
             Me.usernameTextBox.Name = "usernameTextBox"
-            Me.usernameTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.usernameTextBox.Size = New System.Drawing.Size(100, 20)
             Me.usernameTextBox.TabIndex = 2
             '
             'passwordLabel
             '
             Me.passwordLabel.AutoSize = True
-            Me.passwordLabel.Location = New System.Drawing.Point(488, 62)
-            Me.passwordLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+            Me.passwordLabel.BackColor = System.Drawing.Color.Transparent
+            Me.passwordLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.passwordLabel.Location = New System.Drawing.Point(509, 36)
             Me.passwordLabel.Name = "passwordLabel"
-            Me.passwordLabel.Size = New System.Drawing.Size(68, 17)
+            Me.passwordLabel.Size = New System.Drawing.Size(52, 13)
             Me.passwordLabel.TabIndex = 3
             Me.passwordLabel.Text = "password"
             '
             'passwordTextBox
             '
-            Me.passwordTextBox.Location = New System.Drawing.Point(592, 62)
-            Me.passwordTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.passwordTextBox.Location = New System.Drawing.Point(512, 52)
             Me.passwordTextBox.Name = "passwordTextBox"
-            Me.passwordTextBox.Size = New System.Drawing.Size(132, 22)
+            Me.passwordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+            Me.passwordTextBox.Size = New System.Drawing.Size(100, 20)
             Me.passwordTextBox.TabIndex = 4
             '
             'panel3
@@ -246,46 +333,64 @@ Namespace DatabaseTestApplication2
             Me.panel3.Controls.Add(Me.panel6)
             Me.panel3.Dock = System.Windows.Forms.DockStyle.Fill
             Me.panel3.Location = New System.Drawing.Point(0, 27)
-            Me.panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(898, 415)
+            Me.panel3.Size = New System.Drawing.Size(674, 332)
             Me.panel3.TabIndex = 19
             '
             'panel4
             '
             Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
-            Me.panel4.Location = New System.Drawing.Point(885, 0)
-            Me.panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel4.Location = New System.Drawing.Point(664, 0)
             Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(13, 403)
+            Me.panel4.Size = New System.Drawing.Size(10, 322)
             Me.panel4.TabIndex = 3
             '
             'panel5
             '
             Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
             Me.panel5.Location = New System.Drawing.Point(0, 0)
-            Me.panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(13, 403)
+            Me.panel5.Size = New System.Drawing.Size(10, 322)
             Me.panel5.TabIndex = 5
             '
             'panel6
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 403)
-            Me.panel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel6.Location = New System.Drawing.Point(0, 322)
             Me.panel6.Name = "panel6"
-            Me.panel6.Size = New System.Drawing.Size(898, 12)
+            Me.panel6.Size = New System.Drawing.Size(674, 10)
             Me.panel6.TabIndex = 6
+            '
+            'frmuserTitle
+            '
+            Me.frmuserTitle.AutoSize = True
+            Me.frmuserTitle.BackColor = System.Drawing.Color.Transparent
+            Me.frmuserTitle.Font = New System.Drawing.Font("Microsoft YaHei UI", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+            Me.frmuserTitle.ForeColor = System.Drawing.SystemColors.Control
+            Me.frmuserTitle.Location = New System.Drawing.Point(68, 30)
+            Me.frmuserTitle.Name = "frmuserTitle"
+            Me.frmuserTitle.Size = New System.Drawing.Size(233, 42)
+            Me.frmuserTitle.TabIndex = 12
+            Me.frmuserTitle.Text = "User Settings"
+            '
+            'PictureBox1
+            '
+            Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+            Me.PictureBox1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
+            Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+            Me.PictureBox1.Location = New System.Drawing.Point(423, 3)
+            Me.PictureBox1.Name = "PictureBox1"
+            Me.PictureBox1.Size = New System.Drawing.Size(215, 123)
+            Me.PictureBox1.TabIndex = 13
+            Me.PictureBox1.TabStop = False
             '
             'frmuser
             '
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(898, 442)
+            Me.ClientSize = New System.Drawing.Size(674, 359)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
-            Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
             Me.Name = "frmuser"
             Me.Text = "User"
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -297,6 +402,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.PerformLayout()
             Me.panel3.ResumeLayout(False)
             Me.panel3.PerformLayout()
+            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
@@ -325,7 +431,15 @@ Namespace DatabaseTestApplication2
 		Friend WithEvents panel4 As System.Windows.Forms.Panel
 		Friend WithEvents panel5 As System.Windows.Forms.Panel
 		Friend WithEvents panel6 As System.Windows.Forms.Panel
-		
-	End Class
-	
+        Friend WithEvents Button1 As Button
+        Friend WithEvents Label3 As Label
+        Friend WithEvents Label2 As Label
+        Friend WithEvents Label1 As Label
+        Friend WithEvents TextBox3 As TextBox
+        Friend WithEvents TextBox2 As TextBox
+        Friend WithEvents TextBox1 As TextBox
+        Friend WithEvents frmuserTitle As Label
+        Friend WithEvents PictureBox1 As PictureBox
+    End Class
+
 End Namespace

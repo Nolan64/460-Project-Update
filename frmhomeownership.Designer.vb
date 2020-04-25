@@ -9,31 +9,31 @@
 ' 
 
 Namespace DatabaseTestApplication2
-	
-	<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-	Partial Class frmhomeownership
-		Inherits System.Windows.Forms.Form
-		
-		'Form overrides dispose to clean up the component list.
-		<System.Diagnostics.DebuggerNonUserCode()> _
-		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-			Try
-			If disposing AndAlso components IsNot Nothing Then
-				components.Dispose()
-			End If
-			Finally
-			MyBase.Dispose(disposing)
-			End Try
-		End Sub
-		
-		'Required by the Windows Form Designer
-		Private components As System.ComponentModel.IContainer
-		
-		'NOTE: The following procedure is required by the Windows Form Designer
-		'It can be modified using the Windows Form Designer.  
-		'Do not modify it using the code editor.
-		<System.Diagnostics.DebuggerStepThrough()> _
-		Private Sub InitializeComponent()
+
+    <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+    Partial Class frmhomeownership
+        Inherits System.Windows.Forms.Form
+
+        'Form overrides dispose to clean up the component list.
+        <System.Diagnostics.DebuggerNonUserCode()>
+        Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+            Try
+                If disposing AndAlso components IsNot Nothing Then
+                    components.Dispose()
+                End If
+            Finally
+                MyBase.Dispose(disposing)
+            End Try
+        End Sub
+
+        'Required by the Windows Form Designer
+        Private components As System.ComponentModel.IContainer
+
+        'NOTE: The following procedure is required by the Windows Form Designer
+        'It can be modified using the Windows Form Designer.  
+        'Do not modify it using the code editor.
+        <System.Diagnostics.DebuggerStepThrough()>
+        Private Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmhomeownership))
             Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
@@ -89,24 +89,26 @@ Namespace DatabaseTestApplication2
             Me.general_UIDLabel = New System.Windows.Forms.Label()
             Me.general_UID_comboBox = New System.Windows.Forms.ComboBox()
             Me.panel3 = New System.Windows.Forms.Panel()
+            Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
+            Me.MainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.GeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.HomeownershipToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.RepairsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.TrackingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.SurveyEditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.SurveyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+            Me.frmhomeownershipTitle = New System.Windows.Forms.Label()
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
-            Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
-            Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-            Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-            Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
-            Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
-            Me.TrackingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
-            Me.SurveyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
             CType(Me.homeownershipBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
-            Me.Panel1.SuspendLayout()
             Me.panel3.SuspendLayout()
             Me.MenuStrip2.SuspendLayout()
+            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
             'BindingNavigator1
@@ -125,7 +127,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigator1.Name = "BindingNavigator1"
             Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(10, 0, 10, 0)
             Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-            Me.BindingNavigator1.Size = New System.Drawing.Size(892, 27)
+            Me.BindingNavigator1.Size = New System.Drawing.Size(841, 27)
             Me.BindingNavigator1.TabIndex = 0
             Me.BindingNavigator1.Text = "BindingNavigator1"
             '
@@ -230,56 +232,21 @@ Namespace DatabaseTestApplication2
             '
             'Panel1
             '
+            Me.Panel1.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.Panel1.AutoScroll = True
             Me.Panel1.AutoSize = True
-            Me.Panel1.Controls.Add(Me.MenuStrip2)
-            Me.Panel1.Controls.Add(Me.applicantInfoMeetingLabel)
-            Me.Panel1.Controls.Add(Me.applicantInfoMeeting_dateTimePicker)
-            Me.Panel1.Controls.Add(Me.applicationChecklist1Label)
-            Me.Panel1.Controls.Add(Me.applicationChecklist1_dateTimePicker)
-            Me.Panel1.Controls.Add(Me.applicationChecklist2Label)
-            Me.Panel1.Controls.Add(Me.applicationChecklist2_dateTimePicker)
-            Me.Panel1.Controls.Add(Me.employmentVerifiedLabel)
-            Me.Panel1.Controls.Add(Me.employmentVerifiedTextBox)
-            Me.Panel1.Controls.Add(Me.landlordReferenceLabel)
-            Me.Panel1.Controls.Add(Me.landlordReferenceTextBox)
-            Me.Panel1.Controls.Add(Me.previousLandlordReferenceLabel)
-            Me.Panel1.Controls.Add(Me.previousLandlordReferenceTextBox)
-            Me.Panel1.Controls.Add(Me.backgroundCheckLabel)
-            Me.Panel1.Controls.Add(Me.backgroundCheckTextBox)
-            Me.Panel1.Controls.Add(Me.CCCBudgetLabel)
-            Me.Panel1.Controls.Add(Me.CCCBudgetTextBox)
-            Me.Panel1.Controls.Add(Me.creditReportRunLabel)
-            Me.Panel1.Controls.Add(Me.creditReportRunTextBox)
-            Me.Panel1.Controls.Add(Me.homeVisitLabel)
-            Me.Panel1.Controls.Add(Me.homeVisit_dateTimePicker)
-            Me.Panel1.Controls.Add(Me.committeeDecisionLabel)
-            Me.Panel1.Controls.Add(Me.committeeDecision_dateTimePicker)
-            Me.Panel1.Controls.Add(Me.committeeAcceptedLabel)
-            Me.Panel1.Controls.Add(Me.committeeAcceptedTextBox)
-            Me.Panel1.Controls.Add(Me.committeeReasonLabel)
-            Me.Panel1.Controls.Add(Me.committeeReasonTextBox)
-            Me.Panel1.Controls.Add(Me.boardVoteLabel)
-            Me.Panel1.Controls.Add(Me.boardVote_dateTimePicker)
-            Me.Panel1.Controls.Add(Me.boardAcceptedLabel)
-            Me.Panel1.Controls.Add(Me.boardAcceptedTextBox)
-            Me.Panel1.Controls.Add(Me.boardReasonLabel)
-            Me.Panel1.Controls.Add(Me.boardReasonTextBox)
-            Me.Panel1.Controls.Add(Me.handbookReviewLabel)
-            Me.Panel1.Controls.Add(Me.handbookReview_dateTimePicker)
-            Me.Panel1.Controls.Add(Me.general_UIDLabel)
-            Me.Panel1.Controls.Add(Me.general_UID_comboBox)
-            Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.Panel1.Location = New System.Drawing.Point(10, 0)
+            Me.Panel1.Location = New System.Drawing.Point(715, 267)
             Me.Panel1.Margin = New System.Windows.Forms.Padding(10, 3, 10, 3)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(872, 359)
+            Me.Panel1.Size = New System.Drawing.Size(107, 90)
             Me.Panel1.TabIndex = 1
             '
             'applicantInfoMeetingLabel
             '
+            Me.applicantInfoMeetingLabel.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.applicantInfoMeetingLabel.AutoSize = True
-            Me.applicantInfoMeetingLabel.Location = New System.Drawing.Point(110, 50)
+            Me.applicantInfoMeetingLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.applicantInfoMeetingLabel.Location = New System.Drawing.Point(53, 416)
             Me.applicantInfoMeetingLabel.Name = "applicantInfoMeetingLabel"
             Me.applicantInfoMeetingLabel.Size = New System.Drawing.Size(113, 13)
             Me.applicantInfoMeetingLabel.TabIndex = 1
@@ -287,9 +254,10 @@ Namespace DatabaseTestApplication2
             '
             'applicantInfoMeeting_dateTimePicker
             '
+            Me.applicantInfoMeeting_dateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.applicantInfoMeeting_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.applicantInfoMeeting_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.applicantInfoMeeting_dateTimePicker.Location = New System.Drawing.Point(244, 50)
+            Me.applicantInfoMeeting_dateTimePicker.Location = New System.Drawing.Point(187, 416)
             Me.applicantInfoMeeting_dateTimePicker.Name = "applicantInfoMeeting_dateTimePicker"
             Me.applicantInfoMeeting_dateTimePicker.Size = New System.Drawing.Size(200, 20)
             Me.applicantInfoMeeting_dateTimePicker.TabIndex = 2
@@ -297,8 +265,10 @@ Namespace DatabaseTestApplication2
             '
             'applicationChecklist1Label
             '
+            Me.applicationChecklist1Label.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.applicationChecklist1Label.AutoSize = True
-            Me.applicationChecklist1Label.Location = New System.Drawing.Point(109, 84)
+            Me.applicationChecklist1Label.ForeColor = System.Drawing.SystemColors.Control
+            Me.applicationChecklist1Label.Location = New System.Drawing.Point(52, 450)
             Me.applicationChecklist1Label.Name = "applicationChecklist1Label"
             Me.applicationChecklist1Label.Size = New System.Drawing.Size(114, 13)
             Me.applicationChecklist1Label.TabIndex = 3
@@ -306,9 +276,10 @@ Namespace DatabaseTestApplication2
             '
             'applicationChecklist1_dateTimePicker
             '
+            Me.applicationChecklist1_dateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.applicationChecklist1_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.applicationChecklist1_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.applicationChecklist1_dateTimePicker.Location = New System.Drawing.Point(244, 84)
+            Me.applicationChecklist1_dateTimePicker.Location = New System.Drawing.Point(187, 450)
             Me.applicationChecklist1_dateTimePicker.Name = "applicationChecklist1_dateTimePicker"
             Me.applicationChecklist1_dateTimePicker.Size = New System.Drawing.Size(200, 20)
             Me.applicationChecklist1_dateTimePicker.TabIndex = 4
@@ -316,8 +287,10 @@ Namespace DatabaseTestApplication2
             '
             'applicationChecklist2Label
             '
+            Me.applicationChecklist2Label.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.applicationChecklist2Label.AutoSize = True
-            Me.applicationChecklist2Label.Location = New System.Drawing.Point(109, 118)
+            Me.applicationChecklist2Label.ForeColor = System.Drawing.SystemColors.Control
+            Me.applicationChecklist2Label.Location = New System.Drawing.Point(52, 144)
             Me.applicationChecklist2Label.Name = "applicationChecklist2Label"
             Me.applicationChecklist2Label.Size = New System.Drawing.Size(114, 13)
             Me.applicationChecklist2Label.TabIndex = 5
@@ -325,9 +298,10 @@ Namespace DatabaseTestApplication2
             '
             'applicationChecklist2_dateTimePicker
             '
+            Me.applicationChecklist2_dateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.applicationChecklist2_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.applicationChecklist2_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.applicationChecklist2_dateTimePicker.Location = New System.Drawing.Point(244, 118)
+            Me.applicationChecklist2_dateTimePicker.Location = New System.Drawing.Point(187, 144)
             Me.applicationChecklist2_dateTimePicker.Name = "applicationChecklist2_dateTimePicker"
             Me.applicationChecklist2_dateTimePicker.Size = New System.Drawing.Size(200, 20)
             Me.applicationChecklist2_dateTimePicker.TabIndex = 6
@@ -335,8 +309,10 @@ Namespace DatabaseTestApplication2
             '
             'employmentVerifiedLabel
             '
+            Me.employmentVerifiedLabel.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.employmentVerifiedLabel.AutoSize = True
-            Me.employmentVerifiedLabel.Location = New System.Drawing.Point(524, 193)
+            Me.employmentVerifiedLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.employmentVerifiedLabel.Location = New System.Drawing.Point(467, 219)
             Me.employmentVerifiedLabel.Name = "employmentVerifiedLabel"
             Me.employmentVerifiedLabel.Size = New System.Drawing.Size(102, 13)
             Me.employmentVerifiedLabel.TabIndex = 7
@@ -344,15 +320,18 @@ Namespace DatabaseTestApplication2
             '
             'employmentVerifiedTextBox
             '
-            Me.employmentVerifiedTextBox.Location = New System.Drawing.Point(648, 186)
+            Me.employmentVerifiedTextBox.Anchor = System.Windows.Forms.AnchorStyles.None
+            Me.employmentVerifiedTextBox.Location = New System.Drawing.Point(591, 212)
             Me.employmentVerifiedTextBox.Name = "employmentVerifiedTextBox"
             Me.employmentVerifiedTextBox.Size = New System.Drawing.Size(100, 20)
             Me.employmentVerifiedTextBox.TabIndex = 8
             '
             'landlordReferenceLabel
             '
+            Me.landlordReferenceLabel.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.landlordReferenceLabel.AutoSize = True
-            Me.landlordReferenceLabel.Location = New System.Drawing.Point(122, 186)
+            Me.landlordReferenceLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.landlordReferenceLabel.Location = New System.Drawing.Point(65, 212)
             Me.landlordReferenceLabel.Name = "landlordReferenceLabel"
             Me.landlordReferenceLabel.Size = New System.Drawing.Size(101, 13)
             Me.landlordReferenceLabel.TabIndex = 9
@@ -360,15 +339,18 @@ Namespace DatabaseTestApplication2
             '
             'landlordReferenceTextBox
             '
-            Me.landlordReferenceTextBox.Location = New System.Drawing.Point(244, 186)
+            Me.landlordReferenceTextBox.Anchor = System.Windows.Forms.AnchorStyles.None
+            Me.landlordReferenceTextBox.Location = New System.Drawing.Point(187, 212)
             Me.landlordReferenceTextBox.Name = "landlordReferenceTextBox"
             Me.landlordReferenceTextBox.Size = New System.Drawing.Size(100, 20)
             Me.landlordReferenceTextBox.TabIndex = 10
             '
             'previousLandlordReferenceLabel
             '
+            Me.previousLandlordReferenceLabel.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.previousLandlordReferenceLabel.AutoSize = True
-            Me.previousLandlordReferenceLabel.Location = New System.Drawing.Point(78, 220)
+            Me.previousLandlordReferenceLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.previousLandlordReferenceLabel.Location = New System.Drawing.Point(21, 246)
             Me.previousLandlordReferenceLabel.Name = "previousLandlordReferenceLabel"
             Me.previousLandlordReferenceLabel.Size = New System.Drawing.Size(145, 13)
             Me.previousLandlordReferenceLabel.TabIndex = 11
@@ -376,15 +358,18 @@ Namespace DatabaseTestApplication2
             '
             'previousLandlordReferenceTextBox
             '
-            Me.previousLandlordReferenceTextBox.Location = New System.Drawing.Point(244, 220)
+            Me.previousLandlordReferenceTextBox.Anchor = System.Windows.Forms.AnchorStyles.None
+            Me.previousLandlordReferenceTextBox.Location = New System.Drawing.Point(187, 246)
             Me.previousLandlordReferenceTextBox.Name = "previousLandlordReferenceTextBox"
             Me.previousLandlordReferenceTextBox.Size = New System.Drawing.Size(100, 20)
             Me.previousLandlordReferenceTextBox.TabIndex = 12
             '
             'backgroundCheckLabel
             '
+            Me.backgroundCheckLabel.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.backgroundCheckLabel.AutoSize = True
-            Me.backgroundCheckLabel.Location = New System.Drawing.Point(121, 254)
+            Me.backgroundCheckLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.backgroundCheckLabel.Location = New System.Drawing.Point(64, 280)
             Me.backgroundCheckLabel.Name = "backgroundCheckLabel"
             Me.backgroundCheckLabel.Size = New System.Drawing.Size(99, 13)
             Me.backgroundCheckLabel.TabIndex = 13
@@ -392,15 +377,18 @@ Namespace DatabaseTestApplication2
             '
             'backgroundCheckTextBox
             '
-            Me.backgroundCheckTextBox.Location = New System.Drawing.Point(244, 254)
+            Me.backgroundCheckTextBox.Anchor = System.Windows.Forms.AnchorStyles.None
+            Me.backgroundCheckTextBox.Location = New System.Drawing.Point(187, 280)
             Me.backgroundCheckTextBox.Name = "backgroundCheckTextBox"
             Me.backgroundCheckTextBox.Size = New System.Drawing.Size(100, 20)
             Me.backgroundCheckTextBox.TabIndex = 14
             '
             'CCCBudgetLabel
             '
+            Me.CCCBudgetLabel.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.CCCBudgetLabel.AutoSize = True
-            Me.CCCBudgetLabel.Location = New System.Drawing.Point(154, 288)
+            Me.CCCBudgetLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.CCCBudgetLabel.Location = New System.Drawing.Point(97, 314)
             Me.CCCBudgetLabel.Name = "CCCBudgetLabel"
             Me.CCCBudgetLabel.Size = New System.Drawing.Size(65, 13)
             Me.CCCBudgetLabel.TabIndex = 15
@@ -408,15 +396,18 @@ Namespace DatabaseTestApplication2
             '
             'CCCBudgetTextBox
             '
-            Me.CCCBudgetTextBox.Location = New System.Drawing.Point(244, 288)
+            Me.CCCBudgetTextBox.Anchor = System.Windows.Forms.AnchorStyles.None
+            Me.CCCBudgetTextBox.Location = New System.Drawing.Point(187, 314)
             Me.CCCBudgetTextBox.Name = "CCCBudgetTextBox"
             Me.CCCBudgetTextBox.Size = New System.Drawing.Size(100, 20)
             Me.CCCBudgetTextBox.TabIndex = 16
             '
             'creditReportRunLabel
             '
+            Me.creditReportRunLabel.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.creditReportRunLabel.AutoSize = True
-            Me.creditReportRunLabel.Location = New System.Drawing.Point(131, 325)
+            Me.creditReportRunLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.creditReportRunLabel.Location = New System.Drawing.Point(74, 351)
             Me.creditReportRunLabel.Name = "creditReportRunLabel"
             Me.creditReportRunLabel.Size = New System.Drawing.Size(92, 13)
             Me.creditReportRunLabel.TabIndex = 17
@@ -424,15 +415,18 @@ Namespace DatabaseTestApplication2
             '
             'creditReportRunTextBox
             '
-            Me.creditReportRunTextBox.Location = New System.Drawing.Point(244, 322)
+            Me.creditReportRunTextBox.Anchor = System.Windows.Forms.AnchorStyles.None
+            Me.creditReportRunTextBox.Location = New System.Drawing.Point(187, 348)
             Me.creditReportRunTextBox.Name = "creditReportRunTextBox"
             Me.creditReportRunTextBox.Size = New System.Drawing.Size(100, 20)
             Me.creditReportRunTextBox.TabIndex = 18
             '
             'homeVisitLabel
             '
+            Me.homeVisitLabel.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.homeVisitLabel.AutoSize = True
-            Me.homeVisitLabel.Location = New System.Drawing.Point(538, 159)
+            Me.homeVisitLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.homeVisitLabel.Location = New System.Drawing.Point(481, 185)
             Me.homeVisitLabel.Name = "homeVisitLabel"
             Me.homeVisitLabel.Size = New System.Drawing.Size(83, 13)
             Me.homeVisitLabel.TabIndex = 19
@@ -440,9 +434,10 @@ Namespace DatabaseTestApplication2
             '
             'homeVisit_dateTimePicker
             '
+            Me.homeVisit_dateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.homeVisit_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.homeVisit_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.homeVisit_dateTimePicker.Location = New System.Drawing.Point(648, 50)
+            Me.homeVisit_dateTimePicker.Location = New System.Drawing.Point(591, 416)
             Me.homeVisit_dateTimePicker.Name = "homeVisit_dateTimePicker"
             Me.homeVisit_dateTimePicker.Size = New System.Drawing.Size(200, 20)
             Me.homeVisit_dateTimePicker.TabIndex = 20
@@ -450,8 +445,10 @@ Namespace DatabaseTestApplication2
             '
             'committeeDecisionLabel
             '
+            Me.committeeDecisionLabel.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.committeeDecisionLabel.AutoSize = True
-            Me.committeeDecisionLabel.Location = New System.Drawing.Point(495, 50)
+            Me.committeeDecisionLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.committeeDecisionLabel.Location = New System.Drawing.Point(438, 416)
             Me.committeeDecisionLabel.Name = "committeeDecisionLabel"
             Me.committeeDecisionLabel.Size = New System.Drawing.Size(126, 13)
             Me.committeeDecisionLabel.TabIndex = 21
@@ -459,9 +456,10 @@ Namespace DatabaseTestApplication2
             '
             'committeeDecision_dateTimePicker
             '
+            Me.committeeDecision_dateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.committeeDecision_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.committeeDecision_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.committeeDecision_dateTimePicker.Location = New System.Drawing.Point(648, 84)
+            Me.committeeDecision_dateTimePicker.Location = New System.Drawing.Point(591, 450)
             Me.committeeDecision_dateTimePicker.Name = "committeeDecision_dateTimePicker"
             Me.committeeDecision_dateTimePicker.Size = New System.Drawing.Size(200, 20)
             Me.committeeDecision_dateTimePicker.TabIndex = 22
@@ -469,8 +467,10 @@ Namespace DatabaseTestApplication2
             '
             'committeeAcceptedLabel
             '
+            Me.committeeAcceptedLabel.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.committeeAcceptedLabel.AutoSize = True
-            Me.committeeAcceptedLabel.Location = New System.Drawing.Point(517, 284)
+            Me.committeeAcceptedLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.committeeAcceptedLabel.Location = New System.Drawing.Point(460, 310)
             Me.committeeAcceptedLabel.Name = "committeeAcceptedLabel"
             Me.committeeAcceptedLabel.Size = New System.Drawing.Size(105, 13)
             Me.committeeAcceptedLabel.TabIndex = 23
@@ -478,15 +478,18 @@ Namespace DatabaseTestApplication2
             '
             'committeeAcceptedTextBox
             '
-            Me.committeeAcceptedTextBox.Location = New System.Drawing.Point(648, 284)
+            Me.committeeAcceptedTextBox.Anchor = System.Windows.Forms.AnchorStyles.None
+            Me.committeeAcceptedTextBox.Location = New System.Drawing.Point(591, 310)
             Me.committeeAcceptedTextBox.Name = "committeeAcceptedTextBox"
             Me.committeeAcceptedTextBox.Size = New System.Drawing.Size(100, 20)
             Me.committeeAcceptedTextBox.TabIndex = 24
             '
             'committeeReasonLabel
             '
+            Me.committeeReasonLabel.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.committeeReasonLabel.AutoSize = True
-            Me.committeeReasonLabel.Location = New System.Drawing.Point(528, 318)
+            Me.committeeReasonLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.committeeReasonLabel.Location = New System.Drawing.Point(471, 344)
             Me.committeeReasonLabel.Name = "committeeReasonLabel"
             Me.committeeReasonLabel.Size = New System.Drawing.Size(96, 13)
             Me.committeeReasonLabel.TabIndex = 25
@@ -494,15 +497,18 @@ Namespace DatabaseTestApplication2
             '
             'committeeReasonTextBox
             '
-            Me.committeeReasonTextBox.Location = New System.Drawing.Point(648, 318)
+            Me.committeeReasonTextBox.Anchor = System.Windows.Forms.AnchorStyles.None
+            Me.committeeReasonTextBox.Location = New System.Drawing.Point(591, 344)
             Me.committeeReasonTextBox.Name = "committeeReasonTextBox"
             Me.committeeReasonTextBox.Size = New System.Drawing.Size(100, 20)
             Me.committeeReasonTextBox.TabIndex = 26
             '
             'boardVoteLabel
             '
+            Me.boardVoteLabel.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.boardVoteLabel.AutoSize = True
-            Me.boardVoteLabel.Location = New System.Drawing.Point(537, 125)
+            Me.boardVoteLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.boardVoteLabel.Location = New System.Drawing.Point(480, 151)
             Me.boardVoteLabel.Name = "boardVoteLabel"
             Me.boardVoteLabel.Size = New System.Drawing.Size(86, 13)
             Me.boardVoteLabel.TabIndex = 27
@@ -510,9 +516,10 @@ Namespace DatabaseTestApplication2
             '
             'boardVote_dateTimePicker
             '
+            Me.boardVote_dateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.boardVote_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.boardVote_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.boardVote_dateTimePicker.Location = New System.Drawing.Point(648, 118)
+            Me.boardVote_dateTimePicker.Location = New System.Drawing.Point(591, 144)
             Me.boardVote_dateTimePicker.Name = "boardVote_dateTimePicker"
             Me.boardVote_dateTimePicker.Size = New System.Drawing.Size(200, 20)
             Me.boardVote_dateTimePicker.TabIndex = 28
@@ -520,8 +527,10 @@ Namespace DatabaseTestApplication2
             '
             'boardAcceptedLabel
             '
+            Me.boardAcceptedLabel.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.boardAcceptedLabel.AutoSize = True
-            Me.boardAcceptedLabel.Location = New System.Drawing.Point(541, 220)
+            Me.boardAcceptedLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.boardAcceptedLabel.Location = New System.Drawing.Point(484, 246)
             Me.boardAcceptedLabel.Name = "boardAcceptedLabel"
             Me.boardAcceptedLabel.Size = New System.Drawing.Size(84, 13)
             Me.boardAcceptedLabel.TabIndex = 29
@@ -529,15 +538,18 @@ Namespace DatabaseTestApplication2
             '
             'boardAcceptedTextBox
             '
-            Me.boardAcceptedTextBox.Location = New System.Drawing.Point(648, 220)
+            Me.boardAcceptedTextBox.Anchor = System.Windows.Forms.AnchorStyles.None
+            Me.boardAcceptedTextBox.Location = New System.Drawing.Point(591, 246)
             Me.boardAcceptedTextBox.Name = "boardAcceptedTextBox"
             Me.boardAcceptedTextBox.Size = New System.Drawing.Size(100, 20)
             Me.boardAcceptedTextBox.TabIndex = 30
             '
             'boardReasonLabel
             '
+            Me.boardReasonLabel.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.boardReasonLabel.AutoSize = True
-            Me.boardReasonLabel.Location = New System.Drawing.Point(549, 257)
+            Me.boardReasonLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.boardReasonLabel.Location = New System.Drawing.Point(492, 283)
             Me.boardReasonLabel.Name = "boardReasonLabel"
             Me.boardReasonLabel.Size = New System.Drawing.Size(75, 13)
             Me.boardReasonLabel.TabIndex = 31
@@ -545,15 +557,18 @@ Namespace DatabaseTestApplication2
             '
             'boardReasonTextBox
             '
-            Me.boardReasonTextBox.Location = New System.Drawing.Point(648, 254)
+            Me.boardReasonTextBox.Anchor = System.Windows.Forms.AnchorStyles.None
+            Me.boardReasonTextBox.Location = New System.Drawing.Point(591, 280)
             Me.boardReasonTextBox.Name = "boardReasonTextBox"
             Me.boardReasonTextBox.Size = New System.Drawing.Size(100, 20)
             Me.boardReasonTextBox.TabIndex = 32
             '
             'handbookReviewLabel
             '
+            Me.handbookReviewLabel.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.handbookReviewLabel.AutoSize = True
-            Me.handbookReviewLabel.Location = New System.Drawing.Point(501, 90)
+            Me.handbookReviewLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.handbookReviewLabel.Location = New System.Drawing.Point(444, 456)
             Me.handbookReviewLabel.Name = "handbookReviewLabel"
             Me.handbookReviewLabel.Size = New System.Drawing.Size(122, 13)
             Me.handbookReviewLabel.TabIndex = 33
@@ -561,9 +576,10 @@ Namespace DatabaseTestApplication2
             '
             'handbookReview_dateTimePicker
             '
+            Me.handbookReview_dateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.handbookReview_dateTimePicker.CustomFormat = "dd/MM/yyyy"
             Me.handbookReview_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-            Me.handbookReview_dateTimePicker.Location = New System.Drawing.Point(648, 159)
+            Me.handbookReview_dateTimePicker.Location = New System.Drawing.Point(591, 185)
             Me.handbookReview_dateTimePicker.Name = "handbookReview_dateTimePicker"
             Me.handbookReview_dateTimePicker.Size = New System.Drawing.Size(200, 20)
             Me.handbookReview_dateTimePicker.TabIndex = 34
@@ -571,8 +587,10 @@ Namespace DatabaseTestApplication2
             '
             'general_UIDLabel
             '
+            Me.general_UIDLabel.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.general_UIDLabel.AutoSize = True
-            Me.general_UIDLabel.Location = New System.Drawing.Point(144, 154)
+            Me.general_UIDLabel.ForeColor = System.Drawing.SystemColors.Control
+            Me.general_UIDLabel.Location = New System.Drawing.Point(87, 180)
             Me.general_UIDLabel.Name = "general_UIDLabel"
             Me.general_UIDLabel.Size = New System.Drawing.Size(67, 13)
             Me.general_UIDLabel.TabIndex = 35
@@ -580,83 +598,101 @@ Namespace DatabaseTestApplication2
             '
             'general_UID_comboBox
             '
+            Me.general_UID_comboBox.Anchor = System.Windows.Forms.AnchorStyles.None
             Me.general_UID_comboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
             Me.general_UID_comboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
             Me.general_UID_comboBox.FormattingEnabled = True
-            Me.general_UID_comboBox.Location = New System.Drawing.Point(244, 151)
+            Me.general_UID_comboBox.Location = New System.Drawing.Point(187, 177)
             Me.general_UID_comboBox.Name = "general_UID_comboBox"
             Me.general_UID_comboBox.Size = New System.Drawing.Size(200, 21)
             Me.general_UID_comboBox.TabIndex = 36
             '
             'panel3
             '
+            Me.panel3.BackColor = System.Drawing.Color.Transparent
+            Me.panel3.Controls.Add(Me.MenuStrip2)
+            Me.panel3.Controls.Add(Me.PictureBox1)
+            Me.panel3.Controls.Add(Me.frmhomeownershipTitle)
+            Me.panel3.Controls.Add(Me.backgroundCheckTextBox)
             Me.panel3.Controls.Add(Me.Panel1)
+            Me.panel3.Controls.Add(Me.applicantInfoMeetingLabel)
             Me.panel3.Controls.Add(Me.panel4)
+            Me.panel3.Controls.Add(Me.homeVisitLabel)
             Me.panel3.Controls.Add(Me.panel5)
+            Me.panel3.Controls.Add(Me.creditReportRunTextBox)
             Me.panel3.Controls.Add(Me.panel6)
+            Me.panel3.Controls.Add(Me.applicantInfoMeeting_dateTimePicker)
+            Me.panel3.Controls.Add(Me.employmentVerifiedLabel)
+            Me.panel3.Controls.Add(Me.committeeAcceptedLabel)
+            Me.panel3.Controls.Add(Me.boardReasonTextBox)
+            Me.panel3.Controls.Add(Me.committeeAcceptedTextBox)
+            Me.panel3.Controls.Add(Me.landlordReferenceLabel)
+            Me.panel3.Controls.Add(Me.applicationChecklist1Label)
+            Me.panel3.Controls.Add(Me.employmentVerifiedTextBox)
+            Me.panel3.Controls.Add(Me.CCCBudgetTextBox)
+            Me.panel3.Controls.Add(Me.boardReasonLabel)
+            Me.panel3.Controls.Add(Me.creditReportRunLabel)
+            Me.panel3.Controls.Add(Me.handbookReview_dateTimePicker)
+            Me.panel3.Controls.Add(Me.committeeReasonLabel)
+            Me.panel3.Controls.Add(Me.landlordReferenceTextBox)
+            Me.panel3.Controls.Add(Me.applicationChecklist1_dateTimePicker)
+            Me.panel3.Controls.Add(Me.boardAcceptedTextBox)
+            Me.panel3.Controls.Add(Me.CCCBudgetLabel)
+            Me.panel3.Controls.Add(Me.general_UIDLabel)
+            Me.panel3.Controls.Add(Me.applicationChecklist2Label)
+            Me.panel3.Controls.Add(Me.previousLandlordReferenceLabel)
+            Me.panel3.Controls.Add(Me.committeeReasonTextBox)
+            Me.panel3.Controls.Add(Me.handbookReviewLabel)
+            Me.panel3.Controls.Add(Me.homeVisit_dateTimePicker)
+            Me.panel3.Controls.Add(Me.boardAcceptedLabel)
+            Me.panel3.Controls.Add(Me.boardVoteLabel)
+            Me.panel3.Controls.Add(Me.applicationChecklist2_dateTimePicker)
+            Me.panel3.Controls.Add(Me.general_UID_comboBox)
+            Me.panel3.Controls.Add(Me.previousLandlordReferenceTextBox)
+            Me.panel3.Controls.Add(Me.backgroundCheckLabel)
+            Me.panel3.Controls.Add(Me.committeeDecision_dateTimePicker)
+            Me.panel3.Controls.Add(Me.committeeDecisionLabel)
+            Me.panel3.Controls.Add(Me.boardVote_dateTimePicker)
             Me.panel3.Dock = System.Windows.Forms.DockStyle.Fill
             Me.panel3.Location = New System.Drawing.Point(0, 27)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(892, 369)
+            Me.panel3.Size = New System.Drawing.Size(841, 490)
             Me.panel3.TabIndex = 19
-            '
-            'panel4
-            '
-            Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
-            Me.panel4.Location = New System.Drawing.Point(882, 0)
-            Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(10, 359)
-            Me.panel4.TabIndex = 3
-            '
-            'panel5
-            '
-            Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
-            Me.panel5.Location = New System.Drawing.Point(0, 0)
-            Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(10, 359)
-            Me.panel5.TabIndex = 5
-            '
-            'panel6
-            '
-            Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 359)
-            Me.panel6.Name = "panel6"
-            Me.panel6.Size = New System.Drawing.Size(892, 10)
-            Me.panel6.TabIndex = 6
             '
             'MenuStrip2
             '
-            Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3, Me.ToolStripMenuItem4, Me.TrackingToolStripMenuItem, Me.ToolStripMenuItem5, Me.SurveyToolStripMenuItem})
-            Me.MenuStrip2.Location = New System.Drawing.Point(0, 0)
+            Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.GeneralToolStripMenuItem, Me.HomeownershipToolStripMenuItem, Me.RepairsToolStripMenuItem, Me.TrackingToolStripMenuItem, Me.SurveyEditorToolStripMenuItem, Me.SurveyToolStripMenuItem})
+            Me.MenuStrip2.Location = New System.Drawing.Point(10, 0)
             Me.MenuStrip2.Name = "MenuStrip2"
-            Me.MenuStrip2.Size = New System.Drawing.Size(872, 24)
-            Me.MenuStrip2.TabIndex = 122
+            Me.MenuStrip2.Size = New System.Drawing.Size(821, 24)
+            Me.MenuStrip2.Stretch = False
+            Me.MenuStrip2.TabIndex = 124
             Me.MenuStrip2.Text = "MenuStrip2"
             '
-            'ToolStripMenuItem1
+            'MainMenuToolStripMenuItem
             '
-            Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-            Me.ToolStripMenuItem1.Size = New System.Drawing.Size(80, 20)
-            Me.ToolStripMenuItem1.Text = "Main Menu"
+            Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
+            Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(80, 20)
+            Me.MainMenuToolStripMenuItem.Text = "Main Menu"
             '
-            'ToolStripMenuItem2
+            'GeneralToolStripMenuItem
             '
-            Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-            Me.ToolStripMenuItem2.Size = New System.Drawing.Size(59, 20)
-            Me.ToolStripMenuItem2.Text = "General"
+            Me.GeneralToolStripMenuItem.Name = "GeneralToolStripMenuItem"
+            Me.GeneralToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
+            Me.GeneralToolStripMenuItem.Text = "General"
             '
-            'ToolStripMenuItem3
+            'HomeownershipToolStripMenuItem
             '
-            Me.ToolStripMenuItem3.Enabled = False
-            Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-            Me.ToolStripMenuItem3.Size = New System.Drawing.Size(107, 20)
-            Me.ToolStripMenuItem3.Text = "Homeownership"
+            Me.HomeownershipToolStripMenuItem.Enabled = False
+            Me.HomeownershipToolStripMenuItem.Name = "HomeownershipToolStripMenuItem"
+            Me.HomeownershipToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
+            Me.HomeownershipToolStripMenuItem.Text = "Homeownership"
             '
-            'ToolStripMenuItem4
+            'RepairsToolStripMenuItem
             '
-            Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-            Me.ToolStripMenuItem4.Size = New System.Drawing.Size(57, 20)
-            Me.ToolStripMenuItem4.Text = "Repairs"
+            Me.RepairsToolStripMenuItem.Name = "RepairsToolStripMenuItem"
+            Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+            Me.RepairsToolStripMenuItem.Text = "Repairs"
             '
             'TrackingToolStripMenuItem
             '
@@ -664,11 +700,11 @@ Namespace DatabaseTestApplication2
             Me.TrackingToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
             Me.TrackingToolStripMenuItem.Text = "Tracking"
             '
-            'ToolStripMenuItem5
+            'SurveyEditorToolStripMenuItem
             '
-            Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-            Me.ToolStripMenuItem5.Size = New System.Drawing.Size(88, 20)
-            Me.ToolStripMenuItem5.Text = "Survey Editor"
+            Me.SurveyEditorToolStripMenuItem.Name = "SurveyEditorToolStripMenuItem"
+            Me.SurveyEditorToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
+            Me.SurveyEditorToolStripMenuItem.Text = "Survey Editor"
             '
             'SurveyToolStripMenuItem
             '
@@ -676,11 +712,60 @@ Namespace DatabaseTestApplication2
             Me.SurveyToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
             Me.SurveyToolStripMenuItem.Text = "Survey Results"
             '
+            'PictureBox1
+            '
+            Me.PictureBox1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
+            Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+            Me.PictureBox1.Location = New System.Drawing.Point(561, 51)
+            Me.PictureBox1.Name = "PictureBox1"
+            Me.PictureBox1.Size = New System.Drawing.Size(230, 87)
+            Me.PictureBox1.TabIndex = 120
+            Me.PictureBox1.TabStop = False
+            '
+            'frmhomeownershipTitle
+            '
+            Me.frmhomeownershipTitle.AutoSize = True
+            Me.frmhomeownershipTitle.Font = New System.Drawing.Font("Microsoft YaHei UI", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+            Me.frmhomeownershipTitle.ForeColor = System.Drawing.SystemColors.Control
+            Me.frmhomeownershipTitle.Location = New System.Drawing.Point(16, 51)
+            Me.frmhomeownershipTitle.Name = "frmhomeownershipTitle"
+            Me.frmhomeownershipTitle.Size = New System.Drawing.Size(427, 64)
+            Me.frmhomeownershipTitle.TabIndex = 37
+            Me.frmhomeownershipTitle.Text = "Homeownership"
+            '
+            'panel4
+            '
+            Me.panel4.BackColor = System.Drawing.SystemColors.Control
+            Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
+            Me.panel4.Location = New System.Drawing.Point(831, 0)
+            Me.panel4.Name = "panel4"
+            Me.panel4.Size = New System.Drawing.Size(10, 480)
+            Me.panel4.TabIndex = 3
+            '
+            'panel5
+            '
+            Me.panel5.BackColor = System.Drawing.SystemColors.Control
+            Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
+            Me.panel5.Location = New System.Drawing.Point(0, 0)
+            Me.panel5.Name = "panel5"
+            Me.panel5.Size = New System.Drawing.Size(10, 480)
+            Me.panel5.TabIndex = 5
+            '
+            'panel6
+            '
+            Me.panel6.BackColor = System.Drawing.SystemColors.Control
+            Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
+            Me.panel6.Location = New System.Drawing.Point(0, 480)
+            Me.panel6.Name = "panel6"
+            Me.panel6.Size = New System.Drawing.Size(841, 10)
+            Me.panel6.TabIndex = 6
+            '
             'frmhomeownership
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(892, 396)
+            Me.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.angryimg__12_
+            Me.ClientSize = New System.Drawing.Size(841, 517)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
             Me.Name = "frmhomeownership"
@@ -690,79 +775,80 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigator1.PerformLayout()
             CType(Me.homeownershipBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
-            Me.Panel1.ResumeLayout(False)
-            Me.Panel1.PerformLayout()
             Me.panel3.ResumeLayout(False)
             Me.panel3.PerformLayout()
             Me.MenuStrip2.ResumeLayout(False)
             Me.MenuStrip2.PerformLayout()
+            CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
         End Sub
         Friend WithEvents BindingNavigator1 As System.Windows.Forms.BindingNavigator
-		Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
-		Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
-		Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
-		Friend WithEvents BindingNavigatorMoveFirstItem As System.Windows.Forms.ToolStripButton
-		Friend WithEvents BindingNavigatorMovePreviousItem As System.Windows.Forms.ToolStripButton
-		Friend WithEvents BindingNavigatorSeparator As System.Windows.Forms.ToolStripSeparator
-		Friend WithEvents BindingNavigatorPositionItem As System.Windows.Forms.ToolStripTextBox
-		Friend WithEvents BindingNavigatorSeparator1 As System.Windows.Forms.ToolStripSeparator
-		Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
-		Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
-		Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
-		Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
-		Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
-		Friend WithEvents Panel1 As System.Windows.Forms.Panel
-		Friend WithEvents homeownershipBindingSource As System.Windows.Forms.BindingSource
-		Friend WithEvents applicantInfoMeeting_dateTimePicker As System.Windows.Forms.DateTimePicker
-		Friend WithEvents applicantInfoMeetingLabel As System.Windows.Forms.Label
-		Friend WithEvents applicationChecklist1_dateTimePicker As System.Windows.Forms.DateTimePicker
-		Friend WithEvents applicationChecklist1Label As System.Windows.Forms.Label
-		Friend WithEvents applicationChecklist2_dateTimePicker As System.Windows.Forms.DateTimePicker
-		Friend WithEvents applicationChecklist2Label As System.Windows.Forms.Label
-		Friend WithEvents employmentVerifiedTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents employmentVerifiedLabel As System.Windows.Forms.Label
-		Friend WithEvents landlordReferenceTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents landlordReferenceLabel As System.Windows.Forms.Label
-		Friend WithEvents previousLandlordReferenceTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents previousLandlordReferenceLabel As System.Windows.Forms.Label
-		Friend WithEvents backgroundCheckTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents backgroundCheckLabel As System.Windows.Forms.Label
-		Friend WithEvents CCCBudgetTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents CCCBudgetLabel As System.Windows.Forms.Label
-		Friend WithEvents creditReportRunTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents creditReportRunLabel As System.Windows.Forms.Label
-		Friend WithEvents homeVisit_dateTimePicker As System.Windows.Forms.DateTimePicker
-		Friend WithEvents homeVisitLabel As System.Windows.Forms.Label
-		Friend WithEvents committeeDecision_dateTimePicker As System.Windows.Forms.DateTimePicker
-		Friend WithEvents committeeDecisionLabel As System.Windows.Forms.Label
-		Friend WithEvents committeeAcceptedTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents committeeAcceptedLabel As System.Windows.Forms.Label
-		Friend WithEvents committeeReasonTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents committeeReasonLabel As System.Windows.Forms.Label
-		Friend WithEvents boardVote_dateTimePicker As System.Windows.Forms.DateTimePicker
-		Friend WithEvents boardVoteLabel As System.Windows.Forms.Label
-		Friend WithEvents boardAcceptedTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents boardAcceptedLabel As System.Windows.Forms.Label
-		Friend WithEvents boardReasonTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents boardReasonLabel As System.Windows.Forms.Label
-		Friend WithEvents handbookReview_dateTimePicker As System.Windows.Forms.DateTimePicker
-		Friend WithEvents handbookReviewLabel As System.Windows.Forms.Label
-		Friend WithEvents general_UID_comboBox As System.Windows.Forms.ComboBox
-		Friend WithEvents general_UIDLabel As System.Windows.Forms.Label
-		Friend WithEvents panel3 As System.Windows.Forms.Panel
-		Friend WithEvents panel4 As System.Windows.Forms.Panel
-		Friend WithEvents panel5 As System.Windows.Forms.Panel
-		Friend WithEvents panel6 As System.Windows.Forms.Panel
+        Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
+        Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
+        Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
+        Friend WithEvents BindingNavigatorMoveFirstItem As System.Windows.Forms.ToolStripButton
+        Friend WithEvents BindingNavigatorMovePreviousItem As System.Windows.Forms.ToolStripButton
+        Friend WithEvents BindingNavigatorSeparator As System.Windows.Forms.ToolStripSeparator
+        Friend WithEvents BindingNavigatorPositionItem As System.Windows.Forms.ToolStripTextBox
+        Friend WithEvents BindingNavigatorSeparator1 As System.Windows.Forms.ToolStripSeparator
+        Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
+        Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
+        Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
+        Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
+        Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
+        Friend WithEvents Panel1 As System.Windows.Forms.Panel
+        Friend WithEvents homeownershipBindingSource As System.Windows.Forms.BindingSource
+        Friend WithEvents applicantInfoMeeting_dateTimePicker As System.Windows.Forms.DateTimePicker
+        Friend WithEvents applicantInfoMeetingLabel As System.Windows.Forms.Label
+        Friend WithEvents applicationChecklist1_dateTimePicker As System.Windows.Forms.DateTimePicker
+        Friend WithEvents applicationChecklist1Label As System.Windows.Forms.Label
+        Friend WithEvents applicationChecklist2_dateTimePicker As System.Windows.Forms.DateTimePicker
+        Friend WithEvents applicationChecklist2Label As System.Windows.Forms.Label
+        Friend WithEvents employmentVerifiedTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents employmentVerifiedLabel As System.Windows.Forms.Label
+        Friend WithEvents landlordReferenceTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents landlordReferenceLabel As System.Windows.Forms.Label
+        Friend WithEvents previousLandlordReferenceTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents previousLandlordReferenceLabel As System.Windows.Forms.Label
+        Friend WithEvents backgroundCheckTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents backgroundCheckLabel As System.Windows.Forms.Label
+        Friend WithEvents CCCBudgetTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents CCCBudgetLabel As System.Windows.Forms.Label
+        Friend WithEvents creditReportRunTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents creditReportRunLabel As System.Windows.Forms.Label
+        Friend WithEvents homeVisit_dateTimePicker As System.Windows.Forms.DateTimePicker
+        Friend WithEvents homeVisitLabel As System.Windows.Forms.Label
+        Friend WithEvents committeeDecision_dateTimePicker As System.Windows.Forms.DateTimePicker
+        Friend WithEvents committeeDecisionLabel As System.Windows.Forms.Label
+        Friend WithEvents committeeAcceptedTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents committeeAcceptedLabel As System.Windows.Forms.Label
+        Friend WithEvents committeeReasonTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents committeeReasonLabel As System.Windows.Forms.Label
+        Friend WithEvents boardVote_dateTimePicker As System.Windows.Forms.DateTimePicker
+        Friend WithEvents boardVoteLabel As System.Windows.Forms.Label
+        Friend WithEvents boardAcceptedTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents boardAcceptedLabel As System.Windows.Forms.Label
+        Friend WithEvents boardReasonTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents boardReasonLabel As System.Windows.Forms.Label
+        Friend WithEvents handbookReview_dateTimePicker As System.Windows.Forms.DateTimePicker
+        Friend WithEvents handbookReviewLabel As System.Windows.Forms.Label
+        Friend WithEvents general_UID_comboBox As System.Windows.Forms.ComboBox
+        Friend WithEvents general_UIDLabel As System.Windows.Forms.Label
+        Friend WithEvents panel3 As System.Windows.Forms.Panel
+        Friend WithEvents panel4 As System.Windows.Forms.Panel
+        Friend WithEvents panel5 As System.Windows.Forms.Panel
+        Friend WithEvents panel6 As System.Windows.Forms.Panel
+        Friend WithEvents frmhomeownershipTitle As Label
+        Friend WithEvents PictureBox1 As PictureBox
         Friend WithEvents MenuStrip2 As MenuStrip
-        Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
-        Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
-        Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
-        Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
+        Friend WithEvents MainMenuToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents GeneralToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents HomeownershipToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents RepairsToolStripMenuItem As ToolStripMenuItem
         Friend WithEvents TrackingToolStripMenuItem As ToolStripMenuItem
-        Friend WithEvents ToolStripMenuItem5 As ToolStripMenuItem
+        Friend WithEvents SurveyEditorToolStripMenuItem As ToolStripMenuItem
         Friend WithEvents SurveyToolStripMenuItem As ToolStripMenuItem
     End Class
 

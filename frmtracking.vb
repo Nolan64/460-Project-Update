@@ -621,34 +621,34 @@ Namespace DatabaseTestApplication2
 			trackingBindingSource.AddNew()
 		End Sub
 
-		Private Sub GeneralInfoToolStripMenuItem_Click(sender As Object, e As EventArgs) 
-			frmgeneral.Show()
+		Private Sub MainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MainMenuToolStripMenuItem.Click
 			Me.Close()
-
 		End Sub
 
-		Private Sub Label1_Click(sender As Object, e As EventArgs) Handles frmtrackingTitle.Click
-
+		Private Sub GeneralToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GeneralToolStripMenuItem.Click
+			DatabaseTestApplication2.frmgeneral.Show()
+			Me.Close()
 		End Sub
 
-		Private Sub MainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) 
-			Me.Hide()
-
+		Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles HomeownershipToolStripMenuItem.Click, MainMenuToolStripMenuItem.Click
+			DatabaseTestApplication2.frmhomeownership.Show()
+			Me.Close()
 		End Sub
 
-		Private Sub HomeownershipToolStripMenuItem_Click(sender As Object, e As EventArgs) 
-			frmhomeownership.Show()
-			Me.Hide()
-
+		Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles RepairsToolStripMenuItem.Click
+			DatabaseTestApplication2.frmrepairs.Show()
+			Me.Close()
 		End Sub
 
-		Private Sub RepairsToolStripMenuItem_Click(sender As Object, e As EventArgs) 
-			frmrepairs.Show()
-			Me.Hide()
-
+		Private Sub SurveyEditorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SurveyEditorToolStripMenuItem.Click
+			DatabaseTestApplication2.frmsurvey.Show()
+			Me.Close()
 		End Sub
 
-
+		Private Sub SurveyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SurveyToolStripMenuItem.Click
+			DatabaseTestApplication2.frmsurvey_results.Show()
+			Me.Close()
+		End Sub
 	End Class
 
 End Namespace

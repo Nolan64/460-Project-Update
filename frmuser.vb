@@ -67,7 +67,21 @@ Namespace DatabaseTestApplication2
 		Private Sub bindingNavigatorAddNewItem_Click(sender As System.Object, e As System.EventArgs) Handles BindingNavigatorAddNewItem.Click
 			userBindingSource.AddNew()
 		End Sub
-		
+
+		Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+			If TextBox1.Text = passwordTextBox.Text Then
+				If TextBox2.Text = TextBox3.Text Then
+					passwordTextBox.Text = TextBox3.Text
+
+				Else Messagebox.Show("Passwords Do Not Match.")
+				End If
+
+			Else MessageBox.Show("Incorrect Password.")
+			End If
+
+
+
+		End Sub
 	End Class
 	
 End Namespace

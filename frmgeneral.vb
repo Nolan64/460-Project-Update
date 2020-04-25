@@ -13,7 +13,7 @@ Imports System.Data.Entity.Core.Objects
 Imports System.Data.Entity
 
 Namespace DatabaseTestApplication2
-	
+
 	Public Class frmgeneral
 
 		Private ctx As mydbEntities1
@@ -39,7 +39,7 @@ Namespace DatabaseTestApplication2
 			Me.householdSizeTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "householdSize", True))
 			Me.householdAMITextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "householdAMI", True))
 			Me.raceComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "race", True))
-			Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "maritalStatus", True))
+			'Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "maritalStatus", True))
 			Me.notesTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "notes", True))
 			Me.coapplicanttxt.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "coapplicantName", True))
 			Me.dependenttxt.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "dependentName", True))
@@ -51,11 +51,7 @@ Namespace DatabaseTestApplication2
 			End If
 			generalBindingSource.EndEdit()
 			Try
-				If CheckBox1.Checked = True Then
-					TextBox1.Text = "1"
-				ElseIf checkbox1.Checked = False Then
-					TextBox1.Text = "0"
-				End If
+
 				ctx.SaveChanges()
 
 			Catch
@@ -285,27 +281,34 @@ Namespace DatabaseTestApplication2
 			generalBindingSource.AddNew()
 		End Sub
 
-		Private Sub RepairsToolStripMenuItem_Click(sender As Object, e As EventArgs)
-			DatabaseTestApplication2.frmrepairs.Show()
-			Me.Hide()
+
+		Private Sub MainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MainMenuToolStripMenuItem.Click
+			Me.Close()
 		End Sub
 
-		Private Sub TrackingToolStripMenuItem_Click(sender As Object, e As EventArgs)
-			DatabaseTestApplication2.frmtracking.Show()
-			Me.Hide()
-		End Sub
-
-		Private Sub HomeownershipToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles HomeownershipToolStripMenuItem.Click
 			DatabaseTestApplication2.frmhomeownership.Show()
-			Me.Hide()
+			Me.Close()
 		End Sub
 
-		Private Sub MainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs)
-			Me.Hide()
+		Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles RepairsToolStripMenuItem.Click
+			DatabaseTestApplication2.frmrepairs.Show()
+			Me.Close()
 		End Sub
 
-		Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
+		Private Sub TrackingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TrackingToolStripMenuItem.Click
+			DatabaseTestApplication2.frmtracking.Show()
+			Me.Close()
+		End Sub
 
+		Private Sub SurveyEditorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SurveyEditorToolStripMenuItem.Click
+			DatabaseTestApplication2.frmsurvey.Show()
+			Me.Close()
+		End Sub
+
+		Private Sub SurveyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SurveyToolStripMenuItem.Click
+			DatabaseTestApplication2.frmsurvey_results.Show()
+			Me.Close()
 		End Sub
 	End Class
 

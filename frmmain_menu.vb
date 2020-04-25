@@ -4,7 +4,7 @@ Imports System.Data.Entity
 Imports MySql.Data.MySqlClient
 Public Class frmmain_menu
 
-    Dim connection As New MySqlConnection("datasource=localhost;port=3306;username=root;password=root;database=mydb")
+    Dim connection As New MySqlConnection("datasource=localhost;port=3306;username=root;password=kiwifruit;database=mydb")
 
 
     Public Property usersName As String
@@ -20,13 +20,13 @@ Public Class frmmain_menu
         Dim dbDataset As New DataTable
         Dim bsource As New BindingSource
         connection.Open()
-            Dim Query As String
-            Query = "select * from mydb.all_table_vw"
+        Dim Query As String
+        Query = "select * from mydb.all_table_vw"
         Dim Command2 As New MySqlCommand(Query, connection)
         SDA.SelectCommand = Command2
         SDA.Fill(dbDataset)
-            bsource.DataSource = dbDataset
-            DataGridView1.DataSource = bsource
+        bsource.DataSource = dbDataset
+        DataGridView1.DataSource = bsource
         SDA.Update(dbDataset)
         connection.Close()
 
@@ -76,6 +76,13 @@ Public Class frmmain_menu
         DatabaseTestApplication2.frmrepairs.Show()
     End Sub
 
+    Private Sub settings_Click(sender As Object, e As EventArgs) Handles settings.Click
+        DatabaseTestApplication2.frmuser.Show()
+    End Sub
 
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+        Dim selectedRowIndex As Integer
+        selectedRowIndex = e.RowIndex
+    End Sub
 End Class
 

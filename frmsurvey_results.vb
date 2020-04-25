@@ -23,56 +23,56 @@ Namespace DatabaseTestApplication2
 			ctx.survey_results.Load()
 			Dim _entities As BindingList(Of survey_results) = ctx.survey_results.Local.ToBindingList()
 			survey_resultsBindingSource.DataSource = _entities
-			Me.Question1CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question1", True))
-			Me.Question10CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question10", True))
-			Me.Question11CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question11", True))
-			Me.Question12CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question12", True))
-			Me.Question13CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question13", True))
-			Me.Question14CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question14", True))
-			Me.Question15CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question15", True))
-			Me.Question16CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question16", True))
-			Me.Question17CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question17", True))
-			Me.Question18CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question18", True))
-			Me.Question19CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question19", True))
-			Me.Question2CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question2", True))
-			Me.Question20CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question20", True))
-			Me.Question21CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question21", True))
-			Me.Question22CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question22", True))
-			Me.Question23CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question23", True))
-			Me.Question24CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question24", True))
-			Me.Question25CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question25", True))
-			Me.Question26CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question26", True))
-			Me.Question27CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question27", True))
-			Me.Question28CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question28", True))
-			Me.Question29CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question29", True))
-			Me.Question3CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question3", True))
-			Me.Question30CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question30", True))
-			Me.Question31CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question31", True))
-			Me.Question32CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question32", True))
-			Me.Question33CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question33", True))
-			Me.Question34CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question34", True))
-			Me.Question35CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question35", True))
-			Me.Question36CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question36", True))
-			Me.Question37CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question37", True))
-			Me.Question38CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question38", True))
-			Me.Question39CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question39", True))
-			Me.Question4CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question4", True))
-			Me.Question40CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question40", True))
-			Me.Question41CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question41", True))
-			Me.Question42CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question42", True))
-			Me.Question43CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question43", True))
-			Me.Question44CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question44", True))
-			Me.Question45CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question45", True))
-			Me.Question46CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question46", True))
-			Me.Question47CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question47", True))
-			Me.Question48CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question48", True))
-			Me.Question49CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question49", True))
-			Me.Question5CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question5", True))
-			Me.Question50CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question50", True))
-			Me.Question6CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question6", True))
-			Me.Question7CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question7", True))
-			Me.Question8CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question8", True))
-			Me.Question9CheckBox.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Me.survey_resultsBindingSource, "Question9", True))
+			Me.Question1TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question1", True))
+			Me.Question10TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question10", True))
+			Me.Question11TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question11", True))
+			Me.Question12TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question12", True))
+			Me.Question13TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question13", True))
+			Me.Question14TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question14", True))
+			Me.Question15TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question15", True))
+			Me.Question16TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question16", True))
+			Me.Question17TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question17", True))
+			Me.Question18TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question18", True))
+			Me.Question19TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question19", True))
+			Me.Question2TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question2", True))
+			Me.Question20TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question20", True))
+			Me.Question21TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question21", True))
+			Me.Question22TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question22", True))
+			Me.Question23TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question23", True))
+			Me.Question24TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question24", True))
+			Me.Question25TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question25", True))
+			Me.Question26TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question26", True))
+			Me.Question27TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question27", True))
+			Me.Question28TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question28", True))
+			Me.Question29TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question29", True))
+			Me.Question3TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question3", True))
+			Me.Question30TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question30", True))
+			Me.Question31TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question31", True))
+			Me.Question32TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question32", True))
+			Me.Question33TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question33", True))
+			Me.Question34TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question34", True))
+			Me.Question35TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question35", True))
+			Me.Question36TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question36", True))
+			Me.Question37TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question37", True))
+			Me.Question38TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question38", True))
+			Me.Question39TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question39", True))
+			Me.Question4TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question4", True))
+			Me.Question40TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question40", True))
+			Me.Question41TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question41", True))
+			Me.Question42TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question42", True))
+			Me.Question43TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question43", True))
+			Me.Question44TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question44", True))
+			Me.Question45TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question45", True))
+			Me.Question46TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question46", True))
+			Me.Question47TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question47", True))
+			Me.Question48TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question48", True))
+			Me.Question49TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question49", True))
+			Me.Question5TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question5", True))
+			Me.Question50TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question50", True))
+			Me.Question6TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question6", True))
+			Me.Question7TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question7", True))
+			Me.Question8TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question8", True))
+			Me.Question9TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question9", True))
 			Me.QuestionNum1TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "QuestionNum1", True ))
 			Me.QuestionNum2TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "QuestionNum2", True ))
 			Me.QuestionNum3TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "QuestionNum3", True ))
@@ -202,8 +202,39 @@ Namespace DatabaseTestApplication2
 			survey_resultsBindingSource.AddNew()
 		End Sub
 
-		Private Sub Question1CheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles Question1CheckBox.CheckedChanged
+		Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
+		End Sub
+
+
+
+		Private Sub MainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MainMenuToolStripMenuItem.Click
+			Me.Close()
+		End Sub
+
+		Private Sub GeneralToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GeneralToolStripMenuItem.Click
+			DatabaseTestApplication2.frmgeneral.Show()
+			Me.Close()
+		End Sub
+
+		Private Sub RepairsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RepairsToolStripMenuItem.Click
+			DatabaseTestApplication2.frmrepairs.Show()
+			Me.Close()
+		End Sub
+
+		Private Sub TrackingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TrackingToolStripMenuItem.Click
+			DatabaseTestApplication2.frmtracking.Show()
+			Me.Close()
+		End Sub
+
+		Private Sub SurveyEditorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SurveyEditorToolStripMenuItem.Click
+			DatabaseTestApplication2.frmsurvey.Show()
+			Me.Close()
+		End Sub
+
+		Private Sub HomeownershipToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeownershipToolStripMenuItem.Click
+			DatabaseTestApplication2.frmhomeownership.Show()
+			Me.Close()
 		End Sub
 	End Class
 

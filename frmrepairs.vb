@@ -373,6 +373,35 @@ Namespace DatabaseTestApplication2
 		Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
 		End Sub
+
+		Private Sub MainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MainMenuToolStripMenuItem.Click
+			Me.Close()
+		End Sub
+
+		Private Sub GeneralToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GeneralToolStripMenuItem.Click
+			DatabaseTestApplication2.frmgeneral.Show()
+			Me.Close()
+		End Sub
+
+		Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles HomeownershipToolStripMenuItem.Click
+			DatabaseTestApplication2.frmhomeownership.Show()
+			Me.Close()
+		End Sub
+
+		Private Sub TrackingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TrackingToolStripMenuItem.Click
+			DatabaseTestApplication2.frmtracking.Show()
+			Me.Close()
+		End Sub
+
+		Private Sub SurveyEditorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SurveyEditorToolStripMenuItem.Click
+			DatabaseTestApplication2.frmsurvey.Show()
+			Me.Close()
+		End Sub
+
+		Private Sub SurveyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SurveyToolStripMenuItem.Click
+			DatabaseTestApplication2.frmsurvey_results.Show()
+			Me.Close()
+		End Sub
 	End Class
 
 End Namespace

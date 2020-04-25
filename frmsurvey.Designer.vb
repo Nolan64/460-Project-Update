@@ -445,7 +445,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Location = New System.Drawing.Point(10, 0)
             Me.Panel1.Margin = New System.Windows.Forms.Padding(10, 3, 10, 3)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(822, 572)
+            Me.Panel1.Size = New System.Drawing.Size(822, 756)
             Me.Panel1.TabIndex = 1
             '
             'frmsurveyTitle
@@ -472,6 +472,7 @@ Namespace DatabaseTestApplication2
             'NotesLabel
             '
             Me.NotesLabel.AutoSize = True
+            Me.NotesLabel.ForeColor = System.Drawing.SystemColors.Control
             Me.NotesLabel.Location = New System.Drawing.Point(632, 437)
             Me.NotesLabel.Name = "NotesLabel"
             Me.NotesLabel.Size = New System.Drawing.Size(35, 13)
@@ -488,6 +489,7 @@ Namespace DatabaseTestApplication2
             'Question1Label
             '
             Me.Question1Label.AutoSize = True
+            Me.Question1Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question1Label.Location = New System.Drawing.Point(62, 99)
             Me.Question1Label.Name = "Question1Label"
             Me.Question1Label.Size = New System.Drawing.Size(58, 13)
@@ -504,6 +506,7 @@ Namespace DatabaseTestApplication2
             'Question10Label
             '
             Me.Question10Label.AutoSize = True
+            Me.Question10Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question10Label.Location = New System.Drawing.Point(62, 331)
             Me.Question10Label.Name = "Question10Label"
             Me.Question10Label.Size = New System.Drawing.Size(64, 13)
@@ -520,6 +523,7 @@ Namespace DatabaseTestApplication2
             'Question11Label
             '
             Me.Question11Label.AutoSize = True
+            Me.Question11Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question11Label.Location = New System.Drawing.Point(62, 359)
             Me.Question11Label.Name = "Question11Label"
             Me.Question11Label.Size = New System.Drawing.Size(64, 13)
@@ -536,6 +540,7 @@ Namespace DatabaseTestApplication2
             'Question12Label
             '
             Me.Question12Label.AutoSize = True
+            Me.Question12Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question12Label.Location = New System.Drawing.Point(62, 385)
             Me.Question12Label.Name = "Question12Label"
             Me.Question12Label.Size = New System.Drawing.Size(64, 13)
@@ -552,6 +557,7 @@ Namespace DatabaseTestApplication2
             'Question13Label
             '
             Me.Question13Label.AutoSize = True
+            Me.Question13Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question13Label.Location = New System.Drawing.Point(62, 411)
             Me.Question13Label.Name = "Question13Label"
             Me.Question13Label.Size = New System.Drawing.Size(64, 13)
@@ -568,6 +574,7 @@ Namespace DatabaseTestApplication2
             'Question14Label
             '
             Me.Question14Label.AutoSize = True
+            Me.Question14Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question14Label.Location = New System.Drawing.Point(62, 437)
             Me.Question14Label.Name = "Question14Label"
             Me.Question14Label.Size = New System.Drawing.Size(64, 13)
@@ -584,6 +591,7 @@ Namespace DatabaseTestApplication2
             'Question15Label
             '
             Me.Question15Label.AutoSize = True
+            Me.Question15Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question15Label.Location = New System.Drawing.Point(62, 463)
             Me.Question15Label.Name = "Question15Label"
             Me.Question15Label.Size = New System.Drawing.Size(64, 13)
@@ -600,6 +608,7 @@ Namespace DatabaseTestApplication2
             'Question16Label
             '
             Me.Question16Label.AutoSize = True
+            Me.Question16Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question16Label.Location = New System.Drawing.Point(62, 489)
             Me.Question16Label.Name = "Question16Label"
             Me.Question16Label.Size = New System.Drawing.Size(64, 13)
@@ -616,6 +625,7 @@ Namespace DatabaseTestApplication2
             'Question17Label
             '
             Me.Question17Label.AutoSize = True
+            Me.Question17Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question17Label.Location = New System.Drawing.Point(62, 515)
             Me.Question17Label.Name = "Question17Label"
             Me.Question17Label.Size = New System.Drawing.Size(64, 13)
@@ -632,6 +642,7 @@ Namespace DatabaseTestApplication2
             'Question18Label
             '
             Me.Question18Label.AutoSize = True
+            Me.Question18Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question18Label.Location = New System.Drawing.Point(62, 541)
             Me.Question18Label.Name = "Question18Label"
             Me.Question18Label.Size = New System.Drawing.Size(64, 13)
@@ -648,6 +659,7 @@ Namespace DatabaseTestApplication2
             'Question19Label
             '
             Me.Question19Label.AutoSize = True
+            Me.Question19Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question19Label.Location = New System.Drawing.Point(62, 567)
             Me.Question19Label.Name = "Question19Label"
             Me.Question19Label.Size = New System.Drawing.Size(64, 13)
@@ -664,6 +676,7 @@ Namespace DatabaseTestApplication2
             'Question2Label
             '
             Me.Question2Label.AutoSize = True
+            Me.Question2Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question2Label.Location = New System.Drawing.Point(62, 125)
             Me.Question2Label.Name = "Question2Label"
             Me.Question2Label.Size = New System.Drawing.Size(58, 13)
@@ -680,6 +693,7 @@ Namespace DatabaseTestApplication2
             'Question20Label
             '
             Me.Question20Label.AutoSize = True
+            Me.Question20Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question20Label.Location = New System.Drawing.Point(62, 593)
             Me.Question20Label.Name = "Question20Label"
             Me.Question20Label.Size = New System.Drawing.Size(64, 13)
@@ -696,6 +710,7 @@ Namespace DatabaseTestApplication2
             'Question21Label
             '
             Me.Question21Label.AutoSize = True
+            Me.Question21Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question21Label.Location = New System.Drawing.Point(62, 616)
             Me.Question21Label.Name = "Question21Label"
             Me.Question21Label.Size = New System.Drawing.Size(64, 13)
@@ -712,6 +727,7 @@ Namespace DatabaseTestApplication2
             'Question22Label
             '
             Me.Question22Label.AutoSize = True
+            Me.Question22Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question22Label.Location = New System.Drawing.Point(62, 645)
             Me.Question22Label.Name = "Question22Label"
             Me.Question22Label.Size = New System.Drawing.Size(64, 13)
@@ -728,6 +744,7 @@ Namespace DatabaseTestApplication2
             'Question23Label
             '
             Me.Question23Label.AutoSize = True
+            Me.Question23Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question23Label.Location = New System.Drawing.Point(62, 671)
             Me.Question23Label.Name = "Question23Label"
             Me.Question23Label.Size = New System.Drawing.Size(64, 13)
@@ -744,6 +761,7 @@ Namespace DatabaseTestApplication2
             'Question24Label
             '
             Me.Question24Label.AutoSize = True
+            Me.Question24Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question24Label.Location = New System.Drawing.Point(62, 697)
             Me.Question24Label.Name = "Question24Label"
             Me.Question24Label.Size = New System.Drawing.Size(64, 13)
@@ -760,6 +778,7 @@ Namespace DatabaseTestApplication2
             'Question25Label
             '
             Me.Question25Label.AutoSize = True
+            Me.Question25Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question25Label.Location = New System.Drawing.Point(62, 723)
             Me.Question25Label.Name = "Question25Label"
             Me.Question25Label.Size = New System.Drawing.Size(64, 13)
@@ -776,6 +795,7 @@ Namespace DatabaseTestApplication2
             'Question26Label
             '
             Me.Question26Label.AutoSize = True
+            Me.Question26Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question26Label.Location = New System.Drawing.Point(365, 99)
             Me.Question26Label.Name = "Question26Label"
             Me.Question26Label.Size = New System.Drawing.Size(64, 13)
@@ -792,6 +812,7 @@ Namespace DatabaseTestApplication2
             'Question27Label
             '
             Me.Question27Label.AutoSize = True
+            Me.Question27Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question27Label.Location = New System.Drawing.Point(365, 125)
             Me.Question27Label.Name = "Question27Label"
             Me.Question27Label.Size = New System.Drawing.Size(64, 13)
@@ -808,6 +829,7 @@ Namespace DatabaseTestApplication2
             'Question28Label
             '
             Me.Question28Label.AutoSize = True
+            Me.Question28Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question28Label.Location = New System.Drawing.Point(365, 151)
             Me.Question28Label.Name = "Question28Label"
             Me.Question28Label.Size = New System.Drawing.Size(64, 13)
@@ -824,6 +846,7 @@ Namespace DatabaseTestApplication2
             'Question29Label
             '
             Me.Question29Label.AutoSize = True
+            Me.Question29Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question29Label.Location = New System.Drawing.Point(365, 177)
             Me.Question29Label.Name = "Question29Label"
             Me.Question29Label.Size = New System.Drawing.Size(64, 13)
@@ -840,6 +863,7 @@ Namespace DatabaseTestApplication2
             'Question3Label
             '
             Me.Question3Label.AutoSize = True
+            Me.Question3Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question3Label.Location = New System.Drawing.Point(62, 151)
             Me.Question3Label.Name = "Question3Label"
             Me.Question3Label.Size = New System.Drawing.Size(58, 13)
@@ -856,6 +880,7 @@ Namespace DatabaseTestApplication2
             'Question30Label
             '
             Me.Question30Label.AutoSize = True
+            Me.Question30Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question30Label.Location = New System.Drawing.Point(365, 203)
             Me.Question30Label.Name = "Question30Label"
             Me.Question30Label.Size = New System.Drawing.Size(64, 13)
@@ -872,6 +897,7 @@ Namespace DatabaseTestApplication2
             'Question31Label
             '
             Me.Question31Label.AutoSize = True
+            Me.Question31Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question31Label.Location = New System.Drawing.Point(365, 229)
             Me.Question31Label.Name = "Question31Label"
             Me.Question31Label.Size = New System.Drawing.Size(64, 13)
@@ -888,6 +914,7 @@ Namespace DatabaseTestApplication2
             'Question32Label
             '
             Me.Question32Label.AutoSize = True
+            Me.Question32Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question32Label.Location = New System.Drawing.Point(365, 255)
             Me.Question32Label.Name = "Question32Label"
             Me.Question32Label.Size = New System.Drawing.Size(64, 13)
@@ -904,6 +931,7 @@ Namespace DatabaseTestApplication2
             'Question33Label
             '
             Me.Question33Label.AutoSize = True
+            Me.Question33Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question33Label.Location = New System.Drawing.Point(365, 281)
             Me.Question33Label.Name = "Question33Label"
             Me.Question33Label.Size = New System.Drawing.Size(64, 13)
@@ -920,6 +948,7 @@ Namespace DatabaseTestApplication2
             'Question34Label
             '
             Me.Question34Label.AutoSize = True
+            Me.Question34Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question34Label.Location = New System.Drawing.Point(365, 307)
             Me.Question34Label.Name = "Question34Label"
             Me.Question34Label.Size = New System.Drawing.Size(64, 13)
@@ -936,6 +965,7 @@ Namespace DatabaseTestApplication2
             'Question35Label
             '
             Me.Question35Label.AutoSize = True
+            Me.Question35Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question35Label.Location = New System.Drawing.Point(365, 331)
             Me.Question35Label.Name = "Question35Label"
             Me.Question35Label.Size = New System.Drawing.Size(64, 13)
@@ -952,6 +982,7 @@ Namespace DatabaseTestApplication2
             'Question36Label
             '
             Me.Question36Label.AutoSize = True
+            Me.Question36Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question36Label.Location = New System.Drawing.Point(365, 359)
             Me.Question36Label.Name = "Question36Label"
             Me.Question36Label.Size = New System.Drawing.Size(64, 13)
@@ -968,6 +999,7 @@ Namespace DatabaseTestApplication2
             'Question37Label
             '
             Me.Question37Label.AutoSize = True
+            Me.Question37Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question37Label.Location = New System.Drawing.Point(365, 385)
             Me.Question37Label.Name = "Question37Label"
             Me.Question37Label.Size = New System.Drawing.Size(64, 13)
@@ -984,6 +1016,7 @@ Namespace DatabaseTestApplication2
             'Question38Label
             '
             Me.Question38Label.AutoSize = True
+            Me.Question38Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question38Label.Location = New System.Drawing.Point(365, 411)
             Me.Question38Label.Name = "Question38Label"
             Me.Question38Label.Size = New System.Drawing.Size(64, 13)
@@ -1000,6 +1033,7 @@ Namespace DatabaseTestApplication2
             'Question39Label
             '
             Me.Question39Label.AutoSize = True
+            Me.Question39Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question39Label.Location = New System.Drawing.Point(365, 437)
             Me.Question39Label.Name = "Question39Label"
             Me.Question39Label.Size = New System.Drawing.Size(64, 13)
@@ -1016,6 +1050,7 @@ Namespace DatabaseTestApplication2
             'Question4Label
             '
             Me.Question4Label.AutoSize = True
+            Me.Question4Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question4Label.Location = New System.Drawing.Point(62, 177)
             Me.Question4Label.Name = "Question4Label"
             Me.Question4Label.Size = New System.Drawing.Size(58, 13)
@@ -1032,6 +1067,7 @@ Namespace DatabaseTestApplication2
             'Question40Label
             '
             Me.Question40Label.AutoSize = True
+            Me.Question40Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question40Label.Location = New System.Drawing.Point(365, 463)
             Me.Question40Label.Name = "Question40Label"
             Me.Question40Label.Size = New System.Drawing.Size(64, 13)
@@ -1048,6 +1084,7 @@ Namespace DatabaseTestApplication2
             'Question41Label
             '
             Me.Question41Label.AutoSize = True
+            Me.Question41Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question41Label.Location = New System.Drawing.Point(365, 489)
             Me.Question41Label.Name = "Question41Label"
             Me.Question41Label.Size = New System.Drawing.Size(64, 13)
@@ -1064,6 +1101,7 @@ Namespace DatabaseTestApplication2
             'Question42Label
             '
             Me.Question42Label.AutoSize = True
+            Me.Question42Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question42Label.Location = New System.Drawing.Point(365, 515)
             Me.Question42Label.Name = "Question42Label"
             Me.Question42Label.Size = New System.Drawing.Size(64, 13)
@@ -1080,6 +1118,7 @@ Namespace DatabaseTestApplication2
             'Question43Label
             '
             Me.Question43Label.AutoSize = True
+            Me.Question43Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question43Label.Location = New System.Drawing.Point(365, 541)
             Me.Question43Label.Name = "Question43Label"
             Me.Question43Label.Size = New System.Drawing.Size(64, 13)
@@ -1096,6 +1135,7 @@ Namespace DatabaseTestApplication2
             'Question44Label
             '
             Me.Question44Label.AutoSize = True
+            Me.Question44Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question44Label.Location = New System.Drawing.Point(365, 567)
             Me.Question44Label.Name = "Question44Label"
             Me.Question44Label.Size = New System.Drawing.Size(64, 13)
@@ -1112,6 +1152,7 @@ Namespace DatabaseTestApplication2
             'Question45Label
             '
             Me.Question45Label.AutoSize = True
+            Me.Question45Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question45Label.Location = New System.Drawing.Point(365, 593)
             Me.Question45Label.Name = "Question45Label"
             Me.Question45Label.Size = New System.Drawing.Size(64, 13)
@@ -1128,6 +1169,7 @@ Namespace DatabaseTestApplication2
             'Question46Label
             '
             Me.Question46Label.AutoSize = True
+            Me.Question46Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question46Label.Location = New System.Drawing.Point(365, 619)
             Me.Question46Label.Name = "Question46Label"
             Me.Question46Label.Size = New System.Drawing.Size(64, 13)
@@ -1144,6 +1186,7 @@ Namespace DatabaseTestApplication2
             'Question47Label
             '
             Me.Question47Label.AutoSize = True
+            Me.Question47Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question47Label.Location = New System.Drawing.Point(365, 645)
             Me.Question47Label.Name = "Question47Label"
             Me.Question47Label.Size = New System.Drawing.Size(64, 13)
@@ -1160,6 +1203,7 @@ Namespace DatabaseTestApplication2
             'Question48Label
             '
             Me.Question48Label.AutoSize = True
+            Me.Question48Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question48Label.Location = New System.Drawing.Point(365, 671)
             Me.Question48Label.Name = "Question48Label"
             Me.Question48Label.Size = New System.Drawing.Size(64, 13)
@@ -1176,6 +1220,7 @@ Namespace DatabaseTestApplication2
             'Question49Label
             '
             Me.Question49Label.AutoSize = True
+            Me.Question49Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question49Label.Location = New System.Drawing.Point(365, 697)
             Me.Question49Label.Name = "Question49Label"
             Me.Question49Label.Size = New System.Drawing.Size(64, 13)
@@ -1192,6 +1237,7 @@ Namespace DatabaseTestApplication2
             'Question5Label
             '
             Me.Question5Label.AutoSize = True
+            Me.Question5Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question5Label.Location = New System.Drawing.Point(62, 203)
             Me.Question5Label.Name = "Question5Label"
             Me.Question5Label.Size = New System.Drawing.Size(58, 13)
@@ -1208,6 +1254,7 @@ Namespace DatabaseTestApplication2
             'Question50Label
             '
             Me.Question50Label.AutoSize = True
+            Me.Question50Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question50Label.Location = New System.Drawing.Point(365, 723)
             Me.Question50Label.Name = "Question50Label"
             Me.Question50Label.Size = New System.Drawing.Size(64, 13)
@@ -1224,6 +1271,7 @@ Namespace DatabaseTestApplication2
             'Question6Label
             '
             Me.Question6Label.AutoSize = True
+            Me.Question6Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question6Label.Location = New System.Drawing.Point(62, 229)
             Me.Question6Label.Name = "Question6Label"
             Me.Question6Label.Size = New System.Drawing.Size(58, 13)
@@ -1240,6 +1288,7 @@ Namespace DatabaseTestApplication2
             'Question7Label
             '
             Me.Question7Label.AutoSize = True
+            Me.Question7Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question7Label.Location = New System.Drawing.Point(62, 255)
             Me.Question7Label.Name = "Question7Label"
             Me.Question7Label.Size = New System.Drawing.Size(58, 13)
@@ -1256,6 +1305,7 @@ Namespace DatabaseTestApplication2
             'Question8Label
             '
             Me.Question8Label.AutoSize = True
+            Me.Question8Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question8Label.Location = New System.Drawing.Point(62, 281)
             Me.Question8Label.Name = "Question8Label"
             Me.Question8Label.Size = New System.Drawing.Size(58, 13)
@@ -1272,6 +1322,7 @@ Namespace DatabaseTestApplication2
             'Question9Label
             '
             Me.Question9Label.AutoSize = True
+            Me.Question9Label.ForeColor = System.Drawing.SystemColors.Control
             Me.Question9Label.Location = New System.Drawing.Point(62, 307)
             Me.Question9Label.Name = "Question9Label"
             Me.Question9Label.Size = New System.Drawing.Size(58, 13)
@@ -1288,6 +1339,7 @@ Namespace DatabaseTestApplication2
             'QuestionFileLabel
             '
             Me.QuestionFileLabel.AutoSize = True
+            Me.QuestionFileLabel.ForeColor = System.Drawing.SystemColors.Control
             Me.QuestionFileLabel.Location = New System.Drawing.Point(599, 203)
             Me.QuestionFileLabel.Name = "QuestionFileLabel"
             Me.QuestionFileLabel.Size = New System.Drawing.Size(68, 13)
@@ -1304,6 +1356,7 @@ Namespace DatabaseTestApplication2
             'QuestionNum1Label
             '
             Me.QuestionNum1Label.AutoSize = True
+            Me.QuestionNum1Label.ForeColor = System.Drawing.SystemColors.Control
             Me.QuestionNum1Label.Location = New System.Drawing.Point(587, 255)
             Me.QuestionNum1Label.Name = "QuestionNum1Label"
             Me.QuestionNum1Label.Size = New System.Drawing.Size(80, 13)
@@ -1320,6 +1373,7 @@ Namespace DatabaseTestApplication2
             'QuestionNum2Label
             '
             Me.QuestionNum2Label.AutoSize = True
+            Me.QuestionNum2Label.ForeColor = System.Drawing.SystemColors.Control
             Me.QuestionNum2Label.Location = New System.Drawing.Point(587, 281)
             Me.QuestionNum2Label.Name = "QuestionNum2Label"
             Me.QuestionNum2Label.Size = New System.Drawing.Size(80, 13)
@@ -1336,6 +1390,7 @@ Namespace DatabaseTestApplication2
             'QuestionNum3Label
             '
             Me.QuestionNum3Label.AutoSize = True
+            Me.QuestionNum3Label.ForeColor = System.Drawing.SystemColors.Control
             Me.QuestionNum3Label.Location = New System.Drawing.Point(587, 307)
             Me.QuestionNum3Label.Name = "QuestionNum3Label"
             Me.QuestionNum3Label.Size = New System.Drawing.Size(80, 13)
@@ -1352,6 +1407,7 @@ Namespace DatabaseTestApplication2
             'QuestionNum4Label
             '
             Me.QuestionNum4Label.AutoSize = True
+            Me.QuestionNum4Label.ForeColor = System.Drawing.SystemColors.Control
             Me.QuestionNum4Label.Location = New System.Drawing.Point(587, 333)
             Me.QuestionNum4Label.Name = "QuestionNum4Label"
             Me.QuestionNum4Label.Size = New System.Drawing.Size(80, 13)
@@ -1368,6 +1424,7 @@ Namespace DatabaseTestApplication2
             'QuestionNum5Label
             '
             Me.QuestionNum5Label.AutoSize = True
+            Me.QuestionNum5Label.ForeColor = System.Drawing.SystemColors.Control
             Me.QuestionNum5Label.Location = New System.Drawing.Point(587, 359)
             Me.QuestionNum5Label.Name = "QuestionNum5Label"
             Me.QuestionNum5Label.Size = New System.Drawing.Size(80, 13)
@@ -1384,6 +1441,7 @@ Namespace DatabaseTestApplication2
             'SurveyIDLabel
             '
             Me.SurveyIDLabel.AutoSize = True
+            Me.SurveyIDLabel.ForeColor = System.Drawing.SystemColors.Control
             Me.SurveyIDLabel.Location = New System.Drawing.Point(616, 151)
             Me.SurveyIDLabel.Name = "SurveyIDLabel"
             Me.SurveyIDLabel.Size = New System.Drawing.Size(51, 13)
@@ -1400,6 +1458,7 @@ Namespace DatabaseTestApplication2
             'SurveyNameLabel
             '
             Me.SurveyNameLabel.AutoSize = True
+            Me.SurveyNameLabel.ForeColor = System.Drawing.SystemColors.Control
             Me.SurveyNameLabel.Location = New System.Drawing.Point(596, 177)
             Me.SurveyNameLabel.Name = "SurveyNameLabel"
             Me.SurveyNameLabel.Size = New System.Drawing.Size(71, 13)
@@ -1418,7 +1477,7 @@ Namespace DatabaseTestApplication2
             Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.GeneralToolStripMenuItem, Me.HomeownershipToolStripMenuItem, Me.RepairsToolStripMenuItem, Me.TrackingToolStripMenuItem, Me.SurveyEditorToolStripMenuItem, Me.SurveyToolStripMenuItem})
             Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
             Me.MenuStrip1.Name = "MenuStrip1"
-            Me.MenuStrip1.Size = New System.Drawing.Size(805, 24)
+            Me.MenuStrip1.Size = New System.Drawing.Size(822, 24)
             Me.MenuStrip1.TabIndex = 121
             Me.MenuStrip1.Text = "MenuStrip1"
             '
@@ -1474,7 +1533,7 @@ Namespace DatabaseTestApplication2
             Me.panel3.Dock = System.Windows.Forms.DockStyle.Fill
             Me.panel3.Location = New System.Drawing.Point(0, 27)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(842, 582)
+            Me.panel3.Size = New System.Drawing.Size(842, 766)
             Me.panel3.TabIndex = 19
             '
             'panel4
@@ -1482,7 +1541,7 @@ Namespace DatabaseTestApplication2
             Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
             Me.panel4.Location = New System.Drawing.Point(832, 0)
             Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(10, 572)
+            Me.panel4.Size = New System.Drawing.Size(10, 756)
             Me.panel4.TabIndex = 3
             '
             'panel5
@@ -1490,13 +1549,13 @@ Namespace DatabaseTestApplication2
             Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
             Me.panel5.Location = New System.Drawing.Point(0, 0)
             Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(10, 572)
+            Me.panel5.Size = New System.Drawing.Size(10, 756)
             Me.panel5.TabIndex = 5
             '
             'panel6
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 572)
+            Me.panel6.Location = New System.Drawing.Point(0, 756)
             Me.panel6.Name = "panel6"
             Me.panel6.Size = New System.Drawing.Size(842, 10)
             Me.panel6.TabIndex = 6
@@ -1505,7 +1564,7 @@ Namespace DatabaseTestApplication2
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            Me.ClientSize = New System.Drawing.Size(842, 609)
+            Me.ClientSize = New System.Drawing.Size(842, 793)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
             Me.MainMenuStrip = Me.MenuStrip1

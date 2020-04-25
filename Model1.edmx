@@ -30,15 +30,13 @@
           <Property Name="coapplicantName" Type="varchar" MaxLength="255" />
           <Property Name="dependentName" Type="varchar" MaxLength="255" />
         </EntityType>
-        <EntityType Name="general_has_survey_results">
+        <EntityType Name="general_has_survey">
           <Key>
             <PropertyRef Name="general_UID" />
-            <PropertyRef Name="survey_results_survey_SurveyID" />
-            <PropertyRef Name="survey_results_survey_resultsID" />
+            <PropertyRef Name="survey_SurveyID" />
           </Key>
           <Property Name="general_UID" Type="int" Nullable="false" />
-          <Property Name="survey_results_survey_SurveyID" Type="int" Nullable="false" />
-          <Property Name="survey_results_survey_resultsID" Type="int" Nullable="false" />
+          <Property Name="survey_SurveyID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="homeownership">
           <Key>
@@ -152,7 +150,6 @@
         <EntityType Name="survey_results">
           <Key>
             <PropertyRef Name="survey_SurveyID" />
-            <PropertyRef Name="survey_resultsID" />
           </Key>
           <Property Name="Question1" Type="bool" />
           <Property Name="Question2" Type="bool" />
@@ -210,7 +207,6 @@
           <Property Name="QuestionNum4" Type="decimal" Precision="2" Scale="0" />
           <Property Name="QuestionNum5" Type="decimal" Precision="2" Scale="0" />
           <Property Name="survey_SurveyID" Type="int" Nullable="false" />
-          <Property Name="survey_resultsID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="tracking">
           <Key>
@@ -290,8 +286,6 @@ warning 6002: The table/view 'def.mydb.all_table_vw' does not have a primary key
           <Property Name="race" Type="varchar" MaxLength="45" />
           <Property Name="maritalStatus" Type="tinyint" />
           <Property Name="notes" Type="mediumtext" />
-          <Property Name="coapplicantName" Type="varchar" MaxLength="255" />
-          <Property Name="dependentName" Type="varchar" MaxLength="255" />
           <Property Name="applicantInfoMeeting" Type="date" />
           <Property Name="applicationChecklist1" Type="date" />
           <Property Name="applicationChecklist2" Type="date" />
@@ -366,29 +360,27 @@ warning 6002: The table/view 'def.mydb.all_table_vw' does not have a primary key
           <Property Name="mortgage6OriginalBalance" Type="double" />
           <Property Name="mortgage6NumberOfYears" Type="int" />
         </EntityType>
-        <Association Name="fk_general_has_survey_results_general1">
+        <Association Name="fk_general_has_survey_general1">
           <End Role="general" Type="Self.general" Multiplicity="1" />
-          <End Role="general_has_survey_results" Type="Self.general_has_survey_results" Multiplicity="*" />
+          <End Role="general_has_survey" Type="Self.general_has_survey" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="general">
               <PropertyRef Name="UID" />
             </Principal>
-            <Dependent Role="general_has_survey_results">
+            <Dependent Role="general_has_survey">
               <PropertyRef Name="general_UID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_general_has_survey_results_survey_results1">
-          <End Role="survey_results" Type="Self.survey_results" Multiplicity="1" />
-          <End Role="general_has_survey_results" Type="Self.general_has_survey_results" Multiplicity="*" />
+        <Association Name="fk_general_has_survey_survey1">
+          <End Role="survey" Type="Self.survey" Multiplicity="1" />
+          <End Role="general_has_survey" Type="Self.general_has_survey" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="survey_results">
-              <PropertyRef Name="survey_SurveyID" />
-              <PropertyRef Name="survey_resultsID" />
+            <Principal Role="survey">
+              <PropertyRef Name="SurveyID" />
             </Principal>
-            <Dependent Role="general_has_survey_results">
-              <PropertyRef Name="survey_results_survey_SurveyID" />
-              <PropertyRef Name="survey_results_survey_resultsID" />
+            <Dependent Role="general_has_survey">
+              <PropertyRef Name="survey_SurveyID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -418,7 +410,7 @@ warning 6002: The table/view 'def.mydb.all_table_vw' does not have a primary key
         </Association>
         <Association Name="fk_survey_results_survey1">
           <End Role="survey" Type="Self.survey" Multiplicity="1" />
-          <End Role="survey_results" Type="Self.survey_results" Multiplicity="*" />
+          <End Role="survey_results" Type="Self.survey_results" Multiplicity="0..1" />
           <ReferentialConstraint>
             <Principal Role="survey">
               <PropertyRef Name="SurveyID" />
@@ -442,7 +434,7 @@ warning 6002: The table/view 'def.mydb.all_table_vw' does not have a primary key
         </Association>
         <EntityContainer Name="mydbModelStoreContainer">
           <EntitySet Name="general" EntityType="Self.general" Schema="mydb" store:Type="Tables" />
-          <EntitySet Name="general_has_survey_results" EntityType="Self.general_has_survey_results" Schema="mydb" store:Type="Tables" />
+          <EntitySet Name="general_has_survey" EntityType="Self.general_has_survey" Schema="mydb" store:Type="Tables" />
           <EntitySet Name="homeownership" EntityType="Self.homeownership" Schema="mydb" store:Type="Tables" />
           <EntitySet Name="repairs" EntityType="Self.repairs" Schema="mydb" store:Type="Tables" />
           <EntitySet Name="survey" EntityType="Self.survey" Schema="mydb" store:Type="Tables" />
@@ -469,8 +461,6 @@ warning 6002: The table/view 'def.mydb.all_table_vw' does not have a primary key
 `all_table_vw`.`race`, 
 `all_table_vw`.`maritalStatus`, 
 `all_table_vw`.`notes`, 
-`all_table_vw`.`coapplicantName`, 
-`all_table_vw`.`dependentName`, 
 `all_table_vw`.`applicantInfoMeeting`, 
 `all_table_vw`.`applicationChecklist1`, 
 `all_table_vw`.`applicationChecklist2`, 
@@ -546,13 +536,13 @@ warning 6002: The table/view 'def.mydb.all_table_vw' does not have a primary key
 `all_table_vw`.`mortgage6NumberOfYears`
 FROM `all_table_vw` AS `all_table_vw`</DefiningQuery>
           </EntitySet>
-          <AssociationSet Name="fk_general_has_survey_results_general1" Association="Self.fk_general_has_survey_results_general1">
+          <AssociationSet Name="fk_general_has_survey_general1" Association="Self.fk_general_has_survey_general1">
             <End Role="general" EntitySet="general" />
-            <End Role="general_has_survey_results" EntitySet="general_has_survey_results" />
+            <End Role="general_has_survey" EntitySet="general_has_survey" />
           </AssociationSet>
-          <AssociationSet Name="fk_general_has_survey_results_survey_results1" Association="Self.fk_general_has_survey_results_survey_results1">
-            <End Role="survey_results" EntitySet="survey_results" />
-            <End Role="general_has_survey_results" EntitySet="general_has_survey_results" />
+          <AssociationSet Name="fk_general_has_survey_survey1" Association="Self.fk_general_has_survey_survey1">
+            <End Role="survey" EntitySet="survey" />
+            <End Role="general_has_survey" EntitySet="general_has_survey" />
           </AssociationSet>
           <AssociationSet Name="fk_homeownership_general1" Association="Self.fk_homeownership_general1">
             <End Role="general" EntitySet="general" />
@@ -603,7 +593,6 @@ FROM `all_table_vw` AS `all_table_vw`</DefiningQuery>
           <NavigationProperty Name="surveys" Relationship="mydbModel.general_has_survey" FromRole="general" ToRole="survey" />
           <Property Name="coapplicantName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="dependentName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="survey_results" Relationship="mydbModel.general_has_survey_results" FromRole="general" ToRole="survey_results" />
         </EntityType>
         <EntityType Name="homeownership">
           <Key>
@@ -772,10 +761,6 @@ FROM `all_table_vw` AS `all_table_vw`</DefiningQuery>
             <End Role="survey" EntitySet="surveys" />
           </AssociationSet>
           <EntitySet Name="all_table_vw" EntityType="mydbModel.all_table_vw" />
-          <AssociationSet Name="general_has_survey_results" Association="mydbModel.general_has_survey_results">
-            <End Role="general" EntitySet="generals" />
-            <End Role="survey_results" EntitySet="survey_results" />
-          </AssociationSet>
         </EntityContainer>
         <EntityType Name="survey">
           <Key>
@@ -846,7 +831,6 @@ FROM `all_table_vw` AS `all_table_vw`</DefiningQuery>
         <EntityType Name="survey_results">
           <Key>
             <PropertyRef Name="survey_SurveyID" />
-            <PropertyRef Name="survey_resultsID" />
           </Key>
           <Property Name="Question1" Type="Boolean" />
           <Property Name="Question2" Type="Boolean" />
@@ -905,8 +889,6 @@ FROM `all_table_vw` AS `all_table_vw`</DefiningQuery>
           <Property Name="QuestionNum5" Type="Decimal" />
           <Property Name="survey_SurveyID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="survey" Relationship="mydbModel.fk_survey_results_survey1" FromRole="survey_results" ToRole="survey" />
-          <Property Name="survey_resultsID" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="generals" Relationship="mydbModel.general_has_survey_results" FromRole="survey_results" ToRole="general" />
         </EntityType>
         <Association Name="fk_survey_results_survey1">
           <End Type="mydbModel.survey" Role="survey" Multiplicity="1" />
@@ -1019,13 +1001,7 @@ FROM `all_table_vw` AS `all_table_vw`</DefiningQuery>
           <Property Name="mortgage6Forgivable" Type="SByte" />
           <Property Name="mortgage6OriginalBalance" Type="Double" />
           <Property Name="mortgage6NumberOfYears" Type="Int32" />
-          <Property Name="coapplicantName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="dependentName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
         </EntityType>
-        <Association Name="general_has_survey_results">
-          <End Type="mydbModel.general" Role="general" Multiplicity="*" />
-          <End Type="mydbModel.survey_results" Role="survey_results" Multiplicity="*" />
-        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1229,7 +1205,6 @@ FROM `all_table_vw` AS `all_table_vw`</DefiningQuery>
           <EntitySetMapping Name="survey_results">
             <EntityTypeMapping TypeName="mydbModel.survey_results">
               <MappingFragment StoreEntitySet="survey_results">
-                <ScalarProperty Name="survey_resultsID" ColumnName="survey_resultsID" />
                 <ScalarProperty Name="survey_SurveyID" ColumnName="survey_SurveyID" />
                 <ScalarProperty Name="QuestionNum5" ColumnName="QuestionNum5" />
                 <ScalarProperty Name="QuestionNum4" ColumnName="QuestionNum4" />
@@ -1289,11 +1264,17 @@ FROM `all_table_vw` AS `all_table_vw`</DefiningQuery>
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <AssociationSetMapping Name="general_has_survey" TypeName="mydbModel.general_has_survey" StoreEntitySet="general_has_survey">
+            <EndProperty Name="survey">
+              <ScalarProperty Name="SurveyID" ColumnName="survey_SurveyID" />
+            </EndProperty>
+            <EndProperty Name="general">
+              <ScalarProperty Name="UID" ColumnName="general_UID" />
+            </EndProperty>
+          </AssociationSetMapping>
           <EntitySetMapping Name="all_table_vw">
             <EntityTypeMapping TypeName="mydbModel.all_table_vw">
               <MappingFragment StoreEntitySet="all_table_vw">
-                <ScalarProperty Name="dependentName" ColumnName="dependentName" />
-                <ScalarProperty Name="coapplicantName" ColumnName="coapplicantName" />
                 <ScalarProperty Name="mortgage6NumberOfYears" ColumnName="mortgage6NumberOfYears" />
                 <ScalarProperty Name="mortgage6OriginalBalance" ColumnName="mortgage6OriginalBalance" />
                 <ScalarProperty Name="mortgage6Forgivable" ColumnName="mortgage6Forgivable" />
@@ -1388,15 +1369,6 @@ FROM `all_table_vw` AS `all_table_vw`</DefiningQuery>
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <AssociationSetMapping Name="general_has_survey_results" TypeName="mydbModel.general_has_survey_results" StoreEntitySet="general_has_survey_results">
-            <EndProperty Name="survey_results">
-              <ScalarProperty Name="survey_resultsID" ColumnName="survey_results_survey_resultsID" />
-              <ScalarProperty Name="survey_SurveyID" ColumnName="survey_results_survey_SurveyID" />
-            </EndProperty>
-            <EndProperty Name="general">
-              <ScalarProperty Name="UID" ColumnName="general_UID" />
-            </EndProperty>
-          </AssociationSetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

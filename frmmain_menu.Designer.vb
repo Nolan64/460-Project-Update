@@ -47,7 +47,6 @@ Partial Class frmmain_menu
         Me.Refreshbtn = New System.Windows.Forms.Button()
         Me.Reportsbtn = New System.Windows.Forms.Button()
         Me.All_table_vwBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.All_table_vwBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,36 +56,40 @@ Partial Class frmmain_menu
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
-        Me.PictureBox1.Location = New System.Drawing.Point(10, 11)
+        Me.PictureBox1.Location = New System.Drawing.Point(13, 14)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(265, 103)
+        Me.PictureBox1.Size = New System.Drawing.Size(353, 127)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
         'addApplicant
         '
-        Me.addApplicant.Location = New System.Drawing.Point(15, 149)
+        Me.addApplicant.Location = New System.Drawing.Point(20, 183)
+        Me.addApplicant.Margin = New System.Windows.Forms.Padding(4)
         Me.addApplicant.Name = "addApplicant"
-        Me.addApplicant.Size = New System.Drawing.Size(124, 24)
+        Me.addApplicant.Size = New System.Drawing.Size(165, 30)
         Me.addApplicant.TabIndex = 2
         Me.addApplicant.Text = "Add Applicant"
         Me.addApplicant.UseVisualStyleBackColor = True
         '
         'editSurvey
         '
-        Me.editSurvey.Location = New System.Drawing.Point(15, 179)
+        Me.editSurvey.Location = New System.Drawing.Point(20, 220)
+        Me.editSurvey.Margin = New System.Windows.Forms.Padding(4)
         Me.editSurvey.Name = "editSurvey"
-        Me.editSurvey.Size = New System.Drawing.Size(124, 24)
+        Me.editSurvey.Size = New System.Drawing.Size(165, 30)
         Me.editSurvey.TabIndex = 3
         Me.editSurvey.Text = "Edit Survey"
         Me.editSurvey.UseVisualStyleBackColor = True
         '
         'tracking
         '
-        Me.tracking.Location = New System.Drawing.Point(15, 209)
+        Me.tracking.Location = New System.Drawing.Point(20, 257)
+        Me.tracking.Margin = New System.Windows.Forms.Padding(4)
         Me.tracking.Name = "tracking"
-        Me.tracking.Size = New System.Drawing.Size(124, 24)
+        Me.tracking.Size = New System.Drawing.Size(165, 30)
         Me.tracking.TabIndex = 5
         Me.tracking.Text = "Tracking"
         Me.tracking.UseVisualStyleBackColor = True
@@ -94,18 +97,20 @@ Partial Class frmmain_menu
         'repairs
         '
         Me.repairs.BackColor = System.Drawing.Color.Transparent
-        Me.repairs.Location = New System.Drawing.Point(15, 239)
+        Me.repairs.Location = New System.Drawing.Point(20, 294)
+        Me.repairs.Margin = New System.Windows.Forms.Padding(4)
         Me.repairs.Name = "repairs"
-        Me.repairs.Size = New System.Drawing.Size(124, 24)
+        Me.repairs.Size = New System.Drawing.Size(165, 30)
         Me.repairs.TabIndex = 6
         Me.repairs.Text = "Repairs"
         Me.repairs.UseVisualStyleBackColor = False
         '
         'settings
         '
-        Me.settings.Location = New System.Drawing.Point(10, 714)
+        Me.settings.Location = New System.Drawing.Point(13, 879)
+        Me.settings.Margin = New System.Windows.Forms.Padding(4)
         Me.settings.Name = "settings"
-        Me.settings.Size = New System.Drawing.Size(124, 24)
+        Me.settings.Size = New System.Drawing.Size(165, 30)
         Me.settings.TabIndex = 9
         Me.settings.Text = "Settings"
         Me.settings.UseVisualStyleBackColor = True
@@ -115,9 +120,10 @@ Partial Class frmmain_menu
         Me.userName.AutoSize = True
         Me.userName.BackColor = System.Drawing.Color.Transparent
         Me.userName.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.userName.Location = New System.Drawing.Point(10, 697)
+        Me.userName.Location = New System.Drawing.Point(13, 858)
+        Me.userName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.userName.Name = "userName"
-        Me.userName.Size = New System.Drawing.Size(62, 13)
+        Me.userName.Size = New System.Drawing.Size(79, 17)
         Me.userName.TabIndex = 10
         Me.userName.Text = "GET USER"
         '
@@ -225,21 +231,21 @@ Partial Class frmmain_menu
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AllowUserToOrderColumns = True
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(280, 11)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView1.Location = New System.Drawing.Point(373, 14)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(1138, 728)
+        Me.DataGridView1.Size = New System.Drawing.Size(1517, 896)
         Me.DataGridView1.TabIndex = 11
         '
         'Refreshbtn
         '
-        Me.Refreshbtn.Location = New System.Drawing.Point(218, 119)
-        Me.Refreshbtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Refreshbtn.Location = New System.Drawing.Point(291, 146)
+        Me.Refreshbtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Refreshbtn.Name = "Refreshbtn"
-        Me.Refreshbtn.Size = New System.Drawing.Size(56, 19)
+        Me.Refreshbtn.Size = New System.Drawing.Size(75, 23)
         Me.Refreshbtn.TabIndex = 12
         Me.Refreshbtn.Text = "Refresh"
         Me.Refreshbtn.UseVisualStyleBackColor = True
@@ -247,31 +253,22 @@ Partial Class frmmain_menu
         'Reportsbtn
         '
         Me.Reportsbtn.BackColor = System.Drawing.Color.Transparent
-        Me.Reportsbtn.Location = New System.Drawing.Point(15, 270)
+        Me.Reportsbtn.Location = New System.Drawing.Point(20, 332)
+        Me.Reportsbtn.Margin = New System.Windows.Forms.Padding(4)
         Me.Reportsbtn.Name = "Reportsbtn"
-        Me.Reportsbtn.Size = New System.Drawing.Size(124, 24)
+        Me.Reportsbtn.Size = New System.Drawing.Size(165, 30)
         Me.Reportsbtn.TabIndex = 13
         Me.Reportsbtn.Text = "Reports"
         Me.Reportsbtn.UseVisualStyleBackColor = False
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(15, 301)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(124, 23)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "Survey Results"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'frmmain_menu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1426, 839)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(1901, 1033)
         Me.Controls.Add(Me.Reportsbtn)
         Me.Controls.Add(Me.Refreshbtn)
         Me.Controls.Add(Me.DataGridView1)
@@ -283,6 +280,7 @@ Partial Class frmmain_menu
         Me.Controls.Add(Me.addApplicant)
         Me.Controls.Add(Me.PictureBox1)
         Me.DoubleBuffered = True
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmmain_menu"
         Me.Text = "MainMenu"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -316,5 +314,4 @@ Partial Class frmmain_menu
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Refreshbtn As Button
     Friend WithEvents Reportsbtn As Button
-    Friend WithEvents Button1 As Button
 End Class

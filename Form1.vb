@@ -2,7 +2,7 @@
 
 
 Public Class Form1
-    Dim connection As New MySqlConnection("datasource=localhost;port=3306;username=root;password=root;database=mydb")
+    Dim connection As New MySqlConnection("datasource=localhost;port=3306;username=root;password=kiwifruit;database=mydb")
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Dim command As New MySqlCommand("SELECT `username`, `password` FROM `user` WHERE `username` = @username AND `password` = @password", connection)

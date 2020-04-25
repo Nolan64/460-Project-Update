@@ -53,6 +53,14 @@ Namespace DatabaseTestApplication2
             Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
             Me.panel3 = New System.Windows.Forms.Panel()
             Me.Panel1 = New System.Windows.Forms.Panel()
+            Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
+            Me.MainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.GeneralToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.HomeownershipToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.RepairsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.TrackingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.SurveyEditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.SurveyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.frmtrackingTitle = New System.Windows.Forms.Label()
             Me.PictureBox1 = New System.Windows.Forms.PictureBox()
             Me.GroupBox6 = New System.Windows.Forms.GroupBox()
@@ -152,20 +160,13 @@ Namespace DatabaseTestApplication2
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
-            Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
-            Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-            Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-            Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
-            Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
-            Me.TrackingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
-            Me.SurveyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
             CType(Me.trackingBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.panel3.SuspendLayout()
             Me.Panel1.SuspendLayout()
+            Me.MenuStrip2.SuspendLayout()
             CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.GroupBox6.SuspendLayout()
             Me.Mortgage2Groupbox.SuspendLayout()
@@ -182,7 +183,6 @@ Namespace DatabaseTestApplication2
             Me.HUDHoursGroupbox.SuspendLayout()
             Me.SweatEquityGroupbox.SuspendLayout()
             CType(Me.SweatEquityNumeric, System.ComponentModel.ISupportInitialize).BeginInit()
-            Me.MenuStrip2.SuspendLayout()
             Me.SuspendLayout()
             '
             'BindingNavigator1
@@ -361,6 +361,58 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Size = New System.Drawing.Size(970, 415)
             Me.Panel1.TabIndex = 1
             '
+            'MenuStrip2
+            '
+            Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.GeneralToolStripMenuItem, Me.HomeownershipToolStripMenuItem, Me.RepairsToolStripMenuItem, Me.TrackingToolStripMenuItem, Me.SurveyEditorToolStripMenuItem, Me.SurveyToolStripMenuItem})
+            Me.MenuStrip2.Location = New System.Drawing.Point(0, 0)
+            Me.MenuStrip2.Name = "MenuStrip2"
+            Me.MenuStrip2.Size = New System.Drawing.Size(970, 24)
+            Me.MenuStrip2.TabIndex = 123
+            Me.MenuStrip2.Text = "MenuStrip2"
+            '
+            'MainMenuToolStripMenuItem
+            '
+            Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
+            Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(80, 20)
+            Me.MainMenuToolStripMenuItem.Text = "Main Menu"
+            '
+            'GeneralToolStripMenuItem
+            '
+            Me.GeneralToolStripMenuItem.Name = "GeneralToolStripMenuItem"
+            Me.GeneralToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
+            Me.GeneralToolStripMenuItem.Text = "General"
+            '
+            'HomeownershipToolStripMenuItem
+            '
+            Me.HomeownershipToolStripMenuItem.Name = "HomeownershipToolStripMenuItem"
+            Me.HomeownershipToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
+            Me.HomeownershipToolStripMenuItem.Text = "Homeownership"
+            '
+            'RepairsToolStripMenuItem
+            '
+            Me.RepairsToolStripMenuItem.Name = "RepairsToolStripMenuItem"
+            Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+            Me.RepairsToolStripMenuItem.Text = "Repairs"
+            '
+            'TrackingToolStripMenuItem
+            '
+            Me.TrackingToolStripMenuItem.Enabled = False
+            Me.TrackingToolStripMenuItem.Name = "TrackingToolStripMenuItem"
+            Me.TrackingToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
+            Me.TrackingToolStripMenuItem.Text = "Tracking"
+            '
+            'SurveyEditorToolStripMenuItem
+            '
+            Me.SurveyEditorToolStripMenuItem.Name = "SurveyEditorToolStripMenuItem"
+            Me.SurveyEditorToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
+            Me.SurveyEditorToolStripMenuItem.Text = "Survey Editor"
+            '
+            'SurveyToolStripMenuItem
+            '
+            Me.SurveyToolStripMenuItem.Name = "SurveyToolStripMenuItem"
+            Me.SurveyToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
+            Me.SurveyToolStripMenuItem.Text = "Survey Results"
+            '
             'frmtrackingTitle
             '
             Me.frmtrackingTitle.AutoSize = True
@@ -380,7 +432,7 @@ Namespace DatabaseTestApplication2
             Me.PictureBox1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
             Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
             Me.PictureBox1.Location = New System.Drawing.Point(783, 40)
-            Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
             Me.PictureBox1.Name = "PictureBox1"
             Me.PictureBox1.Size = New System.Drawing.Size(143, 54)
             Me.PictureBox1.TabIndex = 97
@@ -412,7 +464,7 @@ Namespace DatabaseTestApplication2
             Me.Mortgage6Forgivable.AutoSize = True
             Me.Mortgage6Forgivable.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.Mortgage6Forgivable.Location = New System.Drawing.Point(123, 110)
-            Me.Mortgage6Forgivable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage6Forgivable.Margin = New System.Windows.Forms.Padding(2)
             Me.Mortgage6Forgivable.Name = "Mortgage6Forgivable"
             Me.Mortgage6Forgivable.Size = New System.Drawing.Size(81, 17)
             Me.Mortgage6Forgivable.TabIndex = 97
@@ -425,7 +477,7 @@ Namespace DatabaseTestApplication2
             Me.Mortgage6Dropdown.FormattingEnabled = True
             Me.Mortgage6Dropdown.Items.AddRange(New Object() {"BB&T", "First Citizens", "USDA Rural Development", "First Bank", "Habitat"})
             Me.Mortgage6Dropdown.Location = New System.Drawing.Point(98, 39)
-            Me.Mortgage6Dropdown.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage6Dropdown.Margin = New System.Windows.Forms.Padding(2)
             Me.Mortgage6Dropdown.Name = "Mortgage6Dropdown"
             Me.Mortgage6Dropdown.Size = New System.Drawing.Size(132, 21)
             Me.Mortgage6Dropdown.TabIndex = 97
@@ -520,7 +572,7 @@ Namespace DatabaseTestApplication2
             Me.Mortgage2Forgivable.AutoSize = True
             Me.Mortgage2Forgivable.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.Mortgage2Forgivable.Location = New System.Drawing.Point(124, 110)
-            Me.Mortgage2Forgivable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage2Forgivable.Margin = New System.Windows.Forms.Padding(2)
             Me.Mortgage2Forgivable.Name = "Mortgage2Forgivable"
             Me.Mortgage2Forgivable.Size = New System.Drawing.Size(81, 17)
             Me.Mortgage2Forgivable.TabIndex = 98
@@ -533,7 +585,7 @@ Namespace DatabaseTestApplication2
             Me.Mortgage2Dropdown.FormattingEnabled = True
             Me.Mortgage2Dropdown.Items.AddRange(New Object() {"BB&T", "First Citizens", "USDA Rural Development", "First Bank", "Habitat"})
             Me.Mortgage2Dropdown.Location = New System.Drawing.Point(98, 39)
-            Me.Mortgage2Dropdown.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage2Dropdown.Margin = New System.Windows.Forms.Padding(2)
             Me.Mortgage2Dropdown.Name = "Mortgage2Dropdown"
             Me.Mortgage2Dropdown.Size = New System.Drawing.Size(132, 21)
             Me.Mortgage2Dropdown.TabIndex = 96
@@ -620,7 +672,7 @@ Namespace DatabaseTestApplication2
             Me.Mortgage5Forgivable.AutoSize = True
             Me.Mortgage5Forgivable.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.Mortgage5Forgivable.Location = New System.Drawing.Point(124, 110)
-            Me.Mortgage5Forgivable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage5Forgivable.Margin = New System.Windows.Forms.Padding(2)
             Me.Mortgage5Forgivable.Name = "Mortgage5Forgivable"
             Me.Mortgage5Forgivable.Size = New System.Drawing.Size(81, 17)
             Me.Mortgage5Forgivable.TabIndex = 98
@@ -633,7 +685,7 @@ Namespace DatabaseTestApplication2
             Me.Mortgage5Dropdown.FormattingEnabled = True
             Me.Mortgage5Dropdown.Items.AddRange(New Object() {"BB&T", "First Citizens", "USDA Rural Development", "First Bank", "Habitat"})
             Me.Mortgage5Dropdown.Location = New System.Drawing.Point(98, 39)
-            Me.Mortgage5Dropdown.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage5Dropdown.Margin = New System.Windows.Forms.Padding(2)
             Me.Mortgage5Dropdown.Name = "Mortgage5Dropdown"
             Me.Mortgage5Dropdown.Size = New System.Drawing.Size(132, 21)
             Me.Mortgage5Dropdown.TabIndex = 96
@@ -720,7 +772,7 @@ Namespace DatabaseTestApplication2
             Me.Mortgage4Forgivable.AutoSize = True
             Me.Mortgage4Forgivable.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.Mortgage4Forgivable.Location = New System.Drawing.Point(124, 108)
-            Me.Mortgage4Forgivable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage4Forgivable.Margin = New System.Windows.Forms.Padding(2)
             Me.Mortgage4Forgivable.Name = "Mortgage4Forgivable"
             Me.Mortgage4Forgivable.Size = New System.Drawing.Size(81, 17)
             Me.Mortgage4Forgivable.TabIndex = 92
@@ -749,7 +801,7 @@ Namespace DatabaseTestApplication2
             Me.Mortgage4Dropdown.FormattingEnabled = True
             Me.Mortgage4Dropdown.Items.AddRange(New Object() {"BB&T", "First Citizens", "USDA Rural Development", "First Bank", "Habitat"})
             Me.Mortgage4Dropdown.Location = New System.Drawing.Point(98, 37)
-            Me.Mortgage4Dropdown.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage4Dropdown.Margin = New System.Windows.Forms.Padding(2)
             Me.Mortgage4Dropdown.Name = "Mortgage4Dropdown"
             Me.Mortgage4Dropdown.Size = New System.Drawing.Size(132, 21)
             Me.Mortgage4Dropdown.TabIndex = 93
@@ -903,7 +955,7 @@ Namespace DatabaseTestApplication2
             Me.Mortgage1Forgivable.AutoSize = True
             Me.Mortgage1Forgivable.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.Mortgage1Forgivable.Location = New System.Drawing.Point(124, 109)
-            Me.Mortgage1Forgivable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage1Forgivable.Margin = New System.Windows.Forms.Padding(2)
             Me.Mortgage1Forgivable.Name = "Mortgage1Forgivable"
             Me.Mortgage1Forgivable.Size = New System.Drawing.Size(81, 17)
             Me.Mortgage1Forgivable.TabIndex = 97
@@ -916,7 +968,7 @@ Namespace DatabaseTestApplication2
             Me.Mortgage1Bank.FormattingEnabled = True
             Me.Mortgage1Bank.Items.AddRange(New Object() {"BB&T", "First Citizens", "USDA Rural Development", "First Bank", "Habitat"})
             Me.Mortgage1Bank.Location = New System.Drawing.Point(98, 37)
-            Me.Mortgage1Bank.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage1Bank.Margin = New System.Windows.Forms.Padding(2)
             Me.Mortgage1Bank.Name = "Mortgage1Bank"
             Me.Mortgage1Bank.Size = New System.Drawing.Size(132, 21)
             Me.Mortgage1Bank.TabIndex = 92
@@ -999,9 +1051,9 @@ Namespace DatabaseTestApplication2
             Me.Morgage3Box.Controls.Add(Me.mortgage3NumberOfYearsTextBox)
             Me.Morgage3Box.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.Morgage3Box.Location = New System.Drawing.Point(692, 98)
-            Me.Morgage3Box.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Morgage3Box.Margin = New System.Windows.Forms.Padding(2)
             Me.Morgage3Box.Name = "Morgage3Box"
-            Me.Morgage3Box.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Morgage3Box.Padding = New System.Windows.Forms.Padding(2)
             Me.Morgage3Box.Size = New System.Drawing.Size(235, 138)
             Me.Morgage3Box.TabIndex = 89
             Me.Morgage3Box.TabStop = False
@@ -1013,7 +1065,7 @@ Namespace DatabaseTestApplication2
             Me.Mortgage3Dropdown.FormattingEnabled = True
             Me.Mortgage3Dropdown.Items.AddRange(New Object() {"BB&T", "First Citizens", "USDA Rural Development", "First Bank", "Habitat"})
             Me.Mortgage3Dropdown.Location = New System.Drawing.Point(98, 42)
-            Me.Mortgage3Dropdown.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage3Dropdown.Margin = New System.Windows.Forms.Padding(2)
             Me.Mortgage3Dropdown.Name = "Mortgage3Dropdown"
             Me.Mortgage3Dropdown.Size = New System.Drawing.Size(132, 21)
             Me.Mortgage3Dropdown.TabIndex = 91
@@ -1023,7 +1075,7 @@ Namespace DatabaseTestApplication2
             Me.Mortgage3Forgivable.AutoSize = True
             Me.Mortgage3Forgivable.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.Mortgage3Forgivable.Location = New System.Drawing.Point(124, 110)
-            Me.Mortgage3Forgivable.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.Mortgage3Forgivable.Margin = New System.Windows.Forms.Padding(2)
             Me.Mortgage3Forgivable.Name = "Mortgage3Forgivable"
             Me.Mortgage3Forgivable.Size = New System.Drawing.Size(81, 17)
             Me.Mortgage3Forgivable.TabIndex = 91
@@ -1093,9 +1145,9 @@ Namespace DatabaseTestApplication2
             Me.ApplicantGroupbox.Controls.Add(Me.general_UID_comboBox)
             Me.ApplicantGroupbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.ApplicantGroupbox.Location = New System.Drawing.Point(14, 98)
-            Me.ApplicantGroupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.ApplicantGroupbox.Margin = New System.Windows.Forms.Padding(2)
             Me.ApplicantGroupbox.Name = "ApplicantGroupbox"
-            Me.ApplicantGroupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.ApplicantGroupbox.Padding = New System.Windows.Forms.Padding(2)
             Me.ApplicantGroupbox.Size = New System.Drawing.Size(192, 43)
             Me.ApplicantGroupbox.TabIndex = 88
             Me.ApplicantGroupbox.TabStop = False
@@ -1118,9 +1170,9 @@ Namespace DatabaseTestApplication2
             Me.HomebuyerEducationGroupbox.Controls.Add(Me.homebuyerEducationDate_dateTimePicker)
             Me.HomebuyerEducationGroupbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.HomebuyerEducationGroupbox.Location = New System.Drawing.Point(14, 337)
-            Me.HomebuyerEducationGroupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.HomebuyerEducationGroupbox.Margin = New System.Windows.Forms.Padding(2)
             Me.HomebuyerEducationGroupbox.Name = "HomebuyerEducationGroupbox"
-            Me.HomebuyerEducationGroupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.HomebuyerEducationGroupbox.Padding = New System.Windows.Forms.Padding(2)
             Me.HomebuyerEducationGroupbox.Size = New System.Drawing.Size(192, 43)
             Me.HomebuyerEducationGroupbox.TabIndex = 87
             Me.HomebuyerEducationGroupbox.TabStop = False
@@ -1129,7 +1181,7 @@ Namespace DatabaseTestApplication2
             'HomebuyerEducationNumeric
             '
             Me.HomebuyerEducationNumeric.Location = New System.Drawing.Point(115, 18)
-            Me.HomebuyerEducationNumeric.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.HomebuyerEducationNumeric.Margin = New System.Windows.Forms.Padding(2)
             Me.HomebuyerEducationNumeric.Name = "HomebuyerEducationNumeric"
             Me.HomebuyerEducationNumeric.Size = New System.Drawing.Size(73, 20)
             Me.HomebuyerEducationNumeric.TabIndex = 88
@@ -1151,9 +1203,9 @@ Namespace DatabaseTestApplication2
             Me.FinanceClassGroupbox.Controls.Add(Me.financeClassesDate_dateTimePicker)
             Me.FinanceClassGroupbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.FinanceClassGroupbox.Location = New System.Drawing.Point(14, 289)
-            Me.FinanceClassGroupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.FinanceClassGroupbox.Margin = New System.Windows.Forms.Padding(2)
             Me.FinanceClassGroupbox.Name = "FinanceClassGroupbox"
-            Me.FinanceClassGroupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.FinanceClassGroupbox.Padding = New System.Windows.Forms.Padding(2)
             Me.FinanceClassGroupbox.Size = New System.Drawing.Size(192, 43)
             Me.FinanceClassGroupbox.TabIndex = 86
             Me.FinanceClassGroupbox.TabStop = False
@@ -1163,7 +1215,7 @@ Namespace DatabaseTestApplication2
             '
             Me.FinanceClassesCheckbox.AutoSize = True
             Me.FinanceClassesCheckbox.Location = New System.Drawing.Point(115, 20)
-            Me.FinanceClassesCheckbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.FinanceClassesCheckbox.Margin = New System.Windows.Forms.Padding(2)
             Me.FinanceClassesCheckbox.Name = "FinanceClassesCheckbox"
             Me.FinanceClassesCheckbox.Size = New System.Drawing.Size(76, 17)
             Me.FinanceClassesCheckbox.TabIndex = 87
@@ -1195,9 +1247,9 @@ Namespace DatabaseTestApplication2
             Me.MonthlyDepositGroupbox.Controls.Add(Me.monthlyDepositDate_dateTimePicker)
             Me.MonthlyDepositGroupbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.MonthlyDepositGroupbox.Location = New System.Drawing.Point(14, 193)
-            Me.MonthlyDepositGroupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.MonthlyDepositGroupbox.Margin = New System.Windows.Forms.Padding(2)
             Me.MonthlyDepositGroupbox.Name = "MonthlyDepositGroupbox"
-            Me.MonthlyDepositGroupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.MonthlyDepositGroupbox.Padding = New System.Windows.Forms.Padding(2)
             Me.MonthlyDepositGroupbox.Size = New System.Drawing.Size(192, 43)
             Me.MonthlyDepositGroupbox.TabIndex = 85
             Me.MonthlyDepositGroupbox.TabStop = False
@@ -1206,7 +1258,7 @@ Namespace DatabaseTestApplication2
             'MonthlyDepositNumber
             '
             Me.MonthlyDepositNumber.Location = New System.Drawing.Point(115, 15)
-            Me.MonthlyDepositNumber.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.MonthlyDepositNumber.Margin = New System.Windows.Forms.Padding(2)
             Me.MonthlyDepositNumber.Name = "MonthlyDepositNumber"
             Me.MonthlyDepositNumber.Size = New System.Drawing.Size(73, 20)
             Me.MonthlyDepositNumber.TabIndex = 86
@@ -1243,9 +1295,9 @@ Namespace DatabaseTestApplication2
             Me.HUDHoursGroupbox.Controls.Add(Me.HUDHoursDate_dateTimePicker)
             Me.HUDHoursGroupbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.HUDHoursGroupbox.Location = New System.Drawing.Point(14, 241)
-            Me.HUDHoursGroupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.HUDHoursGroupbox.Margin = New System.Windows.Forms.Padding(2)
             Me.HUDHoursGroupbox.Name = "HUDHoursGroupbox"
-            Me.HUDHoursGroupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.HUDHoursGroupbox.Padding = New System.Windows.Forms.Padding(2)
             Me.HUDHoursGroupbox.Size = New System.Drawing.Size(192, 43)
             Me.HUDHoursGroupbox.TabIndex = 85
             Me.HUDHoursGroupbox.TabStop = False
@@ -1255,7 +1307,7 @@ Namespace DatabaseTestApplication2
             '
             Me.HUDHoursCheckbox.AutoSize = True
             Me.HUDHoursCheckbox.Location = New System.Drawing.Point(115, 19)
-            Me.HUDHoursCheckbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.HUDHoursCheckbox.Margin = New System.Windows.Forms.Padding(2)
             Me.HUDHoursCheckbox.Name = "HUDHoursCheckbox"
             Me.HUDHoursCheckbox.Size = New System.Drawing.Size(76, 17)
             Me.HUDHoursCheckbox.TabIndex = 86
@@ -1287,9 +1339,9 @@ Namespace DatabaseTestApplication2
             Me.SweatEquityGroupbox.Controls.Add(Me.sweatEquityDate_dateTimePicker)
             Me.SweatEquityGroupbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
             Me.SweatEquityGroupbox.Location = New System.Drawing.Point(14, 146)
-            Me.SweatEquityGroupbox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.SweatEquityGroupbox.Margin = New System.Windows.Forms.Padding(2)
             Me.SweatEquityGroupbox.Name = "SweatEquityGroupbox"
-            Me.SweatEquityGroupbox.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.SweatEquityGroupbox.Padding = New System.Windows.Forms.Padding(2)
             Me.SweatEquityGroupbox.Size = New System.Drawing.Size(192, 43)
             Me.SweatEquityGroupbox.TabIndex = 84
             Me.SweatEquityGroupbox.TabStop = False
@@ -1298,7 +1350,7 @@ Namespace DatabaseTestApplication2
             'SweatEquityNumeric
             '
             Me.SweatEquityNumeric.Location = New System.Drawing.Point(115, 15)
-            Me.SweatEquityNumeric.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+            Me.SweatEquityNumeric.Margin = New System.Windows.Forms.Padding(2)
             Me.SweatEquityNumeric.Name = "SweatEquityNumeric"
             Me.SweatEquityNumeric.Size = New System.Drawing.Size(73, 20)
             Me.SweatEquityNumeric.TabIndex = 86
@@ -1337,58 +1389,6 @@ Namespace DatabaseTestApplication2
             Me.panel6.Size = New System.Drawing.Size(986, 8)
             Me.panel6.TabIndex = 6
             '
-            'MenuStrip2
-            '
-            Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3, Me.ToolStripMenuItem4, Me.TrackingToolStripMenuItem, Me.ToolStripMenuItem5, Me.SurveyToolStripMenuItem})
-            Me.MenuStrip2.Location = New System.Drawing.Point(0, 0)
-            Me.MenuStrip2.Name = "MenuStrip2"
-            Me.MenuStrip2.Size = New System.Drawing.Size(970, 24)
-            Me.MenuStrip2.TabIndex = 123
-            Me.MenuStrip2.Text = "MenuStrip2"
-            '
-            'ToolStripMenuItem1
-            '
-            Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-            Me.ToolStripMenuItem1.Size = New System.Drawing.Size(80, 20)
-            Me.ToolStripMenuItem1.Text = "Main Menu"
-            '
-            'ToolStripMenuItem2
-            '
-            Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-            Me.ToolStripMenuItem2.Size = New System.Drawing.Size(59, 20)
-            Me.ToolStripMenuItem2.Text = "General"
-            '
-            'ToolStripMenuItem3
-            '
-            Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-            Me.ToolStripMenuItem3.Size = New System.Drawing.Size(107, 20)
-            Me.ToolStripMenuItem3.Text = "Homeownership"
-            '
-            'ToolStripMenuItem4
-            '
-            Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-            Me.ToolStripMenuItem4.Size = New System.Drawing.Size(57, 20)
-            Me.ToolStripMenuItem4.Text = "Repairs"
-            '
-            'TrackingToolStripMenuItem
-            '
-            Me.TrackingToolStripMenuItem.Enabled = False
-            Me.TrackingToolStripMenuItem.Name = "TrackingToolStripMenuItem"
-            Me.TrackingToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
-            Me.TrackingToolStripMenuItem.Text = "Tracking"
-            '
-            'ToolStripMenuItem5
-            '
-            Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-            Me.ToolStripMenuItem5.Size = New System.Drawing.Size(88, 20)
-            Me.ToolStripMenuItem5.Text = "Survey Editor"
-            '
-            'SurveyToolStripMenuItem
-            '
-            Me.SurveyToolStripMenuItem.Name = "SurveyToolStripMenuItem"
-            Me.SurveyToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
-            Me.SurveyToolStripMenuItem.Text = "Survey Results"
-            '
             'frmtracking
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1407,6 +1407,8 @@ Namespace DatabaseTestApplication2
             Me.panel3.PerformLayout()
             Me.Panel1.ResumeLayout(False)
             Me.Panel1.PerformLayout()
+            Me.MenuStrip2.ResumeLayout(False)
+            Me.MenuStrip2.PerformLayout()
             CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.GroupBox6.ResumeLayout(False)
             Me.GroupBox6.PerformLayout()
@@ -1431,8 +1433,6 @@ Namespace DatabaseTestApplication2
             Me.HUDHoursGroupbox.PerformLayout()
             Me.SweatEquityGroupbox.ResumeLayout(False)
             CType(Me.SweatEquityNumeric, System.ComponentModel.ISupportInitialize).EndInit()
-            Me.MenuStrip2.ResumeLayout(False)
-            Me.MenuStrip2.PerformLayout()
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
@@ -1554,12 +1554,12 @@ Namespace DatabaseTestApplication2
         Friend WithEvents Mortgage1Forgivable As CheckBox
         Friend WithEvents PictureBox1 As PictureBox
         Friend WithEvents MenuStrip2 As MenuStrip
-        Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
-        Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
-        Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
-        Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
+        Friend WithEvents MainMenuToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents GeneralToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents HomeownershipToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents RepairsToolStripMenuItem As ToolStripMenuItem
         Friend WithEvents TrackingToolStripMenuItem As ToolStripMenuItem
-        Friend WithEvents ToolStripMenuItem5 As ToolStripMenuItem
+        Friend WithEvents SurveyEditorToolStripMenuItem As ToolStripMenuItem
         Friend WithEvents SurveyToolStripMenuItem As ToolStripMenuItem
     End Class
 
