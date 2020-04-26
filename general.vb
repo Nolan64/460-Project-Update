@@ -33,6 +33,8 @@ Namespace DatabaseTestApplication2
         Public Property notes As String
         Public Property coapplicantName As String
         Public Property dependentName As String
+        Public Property coapplicantBirthDate As Nullable(Of Date)
+        Public Property maritalStatusMulti As String
     
         Public Overridable Property homeownership As homeownership
         Public Overridable Property repair As repair

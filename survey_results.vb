@@ -68,6 +68,7 @@ Namespace DatabaseTestApplication2
         Public Property QuestionNum3 As Nullable(Of Decimal)
         Public Property QuestionNum4 As Nullable(Of Decimal)
         Public Property QuestionNum5 As Nullable(Of Decimal)
+        Public Property resultsID As Integer
         Public Property survey_SurveyID As Integer
     
         Public Overridable Property survey As survey

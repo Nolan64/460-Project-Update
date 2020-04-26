@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="81af369a31874639a2f3dd9f6647f42b" Name="Diagram1">
+        <EntityTypeShape EntityType="mydbModel3.general" Width="1.5" PointX="0.75" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel3.homeownership" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel3.repair" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel3.survey" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel3.survey_results" Width="1.5" PointX="5.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel3.tracking" Width="1.5" PointX="3" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel3.user" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="mydbModel3.all_table_vw" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="mydbModel3.fk_homeownership_general1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel3.fk_Repairs_General_Info" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel3.fk_tracking_general1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel3.fk_survey_results_survey1" ManuallyRouted="false" />
+        <AssociationConnector Association="mydbModel3.general_has_survey" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

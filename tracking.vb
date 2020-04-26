@@ -13,6 +13,7 @@ Imports System.Collections.Generic
 Namespace DatabaseTestApplication2
 
     Partial Public Class tracking
+        Public Property general_UID As Integer
         Public Property sweatEquityDate As Nullable(Of Date)
         Public Property sweatEquityAmount As Nullable(Of Integer)
         Public Property monthlyDepositDate As Nullable(Of Date)
@@ -28,7 +29,6 @@ Namespace DatabaseTestApplication2
         Public Property mortgage1Forgivable As Nullable(Of SByte)
         Public Property mortgage1OriginalBalance As Nullable(Of Double)
         Public Property mortgage1NumberOfYears As Nullable(Of Integer)
-        Public Property general_UID As Integer
         Public Property mortgage2Price As Nullable(Of Double)
         Public Property mortgage2Bank As String
         Public Property mortgage2Forgivable As Nullable(Of SByte)

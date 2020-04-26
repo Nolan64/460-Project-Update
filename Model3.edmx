@@ -1,0 +1,1415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="mydbModel3.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="8.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="general">
+          <Key>
+            <PropertyRef Name="UID" />
+          </Key>
+          <Property Name="UID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="firstName" Type="varchar" MaxLength="45" />
+          <Property Name="lastName" Type="varchar" MaxLength="45" />
+          <Property Name="inquiryDate" Type="date" />
+          <Property Name="streetAddress" Type="varchar" MaxLength="45" />
+          <Property Name="cityAddress" Type="varchar" MaxLength="45" />
+          <Property Name="zipAddress" Type="varchar" MaxLength="45" />
+          <Property Name="stateAddress" Type="varchar" MaxLength="2" />
+          <Property Name="countryAddress" Type="varchar" MaxLength="45" />
+          <Property Name="phoneNumber" Type="varchar" MaxLength="10" />
+          <Property Name="email" Type="varchar" MaxLength="255" />
+          <Property Name="gender" Type="varchar" MaxLength="8" />
+          <Property Name="birthdate" Type="date" />
+          <Property Name="householdSize" Type="int" />
+          <Property Name="householdAMI" Type="double" />
+          <Property Name="race" Type="varchar" MaxLength="45" />
+          <Property Name="maritalStatus" Type="tinyint" />
+          <Property Name="notes" Type="mediumtext" />
+          <Property Name="coapplicantName" Type="varchar" MaxLength="255" />
+          <Property Name="dependentName" Type="varchar" MaxLength="255" />
+          <Property Name="coapplicantBirthDate" Type="date" />
+          <Property Name="maritalStatusMulti" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="general_has_survey">
+          <Key>
+            <PropertyRef Name="general_UID" />
+            <PropertyRef Name="survey_SurveyID" />
+          </Key>
+          <Property Name="general_UID" Type="int" Nullable="false" />
+          <Property Name="survey_SurveyID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="homeownership">
+          <Key>
+            <PropertyRef Name="general_UID" />
+          </Key>
+          <Property Name="applicantInfoMeeting" Type="date" />
+          <Property Name="applicationChecklist1" Type="date" />
+          <Property Name="applicationChecklist2" Type="date" />
+          <Property Name="employmentVerified" Type="tinyint" />
+          <Property Name="landlordReference" Type="tinyint" />
+          <Property Name="previousLandlordReference" Type="tinyint" />
+          <Property Name="backgroundCheck" Type="tinyint" />
+          <Property Name="CCCBudget" Type="tinyint" />
+          <Property Name="creditReportRun" Type="tinyint" />
+          <Property Name="homeVisit" Type="date" />
+          <Property Name="committeeDecision" Type="date" />
+          <Property Name="committeeAccepted" Type="tinyint" />
+          <Property Name="committeeReason" Type="varchar" MaxLength="45" />
+          <Property Name="boardVote" Type="date" />
+          <Property Name="boardAccepted" Type="tinyint" />
+          <Property Name="boardReason" Type="varchar" MaxLength="45" />
+          <Property Name="handbookReview" Type="date" />
+          <Property Name="general_UID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="repairs">
+          <Key>
+            <PropertyRef Name="General Info_UID" />
+          </Key>
+          <Property Name="ApplicationSubmission" Type="date" />
+          <Property Name="AdditionalDocuments" Type="date" />
+          <Property Name="ApprovalSiteVisit" Type="date" />
+          <Property Name="SiteVisitComplete" Type="date" />
+          <Property Name="ScopeOfWork" Type="date" />
+          <Property Name="ContractComplete" Type="date" />
+          <Property Name="WorkComplete" Type="date" />
+          <Property Name="IDDocuments" Type="tinyint" />
+          <Property Name="IncomeVerified" Type="tinyint" />
+          <Property Name="DeedOfTrust" Type="tinyint" />
+          <Property Name="TaxBill" Type="tinyint" />
+          <Property Name="Satisfaction" Type="tinyint" />
+          <Property Name="CompletedApplication" Type="tinyint" />
+          <Property Name="ParcelReport" Type="tinyint" />
+          <Property Name="GISAssessment" Type="tinyint" />
+          <Property Name="FundingSource" Type="varchar" MaxLength="45" />
+          <Property Name="General Info_UID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="survey">
+          <Key>
+            <PropertyRef Name="SurveyID" />
+          </Key>
+          <Property Name="SurveyID" Type="int" Nullable="false" />
+          <Property Name="SurveyName" Type="varchar" MaxLength="200" />
+          <Property Name="Question1" Type="varchar" MaxLength="200" />
+          <Property Name="Question2" Type="varchar" MaxLength="200" />
+          <Property Name="Question3" Type="varchar" MaxLength="200" />
+          <Property Name="Question4" Type="varchar" MaxLength="200" />
+          <Property Name="Question5" Type="varchar" MaxLength="200" />
+          <Property Name="Question6" Type="varchar" MaxLength="200" />
+          <Property Name="Question7" Type="varchar" MaxLength="200" />
+          <Property Name="Question8" Type="varchar" MaxLength="200" />
+          <Property Name="Question9" Type="varchar" MaxLength="200" />
+          <Property Name="Question10" Type="varchar" MaxLength="200" />
+          <Property Name="Question11" Type="varchar" MaxLength="200" />
+          <Property Name="Question12" Type="varchar" MaxLength="200" />
+          <Property Name="Question13" Type="varchar" MaxLength="200" />
+          <Property Name="Question14" Type="varchar" MaxLength="200" />
+          <Property Name="Question15" Type="varchar" MaxLength="200" />
+          <Property Name="Question16" Type="varchar" MaxLength="200" />
+          <Property Name="Question17" Type="varchar" MaxLength="200" />
+          <Property Name="Question18" Type="varchar" MaxLength="200" />
+          <Property Name="Question19" Type="varchar" MaxLength="200" />
+          <Property Name="Question20" Type="varchar" MaxLength="200" />
+          <Property Name="Question21" Type="varchar" MaxLength="200" />
+          <Property Name="Question22" Type="varchar" MaxLength="200" />
+          <Property Name="Question23" Type="varchar" MaxLength="200" />
+          <Property Name="Question24" Type="varchar" MaxLength="200" />
+          <Property Name="Question25" Type="varchar" MaxLength="200" />
+          <Property Name="Question26" Type="varchar" MaxLength="200" />
+          <Property Name="Question27" Type="varchar" MaxLength="200" />
+          <Property Name="Question28" Type="varchar" MaxLength="200" />
+          <Property Name="Question29" Type="varchar" MaxLength="200" />
+          <Property Name="Question30" Type="varchar" MaxLength="200" />
+          <Property Name="Question31" Type="varchar" MaxLength="200" />
+          <Property Name="Question36" Type="varchar" MaxLength="200" />
+          <Property Name="Question32" Type="varchar" MaxLength="200" />
+          <Property Name="Question33" Type="varchar" MaxLength="200" />
+          <Property Name="Question34" Type="varchar" MaxLength="200" />
+          <Property Name="Question35" Type="varchar" MaxLength="200" />
+          <Property Name="Question37" Type="varchar" MaxLength="200" />
+          <Property Name="Question38" Type="varchar" MaxLength="200" />
+          <Property Name="Question39" Type="varchar" MaxLength="200" />
+          <Property Name="Question40" Type="varchar" MaxLength="200" />
+          <Property Name="Question41" Type="varchar" MaxLength="200" />
+          <Property Name="Question42" Type="varchar" MaxLength="200" />
+          <Property Name="Question43" Type="varchar" MaxLength="200" />
+          <Property Name="Question44" Type="varchar" MaxLength="200" />
+          <Property Name="Question45" Type="varchar" MaxLength="200" />
+          <Property Name="Question46" Type="varchar" MaxLength="200" />
+          <Property Name="Question47" Type="varchar" MaxLength="200" />
+          <Property Name="Question48" Type="varchar" MaxLength="200" />
+          <Property Name="Question49" Type="varchar" MaxLength="200" />
+          <Property Name="Question50" Type="varchar" MaxLength="200" />
+          <Property Name="QuestionFile" Type="blob" />
+          <Property Name="Notes" Type="varchar" MaxLength="800" />
+          <Property Name="QuestionNum1" Type="varchar" MaxLength="200" />
+          <Property Name="QuestionNum2" Type="varchar" MaxLength="200" />
+          <Property Name="QuestionNum3" Type="varchar" MaxLength="200" />
+          <Property Name="QuestionNum4" Type="varchar" MaxLength="200" />
+          <Property Name="QuestionNum5" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="survey_results">
+          <Key>
+            <PropertyRef Name="resultsID" />
+            <PropertyRef Name="survey_SurveyID" />
+          </Key>
+          <Property Name="Question1" Type="bool" />
+          <Property Name="Question2" Type="bool" />
+          <Property Name="Question3" Type="bool" />
+          <Property Name="Question4" Type="bool" />
+          <Property Name="Question5" Type="bool" />
+          <Property Name="Question6" Type="bool" />
+          <Property Name="Question7" Type="bool" />
+          <Property Name="Question8" Type="bool" />
+          <Property Name="Question9" Type="bool" />
+          <Property Name="Question10" Type="bool" />
+          <Property Name="Question11" Type="bool" />
+          <Property Name="Question12" Type="bool" />
+          <Property Name="Question13" Type="bool" />
+          <Property Name="Question14" Type="bool" />
+          <Property Name="Question15" Type="bool" />
+          <Property Name="Question16" Type="bool" />
+          <Property Name="Question17" Type="bool" />
+          <Property Name="Question18" Type="bool" />
+          <Property Name="Question19" Type="bool" />
+          <Property Name="Question20" Type="bool" />
+          <Property Name="Question21" Type="bool" />
+          <Property Name="Question22" Type="bool" />
+          <Property Name="Question23" Type="bool" />
+          <Property Name="Question24" Type="bool" />
+          <Property Name="Question25" Type="bool" />
+          <Property Name="Question26" Type="bool" />
+          <Property Name="Question27" Type="bool" />
+          <Property Name="Question28" Type="bool" />
+          <Property Name="Question29" Type="bool" />
+          <Property Name="Question30" Type="bool" />
+          <Property Name="Question31" Type="bool" />
+          <Property Name="Question32" Type="bool" />
+          <Property Name="Question33" Type="bool" />
+          <Property Name="Question34" Type="bool" />
+          <Property Name="Question35" Type="bool" />
+          <Property Name="Question36" Type="bool" />
+          <Property Name="Question37" Type="bool" />
+          <Property Name="Question38" Type="bool" />
+          <Property Name="Question39" Type="bool" />
+          <Property Name="Question40" Type="bool" />
+          <Property Name="Question41" Type="bool" />
+          <Property Name="Question42" Type="bool" />
+          <Property Name="Question43" Type="bool" />
+          <Property Name="Question44" Type="bool" />
+          <Property Name="Question45" Type="bool" />
+          <Property Name="Question46" Type="bool" />
+          <Property Name="Question47" Type="bool" />
+          <Property Name="Question48" Type="bool" />
+          <Property Name="Question49" Type="bool" />
+          <Property Name="Question50" Type="bool" />
+          <Property Name="QuestionNum1" Type="decimal" Precision="2" Scale="0" />
+          <Property Name="QuestionNum2" Type="decimal" Precision="2" Scale="0" />
+          <Property Name="QuestionNum3" Type="decimal" Precision="2" Scale="0" />
+          <Property Name="QuestionNum4" Type="decimal" Precision="2" Scale="0" />
+          <Property Name="QuestionNum5" Type="decimal" Precision="2" Scale="0" />
+          <Property Name="resultsID" Type="int" Nullable="false" />
+          <Property Name="survey_SurveyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tracking">
+          <Key>
+            <PropertyRef Name="general_UID" />
+          </Key>
+          <Property Name="general_UID" Type="int" Nullable="false" />
+          <Property Name="sweatEquityDate" Type="date" />
+          <Property Name="sweatEquityAmount" Type="int" />
+          <Property Name="monthlyDepositDate" Type="date" />
+          <Property Name="monthlyDepositAmount" Type="double" />
+          <Property Name="HUDHoursDate" Type="date" />
+          <Property Name="HUDHoursComplete" Type="tinyint" />
+          <Property Name="financeClassesDate" Type="date" />
+          <Property Name="financeClassesComplete" Type="tinyint" />
+          <Property Name="homebuyerEducationDate" Type="date" />
+          <Property Name="homebuyerEducationAmount" Type="tinyint" />
+          <Property Name="mortgage1Price" Type="double" />
+          <Property Name="mortgage1Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage1Forgivable" Type="tinyint" />
+          <Property Name="mortgage1OriginalBalance" Type="double" />
+          <Property Name="mortgage1NumberOfYears" Type="int" />
+          <Property Name="mortgage2Price" Type="double" />
+          <Property Name="mortgage2Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage2Forgivable" Type="tinyint" />
+          <Property Name="mortgage2OriginalBalance" Type="double" />
+          <Property Name="morgage2NumberOfYears" Type="int" />
+          <Property Name="mortgage3Price" Type="double" />
+          <Property Name="mortgage3Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage3Forgivable" Type="tinyint" />
+          <Property Name="mortgage3OriginalBalance" Type="double" />
+          <Property Name="mortgage3NumberOfYears" Type="int" />
+          <Property Name="mortgage4Price" Type="double" />
+          <Property Name="mortgage4Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage4Forgivable" Type="tinyint" />
+          <Property Name="mortgage4OriginalBalance" Type="double" />
+          <Property Name="mortgage4NumberOfYears" Type="int" />
+          <Property Name="mortgage5Price" Type="double" />
+          <Property Name="mortgage5Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage5Forgivable" Type="tinyint" />
+          <Property Name="mortgage5OriginalBalance" Type="double" />
+          <Property Name="mortgage5NumberOfYears" Type="int" />
+          <Property Name="mortgage6Price" Type="double" />
+          <Property Name="mortgage6Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage6Forgivable" Type="tinyint" />
+          <Property Name="mortgage6OriginalBalance" Type="double" />
+          <Property Name="mortgage6NumberOfYears" Type="int" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="username" />
+          </Key>
+          <Property Name="username" Type="varchar" MaxLength="16" Nullable="false" />
+          <Property Name="password" Type="varchar" MaxLength="32" Nullable="false" />
+          <Property Name="create_time" Type="timestamp" Precision="0" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'def.mydb.all_table_vw' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="all_table_vw">
+          <Key>
+            <PropertyRef Name="UID" />
+          </Key>
+          <Property Name="UID" Type="int" Nullable="false" />
+          <Property Name="firstName" Type="varchar" MaxLength="45" />
+          <Property Name="lastName" Type="varchar" MaxLength="45" />
+          <Property Name="inquiryDate" Type="date" />
+          <Property Name="streetAddress" Type="varchar" MaxLength="45" />
+          <Property Name="cityAddress" Type="varchar" MaxLength="45" />
+          <Property Name="zipAddress" Type="varchar" MaxLength="45" />
+          <Property Name="stateAddress" Type="varchar" MaxLength="2" />
+          <Property Name="countryAddress" Type="varchar" MaxLength="45" />
+          <Property Name="phoneNumber" Type="varchar" MaxLength="10" />
+          <Property Name="email" Type="varchar" MaxLength="255" />
+          <Property Name="gender" Type="varchar" MaxLength="8" />
+          <Property Name="birthdate" Type="date" />
+          <Property Name="householdSize" Type="int" />
+          <Property Name="householdAMI" Type="double" />
+          <Property Name="race" Type="varchar" MaxLength="45" />
+          <Property Name="maritalStatus" Type="tinyint" />
+          <Property Name="notes" Type="mediumtext" />
+          <Property Name="coapplicantName" Type="varchar" MaxLength="255" />
+          <Property Name="dependentName" Type="varchar" MaxLength="255" />
+          <Property Name="applicantInfoMeeting" Type="date" />
+          <Property Name="applicationChecklist1" Type="date" />
+          <Property Name="applicationChecklist2" Type="date" />
+          <Property Name="employmentVerified" Type="tinyint" />
+          <Property Name="landlordReference" Type="tinyint" />
+          <Property Name="previousLandlordReference" Type="tinyint" />
+          <Property Name="backgroundCheck" Type="tinyint" />
+          <Property Name="CCCBudget" Type="tinyint" />
+          <Property Name="creditReportRun" Type="tinyint" />
+          <Property Name="homeVisit" Type="date" />
+          <Property Name="committeeDecision" Type="date" />
+          <Property Name="committeeAccepted" Type="tinyint" />
+          <Property Name="committeeReason" Type="varchar" MaxLength="45" />
+          <Property Name="boardVote" Type="date" />
+          <Property Name="boardAccepted" Type="tinyint" />
+          <Property Name="boardReason" Type="varchar" MaxLength="45" />
+          <Property Name="handbookReview" Type="date" />
+          <Property Name="ApplicationSubmission" Type="date" />
+          <Property Name="AdditionalDocuments" Type="date" />
+          <Property Name="ApprovalSiteVisit" Type="date" />
+          <Property Name="SiteVisitComplete" Type="date" />
+          <Property Name="ScopeOfWork" Type="date" />
+          <Property Name="ContractComplete" Type="date" />
+          <Property Name="WorkComplete" Type="date" />
+          <Property Name="IDDocuments" Type="tinyint" />
+          <Property Name="IncomeVerified" Type="tinyint" />
+          <Property Name="DeedOfTrust" Type="tinyint" />
+          <Property Name="TaxBill" Type="tinyint" />
+          <Property Name="Satisfaction" Type="tinyint" />
+          <Property Name="CompletedApplication" Type="tinyint" />
+          <Property Name="ParcelReport" Type="tinyint" />
+          <Property Name="GISAssessment" Type="tinyint" />
+          <Property Name="FundingSource" Type="varchar" MaxLength="45" />
+          <Property Name="sweatEquityDate" Type="date" />
+          <Property Name="sweatEquityAmount" Type="int" />
+          <Property Name="monthlyDepositDate" Type="date" />
+          <Property Name="monthlyDepositAmount" Type="double" />
+          <Property Name="HUDHoursDate" Type="date" />
+          <Property Name="HUDHoursComplete" Type="tinyint" />
+          <Property Name="financeClassesDate" Type="date" />
+          <Property Name="financeClassesComplete" Type="tinyint" />
+          <Property Name="homebuyerEducationDate" Type="date" />
+          <Property Name="homebuyerEducationAmount" Type="tinyint" />
+          <Property Name="mortgage1Price" Type="double" />
+          <Property Name="mortgage1Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage1Forgivable" Type="tinyint" />
+          <Property Name="mortgage1OriginalBalance" Type="double" />
+          <Property Name="mortgage1NumberOfYears" Type="int" />
+          <Property Name="mortgage2Price" Type="double" />
+          <Property Name="mortgage2Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage2Forgivable" Type="tinyint" />
+          <Property Name="mortgage2OriginalBalance" Type="double" />
+          <Property Name="morgage2NumberOfYears" Type="int" />
+          <Property Name="mortgage3Price" Type="double" />
+          <Property Name="mortgage3Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage3Forgivable" Type="tinyint" />
+          <Property Name="mortgage3OriginalBalance" Type="double" />
+          <Property Name="mortgage3NumberOfYears" Type="int" />
+          <Property Name="mortgage4Price" Type="double" />
+          <Property Name="mortgage4Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage4Forgivable" Type="tinyint" />
+          <Property Name="mortgage4OriginalBalance" Type="double" />
+          <Property Name="mortgage4NumberOfYears" Type="int" />
+          <Property Name="mortgage5Price" Type="double" />
+          <Property Name="mortgage5Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage5Forgivable" Type="tinyint" />
+          <Property Name="mortgage5OriginalBalance" Type="double" />
+          <Property Name="mortgage5NumberOfYears" Type="int" />
+          <Property Name="mortgage6Price" Type="double" />
+          <Property Name="mortgage6Bank" Type="varchar" MaxLength="45" />
+          <Property Name="mortgage6Forgivable" Type="tinyint" />
+          <Property Name="mortgage6OriginalBalance" Type="double" />
+          <Property Name="mortgage6NumberOfYears" Type="int" />
+        </EntityType>
+        <Association Name="fk_general_has_survey_general1">
+          <End Role="general" Type="Self.general" Multiplicity="1" />
+          <End Role="general_has_survey" Type="Self.general_has_survey" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="general">
+              <PropertyRef Name="UID" />
+            </Principal>
+            <Dependent Role="general_has_survey">
+              <PropertyRef Name="general_UID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_general_has_survey_survey1">
+          <End Role="survey" Type="Self.survey" Multiplicity="1" />
+          <End Role="general_has_survey" Type="Self.general_has_survey" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="survey">
+              <PropertyRef Name="SurveyID" />
+            </Principal>
+            <Dependent Role="general_has_survey">
+              <PropertyRef Name="survey_SurveyID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_homeownership_general1">
+          <End Role="general" Type="Self.general" Multiplicity="1" />
+          <End Role="homeownership" Type="Self.homeownership" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="general">
+              <PropertyRef Name="UID" />
+            </Principal>
+            <Dependent Role="homeownership">
+              <PropertyRef Name="general_UID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_Repairs_General Info">
+          <End Role="general" Type="Self.general" Multiplicity="1" />
+          <End Role="repairs" Type="Self.repairs" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="general">
+              <PropertyRef Name="UID" />
+            </Principal>
+            <Dependent Role="repairs">
+              <PropertyRef Name="General Info_UID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_survey_results_survey1">
+          <End Role="survey" Type="Self.survey" Multiplicity="1" />
+          <End Role="survey_results" Type="Self.survey_results" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="survey">
+              <PropertyRef Name="SurveyID" />
+            </Principal>
+            <Dependent Role="survey_results">
+              <PropertyRef Name="survey_SurveyID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_tracking_general1">
+          <End Role="general" Type="Self.general" Multiplicity="1" />
+          <End Role="tracking" Type="Self.tracking" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="general">
+              <PropertyRef Name="UID" />
+            </Principal>
+            <Dependent Role="tracking">
+              <PropertyRef Name="general_UID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="mydbModel3StoreContainer">
+          <EntitySet Name="general" EntityType="Self.general" Schema="mydb" store:Type="Tables" />
+          <EntitySet Name="general_has_survey" EntityType="Self.general_has_survey" Schema="mydb" store:Type="Tables" />
+          <EntitySet Name="homeownership" EntityType="Self.homeownership" Schema="mydb" store:Type="Tables" />
+          <EntitySet Name="repairs" EntityType="Self.repairs" Schema="mydb" store:Type="Tables" />
+          <EntitySet Name="survey" EntityType="Self.survey" Schema="mydb" store:Type="Tables" />
+          <EntitySet Name="survey_results" EntityType="Self.survey_results" Schema="mydb" store:Type="Tables" />
+          <EntitySet Name="tracking" EntityType="Self.tracking" Schema="mydb" store:Type="Tables" />
+          <EntitySet Name="user" EntityType="Self.user" Schema="mydb" store:Type="Tables" />
+          <EntitySet Name="all_table_vw" EntityType="Self.all_table_vw" store:Type="Views" store:Schema="mydb">
+            <DefiningQuery>SELECT
+`all_table_vw`.`UID`, 
+`all_table_vw`.`firstName`, 
+`all_table_vw`.`lastName`, 
+`all_table_vw`.`inquiryDate`, 
+`all_table_vw`.`streetAddress`, 
+`all_table_vw`.`cityAddress`, 
+`all_table_vw`.`zipAddress`, 
+`all_table_vw`.`stateAddress`, 
+`all_table_vw`.`countryAddress`, 
+`all_table_vw`.`phoneNumber`, 
+`all_table_vw`.`email`, 
+`all_table_vw`.`gender`, 
+`all_table_vw`.`birthdate`, 
+`all_table_vw`.`householdSize`, 
+`all_table_vw`.`householdAMI`, 
+`all_table_vw`.`race`, 
+`all_table_vw`.`maritalStatus`, 
+`all_table_vw`.`notes`, 
+`all_table_vw`.`coapplicantName`, 
+`all_table_vw`.`dependentName`, 
+`all_table_vw`.`applicantInfoMeeting`, 
+`all_table_vw`.`applicationChecklist1`, 
+`all_table_vw`.`applicationChecklist2`, 
+`all_table_vw`.`employmentVerified`, 
+`all_table_vw`.`landlordReference`, 
+`all_table_vw`.`previousLandlordReference`, 
+`all_table_vw`.`backgroundCheck`, 
+`all_table_vw`.`CCCBudget`, 
+`all_table_vw`.`creditReportRun`, 
+`all_table_vw`.`homeVisit`, 
+`all_table_vw`.`committeeDecision`, 
+`all_table_vw`.`committeeAccepted`, 
+`all_table_vw`.`committeeReason`, 
+`all_table_vw`.`boardVote`, 
+`all_table_vw`.`boardAccepted`, 
+`all_table_vw`.`boardReason`, 
+`all_table_vw`.`handbookReview`, 
+`all_table_vw`.`ApplicationSubmission`, 
+`all_table_vw`.`AdditionalDocuments`, 
+`all_table_vw`.`ApprovalSiteVisit`, 
+`all_table_vw`.`SiteVisitComplete`, 
+`all_table_vw`.`ScopeOfWork`, 
+`all_table_vw`.`ContractComplete`, 
+`all_table_vw`.`WorkComplete`, 
+`all_table_vw`.`IDDocuments`, 
+`all_table_vw`.`IncomeVerified`, 
+`all_table_vw`.`DeedOfTrust`, 
+`all_table_vw`.`TaxBill`, 
+`all_table_vw`.`Satisfaction`, 
+`all_table_vw`.`CompletedApplication`, 
+`all_table_vw`.`ParcelReport`, 
+`all_table_vw`.`GISAssessment`, 
+`all_table_vw`.`FundingSource`, 
+`all_table_vw`.`sweatEquityDate`, 
+`all_table_vw`.`sweatEquityAmount`, 
+`all_table_vw`.`monthlyDepositDate`, 
+`all_table_vw`.`monthlyDepositAmount`, 
+`all_table_vw`.`HUDHoursDate`, 
+`all_table_vw`.`HUDHoursComplete`, 
+`all_table_vw`.`financeClassesDate`, 
+`all_table_vw`.`financeClassesComplete`, 
+`all_table_vw`.`homebuyerEducationDate`, 
+`all_table_vw`.`homebuyerEducationAmount`, 
+`all_table_vw`.`mortgage1Price`, 
+`all_table_vw`.`mortgage1Bank`, 
+`all_table_vw`.`mortgage1Forgivable`, 
+`all_table_vw`.`mortgage1OriginalBalance`, 
+`all_table_vw`.`mortgage1NumberOfYears`, 
+`all_table_vw`.`mortgage2Price`, 
+`all_table_vw`.`mortgage2Bank`, 
+`all_table_vw`.`mortgage2Forgivable`, 
+`all_table_vw`.`mortgage2OriginalBalance`, 
+`all_table_vw`.`morgage2NumberOfYears`, 
+`all_table_vw`.`mortgage3Price`, 
+`all_table_vw`.`mortgage3Bank`, 
+`all_table_vw`.`mortgage3Forgivable`, 
+`all_table_vw`.`mortgage3OriginalBalance`, 
+`all_table_vw`.`mortgage3NumberOfYears`, 
+`all_table_vw`.`mortgage4Price`, 
+`all_table_vw`.`mortgage4Bank`, 
+`all_table_vw`.`mortgage4Forgivable`, 
+`all_table_vw`.`mortgage4OriginalBalance`, 
+`all_table_vw`.`mortgage4NumberOfYears`, 
+`all_table_vw`.`mortgage5Price`, 
+`all_table_vw`.`mortgage5Bank`, 
+`all_table_vw`.`mortgage5Forgivable`, 
+`all_table_vw`.`mortgage5OriginalBalance`, 
+`all_table_vw`.`mortgage5NumberOfYears`, 
+`all_table_vw`.`mortgage6Price`, 
+`all_table_vw`.`mortgage6Bank`, 
+`all_table_vw`.`mortgage6Forgivable`, 
+`all_table_vw`.`mortgage6OriginalBalance`, 
+`all_table_vw`.`mortgage6NumberOfYears`
+FROM `all_table_vw` AS `all_table_vw`</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="fk_general_has_survey_general1" Association="Self.fk_general_has_survey_general1">
+            <End Role="general" EntitySet="general" />
+            <End Role="general_has_survey" EntitySet="general_has_survey" />
+          </AssociationSet>
+          <AssociationSet Name="fk_general_has_survey_survey1" Association="Self.fk_general_has_survey_survey1">
+            <End Role="survey" EntitySet="survey" />
+            <End Role="general_has_survey" EntitySet="general_has_survey" />
+          </AssociationSet>
+          <AssociationSet Name="fk_homeownership_general1" Association="Self.fk_homeownership_general1">
+            <End Role="general" EntitySet="general" />
+            <End Role="homeownership" EntitySet="homeownership" />
+          </AssociationSet>
+          <AssociationSet Name="fk_Repairs_General Info" Association="Self.fk_Repairs_General Info">
+            <End Role="general" EntitySet="general" />
+            <End Role="repairs" EntitySet="repairs" />
+          </AssociationSet>
+          <AssociationSet Name="fk_survey_results_survey1" Association="Self.fk_survey_results_survey1">
+            <End Role="survey" EntitySet="survey" />
+            <End Role="survey_results" EntitySet="survey_results" />
+          </AssociationSet>
+          <AssociationSet Name="fk_tracking_general1" Association="Self.fk_tracking_general1">
+            <End Role="general" EntitySet="general" />
+            <End Role="tracking" EntitySet="tracking" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="mydbModel3" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="general">
+          <Key>
+            <PropertyRef Name="UID" />
+          </Key>
+          <Property Name="UID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="firstName" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="lastName" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="inquiryDate" Type="DateTime" />
+          <Property Name="streetAddress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="cityAddress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="zipAddress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="stateAddress" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="countryAddress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="phoneNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="gender" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="birthdate" Type="DateTime" />
+          <Property Name="householdSize" Type="Int32" />
+          <Property Name="householdAMI" Type="Double" />
+          <Property Name="race" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="maritalStatus" Type="SByte" />
+          <Property Name="notes" Type="String" MaxLength="16777215" FixedLength="false" Unicode="false" />
+          <Property Name="coapplicantName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="dependentName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="coapplicantBirthDate" Type="DateTime" />
+          <Property Name="maritalStatusMulti" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="homeownership" Relationship="Self.fk_homeownership_general1" FromRole="general" ToRole="homeownership" />
+          <NavigationProperty Name="repair" Relationship="Self.fk_Repairs_General_Info" FromRole="general" ToRole="repairs" />
+          <NavigationProperty Name="tracking" Relationship="Self.fk_tracking_general1" FromRole="general" ToRole="tracking" />
+          <NavigationProperty Name="surveys" Relationship="Self.general_has_survey" FromRole="general" ToRole="survey" />
+        </EntityType>
+        <EntityType Name="homeownership">
+          <Key>
+            <PropertyRef Name="general_UID" />
+          </Key>
+          <Property Name="applicantInfoMeeting" Type="DateTime" />
+          <Property Name="applicationChecklist1" Type="DateTime" />
+          <Property Name="applicationChecklist2" Type="DateTime" />
+          <Property Name="employmentVerified" Type="SByte" />
+          <Property Name="landlordReference" Type="SByte" />
+          <Property Name="previousLandlordReference" Type="SByte" />
+          <Property Name="backgroundCheck" Type="SByte" />
+          <Property Name="CCCBudget" Type="SByte" />
+          <Property Name="creditReportRun" Type="SByte" />
+          <Property Name="homeVisit" Type="DateTime" />
+          <Property Name="committeeDecision" Type="DateTime" />
+          <Property Name="committeeAccepted" Type="SByte" />
+          <Property Name="committeeReason" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="boardVote" Type="DateTime" />
+          <Property Name="boardAccepted" Type="SByte" />
+          <Property Name="boardReason" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="handbookReview" Type="DateTime" />
+          <Property Name="general_UID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="general" Relationship="Self.fk_homeownership_general1" FromRole="homeownership" ToRole="general" />
+        </EntityType>
+        <EntityType Name="repair">
+          <Key>
+            <PropertyRef Name="General_Info_UID" />
+          </Key>
+          <Property Name="ApplicationSubmission" Type="DateTime" />
+          <Property Name="AdditionalDocuments" Type="DateTime" />
+          <Property Name="ApprovalSiteVisit" Type="DateTime" />
+          <Property Name="SiteVisitComplete" Type="DateTime" />
+          <Property Name="ScopeOfWork" Type="DateTime" />
+          <Property Name="ContractComplete" Type="DateTime" />
+          <Property Name="WorkComplete" Type="DateTime" />
+          <Property Name="IDDocuments" Type="SByte" />
+          <Property Name="IncomeVerified" Type="SByte" />
+          <Property Name="DeedOfTrust" Type="SByte" />
+          <Property Name="TaxBill" Type="SByte" />
+          <Property Name="Satisfaction" Type="SByte" />
+          <Property Name="CompletedApplication" Type="SByte" />
+          <Property Name="ParcelReport" Type="SByte" />
+          <Property Name="GISAssessment" Type="SByte" />
+          <Property Name="FundingSource" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="General_Info_UID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="general" Relationship="Self.fk_Repairs_General_Info" FromRole="repairs" ToRole="general" />
+        </EntityType>
+        <EntityType Name="survey">
+          <Key>
+            <PropertyRef Name="SurveyID" />
+          </Key>
+          <Property Name="SurveyID" Type="Int32" Nullable="false" />
+          <Property Name="SurveyName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question3" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question4" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question5" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question6" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question7" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question8" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question9" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question10" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question11" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question12" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question13" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question14" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question15" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question16" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question17" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question18" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question19" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question20" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question21" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question22" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question23" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question24" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question25" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question26" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question27" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question28" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question29" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question30" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question31" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question36" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question32" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question33" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question34" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question35" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question37" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question38" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question39" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question40" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question41" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question42" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question43" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question44" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question45" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question46" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question47" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question48" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question49" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Question50" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="QuestionFile" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Notes" Type="String" MaxLength="800" FixedLength="false" Unicode="false" />
+          <Property Name="QuestionNum1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="QuestionNum2" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="QuestionNum3" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="QuestionNum4" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="QuestionNum5" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="survey_results" Relationship="Self.fk_survey_results_survey1" FromRole="survey" ToRole="survey_results" />
+          <NavigationProperty Name="generals" Relationship="Self.general_has_survey" FromRole="survey" ToRole="general" />
+        </EntityType>
+        <EntityType Name="survey_results">
+          <Key>
+            <PropertyRef Name="resultsID" />
+            <PropertyRef Name="survey_SurveyID" />
+          </Key>
+          <Property Name="Question1" Type="Boolean" />
+          <Property Name="Question2" Type="Boolean" />
+          <Property Name="Question3" Type="Boolean" />
+          <Property Name="Question4" Type="Boolean" />
+          <Property Name="Question5" Type="Boolean" />
+          <Property Name="Question6" Type="Boolean" />
+          <Property Name="Question7" Type="Boolean" />
+          <Property Name="Question8" Type="Boolean" />
+          <Property Name="Question9" Type="Boolean" />
+          <Property Name="Question10" Type="Boolean" />
+          <Property Name="Question11" Type="Boolean" />
+          <Property Name="Question12" Type="Boolean" />
+          <Property Name="Question13" Type="Boolean" />
+          <Property Name="Question14" Type="Boolean" />
+          <Property Name="Question15" Type="Boolean" />
+          <Property Name="Question16" Type="Boolean" />
+          <Property Name="Question17" Type="Boolean" />
+          <Property Name="Question18" Type="Boolean" />
+          <Property Name="Question19" Type="Boolean" />
+          <Property Name="Question20" Type="Boolean" />
+          <Property Name="Question21" Type="Boolean" />
+          <Property Name="Question22" Type="Boolean" />
+          <Property Name="Question23" Type="Boolean" />
+          <Property Name="Question24" Type="Boolean" />
+          <Property Name="Question25" Type="Boolean" />
+          <Property Name="Question26" Type="Boolean" />
+          <Property Name="Question27" Type="Boolean" />
+          <Property Name="Question28" Type="Boolean" />
+          <Property Name="Question29" Type="Boolean" />
+          <Property Name="Question30" Type="Boolean" />
+          <Property Name="Question31" Type="Boolean" />
+          <Property Name="Question32" Type="Boolean" />
+          <Property Name="Question33" Type="Boolean" />
+          <Property Name="Question34" Type="Boolean" />
+          <Property Name="Question35" Type="Boolean" />
+          <Property Name="Question36" Type="Boolean" />
+          <Property Name="Question37" Type="Boolean" />
+          <Property Name="Question38" Type="Boolean" />
+          <Property Name="Question39" Type="Boolean" />
+          <Property Name="Question40" Type="Boolean" />
+          <Property Name="Question41" Type="Boolean" />
+          <Property Name="Question42" Type="Boolean" />
+          <Property Name="Question43" Type="Boolean" />
+          <Property Name="Question44" Type="Boolean" />
+          <Property Name="Question45" Type="Boolean" />
+          <Property Name="Question46" Type="Boolean" />
+          <Property Name="Question47" Type="Boolean" />
+          <Property Name="Question48" Type="Boolean" />
+          <Property Name="Question49" Type="Boolean" />
+          <Property Name="Question50" Type="Boolean" />
+          <Property Name="QuestionNum1" Type="Decimal" />
+          <Property Name="QuestionNum2" Type="Decimal" />
+          <Property Name="QuestionNum3" Type="Decimal" />
+          <Property Name="QuestionNum4" Type="Decimal" />
+          <Property Name="QuestionNum5" Type="Decimal" />
+          <Property Name="resultsID" Type="Int32" Nullable="false" />
+          <Property Name="survey_SurveyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="survey" Relationship="Self.fk_survey_results_survey1" FromRole="survey_results" ToRole="survey" />
+        </EntityType>
+        <EntityType Name="tracking">
+          <Key>
+            <PropertyRef Name="general_UID" />
+          </Key>
+          <Property Name="general_UID" Type="Int32" Nullable="false" />
+          <Property Name="sweatEquityDate" Type="DateTime" />
+          <Property Name="sweatEquityAmount" Type="Int32" />
+          <Property Name="monthlyDepositDate" Type="DateTime" />
+          <Property Name="monthlyDepositAmount" Type="Double" />
+          <Property Name="HUDHoursDate" Type="DateTime" />
+          <Property Name="HUDHoursComplete" Type="SByte" />
+          <Property Name="financeClassesDate" Type="DateTime" />
+          <Property Name="financeClassesComplete" Type="SByte" />
+          <Property Name="homebuyerEducationDate" Type="DateTime" />
+          <Property Name="homebuyerEducationAmount" Type="SByte" />
+          <Property Name="mortgage1Price" Type="Double" />
+          <Property Name="mortgage1Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage1Forgivable" Type="SByte" />
+          <Property Name="mortgage1OriginalBalance" Type="Double" />
+          <Property Name="mortgage1NumberOfYears" Type="Int32" />
+          <Property Name="mortgage2Price" Type="Double" />
+          <Property Name="mortgage2Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage2Forgivable" Type="SByte" />
+          <Property Name="mortgage2OriginalBalance" Type="Double" />
+          <Property Name="morgage2NumberOfYears" Type="Int32" />
+          <Property Name="mortgage3Price" Type="Double" />
+          <Property Name="mortgage3Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage3Forgivable" Type="SByte" />
+          <Property Name="mortgage3OriginalBalance" Type="Double" />
+          <Property Name="mortgage3NumberOfYears" Type="Int32" />
+          <Property Name="mortgage4Price" Type="Double" />
+          <Property Name="mortgage4Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage4Forgivable" Type="SByte" />
+          <Property Name="mortgage4OriginalBalance" Type="Double" />
+          <Property Name="mortgage4NumberOfYears" Type="Int32" />
+          <Property Name="mortgage5Price" Type="Double" />
+          <Property Name="mortgage5Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage5Forgivable" Type="SByte" />
+          <Property Name="mortgage5OriginalBalance" Type="Double" />
+          <Property Name="mortgage5NumberOfYears" Type="Int32" />
+          <Property Name="mortgage6Price" Type="Double" />
+          <Property Name="mortgage6Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage6Forgivable" Type="SByte" />
+          <Property Name="mortgage6OriginalBalance" Type="Double" />
+          <Property Name="mortgage6NumberOfYears" Type="Int32" />
+          <NavigationProperty Name="general" Relationship="Self.fk_tracking_general1" FromRole="tracking" ToRole="general" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="username" />
+          </Key>
+          <Property Name="username" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="32" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="create_time" Type="DateTime" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="all_table_vw">
+          <Key>
+            <PropertyRef Name="UID" />
+          </Key>
+          <Property Name="UID" Type="Int32" Nullable="false" />
+          <Property Name="firstName" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="lastName" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="inquiryDate" Type="DateTime" />
+          <Property Name="streetAddress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="cityAddress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="zipAddress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="stateAddress" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="countryAddress" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="phoneNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="gender" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="birthdate" Type="DateTime" />
+          <Property Name="householdSize" Type="Int32" />
+          <Property Name="householdAMI" Type="Double" />
+          <Property Name="race" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="maritalStatus" Type="SByte" />
+          <Property Name="notes" Type="String" MaxLength="16777215" FixedLength="false" Unicode="false" />
+          <Property Name="coapplicantName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="dependentName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="applicantInfoMeeting" Type="DateTime" />
+          <Property Name="applicationChecklist1" Type="DateTime" />
+          <Property Name="applicationChecklist2" Type="DateTime" />
+          <Property Name="employmentVerified" Type="SByte" />
+          <Property Name="landlordReference" Type="SByte" />
+          <Property Name="previousLandlordReference" Type="SByte" />
+          <Property Name="backgroundCheck" Type="SByte" />
+          <Property Name="CCCBudget" Type="SByte" />
+          <Property Name="creditReportRun" Type="SByte" />
+          <Property Name="homeVisit" Type="DateTime" />
+          <Property Name="committeeDecision" Type="DateTime" />
+          <Property Name="committeeAccepted" Type="SByte" />
+          <Property Name="committeeReason" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="boardVote" Type="DateTime" />
+          <Property Name="boardAccepted" Type="SByte" />
+          <Property Name="boardReason" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="handbookReview" Type="DateTime" />
+          <Property Name="ApplicationSubmission" Type="DateTime" />
+          <Property Name="AdditionalDocuments" Type="DateTime" />
+          <Property Name="ApprovalSiteVisit" Type="DateTime" />
+          <Property Name="SiteVisitComplete" Type="DateTime" />
+          <Property Name="ScopeOfWork" Type="DateTime" />
+          <Property Name="ContractComplete" Type="DateTime" />
+          <Property Name="WorkComplete" Type="DateTime" />
+          <Property Name="IDDocuments" Type="SByte" />
+          <Property Name="IncomeVerified" Type="SByte" />
+          <Property Name="DeedOfTrust" Type="SByte" />
+          <Property Name="TaxBill" Type="SByte" />
+          <Property Name="Satisfaction" Type="SByte" />
+          <Property Name="CompletedApplication" Type="SByte" />
+          <Property Name="ParcelReport" Type="SByte" />
+          <Property Name="GISAssessment" Type="SByte" />
+          <Property Name="FundingSource" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="sweatEquityDate" Type="DateTime" />
+          <Property Name="sweatEquityAmount" Type="Int32" />
+          <Property Name="monthlyDepositDate" Type="DateTime" />
+          <Property Name="monthlyDepositAmount" Type="Double" />
+          <Property Name="HUDHoursDate" Type="DateTime" />
+          <Property Name="HUDHoursComplete" Type="SByte" />
+          <Property Name="financeClassesDate" Type="DateTime" />
+          <Property Name="financeClassesComplete" Type="SByte" />
+          <Property Name="homebuyerEducationDate" Type="DateTime" />
+          <Property Name="homebuyerEducationAmount" Type="SByte" />
+          <Property Name="mortgage1Price" Type="Double" />
+          <Property Name="mortgage1Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage1Forgivable" Type="SByte" />
+          <Property Name="mortgage1OriginalBalance" Type="Double" />
+          <Property Name="mortgage1NumberOfYears" Type="Int32" />
+          <Property Name="mortgage2Price" Type="Double" />
+          <Property Name="mortgage2Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage2Forgivable" Type="SByte" />
+          <Property Name="mortgage2OriginalBalance" Type="Double" />
+          <Property Name="morgage2NumberOfYears" Type="Int32" />
+          <Property Name="mortgage3Price" Type="Double" />
+          <Property Name="mortgage3Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage3Forgivable" Type="SByte" />
+          <Property Name="mortgage3OriginalBalance" Type="Double" />
+          <Property Name="mortgage3NumberOfYears" Type="Int32" />
+          <Property Name="mortgage4Price" Type="Double" />
+          <Property Name="mortgage4Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage4Forgivable" Type="SByte" />
+          <Property Name="mortgage4OriginalBalance" Type="Double" />
+          <Property Name="mortgage4NumberOfYears" Type="Int32" />
+          <Property Name="mortgage5Price" Type="Double" />
+          <Property Name="mortgage5Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage5Forgivable" Type="SByte" />
+          <Property Name="mortgage5OriginalBalance" Type="Double" />
+          <Property Name="mortgage5NumberOfYears" Type="Int32" />
+          <Property Name="mortgage6Price" Type="Double" />
+          <Property Name="mortgage6Bank" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="mortgage6Forgivable" Type="SByte" />
+          <Property Name="mortgage6OriginalBalance" Type="Double" />
+          <Property Name="mortgage6NumberOfYears" Type="Int32" />
+        </EntityType>
+        <Association Name="fk_homeownership_general1">
+          <End Role="general" Type="Self.general" Multiplicity="1" />
+          <End Role="homeownership" Type="Self.homeownership" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="general">
+              <PropertyRef Name="UID" />
+            </Principal>
+            <Dependent Role="homeownership">
+              <PropertyRef Name="general_UID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_Repairs_General_Info">
+          <End Role="general" Type="Self.general" Multiplicity="1" />
+          <End Role="repairs" Type="Self.repair" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="general">
+              <PropertyRef Name="UID" />
+            </Principal>
+            <Dependent Role="repairs">
+              <PropertyRef Name="General_Info_UID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_tracking_general1">
+          <End Role="general" Type="Self.general" Multiplicity="1" />
+          <End Role="tracking" Type="Self.tracking" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="general">
+              <PropertyRef Name="UID" />
+            </Principal>
+            <Dependent Role="tracking">
+              <PropertyRef Name="general_UID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_survey_results_survey1">
+          <End Role="survey" Type="Self.survey" Multiplicity="1" />
+          <End Role="survey_results" Type="Self.survey_results" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="survey">
+              <PropertyRef Name="SurveyID" />
+            </Principal>
+            <Dependent Role="survey_results">
+              <PropertyRef Name="survey_SurveyID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="general_has_survey">
+          <End Role="general" Type="Self.general" Multiplicity="*" />
+          <End Role="survey" Type="Self.survey" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="mydbEntities3" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="generals" EntityType="Self.general" />
+          <EntitySet Name="homeownerships" EntityType="Self.homeownership" />
+          <EntitySet Name="repairs" EntityType="Self.repair" />
+          <EntitySet Name="surveys" EntityType="Self.survey" />
+          <EntitySet Name="survey_results" EntityType="Self.survey_results" />
+          <EntitySet Name="trackings" EntityType="Self.tracking" />
+          <EntitySet Name="users" EntityType="Self.user" />
+          <EntitySet Name="all_table_vw" EntityType="Self.all_table_vw" />
+          <AssociationSet Name="fk_homeownership_general1" Association="Self.fk_homeownership_general1">
+            <End Role="general" EntitySet="generals" />
+            <End Role="homeownership" EntitySet="homeownerships" />
+          </AssociationSet>
+          <AssociationSet Name="fk_Repairs_General_Info" Association="Self.fk_Repairs_General_Info">
+            <End Role="general" EntitySet="generals" />
+            <End Role="repairs" EntitySet="repairs" />
+          </AssociationSet>
+          <AssociationSet Name="fk_tracking_general1" Association="Self.fk_tracking_general1">
+            <End Role="general" EntitySet="generals" />
+            <End Role="tracking" EntitySet="trackings" />
+          </AssociationSet>
+          <AssociationSet Name="fk_survey_results_survey1" Association="Self.fk_survey_results_survey1">
+            <End Role="survey" EntitySet="surveys" />
+            <End Role="survey_results" EntitySet="survey_results" />
+          </AssociationSet>
+          <AssociationSet Name="general_has_survey" Association="Self.general_has_survey">
+            <End Role="general" EntitySet="generals" />
+            <End Role="survey" EntitySet="surveys" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="mydbModel3StoreContainer" CdmEntityContainer="mydbEntities3">
+          <EntitySetMapping Name="generals">
+            <EntityTypeMapping TypeName="mydbModel3.general">
+              <MappingFragment StoreEntitySet="general">
+                <ScalarProperty Name="UID" ColumnName="UID" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="inquiryDate" ColumnName="inquiryDate" />
+                <ScalarProperty Name="streetAddress" ColumnName="streetAddress" />
+                <ScalarProperty Name="cityAddress" ColumnName="cityAddress" />
+                <ScalarProperty Name="zipAddress" ColumnName="zipAddress" />
+                <ScalarProperty Name="stateAddress" ColumnName="stateAddress" />
+                <ScalarProperty Name="countryAddress" ColumnName="countryAddress" />
+                <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="birthdate" ColumnName="birthdate" />
+                <ScalarProperty Name="householdSize" ColumnName="householdSize" />
+                <ScalarProperty Name="householdAMI" ColumnName="householdAMI" />
+                <ScalarProperty Name="race" ColumnName="race" />
+                <ScalarProperty Name="maritalStatus" ColumnName="maritalStatus" />
+                <ScalarProperty Name="notes" ColumnName="notes" />
+                <ScalarProperty Name="coapplicantName" ColumnName="coapplicantName" />
+                <ScalarProperty Name="dependentName" ColumnName="dependentName" />
+                <ScalarProperty Name="coapplicantBirthDate" ColumnName="coapplicantBirthDate" />
+                <ScalarProperty Name="maritalStatusMulti" ColumnName="maritalStatusMulti" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="homeownerships">
+            <EntityTypeMapping TypeName="mydbModel3.homeownership">
+              <MappingFragment StoreEntitySet="homeownership">
+                <ScalarProperty Name="applicantInfoMeeting" ColumnName="applicantInfoMeeting" />
+                <ScalarProperty Name="applicationChecklist1" ColumnName="applicationChecklist1" />
+                <ScalarProperty Name="applicationChecklist2" ColumnName="applicationChecklist2" />
+                <ScalarProperty Name="employmentVerified" ColumnName="employmentVerified" />
+                <ScalarProperty Name="landlordReference" ColumnName="landlordReference" />
+                <ScalarProperty Name="previousLandlordReference" ColumnName="previousLandlordReference" />
+                <ScalarProperty Name="backgroundCheck" ColumnName="backgroundCheck" />
+                <ScalarProperty Name="CCCBudget" ColumnName="CCCBudget" />
+                <ScalarProperty Name="creditReportRun" ColumnName="creditReportRun" />
+                <ScalarProperty Name="homeVisit" ColumnName="homeVisit" />
+                <ScalarProperty Name="committeeDecision" ColumnName="committeeDecision" />
+                <ScalarProperty Name="committeeAccepted" ColumnName="committeeAccepted" />
+                <ScalarProperty Name="committeeReason" ColumnName="committeeReason" />
+                <ScalarProperty Name="boardVote" ColumnName="boardVote" />
+                <ScalarProperty Name="boardAccepted" ColumnName="boardAccepted" />
+                <ScalarProperty Name="boardReason" ColumnName="boardReason" />
+                <ScalarProperty Name="handbookReview" ColumnName="handbookReview" />
+                <ScalarProperty Name="general_UID" ColumnName="general_UID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="repairs">
+            <EntityTypeMapping TypeName="mydbModel3.repair">
+              <MappingFragment StoreEntitySet="repairs">
+                <ScalarProperty Name="ApplicationSubmission" ColumnName="ApplicationSubmission" />
+                <ScalarProperty Name="AdditionalDocuments" ColumnName="AdditionalDocuments" />
+                <ScalarProperty Name="ApprovalSiteVisit" ColumnName="ApprovalSiteVisit" />
+                <ScalarProperty Name="SiteVisitComplete" ColumnName="SiteVisitComplete" />
+                <ScalarProperty Name="ScopeOfWork" ColumnName="ScopeOfWork" />
+                <ScalarProperty Name="ContractComplete" ColumnName="ContractComplete" />
+                <ScalarProperty Name="WorkComplete" ColumnName="WorkComplete" />
+                <ScalarProperty Name="IDDocuments" ColumnName="IDDocuments" />
+                <ScalarProperty Name="IncomeVerified" ColumnName="IncomeVerified" />
+                <ScalarProperty Name="DeedOfTrust" ColumnName="DeedOfTrust" />
+                <ScalarProperty Name="TaxBill" ColumnName="TaxBill" />
+                <ScalarProperty Name="Satisfaction" ColumnName="Satisfaction" />
+                <ScalarProperty Name="CompletedApplication" ColumnName="CompletedApplication" />
+                <ScalarProperty Name="ParcelReport" ColumnName="ParcelReport" />
+                <ScalarProperty Name="GISAssessment" ColumnName="GISAssessment" />
+                <ScalarProperty Name="FundingSource" ColumnName="FundingSource" />
+                <ScalarProperty Name="General_Info_UID" ColumnName="General Info_UID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="surveys">
+            <EntityTypeMapping TypeName="mydbModel3.survey">
+              <MappingFragment StoreEntitySet="survey">
+                <ScalarProperty Name="SurveyID" ColumnName="SurveyID" />
+                <ScalarProperty Name="SurveyName" ColumnName="SurveyName" />
+                <ScalarProperty Name="Question1" ColumnName="Question1" />
+                <ScalarProperty Name="Question2" ColumnName="Question2" />
+                <ScalarProperty Name="Question3" ColumnName="Question3" />
+                <ScalarProperty Name="Question4" ColumnName="Question4" />
+                <ScalarProperty Name="Question5" ColumnName="Question5" />
+                <ScalarProperty Name="Question6" ColumnName="Question6" />
+                <ScalarProperty Name="Question7" ColumnName="Question7" />
+                <ScalarProperty Name="Question8" ColumnName="Question8" />
+                <ScalarProperty Name="Question9" ColumnName="Question9" />
+                <ScalarProperty Name="Question10" ColumnName="Question10" />
+                <ScalarProperty Name="Question11" ColumnName="Question11" />
+                <ScalarProperty Name="Question12" ColumnName="Question12" />
+                <ScalarProperty Name="Question13" ColumnName="Question13" />
+                <ScalarProperty Name="Question14" ColumnName="Question14" />
+                <ScalarProperty Name="Question15" ColumnName="Question15" />
+                <ScalarProperty Name="Question16" ColumnName="Question16" />
+                <ScalarProperty Name="Question17" ColumnName="Question17" />
+                <ScalarProperty Name="Question18" ColumnName="Question18" />
+                <ScalarProperty Name="Question19" ColumnName="Question19" />
+                <ScalarProperty Name="Question20" ColumnName="Question20" />
+                <ScalarProperty Name="Question21" ColumnName="Question21" />
+                <ScalarProperty Name="Question22" ColumnName="Question22" />
+                <ScalarProperty Name="Question23" ColumnName="Question23" />
+                <ScalarProperty Name="Question24" ColumnName="Question24" />
+                <ScalarProperty Name="Question25" ColumnName="Question25" />
+                <ScalarProperty Name="Question26" ColumnName="Question26" />
+                <ScalarProperty Name="Question27" ColumnName="Question27" />
+                <ScalarProperty Name="Question28" ColumnName="Question28" />
+                <ScalarProperty Name="Question29" ColumnName="Question29" />
+                <ScalarProperty Name="Question30" ColumnName="Question30" />
+                <ScalarProperty Name="Question31" ColumnName="Question31" />
+                <ScalarProperty Name="Question36" ColumnName="Question36" />
+                <ScalarProperty Name="Question32" ColumnName="Question32" />
+                <ScalarProperty Name="Question33" ColumnName="Question33" />
+                <ScalarProperty Name="Question34" ColumnName="Question34" />
+                <ScalarProperty Name="Question35" ColumnName="Question35" />
+                <ScalarProperty Name="Question37" ColumnName="Question37" />
+                <ScalarProperty Name="Question38" ColumnName="Question38" />
+                <ScalarProperty Name="Question39" ColumnName="Question39" />
+                <ScalarProperty Name="Question40" ColumnName="Question40" />
+                <ScalarProperty Name="Question41" ColumnName="Question41" />
+                <ScalarProperty Name="Question42" ColumnName="Question42" />
+                <ScalarProperty Name="Question43" ColumnName="Question43" />
+                <ScalarProperty Name="Question44" ColumnName="Question44" />
+                <ScalarProperty Name="Question45" ColumnName="Question45" />
+                <ScalarProperty Name="Question46" ColumnName="Question46" />
+                <ScalarProperty Name="Question47" ColumnName="Question47" />
+                <ScalarProperty Name="Question48" ColumnName="Question48" />
+                <ScalarProperty Name="Question49" ColumnName="Question49" />
+                <ScalarProperty Name="Question50" ColumnName="Question50" />
+                <ScalarProperty Name="QuestionFile" ColumnName="QuestionFile" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="QuestionNum1" ColumnName="QuestionNum1" />
+                <ScalarProperty Name="QuestionNum2" ColumnName="QuestionNum2" />
+                <ScalarProperty Name="QuestionNum3" ColumnName="QuestionNum3" />
+                <ScalarProperty Name="QuestionNum4" ColumnName="QuestionNum4" />
+                <ScalarProperty Name="QuestionNum5" ColumnName="QuestionNum5" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="survey_results">
+            <EntityTypeMapping TypeName="mydbModel3.survey_results">
+              <MappingFragment StoreEntitySet="survey_results">
+                <ScalarProperty Name="Question1" ColumnName="Question1" />
+                <ScalarProperty Name="Question2" ColumnName="Question2" />
+                <ScalarProperty Name="Question3" ColumnName="Question3" />
+                <ScalarProperty Name="Question4" ColumnName="Question4" />
+                <ScalarProperty Name="Question5" ColumnName="Question5" />
+                <ScalarProperty Name="Question6" ColumnName="Question6" />
+                <ScalarProperty Name="Question7" ColumnName="Question7" />
+                <ScalarProperty Name="Question8" ColumnName="Question8" />
+                <ScalarProperty Name="Question9" ColumnName="Question9" />
+                <ScalarProperty Name="Question10" ColumnName="Question10" />
+                <ScalarProperty Name="Question11" ColumnName="Question11" />
+                <ScalarProperty Name="Question12" ColumnName="Question12" />
+                <ScalarProperty Name="Question13" ColumnName="Question13" />
+                <ScalarProperty Name="Question14" ColumnName="Question14" />
+                <ScalarProperty Name="Question15" ColumnName="Question15" />
+                <ScalarProperty Name="Question16" ColumnName="Question16" />
+                <ScalarProperty Name="Question17" ColumnName="Question17" />
+                <ScalarProperty Name="Question18" ColumnName="Question18" />
+                <ScalarProperty Name="Question19" ColumnName="Question19" />
+                <ScalarProperty Name="Question20" ColumnName="Question20" />
+                <ScalarProperty Name="Question21" ColumnName="Question21" />
+                <ScalarProperty Name="Question22" ColumnName="Question22" />
+                <ScalarProperty Name="Question23" ColumnName="Question23" />
+                <ScalarProperty Name="Question24" ColumnName="Question24" />
+                <ScalarProperty Name="Question25" ColumnName="Question25" />
+                <ScalarProperty Name="Question26" ColumnName="Question26" />
+                <ScalarProperty Name="Question27" ColumnName="Question27" />
+                <ScalarProperty Name="Question28" ColumnName="Question28" />
+                <ScalarProperty Name="Question29" ColumnName="Question29" />
+                <ScalarProperty Name="Question30" ColumnName="Question30" />
+                <ScalarProperty Name="Question31" ColumnName="Question31" />
+                <ScalarProperty Name="Question32" ColumnName="Question32" />
+                <ScalarProperty Name="Question33" ColumnName="Question33" />
+                <ScalarProperty Name="Question34" ColumnName="Question34" />
+                <ScalarProperty Name="Question35" ColumnName="Question35" />
+                <ScalarProperty Name="Question36" ColumnName="Question36" />
+                <ScalarProperty Name="Question37" ColumnName="Question37" />
+                <ScalarProperty Name="Question38" ColumnName="Question38" />
+                <ScalarProperty Name="Question39" ColumnName="Question39" />
+                <ScalarProperty Name="Question40" ColumnName="Question40" />
+                <ScalarProperty Name="Question41" ColumnName="Question41" />
+                <ScalarProperty Name="Question42" ColumnName="Question42" />
+                <ScalarProperty Name="Question43" ColumnName="Question43" />
+                <ScalarProperty Name="Question44" ColumnName="Question44" />
+                <ScalarProperty Name="Question45" ColumnName="Question45" />
+                <ScalarProperty Name="Question46" ColumnName="Question46" />
+                <ScalarProperty Name="Question47" ColumnName="Question47" />
+                <ScalarProperty Name="Question48" ColumnName="Question48" />
+                <ScalarProperty Name="Question49" ColumnName="Question49" />
+                <ScalarProperty Name="Question50" ColumnName="Question50" />
+                <ScalarProperty Name="QuestionNum1" ColumnName="QuestionNum1" />
+                <ScalarProperty Name="QuestionNum2" ColumnName="QuestionNum2" />
+                <ScalarProperty Name="QuestionNum3" ColumnName="QuestionNum3" />
+                <ScalarProperty Name="QuestionNum4" ColumnName="QuestionNum4" />
+                <ScalarProperty Name="QuestionNum5" ColumnName="QuestionNum5" />
+                <ScalarProperty Name="resultsID" ColumnName="resultsID" />
+                <ScalarProperty Name="survey_SurveyID" ColumnName="survey_SurveyID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="trackings">
+            <EntityTypeMapping TypeName="mydbModel3.tracking">
+              <MappingFragment StoreEntitySet="tracking">
+                <ScalarProperty Name="general_UID" ColumnName="general_UID" />
+                <ScalarProperty Name="sweatEquityDate" ColumnName="sweatEquityDate" />
+                <ScalarProperty Name="sweatEquityAmount" ColumnName="sweatEquityAmount" />
+                <ScalarProperty Name="monthlyDepositDate" ColumnName="monthlyDepositDate" />
+                <ScalarProperty Name="monthlyDepositAmount" ColumnName="monthlyDepositAmount" />
+                <ScalarProperty Name="HUDHoursDate" ColumnName="HUDHoursDate" />
+                <ScalarProperty Name="HUDHoursComplete" ColumnName="HUDHoursComplete" />
+                <ScalarProperty Name="financeClassesDate" ColumnName="financeClassesDate" />
+                <ScalarProperty Name="financeClassesComplete" ColumnName="financeClassesComplete" />
+                <ScalarProperty Name="homebuyerEducationDate" ColumnName="homebuyerEducationDate" />
+                <ScalarProperty Name="homebuyerEducationAmount" ColumnName="homebuyerEducationAmount" />
+                <ScalarProperty Name="mortgage1Price" ColumnName="mortgage1Price" />
+                <ScalarProperty Name="mortgage1Bank" ColumnName="mortgage1Bank" />
+                <ScalarProperty Name="mortgage1Forgivable" ColumnName="mortgage1Forgivable" />
+                <ScalarProperty Name="mortgage1OriginalBalance" ColumnName="mortgage1OriginalBalance" />
+                <ScalarProperty Name="mortgage1NumberOfYears" ColumnName="mortgage1NumberOfYears" />
+                <ScalarProperty Name="mortgage2Price" ColumnName="mortgage2Price" />
+                <ScalarProperty Name="mortgage2Bank" ColumnName="mortgage2Bank" />
+                <ScalarProperty Name="mortgage2Forgivable" ColumnName="mortgage2Forgivable" />
+                <ScalarProperty Name="mortgage2OriginalBalance" ColumnName="mortgage2OriginalBalance" />
+                <ScalarProperty Name="morgage2NumberOfYears" ColumnName="morgage2NumberOfYears" />
+                <ScalarProperty Name="mortgage3Price" ColumnName="mortgage3Price" />
+                <ScalarProperty Name="mortgage3Bank" ColumnName="mortgage3Bank" />
+                <ScalarProperty Name="mortgage3Forgivable" ColumnName="mortgage3Forgivable" />
+                <ScalarProperty Name="mortgage3OriginalBalance" ColumnName="mortgage3OriginalBalance" />
+                <ScalarProperty Name="mortgage3NumberOfYears" ColumnName="mortgage3NumberOfYears" />
+                <ScalarProperty Name="mortgage4Price" ColumnName="mortgage4Price" />
+                <ScalarProperty Name="mortgage4Bank" ColumnName="mortgage4Bank" />
+                <ScalarProperty Name="mortgage4Forgivable" ColumnName="mortgage4Forgivable" />
+                <ScalarProperty Name="mortgage4OriginalBalance" ColumnName="mortgage4OriginalBalance" />
+                <ScalarProperty Name="mortgage4NumberOfYears" ColumnName="mortgage4NumberOfYears" />
+                <ScalarProperty Name="mortgage5Price" ColumnName="mortgage5Price" />
+                <ScalarProperty Name="mortgage5Bank" ColumnName="mortgage5Bank" />
+                <ScalarProperty Name="mortgage5Forgivable" ColumnName="mortgage5Forgivable" />
+                <ScalarProperty Name="mortgage5OriginalBalance" ColumnName="mortgage5OriginalBalance" />
+                <ScalarProperty Name="mortgage5NumberOfYears" ColumnName="mortgage5NumberOfYears" />
+                <ScalarProperty Name="mortgage6Price" ColumnName="mortgage6Price" />
+                <ScalarProperty Name="mortgage6Bank" ColumnName="mortgage6Bank" />
+                <ScalarProperty Name="mortgage6Forgivable" ColumnName="mortgage6Forgivable" />
+                <ScalarProperty Name="mortgage6OriginalBalance" ColumnName="mortgage6OriginalBalance" />
+                <ScalarProperty Name="mortgage6NumberOfYears" ColumnName="mortgage6NumberOfYears" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="mydbModel3.user">
+              <MappingFragment StoreEntitySet="user">
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="create_time" ColumnName="create_time" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="all_table_vw">
+            <EntityTypeMapping TypeName="mydbModel3.all_table_vw">
+              <MappingFragment StoreEntitySet="all_table_vw">
+                <ScalarProperty Name="UID" ColumnName="UID" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="inquiryDate" ColumnName="inquiryDate" />
+                <ScalarProperty Name="streetAddress" ColumnName="streetAddress" />
+                <ScalarProperty Name="cityAddress" ColumnName="cityAddress" />
+                <ScalarProperty Name="zipAddress" ColumnName="zipAddress" />
+                <ScalarProperty Name="stateAddress" ColumnName="stateAddress" />
+                <ScalarProperty Name="countryAddress" ColumnName="countryAddress" />
+                <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="birthdate" ColumnName="birthdate" />
+                <ScalarProperty Name="householdSize" ColumnName="householdSize" />
+                <ScalarProperty Name="householdAMI" ColumnName="householdAMI" />
+                <ScalarProperty Name="race" ColumnName="race" />
+                <ScalarProperty Name="maritalStatus" ColumnName="maritalStatus" />
+                <ScalarProperty Name="notes" ColumnName="notes" />
+                <ScalarProperty Name="coapplicantName" ColumnName="coapplicantName" />
+                <ScalarProperty Name="dependentName" ColumnName="dependentName" />
+                <ScalarProperty Name="applicantInfoMeeting" ColumnName="applicantInfoMeeting" />
+                <ScalarProperty Name="applicationChecklist1" ColumnName="applicationChecklist1" />
+                <ScalarProperty Name="applicationChecklist2" ColumnName="applicationChecklist2" />
+                <ScalarProperty Name="employmentVerified" ColumnName="employmentVerified" />
+                <ScalarProperty Name="landlordReference" ColumnName="landlordReference" />
+                <ScalarProperty Name="previousLandlordReference" ColumnName="previousLandlordReference" />
+                <ScalarProperty Name="backgroundCheck" ColumnName="backgroundCheck" />
+                <ScalarProperty Name="CCCBudget" ColumnName="CCCBudget" />
+                <ScalarProperty Name="creditReportRun" ColumnName="creditReportRun" />
+                <ScalarProperty Name="homeVisit" ColumnName="homeVisit" />
+                <ScalarProperty Name="committeeDecision" ColumnName="committeeDecision" />
+                <ScalarProperty Name="committeeAccepted" ColumnName="committeeAccepted" />
+                <ScalarProperty Name="committeeReason" ColumnName="committeeReason" />
+                <ScalarProperty Name="boardVote" ColumnName="boardVote" />
+                <ScalarProperty Name="boardAccepted" ColumnName="boardAccepted" />
+                <ScalarProperty Name="boardReason" ColumnName="boardReason" />
+                <ScalarProperty Name="handbookReview" ColumnName="handbookReview" />
+                <ScalarProperty Name="ApplicationSubmission" ColumnName="ApplicationSubmission" />
+                <ScalarProperty Name="AdditionalDocuments" ColumnName="AdditionalDocuments" />
+                <ScalarProperty Name="ApprovalSiteVisit" ColumnName="ApprovalSiteVisit" />
+                <ScalarProperty Name="SiteVisitComplete" ColumnName="SiteVisitComplete" />
+                <ScalarProperty Name="ScopeOfWork" ColumnName="ScopeOfWork" />
+                <ScalarProperty Name="ContractComplete" ColumnName="ContractComplete" />
+                <ScalarProperty Name="WorkComplete" ColumnName="WorkComplete" />
+                <ScalarProperty Name="IDDocuments" ColumnName="IDDocuments" />
+                <ScalarProperty Name="IncomeVerified" ColumnName="IncomeVerified" />
+                <ScalarProperty Name="DeedOfTrust" ColumnName="DeedOfTrust" />
+                <ScalarProperty Name="TaxBill" ColumnName="TaxBill" />
+                <ScalarProperty Name="Satisfaction" ColumnName="Satisfaction" />
+                <ScalarProperty Name="CompletedApplication" ColumnName="CompletedApplication" />
+                <ScalarProperty Name="ParcelReport" ColumnName="ParcelReport" />
+                <ScalarProperty Name="GISAssessment" ColumnName="GISAssessment" />
+                <ScalarProperty Name="FundingSource" ColumnName="FundingSource" />
+                <ScalarProperty Name="sweatEquityDate" ColumnName="sweatEquityDate" />
+                <ScalarProperty Name="sweatEquityAmount" ColumnName="sweatEquityAmount" />
+                <ScalarProperty Name="monthlyDepositDate" ColumnName="monthlyDepositDate" />
+                <ScalarProperty Name="monthlyDepositAmount" ColumnName="monthlyDepositAmount" />
+                <ScalarProperty Name="HUDHoursDate" ColumnName="HUDHoursDate" />
+                <ScalarProperty Name="HUDHoursComplete" ColumnName="HUDHoursComplete" />
+                <ScalarProperty Name="financeClassesDate" ColumnName="financeClassesDate" />
+                <ScalarProperty Name="financeClassesComplete" ColumnName="financeClassesComplete" />
+                <ScalarProperty Name="homebuyerEducationDate" ColumnName="homebuyerEducationDate" />
+                <ScalarProperty Name="homebuyerEducationAmount" ColumnName="homebuyerEducationAmount" />
+                <ScalarProperty Name="mortgage1Price" ColumnName="mortgage1Price" />
+                <ScalarProperty Name="mortgage1Bank" ColumnName="mortgage1Bank" />
+                <ScalarProperty Name="mortgage1Forgivable" ColumnName="mortgage1Forgivable" />
+                <ScalarProperty Name="mortgage1OriginalBalance" ColumnName="mortgage1OriginalBalance" />
+                <ScalarProperty Name="mortgage1NumberOfYears" ColumnName="mortgage1NumberOfYears" />
+                <ScalarProperty Name="mortgage2Price" ColumnName="mortgage2Price" />
+                <ScalarProperty Name="mortgage2Bank" ColumnName="mortgage2Bank" />
+                <ScalarProperty Name="mortgage2Forgivable" ColumnName="mortgage2Forgivable" />
+                <ScalarProperty Name="mortgage2OriginalBalance" ColumnName="mortgage2OriginalBalance" />
+                <ScalarProperty Name="morgage2NumberOfYears" ColumnName="morgage2NumberOfYears" />
+                <ScalarProperty Name="mortgage3Price" ColumnName="mortgage3Price" />
+                <ScalarProperty Name="mortgage3Bank" ColumnName="mortgage3Bank" />
+                <ScalarProperty Name="mortgage3Forgivable" ColumnName="mortgage3Forgivable" />
+                <ScalarProperty Name="mortgage3OriginalBalance" ColumnName="mortgage3OriginalBalance" />
+                <ScalarProperty Name="mortgage3NumberOfYears" ColumnName="mortgage3NumberOfYears" />
+                <ScalarProperty Name="mortgage4Price" ColumnName="mortgage4Price" />
+                <ScalarProperty Name="mortgage4Bank" ColumnName="mortgage4Bank" />
+                <ScalarProperty Name="mortgage4Forgivable" ColumnName="mortgage4Forgivable" />
+                <ScalarProperty Name="mortgage4OriginalBalance" ColumnName="mortgage4OriginalBalance" />
+                <ScalarProperty Name="mortgage4NumberOfYears" ColumnName="mortgage4NumberOfYears" />
+                <ScalarProperty Name="mortgage5Price" ColumnName="mortgage5Price" />
+                <ScalarProperty Name="mortgage5Bank" ColumnName="mortgage5Bank" />
+                <ScalarProperty Name="mortgage5Forgivable" ColumnName="mortgage5Forgivable" />
+                <ScalarProperty Name="mortgage5OriginalBalance" ColumnName="mortgage5OriginalBalance" />
+                <ScalarProperty Name="mortgage5NumberOfYears" ColumnName="mortgage5NumberOfYears" />
+                <ScalarProperty Name="mortgage6Price" ColumnName="mortgage6Price" />
+                <ScalarProperty Name="mortgage6Bank" ColumnName="mortgage6Bank" />
+                <ScalarProperty Name="mortgage6Forgivable" ColumnName="mortgage6Forgivable" />
+                <ScalarProperty Name="mortgage6OriginalBalance" ColumnName="mortgage6OriginalBalance" />
+                <ScalarProperty Name="mortgage6NumberOfYears" ColumnName="mortgage6NumberOfYears" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="general_has_survey" TypeName="mydbModel3.general_has_survey" StoreEntitySet="general_has_survey">
+            <EndProperty Name="general">
+              <ScalarProperty Name="UID" ColumnName="general_UID" />
+            </EndProperty>
+            <EndProperty Name="survey">
+              <ScalarProperty Name="SurveyID" ColumnName="survey_SurveyID" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

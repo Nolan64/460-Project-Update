@@ -16,10 +16,10 @@ Namespace DatabaseTestApplication2
 
 	Public Class frmgeneral
 
-		Private ctx As mydbEntities1
+		Private ctx As mydbEntities3
 
 		Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-			ctx = New mydbEntities1()
+			ctx = New mydbEntities3()
 			ctx.generals.Load()
 			Dim _entities As BindingList(Of general) = ctx.generals.Local.ToBindingList()
 			generalBindingSource.DataSource = _entities
@@ -39,7 +39,7 @@ Namespace DatabaseTestApplication2
 			Me.householdSizeTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "householdSize", True))
 			Me.householdAMITextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "householdAMI", True))
 			Me.raceComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "race", True))
-			'Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "maritalStatus", True))
+			Me.maritalStatusComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "maritalStatusMulti", True))
 			Me.notesTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "notes", True))
 			Me.coapplicanttxt.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "coapplicantName", True))
 			Me.dependenttxt.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.generalBindingSource, "dependentName", True))
