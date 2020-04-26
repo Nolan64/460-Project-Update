@@ -175,6 +175,12 @@
     <Compile Include="frmgeneral.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmgeneral_has_survey.designer.vb">
+      <DependentUpon>frmgeneral_has_survey.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmgeneral_has_survey.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmhomeownership.designer.vb">
       <DependentUpon>frmhomeownership.vb</DependentUpon>
     </Compile>
@@ -297,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmgeneral.resx">
       <DependentUpon>frmgeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgeneral_has_survey.resx">
+      <DependentUpon>frmgeneral_has_survey.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmhomeownership.resx">
       <DependentUpon>frmhomeownership.vb</DependentUpon>

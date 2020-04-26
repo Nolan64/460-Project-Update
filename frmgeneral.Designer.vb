@@ -9,31 +9,31 @@
 ' 
 
 Namespace DatabaseTestApplication2
-	
-	<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-	Partial Class frmgeneral
-		Inherits System.Windows.Forms.Form
-		
-		'Form overrides dispose to clean up the component list.
-		<System.Diagnostics.DebuggerNonUserCode()> _
-		Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-			Try
-			If disposing AndAlso components IsNot Nothing Then
-				components.Dispose()
-			End If
-			Finally
-			MyBase.Dispose(disposing)
-			End Try
-		End Sub
-		
-		'Required by the Windows Form Designer
-		Private components As System.ComponentModel.IContainer
-		
-		'NOTE: The following procedure is required by the Windows Form Designer
-		'It can be modified using the Windows Form Designer.  
-		'Do not modify it using the code editor.
-		<System.Diagnostics.DebuggerStepThrough()> _
-		Private Sub InitializeComponent()
+
+    <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+    Partial Class frmgeneral
+        Inherits System.Windows.Forms.Form
+
+        'Form overrides dispose to clean up the component list.
+        <System.Diagnostics.DebuggerNonUserCode()>
+        Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+            Try
+                If disposing AndAlso components IsNot Nothing Then
+                    components.Dispose()
+                End If
+            Finally
+                MyBase.Dispose(disposing)
+            End Try
+        End Sub
+
+        'Required by the Windows Form Designer
+        Private components As System.ComponentModel.IContainer
+
+        'NOTE: The following procedure is required by the Windows Form Designer
+        'It can be modified using the Windows Form Designer.  
+        'Do not modify it using the code editor.
+        <System.Diagnostics.DebuggerStepThrough()>
+        Private Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmgeneral))
             Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
@@ -106,6 +106,8 @@ Namespace DatabaseTestApplication2
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
+            Me.Label3 = New System.Windows.Forms.Label()
+            Me.MyDateTimePickerEditingControl1 = New DatabaseTestApplication2.MyDateTimePickerEditingControl()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
             CType(Me.generalBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -132,14 +134,14 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigator1.Name = "BindingNavigator1"
             Me.BindingNavigator1.Padding = New System.Windows.Forms.Padding(13, 0, 13, 0)
             Me.BindingNavigator1.PositionItem = Me.BindingNavigatorPositionItem
-            Me.BindingNavigator1.Size = New System.Drawing.Size(989, 31)
+            Me.BindingNavigator1.Size = New System.Drawing.Size(989, 27)
             Me.BindingNavigator1.TabIndex = 0
             Me.BindingNavigator1.Text = "BindingNavigator1"
             '
             'BindingNavigatorCountItem
             '
             Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 28)
+            Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
             Me.BindingNavigatorCountItem.Text = "of {0}"
             Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
             '
@@ -149,7 +151,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
             Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorDeleteItem.Text = "Delete"
             '
             'BindingNavigatorMoveFirstItem
@@ -158,7 +160,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
             Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorMoveFirstItem.Text = "Move first"
             '
             'BindingNavigatorMovePreviousItem
@@ -167,13 +169,13 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
             Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
             '
             'BindingNavigatorSeparator
             '
             Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-            Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 31)
+            Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
             '
             'BindingNavigatorPositionItem
             '
@@ -188,7 +190,7 @@ Namespace DatabaseTestApplication2
             'BindingNavigatorSeparator1
             '
             Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-            Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 31)
+            Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
             '
             'BindingNavigatorMoveNextItem
             '
@@ -196,7 +198,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
             Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorMoveNextItem.Text = "Move next"
             '
             'BindingNavigatorMoveLastItem
@@ -205,13 +207,13 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
             Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorMoveLastItem.Text = "Move last"
             '
             'BindingNavigatorSeparator2
             '
             Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-            Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 31)
+            Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
             '
             'BindingNavigatorAddNewItem
             '
@@ -219,7 +221,7 @@ Namespace DatabaseTestApplication2
             Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
             Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
             Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 28)
+            Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
             Me.BindingNavigatorAddNewItem.Text = "Add new"
             '
             'ToolStripButton1
@@ -228,7 +230,7 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
             Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
             Me.ToolStripButton1.Name = "ToolStripButton1"
-            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 28)
+            Me.ToolStripButton1.Size = New System.Drawing.Size(29, 24)
             Me.ToolStripButton1.Text = "Save"
             '
             'ErrorProvider1
@@ -241,6 +243,8 @@ Namespace DatabaseTestApplication2
             Me.Panel1.AutoSize = True
             Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
             Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+            Me.Panel1.Controls.Add(Me.MyDateTimePickerEditingControl1)
+            Me.Panel1.Controls.Add(Me.Label3)
             Me.Panel1.Controls.Add(Me.MenuStrip1)
             Me.Panel1.Controls.Add(Me.PictureBox2)
             Me.Panel1.Controls.Add(Me.Label2)
@@ -289,7 +293,7 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Location = New System.Drawing.Point(13, 0)
             Me.Panel1.Margin = New System.Windows.Forms.Padding(13, 4, 13, 4)
             Me.Panel1.Name = "Panel1"
-            Me.Panel1.Size = New System.Drawing.Size(963, 613)
+            Me.Panel1.Size = New System.Drawing.Size(963, 617)
             Me.Panel1.TabIndex = 1
             '
             'MenuStrip1
@@ -298,51 +302,51 @@ Namespace DatabaseTestApplication2
             Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.GeneralToolStripMenuItem, Me.HomeownershipToolStripMenuItem, Me.RepairsToolStripMenuItem, Me.TrackingToolStripMenuItem, Me.SurveyEditorToolStripMenuItem, Me.SurveyToolStripMenuItem})
             Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
             Me.MenuStrip1.Name = "MenuStrip1"
-            Me.MenuStrip1.Size = New System.Drawing.Size(963, 30)
+            Me.MenuStrip1.Size = New System.Drawing.Size(963, 28)
             Me.MenuStrip1.TabIndex = 122
             Me.MenuStrip1.Text = "MenuStrip1"
             '
             'MainMenuToolStripMenuItem
             '
             Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
-            Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(97, 26)
+            Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(97, 24)
             Me.MainMenuToolStripMenuItem.Text = "Main Menu"
             '
             'GeneralToolStripMenuItem
             '
             Me.GeneralToolStripMenuItem.Enabled = False
             Me.GeneralToolStripMenuItem.Name = "GeneralToolStripMenuItem"
-            Me.GeneralToolStripMenuItem.Size = New System.Drawing.Size(74, 26)
+            Me.GeneralToolStripMenuItem.Size = New System.Drawing.Size(74, 24)
             Me.GeneralToolStripMenuItem.Text = "General"
             '
             'HomeownershipToolStripMenuItem
             '
             Me.HomeownershipToolStripMenuItem.Name = "HomeownershipToolStripMenuItem"
-            Me.HomeownershipToolStripMenuItem.Size = New System.Drawing.Size(132, 26)
+            Me.HomeownershipToolStripMenuItem.Size = New System.Drawing.Size(132, 24)
             Me.HomeownershipToolStripMenuItem.Text = "Homeownership"
             '
             'RepairsToolStripMenuItem
             '
             Me.RepairsToolStripMenuItem.Name = "RepairsToolStripMenuItem"
-            Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(72, 26)
+            Me.RepairsToolStripMenuItem.Size = New System.Drawing.Size(72, 24)
             Me.RepairsToolStripMenuItem.Text = "Repairs"
             '
             'TrackingToolStripMenuItem
             '
             Me.TrackingToolStripMenuItem.Name = "TrackingToolStripMenuItem"
-            Me.TrackingToolStripMenuItem.Size = New System.Drawing.Size(78, 26)
+            Me.TrackingToolStripMenuItem.Size = New System.Drawing.Size(78, 24)
             Me.TrackingToolStripMenuItem.Text = "Tracking"
             '
             'SurveyEditorToolStripMenuItem
             '
             Me.SurveyEditorToolStripMenuItem.Name = "SurveyEditorToolStripMenuItem"
-            Me.SurveyEditorToolStripMenuItem.Size = New System.Drawing.Size(110, 26)
+            Me.SurveyEditorToolStripMenuItem.Size = New System.Drawing.Size(110, 24)
             Me.SurveyEditorToolStripMenuItem.Text = "Survey Editor"
             '
             'SurveyToolStripMenuItem
             '
             Me.SurveyToolStripMenuItem.Name = "SurveyToolStripMenuItem"
-            Me.SurveyToolStripMenuItem.Size = New System.Drawing.Size(116, 26)
+            Me.SurveyToolStripMenuItem.Size = New System.Drawing.Size(116, 24)
             Me.SurveyToolStripMenuItem.Text = "Survey Results"
             '
             'PictureBox2
@@ -371,11 +375,11 @@ Namespace DatabaseTestApplication2
             '
             Me.Label1.AutoSize = True
             Me.Label1.BackColor = System.Drawing.Color.Transparent
-            Me.Label1.Location = New System.Drawing.Point(51, 553)
+            Me.Label1.Location = New System.Drawing.Point(45, 553)
             Me.Label1.Name = "Label1"
-            Me.Label1.Size = New System.Drawing.Size(123, 17)
+            Me.Label1.Size = New System.Drawing.Size(129, 17)
             Me.Label1.TabIndex = 45
-            Me.Label1.Text = "Coapplicant Name"
+            Me.Label1.Text = "Co-Applicant Name"
             '
             'dependenttxt
             '
@@ -785,10 +789,10 @@ Namespace DatabaseTestApplication2
             Me.panel3.Controls.Add(Me.panel5)
             Me.panel3.Controls.Add(Me.panel6)
             Me.panel3.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.panel3.Location = New System.Drawing.Point(0, 31)
+            Me.panel3.Location = New System.Drawing.Point(0, 27)
             Me.panel3.Margin = New System.Windows.Forms.Padding(4)
             Me.panel3.Name = "panel3"
-            Me.panel3.Size = New System.Drawing.Size(989, 625)
+            Me.panel3.Size = New System.Drawing.Size(989, 629)
             Me.panel3.TabIndex = 19
             '
             'panel4
@@ -797,7 +801,7 @@ Namespace DatabaseTestApplication2
             Me.panel4.Location = New System.Drawing.Point(976, 0)
             Me.panel4.Margin = New System.Windows.Forms.Padding(4)
             Me.panel4.Name = "panel4"
-            Me.panel4.Size = New System.Drawing.Size(13, 613)
+            Me.panel4.Size = New System.Drawing.Size(13, 617)
             Me.panel4.TabIndex = 3
             '
             'panel5
@@ -806,17 +810,40 @@ Namespace DatabaseTestApplication2
             Me.panel5.Location = New System.Drawing.Point(0, 0)
             Me.panel5.Margin = New System.Windows.Forms.Padding(4)
             Me.panel5.Name = "panel5"
-            Me.panel5.Size = New System.Drawing.Size(13, 613)
+            Me.panel5.Size = New System.Drawing.Size(13, 617)
             Me.panel5.TabIndex = 5
             '
             'panel6
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
-            Me.panel6.Location = New System.Drawing.Point(0, 613)
+            Me.panel6.Location = New System.Drawing.Point(0, 617)
             Me.panel6.Margin = New System.Windows.Forms.Padding(4)
             Me.panel6.Name = "panel6"
             Me.panel6.Size = New System.Drawing.Size(989, 12)
             Me.panel6.TabIndex = 6
+            '
+            'Label3
+            '
+            Me.Label3.AutoSize = True
+            Me.Label3.BackColor = System.Drawing.Color.Transparent
+            Me.Label3.Location = New System.Drawing.Point(19, 584)
+            Me.Label3.Name = "Label3"
+            Me.Label3.Size = New System.Drawing.Size(155, 17)
+            Me.Label3.TabIndex = 123
+            Me.Label3.Text = "Co-Applicant Birth Date"
+            '
+            'MyDateTimePickerEditingControl1
+            '
+            Me.MyDateTimePickerEditingControl1.CustomFormat = "MM/dd/yyyy"
+            Me.MyDateTimePickerEditingControl1.EditingControlDataGridView = Nothing
+            Me.MyDateTimePickerEditingControl1.EditingControlFormattedValue = "26/04/2020, 02:38"
+            Me.MyDateTimePickerEditingControl1.EditingControlRowIndex = 0
+            Me.MyDateTimePickerEditingControl1.EditingControlValueChanged = False
+            Me.MyDateTimePickerEditingControl1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+            Me.MyDateTimePickerEditingControl1.Location = New System.Drawing.Point(181, 584)
+            Me.MyDateTimePickerEditingControl1.Name = "MyDateTimePickerEditingControl1"
+            Me.MyDateTimePickerEditingControl1.Size = New System.Drawing.Size(221, 22)
+            Me.MyDateTimePickerEditingControl1.TabIndex = 124
             '
             'frmgeneral
             '
@@ -845,43 +872,43 @@ Namespace DatabaseTestApplication2
 
         End Sub
         Friend WithEvents BindingNavigator1 As System.Windows.Forms.BindingNavigator
-		Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
-		Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
-		Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
-		Friend WithEvents BindingNavigatorMoveFirstItem As System.Windows.Forms.ToolStripButton
-		Friend WithEvents BindingNavigatorMovePreviousItem As System.Windows.Forms.ToolStripButton
-		Friend WithEvents BindingNavigatorSeparator As System.Windows.Forms.ToolStripSeparator
-		Friend WithEvents BindingNavigatorPositionItem As System.Windows.Forms.ToolStripTextBox
-		Friend WithEvents BindingNavigatorSeparator1 As System.Windows.Forms.ToolStripSeparator
-		Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
-		Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
-		Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
-		Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
-		Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
-		Friend WithEvents Panel1 As System.Windows.Forms.Panel
-		Friend WithEvents generalBindingSource As System.Windows.Forms.BindingSource
-		Friend WithEvents UIDTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents UIDLabel As System.Windows.Forms.Label
-		Friend WithEvents firstNameTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents firstNameLabel As System.Windows.Forms.Label
-		Friend WithEvents lastNameTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents lastNameLabel As System.Windows.Forms.Label
-		Friend WithEvents inquiryDate_dateTimePicker As System.Windows.Forms.DateTimePicker
-		Friend WithEvents inquiryDateLabel As System.Windows.Forms.Label
-		Friend WithEvents streetAddressTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents streetAddressLabel As System.Windows.Forms.Label
-		Friend WithEvents cityAddressTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents cityAddressLabel As System.Windows.Forms.Label
-		Friend WithEvents zipAddressTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents zipAddressLabel As System.Windows.Forms.Label
-		Friend WithEvents stateAddressTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents stateAddressLabel As System.Windows.Forms.Label
-		Friend WithEvents countryAddressTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents countryAddressLabel As System.Windows.Forms.Label
-		Friend WithEvents phoneNumberTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents phoneNumberLabel As System.Windows.Forms.Label
-		Friend WithEvents emailTextBox As System.Windows.Forms.TextBox
-		Friend WithEvents emailLabel As System.Windows.Forms.Label
+        Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
+        Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
+        Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
+        Friend WithEvents BindingNavigatorMoveFirstItem As System.Windows.Forms.ToolStripButton
+        Friend WithEvents BindingNavigatorMovePreviousItem As System.Windows.Forms.ToolStripButton
+        Friend WithEvents BindingNavigatorSeparator As System.Windows.Forms.ToolStripSeparator
+        Friend WithEvents BindingNavigatorPositionItem As System.Windows.Forms.ToolStripTextBox
+        Friend WithEvents BindingNavigatorSeparator1 As System.Windows.Forms.ToolStripSeparator
+        Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
+        Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
+        Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
+        Friend WithEvents ToolStripButton1 As System.Windows.Forms.ToolStripButton
+        Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
+        Friend WithEvents Panel1 As System.Windows.Forms.Panel
+        Friend WithEvents generalBindingSource As System.Windows.Forms.BindingSource
+        Friend WithEvents UIDTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents UIDLabel As System.Windows.Forms.Label
+        Friend WithEvents firstNameTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents firstNameLabel As System.Windows.Forms.Label
+        Friend WithEvents lastNameTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents lastNameLabel As System.Windows.Forms.Label
+        Friend WithEvents inquiryDate_dateTimePicker As System.Windows.Forms.DateTimePicker
+        Friend WithEvents inquiryDateLabel As System.Windows.Forms.Label
+        Friend WithEvents streetAddressTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents streetAddressLabel As System.Windows.Forms.Label
+        Friend WithEvents cityAddressTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents cityAddressLabel As System.Windows.Forms.Label
+        Friend WithEvents zipAddressTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents zipAddressLabel As System.Windows.Forms.Label
+        Friend WithEvents stateAddressTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents stateAddressLabel As System.Windows.Forms.Label
+        Friend WithEvents countryAddressTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents countryAddressLabel As System.Windows.Forms.Label
+        Friend WithEvents phoneNumberTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents phoneNumberLabel As System.Windows.Forms.Label
+        Friend WithEvents emailTextBox As System.Windows.Forms.TextBox
+        Friend WithEvents emailLabel As System.Windows.Forms.Label
         Friend WithEvents genderLabel As System.Windows.Forms.Label
         Friend WithEvents birthdate_dateTimePicker As System.Windows.Forms.DateTimePicker
         Friend WithEvents birthdateLabel As System.Windows.Forms.Label
@@ -914,6 +941,8 @@ Namespace DatabaseTestApplication2
         Friend WithEvents TrackingToolStripMenuItem As ToolStripMenuItem
         Friend WithEvents SurveyEditorToolStripMenuItem As ToolStripMenuItem
         Friend WithEvents SurveyToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents MyDateTimePickerEditingControl1 As DatabaseTestApplication2.MyDateTimePickerEditingControl
+        Friend WithEvents Label3 As Label
     End Class
 
 End Namespace

@@ -82,8 +82,9 @@ Namespace DatabaseTestApplication2
 			Me.survey_SurveyID_comboBox.DisplayMember = "SurveyID"
 			Me.survey_SurveyID_comboBox.ValueMember = "SurveyID"
 			Me.survey_SurveyID_comboBox.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.survey_resultsBindingSource, "survey_SurveyID", True))
+			Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "survey_SurveyID", True))
 		End Sub
-		
+
 		Private Sub ToolStripButton1_Click(sender As System.Object, e As System.EventArgs) Handles ToolStripButton1.Click
 			If Not Me.Validate() Then
 				Return
@@ -202,9 +203,7 @@ Namespace DatabaseTestApplication2
 			survey_resultsBindingSource.AddNew()
 		End Sub
 
-		Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
-		End Sub
 
 
 
