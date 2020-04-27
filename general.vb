@@ -38,8 +38,8 @@ Namespace DatabaseTestApplication2
     
         Public Overridable Property homeownership As homeownership
         Public Overridable Property repair As repair
+        Public Overridable Property survey_results As ICollection(Of survey_results) = New HashSet(Of survey_results)
         Public Overridable Property tracking As tracking
-        Public Overridable Property surveys As ICollection(Of survey) = New HashSet(Of survey)
     
     End Class
 

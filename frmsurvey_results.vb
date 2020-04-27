@@ -13,13 +13,13 @@ Imports System.Data.Entity.Core.Objects
 Imports System.Data.Entity
 
 Namespace DatabaseTestApplication2
-	
+
 	Public Class frmsurvey_results
 
-		Private ctx As mydbEntities1
+		Private ctx As mydbEntities4
 
 		Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-			ctx = New mydbEntities1()
+			ctx = New mydbEntities4()
 			ctx.survey_results.Load()
 			Dim _entities As BindingList(Of survey_results) = ctx.survey_results.Local.ToBindingList()
 			survey_resultsBindingSource.DataSource = _entities
@@ -73,16 +73,17 @@ Namespace DatabaseTestApplication2
 			Me.Question7TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question7", True))
 			Me.Question8TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question8", True))
 			Me.Question9TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "Question9", True))
-			Me.QuestionNum1TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "QuestionNum1", True ))
-			Me.QuestionNum2TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "QuestionNum2", True ))
-			Me.QuestionNum3TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "QuestionNum3", True ))
-			Me.QuestionNum4TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "QuestionNum4", True ))
-			Me.QuestionNum5TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "QuestionNum5", True ))
+			Me.QuestionNum1TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "QuestionNum1", True))
+			Me.QuestionNum2TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "QuestionNum2", True))
+			Me.QuestionNum3TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "QuestionNum3", True))
+			Me.QuestionNum4TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "QuestionNum4", True))
+			Me.QuestionNum5TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "QuestionNum5", True))
 			Me.survey_SurveyID_comboBox.DataSource = ctx.surveys.ToList()
 			Me.survey_SurveyID_comboBox.DisplayMember = "SurveyID"
 			Me.survey_SurveyID_comboBox.ValueMember = "SurveyID"
 			Me.survey_SurveyID_comboBox.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.survey_resultsBindingSource, "survey_SurveyID", True))
-			Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "survey_SurveyID", True))
+			Me.TextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "resultsID", True))
+			Me.TextBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.survey_resultsBindingSource, "general_UID", True))
 		End Sub
 
 		Private Sub ToolStripButton1_Click(sender As System.Object, e As System.EventArgs) Handles ToolStripButton1.Click
@@ -92,7 +93,7 @@ Namespace DatabaseTestApplication2
 			survey_resultsBindingSource.EndEdit()
 			ctx.SaveChanges()
 		End Sub
-		
+
 		Private Sub Form1_FormClosing(sender As System.Object, e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
 			e.Cancel = False
 		End Sub
@@ -234,6 +235,10 @@ Namespace DatabaseTestApplication2
 		Private Sub HomeownershipToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeownershipToolStripMenuItem.Click
 			DatabaseTestApplication2.frmhomeownership.Show()
 			Me.Close()
+		End Sub
+
+		Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
 		End Sub
 	End Class
 

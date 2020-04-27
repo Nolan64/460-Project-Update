@@ -16,10 +16,10 @@ Namespace DatabaseTestApplication2
 	
 	Public Class frmsurvey
 
-		Private ctx As mydbEntities1
+		Private ctx As mydbEntities4
 
 		Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-			ctx = New mydbEntities1()
+			ctx = New mydbEntities4()
 			ctx.surveys.Load()
 			Dim _entities As BindingList(Of survey) = ctx.surveys.Local.ToBindingList()
 			surveyBindingSource.DataSource = _entities

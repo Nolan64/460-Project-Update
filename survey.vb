@@ -74,7 +74,6 @@ Namespace DatabaseTestApplication2
         Public Property QuestionNum5 As String
     
         Public Overridable Property survey_results As ICollection(Of survey_results) = New HashSet(Of survey_results)
-        Public Overridable Property generals As ICollection(Of general) = New HashSet(Of general)
     
     End Class
 

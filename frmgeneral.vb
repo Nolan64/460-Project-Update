@@ -16,10 +16,10 @@ Namespace DatabaseTestApplication2
 
 	Public Class frmgeneral
 
-		Private ctx As mydbEntities3
+		Private ctx As mydbEntities4
 
 		Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-			ctx = New mydbEntities3()
+			ctx = New mydbEntities4()
 			ctx.generals.Load()
 			Dim _entities As BindingList(Of general) = ctx.generals.Local.ToBindingList()
 			generalBindingSource.DataSource = _entities

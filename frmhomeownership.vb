@@ -16,10 +16,10 @@ Namespace DatabaseTestApplication2
 	
 	Public Class frmhomeownership
 
-		Private ctx As mydbEntities1
+		Private ctx As mydbEntities4
 
 		Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-			ctx = New mydbEntities1()
+			ctx = New mydbEntities4()
 			ctx.homeownerships.Load()
 			Dim _entities As BindingList(Of homeownership) = ctx.homeownerships.Local.ToBindingList()
 			homeownershipBindingSource.DataSource = _entities

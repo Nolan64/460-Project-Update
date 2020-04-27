@@ -52,6 +52,7 @@ Namespace DatabaseTestApplication2
             Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
             Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
             Me.Panel1 = New System.Windows.Forms.Panel()
+            Me.TextBox1 = New System.Windows.Forms.TextBox()
             Me.Question50TextBox = New System.Windows.Forms.TextBox()
             Me.Question49TextBox = New System.Windows.Forms.TextBox()
             Me.Question48TextBox = New System.Windows.Forms.TextBox()
@@ -178,7 +179,9 @@ Namespace DatabaseTestApplication2
             Me.panel4 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel6 = New System.Windows.Forms.Panel()
-            Me.TextBox1 = New System.Windows.Forms.TextBox()
+            Me.Label1 = New System.Windows.Forms.Label()
+            Me.TextBox2 = New System.Windows.Forms.TextBox()
+            Me.Label2 = New System.Windows.Forms.Label()
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.BindingNavigator1.SuspendLayout()
             CType(Me.survey_resultsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -313,6 +316,9 @@ Namespace DatabaseTestApplication2
             Me.Panel1.AutoScroll = True
             Me.Panel1.AutoSize = True
             Me.Panel1.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.angryimg__12_
+            Me.Panel1.Controls.Add(Me.Label2)
+            Me.Panel1.Controls.Add(Me.TextBox2)
+            Me.Panel1.Controls.Add(Me.Label1)
             Me.Panel1.Controls.Add(Me.TextBox1)
             Me.Panel1.Controls.Add(Me.Question50TextBox)
             Me.Panel1.Controls.Add(Me.Question49TextBox)
@@ -436,10 +442,17 @@ Namespace DatabaseTestApplication2
             Me.Panel1.Size = New System.Drawing.Size(1111, 944)
             Me.Panel1.TabIndex = 1
             '
+            'TextBox1
+            '
+            Me.TextBox1.Location = New System.Drawing.Point(889, 234)
+            Me.TextBox1.Name = "TextBox1"
+            Me.TextBox1.Size = New System.Drawing.Size(138, 22)
+            Me.TextBox1.TabIndex = 175
+            '
             'Question50TextBox
             '
             Me.Question50TextBox.Location = New System.Drawing.Point(475, 907)
-            Me.Question50TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question50TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question50TextBox.Name = "Question50TextBox"
             Me.Question50TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question50TextBox.TabIndex = 174
@@ -447,7 +460,7 @@ Namespace DatabaseTestApplication2
             'Question49TextBox
             '
             Me.Question49TextBox.Location = New System.Drawing.Point(475, 875)
-            Me.Question49TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question49TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question49TextBox.Name = "Question49TextBox"
             Me.Question49TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question49TextBox.TabIndex = 173
@@ -455,7 +468,7 @@ Namespace DatabaseTestApplication2
             'Question48TextBox
             '
             Me.Question48TextBox.Location = New System.Drawing.Point(475, 843)
-            Me.Question48TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question48TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question48TextBox.Name = "Question48TextBox"
             Me.Question48TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question48TextBox.TabIndex = 172
@@ -463,7 +476,7 @@ Namespace DatabaseTestApplication2
             'Question47TextBox
             '
             Me.Question47TextBox.Location = New System.Drawing.Point(475, 811)
-            Me.Question47TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question47TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question47TextBox.Name = "Question47TextBox"
             Me.Question47TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question47TextBox.TabIndex = 171
@@ -471,7 +484,7 @@ Namespace DatabaseTestApplication2
             'Question46TextBox
             '
             Me.Question46TextBox.Location = New System.Drawing.Point(475, 779)
-            Me.Question46TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question46TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question46TextBox.Name = "Question46TextBox"
             Me.Question46TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question46TextBox.TabIndex = 170
@@ -479,7 +492,7 @@ Namespace DatabaseTestApplication2
             'Question45TextBox
             '
             Me.Question45TextBox.Location = New System.Drawing.Point(475, 747)
-            Me.Question45TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question45TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question45TextBox.Name = "Question45TextBox"
             Me.Question45TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question45TextBox.TabIndex = 169
@@ -487,7 +500,7 @@ Namespace DatabaseTestApplication2
             'Question44TextBox
             '
             Me.Question44TextBox.Location = New System.Drawing.Point(475, 715)
-            Me.Question44TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question44TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question44TextBox.Name = "Question44TextBox"
             Me.Question44TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question44TextBox.TabIndex = 168
@@ -495,7 +508,7 @@ Namespace DatabaseTestApplication2
             'Question43TextBox
             '
             Me.Question43TextBox.Location = New System.Drawing.Point(475, 683)
-            Me.Question43TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question43TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question43TextBox.Name = "Question43TextBox"
             Me.Question43TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question43TextBox.TabIndex = 167
@@ -503,7 +516,7 @@ Namespace DatabaseTestApplication2
             'Question42TextBox
             '
             Me.Question42TextBox.Location = New System.Drawing.Point(475, 651)
-            Me.Question42TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question42TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question42TextBox.Name = "Question42TextBox"
             Me.Question42TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question42TextBox.TabIndex = 166
@@ -511,7 +524,7 @@ Namespace DatabaseTestApplication2
             'Question41TextBox
             '
             Me.Question41TextBox.Location = New System.Drawing.Point(475, 619)
-            Me.Question41TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question41TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question41TextBox.Name = "Question41TextBox"
             Me.Question41TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question41TextBox.TabIndex = 165
@@ -519,7 +532,7 @@ Namespace DatabaseTestApplication2
             'Question40TextBox
             '
             Me.Question40TextBox.Location = New System.Drawing.Point(475, 587)
-            Me.Question40TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question40TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question40TextBox.Name = "Question40TextBox"
             Me.Question40TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question40TextBox.TabIndex = 164
@@ -527,7 +540,7 @@ Namespace DatabaseTestApplication2
             'Question39TextBox
             '
             Me.Question39TextBox.Location = New System.Drawing.Point(475, 555)
-            Me.Question39TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question39TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question39TextBox.Name = "Question39TextBox"
             Me.Question39TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question39TextBox.TabIndex = 163
@@ -535,7 +548,7 @@ Namespace DatabaseTestApplication2
             'Question38TextBox
             '
             Me.Question38TextBox.Location = New System.Drawing.Point(475, 523)
-            Me.Question38TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question38TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question38TextBox.Name = "Question38TextBox"
             Me.Question38TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question38TextBox.TabIndex = 162
@@ -543,7 +556,7 @@ Namespace DatabaseTestApplication2
             'Question37TextBox
             '
             Me.Question37TextBox.Location = New System.Drawing.Point(475, 491)
-            Me.Question37TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question37TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question37TextBox.Name = "Question37TextBox"
             Me.Question37TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question37TextBox.TabIndex = 161
@@ -551,7 +564,7 @@ Namespace DatabaseTestApplication2
             'Question36TextBox
             '
             Me.Question36TextBox.Location = New System.Drawing.Point(475, 459)
-            Me.Question36TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question36TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question36TextBox.Name = "Question36TextBox"
             Me.Question36TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question36TextBox.TabIndex = 160
@@ -559,7 +572,7 @@ Namespace DatabaseTestApplication2
             'Question35TextBox
             '
             Me.Question35TextBox.Location = New System.Drawing.Point(475, 427)
-            Me.Question35TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question35TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question35TextBox.Name = "Question35TextBox"
             Me.Question35TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question35TextBox.TabIndex = 159
@@ -567,7 +580,7 @@ Namespace DatabaseTestApplication2
             'Question34TextBox
             '
             Me.Question34TextBox.Location = New System.Drawing.Point(475, 395)
-            Me.Question34TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question34TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question34TextBox.Name = "Question34TextBox"
             Me.Question34TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question34TextBox.TabIndex = 158
@@ -575,7 +588,7 @@ Namespace DatabaseTestApplication2
             'Question33TextBox
             '
             Me.Question33TextBox.Location = New System.Drawing.Point(475, 363)
-            Me.Question33TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question33TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question33TextBox.Name = "Question33TextBox"
             Me.Question33TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question33TextBox.TabIndex = 157
@@ -583,7 +596,7 @@ Namespace DatabaseTestApplication2
             'Question32TextBox
             '
             Me.Question32TextBox.Location = New System.Drawing.Point(475, 331)
-            Me.Question32TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question32TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question32TextBox.Name = "Question32TextBox"
             Me.Question32TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question32TextBox.TabIndex = 156
@@ -591,7 +604,7 @@ Namespace DatabaseTestApplication2
             'Question31TextBox
             '
             Me.Question31TextBox.Location = New System.Drawing.Point(475, 299)
-            Me.Question31TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question31TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question31TextBox.Name = "Question31TextBox"
             Me.Question31TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question31TextBox.TabIndex = 155
@@ -599,7 +612,7 @@ Namespace DatabaseTestApplication2
             'Question30TextBox
             '
             Me.Question30TextBox.Location = New System.Drawing.Point(475, 267)
-            Me.Question30TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question30TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question30TextBox.Name = "Question30TextBox"
             Me.Question30TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question30TextBox.TabIndex = 154
@@ -607,7 +620,7 @@ Namespace DatabaseTestApplication2
             'Question29TextBox
             '
             Me.Question29TextBox.Location = New System.Drawing.Point(475, 235)
-            Me.Question29TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question29TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question29TextBox.Name = "Question29TextBox"
             Me.Question29TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question29TextBox.TabIndex = 153
@@ -615,7 +628,7 @@ Namespace DatabaseTestApplication2
             'Question28TextBox
             '
             Me.Question28TextBox.Location = New System.Drawing.Point(475, 203)
-            Me.Question28TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question28TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question28TextBox.Name = "Question28TextBox"
             Me.Question28TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question28TextBox.TabIndex = 152
@@ -623,7 +636,7 @@ Namespace DatabaseTestApplication2
             'Question27TextBox
             '
             Me.Question27TextBox.Location = New System.Drawing.Point(475, 171)
-            Me.Question27TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question27TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question27TextBox.Name = "Question27TextBox"
             Me.Question27TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question27TextBox.TabIndex = 151
@@ -631,7 +644,7 @@ Namespace DatabaseTestApplication2
             'Question26TextBox
             '
             Me.Question26TextBox.Location = New System.Drawing.Point(475, 139)
-            Me.Question26TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question26TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question26TextBox.Name = "Question26TextBox"
             Me.Question26TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question26TextBox.TabIndex = 150
@@ -639,7 +652,7 @@ Namespace DatabaseTestApplication2
             'Question25TextBox
             '
             Me.Question25TextBox.Location = New System.Drawing.Point(132, 907)
-            Me.Question25TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question25TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question25TextBox.Name = "Question25TextBox"
             Me.Question25TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question25TextBox.TabIndex = 149
@@ -647,7 +660,7 @@ Namespace DatabaseTestApplication2
             'Question24TextBox
             '
             Me.Question24TextBox.Location = New System.Drawing.Point(132, 875)
-            Me.Question24TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question24TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question24TextBox.Name = "Question24TextBox"
             Me.Question24TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question24TextBox.TabIndex = 148
@@ -655,7 +668,7 @@ Namespace DatabaseTestApplication2
             'Question23TextBox
             '
             Me.Question23TextBox.Location = New System.Drawing.Point(132, 843)
-            Me.Question23TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question23TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question23TextBox.Name = "Question23TextBox"
             Me.Question23TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question23TextBox.TabIndex = 147
@@ -663,7 +676,7 @@ Namespace DatabaseTestApplication2
             'Question22TextBox
             '
             Me.Question22TextBox.Location = New System.Drawing.Point(132, 811)
-            Me.Question22TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question22TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question22TextBox.Name = "Question22TextBox"
             Me.Question22TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question22TextBox.TabIndex = 146
@@ -671,7 +684,7 @@ Namespace DatabaseTestApplication2
             'Question21TextBox
             '
             Me.Question21TextBox.Location = New System.Drawing.Point(132, 779)
-            Me.Question21TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question21TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question21TextBox.Name = "Question21TextBox"
             Me.Question21TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question21TextBox.TabIndex = 145
@@ -679,7 +692,7 @@ Namespace DatabaseTestApplication2
             'Question20TextBox
             '
             Me.Question20TextBox.Location = New System.Drawing.Point(132, 747)
-            Me.Question20TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question20TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question20TextBox.Name = "Question20TextBox"
             Me.Question20TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question20TextBox.TabIndex = 144
@@ -687,7 +700,7 @@ Namespace DatabaseTestApplication2
             'Question19TextBox
             '
             Me.Question19TextBox.Location = New System.Drawing.Point(132, 715)
-            Me.Question19TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question19TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question19TextBox.Name = "Question19TextBox"
             Me.Question19TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question19TextBox.TabIndex = 143
@@ -695,7 +708,7 @@ Namespace DatabaseTestApplication2
             'Question18TextBox
             '
             Me.Question18TextBox.Location = New System.Drawing.Point(132, 683)
-            Me.Question18TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question18TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question18TextBox.Name = "Question18TextBox"
             Me.Question18TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question18TextBox.TabIndex = 142
@@ -703,7 +716,7 @@ Namespace DatabaseTestApplication2
             'Question17TextBox
             '
             Me.Question17TextBox.Location = New System.Drawing.Point(132, 651)
-            Me.Question17TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question17TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question17TextBox.Name = "Question17TextBox"
             Me.Question17TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question17TextBox.TabIndex = 141
@@ -711,7 +724,7 @@ Namespace DatabaseTestApplication2
             'Question16TextBox
             '
             Me.Question16TextBox.Location = New System.Drawing.Point(132, 619)
-            Me.Question16TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question16TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question16TextBox.Name = "Question16TextBox"
             Me.Question16TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question16TextBox.TabIndex = 140
@@ -719,7 +732,7 @@ Namespace DatabaseTestApplication2
             'Question15TextBox
             '
             Me.Question15TextBox.Location = New System.Drawing.Point(132, 587)
-            Me.Question15TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question15TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question15TextBox.Name = "Question15TextBox"
             Me.Question15TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question15TextBox.TabIndex = 139
@@ -727,7 +740,7 @@ Namespace DatabaseTestApplication2
             'Question14TextBox
             '
             Me.Question14TextBox.Location = New System.Drawing.Point(132, 555)
-            Me.Question14TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question14TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question14TextBox.Name = "Question14TextBox"
             Me.Question14TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question14TextBox.TabIndex = 138
@@ -735,7 +748,7 @@ Namespace DatabaseTestApplication2
             'Question13TextBox
             '
             Me.Question13TextBox.Location = New System.Drawing.Point(132, 523)
-            Me.Question13TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question13TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question13TextBox.Name = "Question13TextBox"
             Me.Question13TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question13TextBox.TabIndex = 137
@@ -743,7 +756,7 @@ Namespace DatabaseTestApplication2
             'Question12TextBox
             '
             Me.Question12TextBox.Location = New System.Drawing.Point(132, 491)
-            Me.Question12TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question12TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question12TextBox.Name = "Question12TextBox"
             Me.Question12TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question12TextBox.TabIndex = 136
@@ -751,7 +764,7 @@ Namespace DatabaseTestApplication2
             'Question11TextBox
             '
             Me.Question11TextBox.Location = New System.Drawing.Point(132, 459)
-            Me.Question11TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question11TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question11TextBox.Name = "Question11TextBox"
             Me.Question11TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question11TextBox.TabIndex = 135
@@ -759,7 +772,7 @@ Namespace DatabaseTestApplication2
             'Question10TextBox
             '
             Me.Question10TextBox.Location = New System.Drawing.Point(132, 427)
-            Me.Question10TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question10TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question10TextBox.Name = "Question10TextBox"
             Me.Question10TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question10TextBox.TabIndex = 134
@@ -767,7 +780,7 @@ Namespace DatabaseTestApplication2
             'Question9TextBox
             '
             Me.Question9TextBox.Location = New System.Drawing.Point(132, 395)
-            Me.Question9TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question9TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question9TextBox.Name = "Question9TextBox"
             Me.Question9TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question9TextBox.TabIndex = 133
@@ -775,7 +788,7 @@ Namespace DatabaseTestApplication2
             'Question8TextBox
             '
             Me.Question8TextBox.Location = New System.Drawing.Point(132, 363)
-            Me.Question8TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question8TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question8TextBox.Name = "Question8TextBox"
             Me.Question8TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question8TextBox.TabIndex = 132
@@ -783,7 +796,7 @@ Namespace DatabaseTestApplication2
             'Question7TextBox
             '
             Me.Question7TextBox.Location = New System.Drawing.Point(132, 331)
-            Me.Question7TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question7TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question7TextBox.Name = "Question7TextBox"
             Me.Question7TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question7TextBox.TabIndex = 131
@@ -791,7 +804,7 @@ Namespace DatabaseTestApplication2
             'Question6TextBox
             '
             Me.Question6TextBox.Location = New System.Drawing.Point(132, 299)
-            Me.Question6TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question6TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question6TextBox.Name = "Question6TextBox"
             Me.Question6TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question6TextBox.TabIndex = 130
@@ -799,7 +812,7 @@ Namespace DatabaseTestApplication2
             'Question5TextBox
             '
             Me.Question5TextBox.Location = New System.Drawing.Point(132, 267)
-            Me.Question5TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question5TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question5TextBox.Name = "Question5TextBox"
             Me.Question5TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question5TextBox.TabIndex = 10
@@ -807,7 +820,7 @@ Namespace DatabaseTestApplication2
             'Question4TextBox
             '
             Me.Question4TextBox.Location = New System.Drawing.Point(132, 235)
-            Me.Question4TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question4TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question4TextBox.Name = "Question4TextBox"
             Me.Question4TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question4TextBox.TabIndex = 9
@@ -815,7 +828,7 @@ Namespace DatabaseTestApplication2
             'Question3TextBox
             '
             Me.Question3TextBox.Location = New System.Drawing.Point(132, 203)
-            Me.Question3TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question3TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question3TextBox.Name = "Question3TextBox"
             Me.Question3TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question3TextBox.TabIndex = 8
@@ -823,7 +836,7 @@ Namespace DatabaseTestApplication2
             'Question2TextBox
             '
             Me.Question2TextBox.Location = New System.Drawing.Point(132, 171)
-            Me.Question2TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question2TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question2TextBox.Name = "Question2TextBox"
             Me.Question2TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question2TextBox.TabIndex = 7
@@ -831,7 +844,7 @@ Namespace DatabaseTestApplication2
             'Question1TextBox
             '
             Me.Question1TextBox.Location = New System.Drawing.Point(132, 139)
-            Me.Question1TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Question1TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.Question1TextBox.Name = "Question1TextBox"
             Me.Question1TextBox.Size = New System.Drawing.Size(132, 22)
             Me.Question1TextBox.TabIndex = 6
@@ -842,7 +855,7 @@ Namespace DatabaseTestApplication2
             Me.PictureBox2.BackgroundImage = Global.DatabaseTestApplication2.My.Resources.Resources.CV_HB_Logo_White_400px
             Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
             Me.PictureBox2.Location = New System.Drawing.Point(771, 33)
-            Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
             Me.PictureBox2.Name = "PictureBox2"
             Me.PictureBox2.Size = New System.Drawing.Size(307, 107)
             Me.PictureBox2.TabIndex = 124
@@ -1529,7 +1542,7 @@ Namespace DatabaseTestApplication2
             'QuestionNum1TextBox
             '
             Me.QuestionNum1TextBox.Location = New System.Drawing.Point(895, 288)
-            Me.QuestionNum1TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.QuestionNum1TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.QuestionNum1TextBox.Name = "QuestionNum1TextBox"
             Me.QuestionNum1TextBox.Size = New System.Drawing.Size(132, 22)
             Me.QuestionNum1TextBox.TabIndex = 5
@@ -1549,7 +1562,7 @@ Namespace DatabaseTestApplication2
             'QuestionNum2TextBox
             '
             Me.QuestionNum2TextBox.Location = New System.Drawing.Point(895, 320)
-            Me.QuestionNum2TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.QuestionNum2TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.QuestionNum2TextBox.Name = "QuestionNum2TextBox"
             Me.QuestionNum2TextBox.Size = New System.Drawing.Size(132, 22)
             Me.QuestionNum2TextBox.TabIndex = 104
@@ -1569,7 +1582,7 @@ Namespace DatabaseTestApplication2
             'QuestionNum3TextBox
             '
             Me.QuestionNum3TextBox.Location = New System.Drawing.Point(895, 352)
-            Me.QuestionNum3TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.QuestionNum3TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.QuestionNum3TextBox.Name = "QuestionNum3TextBox"
             Me.QuestionNum3TextBox.Size = New System.Drawing.Size(132, 22)
             Me.QuestionNum3TextBox.TabIndex = 106
@@ -1589,7 +1602,7 @@ Namespace DatabaseTestApplication2
             'QuestionNum4TextBox
             '
             Me.QuestionNum4TextBox.Location = New System.Drawing.Point(895, 384)
-            Me.QuestionNum4TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.QuestionNum4TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.QuestionNum4TextBox.Name = "QuestionNum4TextBox"
             Me.QuestionNum4TextBox.Size = New System.Drawing.Size(132, 22)
             Me.QuestionNum4TextBox.TabIndex = 108
@@ -1609,7 +1622,7 @@ Namespace DatabaseTestApplication2
             'QuestionNum5TextBox
             '
             Me.QuestionNum5TextBox.Location = New System.Drawing.Point(895, 416)
-            Me.QuestionNum5TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.QuestionNum5TextBox.Margin = New System.Windows.Forms.Padding(4)
             Me.QuestionNum5TextBox.Name = "QuestionNum5TextBox"
             Me.QuestionNum5TextBox.Size = New System.Drawing.Size(132, 22)
             Me.QuestionNum5TextBox.TabIndex = 110
@@ -1632,7 +1645,7 @@ Namespace DatabaseTestApplication2
             Me.survey_SurveyID_comboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
             Me.survey_SurveyID_comboBox.FormattingEnabled = True
             Me.survey_SurveyID_comboBox.Location = New System.Drawing.Point(889, 203)
-            Me.survey_SurveyID_comboBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.survey_SurveyID_comboBox.Margin = New System.Windows.Forms.Padding(4)
             Me.survey_SurveyID_comboBox.Name = "survey_SurveyID_comboBox"
             Me.survey_SurveyID_comboBox.Size = New System.Drawing.Size(138, 24)
             Me.survey_SurveyID_comboBox.TabIndex = 112
@@ -1645,7 +1658,7 @@ Namespace DatabaseTestApplication2
             Me.panel3.Controls.Add(Me.panel6)
             Me.panel3.Dock = System.Windows.Forms.DockStyle.Fill
             Me.panel3.Location = New System.Drawing.Point(0, 27)
-            Me.panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel3.Margin = New System.Windows.Forms.Padding(4)
             Me.panel3.Name = "panel3"
             Me.panel3.Size = New System.Drawing.Size(1137, 956)
             Me.panel3.TabIndex = 19
@@ -1654,7 +1667,7 @@ Namespace DatabaseTestApplication2
             '
             Me.panel4.Dock = System.Windows.Forms.DockStyle.Right
             Me.panel4.Location = New System.Drawing.Point(1124, 0)
-            Me.panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel4.Margin = New System.Windows.Forms.Padding(4)
             Me.panel4.Name = "panel4"
             Me.panel4.Size = New System.Drawing.Size(13, 944)
             Me.panel4.TabIndex = 3
@@ -1663,7 +1676,7 @@ Namespace DatabaseTestApplication2
             '
             Me.panel5.Dock = System.Windows.Forms.DockStyle.Left
             Me.panel5.Location = New System.Drawing.Point(0, 0)
-            Me.panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel5.Margin = New System.Windows.Forms.Padding(4)
             Me.panel5.Name = "panel5"
             Me.panel5.Size = New System.Drawing.Size(13, 944)
             Me.panel5.TabIndex = 5
@@ -1672,17 +1685,37 @@ Namespace DatabaseTestApplication2
             '
             Me.panel6.Dock = System.Windows.Forms.DockStyle.Bottom
             Me.panel6.Location = New System.Drawing.Point(0, 944)
-            Me.panel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.panel6.Margin = New System.Windows.Forms.Padding(4)
             Me.panel6.Name = "panel6"
             Me.panel6.Size = New System.Drawing.Size(1137, 12)
             Me.panel6.TabIndex = 6
             '
-            'TextBox1
+            'Label1
             '
-            Me.TextBox1.Location = New System.Drawing.Point(889, 234)
-            Me.TextBox1.Name = "TextBox1"
-            Me.TextBox1.Size = New System.Drawing.Size(138, 22)
-            Me.TextBox1.TabIndex = 175
+            Me.Label1.AutoSize = True
+            Me.Label1.BackColor = System.Drawing.Color.Transparent
+            Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+            Me.Label1.Location = New System.Drawing.Point(807, 237)
+            Me.Label1.Name = "Label1"
+            Me.Label1.Size = New System.Drawing.Size(72, 17)
+            Me.Label1.TabIndex = 176
+            Me.Label1.Text = "Results ID"
+            '
+            'TextBox2
+            '
+            Me.TextBox2.Location = New System.Drawing.Point(889, 259)
+            Me.TextBox2.Name = "TextBox2"
+            Me.TextBox2.Size = New System.Drawing.Size(138, 22)
+            Me.TextBox2.TabIndex = 177
+            '
+            'Label2
+            '
+            Me.Label2.AutoSize = True
+            Me.Label2.Location = New System.Drawing.Point(811, 262)
+            Me.Label2.Name = "Label2"
+            Me.Label2.Size = New System.Drawing.Size(51, 17)
+            Me.Label2.TabIndex = 178
+            Me.Label2.Text = "Label2"
             '
             'frmsurvey_results
             '
@@ -1691,7 +1724,7 @@ Namespace DatabaseTestApplication2
             Me.ClientSize = New System.Drawing.Size(1137, 983)
             Me.Controls.Add(Me.panel3)
             Me.Controls.Add(Me.BindingNavigator1)
-            Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Margin = New System.Windows.Forms.Padding(4)
             Me.Name = "frmsurvey_results"
             Me.Text = "Survey_Results"
             CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1853,6 +1886,9 @@ Namespace DatabaseTestApplication2
         Friend WithEvents Question2TextBox As TextBox
         Friend WithEvents Question1TextBox As TextBox
         Friend WithEvents TextBox1 As TextBox
+        Friend WithEvents Label1 As Label
+        Friend WithEvents Label2 As Label
+        Friend WithEvents TextBox2 As TextBox
     End Class
 
 End Namespace

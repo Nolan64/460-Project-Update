@@ -160,7 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="all_table_vw.vb">
-      <DependentUpon>Model3.tt</DependentUpon>
+      <DependentUpon>Model4.tt</DependentUpon>
     </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -173,12 +173,6 @@
       <DependentUpon>frmgeneral.vb</DependentUpon>
     </Compile>
     <Compile Include="frmgeneral.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmgeneral_has_survey.designer.vb">
-      <DependentUpon>frmgeneral_has_survey.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmgeneral_has_survey.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmhomeownership.designer.vb">
@@ -224,10 +218,10 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="general.vb">
-      <DependentUpon>Model3.tt</DependentUpon>
+      <DependentUpon>Model4.tt</DependentUpon>
     </Compile>
     <Compile Include="homeownership.vb">
-      <DependentUpon>Model3.tt</DependentUpon>
+      <DependentUpon>Model4.tt</DependentUpon>
     </Compile>
     <Compile Include="frmmain_menu.Designer.vb">
       <DependentUpon>frmmain_menu.vb</DependentUpon>
@@ -265,6 +259,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model3.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model4.Context.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model4.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model4.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model4.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model4.tt</DependentUpon>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -282,19 +291,19 @@
     </Compile>
     <Compile Include="MyDateTimePickerColumn.vb" />
     <Compile Include="repair.vb">
-      <DependentUpon>Model3.tt</DependentUpon>
+      <DependentUpon>Model4.tt</DependentUpon>
     </Compile>
     <Compile Include="survey.vb">
-      <DependentUpon>Model3.tt</DependentUpon>
+      <DependentUpon>Model4.tt</DependentUpon>
     </Compile>
     <Compile Include="survey_results.vb">
-      <DependentUpon>Model3.tt</DependentUpon>
+      <DependentUpon>Model4.tt</DependentUpon>
     </Compile>
     <Compile Include="tracking.vb">
-      <DependentUpon>Model3.tt</DependentUpon>
+      <DependentUpon>Model4.tt</DependentUpon>
     </Compile>
     <Compile Include="user.vb">
-      <DependentUpon>Model3.tt</DependentUpon>
+      <DependentUpon>Model4.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -303,9 +312,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmgeneral.resx">
       <DependentUpon>frmgeneral.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmgeneral_has_survey.resx">
-      <DependentUpon>frmgeneral_has_survey.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmhomeownership.resx">
       <DependentUpon>frmhomeownership.vb</DependentUpon>
@@ -352,6 +358,13 @@
     </EntityDeploy>
     <None Include="Model3.edmx.diagram">
       <DependentUpon>Model3.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="Model4.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model4.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model4.edmx.diagram">
+      <DependentUpon>Model4.edmx</DependentUpon>
     </None>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
@@ -409,6 +422,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model3.edmx</DependentUpon>
       <LastGenOutput>Model3.vb</LastGenOutput>
+    </Content>
+    <Content Include="Model4.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model4.edmx</DependentUpon>
+      <LastGenOutput>Model4.Context.vb</LastGenOutput>
+    </Content>
+    <Content Include="Model4.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model4.edmx</DependentUpon>
+      <LastGenOutput>Model4.vb</LastGenOutput>
     </Content>
     <None Include="Resources\h4hlogo3.ico" />
     <None Include="Resources\CV-HB-Logo-White-400px.png" />
